@@ -47,6 +47,7 @@ public class CategoryGeneral extends AbstractCategory
         add(FurnitureBlocks.CHAIR_DIORITE);
         add(FurnitureBlocks.CHAIR_ANDESITE);
         add(FurnitureBlocks.COUCH);
+        add(FurnitureBlocks.COUCH_FRAMED);
         add(FurnitureBlocks.BAR_STOOL);
         add(FurnitureBlocks.GRAND_CHAIR_BOTTOM);
         add(FurnitureBlocks.TABLE_OUTDOOR);
