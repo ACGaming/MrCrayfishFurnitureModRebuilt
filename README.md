@@ -10,6 +10,7 @@ This mod is an **unofficial** continuation and is not affiliated with MrCrayfish
 
 * Added Biomes O' Plenty support
 * Added bath advancement
+* Added ceiling placement for lamps
 * Added computer GUI item data range checks
 * Added configurable image/GIF file sizes
 * Added dishwasher & washing machine input configs

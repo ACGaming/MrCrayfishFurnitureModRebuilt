@@ -1,10 +1,7 @@
 package com.mrcrayfish.furniture.blocks;
 
 import com.google.common.collect.Lists;
-import com.mrcrayfish.furniture.MrCrayfishFurnitureMod;
-import com.mrcrayfish.furniture.entity.EntitySeat;
-import com.mrcrayfish.furniture.init.FurnitureBlocks;
-import net.minecraft.block.Block;
+import net.minecraft.block.BlockDirectional;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyBool;
@@ -29,9 +26,12 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
+import com.mrcrayfish.furniture.MrCrayfishFurnitureMod;
+import com.mrcrayfish.furniture.entity.EntitySeat;
+import com.mrcrayfish.furniture.init.FurnitureBlocks;
 import java.util.List;
 
-public class BlockLamp extends Block
+public class BlockLamp extends BlockDirectional
 {
     public static final PropertyInteger COLOUR = PropertyInteger.create("colour", 0, 15);
     public static final PropertyBool UP = PropertyBool.create("up");
@@ -44,76 +44,13 @@ public class BlockLamp extends Block
         super(material);
         this.setHardness(0.75F);
         this.setSoundType(SoundType.CLOTH);
-        this.setDefaultState(this.blockState.getBaseState().withProperty(COLOUR, 0));
-        if(!on)
+        this.setDefaultState(this.blockState.getBaseState().withProperty(COLOUR, 0).withProperty(FACING, EnumFacing.UP));
+        if (!on)
         {
             this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         }
         this.setUnlocalizedName(id);
         this.setRegistryName(id);
-    }
-
-    @Override
-    public boolean isOpaqueCube(IBlockState state)
-    {
-        return false;
-    }
-
-    @Override
-    public boolean isFullCube(IBlockState state)
-    {
-        return false;
-    }
-
-    @Override
-    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
-    {
-        return BOUNDING_BOX;
-    }
-
-    @Override
-    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
-    {
-        ItemStack heldItem = playerIn.getHeldItem(hand);
-        if(!heldItem.isEmpty())
-        {
-            if(heldItem.getItem() instanceof ItemDye)
-            {
-                worldIn.setBlockState(pos, state.withProperty(COLOUR, 15 - heldItem.getItemDamage()));
-                if(!playerIn.isCreative()) heldItem.shrink(1);
-                return true;
-            }
-        }
-
-        if(!(worldIn.getBlockState(pos.up()).getBlock() instanceof BlockLamp))
-        {
-            worldIn.setBlockState(pos, FurnitureBlocks.LAMP_ON.getDefaultState().withProperty(BlockLampOn.COLOUR, state.getValue(COLOUR)), 3);
-        }
-        else
-        {
-            int yOffset = 1;
-            while(worldIn.getBlockState(pos.up(yOffset)).getBlock() instanceof BlockLamp) yOffset++;
-
-            int colour = worldIn.getBlockState(pos.up(yOffset).down()).getValue(COLOUR);
-
-            if(worldIn.getBlockState(pos.up(yOffset).down()).getBlock() instanceof BlockLampOn)
-            {
-                worldIn.setBlockState(pos.up(yOffset).down(), FurnitureBlocks.LAMP_OFF.getDefaultState().withProperty(BlockLampOn.COLOUR, colour));
-            }
-            else
-            {
-                worldIn.setBlockState(pos.up(yOffset).down(), FurnitureBlocks.LAMP_ON.getDefaultState().withProperty(BlockLampOn.COLOUR, colour));
-            }
-        }
-        return true;
-    }
-
-    @Override
-    public IBlockState getActualState(IBlockState state, IBlockAccess worldIn, BlockPos pos)
-    {
-        boolean up = worldIn.getBlockState(pos.up()).getBlock() instanceof BlockLamp;
-        boolean down = worldIn.getBlockState(pos.down()).getBlock() instanceof BlockLamp;
-        return state.withProperty(UP, up).withProperty(DOWN, down);
     }
 
     @Override
@@ -129,52 +66,39 @@ public class BlockLamp extends Block
     }
 
     @Override
-    protected BlockStateContainer createBlockState()
+    public IBlockState getActualState(IBlockState state, IBlockAccess world, BlockPos pos)
     {
-        return new BlockStateContainer(this, COLOUR, UP, DOWN);
+        EnumFacing lampFacing = state.getValue(FACING);
+        boolean up = world.getBlockState(pos.offset(lampFacing)).getBlock() instanceof BlockLamp;
+        boolean down = world.getBlockState(pos.offset(lampFacing.getOpposite())).getBlock() instanceof BlockLamp;
+        return state.withProperty(UP, up).withProperty(DOWN, down);
     }
 
     @Override
-    public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer, EnumHand hand)
+    public boolean isFullCube(IBlockState state)
     {
-        return super.getStateForPlacement(world, pos, facing, hitX, hitY, hitZ, meta, placer, hand).withProperty(COLOUR, Math.min(meta, 15));
+        return false;
     }
 
     @Override
-    public void getDrops(NonNullList<ItemStack> drops, IBlockAccess world, BlockPos pos, IBlockState state, int fortune)
+    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
     {
-        drops.add(new ItemStack(FurnitureBlocks.LAMP_OFF, 1, Math.min(state.getValue(COLOUR), 15)));
+        return BOUNDING_BOX;
     }
 
     @Override
-    public void getSubBlocks(CreativeTabs item, NonNullList<ItemStack> items)
+    public BlockFaceShape getBlockFaceShape(IBlockAccess world, IBlockState state, BlockPos pos, EnumFacing face)
     {
-        for(int i = 0; i < EnumDyeColor.values().length; i++)
+        return BlockFaceShape.UNDEFINED;
+    }
+
+    @Override
+    public void addCollisionBoxToList(IBlockState state, World world, BlockPos pos, AxisAlignedBB entityBox, List<AxisAlignedBB> collidingBoxes, Entity entity, boolean p_185477_7_)
+    {
+        if (!(entity instanceof EntitySeat))
         {
-            items.add(new ItemStack(this, 1, i));
-        }
-    }
-
-    @Override
-    public ItemStack getPickBlock(IBlockState state, RayTraceResult target, World world, BlockPos pos, EntityPlayer player)
-    {
-        return new ItemStack(FurnitureBlocks.LAMP_OFF, 1, state.getValue(COLOUR));
-    }
-
-    private List<AxisAlignedBB> getCollisionBoxList(IBlockState state, World world, BlockPos pos)
-    {
-        List<AxisAlignedBB> list = Lists.newArrayList();
-        list.add(FULL_BLOCK_AABB);
-        return list;
-    }
-
-    @Override
-    public void addCollisionBoxToList(IBlockState state, World worldIn, BlockPos pos, AxisAlignedBB entityBox, List<AxisAlignedBB> collidingBoxes, Entity entity, boolean p_185477_7_)
-    {
-        if(!(entity instanceof EntitySeat))
-        {
-            List<AxisAlignedBB> boxes = this.getCollisionBoxList(this.getActualState(state, worldIn, pos), worldIn, pos);
-            for(AxisAlignedBB box : boxes)
+            List<AxisAlignedBB> boxes = this.getCollisionBoxList(this.getActualState(state, world, pos), world, pos);
+            for (AxisAlignedBB box : boxes)
             {
                 addCollisionBoxToList(pos, entityBox, collidingBoxes, FULL_BLOCK_AABB);
             }
@@ -182,11 +106,17 @@ public class BlockLamp extends Block
     }
 
     @Override
+    public boolean isOpaqueCube(IBlockState state)
+    {
+        return false;
+    }
+
+    @Override
     public RayTraceResult collisionRayTrace(IBlockState blockState, World world, BlockPos pos, Vec3d start, Vec3d end)
     {
         List<RayTraceResult> list = Lists.newArrayList();
 
-        for(AxisAlignedBB axisalignedbb : getCollisionBoxList(this.getActualState(blockState, world, pos), world, pos))
+        for (AxisAlignedBB axisalignedbb : getCollisionBoxList(this.getActualState(blockState, world, pos), world, pos))
         {
             list.add(this.rayTrace(pos, start, end, axisalignedbb));
         }
@@ -194,13 +124,13 @@ public class BlockLamp extends Block
         RayTraceResult raytraceresult1 = null;
         double d1 = 0.0D;
 
-        for(RayTraceResult raytraceresult : list)
+        for (RayTraceResult raytraceresult : list)
         {
-            if(raytraceresult != null)
+            if (raytraceresult != null)
             {
                 double d0 = raytraceresult.hitVec.squareDistanceTo(end);
 
-                if(d0 > d1)
+                if (d0 > d1)
                 {
                     raytraceresult1 = raytraceresult;
                     d1 = d0;
@@ -212,8 +142,76 @@ public class BlockLamp extends Block
     }
 
     @Override
-    public BlockFaceShape getBlockFaceShape(IBlockAccess worldIn, IBlockState state, BlockPos pos, EnumFacing face)
+    public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
     {
-        return BlockFaceShape.UNDEFINED;
+        ItemStack heldItem = player.getHeldItem(hand);
+        if (heldItem.getItem() instanceof ItemDye)
+        {
+            world.setBlockState(pos, state.withProperty(COLOUR, 15 - heldItem.getItemDamage()).withProperty(FACING, state.getValue(FACING)));
+            if (!player.isCreative()) heldItem.shrink(1);
+            return true;
+        }
+
+        if (!(world.getBlockState(pos.up()).getBlock() instanceof BlockLamp))
+        {
+            world.setBlockState(pos, FurnitureBlocks.LAMP_ON.getDefaultState().withProperty(BlockLampOn.COLOUR, state.getValue(COLOUR)).withProperty(FACING, state.getValue(FACING)), 3);
+        }
+        else
+        {
+            int yOffset = 1;
+            while (world.getBlockState(pos.up(yOffset)).getBlock() instanceof BlockLamp) yOffset++;
+
+            int colour = world.getBlockState(pos.up(yOffset).down()).getValue(COLOUR);
+
+            if (world.getBlockState(pos.up(yOffset).down()).getBlock() instanceof BlockLampOn)
+            {
+                world.setBlockState(pos.up(yOffset).down(), FurnitureBlocks.LAMP_OFF.getDefaultState().withProperty(BlockLampOn.COLOUR, colour).withProperty(FACING, state.getValue(FACING)));
+            }
+            else
+            {
+                world.setBlockState(pos.up(yOffset).down(), FurnitureBlocks.LAMP_ON.getDefaultState().withProperty(BlockLampOn.COLOUR, colour).withProperty(FACING, state.getValue(FACING)));
+            }
+        }
+        return true;
+    }
+
+    @Override
+    public void getSubBlocks(CreativeTabs item, NonNullList<ItemStack> items)
+    {
+        for (int i = 0; i < EnumDyeColor.values().length; i++)
+        {
+            items.add(new ItemStack(this, 1, i));
+        }
+    }
+
+    @Override
+    protected BlockStateContainer createBlockState()
+    {
+        return new BlockStateContainer(this, COLOUR, UP, DOWN, FACING);
+    }
+
+    @Override
+    public void getDrops(NonNullList<ItemStack> drops, IBlockAccess world, BlockPos pos, IBlockState state, int fortune)
+    {
+        drops.add(new ItemStack(FurnitureBlocks.LAMP_OFF, 1, Math.min(state.getValue(COLOUR), 15)));
+    }
+
+    @Override
+    public ItemStack getPickBlock(IBlockState state, RayTraceResult target, World world, BlockPos pos, EntityPlayer player)
+    {
+        return new ItemStack(FurnitureBlocks.LAMP_OFF, 1, state.getValue(COLOUR));
+    }
+
+    @Override
+    public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer, EnumHand hand)
+    {
+        return super.getStateForPlacement(world, pos, facing, hitX, hitY, hitZ, meta, placer, hand).withProperty(COLOUR, Math.min(meta, 15)).withProperty(FACING, facing);
+    }
+
+    private List<AxisAlignedBB> getCollisionBoxList(IBlockState state, World world, BlockPos pos)
+    {
+        List<AxisAlignedBB> list = Lists.newArrayList();
+        list.add(FULL_BLOCK_AABB);
+        return list;
     }
 }
