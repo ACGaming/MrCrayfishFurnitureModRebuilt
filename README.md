@@ -18,6 +18,7 @@ This mod is an **unofficial** continuation and is not affiliated with MrCrayfish
 * Added trusted URL domains list type config
 * Adjusted bedside cabinet GUI title
 * Adjusted block hardness values
+* Backported modern couch with wooden frame
 * Disabled creative categories until rework
 * Enabled infinite mirror reflections
 * Fixed blinds always returning oak
@@ -40,6 +41,7 @@ This mod is an **unofficial** continuation and is not affiliated with MrCrayfish
 * Fixed spruce mailbox recipe name typo
 * Fixed steam particle typo
 * Fixed washing machines repairing non-repairable items
+* Increased doorbell sound distance
 * Improved image/GIF cache stability
 * Prevented duplications in certain containers
 * Reduced arbitrary container limitations
@@ -55,6 +57,7 @@ This mod is an **unofficial** continuation and is not affiliated with MrCrayfish
 ### **MrCrayfish's Furniture Mod** is all about adding functioning and useful furniture and decorations. You will be able to find furniture for every part of your house, including the kitchen, bedroom, dinning, outdoors, and more! Currently adding over eighty unique blocks, the mod in continuely growing with new updates.
 
 **Features:**
+
 * Includes over eighty unique pieces of furniture!
 * Working functionality in most blocks, not just decorative.
 * Textures of models are based on the current resource pack

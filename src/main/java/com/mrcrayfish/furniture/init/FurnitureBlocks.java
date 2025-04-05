@@ -16,7 +16,7 @@ public class FurnitureBlocks
     public static final Block CHAIR_OAK, CHAIR_STONE;
     public static final Block FREEZER, FRIDGE;
     public static final Block CABINET_OAK, BEDSIDE_CABINET_OAK;
-    public static final Block COUCH, COUCH_JEB;
+    public static final Block COUCH, COUCH_JEB, COUCH_FRAMED, COUCH_FRAMED_JEB;
     public static final BlockBlinds BLINDS_OAK, BLINDS_OAK_CLOSED;
     public static final Block CURTAINS, CURTAINS_CLOSED;
     public static final Block OVEN, RANGE_HOOD, RANGE_HOOD_POWERED;
@@ -123,6 +123,8 @@ public class FurnitureBlocks
         CABINET_DARK_OAK = new BlockCabinet(Material.WOOD, "cabinet_dark_oak");
         COUCH = new BlockCouchNormal("couch");
         COUCH_JEB = new BlockCouchJeb("couch_jeb");
+        COUCH_FRAMED = new BlockCouchNormal("couch_framed");
+        COUCH_FRAMED_JEB = new BlockCouchJeb("couch_framed_jeb");
         LAMP_ON = new BlockLampOn(Material.GLASS, "lamp_on");
         LAMP_OFF = new BlockLamp(Material.GLASS, false, "lamp_off");
         BLINDS_OAK = new BlockBlinds(Material.WOOD, true, "blinds_open");
@@ -356,6 +358,8 @@ public class FurnitureBlocks
         registerBlock(CABINET_ANDESITE);
         registerBlock(COUCH, new ItemBlockColored(COUCH));
         registerBlock(COUCH_JEB);
+        registerBlock(COUCH_FRAMED, new ItemBlockColored(COUCH_FRAMED));
+        registerBlock(COUCH_FRAMED_JEB);
         registerBlock(LAMP_ON, null);
         registerBlock(LAMP_OFF, new ItemBlockColored(LAMP_OFF));
         registerBlock(BLINDS_OAK);

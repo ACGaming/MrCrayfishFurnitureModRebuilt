@@ -1,0 +1,42 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "wool": "cfm:blocks/wool_coloured_rainbow",
+      "support": "blocks/log_oak"
+    },
+    "model": "couch_framed",
+    "uvlock": true
+  },
+  "variants": {
+    "inventory": {
+      "model": "cfm:couch_framed"
+    },
+    "facing": {
+      "north": {"y": 0},
+      "east": {"y": 90},
+      "south": {"y": 180},
+      "west": {"y": 270}
+    },
+    "type": {
+      "both": {
+        "model": "cfm:couch_framed"
+      },
+      "left": {
+        "model": "cfm:couch_framed_left"
+      },
+      "right": {
+        "model": "cfm:couch_framed_right"
+      },
+      "none": {
+        "model": "cfm:couch_framed_none"
+      },
+      "corner_right": {
+        "model": "cfm:couch_framed_corner_right"
+      },
+      "corner_left": {
+        "model": "cfm:couch_framed_corner_left"
+      }
+    }
+  }
+}

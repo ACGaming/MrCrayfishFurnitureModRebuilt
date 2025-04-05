@@ -1,9 +1,10 @@
 {
   "result": {
     "item": "cfm:couch",
-	"data": 13
+    "data": 13
   },
   "pattern": [
+    "*  ",
     "***",
     "***"
   ],

@@ -1,0 +1,7 @@
+{
+  "parent": "cfm:block/couch_framed",
+  "textures": {
+    "wool": "blocks/wool_colored_black",
+    "support": "blocks/log_oak"
+  }
+}

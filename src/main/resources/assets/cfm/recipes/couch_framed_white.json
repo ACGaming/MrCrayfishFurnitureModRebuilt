@@ -1,0 +1,22 @@
+{
+  "result": {
+    "item": "cfm:couch_framed",
+    "data": 0
+  },
+  "pattern": [
+    "W  ",
+    "WWW",
+    "LLL"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "W": {
+      "item": "minecraft:wool",
+      "data": 0
+    },
+    "L": {
+      "item": "minecraft:log",
+      "data": 0
+    }
+  }
+}
