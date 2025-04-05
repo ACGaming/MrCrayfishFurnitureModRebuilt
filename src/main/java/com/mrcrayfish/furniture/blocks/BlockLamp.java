@@ -39,7 +39,7 @@ public class BlockLamp extends Block
 
     private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.0625, 0.0, 0.0625, 0.9375, 1.0, 0.9375);
 
-    public BlockLamp(Material material, boolean on)
+    public BlockLamp(Material material, boolean on, String id)
     {
         super(material);
         this.setHardness(0.75F);
@@ -49,6 +49,8 @@ public class BlockLamp extends Block
         {
             this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         }
+        this.setUnlocalizedName(id);
+        this.setRegistryName(id);
     }
 
     @Override

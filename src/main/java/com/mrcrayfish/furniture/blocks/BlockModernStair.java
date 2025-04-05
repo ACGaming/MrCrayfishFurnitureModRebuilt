@@ -32,12 +32,10 @@ public class BlockModernStair extends BlockFurniture
     private static final AxisAlignedBB[] BOTTOM_COLLISION_BOXES = new Bounds(0, 0, 0, 16, 8, 16).getRotatedBounds();
     private static final AxisAlignedBB[] TOP_COLLISION_BOXES = new Bounds(8, 0, 0, 16, 16, 16).getRotatedBounds();
 
-    public BlockModernStair()
+    public BlockModernStair(String id)
     {
-        super(Material.ROCK);
+        super(Material.ROCK, id);
         this.setHardness(1.0F);
-        this.setUnlocalizedName("modern_stair");
-        this.setRegistryName("modern_stair");
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(TYPE, Type.NONE));
     }
 

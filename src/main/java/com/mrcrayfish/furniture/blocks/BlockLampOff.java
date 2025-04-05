@@ -15,9 +15,9 @@ import net.minecraft.world.World;
 
 public class BlockLampOff extends BlockFurniture
 {
-    public BlockLampOff(Material material)
+    public BlockLampOff(Material material, String id)
     {
-        super(material);
+        super(material, id);
         this.setHardness(0.75F);
         this.setSoundType(SoundType.CLOTH);
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);

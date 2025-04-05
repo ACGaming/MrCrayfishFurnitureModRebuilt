@@ -29,13 +29,13 @@ public class BlockInflatableCastle extends BlockColored
 {
     public static final PropertyEnum<Type> TYPE = PropertyEnum.create("type", Type.class);
 
-    public BlockInflatableCastle()
+    public BlockInflatableCastle(String id)
     {
         super(Material.CLOTH);
         this.setSoundType(new SoundType(0.0F, 1.0F, SoundEvents.BLOCK_CLOTH_BREAK, SoundEvents.BLOCK_CLOTH_STEP, SoundEvents.BLOCK_CLOTH_PLACE, SoundEvents.BLOCK_CLOTH_HIT, SoundEvents.BLOCK_CLOTH_FALL));
         this.setHardness(0.25F);
-        this.setUnlocalizedName("inflatable_castle");
-        this.setRegistryName("inflatable_castle");
+        this.setUnlocalizedName(id);
+        this.setRegistryName(id);
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         this.setDefaultState(this.blockState.getBaseState().withProperty(COLOR, EnumDyeColor.WHITE).withProperty(TYPE, Type.NONE));
     }

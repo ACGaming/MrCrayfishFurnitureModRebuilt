@@ -33,12 +33,14 @@ public class BlockTrampoline extends Block
 
     private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.0, 0.0, 0.0, 1.0, 13 * 0.0625, 1.0);
 
-    public BlockTrampoline(Material materialIn)
+    public BlockTrampoline(Material material, String id)
     {
-        super(materialIn);
+        super(material);
         this.setHardness(0.5F);
         this.setDefaultState(this.blockState.getBaseState().withProperty(BACK, false).withProperty(FORWARD, false).withProperty(LEFT, false).withProperty(RIGHT, false));
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
+        this.setUnlocalizedName(id);
+        this.setRegistryName(id);
     }
 
     @Override

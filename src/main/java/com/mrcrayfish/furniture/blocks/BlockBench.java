@@ -30,9 +30,9 @@ public class BlockBench extends BlockFurniture
     private static final AxisAlignedBB COLLISION_BOX_NORTH = CollisionHelper.getBlockBounds(EnumFacing.NORTH, 2 * 0.0625F, 0.0F, 1 * 0.0625F, 14 * 0.0625F, 9 * 0.0625F, 15 * 0.0625F);
     private static final AxisAlignedBB COLLISION_BOX_EAST = CollisionHelper.getBlockBounds(EnumFacing.EAST, 2 * 0.0625F, 0.0F, 1 * 0.0625F, 14 * 0.0625F, 9 * 0.0625F, 15 * 0.0625F);
 
-    public BlockBench(Material material)
+    public BlockBench(Material material, String id)
     {
-        super(material);
+        super(material, id);
         this.setHardness(1.0F);
         this.setSoundType(SoundType.WOOD);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(LEFT, false).withProperty(RIGHT, false));

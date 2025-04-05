@@ -40,9 +40,9 @@ public class BlockShower extends BlockFurniture
     public static final AxisAlignedBB TOP_BOUNDING_BOX = new AxisAlignedBB(0, -1, 0, 1, 1, 1);
     public static final AxisAlignedBB BOTTOM_BOUNDING_BOX = new AxisAlignedBB(0, 0, 0, 1, 2, 1);
 
-    public BlockShower(Material material, boolean top)
+    public BlockShower(Material material, boolean top, String id)
     {
-        super(material);
+        super(material, id);
         this.setHardness(1.0F);
         this.setSoundType(SoundType.STONE);
         if(top) this.setCreativeTab(null);

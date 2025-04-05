@@ -49,11 +49,9 @@ public class BlockModernCouch extends BlockFurnitureTile
     private static final AxisAlignedBB[] COUCH_ARMREST_RIGHT = new Bounds(1, 0, 14, 15, 13, 16).getRotatedBounds();
     private static final AxisAlignedBB[] COUCH_BACKREST = new Bounds(11, 9, 0, 15, 19, 16).getRotatedBounds();
 
-    public BlockModernCouch()
+    public BlockModernCouch(String id)
     {
-        super(Material.CLOTH);
-        this.setUnlocalizedName("modern_couch");
-        this.setRegistryName("modern_couch");
+        super(Material.CLOTH, id);
         this.setHardness(0.5F);
         this.setSoundType(SoundType.WOOD);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(TYPE, CouchType.BOTH).withProperty(COLOUR, 0));

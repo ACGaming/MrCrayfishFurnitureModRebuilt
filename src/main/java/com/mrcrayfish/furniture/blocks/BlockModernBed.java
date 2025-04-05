@@ -51,9 +51,7 @@ public class BlockModernBed extends BlockFurnitureTile
 
     public BlockModernBed(String id)
     {
-        super(Material.WOOD);
-        this.setUnlocalizedName(id);
-        this.setRegistryName(id);
+        super(Material.WOOD, id);
         this.setHardness(0.5F);
     }
 

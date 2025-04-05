@@ -50,13 +50,15 @@ public class BlockCeilingFan extends Block implements IPowered {
         new Bounds(0, 5, 5, 10, 11, 11).toAABB()
     );
 
-    public BlockCeilingFan()
+    public BlockCeilingFan(String id)
     {
         super(Material.WOOD);
         this.setHardness(0.5F);
         this.setSoundType(SoundType.WOOD);
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.DOWN));
+        this.setUnlocalizedName(id);
+        this.setRegistryName(id);
     }
 
     @Override

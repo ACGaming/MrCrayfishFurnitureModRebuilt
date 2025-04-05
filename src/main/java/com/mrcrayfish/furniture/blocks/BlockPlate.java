@@ -28,12 +28,14 @@ public class BlockPlate extends Block implements ITileEntityProvider
 {
     private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(3 * 0.0625, 0.0, 3 * 0.0625, 13 * 0.0625, 0.125, 13 * 0.0625);
 
-    public BlockPlate(Material material)
+    public BlockPlate(Material material, String id)
     {
         super(material);
         this.setHardness(0.5F);
         this.setSoundType(SoundType.STONE);
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
+        this.setUnlocalizedName(id);
+        this.setRegistryName(id);
     }
 
     @Override

@@ -34,13 +34,15 @@ public class BlockBarStool extends Block
 
     private static final AxisAlignedBB BOUNDS = new AxisAlignedBB(2 * 0.0625, 0, 2 * 0.0625, 14 * 0.0625, 13 * 0.0625, 14 * 0.0625);
 
-    public BlockBarStool(Material material)
+    public BlockBarStool(Material material, String id)
     {
         super(material);
         this.setHardness(0.5F);
         this.setSoundType(SoundType.WOOD);
         this.setDefaultState(this.blockState.getBaseState().withProperty(COLOUR, 0));
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
+        this.setUnlocalizedName(id);
+        this.setRegistryName(id);
     }
 
     @Override

@@ -9,12 +9,12 @@ import net.minecraft.block.material.Material;
  */
 public class BlockCastleNetting extends BlockPane
 {
-    public BlockCastleNetting()
+    public BlockCastleNetting(String id)
     {
         super(Material.CLOTH, true);
         this.setHardness(0.5F);
-        this.setUnlocalizedName("castle_netting");
-        this.setRegistryName("castle_netting");
+        this.setUnlocalizedName(id);
+        this.setRegistryName(id);
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
     }
 }

@@ -29,9 +29,9 @@ public class BlockRangeHood extends BlockFurniture
     public static final AxisAlignedBB[] COLLISION_VENTILATION = new Bounds(0.5, 0.0, 0.2, 1.0, 1.0, 0.8).getRotatedBounds();
     public static final AxisAlignedBB COLLISION_BASE = new AxisAlignedBB(0, 0, 0, 1, 4 * 0.0625, 1);
 
-    public BlockRangeHood(Material material, boolean powered)
+    public BlockRangeHood(Material material, boolean powered, String id)
     {
-        super(material);
+        super(material, id);
         this.setHardness(0.5F);
         this.setSoundType(SoundType.METAL);
         if(powered) this.setLightLevel(0.5F);

@@ -4,9 +4,9 @@ import net.minecraft.block.material.Material;
 
 public class BlockCurtainsClosed extends BlockCurtains
 {
-    public BlockCurtainsClosed(Material material)
+    public BlockCurtainsClosed(Material material, String id)
     {
-        super(material);
+        super(material, id);
         this.setCreativeTab(null);
     }
 

@@ -19,9 +19,9 @@ import java.util.Random;
 
 public class BlockFirePitOff extends BlockFirePit
 {
-    public BlockFirePitOff(Material materialIn)
+    public BlockFirePitOff(Material material, String id)
     {
-        super(materialIn);
+        super(material, id);
         this.setDefaultState(this.blockState.getBaseState().withProperty(STAGE, 0));
     }
 

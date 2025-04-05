@@ -13,9 +13,9 @@ import net.minecraft.world.World;
 
 public class BlockLampOn extends BlockLamp
 {
-    public BlockLampOn(Material material)
+    public BlockLampOn(Material material, String id)
     {
-        super(material, true);
+        super(material, true, id);
         this.setLightLevel(1.0F);
     }
 

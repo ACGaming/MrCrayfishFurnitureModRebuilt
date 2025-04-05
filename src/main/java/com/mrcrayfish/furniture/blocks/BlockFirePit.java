@@ -30,11 +30,13 @@ public abstract class BlockFirePit extends Block
 
     private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.0, 0.0, 0.0, 1.0, 0.1875, 1.0);
 
-    public BlockFirePit(Material materialIn)
+    public BlockFirePit(Material material, String id)
     {
-        super(materialIn);
+        super(material);
         this.setSoundType(SoundType.WOOD);
         this.setHardness(1.0F);
+        this.setUnlocalizedName(id);
+        this.setRegistryName(id);
     }
 
     @Override

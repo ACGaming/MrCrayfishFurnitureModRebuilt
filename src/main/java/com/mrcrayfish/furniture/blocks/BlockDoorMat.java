@@ -30,9 +30,9 @@ public class BlockDoorMat extends BlockFurniture implements ITileEntityProvider
     public static final PropertyInteger COLOUR = PropertyInteger.create("colour", 0, 15);
     private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.0, 0.0, 0.0, 1.0, 0.0625, 1.0);
 
-    public BlockDoorMat(Material material)
+    public BlockDoorMat(Material material, String id)
     {
-        super(material);
+        super(material, id);
         this.setHardness(0.5F);
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
     }

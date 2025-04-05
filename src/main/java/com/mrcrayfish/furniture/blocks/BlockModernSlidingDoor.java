@@ -38,9 +38,9 @@ public class BlockModernSlidingDoor extends BlockFurniture implements IPowered
     private static final AxisAlignedBB[] COLLISION_BOX_TOP_OPENED = new Bounds(6 * 0.0625, -1.0, 0, 10 * 0.0625, 1.0, 2.96 * 0.0625).getRotatedBounds();
 
 
-    public BlockModernSlidingDoor()
+    public BlockModernSlidingDoor(String id)
     {
-        super(Material.WOOD);
+        super(Material.WOOD, id);
         this.setHardness(1.0F);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(TOP, false));
     }

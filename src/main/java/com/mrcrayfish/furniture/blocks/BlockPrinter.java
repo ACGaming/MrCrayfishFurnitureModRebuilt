@@ -25,9 +25,9 @@ public class BlockPrinter extends BlockFurnitureTile
     private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.1, 0.0, 0.1, 0.9, 0.5, 0.9);
 
 
-    public BlockPrinter(Material material)
+    public BlockPrinter(Material material, String id)
     {
-        super(material);
+        super(material, id);
         this.setHardness(1.0F);
         this.setSoundType(SoundType.ANVIL);
     }

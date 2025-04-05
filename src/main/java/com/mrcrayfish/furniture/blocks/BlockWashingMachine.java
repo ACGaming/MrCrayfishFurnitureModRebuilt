@@ -30,9 +30,9 @@ public class BlockWashingMachine extends BlockFurnitureTile
     public static final AxisAlignedBB CENTER_BOX_AND_PANEL = new AxisAlignedBB(1 * 0.0625, 0, 1 * 0.0625, 15 * 0.0625, 1, 15 * 0.0625);
     public static final AxisAlignedBB[] CENTER_BOXES = new AxisAlignedBB[]{new AxisAlignedBB(1 * 0.0625, 0, 2 * 0.0625, 15 * 0.0625, 1, 15 * 0.0625), new AxisAlignedBB(1 * 0.0625, 0, 1 * 0.0625, 14 * 0.0625, 1, 15 * 0.0625), new AxisAlignedBB(1 * 0.0625, 0, 1 * 0.0625, 15 * 0.0625, 1, 14 * 0.0625), new AxisAlignedBB(2 * 0.0625, 0, 1 * 0.0625, 15 * 0.0625, 1, 15 * 0.0625)};
 
-    public BlockWashingMachine(Material material)
+    public BlockWashingMachine(Material material, String id)
     {
-        super(material);
+        super(material, id);
         this.setHardness(1.0F);
         this.setSoundType(SoundType.ANVIL);
     }

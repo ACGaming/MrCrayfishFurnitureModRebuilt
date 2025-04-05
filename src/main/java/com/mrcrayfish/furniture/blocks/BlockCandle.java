@@ -30,14 +30,16 @@ public class BlockCandle extends Block
     public static final AxisAlignedBB CROSS_2 = new AxisAlignedBB(7 * 0.0625, 7 * 0.0625, 2 * 0.0625, 9 * 0.0625, 9 * 0.0625, 14 * 0.0625);
     public static final AxisAlignedBB[] CANDLES = {new AxisAlignedBB(1 * 0.0625, 9 * 0.0625, 6 * 0.0625, 5 * 0.0625, 17 * 0.0625, 10 * 0.0625), new AxisAlignedBB(6 * 0.0625, 9 * 0.0625, 1 * 0.0625, 10 * 0.0625, 17 * 0.0625, 5 * 0.0625), new AxisAlignedBB(11 * 0.0625, 9 * 0.0625, 6 * 0.0625, 15 * 0.0625, 17 * 0.0625, 10 * 0.0625), new AxisAlignedBB(6 * 0.0625, 9 * 0.0625, 11 * 0.0625, 10 * 0.0625, 17 * 0.0625, 15 * 0.0625), new AxisAlignedBB(6 * 0.0625, 9 * 0.0625, 6 * 0.0625, 10 * 0.0625, 20 * 0.0625, 10 * 0.0625)};
 
-    public BlockCandle(Material materialIn)
+    public BlockCandle(Material material, String id)
     {
-        super(materialIn);
+        super(material);
         this.setTickRandomly(true);
         this.setLightLevel(0.8F);
         this.setHardness(1.0F);
         this.setSoundType(SoundType.STONE);
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
+        this.setUnlocalizedName(id);
+        this.setRegistryName(id);
     }
 
     @Override

@@ -18,9 +18,9 @@ import net.minecraft.world.World;
 
 public class BlockOven extends BlockFurnitureTile
 {
-    public BlockOven(Material material)
+    public BlockOven(Material material, String id)
     {
-        super(material);
+        super(material, id);
         this.setHardness(1.0F);
         this.setSoundType(SoundType.METAL);
     }

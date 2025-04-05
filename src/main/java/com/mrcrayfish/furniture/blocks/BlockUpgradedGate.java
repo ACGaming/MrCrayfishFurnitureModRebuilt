@@ -33,10 +33,8 @@ public class BlockUpgradedGate extends BlockFurniture
 
     public BlockUpgradedGate(String id)
     {
-        super(Material.WOOD);
+        super(Material.WOOD, id);
         this.setHardness(2.0F);
-        this.setUnlocalizedName(id);
-        this.setRegistryName(id);
         this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(HINGE, BlockDoor.EnumHingePosition.LEFT).withProperty(OPENED, false);
     }
 

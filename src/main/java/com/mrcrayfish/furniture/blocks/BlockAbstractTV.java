@@ -24,9 +24,9 @@ public abstract class BlockAbstractTV extends BlockFurnitureTile
     private double screenYOffset;
     private double screenZOffset;
 
-    public BlockAbstractTV(Material material, int width, int height, double screenYOffset, double screenZOffset)
+    public BlockAbstractTV(Material material, int width, int height, double screenYOffset, double screenZOffset, String id)
     {
-        super(material);
+        super(material, id);
         this.width = width;
         this.height = height;
         this.screenYOffset = screenYOffset;

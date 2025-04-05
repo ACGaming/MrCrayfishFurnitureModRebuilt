@@ -4,9 +4,9 @@ import net.minecraft.block.material.Material;
 
 public class BlockCurtainsOpen extends BlockCurtains
 {
-    public BlockCurtainsOpen(Material material)
+    public BlockCurtainsOpen(Material material, String id)
     {
-        super(material);
+        super(material, id);
     }
 
     @Override

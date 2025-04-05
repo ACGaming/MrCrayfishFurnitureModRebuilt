@@ -34,13 +34,15 @@ public class BlockWhiteFence extends BlockFence
     private static final AxisAlignedBB COLLISION_BOX_SOUTH = CollisionHelper.getBlockBounds(EnumFacing.SOUTH, 0.5625, 0.0, 0.4375, 1.0, 1.5, 0.5625);
     private static final AxisAlignedBB COLLISION_BOX_WEST = CollisionHelper.getBlockBounds(EnumFacing.WEST, 0.5625, 0.0, 0.4375, 1.0, 1.5, 0.5625);
 
-    public BlockWhiteFence(Material material)
+    public BlockWhiteFence(Material material, String id)
     {
         super(material, material.getMaterialMapColor());
         this.setHardness(2.0F);
         this.setSoundType(SoundType.WOOD);
         this.setDefaultState(this.blockState.getBaseState().withProperty(NORTH, Boolean.FALSE).withProperty(EAST, Boolean.FALSE).withProperty(SOUTH, Boolean.FALSE).withProperty(WEST, Boolean.FALSE));
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
+        this.setUnlocalizedName(id);
+        this.setRegistryName(id);
     }
 
     @Override

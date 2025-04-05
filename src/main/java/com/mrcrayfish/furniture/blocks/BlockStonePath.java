@@ -25,12 +25,14 @@ public class BlockStonePath extends Block
 {
     private static final AxisAlignedBB BOUNDING = new AxisAlignedBB(0.0, 0.0, 0.0, 1.0, 0.0625, 1.0);
 
-    public BlockStonePath(Material material)
+    public BlockStonePath(Material material, String id)
     {
         super(material);
         this.setHardness(0.75F);
         this.setSoundType(SoundType.STONE);
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
+        this.setUnlocalizedName(id);
+        this.setRegistryName(id);
     }
 
     @Override

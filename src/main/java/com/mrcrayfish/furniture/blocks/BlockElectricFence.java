@@ -21,9 +21,9 @@ public class BlockElectricFence extends BlockWhiteFence
 {
     public static final DamageSource ELECTRIC_FENCE = new DamageSourceElectrocution("electricFence");
 
-    public BlockElectricFence(Material material)
+    public BlockElectricFence(Material material, String id)
     {
-        super(material);
+        super(material, id);
         this.setHardness(1.0F);
         this.setSoundType(SoundType.ANVIL);
         this.setLightLevel(0.2F);

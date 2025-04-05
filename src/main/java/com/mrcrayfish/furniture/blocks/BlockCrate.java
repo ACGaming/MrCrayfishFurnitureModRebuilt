@@ -30,12 +30,14 @@ import java.util.Random;
 
 public class BlockCrate extends Block implements ITileEntityProvider
 {
-    public BlockCrate(Material materialIn)
+    public BlockCrate(Material material, String id)
     {
-        super(materialIn);
+        super(material);
         this.setHardness(1.0F);
         this.setSoundType(SoundType.WOOD);
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
+        this.setUnlocalizedName(id);
+        this.setRegistryName(id);
     }
 
     @Override

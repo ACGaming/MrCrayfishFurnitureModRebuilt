@@ -26,9 +26,9 @@ public class BlockBin extends BlockFurnitureTile
     private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(2 * 0.0625, 0.0, 2 * 0.0625, 14 * 0.0625, 13 * 0.0625, 14 * 0.0625);
     private static final AxisAlignedBB COLLISION_BOX = new AxisAlignedBB(2 * 0.0625, 0.0, 2 * 0.0625, 14 * 0.0625, 13 * 0.0625, 14 * 0.0625);
 
-    public BlockBin(Material material)
+    public BlockBin(Material material, String id)
     {
-        super(material);
+        super(material, id);
         this.setSoundType(SoundType.ANVIL);
         this.setHardness(0.5F);
     }

@@ -46,7 +46,7 @@ public class BlockPresent extends Block implements ITileEntityProvider
 
     private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.25, 0.0, 0.25, 0.75, 0.35, 0.75);
 
-    public BlockPresent(Material material)
+    public BlockPresent(Material material, String id)
     {
         super(material);
         this.setHardness(0.5F);
@@ -54,6 +54,8 @@ public class BlockPresent extends Block implements ITileEntityProvider
         this.hasTileEntity = true;
         this.setDefaultState(this.blockState.getBaseState().withProperty(COLOUR, EnumDyeColor.WHITE));
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
+        this.setUnlocalizedName(id);
+        this.setRegistryName(id);
     }
 
     @Override

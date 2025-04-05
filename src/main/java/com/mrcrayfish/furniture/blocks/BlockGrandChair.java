@@ -38,9 +38,9 @@ public class BlockGrandChair extends BlockFurniture
     private static final AxisAlignedBB COLLISION_BOX_TOP_WEST = CollisionHelper.getBlockBounds(EnumFacing.WEST, 13 * 0.0625, 0.0, 0.0, 1.0, 0.8, 1.0);
     private static final AxisAlignedBB[] COLLISION_BOX_TOP = {COLLISION_BOX_TOP_SOUTH, COLLISION_BOX_TOP_WEST, COLLISION_BOX_TOP_NORTH, COLLISION_BOX_TOP_EAST};
 
-    public BlockGrandChair(Material materialIn, boolean top)
+    public BlockGrandChair(Material material, boolean top, String id)
     {
-        super(materialIn);
+        super(material, id);
         this.setHardness(1.0F);
         this.setSoundType(SoundType.WOOD);
         if(top) this.setCreativeTab(null);

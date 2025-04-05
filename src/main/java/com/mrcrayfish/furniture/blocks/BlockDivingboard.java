@@ -43,9 +43,9 @@ public class BlockDivingboard extends BlockFurniture
     private static final AxisAlignedBB BOARD_TWO = CollisionHelper.getBlockBounds(EnumFacing.EAST, 0.0, 4 * 0.0625, 2 * 0.0625, 1.0, 6 * 0.0625, 14 * 0.0625);
     private static final AxisAlignedBB BOARD[] = {BOARD_ONE, BOARD_TWO};
 
-    public BlockDivingboard(Material material, boolean plank)
+    public BlockDivingboard(Material material, boolean plank, String id)
     {
-        super(material);
+        super(material, id);
         this.setHardness(1.0F);
         if(plank)
         {

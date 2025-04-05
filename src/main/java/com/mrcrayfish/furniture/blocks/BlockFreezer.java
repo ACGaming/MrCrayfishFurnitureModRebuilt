@@ -29,9 +29,9 @@ public class BlockFreezer extends BlockFurnitureTile
 
     public static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0, 0, 0, 1, 2, 1);
 
-    public BlockFreezer(Material material)
+    public BlockFreezer(Material material, String id)
     {
-        super(material);
+        super(material, id);
         this.setHardness(2.0F);
         this.setSoundType(SoundType.METAL);
     }

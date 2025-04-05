@@ -15,9 +15,9 @@ import java.util.Random;
 
 public class BlockFirePitOn extends BlockFirePit
 {
-    public BlockFirePitOn(Material materialIn)
+    public BlockFirePitOn(Material material, String id)
     {
-        super(materialIn);
+        super(material, id);
         this.setLightLevel(1.0F);
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
     }

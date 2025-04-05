@@ -28,9 +28,9 @@ public class BlockMailBox extends BlockFurnitureTile
 {
     private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.1875, 0.0F, 0.1875, 0.8125, 1.1625, 0.8125);
 
-    public BlockMailBox(Material material)
+    public BlockMailBox(Material material, String id)
     {
-        super(material);
+        super(material, id);
         this.setSoundType(SoundType.WOOD);
         this.setHardness(1.0F);
     }

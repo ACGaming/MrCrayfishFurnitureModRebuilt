@@ -39,9 +39,9 @@ public class BlockGrill extends BlockFurnitureTile
     public static final AxisAlignedBB[] GRILL = {new AxisAlignedBB(2 * 0.0625, 5 * 0.0625, 3 * 0.0625, 14 * 0.0625, 5 * 0.0625, 13 * 0.0625), new AxisAlignedBB(3 * 0.0625, 5 * 0.0625, 2 * 0.0625, 13 * 0.0625, 5 * 0.0625, 14 * 0.0625), new AxisAlignedBB(2 * 0.0625, 5 * 0.0625, 3 * 0.0625, 14 * 0.0625, 5 * 0.0625, 13 * 0.0625), new AxisAlignedBB(3 * 0.0625, 5 * 0.0625, 2 * 0.0625, 13 * 0.0625, 5 * 0.0625, 14 * 0.0625)};
     public static final AxisAlignedBB[] LEGS = {new AxisAlignedBB(13 * 0.0625, 0, 2.5 * 0.0625, 14.5 * 0.0625, 12 * 0.0625, 4 * 0.0625), new AxisAlignedBB(1.5 * 0.0625, 0, 2.5 * 0.0625, 3 * 0.0625, 12 * 0.0625, 4 * 0.0625), new AxisAlignedBB(14.5 * 0.0625, 0, 12 * 0.0625, 13 * 0.0625, 12 * 0.0625, 13.5 * 0.0625), new AxisAlignedBB(1.5 * 0.0625, 0, 12 * 0.0625, 3 * 0.0625, 12 * 0.0625, 13.5 * 0.0625), new AxisAlignedBB(12 * 0.0625, 0, 1.5 * 0.0625, 13.5 * 0.0625, 12 * 0.0625, 3 * 0.0625), new AxisAlignedBB(2.5 * 0.0625, 0, 1.5 * 0.0625, 4 * 0.0625, 12 * 0.0625, 3 * 0.0625), new AxisAlignedBB(12 * 0.0625, 0, 13 * 0.0625, 13.5 * 0.0625, 12 * 0.0625, 14.5 * 0.0625), new AxisAlignedBB(2.5 * 0.0625, 0, 13 * 0.0625, 4 * 0.0625, 12 * 0.0625, 14.5 * 0.0625), new AxisAlignedBB(13 * 0.0625, 0, 2.5 * 0.0625, 14.5 * 0.0625, 12 * 0.0625, 4 * 0.0625), new AxisAlignedBB(1.5 * 0.0625, 0, 2.5 * 0.0625, 3 * 0.0625, 12 * 0.0625, 4 * 0.0625), new AxisAlignedBB(14.5 * 0.0625, 0, 12 * 0.0625, 13 * 0.0625, 12 * 0.0625, 13.5 * 0.0625), new AxisAlignedBB(1.5 * 0.0625, 0, 12 * 0.0625, 3 * 0.0625, 12 * 0.0625, 13.5 * 0.0625), new AxisAlignedBB(12 * 0.0625, 0, 1.5 * 0.0625, 13.5 * 0.0625, 12 * 0.0625, 3 * 0.0625), new AxisAlignedBB(2.5 * 0.0625, 0, 1.5 * 0.0625, 4 * 0.0625, 12 * 0.0625, 3 * 0.0625), new AxisAlignedBB(12 * 0.0625, 0, 13 * 0.0625, 13.5 * 0.0625, 12 * 0.0625, 14.5 * 0.0625), new AxisAlignedBB(2.5 * 0.0625, 0, 13 * 0.0625, 4 * 0.0625, 12 * 0.0625, 14.5 * 0.0625)};
 
-    public BlockGrill(Material material)
+    public BlockGrill(Material material, String id)
     {
-        super(material);
+        super(material, id);
         this.setHardness(1.5F);
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
     }

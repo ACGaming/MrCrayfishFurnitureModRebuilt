@@ -36,9 +36,9 @@ public class BlockCabinetKitchen extends BlockFurnitureTile
 
     public static final AxisAlignedBB[] COLLISION_BOXES = {new AxisAlignedBB(0, 0, 2 * 0.0625, 1, 1, 1), new AxisAlignedBB(0, 0, 0, 14 * 0.0625, 1, 1), new AxisAlignedBB(0, 0, 0, 1, 1, 14 * 0.0625), new AxisAlignedBB(2 * 0.0625, 0, 0, 1, 1, 1)};
 
-    public BlockCabinetKitchen(Material material)
+    public BlockCabinetKitchen(Material material, String id)
     {
-        super(material);
+        super(material, id);
         this.setHardness(0.5F);
         this.setSoundType(SoundType.WOOD);
     }

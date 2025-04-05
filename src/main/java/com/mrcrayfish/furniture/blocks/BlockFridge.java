@@ -30,9 +30,9 @@ public class BlockFridge extends BlockFurnitureTile
 
     public static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0, -1, 0, 1, 1, 1);
 
-    public BlockFridge(Material material)
+    public BlockFridge(Material material, String id)
     {
-        super(material);
+        super(material, id);
         this.setHardness(2.0F);
         this.setSoundType(SoundType.METAL);
         this.setCreativeTab(null);

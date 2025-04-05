@@ -26,11 +26,9 @@ public class BlockTVStand extends BlockFurnitureTile
 {
     public static final PropertyEnum<Type> TYPE = PropertyEnum.create("type", Type.class);
 
-    public BlockTVStand()
+    public BlockTVStand(String id)
     {
-        super(Material.WOOD);
-        this.setUnlocalizedName("tv_stand");
-        this.setRegistryName("tv_stand");
+        super(Material.WOOD, id);
         this.setHardness(0.5F);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(TYPE, Type.NONE));
     }

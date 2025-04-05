@@ -25,13 +25,13 @@ import java.util.Random;
 
 public class BlockFireAlarm extends BlockFurniture
 {
-    private boolean on = false;
+    private boolean on;
 
     private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(5 * 0.0625, 0.875, 5 * 0.0625, 11 * 0.0625, 1.0, 11 * 0.0625);
 
-    public BlockFireAlarm(Material material, boolean on)
+    public BlockFireAlarm(Material material, boolean on, String id)
     {
-        super(material);
+        super(material, id);
         this.setHardness(0.5F);
         this.setSoundType(SoundType.STONE);
         this.on = on;

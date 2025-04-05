@@ -28,9 +28,9 @@ public class BlockDesk extends BlockFurniture implements IDesk
 {
     public static final PropertyEnum<DeskType> TYPE = PropertyEnum.create("type", DeskType.class);
 
-    public BlockDesk(Material material)
+    public BlockDesk(Material material, String id)
     {
-        super(material);
+        super(material, id);
         this.setHardness(1.0F);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(TYPE, DeskType.NONE));
     }

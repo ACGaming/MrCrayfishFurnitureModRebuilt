@@ -28,11 +28,9 @@ public class BlockModernTV extends BlockAbstractTV
     private static final AxisAlignedBB[] COLLISION_BOX = new Bounds(7, 0, -4, 10, 17, 20).getRotatedBounds();
     private static final AxisAlignedBB[] COLLISION_BOX_MOUNTED = new Bounds(13, 3, -4, 15, 17, 20).getRotatedBounds();
 
-    public BlockModernTV()
+    public BlockModernTV(String id)
     {
-        super(Material.ANVIL, 22, 12, 4, -0.35);
-        this.setUnlocalizedName("modern_tv");
-        this.setRegistryName("modern_tv");
+        super(Material.ANVIL, 22, 12, 4, -0.35, id);
         this.setHardness(1.0F);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(MOUNTED, false));
     }

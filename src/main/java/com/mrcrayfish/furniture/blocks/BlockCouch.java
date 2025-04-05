@@ -61,9 +61,9 @@ public abstract class BlockCouch extends BlockFurnitureTile
     private static final AxisAlignedBB COUCH_ARMREST_RIGHT_WEST = CollisionHelper.getBlockBounds(EnumFacing.WEST, 0.0, 0.5, 0.0, 1.0, 0.9, 0.1);
     private static final AxisAlignedBB[] COUCH_ARMREST_RIGHT = {COUCH_ARMREST_RIGHT_SOUTH, COUCH_ARMREST_RIGHT_WEST, COUCH_ARMREST_RIGHT_NORTH, COUCH_ARMREST_RIGHT_EAST};
 
-    public BlockCouch()
+    public BlockCouch(String id)
     {
-        super(Material.CLOTH);
+        super(Material.CLOTH, id);
         this.setHardness(0.5F);
         this.setSoundType(SoundType.CLOTH);
 

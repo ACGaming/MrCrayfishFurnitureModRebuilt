@@ -40,11 +40,9 @@ public class BlockDigitalClock extends BlockFurnitureTile
     private static final AxisAlignedBB[] COLLISION_BOXES = new Bounds(6, 0, 4, 9, 4, 12).getRotatedBounds();
     private static final AxisAlignedBB[] SELECTION_BOXES = new Bounds(5, 0, 3, 10, 5, 13).getRotatedBounds();
 
-    public BlockDigitalClock()
+    public BlockDigitalClock(String id)
     {
-        super(Material.WOOD);
-        this.setUnlocalizedName("digital_clock");
-        this.setRegistryName("digital_clock");
+        super(Material.WOOD, id);
         this.setLightLevel(0.5F);
         this.setHardness(0.5F);
     }

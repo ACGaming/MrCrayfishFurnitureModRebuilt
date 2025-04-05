@@ -17,6 +17,11 @@ import javax.annotation.Nullable;
 
 public class BlockCouchNormal extends BlockCouch
 {
+    public BlockCouchNormal(String id)
+    {
+        super(id);
+    }
+
     @Override
     public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack)
     {

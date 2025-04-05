@@ -21,10 +21,8 @@ public class BlockModernTable extends BlockTable
 
     public BlockModernTable(String id)
     {
-        super(Material.WOOD, SoundType.WOOD);
+        super(Material.WOOD, SoundType.WOOD, id);
         this.setHardness(1.0F);
-        this.setUnlocalizedName(id);
-        this.setRegistryName(id);
     }
 
     @Override

@@ -20,9 +20,9 @@ public class BlockMantelPiece extends BlockFurniture
     private static final AxisAlignedBB BOUNDING_BOX_WEST = CollisionHelper.getBlockBounds(EnumFacing.WEST, 0.625, 0.0, -0.5, 1.0, 1.4, 1.5);
     private static final AxisAlignedBB[] BOUNDING_BOX = {BOUNDING_BOX_SOUTH, BOUNDING_BOX_WEST, BOUNDING_BOX_NORTH, BOUNDING_BOX_EAST};
 
-    public BlockMantelPiece(Material materialIn)
+    public BlockMantelPiece(Material material, String id)
     {
-        super(materialIn);
+        super(material, id);
         this.setHardness(1.0F);
     }
 

@@ -18,9 +18,9 @@ import com.mrcrayfish.furniture.util.InventoryUtil;
 
 public abstract class BlockFurnitureTile extends BlockFurniture implements ITileEntityProvider
 {
-    public BlockFurnitureTile(Material material)
+    public BlockFurnitureTile(Material material, String id)
     {
-        super(material);
+        super(material, id);
         this.hasTileEntity = true;
     }
 

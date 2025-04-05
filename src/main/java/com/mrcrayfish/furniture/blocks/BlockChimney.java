@@ -27,7 +27,7 @@ public class BlockChimney extends Block
 
     private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.125, 0.0, 0.125, 0.875, 1.0, 0.875);
 
-    public BlockChimney(Material material)
+    public BlockChimney(Material material, String id)
     {
         super(material);
         this.setDefaultState(this.blockState.getBaseState().withProperty(TYPE, ChimneyType.TOP));
@@ -35,6 +35,8 @@ public class BlockChimney extends Block
         this.setHardness(1.0F);
         this.setSoundType(SoundType.STONE);
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
+        this.setUnlocalizedName(id);
+        this.setRegistryName(id);
     }
 
     @Override

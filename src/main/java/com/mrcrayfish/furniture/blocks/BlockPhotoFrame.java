@@ -37,12 +37,10 @@ public class BlockPhotoFrame extends BlockFurnitureTile
 
     private static final AxisAlignedBB[] BOUNDING_BOX = new Bounds(15, 0, 0, 16, 16, 16).getRotatedBounds();
 
-    public BlockPhotoFrame()
+    public BlockPhotoFrame(String id)
     {
-        super(Material.WOOD);
+        super(Material.WOOD, id);
         this.setHardness(0.5F);
-        this.setUnlocalizedName("photo_frame");
-        this.setRegistryName("photo_frame");
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
     }
 

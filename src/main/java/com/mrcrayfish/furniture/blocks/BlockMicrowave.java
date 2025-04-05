@@ -32,9 +32,9 @@ public class BlockMicrowave extends BlockFurnitureTile
     private static final AxisAlignedBB BOUNDING_BOX_WEST = CollisionHelper.getBlockBounds(EnumFacing.WEST, 2 * 0.0625, 0.0, 0 * 0.0625, 14 * 0.0625, 9 * 0.0625, 16 * 0.0625);
     private static final AxisAlignedBB[] BOUNDING_BOX = {BOUNDING_BOX_SOUTH, BOUNDING_BOX_WEST, BOUNDING_BOX_NORTH, BOUNDING_BOX_EAST};
 
-    public BlockMicrowave(Material material)
+    public BlockMicrowave(Material material, String id)
     {
-        super(material);
+        super(material, id);
         this.setHardness(0.5F);
         this.setSoundType(SoundType.ANVIL);
     }

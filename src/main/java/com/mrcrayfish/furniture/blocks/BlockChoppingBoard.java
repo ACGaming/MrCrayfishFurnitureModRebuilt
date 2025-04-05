@@ -30,9 +30,9 @@ public class BlockChoppingBoard extends BlockFurnitureTile
     private static final AxisAlignedBB COLLISION_BOX_ONE = CollisionHelper.getBlockBounds(EnumFacing.NORTH, 0.0, 0.0, 3 * 0.0625, 1.0, 0.0625, 13 * 0.0625);
     private static final AxisAlignedBB COLLISION_BOX_TWO = CollisionHelper.getBlockBounds(EnumFacing.EAST, 0.0, 0.0, 3 * 0.0625, 1.0, 0.0625, 13 * 0.0625);
 
-    public BlockChoppingBoard(Material material)
+    public BlockChoppingBoard(Material material, String id)
     {
-        super(material);
+        super(material, id);
         this.setHardness(0.5F);
         this.setSoundType(SoundType.WOOD);
     }

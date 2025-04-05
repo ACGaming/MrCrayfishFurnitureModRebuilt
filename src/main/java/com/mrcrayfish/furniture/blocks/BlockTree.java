@@ -31,9 +31,9 @@ public class BlockTree extends BlockFurnitureTile
     private static final AxisAlignedBB BOUNDING_BOX_BOTTOM_ALT = new AxisAlignedBB(0.0625, 0.0, 0.0625, 0.9375, 1.0, 0.9375);
     private static final AxisAlignedBB BOUNDING_BOX_TOP = new AxisAlignedBB(0.0625, -1.0, 0.0625, 0.9375, 1.0, 0.9375);
 
-    public BlockTree(Material material, boolean top)
+    public BlockTree(Material material, boolean top, String id)
     {
-        super(material);
+        super(material, id);
         this.setSoundType(SoundType.WOOD);
         this.setLightLevel(0.3F);
         this.setHardness(0.5F);

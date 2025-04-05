@@ -30,9 +30,9 @@ public class BlockFairyLight extends BlockFurniture
     private static final AxisAlignedBB BOUNDING_BOX_WEST = CollisionHelper.getBlockBounds(EnumFacing.WEST, 0.375, 0.6875, 0.0, 0.6875, 1.0, 1.0);
     private static final AxisAlignedBB[] BOUNDING_BOX = {BOUNDING_BOX_SOUTH, BOUNDING_BOX_WEST, BOUNDING_BOX_NORTH, BOUNDING_BOX_EAST};
 
-    public BlockFairyLight(Material materialIn)
+    public BlockFairyLight(Material material, String id)
     {
-        super(materialIn);
+        super(material, id);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(TYPE, FairyLightType.EVEN));
         this.setLightLevel(0.5F);
         this.setHardness(0.5F);

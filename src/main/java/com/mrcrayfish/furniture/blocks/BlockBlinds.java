@@ -31,9 +31,9 @@ public class BlockBlinds extends BlockFurniture
     public static final PropertyBool LEFT = PropertyBool.create("left");
     private static final AxisAlignedBB[] BOUNDING_BOX = new Bounds(0.875, 0.0, 0.0, 1.0, 1.0, 1.0).getRotatedBounds();
 
-    public BlockBlinds(Material material, boolean open)
+    public BlockBlinds(Material material, boolean open, String id)
     {
-        super(material);
+        super(material, id);
         this.setHardness(0.5F);
         this.setSoundType(SoundType.WOOD);
         this.setDefaultState(this.blockState.getBaseState().withProperty(LEFT, false));

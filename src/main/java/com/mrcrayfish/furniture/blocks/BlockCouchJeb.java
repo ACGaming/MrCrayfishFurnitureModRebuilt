@@ -2,8 +2,9 @@ package com.mrcrayfish.furniture.blocks;
 
 public class BlockCouchJeb extends BlockCouch
 {
-    public BlockCouchJeb()
+    public BlockCouchJeb(String id)
     {
+        super(id);
         this.setCreativeTab(null);
     }
 

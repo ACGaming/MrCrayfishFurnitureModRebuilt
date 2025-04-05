@@ -43,9 +43,9 @@ public class BlockToilet extends BlockFurniture
 
     private static final AxisAlignedBB COLLISION_BOX_SEAT = new AxisAlignedBB(0.0, 0.0, 0.0, 1.0, 0.5, 1.0);
 
-    public BlockToilet(Material material)
+    public BlockToilet(Material material, String id)
     {
-        super(material);
+        super(material, id);
         this.setHardness(1.0F);
         this.setSoundType(SoundType.STONE);
     }

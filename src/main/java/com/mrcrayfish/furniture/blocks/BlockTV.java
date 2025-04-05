@@ -11,9 +11,9 @@ public class BlockTV extends BlockAbstractTV
 {
     private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.0625, 0.0, 0.0625, 0.9375, 0.875, 0.9375);
 
-    public BlockTV(Material material)
+    public BlockTV(Material material, String id)
     {
-        super(material, 10, 10, 1.5, -6.1);
+        super(material, 10, 10, 1.5, -6.1, id);
         this.setHardness(1.0F);
         this.setSoundType(SoundType.METAL);
     }

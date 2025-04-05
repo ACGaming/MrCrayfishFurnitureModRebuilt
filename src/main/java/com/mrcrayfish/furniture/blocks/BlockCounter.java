@@ -45,9 +45,9 @@ public class BlockCounter extends BlockFurnitureTile
 
     public static final PropertyEnum<CounterType> TYPE = PropertyEnum.create("type", CounterType.class);
 
-    public BlockCounter(Material material)
+    public BlockCounter(Material material, String id)
     {
-        super(material);
+        super(material, id);
         this.setHardness(0.5F);
         this.setSoundType(SoundType.STONE);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(TYPE, CounterType.NORMAL));

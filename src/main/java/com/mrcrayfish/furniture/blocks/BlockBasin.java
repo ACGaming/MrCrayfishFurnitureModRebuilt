@@ -37,9 +37,9 @@ public class BlockBasin extends BlockFurniture
 
     public static final PropertyBool FILLED = PropertyBool.create("filled");
 
-    public BlockBasin(Material material)
+    public BlockBasin(Material material, String id)
     {
-        super(material);
+        super(material, id);
         this.setHardness(1.0F);
         this.setSoundType(SoundType.STONE);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(FILLED, Boolean.FALSE));

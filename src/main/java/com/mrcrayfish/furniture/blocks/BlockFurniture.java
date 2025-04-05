@@ -15,11 +15,13 @@ import net.minecraft.world.World;
 
 public class BlockFurniture extends BlockHorizontal
 {
-    public BlockFurniture(Material material)
+    public BlockFurniture(Material material, String id)
     {
         super(material, material.getMaterialMapColor());
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
+        this.setUnlocalizedName(id);
+        this.setRegistryName(id);
     }
 
     @Override

@@ -35,13 +35,15 @@ public class BlockCookieJar extends Block implements ITileEntityProvider
 
     private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(4 * 0.0625, 0.0, 4 * 0.0625, 12 * 0.0625, 0.65, 12 * 0.0625);
 
-    public BlockCookieJar(Material material)
+    public BlockCookieJar(Material material, String id)
     {
         super(material);
         this.setHardness(0.5F);
         this.setSoundType(SoundType.GLASS);
         this.setDefaultState(this.blockState.getBaseState().withProperty(COOKIE_COUNT, 0));
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
+        this.setUnlocalizedName(id);
+        this.setRegistryName(id);
     }
 
     @Override

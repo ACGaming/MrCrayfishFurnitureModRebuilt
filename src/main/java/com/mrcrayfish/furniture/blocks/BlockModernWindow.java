@@ -23,7 +23,7 @@ public class BlockModernWindow extends BlockPane
     public static final PropertyBool PANE_UP = PropertyBool.create("pane_up");
     public static final PropertyBool PANE_DOWN = PropertyBool.create("pane_down");
 
-    public BlockModernWindow()
+    public BlockModernWindow(String id)
     {
         super(Material.WOOD, true);
         this.setHardness(1.0F);
@@ -39,6 +39,8 @@ public class BlockModernWindow extends BlockPane
                 .withProperty(PANE_WEST, Boolean.FALSE)
                 .withProperty(PANE_UP, Boolean.FALSE)
                 .withProperty(PANE_DOWN, Boolean.FALSE));
+        this.setUnlocalizedName(id);
+        this.setRegistryName(id);
     }
 
     @Override

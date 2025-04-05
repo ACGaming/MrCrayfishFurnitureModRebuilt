@@ -29,12 +29,14 @@ public class BlockBirdBath extends Block
     public static final AxisAlignedBB TOP = new AxisAlignedBB(1 * 0.0625, 11.25 * 0.0625, 1 * 0.0625, 15 * 0.0625, 12.75 * 0.0625, 15 * 0.0625);
     public static final AxisAlignedBB BOWL = new AxisAlignedBB(0, 12.75 * 0.0625, 0, 1, 14.5 * 0.0625, 1);
 
-    public BlockBirdBath(Material material)
+    public BlockBirdBath(Material material, String id)
     {
         super(material);
         this.setHardness(1.0F);
         this.setSoundType(SoundType.STONE);
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
+        this.setUnlocalizedName(id);
+        this.setRegistryName(id);
     }
 
     @Override

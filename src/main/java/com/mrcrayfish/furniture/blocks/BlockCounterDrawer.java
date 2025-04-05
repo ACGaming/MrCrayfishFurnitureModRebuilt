@@ -38,9 +38,9 @@ public class BlockCounterDrawer extends BlockFurnitureTile
 {
     public static final PropertyInteger COLOUR = PropertyInteger.create("colour", 0, 15);
 
-    public BlockCounterDrawer(Material material)
+    public BlockCounterDrawer(Material material, String id)
     {
-        super(material);
+        super(material, id);
         this.setHardness(0.5F);
         this.setSoundType(SoundType.STONE);
     }

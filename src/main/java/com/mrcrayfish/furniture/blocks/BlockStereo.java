@@ -39,9 +39,9 @@ public class BlockStereo extends BlockFurnitureTile
 
     public static ArrayList<ItemRecord> records = new ArrayList<>();
 
-    public BlockStereo(Material material)
+    public BlockStereo(Material material, String id)
     {
-        super(material);
+        super(material, id);
         this.setHardness(1.0F);
         this.setSoundType(SoundType.METAL);
 

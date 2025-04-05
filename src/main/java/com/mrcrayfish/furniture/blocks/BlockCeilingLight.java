@@ -30,7 +30,7 @@ public class BlockCeilingLight extends Block implements IPowered
 
     private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(5 * 0.0625, 0.4, 5 * 0.0625, 11 * 0.0625, 1.0, 11F * 0.0625);
 
-    public BlockCeilingLight(Material material, boolean on)
+    public BlockCeilingLight(Material material, boolean on, String id)
     {
         super(material);
         this.setHardness(0.5F);
@@ -42,7 +42,8 @@ public class BlockCeilingLight extends Block implements IPowered
             this.setLightLevel(1.0F);
         }
         this.setDefaultState(this.blockState.getBaseState().withProperty(MODE, Mode.RIGHT_CLICK));
-
+        this.setUnlocalizedName(id);
+        this.setRegistryName(id);
     }
 
     @Override
