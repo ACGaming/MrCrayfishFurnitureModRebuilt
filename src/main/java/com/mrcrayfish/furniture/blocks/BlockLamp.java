@@ -68,10 +68,15 @@ public class BlockLamp extends BlockDirectional
     @Override
     public IBlockState getActualState(IBlockState state, IBlockAccess world, BlockPos pos)
     {
-        EnumFacing lampFacing = state.getValue(FACING);
+        boolean blockAbove = !world.isAirBlock(pos.up());
+        boolean blockBelow = !world.isAirBlock(pos.down()) && !(world.getBlockState(pos.down()).getBlock() instanceof BlockLamp);
+
+        EnumFacing lampFacing = blockAbove && !blockBelow ? EnumFacing.DOWN : EnumFacing.UP;
+
         boolean up = world.getBlockState(pos.offset(lampFacing)).getBlock() instanceof BlockLamp;
         boolean down = world.getBlockState(pos.offset(lampFacing.getOpposite())).getBlock() instanceof BlockLamp;
-        return state.withProperty(UP, up).withProperty(DOWN, down);
+
+        return state.withProperty(FACING, lampFacing).withProperty(UP, up).withProperty(DOWN, down);
     }
 
     @Override
