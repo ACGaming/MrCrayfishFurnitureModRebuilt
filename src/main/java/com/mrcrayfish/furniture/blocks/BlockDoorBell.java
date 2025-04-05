@@ -109,7 +109,7 @@ public class BlockDoorBell extends BlockFurniture
         {
             worldIn.setBlockState(pos, state.withProperty(POWERED, true), 3);
             worldIn.markBlockRangeForRenderUpdate(pos, pos);
-            worldIn.playSound(null, pos, FurnitureSounds.door_bell, SoundCategory.BLOCKS, 1.0F, 1.0F);
+            worldIn.playSound(null, pos, FurnitureSounds.door_bell, SoundCategory.BLOCKS, 4.0F, 1.0F);
             worldIn.scheduleUpdate(pos, this, this.tickRate(worldIn));
             Triggers.trigger(Triggers.CLICKED_DOORBELL, playerIn);
             return true;
