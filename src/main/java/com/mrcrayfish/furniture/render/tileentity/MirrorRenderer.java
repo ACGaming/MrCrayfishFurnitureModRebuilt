@@ -8,7 +8,6 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.EntityRenderer;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.OpenGlHelper;
-import net.minecraft.client.renderer.RenderGlobal;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.client.settings.GameSettings;
 import net.minecraft.entity.Entity;
@@ -142,7 +141,6 @@ public class MirrorRenderer extends TileEntitySpecialRenderer<TileEntityMirror>
                     continue;
 
                 GameSettings settings = mc.gameSettings;
-                RenderGlobal renderBackup = mc.renderGlobal;
                 Entity entityBackup = mc.getRenderViewEntity();
                 int thirdPersonBackup = settings.thirdPersonView;
                 boolean hideGuiBackup = settings.hideGUI;
@@ -174,7 +172,6 @@ public class MirrorRenderer extends TileEntitySpecialRenderer<TileEntityMirror>
                 ClientProxy.renderEntity = null;
                 ClientProxy.rendering = false;
 
-                mc.renderGlobal = renderBackup;
                 mc.setRenderViewEntity(entityBackup);
                 settings.fovSetting = fovBackup;
                 settings.thirdPersonView = thirdPersonBackup;
