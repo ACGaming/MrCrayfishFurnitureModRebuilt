@@ -22,7 +22,6 @@ public class ConfigurationHandler
     public static boolean allowAllWashingMachine = false;
     public static boolean api_debug = false;
     public static boolean integrationBiomesOPlenty = true;
-    public static boolean mirrorClouds = false;
     public static boolean mirrorEnabled = true;
     public static float mirrorFov = 80F;
     public static int mirrorQuality = 64;
@@ -66,7 +65,6 @@ public class ConfigurationHandler
         allowAllDishwasher = config.getBoolean("allow-all-dishwasher", CATEGORY_SETTINGS, false, "Whether to allow all tools to be cleaned inside a dishwasher.");
         allowAllWashingMachine = config.getBoolean("allow-all-washing-machine", CATEGORY_SETTINGS, false, "Whether to allow all armor to be cleaned inside a washing machine.");
         api_debug = config.getBoolean("recipe-api-debug", CATEGORY_SETTINGS, false, "Whether to print out information about RecipeAPI. Recommended 'true' for people trying to add custom recipes.");
-        mirrorClouds = config.getBoolean("mirror-clouds", CATEGORY_SETTINGS, false, "Whether the mirror should render clouds.");
         mirrorEnabled = config.getBoolean("mirror-enabled", CATEGORY_SETTINGS, true, "Whether the mirror should render a reflection.");
         mirrorFov = config.getFloat("mirror-fov", CATEGORY_SETTINGS, 80F, 10F, 100F, "The field of view for the mirror.");
         mirrorQuality = config.getInt("mirror-quality", CATEGORY_SETTINGS, 64, 16, 512, "The resolution for the mirror. Higher numbers result in better quality but worse performance.");

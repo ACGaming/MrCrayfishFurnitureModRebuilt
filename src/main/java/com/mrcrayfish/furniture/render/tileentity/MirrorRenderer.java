@@ -1,6 +1,5 @@
 package com.mrcrayfish.furniture.render.tileentity;
 
-import com.mrcrayfish.furniture.client.MirrorRenderGlobal;
 import com.mrcrayfish.furniture.entity.EntityMirror;
 import com.mrcrayfish.furniture.handler.ConfigurationHandler;
 import com.mrcrayfish.furniture.proxy.ClientProxy;
@@ -10,7 +9,6 @@ import net.minecraft.client.renderer.EntityRenderer;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.OpenGlHelper;
 import net.minecraft.client.renderer.RenderGlobal;
-import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.client.settings.GameSettings;
 import net.minecraft.entity.Entity;
@@ -29,7 +27,6 @@ import java.util.concurrent.ConcurrentHashMap;
 public class MirrorRenderer extends TileEntitySpecialRenderer<TileEntityMirror>
 {
     private static Minecraft mc = Minecraft.getMinecraft();
-    public static RenderGlobal mirrorGlobalRenderer = new MirrorRenderGlobal(mc);
     private int quality = ConfigurationHandler.mirrorQuality;
     private long renderEndNanoTime;
 
@@ -144,51 +141,47 @@ public class MirrorRenderer extends TileEntitySpecialRenderer<TileEntityMirror>
                 if(!mc.player.canEntityBeSeen(entity))
                     continue;
 
-                if(entity.getDistance(mc.player) < 5)
-                {
-                    GameSettings settings = mc.gameSettings;
-                    RenderGlobal renderBackup = mc.renderGlobal;
-                    Entity entityBackup = mc.getRenderViewEntity();
-                    int thirdPersonBackup = settings.thirdPersonView;
-                    boolean hideGuiBackup = settings.hideGUI;
-                    int mipmapBackup = settings.mipmapLevels;
-                    float fovBackup = settings.fovSetting;
-                    int widthBackup = mc.displayWidth;
-                    int heightBackup = mc.displayHeight;
+                GameSettings settings = mc.gameSettings;
+                RenderGlobal renderBackup = mc.renderGlobal;
+                Entity entityBackup = mc.getRenderViewEntity();
+                int thirdPersonBackup = settings.thirdPersonView;
+                boolean hideGuiBackup = settings.hideGUI;
+                int mipmapBackup = settings.mipmapLevels;
+                float fovBackup = settings.fovSetting;
+                int widthBackup = mc.displayWidth;
+                int heightBackup = mc.displayHeight;
 
-                    mc.renderGlobal = mirrorGlobalRenderer;
-                    mc.setRenderViewEntity(entity);
-                    settings.fovSetting = ConfigurationHandler.mirrorFov;
-                    settings.thirdPersonView = 0;
-                    settings.hideGUI = true;
-                    settings.mipmapLevels = 3;
-                    mc.displayWidth = quality;
-                    mc.displayHeight = quality;
+                mc.setRenderViewEntity(entity);
+                settings.fovSetting = ConfigurationHandler.mirrorFov;
+                settings.thirdPersonView = 0;
+                settings.hideGUI = true;
+                settings.mipmapLevels = 3;
+                mc.displayWidth = quality;
+                mc.displayHeight = quality;
 
-                    ClientProxy.rendering = true;
-                    ClientProxy.renderEntity = mc.player;
+                ClientProxy.rendering = true;
+                ClientProxy.renderEntity = mc.player;
 
-                    int fps = Math.max(30, settings.limitFramerate);
-                    EntityRenderer entityRenderer = mc.entityRenderer;
-                    entityRenderer.renderWorld(event.renderTickTime, renderEndNanoTime + (1000000000 / fps));
+                int fps = Math.max(30, settings.limitFramerate);
+                EntityRenderer entityRenderer = mc.entityRenderer;
+                entityRenderer.renderWorld(event.renderTickTime, renderEndNanoTime + (1000000000 / fps));
 
-                    GlStateManager.bindTexture(registerMirrors.get(entity));
-                    GL11.glCopyTexImage2D(GL11.GL_TEXTURE_2D, 0, GL11.GL_RGB, 0, 0, quality, quality, 0);
+                GlStateManager.bindTexture(registerMirrors.get(entity));
+                GL11.glCopyTexImage2D(GL11.GL_TEXTURE_2D, 0, GL11.GL_RGB, 0, 0, quality, quality, 0);
 
-                    renderEndNanoTime = System.nanoTime();
+                renderEndNanoTime = System.nanoTime();
 
-                    ClientProxy.renderEntity = null;
-                    ClientProxy.rendering = false;
+                ClientProxy.renderEntity = null;
+                ClientProxy.rendering = false;
 
-                    mc.renderGlobal = renderBackup;
-                    mc.setRenderViewEntity(entityBackup);
-                    settings.fovSetting = fovBackup;
-                    settings.thirdPersonView = thirdPersonBackup;
-                    settings.hideGUI = hideGuiBackup;
-                    settings.mipmapLevels = mipmapBackup;
-                    mc.displayWidth = widthBackup;
-                    mc.displayHeight = heightBackup;
-                }
+                mc.renderGlobal = renderBackup;
+                mc.setRenderViewEntity(entityBackup);
+                settings.fovSetting = fovBackup;
+                settings.thirdPersonView = thirdPersonBackup;
+                settings.hideGUI = hideGuiBackup;
+                settings.mipmapLevels = mipmapBackup;
+                mc.displayWidth = widthBackup;
+                mc.displayHeight = heightBackup;
 
                 entity.rendering = false;
             }
