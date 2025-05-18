@@ -32,6 +32,7 @@ This mod is an **unofficial** continuation and is not affiliated with MrCrayfish
 * Fixed edge-case placement crashes
 * Fixed farting button handling
 * Fixed image/GIF downloading (especially imgur)
+* Fixed memory leak caused by mirror rendering
 * Fixed modern stairs block material
 * Fixed pick block functionality for coolers
 * Fixed placement of Grand Chair + Christmas Tree
@@ -47,6 +48,7 @@ This mod is an **unofficial** continuation and is not affiliated with MrCrayfish
 * Prevented duplications in certain containers
 * Reduced arbitrary container limitations
 * Removed arbitrary jump height limits
+* Removed rendering of black pixels on photo frames and TVs
 * Restructured configuration handler
 * Streamlined default mirror quality config
 * Streamlined electrocution damage source
