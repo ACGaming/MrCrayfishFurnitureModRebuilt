@@ -27,7 +27,7 @@ public class ConfigurationHandler
     public static int mirrorQuality = 64;
     public static boolean seasonalPresents = true;
     public static String[] trustedUrlDomains = {};
-    public static String trustedUrlDomainsListType = "WHITELIST";
+    public static String trustedUrlDomainsListType = "BLACKLIST";
     public static int maxFileSize = 2;
 
     public static String[] items = {};
@@ -70,7 +70,7 @@ public class ConfigurationHandler
         mirrorQuality = config.getInt("mirror-quality", CATEGORY_SETTINGS, 64, 16, 512, "The resolution for the mirror. Higher numbers result in better quality but worse performance.");
         seasonalPresents = config.getBoolean("seasonal-presents", CATEGORY_SETTINGS, true, "Whether opening presents should display a Happy Christmas notification.");
         trustedUrlDomains = config.getStringList("trusted-url-domains", CATEGORY_SETTINGS, trustedUrlDomains, "List of trusted domains to download images for the TV and Photo Frame. For example, the domain of the URL (https://i.imgur.com/Jvh1OQm.jpeg) is i.imgur.com");
-        trustedUrlDomainsListType = config.getString("trusted-url-domains-list-type", CATEGORY_SETTINGS, "WHITELIST", "Which list type the list of trusted domains is. Can be either WHITELIST or BLACKLIST.");
+        trustedUrlDomainsListType = config.getString("trusted-url-domains-list-type", CATEGORY_SETTINGS, "BLACKLIST", "Which list type the list of trusted domains is. Can be either WHITELIST or BLACKLIST.");
         maxFileSize = config.getInt("max-file-size", CATEGORY_SETTINGS, 2, 1, 100, "The maximum file size of images and GIFs in MB the TV and Photo Frame can download.");
 
         integrationBiomesOPlenty = config.getBoolean("integration-biomesoplenty", CATEGORY_INTEGRATION_SETTINGS, true, "Whether furniture with support for Biomes O' Plenty should be enabled.");
