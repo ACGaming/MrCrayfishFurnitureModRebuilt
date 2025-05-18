@@ -147,17 +147,9 @@ public class TVRenderer extends TileEntitySpecialRenderer<TileEntityTV>
                         GlStateManager.translate(-te.getWidth() / 2 * 0.0625, 0, 0);
                         GlStateManager.translate(0, 0, te.getScreenZOffset() * 0.0625);
 
-                        //Render a black quad
+                        //Render the GIF
                         Tessellator tessellator = Tessellator.getInstance();
                         BufferBuilder buffer = tessellator.getBuffer();
-                        buffer.begin(7, DefaultVertexFormats.POSITION_COLOR);
-                        buffer.pos(0, 0, 0).color(0, 0, 0, 255).endVertex();
-                        buffer.pos(0, te.getHeight() * 0.0625, 0).color(0, 0, 0, 255).endVertex();
-                        buffer.pos(te.getWidth() * 0.0625, te.getHeight() * 0.0625, 0).color(0, 0, 0, 255).endVertex();
-                        buffer.pos(te.getWidth() * 0.0625, 0, 0).color(0, 0, 0, 255).endVertex();
-                        tessellator.draw();
-
-                        //Render the GIF
                         GlStateManager.translate(0, 0, -0.01 * 0.0625);
                         buffer.begin(7, DefaultVertexFormats.POSITION_TEX);
                         buffer.pos(startX, startY, 0).tex(0, 0).endVertex();
