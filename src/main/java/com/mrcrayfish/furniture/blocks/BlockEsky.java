@@ -77,11 +77,11 @@ public class BlockEsky extends BlockFurnitureTile
             TileEntity tileEntity = worldIn.getTileEntity(pos);
             if(state.getValue(OPENED))
             {
-                worldIn.playSound(pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, FurnitureSounds.cabinet_close, SoundCategory.BLOCKS, 0.75F, 0.6F, false);
+                worldIn.playSound(pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, FurnitureSounds.esky_close, SoundCategory.BLOCKS, 0.75F, 1.0F, false);
             }
             else
             {
-                worldIn.playSound(pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, FurnitureSounds.cabinet_open, SoundCategory.BLOCKS, 0.75F, 0.7F, false);
+                worldIn.playSound(pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, FurnitureSounds.esky_open, SoundCategory.BLOCKS, 0.75F, 1.0F, false);
             }
             worldIn.setBlockState(pos, state.withProperty(OPENED, !state.getValue(OPENED)));
             if(tileEntity != null)

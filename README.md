@@ -45,6 +45,7 @@ This mod is an **unofficial** continuation and is not affiliated with MrCrayfish
 * Fixed washing machines repairing non-repairable items
 * Increased doorbell sound distance
 * Improved image/GIF cache stability
+* Overhauled sound effects (Courtesy of MisterIceCat)
 * Prevented duplications in certain containers
 * Reduced arbitrary container limitations
 * Removed arbitrary jump height limits

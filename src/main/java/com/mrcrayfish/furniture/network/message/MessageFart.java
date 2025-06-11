@@ -27,7 +27,7 @@ public class MessageFart implements IMessage, IMessageHandler<MessageFart, IMess
         EntityPlayerMP player = ctx.getServerHandler().player;
         if(player.getRidingEntity() instanceof EntitySeat)
         {
-            player.world.playSound(null, player.getPosition(), FurnitureSounds.getRandomFart(player.getRNG()), SoundCategory.BLOCKS, 0.75F, player.getRNG().nextFloat());
+            player.world.playSound(null, player.getPosition(), FurnitureSounds.fart, SoundCategory.BLOCKS, 0.75F, player.getRNG().nextFloat());
             MinecraftServer server = FMLCommonHandler.instance().getMinecraftServerInstance();
             server.addScheduledTask(() -> Triggers.trigger(Triggers.PLAYER_FART, player));
         }

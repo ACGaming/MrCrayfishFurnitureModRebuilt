@@ -3,8 +3,6 @@ package com.mrcrayfish.furniture.init;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 
-import java.util.Random;
-
 public class FurnitureSounds
 {
 
@@ -19,9 +17,7 @@ public class FurnitureSounds
     public static SoundEvent tap;
     public static SoundEvent cabinet_open;
     public static SoundEvent cabinet_close;
-    public static SoundEvent fart_1;
-    public static SoundEvent fart_2;
-    public static SoundEvent fart_3;
+    public static SoundEvent fart;
     public static SoundEvent blender;
     public static SoundEvent dishwasher;
     public static SoundEvent knife_chop;
@@ -41,6 +37,9 @@ public class FurnitureSounds
     public static SoundEvent sliding_door_open;
     public static SoundEvent sliding_door_close;
     public static SoundEvent bounce;
+    public static SoundEvent esky_open;
+    public static SoundEvent esky_close;
+    public static SoundEvent carton;
 
     public static void register()
     {
@@ -55,9 +54,7 @@ public class FurnitureSounds
         tap = registerSound("cfm:tap");
         cabinet_open = registerSound("cfm:cabinet_open");
         cabinet_close = registerSound("cfm:cabinet_close");
-        fart_1 = registerSound("cfm:fart_1");
-        fart_2 = registerSound("cfm:fart_2");
-        fart_3 = registerSound("cfm:fart_3");
+        fart = registerSound("cfm:fart");
         blender = registerSound("cfm:blender");
         dishwasher = registerSound("cfm:dishwasher");
         knife_chop = registerSound("cfm:knife_chop");
@@ -77,20 +74,9 @@ public class FurnitureSounds
         sliding_door_open = registerSound("cfm:sliding_door_open");
         sliding_door_close = registerSound("cfm:sliding_door_close");
         bounce = registerSound("cfm:bounce");
-    }
-
-    public static SoundEvent getRandomFart(Random rand)
-    {
-        int num = rand.nextInt(3);
-        switch(num)
-        {
-            case 1:
-                return fart_2;
-            case 2:
-                return fart_3;
-            default:
-                return fart_1;
-        }
+        esky_open = registerSound("cfm:esky_open");
+        esky_close = registerSound("cfm:esky_close");
+        carton = registerSound("cfm:carton");
     }
 
     private static SoundEvent registerSound(String soundNameIn)
@@ -100,5 +86,4 @@ public class FurnitureSounds
         RegistrationHandler.Sounds.add(sound);
         return sound;
     }
-
 }

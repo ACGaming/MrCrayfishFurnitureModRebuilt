@@ -88,8 +88,7 @@ public class TileEntityToaster extends TileEntitySyncClient implements ITickable
                 }
                 if(!world.isRemote)
                 {
-                    world.playSound(null, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, FurnitureSounds.toaster_down, SoundCategory.BLOCKS, 0.75F, 1.0F);
-
+                    world.playSound(null, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, FurnitureSounds.toaster_up, SoundCategory.BLOCKS, 0.75F, 1.0F);
                 }
                 toastingTime = 0;
                 toasting = false;
