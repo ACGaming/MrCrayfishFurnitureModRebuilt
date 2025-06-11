@@ -53,6 +53,7 @@ This mod is an **unofficial** continuation and is not affiliated with MrCrayfish
 * Streamlined default mirror quality config
 * Streamlined electrocution damage source
 * Updated dependencies, adjusted metadata
+* Updated item textures (Courtesy of MisterIceCat)
 * Utilized GlStateManager where applicable
 
 # MRCRAYFISH'S FURNITURE MOD
