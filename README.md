@@ -10,8 +10,8 @@
 
 🥪 Thanks to our contributors: Kasumi_Nova, MisterIceCat, onysd
 
-![](https://img.shields.io/badge/-Forge%201.12.2-informational?logo=curseforge&style=flat-square&logoColor=ffffff&color=ffbb00&labelColor=2c3e9b)
-![](https://img.shields.io/badge/-Discord-informational?logo=Discord&style=flat-square&logoColor=ffffff&color=ffbb00&labelColor=2c3e9b)
+[![](https://img.shields.io/badge/-Forge%201.12.2-informational?logo=curseforge&style=flat-square&logoColor=ffffff&color=ffbb00&labelColor=2c3e9b)](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.12.2.html)
+[![](https://img.shields.io/badge/-Discord-informational?logo=Discord&style=flat-square&logoColor=ffffff&color=ffbb00&labelColor=2c3e9b)](https://discord.gg/JdthM8qbJ3)
 
 ### 🧩 FEATURES
 
