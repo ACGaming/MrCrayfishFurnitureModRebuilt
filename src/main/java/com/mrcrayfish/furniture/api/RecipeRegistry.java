@@ -5,9 +5,11 @@ import com.mrcrayfish.furniture.init.FurnitureItems;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemMonsterPlacer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.TextFormatting;
 
 import java.util.ArrayList;
@@ -1177,7 +1179,11 @@ public class RecipeRegistry extends RecipeAPI
         if(ConfigurationHandler.mine_3)
             RecipeRegistry.getInstance().registerMineBayItem(new ItemStack(Items.SADDLE), new ItemStack(Items.EMERALD), 4);
         if(ConfigurationHandler.mine_4)
-            RecipeRegistry.getInstance().registerMineBayItem(new ItemStack(Items.SPAWN_EGG, 1, 100), new ItemStack(Items.EMERALD), 8);
+        {
+            ItemStack spawnEgg = new ItemStack(Items.SPAWN_EGG);
+            ItemMonsterPlacer.applyEntityIdToItemStack(spawnEgg, new ResourceLocation("horse"));
+            RecipeRegistry.getInstance().registerMineBayItem(spawnEgg, new ItemStack(Items.EMERALD), 8);
+        }
         if(ConfigurationHandler.mine_5)
             RecipeRegistry.getInstance().registerMineBayItem(new ItemStack(Items.DIAMOND_HORSE_ARMOR), new ItemStack(Items.DIAMOND), 8);
         if(ConfigurationHandler.mine_6)
