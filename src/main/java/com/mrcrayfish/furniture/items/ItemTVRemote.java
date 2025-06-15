@@ -1,7 +1,11 @@
 package com.mrcrayfish.furniture.items;
 
 import com.mrcrayfish.furniture.MrCrayfishFurnitureMod;
+import com.mrcrayfish.furniture.blocks.tv.Channels;
 import com.mrcrayfish.furniture.init.FurnitureSounds;
+import com.mrcrayfish.furniture.network.PacketHandler;
+import com.mrcrayfish.furniture.network.message.MessageTVPlaySound;
+import com.mrcrayfish.furniture.tileentity.TileEntityRetroTV;
 import com.mrcrayfish.furniture.tileentity.TileEntityTV;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;
@@ -17,6 +21,7 @@ import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -86,6 +91,14 @@ public class ItemTVRemote extends Item
                     }
                 }
                 return EnumActionResult.SUCCESS;
+            }
+            else if(!worldIn.isRemote && tileEntity instanceof TileEntityRetroTV)
+            {
+                TileEntityRetroTV tileEntityRetroTV = (TileEntityRetroTV) tileEntity;
+                tileEntityRetroTV.nextChannel();
+                worldIn.updateComparatorOutputLevel(pos, tileEntityRetroTV.getBlockType());
+                worldIn.playSound(null, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, FurnitureSounds.white_noise, SoundCategory.BLOCKS, 0.75F, 1.0F);
+                PacketHandler.INSTANCE.sendToAllAround(new MessageTVPlaySound(pos.add(0.5, 0.5, 0.5), Channels.getChannel(tileEntityRetroTV.getChannel()).getChannelName()), new NetworkRegistry.TargetPoint(playerIn.dimension, pos.getX(), pos.getY(), pos.getZ(), 64));
             }
         }
         return EnumActionResult.PASS;

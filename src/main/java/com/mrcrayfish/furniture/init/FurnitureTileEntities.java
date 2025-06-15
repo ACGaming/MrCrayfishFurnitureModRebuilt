@@ -49,5 +49,6 @@ public class FurnitureTileEntities
         GameRegistry.registerTileEntity(TileEntityCoffeeTable.class, "cfm:coffee_table");
         GameRegistry.registerTileEntity(TileEntityPhotoFrame.class, "cfm:photo_frame");
         GameRegistry.registerTileEntity(TileEntityTVStand.class, "cfm:tv_stand");
+        GameRegistry.registerTileEntity(TileEntityRetroTV.class, "cfm:retro_tv");
     }
 }

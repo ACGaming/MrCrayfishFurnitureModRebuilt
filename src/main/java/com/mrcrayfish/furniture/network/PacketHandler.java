@@ -32,6 +32,8 @@ public class PacketHandler
         registerMessage(MessageSealCrate.class, MessageSealCrate.class, Side.SERVER);
         registerMessage(MessageUpdateValueContainer.class, MessageUpdateValueContainer.class, Side.SERVER);
         registerMessage(MessageSignItem.class, MessageSignItem.class, Side.SERVER);
+        registerMessage(MessageTVPlaySound.class, MessageTVPlaySound.class, Side.CLIENT);
+        registerMessage(MessageTVStopSound.class, MessageTVStopSound.class, Side.CLIENT);
     }
     
     private static <REQ extends IMessage, REPLY extends IMessage> void registerMessage(Class<? extends IMessageHandler<REQ, REPLY>> messageHandler, Class<REQ> requestMessageType, Side side)

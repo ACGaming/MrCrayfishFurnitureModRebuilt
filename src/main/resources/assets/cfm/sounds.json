@@ -257,5 +257,50 @@
         "name": "cfm:carton"
       }
     ]
+  },
+  "channel_news": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:channel_news",
+        "stream": false
+      }
+    ]
+  },
+  "channel_cooking": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:channel_cooking",
+        "stream": false
+      }
+    ]
+  },
+  "channel_sam_tabor": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:channel_sam_tabor",
+        "stream": false
+      }
+    ]
+  },
+  "channel_heman": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:channel_heman",
+        "stream": false
+      }
+    ]
+  },
+  "channel_switch": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:channel_switch",
+        "stream": false
+      }
+    ]
   }
 }

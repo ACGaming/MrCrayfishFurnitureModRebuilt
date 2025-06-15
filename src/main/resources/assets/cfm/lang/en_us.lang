@@ -158,6 +158,7 @@ tile.mail_box_jungle.name=Jungle Mail Box
 tile.mail_box_acacia.name=Acacia Mail Box
 tile.mail_box_dark_oak.name=Dark Oak Mail Box
 tile.tv.name=TV
+tile.retro_tv.name=Retro TV
 tile.computer.name=Computer
 tile.modern_computer.name=Modern Computer
 tile.printer.name=Printer
