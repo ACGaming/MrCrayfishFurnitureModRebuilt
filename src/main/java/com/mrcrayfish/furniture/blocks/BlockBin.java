@@ -38,7 +38,7 @@ public class BlockBin extends BlockFurnitureTile
     {
         if(placer instanceof EntityPlayer)
         {
-            Triggers.trigger(Triggers.PLACE_BATHTROOM_FURNITURE, (EntityPlayer) placer);
+            Triggers.trigger(Triggers.PLACE_BATHROOM_FURNITURE, (EntityPlayer) placer);
         }
         super.onBlockPlacedBy(world, pos, state, placer, stack);
     }

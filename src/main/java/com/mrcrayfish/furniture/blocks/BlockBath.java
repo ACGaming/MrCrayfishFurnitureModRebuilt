@@ -74,7 +74,7 @@ public class BlockBath extends BlockFurnitureTile
         world.setBlockState(pos.offset(placer.getHorizontalFacing()), FurnitureBlocks.BATH_2.getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(WATER_LEVEL, state.getValue(WATER_LEVEL)));
         if(placer instanceof EntityPlayer)
         {
-            Triggers.trigger(Triggers.PLACE_BATHTROOM_FURNITURE, (EntityPlayer) placer);
+            Triggers.trigger(Triggers.PLACE_BATHROOM_FURNITURE, (EntityPlayer) placer);
         }
     }
 

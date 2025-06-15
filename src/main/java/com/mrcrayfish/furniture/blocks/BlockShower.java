@@ -60,7 +60,7 @@ public class BlockShower extends BlockFurniture
         world.setBlockState(pos.up(), FurnitureBlocks.SHOWER_TOP.getDefaultState().withProperty(FACING, state.getValue(FACING)), 2);
         if(placer instanceof EntityPlayer)
         {
-            Triggers.trigger(Triggers.PLACE_BATHTROOM_FURNITURE, (EntityPlayer) placer);
+            Triggers.trigger(Triggers.PLACE_BATHROOM_FURNITURE, (EntityPlayer) placer);
         }
     }
 
