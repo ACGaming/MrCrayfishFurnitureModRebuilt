@@ -36,6 +36,7 @@ public class FurnitureBlocks
     public static final Block SHOWER_BOTTOM, SHOWER_TOP, SHOWER_HEAD_OFF, SHOWER_HEAD_ON;
     public static final Block WALL_CABINET;
     public static final Block BIN;
+    public static final Block WHEELIE_BIN;
 
     /* Kitchen Update */
     public static final Block TOASTER, MICROWAVE, BLENDER, WASHING_MACHINE, DISHWASHER;
@@ -191,6 +192,7 @@ public class FurnitureBlocks
         SHOWER_HEAD_OFF = new BlockShowerHeadOff(Material.ROCK, "shower_head_off");
         SHOWER_HEAD_ON = new BlockShowerHeadOn(Material.ROCK, "shower_head_on");
         BIN = new BlockBin(Material.ROCK, "bin");
+        WHEELIE_BIN = new BlockWheelieBin(Material.CLAY, "wheelie_bin");
         TREE_TOP = new BlockTree(Material.WOOD, true, "tree_top");
         TREE_BOTTOM = new BlockTree(Material.WOOD, false, "tree_bottom");
         PRESENT = new BlockPresent(Material.CLOTH, "present");
@@ -431,6 +433,7 @@ public class FurnitureBlocks
         registerBlock(SHOWER_HEAD_OFF);
         registerBlock(SHOWER_HEAD_ON, null);
         registerBlock(BIN);
+        registerBlock(WHEELIE_BIN);
         registerBlock(PRESENT, new ItemPresent(PRESENT));
         registerBlock(TREE_TOP, null);
         registerBlock(TREE_BOTTOM, new ItemWreath(TREE_BOTTOM));

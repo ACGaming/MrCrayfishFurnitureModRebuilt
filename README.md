@@ -61,6 +61,7 @@
 * Increased doorbell sound distance 🔔
 * Improved image/GIF cache stability
 * Over 12 new overhauled sounds effects (Courtesy of MisterIceCat🧊🐈)
+* Ported wheelie bin from the Community Edition (Courtesy of Groobler)
 * Prevented duplications in certain containers
 * Reduced arbitrary container limitations
 * Removed arbitrary jump height limits

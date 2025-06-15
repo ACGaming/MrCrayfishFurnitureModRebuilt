@@ -1,0 +1,20 @@
+{
+  "result": {
+    "item": "cfm:wheelie_bin"
+  },
+  "pattern": [
+    "CCC",
+    "CCC",
+    "KCK"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "K": {
+      "item": "minecraft:coal_block"
+    },
+    "C": {
+      "item": "minecraft:stained_hardened_clay",
+      "data": 13
+    }
+  }
+}

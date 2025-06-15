@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": {"model": "cfm:wheelie_bin"},
+    "facing=south": {"model": "cfm:wheelie_bin", "y": 180},
+    "facing=east": {"model": "cfm:wheelie_bin", "y": 90},
+    "facing=west": {"model": "cfm:wheelie_bin", "y": 270}
+  }
+}
