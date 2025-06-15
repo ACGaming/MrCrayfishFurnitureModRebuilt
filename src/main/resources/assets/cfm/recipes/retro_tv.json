@@ -1,0 +1,27 @@
+{
+  "result": {
+    "item": "cfm:retro_tv"
+  },
+  "pattern": [
+    "LLL",
+    "PGP",
+    "PRP"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "L": {
+      "item": "minecraft:log",
+      "data": 0
+    },
+    "P": {
+      "item": "minecraft:planks",
+      "data": 0
+    },
+    "G": {
+      "item": "minecraft:glass_pane"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  }
+}
