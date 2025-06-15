@@ -159,6 +159,7 @@ tile.mail_box_acacia.name=Acacia Mail Box
 tile.mail_box_dark_oak.name=Dark Oak Mail Box
 tile.tv.name=TV
 tile.computer.name=Computer
+tile.modern_computer.name=Modern Computer
 tile.printer.name=Printer
 tile.electric_fence.name=Electric Fence
 tile.door_bell.name=Oak Door Bell

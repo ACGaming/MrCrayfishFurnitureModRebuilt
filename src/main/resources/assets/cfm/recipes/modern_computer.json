@@ -1,9 +1,9 @@
 {
   "result": {
-    "item": "cfm:computer"
+    "item": "cfm:modern_computer"
   },
   "pattern": [
-    "BRB",
+    "DRD",
     "IGI",
     "III"
   ],
@@ -18,8 +18,8 @@
     "I": {
       "item": "minecraft:iron_ingot"
     },
-    "B": {
-      "item": "minecraft:iron_block"
+    "D": {
+      "item": "minecraft:diamond"
     }
   }
 }

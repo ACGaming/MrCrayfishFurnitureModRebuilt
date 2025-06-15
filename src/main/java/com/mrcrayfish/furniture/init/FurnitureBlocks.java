@@ -26,7 +26,7 @@ public class FurnitureBlocks
     public static final Block BIRD_BATH, STONE_PATH, WHITE_FENCE, TAP, MAIL_BOX_OAK;
 
     /* Electronic Update */
-    public static final Block TV, COMPUTER, PRINTER, ELECTRIC_FENCE, DOOR_BELL, STEREO;
+    public static final Block TV, COMPUTER, MODERN_COMPUTER, PRINTER, ELECTRIC_FENCE, DOOR_BELL, STEREO;
     public static final Block FIRE_ALARM_OFF, FIRE_ALARM_ON;
     public static final Block CEILING_LIGHT_OFF, CEILING_LIGHT_ON;
     public static final Block LAMP_ON, LAMP_OFF;
@@ -169,6 +169,7 @@ public class FurnitureBlocks
         MAIL_BOX_DARK_OAK = new BlockMailBox(Material.WOOD, "mail_box_dark_oak");
         TV = new BlockTV(Material.WOOD, "tv");
         COMPUTER = new BlockComputer(Material.IRON, "computer");
+        MODERN_COMPUTER = new BlockModernComputer(Material.IRON, "modern_computer");
         PRINTER = new BlockPrinter(Material.IRON, "printer");
         ELECTRIC_FENCE = new BlockElectricFence(Material.ROCK, "electric_fence");
         DOOR_BELL = new BlockDoorBell(Material.WOOD, "door_bell");
@@ -410,6 +411,7 @@ public class FurnitureBlocks
         registerBlock(MAIL_BOX_DARK_OAK);
         registerBlock(TV);
         registerBlock(COMPUTER);
+        registerBlock(MODERN_COMPUTER);
         registerBlock(PRINTER);
         registerBlock(ELECTRIC_FENCE);
         registerBlock(DOOR_BELL);
