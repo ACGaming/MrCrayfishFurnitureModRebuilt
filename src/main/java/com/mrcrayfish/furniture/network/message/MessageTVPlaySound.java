@@ -2,6 +2,7 @@ package com.mrcrayfish.furniture.network.message;
 
 import com.mrcrayfish.furniture.blocks.tv.Channel;
 import com.mrcrayfish.furniture.blocks.tv.Channels;
+import com.mrcrayfish.furniture.tileentity.TileEntityRetroTV;
 
 import io.netty.buffer.ByteBuf;
 import net.minecraft.client.Minecraft;
@@ -23,22 +24,25 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class MessageTVPlaySound implements IMessage, IMessageHandler<MessageTVPlaySound, IMessage>
 {
     private BlockPos pos;
+    private int channelIndex;
     private String name;
 
     public MessageTVPlaySound()
     {
     }
 
-    public MessageTVPlaySound(BlockPos pos, String name)
+    public MessageTVPlaySound(BlockPos pos, int channelIndex)
     {
         this.pos = pos;
-        this.name = name;
+        this.channelIndex = channelIndex;
+        this.name = Channels.getChannel(channelIndex).getChannelName();
     }
 
     @Override
     public void toBytes(ByteBuf buf)
     {
         buf.writeLong(pos.toLong());
+        buf.writeInt(channelIndex);
         ByteBufUtils.writeUTF8String(buf, name);
     }
 
@@ -46,6 +50,7 @@ public class MessageTVPlaySound implements IMessage, IMessageHandler<MessageTVPl
     public void fromBytes(ByteBuf buf)
     {
         this.pos = BlockPos.fromLong(buf.readLong());
+        this.channelIndex = buf.readInt();
         this.name = ByteBufUtils.readUTF8String(buf);
     }
 
@@ -56,21 +61,26 @@ public class MessageTVPlaySound implements IMessage, IMessageHandler<MessageTVPl
         Channel channel = Channels.getChannel(message.name);
         if(channel != null)
         {
-            channel.resetAnimation();
-
-            World world = Minecraft.getMinecraft().world;
-            world.notifyBlockUpdate(message.pos, world.getBlockState(message.pos), world.getBlockState(message.pos), 2);
-
-            ISound sound = Channels.SOUND_POSITIONS.get(message.pos);
-            if(sound != null)
-            {
-                Minecraft.getMinecraft().getSoundHandler().stopSound(sound);
-                Channels.SOUND_POSITIONS.remove(message.pos);
-            }
-
-            sound = new PositionedSoundRecord(channel.getSound().getSoundName(), SoundCategory.RECORDS, 1.0F, 1.0F, true, 0, ISound.AttenuationType.LINEAR, (float) message.pos.getX(), (float) message.pos.getY(), (float) message.pos.getZ());
-            Minecraft.getMinecraft().getSoundHandler().playSound(sound);
-            Channels.SOUND_POSITIONS.put(message.pos, sound);
+            Minecraft.getMinecraft().addScheduledTask(() -> {
+                World world = Minecraft.getMinecraft().world;
+                TileEntityRetroTV tileEntity = (TileEntityRetroTV) world.getTileEntity(message.pos);
+                if(tileEntity != null)
+                {
+                    tileEntity.setChannel(message.channelIndex);
+                    world.notifyBlockUpdate(message.pos, world.getBlockState(message.pos), world.getBlockState(message.pos), 3);
+                    world.markBlockRangeForRenderUpdate(message.pos, message.pos);
+                    channel.resetAnimation();
+                    ISound sound = Channels.SOUND_POSITIONS.get(message.pos);
+                    if(sound != null)
+                    {
+                        Minecraft.getMinecraft().getSoundHandler().stopSound(sound);
+                        Channels.SOUND_POSITIONS.remove(message.pos);
+                    }
+                    sound = new PositionedSoundRecord(channel.getSound().getSoundName(), SoundCategory.RECORDS, 1.0F, 1.0F, true, 0, ISound.AttenuationType.LINEAR, message.pos.getX() + 0.5F, message.pos.getY() + 0.5F, message.pos.getZ() + 0.5F);
+                    Minecraft.getMinecraft().getSoundHandler().playSound(sound);
+                    Channels.SOUND_POSITIONS.put(message.pos, sound);
+                }
+            });
         }
         return null;
     }

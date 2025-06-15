@@ -98,7 +98,7 @@ public class ItemTVRemote extends Item
                 tileEntityRetroTV.nextChannel();
                 worldIn.updateComparatorOutputLevel(pos, tileEntityRetroTV.getBlockType());
                 worldIn.playSound(null, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, FurnitureSounds.white_noise, SoundCategory.BLOCKS, 0.75F, 1.0F);
-                PacketHandler.INSTANCE.sendToAllAround(new MessageTVPlaySound(pos.add(0.5, 0.5, 0.5), Channels.getChannel(tileEntityRetroTV.getChannel()).getChannelName()), new NetworkRegistry.TargetPoint(playerIn.dimension, pos.getX(), pos.getY(), pos.getZ(), 64));
+                PacketHandler.INSTANCE.sendToAllAround(new MessageTVPlaySound(pos, tileEntityRetroTV.getChannel()), new NetworkRegistry.TargetPoint(playerIn.dimension, pos.getX(), pos.getY(), pos.getZ(), 64));
             }
         }
         return EnumActionResult.PASS;
