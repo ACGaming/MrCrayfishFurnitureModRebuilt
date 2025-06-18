@@ -11,7 +11,8 @@ import java.util.List;
 
 public class PageContentsTwo extends RecipePage
 {
-    private GuiButton buttonGrill;
+    private GuiButton buttonMineBay;
+    private GuiButton buttonEnderShop;
 
     private GuiRecipeBook book;
 
@@ -26,11 +27,13 @@ public class PageContentsTwo extends RecipePage
     {
     	String buttonText = I18n.format("cfm.recipe_book.button.go");
         int leftPageCenter = (book.width) / 2 - (book.bookWidth / 2);
-        this.buttonGrill = new GuiButton(0, leftPageCenter + 25, 40, 35, 20, buttonText);
+        this.buttonMineBay = new GuiButton(0, leftPageCenter + 25, 40, 35, 20, buttonText);
+        this.buttonEnderShop = new GuiButton(0, leftPageCenter + 25, 64, 35, 20, buttonText);
 
         onClose();
 
-        buttonList.add(this.buttonGrill);
+        buttonList.add(this.buttonMineBay);
+        buttonList.add(this.buttonEnderShop);
     }
 
     @Override
@@ -38,15 +41,20 @@ public class PageContentsTwo extends RecipePage
     {
         int leftPageCenter = (book.width) / 2 - (book.bookWidth / 2);
         FontRenderer fontRendererObj = Minecraft.getMinecraft().fontRenderer;
-        fontRendererObj.drawString(I18n.format("tile.grill.name"), leftPageCenter - 55, 45, 16739840);
+        fontRendererObj.drawString(I18n.format("cfm.recipe_book.page.minebay"), leftPageCenter - 55, 45, 16739840);
+        fontRendererObj.drawString(I18n.format("cfm.recipe_book.page.endershop"), leftPageCenter - 55, 45 + 24, 16739840);
     }
 
     @Override
     public void handleButtonClick(GuiButton button)
     {
-        if(button == buttonGrill)
+        if(button == buttonMineBay)
         {
-            book.gotoPage("grill");
+            book.gotoPage("minebay");
+        }
+        else if(button == buttonEnderShop)
+        {
+            book.gotoPage("endershop");
         }
     }
 
@@ -59,13 +67,15 @@ public class PageContentsTwo extends RecipePage
     @Override
     public void onShown()
     {
-        this.buttonGrill.visible = true;
+        this.buttonMineBay.visible = true;
+        this.buttonEnderShop.visible = true;
     }
 
     @Override
     public void onClose()
     {
-        this.buttonGrill.visible = false;
+        this.buttonMineBay.visible = false;
+        this.buttonEnderShop.visible = false;
     }
 
     @Override

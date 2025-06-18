@@ -34,6 +34,8 @@ public class PacketHandler
         registerMessage(MessageSignItem.class, MessageSignItem.class, Side.SERVER);
         registerMessage(MessageTVPlaySound.class, MessageTVPlaySound.class, Side.CLIENT);
         registerMessage(MessageTVStopSound.class, MessageTVStopSound.class, Side.CLIENT);
+        registerMessage(MessageEnderShopBuy.class, MessageEnderShopBuy.class, Side.SERVER);
+        registerMessage(MessageEnderShopClosed.class, MessageEnderShopClosed.class, Side.SERVER);
     }
     
     private static <REQ extends IMessage, REPLY extends IMessage> void registerMessage(Class<? extends IMessageHandler<REQ, REPLY>> messageHandler, Class<REQ> requestMessageType, Side side)

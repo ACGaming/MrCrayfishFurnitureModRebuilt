@@ -13,6 +13,13 @@ public class RecipeConditions
         return true;
     }
 
+    public static boolean hasEnderShopArgs(Map<String, Object> variables)
+    {
+        if(variables.get("input") == null) return false;
+        if(!(variables.get("input") instanceof ItemStack)) return false;
+        return true;
+    }
+
     public static boolean hasOvenArgs(Map<String, Object> variables)
     {
         if(variables.get("input") == null) return false;

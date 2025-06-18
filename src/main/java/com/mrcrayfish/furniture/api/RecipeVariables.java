@@ -34,6 +34,11 @@ import java.util.Map;
  * <td>currency (ItemStack), price (Integer)</td>
  * </tr>
  * <tr>
+ * <td>EnderShop</td>
+ * <td>input (ItemStack)</td>
+ * <td>currency (ItemStack), price (Integer)</td>
+ * </tr>
+ * <tr>
  * <td>Toaster</td>
  * <td>input (ItemStack), output (ItemStack)</td>
  * </tr>
@@ -113,6 +118,7 @@ public class RecipeVariables
      * FREEZER,<br>
      * MICROWAVE,<br>
      * MINEBAY,<br>
+     * ENDERSHOP,<br>
      * OVEN,<br>
      * PRINTER,<br>
      * TOASTER,<br>
@@ -136,6 +142,7 @@ public class RecipeVariables
      * FREEZER,<br>
      * MICROWAVE,<br>
      * MINEBAY,<br>
+     * ENDERSHOP,<br>
      * OVEN,<br>
      * PRINTER,<br>
      * TOASTER,<br>

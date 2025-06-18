@@ -6,6 +6,7 @@ public enum RecipeType
     OVEN("oven"),
     PRINTER("printer"),
     MINEBAY("minebay"),
+    ENDERSHOP("endershop"),
     TOASTER("toaster"),
     CHOPPING_BOARD("choppingboard"),
     BLENDER("blender"),

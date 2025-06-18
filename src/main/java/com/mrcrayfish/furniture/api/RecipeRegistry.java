@@ -1,10 +1,12 @@
 package com.mrcrayfish.furniture.api;
 
 import com.mrcrayfish.furniture.handler.ConfigurationHandler;
+import com.mrcrayfish.furniture.init.FurnitureBlocks;
 import com.mrcrayfish.furniture.init.FurnitureItems;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlockSpecial;
 import net.minecraft.item.ItemMonsterPlacer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -30,6 +32,11 @@ public class RecipeRegistry extends RecipeAPI
     public void registerMineBayItem(ItemStack item, ItemStack currency, int price)
     {
         addMineBayRecipe(new RecipeData().setInput(item).setCurrency(currency).setPrice(price), LOCAL);
+    }
+
+    public void registerEnderShopItem(ItemStack item, ItemStack currency, int price)
+    {
+        addEnderShopRecipe(new RecipeData().setInput(item).setCurrency(currency).setPrice(price), LOCAL);
     }
 
     public void registerOvenRecipe(ItemStack input, ItemStack output)
@@ -398,6 +405,107 @@ public class RecipeRegistry extends RecipeAPI
                     }
 
                     RecipeRegistry.getInstance().registerMineBayItem(new ItemStack(input, i_amount, i_metadata), new ItemStack(payment, 1, p_metadata), p_price);
+                }
+                else
+                {
+                    if(ConfigurationHandler.api_debug)
+                    {
+                        RecipeUtil.printReport(parser, num, "payment-item", "The payment-item '" + payment_item + "' does not exist");
+                    }
+                }
+            }
+            else
+            {
+                if(ConfigurationHandler.api_debug)
+                {
+                    RecipeUtil.printReport(parser, num, "input-item", "The input-item '" + input_item + "' does not exist");
+                }
+            }
+        }
+        else
+        {
+            if(ConfigurationHandler.api_debug)
+            {
+                RecipeUtil.printMissing(parser, num, "input-item", "An input-item is required");
+            }
+        }
+    }
+
+    public static void registerEnderShopRecipe(Parser parser, int num)
+    {
+        String input_item = parser.getValue("input-item", null);
+        String input_metadata = parser.getValue("input-metadata", "0");
+        String input_amount = parser.getValue("input-amount", "1");
+        String payment_item = parser.getValue("payment-item", "minecraft:emerald");
+        String payment_item_metadata = parser.getValue("payment-metadata", "0");
+        String price = parser.getValue("payment-price", "1");
+
+        if(input_item != null)
+        {
+            Item input = Item.getByNameOrId(input_item);
+            Item payment = Item.getByNameOrId(payment_item);
+            if(input != null)
+            {
+                if(payment != null)
+                {
+
+                    int i_metadata;
+                    try
+                    {
+                        i_metadata = Integer.parseInt(input_metadata);
+                    }
+                    catch(NumberFormatException e)
+                    {
+                        if(ConfigurationHandler.api_debug)
+                        {
+                            RecipeUtil.printReport(parser, num, "input-metadata", "Could not parse the value '" + input_metadata + "' to an integer");
+                        }
+                        return;
+                    }
+
+                    int i_amount;
+                    try
+                    {
+                        i_amount = Integer.parseInt(input_amount);
+                    }
+                    catch(NumberFormatException e)
+                    {
+                        if(ConfigurationHandler.api_debug)
+                        {
+                            RecipeUtil.printReport(parser, num, "input-amount", "Could not parse the value '" + input_amount + "' to an integer");
+                        }
+                        return;
+                    }
+
+                    int p_metadata = 0;
+                    try
+                    {
+                        p_metadata = Integer.parseInt(payment_item_metadata);
+                    }
+                    catch(NumberFormatException e)
+                    {
+                        if(ConfigurationHandler.api_debug)
+                        {
+                            RecipeUtil.printReport(parser, num, "payment-metadata", "Could not parse the value '" + p_metadata + "' to an integer");
+                        }
+                        return;
+                    }
+
+                    int p_price = 1;
+                    try
+                    {
+                        p_price = Integer.parseInt(price);
+                    }
+                    catch(NumberFormatException e)
+                    {
+                        if(ConfigurationHandler.api_debug)
+                        {
+                            RecipeUtil.printReport(parser, num, "price", "Could not parse the value '" + p_price + "' to an integer");
+                        }
+                        return;
+                    }
+
+                    RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(input, i_amount, i_metadata), new ItemStack(payment, 1, p_metadata), p_price);
                 }
                 else
                 {
@@ -1098,6 +1206,10 @@ public class RecipeRegistry extends RecipeAPI
                 {
                     registerMineBayRecipe(parser, realNum);
                 }
+                else if(type.equalsIgnoreCase("endershop"))
+                {
+                    registerEnderShopRecipe(parser, realNum);
+                }
                 else if(type.equalsIgnoreCase("choppingboard"))
                 {
                     registerChoppingBoardRecipe(parser, realNum);
@@ -1229,6 +1341,68 @@ public class RecipeRegistry extends RecipeAPI
         }
         if(ConfigurationHandler.mine_10)
             RecipeRegistry.getInstance().registerMineBayItem(new ItemStack(FurnitureItems.RECIPE_BOOK), new ItemStack(Items.EMERALD), 1);
+
+        if(ConfigurationHandler.ender_1)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.FREEZER), new ItemStack(Items.GOLD_INGOT), 48);
+        if(ConfigurationHandler.ender_2)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.WASHING_MACHINE), new ItemStack(Items.GOLD_INGOT), 44);
+        if(ConfigurationHandler.ender_3)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.GRILL), new ItemStack(Items.GOLD_INGOT), 32);
+        if(ConfigurationHandler.ender_4)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.PRINTER), new ItemStack(Items.GOLD_INGOT), 28);
+        if(ConfigurationHandler.ender_5)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.MICROWAVE), new ItemStack(Items.GOLD_INGOT), 20);
+        if(ConfigurationHandler.ender_6)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.BLENDER), new ItemStack(Items.GOLD_INGOT), 16);
+        if(ConfigurationHandler.ender_7)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.TOASTER), new ItemStack(Items.GOLD_INGOT), 16);
+        if(ConfigurationHandler.ender_8)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.BIRD_BATH), new ItemStack(Items.IRON_INGOT), 32);
+        if(ConfigurationHandler.ender_9)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.COOKIE_JAR), new ItemStack(Items.EMERALD), 2);
+        if(ConfigurationHandler.ender_10)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.PLATE, 2), new ItemStack(Items.IRON_INGOT), 1);
+        if(ConfigurationHandler.ender_11)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.CHOPPING_BOARD), new ItemStack(Items.IRON_INGOT), 8);
+        if(ConfigurationHandler.ender_12)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureItems.SOAP, 16), new ItemStack(Items.EMERALD), 1);
+        if(ConfigurationHandler.ender_13)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.DISHWASHER, 4), new ItemStack(Items.GOLD_INGOT), 44);
+        if(ConfigurationHandler.ender_14)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Blocks.DAYLIGHT_DETECTOR, 2), new ItemStack(Items.EMERALD), 3);
+        if(ConfigurationHandler.ender_15)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.LAMP_OFF), new ItemStack(Items.IRON_INGOT), 12);
+        if(ConfigurationHandler.ender_16)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.CEILING_LIGHT_OFF, 2), new ItemStack(Items.IRON_INGOT), 8);
+        if(ConfigurationHandler.ender_17)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.LIGHT_SWITCH_OFF, 8), new ItemStack(Items.IRON_INGOT), 16);
+        if(ConfigurationHandler.ender_18)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Blocks.NOTEBLOCK, 2), new ItemStack(Items.EMERALD), 1);
+        if(ConfigurationHandler.ender_19)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Blocks.ACTIVATOR_RAIL, 4), new ItemStack(Items.IRON_INGOT), 8);
+        if(ConfigurationHandler.ender_20)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Blocks.GOLDEN_RAIL, 4), new ItemStack(Items.IRON_INGOT), 8);
+        if(ConfigurationHandler.ender_21)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Blocks.DETECTOR_RAIL, 4), new ItemStack(Items.IRON_INGOT), 12);
+        if(ConfigurationHandler.ender_22)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Blocks.RAIL, 4), new ItemStack(Items.IRON_INGOT), 4);
+        if(ConfigurationHandler.ender_23)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Blocks.SEA_LANTERN, 2), new ItemStack(Items.EMERALD), 5);
+        if(ConfigurationHandler.ender_24)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.MODERN_LIGHT_OFF), new ItemStack(Items.IRON_INGOT), 12);
+        if(ConfigurationHandler.ender_25)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Blocks.JUKEBOX), new ItemStack(Items.GOLD_INGOT), 1);
+        if(ConfigurationHandler.ender_26)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.MODERN_TV), new ItemStack(Items.GOLD_INGOT), 24);
+        if(ConfigurationHandler.ender_27)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureItems.TV_REMOTE, 2), new ItemStack(Items.IRON_INGOT), 16);
+        if(ConfigurationHandler.ender_28)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.TRAMPOLINE), new ItemStack(Items.IRON_INGOT), 24);
+        if(ConfigurationHandler.ender_29)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Items.NAME_TAG, 4), new ItemStack(Items.EMERALD), 3);
+        if(ConfigurationHandler.ender_30)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Items.LEAD), new ItemStack(Items.EMERALD), 3);
+
         if(ConfigurationHandler.blen_1)
             RecipeRegistry.getInstance().registerBlenderRecipe("Fruit Crush", 4, new ItemStack[]{new ItemStack(Items.APPLE, 2), new ItemStack(Items.MELON, 4)}, new int[]{255, 58, 37});
         if(ConfigurationHandler.blen_2)

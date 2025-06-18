@@ -30,6 +30,7 @@ public class Triggers
     public static final BasicTrigger OVEN_COOK = register("oven_cook");
     public static final BasicTrigger FREEZER_FREEZE = register("freezer_freeze");
     public static final BasicTrigger MINEBAY_PURCHASE = register("minebay_purchase");
+    public static final BasicTrigger ENDERSHOP_PURCHASE = register("endershop_purchase");
     public static final BasicTrigger PRINTER_COPY = register("printer_copy");
     public static final BasicTrigger STEREO_ACTIVATED = register("stereo_activated");
     public static final BasicTrigger CLICKED_DOORBELL = register("clicked_doorbell");

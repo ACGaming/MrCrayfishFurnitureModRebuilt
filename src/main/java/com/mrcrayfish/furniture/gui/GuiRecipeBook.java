@@ -117,6 +117,25 @@ public class GuiRecipeBook extends GuiScreen
             }
         }
 
+        ArrayList<RecipeData> endershop = Recipes.getRecipes("endershop");
+        for(int i = 0; i < endershop.size(); i++)
+        {
+            if(i % 8 == 0)
+            {
+                pageCount++;
+            }
+
+            if(pages.containsKey(pageCount))
+            {
+                pages.get(pageCount).addRecipe(endershop.get(i));
+            }
+            else
+            {
+                pages.put(pageCount, new PageEnderShop());
+                pages.get(pageCount).addRecipe(endershop.get(i));
+            }
+        }
+
         ArrayList<RecipeData> printer = Recipes.getRecipes("printer");
         for(int i = 0; i < printer.size(); i++)
         {

@@ -25,6 +25,11 @@ public class RecipeRegistryRemote extends RecipeAPI
         addMineBayRecipe(new RecipeData().setInput(item).setCurrency(currency).setPrice(price), REMOTE);
     }
 
+    public void registerEnderShopItem(ItemStack item, ItemStack currency, int price)
+    {
+        addEnderShopRecipe(new RecipeData().setInput(item).setCurrency(currency).setPrice(price), REMOTE);
+    }
+
     public void registerOvenRecipe(ItemStack input, ItemStack output)
     {
         addOvenRecipe(new RecipeData().setInput(input).setOutput(output), REMOTE);
@@ -391,6 +396,107 @@ public class RecipeRegistryRemote extends RecipeAPI
                     }
 
                     RecipeRegistryRemote.getInstance().registerMineBayItem(new ItemStack(input, i_amount, i_metadata), new ItemStack(payment, 1, p_metadata), p_price);
+                }
+                else
+                {
+                    if(ConfigurationHandler.api_debug)
+                    {
+                        RecipeUtil.printReport(parser, num, "payment-item", "The payment-item '" + payment_item + "' does not exist");
+                    }
+                }
+            }
+            else
+            {
+                if(ConfigurationHandler.api_debug)
+                {
+                    RecipeUtil.printReport(parser, num, "input-item", "The input-item '" + input_item + "' does not exist");
+                }
+            }
+        }
+        else
+        {
+            if(ConfigurationHandler.api_debug)
+            {
+                RecipeUtil.printMissing(parser, num, "input-item", "An input-item is required");
+            }
+        }
+    }
+
+    public static void registerEnderShopRecipe(Parser parser, int num)
+    {
+        String input_item = parser.getValue("input-item", null);
+        String input_metadata = parser.getValue("input-metadata", "0");
+        String input_amount = parser.getValue("input-amount", "1");
+        String payment_item = parser.getValue("payment-item", "minecraft:emerald");
+        String payment_item_metadata = parser.getValue("payment-item-metadata", "0");
+        String price = parser.getValue("payment-price", "1");
+
+        if(input_item != null)
+        {
+            Item input = Item.getByNameOrId(input_item);
+            Item payment = Item.getByNameOrId(payment_item);
+            if(input != null)
+            {
+                if(payment != null)
+                {
+
+                    int i_metadata;
+                    try
+                    {
+                        i_metadata = Integer.parseInt(input_metadata);
+                    }
+                    catch(NumberFormatException e)
+                    {
+                        if(ConfigurationHandler.api_debug)
+                        {
+                            RecipeUtil.printReport(parser, num, "input-metadata", "Could not parse the value '" + input_metadata + "' to an integer");
+                        }
+                        return;
+                    }
+
+                    int i_amount;
+                    try
+                    {
+                        i_amount = Integer.parseInt(input_amount);
+                    }
+                    catch(NumberFormatException e)
+                    {
+                        if(ConfigurationHandler.api_debug)
+                        {
+                            RecipeUtil.printReport(parser, num, "input-amount", "Could not parse the value '" + input_amount + "' to an integer");
+                        }
+                        return;
+                    }
+
+                    int p_metadata = 0;
+                    try
+                    {
+                        p_metadata = Integer.parseInt(payment_item_metadata);
+                    }
+                    catch(NumberFormatException e)
+                    {
+                        if(ConfigurationHandler.api_debug)
+                        {
+                            RecipeUtil.printReport(parser, num, "payment-metadata", "Could not parse the value '" + p_metadata + "' to an integer");
+                        }
+                        return;
+                    }
+
+                    int p_price = 1;
+                    try
+                    {
+                        p_price = Integer.parseInt(price);
+                    }
+                    catch(NumberFormatException e)
+                    {
+                        if(ConfigurationHandler.api_debug)
+                        {
+                            RecipeUtil.printReport(parser, num, "price", "Could not parse the value '" + p_price + "' to an integer");
+                        }
+                        return;
+                    }
+
+                    RecipeRegistryRemote.getInstance().registerEnderShopItem(new ItemStack(input, i_amount, i_metadata), new ItemStack(payment, 1, p_metadata), p_price);
                 }
                 else
                 {
@@ -1104,6 +1210,10 @@ public class RecipeRegistryRemote extends RecipeAPI
                 else if(type.equalsIgnoreCase("minebay"))
                 {
                     registerMineBayRecipe(parser, realNum);
+                }
+                else if(type.equalsIgnoreCase("endershop"))
+                {
+                    registerEnderShopRecipe(parser, realNum);
                 }
                 else if(type.equalsIgnoreCase("choppingboard"))
                 {

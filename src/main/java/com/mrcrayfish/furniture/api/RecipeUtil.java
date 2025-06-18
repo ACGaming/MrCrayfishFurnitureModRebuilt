@@ -69,7 +69,7 @@ public class RecipeUtil
     private static ArrayList<String> getRequiredVariablesList(String type)
     {
         ArrayList<String> vars = new ArrayList<>();
-        if(type.equalsIgnoreCase("minebay") | type.equalsIgnoreCase("oven") | type.equalsIgnoreCase("freezer") | type.equalsIgnoreCase("printer") | type.equalsIgnoreCase("choppingboard") | type.equalsIgnoreCase("microwave") | type.equalsIgnoreCase("washingmachine") | type.equalsIgnoreCase("toaster") | type.equalsIgnoreCase("dishwasher") | type.equalsIgnoreCase("grill"))
+        if(type.equalsIgnoreCase("minebay") | type.equalsIgnoreCase("endershop") | type.equalsIgnoreCase("oven") | type.equalsIgnoreCase("freezer") | type.equalsIgnoreCase("printer") | type.equalsIgnoreCase("choppingboard") | type.equalsIgnoreCase("microwave") | type.equalsIgnoreCase("washingmachine") | type.equalsIgnoreCase("toaster") | type.equalsIgnoreCase("dishwasher") | type.equalsIgnoreCase("grill"))
         {
             vars.add("input");
         }

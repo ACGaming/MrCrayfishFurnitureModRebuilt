@@ -24,6 +24,22 @@ public class RecipeAPI
         }
     }
 
+    public static void addEnderShopRecipe(RecipeData itemData, int type)
+    {
+        switch(type)
+        {
+            case LOCAL:
+                Recipes.localEnderShopRecipes.add(itemData);
+                break;
+            case REMOTE:
+                Recipes.remoteEnderShopRecipes.add(itemData);
+                break;
+            case COMM:
+                Recipes.commEnderShopRecipes.add(itemData);
+                break;
+        }
+    }
+
     public static void addOvenRecipe(RecipeData itemData, int type)
     {
         switch(type)
@@ -187,6 +203,11 @@ public class RecipeAPI
     public static RecipeData[] getMineBayItems()
     {
         return Recipes.getMineBayItems();
+    }
+
+    public static RecipeData[] getEnderShopItems()
+    {
+        return Recipes.getEnderShopItems();
     }
 
     public static RecipeData getOvenRecipeFromInput(ItemStack itemStack)

@@ -14,6 +14,7 @@ public class Recipes
      * Recipes registered from the Config
      */
     public static ArrayList<RecipeData> localMineBayRecipes = new ArrayList<>();
+    public static ArrayList<RecipeData> localEnderShopRecipes = new ArrayList<>();
     public static ArrayList<RecipeData> localOvenRecipes = new ArrayList<>();
     public static ArrayList<RecipeData> localFreezerRecipes = new ArrayList<>();
     public static ArrayList<RecipeData> localPrinterRecipes = new ArrayList<>();
@@ -29,6 +30,7 @@ public class Recipes
      * Recipes registered through FMLInterModComms
      */
     public static ArrayList<RecipeData> commMineBayRecipes = new ArrayList<>();
+    public static ArrayList<RecipeData> commEnderShopRecipes = new ArrayList<>();
     public static ArrayList<RecipeData> commOvenRecipes = new ArrayList<>();
     public static ArrayList<RecipeData> commFreezerRecipes = new ArrayList<>();
     public static ArrayList<RecipeData> commPrinterRecipes = new ArrayList<>();
@@ -44,6 +46,7 @@ public class Recipes
      * Recipes registered from a server
      */
     public static ArrayList<RecipeData> remoteMineBayRecipes = new ArrayList<>();
+    public static ArrayList<RecipeData> remoteEnderShopRecipes = new ArrayList<>();
     public static ArrayList<RecipeData> remoteOvenRecipes = new ArrayList<>();
     public static ArrayList<RecipeData> remoteFreezerRecipes = new ArrayList<>();
     public static ArrayList<RecipeData> remotePrinterRecipes = new ArrayList<>();
@@ -58,6 +61,11 @@ public class Recipes
     public static RecipeData[] getMineBayItems()
     {
         return getRecipes("minebay").toArray(new RecipeData[0]);
+    }
+
+    public static RecipeData[] getEnderShopItems()
+    {
+        return getRecipes("endershop").toArray(new RecipeData[0]);
     }
 
     public static RecipeData getOvenRecipeFromInput(ItemStack itemStack)
@@ -251,6 +259,10 @@ public class Recipes
         {
             recipeData.add("type=minebay," + data.toString());
         }
+        for(RecipeData data : localEnderShopRecipes)
+        {
+            recipeData.add("type=endershop," + data.toString());
+        }
         for(RecipeData data : localOvenRecipes)
         {
             recipeData.add("type=oven," + data.toString());
@@ -301,6 +313,10 @@ public class Recipes
             {
                 return localMineBayRecipes;
             }
+            else if(type.equalsIgnoreCase("endershop"))
+            {
+                return localEnderShopRecipes;
+            }
             else if(type.equalsIgnoreCase("freezer"))
             {
                 return localFreezerRecipes;
@@ -347,6 +363,10 @@ public class Recipes
             if(type.equalsIgnoreCase("minebay"))
             {
                 return remoteMineBayRecipes;
+            }
+            else if(type.equalsIgnoreCase("endershop"))
+            {
+                return remoteEnderShopRecipes;
             }
             else if(type.equalsIgnoreCase("freezer"))
             {
@@ -395,6 +415,7 @@ public class Recipes
     public static void addCommRecipesToLocal()
     {
         localMineBayRecipes.addAll(commMineBayRecipes);
+        localEnderShopRecipes.addAll(commEnderShopRecipes);
         localOvenRecipes.addAll(commOvenRecipes);
         localFreezerRecipes.addAll(commFreezerRecipes);
         localPrinterRecipes.addAll(commPrinterRecipes);
@@ -410,6 +431,7 @@ public class Recipes
     public static void clearLocalRecipes()
     {
         localMineBayRecipes.clear();
+        localEnderShopRecipes.clear();
         localOvenRecipes.clear();
         localFreezerRecipes.clear();
         localPrinterRecipes.clear();
@@ -425,6 +447,7 @@ public class Recipes
     public static void clearRemoteRecipes()
     {
         remoteMineBayRecipes.clear();
+        remoteEnderShopRecipes.clear();
         remoteOvenRecipes.clear();
         remoteFreezerRecipes.clear();
         remotePrinterRecipes.clear();
@@ -440,6 +463,7 @@ public class Recipes
     public static void clearCommRecipes()
     {
         commMineBayRecipes.clear();
+        commEnderShopRecipes.clear();
         commOvenRecipes.clear();
         commFreezerRecipes.clear();
         commPrinterRecipes.clear();

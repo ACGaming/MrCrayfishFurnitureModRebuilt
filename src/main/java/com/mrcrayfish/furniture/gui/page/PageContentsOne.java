@@ -13,7 +13,7 @@ public class PageContentsOne extends RecipePage
 {
     private GuiButton buttonOven;
     private GuiButton buttonFreezer;
-    private GuiButton buttonMineBay;
+    private GuiButton buttonGrill;
     private GuiButton buttonPrinter;
     private GuiButton buttonChoppingBoard;
     private GuiButton buttonToaster;
@@ -37,7 +37,7 @@ public class PageContentsOne extends RecipePage
         int leftPageCenter = (book.width) / 2 - (book.bookWidth / 2);
         this.buttonOven = new GuiButton(0, leftPageCenter + 25, 40, 35, 20, buttonText);
         this.buttonFreezer = new GuiButton(0, leftPageCenter + 25, 64, 35, 20, buttonText);
-        this.buttonMineBay = new GuiButton(0, leftPageCenter + 25, 88, 35, 20, buttonText);
+        this.buttonGrill = new GuiButton(0, leftPageCenter + 25, 88, 35, 20, buttonText);
         this.buttonPrinter = new GuiButton(0, leftPageCenter + 25, 112, 35, 20, buttonText);
         this.buttonChoppingBoard = new GuiButton(0, leftPageCenter + 25, 136, 35, 20, buttonText);
 
@@ -52,7 +52,6 @@ public class PageContentsOne extends RecipePage
 
         buttonList.add(this.buttonOven);
         buttonList.add(this.buttonFreezer);
-        buttonList.add(this.buttonMineBay);
         buttonList.add(this.buttonPrinter);
         buttonList.add(this.buttonChoppingBoard);
         buttonList.add(this.buttonToaster);
@@ -60,6 +59,7 @@ public class PageContentsOne extends RecipePage
         buttonList.add(this.buttonMicrowave);
         buttonList.add(this.buttonDishwasher);
         buttonList.add(this.buttonWashingMachine);
+        buttonList.add(this.buttonGrill);
     }
 
     @Override
@@ -69,7 +69,7 @@ public class PageContentsOne extends RecipePage
         FontRenderer fontRendererObj = Minecraft.getMinecraft().fontRenderer;
         fontRendererObj.drawString(I18n.format("tile.oven.name"), leftPageCenter - 55, 45, 16739840);
         fontRendererObj.drawString(I18n.format("cfm.recipe_book.page.freezer"), leftPageCenter - 55, 45 + (24), 16739840);
-        fontRendererObj.drawString(I18n.format("cfm.recipe_book.page.minebay"), leftPageCenter - 55, 45 + (2 * 24), 16739840);
+        fontRendererObj.drawString(I18n.format("tile.grill.name"), leftPageCenter - 55, 45 + (2 * 24), 16739840);
         fontRendererObj.drawString(I18n.format("tile.printer.name"), leftPageCenter - 55, 45 + (3 * 24), 16739840);
         fontRendererObj.drawString(I18n.format("tile.chopping_board.name"), leftPageCenter - 55, 45 + (4 * 24), 16739840);
 
@@ -92,9 +92,9 @@ public class PageContentsOne extends RecipePage
         {
             book.gotoPage("freezer");
         }
-        else if(button == buttonMineBay)
+        else if(button == buttonGrill)
         {
-            book.gotoPage("minebay");
+            book.gotoPage("grill");
         }
         else if(button == buttonPrinter)
         {
@@ -137,7 +137,7 @@ public class PageContentsOne extends RecipePage
     {
         this.buttonOven.visible = true;
         this.buttonFreezer.visible = true;
-        this.buttonMineBay.visible = true;
+        this.buttonGrill.visible = true;
         this.buttonPrinter.visible = true;
         this.buttonChoppingBoard.visible = true;
         this.buttonToaster.visible = true;
@@ -152,7 +152,7 @@ public class PageContentsOne extends RecipePage
     {
         this.buttonOven.visible = false;
         this.buttonFreezer.visible = false;
-        this.buttonMineBay.visible = false;
+        this.buttonGrill.visible = false;
         this.buttonPrinter.visible = false;
         this.buttonChoppingBoard.visible = false;
         this.buttonToaster.visible = false;

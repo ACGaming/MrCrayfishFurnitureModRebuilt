@@ -31,7 +31,7 @@ public class RecipeData
 
     /**
      * This method is used to set the input ItemStack. For instance, the Raw
-     * Beef before it gets cooked into Cooked Beef. Note: For MineBay, the input
+     * Beef before it gets cooked into Cooked Beef. Note: For MineBay/EnderShop, the input
      * ItemStack is the item you are going to sell.
      *
      * @param input Sets the input ItemStack. E.g. Raw Beef
@@ -44,7 +44,7 @@ public class RecipeData
 
     /**
      * This method is used to set the out ItemStack. For instance, its the
-     * Cooked Beef after its been cooked from Raw Beef. Note: For MineBay, you
+     * Cooked Beef after its been cooked from Raw Beef. Note: For MineBay/EnderShop, you
      * do not need to use this method at all. Please refer to setInput() and
      * setCurrency() only.
      *
@@ -57,7 +57,7 @@ public class RecipeData
     }
 
     /**
-     * This method is used to set the currency in MineBay for the specific item.
+     * This method is used to set the currency in MineBay/EnderShop for the specific item.
      * Note: For the Oven and Freezer, you do not need to use this method at
      * all. Please refer to setInput() and setOutput() only.
      *

@@ -39,6 +39,20 @@ public class RecipeRegistryComm extends RecipeAPI implements IRecipeRegistry
                 }
             }
         }
+        else if(type.equalsIgnoreCase("endershop"))
+        {
+            if(RecipeConditions.hasEnderShopArgs(varMap))
+            {
+                addEnderShopRecipe(RecipeData.convertFrom(varMap), COMM);
+            }
+            else
+            {
+                if(ConfigurationHandler.api_debug)
+                {
+                    RecipeUtil.printRequired(type, "Missing required variables", modName);
+                }
+            }
+        }
         else if(type.equalsIgnoreCase("oven"))
         {
             if(RecipeConditions.hasOvenArgs(varMap))

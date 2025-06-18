@@ -1,20 +1,21 @@
 package com.mrcrayfish.furniture.tileentity;
 
-import com.mrcrayfish.furniture.api.Recipes;
-import com.mrcrayfish.furniture.gui.containers.ContainerComputer;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.nbt.NBTTagCompound;
 
-public class TileEntityComputer extends TileEntityFurniture
+import com.mrcrayfish.furniture.api.Recipes;
+import com.mrcrayfish.furniture.gui.containers.ContainerComputer;
+
+public class TileEntityModernComputer extends TileEntityFurniture
 {
     private int stockNum = 0;
     private boolean isTrading = false;
 
-    public TileEntityComputer()
+    public TileEntityModernComputer()
     {
-        super("computer", 1);
+        super("modern_computer", 1);
     }
 
     public void takeEmeraldFromSlot(int price)
@@ -25,7 +26,7 @@ public class TileEntityComputer extends TileEntityFurniture
 
     public void setBrowsingInfo(int stockNum)
     {
-        if(stockNum >= 0 && stockNum < Recipes.getMineBayItems().length)
+        if(stockNum >= 0 && stockNum < Recipes.getEnderShopItems().length)
         {
             this.stockNum = stockNum;
         }
