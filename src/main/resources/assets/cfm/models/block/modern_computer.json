@@ -1,14 +1,14 @@
 {
   "credit": "Made by MisterIceCat - Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
   "textures": {
-    "0": "blocks/concrete_gray",
+    "0": "cfm:blocks/dark_particle",
     "1": "blocks/concrete_black",
-    "2": "blocks/concrete_white",
+    "2": "cfm:blocks/light_particle",
     "3": "blocks/concrete_silver",
     "4": "blocks/concrete_red",
     "5": "blocks/concrete_yellow",
     "6": "blocks/iron_block",
-    "particle": "blocks/iron_block"
+    "particle": "cfm:blocks/dark_particle"
   },
   "elements": [
     {

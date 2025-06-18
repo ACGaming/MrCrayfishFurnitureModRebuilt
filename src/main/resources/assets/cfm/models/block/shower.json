@@ -4,9 +4,9 @@
   "textures": {
     "0": "blocks/concrete_white",
     "1": "blocks/glass",
-    "2": "blocks/iron_block",
-    "3": "blocks/concrete_black",
-    "4": "blocks/concrete_gray",
+    "2": "cfm:blocks/metal",
+    "3": "cfm:blocks/dark_particle",
+    "4": "cfm:blocks/light_particle",
     "5": "blocks/concrete_red",
     "6": "blocks/concrete_blue",
     "particle": "blocks/glass"
