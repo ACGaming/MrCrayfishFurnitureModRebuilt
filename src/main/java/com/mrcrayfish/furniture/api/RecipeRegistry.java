@@ -1270,6 +1270,8 @@ public class RecipeRegistry extends RecipeAPI
             RecipeRegistry.getInstance().registerOvenRecipe(new ItemStack(Items.FISH, 1, 1), new ItemStack(Items.COOKED_FISH, 1, 1));
         if(ConfigurationHandler.oven_7)
             RecipeRegistry.getInstance().registerOvenRecipe(new ItemStack(FurnitureItems.FLESH), new ItemStack(FurnitureItems.COOKED_FLESH));
+        if(ConfigurationHandler.oven_8)
+            RecipeRegistry.getInstance().registerOvenRecipe(new ItemStack(Items.MUTTON), new ItemStack(Items.COOKED_MUTTON));
 
         if(ConfigurationHandler.frez_1)
             RecipeRegistry.getInstance().registerFreezerRecipe(new ItemStack(Items.WATER_BUCKET), new ItemStack(Blocks.ICE));
