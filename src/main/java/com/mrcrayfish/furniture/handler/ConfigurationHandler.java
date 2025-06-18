@@ -33,7 +33,7 @@ public class ConfigurationHandler
     public static String[] items = {};
 
     public static boolean printer_1 = true, printer_2 = true;
-    public static boolean oven_1 = true, oven_2 = true, oven_3 = true, oven_4 = true, oven_5 = true, oven_6 = true, oven_7 = true, oven_8 = true;
+    public static boolean oven_1 = true, oven_2 = true, oven_3 = true, oven_4 = true, oven_5 = true, oven_6 = true, oven_7 = true, oven_8 = true, oven_modded = true;
     public static boolean frez_1 = true, frez_2 = true, frez_3 = true, frez_4 = true, frez_5 = true, frez_6 = true;
     public static boolean mine_1 = true, mine_2 = true, mine_3 = true, mine_4 = true, mine_5 = true, mine_6 = true, mine_7 = true, mine_8 = true, mine_9 = true, mine_10 = true;
     public static boolean ender_1 = true, ender_2 = true, ender_3 = true, ender_4 = true, ender_5 = true, ender_6 = true, ender_7 = true, ender_8 = true, ender_9 = true, ender_10 = true;
@@ -113,6 +113,7 @@ public class ConfigurationHandler
         oven_6 = config.getBoolean("oven-6", CATEGORY_RECIPE_SETTINGS, oven_6, "Raw Salmon -> Cooked Salmon");
         oven_7 = config.getBoolean("oven-7", CATEGORY_RECIPE_SETTINGS, oven_7, "Flesh -> Cooked Flesh");
         oven_8 = config.getBoolean("oven-8", CATEGORY_RECIPE_SETTINGS, oven_8, "Mutton -> Cooked Mutton");
+        oven_modded = config.getBoolean("oven_modded", CATEGORY_RECIPE_SETTINGS, oven_modded, "Whether to support most modded food recipes in the oven.");
         frez_1 = config.getBoolean("freezer-1", CATEGORY_RECIPE_SETTINGS, frez_1, "Water Bucket -> Ice");
         frez_2 = config.getBoolean("freezer-2", CATEGORY_RECIPE_SETTINGS, frez_2, "Ice -> Packet Ice");
         frez_3 = config.getBoolean("freezer-3", CATEGORY_RECIPE_SETTINGS, frez_3, "Lava Bucket -> Obsidian");

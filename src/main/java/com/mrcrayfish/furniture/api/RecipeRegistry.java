@@ -5,16 +5,15 @@ import com.mrcrayfish.furniture.init.FurnitureBlocks;
 import com.mrcrayfish.furniture.init.FurnitureItems;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlockSpecial;
-import net.minecraft.item.ItemMonsterPlacer;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
+import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.TextFormatting;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 public class RecipeRegistry extends RecipeAPI
 {
@@ -1272,6 +1271,23 @@ public class RecipeRegistry extends RecipeAPI
             RecipeRegistry.getInstance().registerOvenRecipe(new ItemStack(FurnitureItems.FLESH), new ItemStack(FurnitureItems.COOKED_FLESH));
         if(ConfigurationHandler.oven_8)
             RecipeRegistry.getInstance().registerOvenRecipe(new ItemStack(Items.MUTTON), new ItemStack(Items.COOKED_MUTTON));
+        if(ConfigurationHandler.oven_modded)
+        {
+            Map<ItemStack, ItemStack> furnaceRecipes = FurnaceRecipes.instance().getSmeltingList();
+            for(Map.Entry<ItemStack, ItemStack> entry : furnaceRecipes.entrySet())
+            {
+                ItemStack input = entry.getKey();
+                ItemStack output = entry.getValue();
+                if(output.getItem() instanceof ItemFood)
+                {
+                    ResourceLocation registryName = output.getItem().getRegistryName();
+                    if(registryName != null && !registryName.getResourceDomain().equals("minecraft"))
+                    {
+                        RecipeRegistry.getInstance().registerOvenRecipe(input, output);
+                    }
+                }
+            }
+        }
 
         if(ConfigurationHandler.frez_1)
             RecipeRegistry.getInstance().registerFreezerRecipe(new ItemStack(Items.WATER_BUCKET), new ItemStack(Blocks.ICE));
