@@ -29,7 +29,7 @@
 * Added computer GUI item data range checks
 * Added configurable image/GIF file sizes 🖼️
 * Added dishwasher & washing machine input configs
-* Added modern computer (Courtesy of MisterIceCat🧊🐈)
+* Added modern computer along with the new webstore "EnderShop" (Courtesy of MisterIceCat🧊🐈)
 * Added seasonal presents config setting
 * Added toaster easter egg 🔪
 * Added trusted URL domains list type config
