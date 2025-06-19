@@ -116,6 +116,18 @@ public class TileEntityBlender extends TileEntitySyncClient implements ITickable
         return cup;
     }
 
+    public ItemStack getBottledDrink()
+    {
+        ItemStack bottle = new ItemStack(FurnitureItems.BOTTLE_DRINK);
+        NBTTagCompound nbt = new NBTTagCompound();
+        nbt.setIntArray("Colour", new int[]{currentRed, currentGreen, currentBlue});
+        nbt.setInteger("HealAmount", healAmount);
+        nbt.setString("Name", drinkName);
+        nbt.setInteger("Servings", drinkCount);
+        bottle.setTagCompound(nbt);
+        return bottle;
+    }
+
     int timer = 0;
 
     @Override

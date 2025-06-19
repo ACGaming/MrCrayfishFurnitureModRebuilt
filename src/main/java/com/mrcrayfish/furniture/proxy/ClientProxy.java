@@ -85,6 +85,22 @@ public class ClientProxy extends CommonProxy
             }
             return 16777215;
         }, FurnitureItems.DRINK);
+        FMLClientHandler.instance().getClient().getItemColors().registerItemColorHandler((stack, tintIndex) ->
+        {
+            if(tintIndex == 1)
+            {
+                if(stack.hasTagCompound())
+                {
+                    if(stack.getTagCompound().hasKey("Colour"))
+                    {
+                        int[] colour = stack.getTagCompound().getIntArray("Colour");
+                        Color color = new Color(colour[0], colour[1], colour[2]);
+                        return color.getRGB();
+                    }
+                }
+            }
+            return 16777215;
+        }, FurnitureItems.BOTTLE_DRINK);
         IItemColor hedgeItemColor = (stack, tintIndex) ->
         {
             IBlockState iblockstate = ((ItemBlock) stack.getItem()).getBlock().getStateFromMeta(stack.getMetadata());

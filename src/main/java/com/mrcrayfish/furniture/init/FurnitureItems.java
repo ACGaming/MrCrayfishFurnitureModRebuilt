@@ -30,7 +30,7 @@ public class FurnitureItems
     /**
      * Kitchen Update
      */
-    public static final Item KNIFE, CUP, DRINK, SOAP, SOAPY_WATER, SUPER_SOAPY_WATER;
+    public static final Item KNIFE, CUP, DRINK, BOTTLE, BOTTLE_DRINK, SOAP, SOAPY_WATER, SUPER_SOAPY_WATER;
 
     /**
      * Christmas Update
@@ -75,6 +75,8 @@ public class FurnitureItems
         KNIFE = new ItemKnife().setMaxDamage(100).setUnlocalizedName("item_knife").setRegistryName("item_knife");
         CUP = new ItemCup(false).setUnlocalizedName("item_cup").setRegistryName("item_cup");
         DRINK = new ItemCup(true).setUnlocalizedName("item_drink").setRegistryName("item_drink");
+        BOTTLE = new ItemBottle(false).setUnlocalizedName("item_bottle").setRegistryName("item_bottle");
+        BOTTLE_DRINK = new ItemBottle(true).setUnlocalizedName("item_bottle_drink").setRegistryName("item_bottle_drink");
         SOAP = new ItemGeneric().setUnlocalizedName("item_soap").setRegistryName("item_soap");
         SOAPY_WATER = new ItemGeneric().setUnlocalizedName("item_soap_water").setRegistryName("item_soap_water").setMaxStackSize(1);
         SUPER_SOAPY_WATER = new ItemGeneric().setUnlocalizedName("item_super_soap_water").setRegistryName("item_super_soap_water").setMaxStackSize(1);
@@ -107,6 +109,8 @@ public class FurnitureItems
         registerItem(KNIFE);
         registerItem(CUP);
         registerItem(DRINK);
+        registerItem(BOTTLE);
+        registerItem(BOTTLE_DRINK);
         registerItem(SOAP);
         registerItem(SOAPY_WATER);
         registerItem(SUPER_SOAPY_WATER);

@@ -1,7 +1,7 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "cfm:items/itemdrink",
+		"layer0": "cfm:items/itemcup",
 		"layer1": "cfm:items/cup_overlay"
 	}
 }

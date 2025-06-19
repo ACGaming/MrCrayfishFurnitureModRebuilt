@@ -1,11 +1,14 @@
 package com.mrcrayfish.furniture.items;
 
+import javax.annotation.Nullable;
+
 import com.mrcrayfish.furniture.MrCrayfishFurnitureMod;
 import com.mrcrayfish.furniture.init.FurnitureBlocks;
 import com.mrcrayfish.furniture.init.FurnitureItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumAction;
@@ -16,12 +19,16 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class ItemCup extends Item
+import java.util.List;
+
+public class ItemBottle extends Item
 {
     private boolean hasLiquid;
 
-    public ItemCup(boolean hasLiquid)
+    public ItemBottle(boolean hasLiquid)
     {
         this.hasLiquid = hasLiquid;
         if(hasLiquid)
@@ -49,23 +56,33 @@ public class ItemCup extends Item
     }
 
     @Override
-    public ItemStack onItemUseFinish(ItemStack cup, World world, EntityLivingBase entity)
+    public ItemStack onItemUseFinish(ItemStack bottle, World world, EntityLivingBase entity)
     {
         if(entity instanceof EntityPlayer)
         {
             EntityPlayer player = (EntityPlayer) entity;
             if(hasLiquid)
             {
-                int heal = cup.getTagCompound().getInteger("HealAmount");
-                player.getFoodStats().addStats(heal, 0.5F);
-                return new ItemStack(FurnitureItems.CUP);
+                NBTTagCompound nbt = bottle.getTagCompound();
+                int remainingServings = nbt.getInteger("Servings");
+                if(remainingServings > 0)
+                {
+                    int heal = nbt.getInteger("HealAmount");
+                    player.getFoodStats().addStats(heal, 0.5F);
+                    remainingServings--;
+                    nbt.setInteger("Servings", remainingServings);
+                    if(remainingServings == 0)
+                    {
+                        return new ItemStack(FurnitureItems.BOTTLE);
+                    }
+                }
             }
         }
-        return cup;
+        return bottle;
     }
 
     @Override
-    public int getMaxItemUseDuration(ItemStack cup)
+    public int getMaxItemUseDuration(ItemStack bottle)
     {
         return 32;
     }
@@ -103,10 +120,10 @@ public class ItemCup extends Item
 
         ItemStack itemstack = player.getHeldItem(hand);
 
-        if(!itemstack.isEmpty() && player.canPlayerEdit(pos, facing, itemstack) && worldIn.mayPlace(FurnitureBlocks.CUP, pos, false, facing, null))
+        if(!itemstack.isEmpty() && player.canPlayerEdit(pos, facing, itemstack) && worldIn.mayPlace(FurnitureBlocks.BOTTLE, pos, false, facing, null))
         {
             int i = this.getMetadata(itemstack.getMetadata());
-            IBlockState iblockstate1 = FurnitureBlocks.CUP.getStateForPlacement(worldIn, pos, facing, hitX, hitY, hitZ, i, player, hand);
+            IBlockState iblockstate1 = FurnitureBlocks.BOTTLE.getStateForPlacement(worldIn, pos, facing, hitX, hitY, hitZ, i, player, hand);
 
             if(placeBlockAt(itemstack, player, worldIn, pos, facing, hitX, hitY, hitZ, iblockstate1))
             {
@@ -128,12 +145,24 @@ public class ItemCup extends Item
         if(!world.setBlockState(pos, newState, 11)) return false;
 
         IBlockState state = world.getBlockState(pos);
-        if(state.getBlock() == FurnitureBlocks.CUP)
+        if(state.getBlock() == FurnitureBlocks.BOTTLE)
         {
             ItemBlock.setTileEntityNBT(world, player, pos, stack);
-            FurnitureBlocks.CUP.onBlockPlacedBy(world, pos, state, player, stack);
+            FurnitureBlocks.BOTTLE.onBlockPlacedBy(world, pos, state, player, stack);
         }
 
         return true;
+    }
+
+    @SideOnly(Side.CLIENT)
+    @Override
+    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn)
+    {
+        super.addInformation(stack, worldIn, tooltip, flagIn);
+        if(stack.hasTagCompound())
+        {
+            NBTTagCompound nbt = stack.getTagCompound();
+            tooltip.add(nbt.getInteger("Servings") + "/6");
+        }
     }
 }

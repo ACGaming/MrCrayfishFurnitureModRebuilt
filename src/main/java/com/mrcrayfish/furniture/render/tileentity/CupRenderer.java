@@ -1,9 +1,11 @@
 package com.mrcrayfish.furniture.render.tileentity;
 
+import com.mrcrayfish.furniture.items.ItemBottle;
 import com.mrcrayfish.furniture.tileentity.TileEntityCup;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.OpenGlHelper;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
+import net.minecraft.item.ItemStack;
 
 public class CupRenderer extends TileEntitySpecialRenderer<TileEntityCup>
 {
@@ -12,6 +14,8 @@ public class CupRenderer extends TileEntitySpecialRenderer<TileEntityCup>
     {
         if(tileEntityCup.getDrink() != null)
         {
+            ItemStack drink = tileEntityCup.getDrink();
+            int servings = drink.getTagCompound().getInteger("Servings");
             GlStateManager.pushMatrix();
             {
                 GlStateManager.translate((float) x + 0.5F, (float) y, (float) z + 0.5F);
@@ -23,7 +27,7 @@ public class CupRenderer extends TileEntitySpecialRenderer<TileEntityCup>
                 GlStateManager.color(tileEntityCup.red / 255F, tileEntityCup.green / 255F, tileEntityCup.blue / 255F, 1.0F);
                 GlStateManager.enableRescaleNormal();
 
-                renderCuboid(-0.124F, 0.5F * 0.0625F, -0.124F, 0.124F, 0.4F, 0.124F);
+                renderCuboid(-0.124F, 0.5F * 0.0625F, -0.124F, 0.124F, drink.getItem() instanceof ItemBottle ? 0.1F * servings : 0.4F, 0.124F);
 
                 GlStateManager.disableRescaleNormal();
                 GlStateManager.disableBlend();

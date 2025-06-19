@@ -103,6 +103,21 @@ public class BlockBlender extends BlockFurnitureTile
                         tileEntityBlender.drinkCount--;
                         TileEntityUtil.markBlockForUpdate(worldIn, pos);
                     }
+                    else if(heldItem.getItem() == FurnitureItems.BOTTLE)
+                    {
+                        if(heldItem.getCount() == 0 | heldItem.getCount() == 1)
+                        {
+                            playerIn.setHeldItem(hand, tileEntityBlender.getBottledDrink());
+                        }
+                        else
+                        {
+                            playerIn.inventory.addItemStackToInventory(tileEntityBlender.getBottledDrink());
+                            heldItem.shrink(1);
+                        }
+                        playerIn.playSound(SoundEvents.ITEM_BOTTLE_FILL, 1.0F, 1.5F);
+                        tileEntityBlender.drinkCount = 0;
+                        TileEntityUtil.markBlockForUpdate(worldIn, pos);
+                    }
                     return true;
                 }
             }

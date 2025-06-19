@@ -17,7 +17,7 @@
 
 * Includes over 90 unique pieces of furniture!
 * Working functionality in most blocks, not just decorative.
-* Most textures of models are based on the current resource pack 
+* Most textures of models are based on the current resource pack
 * A fully working mail system - Send items and blocks to players around your server!
 * A lot of block variants
 
@@ -25,6 +25,7 @@
 
 * Added Biomes O' Plenty support 🌼
 * Added bath advancement
+* Added bottles for blended drinks
 * Added ceiling placement for lamps
 * Added computer GUI item data range checks
 * Added configurable image/GIF file sizes 🖼️

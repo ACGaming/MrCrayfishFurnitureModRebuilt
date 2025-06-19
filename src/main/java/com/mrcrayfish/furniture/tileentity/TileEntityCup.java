@@ -9,6 +9,7 @@ public class TileEntityCup extends TileEntitySyncClient implements ISimpleInvent
 {
     private ItemStack item = null;
     public int red, green, blue;
+    public int servings;
 
     public void setItem(ItemStack item)
     {
@@ -20,6 +21,12 @@ public class TileEntityCup extends TileEntitySyncClient implements ISimpleInvent
         this.red = rgb[0];
         this.green = rgb[1];
         this.blue = rgb[2];
+    }
+
+    public void setServings(int servings)
+    {
+        this.servings = servings;
+        this.item.getTagCompound().setInteger("Servings", servings);
     }
 
     public ItemStack getDrink()
