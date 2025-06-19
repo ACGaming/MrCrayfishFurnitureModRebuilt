@@ -114,7 +114,7 @@ public class BlockBlender extends BlockFurnitureTile
                             playerIn.inventory.addItemStackToInventory(tileEntityBlender.getBottledDrink());
                             heldItem.shrink(1);
                         }
-                        playerIn.playSound(SoundEvents.ITEM_BOTTLE_FILL, 1.0F, 1.5F);
+                        playerIn.playSound(SoundEvents.ITEM_BOTTLE_FILL, 1.0F, 1.0F);
                         tileEntityBlender.drinkCount = 0;
                         TileEntityUtil.markBlockForUpdate(worldIn, pos);
                     }
