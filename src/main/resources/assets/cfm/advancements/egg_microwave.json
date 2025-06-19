@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:egg"
+        },
+        "title": {
+            "translate": "advancements.cfm.egg_microwave"
+        },
+        "description": {
+            "translate": "advancements.cfm.egg_microwave.desc"
+        }
+    },
+	"parent": "cfm:appliance_city",
+	"criteria": {
+        "egg_microwave": {
+            "trigger": "cfm:egg_microwave"
+        }
+	}
+}

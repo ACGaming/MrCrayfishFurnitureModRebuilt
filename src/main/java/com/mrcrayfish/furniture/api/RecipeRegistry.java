@@ -1500,6 +1500,8 @@ public class RecipeRegistry extends RecipeAPI
             RecipeRegistry.getInstance().registerMicrowaveRecipe(new ItemStack(Items.BEEF), new ItemStack(Items.COOKED_BEEF));
         if(ConfigurationHandler.micr_2)
             RecipeRegistry.getInstance().registerMicrowaveRecipe(new ItemStack(Items.POTATO), new ItemStack(Items.BAKED_POTATO));
+        if(ConfigurationHandler.micr_3)
+            RecipeRegistry.getInstance().registerMicrowaveRecipe(new ItemStack(Items.EGG), new ItemStack(Items.AIR));
 
         if(ConfigurationHandler.toast_1)
             RecipeRegistry.getInstance().registerToasterRecipe(new ItemStack(FurnitureItems.BREAD_SLICE), new ItemStack(FurnitureItems.TOAST));

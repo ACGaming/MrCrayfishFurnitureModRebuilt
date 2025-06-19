@@ -30,6 +30,7 @@
 * Added computer GUI item data range checks
 * Added configurable image/GIF file sizes 🖼️
 * Added dishwasher & washing machine input configs
+* Added microwave easter egg 🥚
 * Added modded food support for oven recipes
 * Added modern computer along with the new webstore "EnderShop" (Courtesy of MisterIceCat🧊🐈)
 * Added seasonal presents config setting

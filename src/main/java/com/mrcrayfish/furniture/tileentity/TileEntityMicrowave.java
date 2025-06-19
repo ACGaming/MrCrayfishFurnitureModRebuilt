@@ -1,17 +1,22 @@
 package com.mrcrayfish.furniture.tileentity;
 
+import com.mrcrayfish.furniture.advancement.Triggers;
 import com.mrcrayfish.furniture.api.RecipeAPI;
 import com.mrcrayfish.furniture.api.RecipeData;
+import com.mrcrayfish.furniture.blocks.BlockMicrowave;
 import com.mrcrayfish.furniture.gui.containers.ContainerMicrowave;
 import com.mrcrayfish.furniture.init.FurnitureSounds;
 import com.mrcrayfish.furniture.util.ParticleSpawner;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.ISidedInventory;
+import net.minecraft.item.ItemEgg;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.ITickable;
 import net.minecraft.util.SoundCategory;
 
@@ -23,7 +28,6 @@ public class TileEntityMicrowave extends TileEntityFurniture implements ISidedIn
 
     private static final int[] slot = new int[]{0};
 
-    private String customName;
     private boolean cooking = false;
     public int progress = 0;
     private int timer = 0;
@@ -40,9 +44,9 @@ public class TileEntityMicrowave extends TileEntityFurniture implements ISidedIn
 
     public void startCooking()
     {
-        if(!getStackInSlot(0).isEmpty())
+        if(!getItem().isEmpty())
         {
-            RecipeData data = RecipeAPI.getMicrowaveRecipeFromIngredients(getStackInSlot(0));
+            RecipeData data = RecipeAPI.getMicrowaveRecipeFromIngredients(getItem());
             if(data != null)
             {
                 cooking = true;
@@ -53,8 +57,9 @@ public class TileEntityMicrowave extends TileEntityFurniture implements ISidedIn
 
     public void stopCooking()
     {
-        this.cooking = false;
-        this.progress = 0;
+        timer = 0;
+        progress = 0;
+        cooking = false;
         world.updateComparatorOutputLevel(pos, blockType);
     }
 
@@ -66,7 +71,7 @@ public class TileEntityMicrowave extends TileEntityFurniture implements ISidedIn
     @Override
     public void update()
     {
-        if(cooking)
+        if(isCooking())
         {
             if(this.world.isRemote)
             {
@@ -76,11 +81,29 @@ public class TileEntityMicrowave extends TileEntityFurniture implements ISidedIn
             }
 
             progress++;
-            if(progress >= 40)
+            if(progress >= 35 && getItem().getItem() instanceof ItemEgg)
             {
-                if(!getStackInSlot(0).isEmpty())
+                if(this.world.isRemote)
                 {
-                    RecipeData data = RecipeAPI.getMicrowaveRecipeFromIngredients(getStackInSlot(0));
+                    for(int i = 0; i < 3; i++)
+                    {
+                        double posX = pos.getX() + 0.35D + (rand.nextDouble() / 3);
+                        double posZ = pos.getZ() + 0.35D + (rand.nextDouble() / 3);
+                        world.spawnParticle(EnumParticleTypes.EXPLOSION_NORMAL, posX, pos.getY() + 0.065D, posZ, 0, 0, 0);
+                    }
+                }
+                world.playSound(pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D, SoundEvents.ENTITY_ZOMBIE_BREAK_DOOR_WOOD, SoundCategory.BLOCKS, 0.5F, 1.5F, false);
+                world.playSound(pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D, SoundEvents.ENTITY_SLIME_DEATH, SoundCategory.BLOCKS, 1.0F, 1.5F, false);
+                Triggers.trigger(Triggers.EGG_MICROWAVE, world.getClosestPlayer(pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D, 5.0D, false));
+                stopCooking();
+                setInventorySlotContents(0, ItemStack.EMPTY);
+                world.setBlockState(pos, world.getBlockState(pos).withProperty(BlockMicrowave.DIRTY, true));
+            }
+            else if(progress >= 40)
+            {
+                if(!getItem().isEmpty())
+                {
+                    RecipeData data = RecipeAPI.getMicrowaveRecipeFromIngredients(getItem());
                     if(data != null)
                     {
                         this.setInventorySlotContents(0, data.getOutput().copy());
@@ -90,10 +113,7 @@ public class TileEntityMicrowave extends TileEntityFurniture implements ISidedIn
                 {
                     world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.microwave_finish, SoundCategory.BLOCKS, 0.75F, 1.0F, true);
                 }
-                timer = 0;
-                progress = 0;
-                cooking = false;
-                world.updateComparatorOutputLevel(pos, blockType);
+                stopCooking();
             }
             else
             {

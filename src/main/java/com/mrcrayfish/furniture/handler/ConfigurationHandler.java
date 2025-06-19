@@ -45,7 +45,7 @@ public class ConfigurationHandler
     public static boolean dish_11 = true, dish_12 = true, dish_13 = true, dish_14 = true, dish_15 = true, dish_16 = true, dish_17 = true, dish_18 = true, dish_19 = true, dish_20 = true;
     public static boolean dish_21 = true, dish_22 = true, dish_23 = true, dish_24 = true, dish_25 = true, dish_26 = true, dish_27 = true, dish_28 = true, dish_29 = true, dish_30 = true;
 
-    public static boolean micr_1 = true, micr_2 = true;
+    public static boolean micr_1 = true, micr_2 = true, micr_3 = true;
 
     public static boolean toast_1 = true;
 
@@ -198,6 +198,7 @@ public class ConfigurationHandler
 
         micr_1 = config.getBoolean("microwave-1", CATEGORY_RECIPE_SETTINGS, micr_1, "Beef -> Cooked Beef");
         micr_2 = config.getBoolean("microwave-2", CATEGORY_RECIPE_SETTINGS, micr_2, "Potato -> Baked Potato");
+        micr_3 = config.getBoolean("microwave-3", CATEGORY_RECIPE_SETTINGS, micr_3, "Egg -> ???");
 
         toast_1 = config.getBoolean("toast-2", CATEGORY_RECIPE_SETTINGS, toast_1, "Bread Slice -> Toast");
 
