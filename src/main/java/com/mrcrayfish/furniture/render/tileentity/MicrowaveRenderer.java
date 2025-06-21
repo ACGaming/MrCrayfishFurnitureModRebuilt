@@ -1,5 +1,6 @@
 package com.mrcrayfish.furniture.render.tileentity;
 
+import com.mrcrayfish.furniture.blocks.BlockMicrowave;
 import com.mrcrayfish.furniture.tileentity.TileEntityMicrowave;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
@@ -13,7 +14,7 @@ public class MicrowaveRenderer extends TileEntitySpecialRenderer<TileEntityMicro
     @Override
     public void render(TileEntityMicrowave microwave, double x, double y, double z, float partialTicks, int destroyStage, float alpha)
     {
-        int metadata = microwave.getBlockMetadata();
+        int facingIndex = this.getWorld().getBlockState(microwave.getPos()).getValue(BlockMicrowave.FACING).getHorizontalIndex();
 
         if(microwave.getItem() != null)
         {
@@ -25,7 +26,7 @@ public class MicrowaveRenderer extends TileEntitySpecialRenderer<TileEntityMicro
             float xOffset = 0.0F;
             float zOffset = 0.0F;
 
-            switch(metadata)
+            switch(facingIndex)
             {
                 case 0:
                     xOffset += 0.1F;
@@ -45,7 +46,7 @@ public class MicrowaveRenderer extends TileEntitySpecialRenderer<TileEntityMicro
             }
 
             GlStateManager.translate((float) x + 0.5F + xOffset, (float) y + 0.075F, (float) z + 0.3F + zOffset);
-            GlStateManager.rotate(metadata * -90F, 0, 1, 0);
+            GlStateManager.rotate(facingIndex * -90F, 0, 1, 0);
             GlStateManager.rotate(180, 0, 1, 1);
             GlStateManager.translate(0, -0.3, 0);
             Minecraft.getMinecraft().getRenderManager().renderEntity(entityFood, 0.0D, 0.0D, 0.075D, 0.0F, 0.0F, false);
