@@ -19,6 +19,10 @@
     "channel=4,facing=north": {"model": "cfm:retro_tv_channel_5", "y": 270},
     "channel=4,facing=south": {"model": "cfm:retro_tv_channel_5", "y": 90},
     "channel=4,facing=east": {"model": "cfm:retro_tv_channel_5"},
-    "channel=4,facing=west": {"model": "cfm:retro_tv_channel_5", "y": 180}
+    "channel=4,facing=west": {"model": "cfm:retro_tv_channel_5", "y": 180},
+    "channel=5,facing=north": {"model": "cfm:retro_tv_channel_6", "y": 270},
+    "channel=5,facing=south": {"model": "cfm:retro_tv_channel_6", "y": 90},
+    "channel=5,facing=east": {"model": "cfm:retro_tv_channel_6"},
+    "channel=5,facing=west": {"model": "cfm:retro_tv_channel_6", "y": 180}
   }
 }

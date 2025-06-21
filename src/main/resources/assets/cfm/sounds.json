@@ -302,5 +302,14 @@
         "stream": false
       }
     ]
+  },
+  "channel_dogfood": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:channel_dogfood",
+        "stream": false
+      }
+    ]
   }
 }

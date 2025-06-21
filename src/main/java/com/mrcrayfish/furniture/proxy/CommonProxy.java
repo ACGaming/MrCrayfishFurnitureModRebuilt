@@ -52,6 +52,7 @@ public class CommonProxy implements ProxyInterface
         builder.add("channel_heman");
         builder.add("channel_switch");
         builder.add("channel_cooking");
+        builder.add("channel_dogfood");
         IGNORE_SOUNDS = builder.build();
 
         builder = ImmutableList.builder();

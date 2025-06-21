@@ -43,5 +43,6 @@ public class Channels
         registerChannel("sam_tabor", FurnitureSounds.channel_sam_tabor);
         registerChannel("heman", FurnitureSounds.channel_heman);
         registerChannel("switch", FurnitureSounds.channel_switch);
+        registerChannel("dogfood", FurnitureSounds.channel_dogfood);
     }
 }

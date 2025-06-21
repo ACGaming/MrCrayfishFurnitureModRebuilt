@@ -28,7 +28,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockRetroTV extends BlockFurnitureTile
 {
-    public static final PropertyInteger CHANNEL = PropertyInteger.create("channel", 0, 4);
+    public static final PropertyInteger CHANNEL = PropertyInteger.create("channel", 0, 5);
 
     private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.0625, 0.0, 0.0625, 0.9375, 0.875, 0.9375);
 

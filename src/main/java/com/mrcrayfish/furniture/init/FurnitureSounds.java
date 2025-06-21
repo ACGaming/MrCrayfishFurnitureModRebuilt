@@ -31,6 +31,7 @@ public class FurnitureSounds
     public static SoundEvent channel_sam_tabor;
     public static SoundEvent channel_heman;
     public static SoundEvent channel_switch;
+    public static SoundEvent channel_dogfood;
     public static SoundEvent boing;
     public static SoundEvent sizzle;
     public static SoundEvent light_switch;
@@ -68,6 +69,7 @@ public class FurnitureSounds
         channel_sam_tabor = registerSound("cfm:channel_sam_tabor");
         channel_heman = registerSound("cfm:channel_heman");
         channel_switch = registerSound("cfm:channel_switch");
+        channel_dogfood = registerSound("cfm:channel_dogfood");
         boing = registerSound("cfm:boing");
         sizzle = registerSound("cfm:sizzle");
         light_switch = registerSound("cfm:light_switch");

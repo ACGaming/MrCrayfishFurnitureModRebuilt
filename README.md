@@ -66,7 +66,7 @@
 * Improved image/GIF cache stability
 * Improved shower model (Courtesy of MisterIceCat🧊🐈)
 * Over 12 new overhauled sounds effects (Courtesy of MisterIceCat🧊🐈)
-* Ported retro TV from older versions
+* Ported retro TV from older versions + additional channels
 * Ported wheelie bin from the Community Edition (Courtesy of Groobler)
 * Prevented duplications in certain containers
 * Reduced arbitrary container limitations
