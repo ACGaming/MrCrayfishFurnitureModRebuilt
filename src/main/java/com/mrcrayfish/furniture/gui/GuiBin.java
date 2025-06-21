@@ -1,14 +1,18 @@
 package com.mrcrayfish.furniture.gui;
 
+import com.mrcrayfish.furniture.blocks.BlockWheelieBin;
 import com.mrcrayfish.furniture.gui.containers.ContainerBin;
 import com.mrcrayfish.furniture.network.PacketHandler;
 import com.mrcrayfish.furniture.network.message.MessageEmptyBin;
+
+import net.minecraft.block.Block;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.math.BlockPos;
 import org.lwjgl.input.Keyboard;
 
 import java.io.IOException;
@@ -16,6 +20,8 @@ import java.io.IOException;
 public class GuiBin extends GuiContainer
 {
     private static final ResourceLocation gui = new ResourceLocation("cfm:textures/gui/bin.png");
+    private static final ResourceLocation gui_wheelie = new ResourceLocation("cfm:textures/gui/wheeliebin.png");
+    private final BlockPos.MutableBlockPos pos = new BlockPos.MutableBlockPos();
     private GuiButton button_empty;
     private int tileX, tileY, tileZ;
 
@@ -27,6 +33,7 @@ public class GuiBin extends GuiContainer
         this.tileZ = tileZ;
         this.xSize = 176;
         this.ySize = 197;
+        this.pos.setPos(tileX, tileY, tileZ);
     }
 
     @Override
@@ -47,7 +54,8 @@ public class GuiBin extends GuiContainer
     protected void drawGuiContainerBackgroundLayer(float f, int i, int j)
     {
         GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
-        this.mc.getTextureManager().bindTexture(gui);
+        Block blockBin = mc.world.getBlockState(this.pos).getBlock();
+        this.mc.getTextureManager().bindTexture(blockBin instanceof BlockWheelieBin ? gui_wheelie : gui);
         int l = (width - xSize) / 2;
         int i1 = (height - ySize) / 2;
         this.drawTexturedModalRect(l, i1, 0, 0, xSize, ySize);
