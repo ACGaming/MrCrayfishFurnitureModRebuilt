@@ -24,6 +24,7 @@ public class ContainerWashingMachine extends Container
     public ContainerWashingMachine(IInventory playerInventory, IInventory washingMachineInventory)
     {
         this.washingMachineInventory = washingMachineInventory;
+        this.washingMachineInventory.openInventory(null);
 
         this.addSlotToContainer(new SlotArmour(washingMachineInventory, 0, 80, 44, EntityEquipmentSlot.HEAD));
         this.addSlotToContainer(new SlotArmour(washingMachineInventory, 1, 64, 60, EntityEquipmentSlot.CHEST));

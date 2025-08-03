@@ -114,6 +114,13 @@ public class ContainerDishwasher extends Container
         return itemCopy;
     }
 
+    @Override
+    public void onContainerClosed(EntityPlayer player)
+    {
+        super.onContainerClosed(player);
+        this.dishwasherInventory.closeInventory(player);
+    }
+
     public static int toolToSlot(ItemStack stack)
     {
         Item item = stack.getItem();

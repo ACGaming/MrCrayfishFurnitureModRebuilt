@@ -13,9 +13,11 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.ITickable;
+import net.minecraft.util.SoundCategory;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+import com.mrcrayfish.furniture.init.FurnitureSounds;
 import java.util.Random;
 
 public class TileEntityOven extends TileEntityFurniture implements ISidedInventory, ITickable
@@ -244,5 +246,17 @@ public class TileEntityOven extends TileEntityFurniture implements ISidedInvento
     {
         this.fillWithLoot(playerIn);
         return new ContainerOven(playerInventory, this);
+    }
+
+    @Override
+    public void openInventory(EntityPlayer player)
+    {
+        world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.oven_open, SoundCategory.BLOCKS, 1.0F, 1.0F, true);
+    }
+
+    @Override
+    public void closeInventory(EntityPlayer player)
+    {
+        world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.oven_close, SoundCategory.BLOCKS, 1.0F, 1.0F, true);
     }
 }

@@ -4,6 +4,7 @@ import com.mrcrayfish.furniture.advancement.Triggers;
 import com.mrcrayfish.furniture.api.RecipeAPI;
 import com.mrcrayfish.furniture.api.RecipeData;
 import com.mrcrayfish.furniture.blocks.BlockMicrowave;
+import com.mrcrayfish.furniture.blocks.BlockWheelieBin;
 import com.mrcrayfish.furniture.gui.containers.ContainerMicrowave;
 import com.mrcrayfish.furniture.init.FurnitureSounds;
 import com.mrcrayfish.furniture.util.ParticleSpawner;
@@ -182,5 +183,17 @@ public class TileEntityMicrowave extends TileEntityFurniture implements ISidedIn
     {
         this.fillWithLoot(playerIn);
         return new ContainerMicrowave(playerInventory, this);
+    }
+
+    @Override
+    public void openInventory(EntityPlayer player)
+    {
+        world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.microwave_open, SoundCategory.BLOCKS, 1.0F, 1.0F, true);
+    }
+
+    @Override
+    public void closeInventory(EntityPlayer player)
+    {
+        world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.microwave_close, SoundCategory.BLOCKS, 1.0F, 1.0F, true);
     }
 }

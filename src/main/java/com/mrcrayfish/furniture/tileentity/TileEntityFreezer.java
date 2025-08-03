@@ -5,6 +5,8 @@ import com.mrcrayfish.furniture.api.RecipeData;
 import com.mrcrayfish.furniture.api.Recipes;
 import com.mrcrayfish.furniture.gui.containers.ContainerFreezer;
 import com.mrcrayfish.furniture.init.FurnitureItems;
+import com.mrcrayfish.furniture.init.FurnitureSounds;
+
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.init.Blocks;
@@ -15,6 +17,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ITickable;
+import net.minecraft.util.SoundCategory;
 
 public class TileEntityFreezer extends TileEntityFurniture implements ISidedInventory, ITickable
 {
@@ -257,5 +260,17 @@ public class TileEntityFreezer extends TileEntityFurniture implements ISidedInve
     {
         this.fillWithLoot(playerIn);
         return new ContainerFreezer(playerInventory, this);
+    }
+
+    @Override
+    public void openInventory(EntityPlayer player)
+    {
+        world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.fridge_open, SoundCategory.BLOCKS, 1.0F, 1.0F, true);
+    }
+
+    @Override
+    public void closeInventory(EntityPlayer player)
+    {
+        world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.fridge_close, SoundCategory.BLOCKS, 1.0F, 1.0F, true);
     }
 }

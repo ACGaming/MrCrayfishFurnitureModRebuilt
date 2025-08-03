@@ -1,6 +1,7 @@
 package com.mrcrayfish.furniture.blocks;
 
 import com.mrcrayfish.furniture.init.FurnitureBlocks;
+import com.mrcrayfish.furniture.init.FurnitureSounds;
 import com.mrcrayfish.furniture.tileentity.TileEntityShowerHead;
 import com.mrcrayfish.furniture.util.CollisionHelper;
 import net.minecraft.block.Block;
@@ -61,7 +62,7 @@ public class BlockShowerHeadOn extends BlockFurnitureTile
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
     {
         worldIn.setBlockState(pos, FurnitureBlocks.SHOWER_HEAD_OFF.getDefaultState().withProperty(FACING, state.getValue(FACING)), 2);
-        worldIn.playSound(pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D, SoundEvents.BLOCK_LEVER_CLICK, SoundCategory.BLOCKS, 0.3F, 0.5F, false);
+        worldIn.playSound(pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D, FurnitureSounds.tap_close, SoundCategory.BLOCKS, 1.0F, 1.0F, false);
         return true;
     }
 

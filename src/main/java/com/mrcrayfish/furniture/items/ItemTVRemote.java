@@ -64,6 +64,7 @@ public class ItemTVRemote extends Item
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
     {
+        worldIn.playSound(null, playerIn.getPosition(), FurnitureSounds.tv_remote, SoundCategory.PLAYERS, 1.0F, 1.0F);
         return new ActionResult<>(activateTelevision(worldIn, playerIn), playerIn.getHeldItem(handIn));
     }
 

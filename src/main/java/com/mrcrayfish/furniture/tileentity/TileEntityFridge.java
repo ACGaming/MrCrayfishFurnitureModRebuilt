@@ -1,12 +1,15 @@
 package com.mrcrayfish.furniture.tileentity;
 
 import com.mrcrayfish.furniture.gui.containers.ContainerFridge;
+import com.mrcrayfish.furniture.init.FurnitureSounds;
+
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
+import net.minecraft.util.SoundCategory;
 
 public class TileEntityFridge extends TileEntityFurniture implements ISidedInventory
 {
@@ -40,5 +43,17 @@ public class TileEntityFridge extends TileEntityFurniture implements ISidedInven
     public boolean canExtractItem(int index, ItemStack stack, EnumFacing direction)
     {
         return !isLocked();
+    }
+
+    @Override
+    public void openInventory(EntityPlayer player)
+    {
+        world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.fridge_open, SoundCategory.BLOCKS, 1.0F, 1.0F, true);
+    }
+
+    @Override
+    public void closeInventory(EntityPlayer player)
+    {
+        world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.fridge_close, SoundCategory.BLOCKS, 1.0F, 1.0F, true);
     }
 }

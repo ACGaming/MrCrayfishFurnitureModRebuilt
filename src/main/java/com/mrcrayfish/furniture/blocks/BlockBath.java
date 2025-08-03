@@ -258,7 +258,7 @@ public class BlockBath extends BlockFurnitureTile
                                 }
                                 else
                                 {
-                                    worldIn.playSound(pos.getX() + 0.5, pos.getY() + 1, pos.getZ() + 0.5, FurnitureSounds.tap, SoundCategory.BLOCKS, 0.75F, 0.8F, true);
+                                    worldIn.playSound(pos.getX() + 0.5, pos.getY() + 1, pos.getZ() + 0.5, FurnitureSounds.tap_open, SoundCategory.BLOCKS, 0.75F, 0.8F, true);
                                 }
                             }
                         }
@@ -288,7 +288,7 @@ public class BlockBath extends BlockFurnitureTile
                                 }
                                 else
                                 {
-                                    worldIn.playSound(pos.getX() + 0.5, pos.getY() + 1, pos.getZ() + 0.5, FurnitureSounds.tap, SoundCategory.BLOCKS, 0.75F, 0.8F, true);
+                                    worldIn.playSound(pos.getX() + 0.5, pos.getY() + 1, pos.getZ() + 0.5, FurnitureSounds.tap_open, SoundCategory.BLOCKS, 0.75F, 0.8F, true);
                                 }
                             }
                         }

@@ -16,6 +16,8 @@ public class ContainerOven extends Container
     public ContainerOven(IInventory playerInventory, IInventory ovenInventory)
     {
         this.ovenInventory = ovenInventory;
+        this.ovenInventory.openInventory(null);
+
         for(int i = 0; i < 4; i++)
         {
             this.addSlotToContainer(new Slot(ovenInventory, i, i * 18 + 53, 31));

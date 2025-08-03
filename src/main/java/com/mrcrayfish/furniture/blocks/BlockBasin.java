@@ -193,7 +193,7 @@ public class BlockBasin extends BlockFurniture
                         if(!worldIn.isRemote)
                         {
                             worldIn.setBlockState(pos, state.withProperty(FILLED, true), 2);
-                            worldIn.playSound(null, pos.getX() + 0.5, pos.getY() + 1, pos.getZ() + 0.5, FurnitureSounds.tap, SoundCategory.BLOCKS, 0.75F, 1.0F);
+                            worldIn.playSound(null, pos.getX() + 0.5, pos.getY() + 1, pos.getZ() + 0.5, FurnitureSounds.tap_open, SoundCategory.BLOCKS, 0.75F, 1.0F);
                             worldIn.setBlockToAir(pos.add(0, -2, 0));
                             worldIn.updateComparatorOutputLevel(pos, this);
                         }
@@ -218,7 +218,7 @@ public class BlockBasin extends BlockFurniture
                     if(!worldIn.isRemote)
                     {
                         worldIn.setBlockState(pos, state.withProperty(FILLED, true), 2);
-                        worldIn.playSound(null, pos.getX() + 0.5, pos.getY() + 1, pos.getZ() + 0.5, FurnitureSounds.tap, SoundCategory.BLOCKS, 0.75F, 1.0F);
+                        worldIn.playSound(null, pos.getX() + 0.5, pos.getY() + 1, pos.getZ() + 0.5, FurnitureSounds.tap_open, SoundCategory.BLOCKS, 0.75F, 1.0F);
                         worldIn.setBlockToAir(pos.add(0, -2, 0));
                         worldIn.updateComparatorOutputLevel(pos, this);
                     }

@@ -13,7 +13,7 @@ public class ContainerComputer extends Container
     public ContainerComputer(IInventory playerInventory, IInventory computerInventory)
     {
         this.computerInventory = computerInventory;
-        computerInventory.openInventory(null);
+        this.computerInventory.openInventory(null);
 
         this.addSlotToContainer(new Slot(computerInventory, 0, 119, 40));
 

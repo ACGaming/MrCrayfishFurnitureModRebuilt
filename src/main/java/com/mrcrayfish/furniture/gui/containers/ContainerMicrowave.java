@@ -17,6 +17,7 @@ public class ContainerMicrowave extends Container
     public ContainerMicrowave(IInventory playerInventory, TileEntityMicrowave microwaveInventory)
     {
         this.microwaveInventory = microwaveInventory;
+        this.microwaveInventory.openInventory(null);
 
         this.addSlotToContainer(new SlotMicrowave(microwaveInventory, 0, 65, 43));
 

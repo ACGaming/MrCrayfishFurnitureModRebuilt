@@ -18,6 +18,8 @@ public class ContainerPrinter extends Container
     public ContainerPrinter(IInventory playerInventory, IInventory printerInventory)
     {
         this.printerInventory = printerInventory;
+        this.printerInventory.openInventory(null);
+
         this.addSlotToContainer(new SlotPrinterInput(printerInventory, 0, 80, 5));
         this.addSlotToContainer(new Slot(printerInventory, 1, 55, 30));
         this.addSlotToContainer(new SlotPrinter(printerInventory, 2, 80, 61));

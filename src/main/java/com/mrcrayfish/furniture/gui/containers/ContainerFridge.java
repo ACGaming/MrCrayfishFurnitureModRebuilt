@@ -12,8 +12,8 @@ public class ContainerFridge extends Container
 
     public ContainerFridge(IInventory playerInventory, IInventory fridgeInventory)
     {
-        this.lowerChestInventory = playerInventory;
-        fridgeInventory.openInventory(null);
+        this.lowerChestInventory = fridgeInventory;
+        this.lowerChestInventory.openInventory(null);
 
         int count = 0;
         for(int i = 0; i < 3; i++)
@@ -39,11 +39,13 @@ public class ContainerFridge extends Container
         }
     }
 
+    @Override
     public boolean canInteractWith(EntityPlayer par1EntityPlayer)
     {
         return this.lowerChestInventory.isUsableByPlayer(par1EntityPlayer);
     }
 
+    @Override
     public ItemStack transferStackInSlot(EntityPlayer par1EntityPlayer, int par2)
     {
         ItemStack var3 = ItemStack.EMPTY;
@@ -82,6 +84,7 @@ public class ContainerFridge extends Container
     /**
      * Callback for when the crafting gui is closed.
      */
+    @Override
     public void onContainerClosed(EntityPlayer par1EntityPlayer)
     {
         super.onContainerClosed(par1EntityPlayer);

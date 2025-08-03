@@ -1,5 +1,6 @@
 package com.mrcrayfish.furniture.tileentity;
 
+import com.mrcrayfish.furniture.blocks.BlockWheelieBin;
 import com.mrcrayfish.furniture.gui.containers.ContainerBin;
 import com.mrcrayfish.furniture.init.FurnitureSounds;
 import net.minecraft.entity.player.EntityPlayer;
@@ -17,13 +18,27 @@ public class TileEntityBin extends TileEntityFurniture
     @Override
     public void openInventory(EntityPlayer player)
     {
-        world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.bin_open, SoundCategory.BLOCKS, 0.75F, 1.0F, true);
+        if(getBlockType() instanceof BlockWheelieBin)
+        {
+            world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.wheelie_bin_open, SoundCategory.BLOCKS, 1.0F, 1.0F, true);
+        }
+        else
+        {
+            world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.bin_open, SoundCategory.BLOCKS, 0.75F, 1.0F, true);
+        }
     }
 
     @Override
     public void closeInventory(EntityPlayer player)
     {
-        world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.bin_close, SoundCategory.BLOCKS, 0.75F, 1.0F, true);
+        if(getBlockType() instanceof BlockWheelieBin)
+        {
+            world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.wheelie_bin_close, SoundCategory.BLOCKS, 1.0F, 1.0F, true);
+        }
+        else
+        {
+            world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.bin_close, SoundCategory.BLOCKS, 0.75F, 1.0F, true);
+        }
     }
 
     @Override

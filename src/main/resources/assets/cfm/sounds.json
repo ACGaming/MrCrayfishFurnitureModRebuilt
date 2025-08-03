@@ -66,11 +66,19 @@
       }
     ]
   },
-  "tap": {
+  "tap_open": {
     "category": "block",
     "sounds": [
       {
-        "name": "cfm:tap"
+        "name": "cfm:tap_open"
+      }
+    ]
+  },
+  "tap_close": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:tap_close"
       }
     ]
   },
@@ -309,6 +317,126 @@
       {
         "name": "cfm:channel_dogfood",
         "stream": false
+      }
+    ]
+  },
+  "computer": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:computer"
+      }
+    ]
+  },
+  "dishwasher_open": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:dishwasher_open"
+      }
+    ]
+  },
+  "dishwasher_close": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:dishwasher_close"
+      }
+    ]
+  },
+  "fridge_open": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:fridge_open"
+      }
+    ]
+  },
+  "fridge_close": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:fridge_close"
+      }
+    ]
+  },
+  "kitchen_counter_open": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:kitchen_counter_open"
+      }
+    ]
+  },
+  "kitchen_counter_close": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:kitchen_counter_close"
+      }
+    ]
+  },
+  "microwave_open": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:microwave_open"
+      }
+    ]
+  },
+  "microwave_close": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:microwave_close"
+      }
+    ]
+  },
+  "oven_open": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:oven_open"
+      }
+    ]
+  },
+  "oven_close": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:oven_close"
+      }
+    ]
+  },
+  "printer": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:printer"
+      }
+    ]
+  },
+  "tv_remote": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "cfm:tv_remote"
+      }
+    ]
+  },
+  "wheelie_bin_open": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:wheelie_bin_open"
+      }
+    ]
+  },
+  "wheelie_bin_close": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:wheelie_bin_close"
       }
     ]
   }

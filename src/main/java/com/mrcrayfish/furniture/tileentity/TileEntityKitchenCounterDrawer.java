@@ -120,13 +120,13 @@ public class TileEntityKitchenCounterDrawer extends TileEntityLockableLoot
     @Override
     public void openInventory(EntityPlayer player)
     {
-        world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.cabinet_open, SoundCategory.BLOCKS, 0.75F, 0.9F, true);
+        world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.kitchen_counter_open, SoundCategory.BLOCKS, 1.0F, 1.0F, true);
     }
 
     @Override
     public void closeInventory(EntityPlayer player)
     {
-        world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.cabinet_close, SoundCategory.BLOCKS, 0.75F, 0.8F, true);
+        world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.kitchen_counter_close, SoundCategory.BLOCKS, 1.0F, 1.0F, true);
     }
 
     public void setColour(int colour)

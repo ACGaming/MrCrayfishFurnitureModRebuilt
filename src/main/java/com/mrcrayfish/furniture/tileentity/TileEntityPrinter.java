@@ -3,6 +3,7 @@ package com.mrcrayfish.furniture.tileentity;
 import com.mrcrayfish.furniture.api.RecipeAPI;
 import com.mrcrayfish.furniture.gui.containers.ContainerPrinter;
 import com.mrcrayfish.furniture.init.FurnitureItems;
+import com.mrcrayfish.furniture.init.FurnitureSounds;
 import com.mrcrayfish.furniture.util.TileEntityUtil;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
@@ -15,6 +16,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ITickable;
+import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.MathHelper;
 
 public class TileEntityPrinter extends TileEntityFurniture implements ISidedInventory, ITickable
@@ -266,5 +268,11 @@ public class TileEntityPrinter extends TileEntityFurniture implements ISidedInve
     {
         this.fillWithLoot(playerIn);
         return new ContainerPrinter(playerInventory, this);
+    }
+
+    @Override
+    public void openInventory(EntityPlayer player)
+    {
+        world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.printer, SoundCategory.BLOCKS, 1.0F, 1.0F, true);
     }
 }

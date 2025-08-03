@@ -17,7 +17,7 @@ public class ContainerFreezer extends Container
     public ContainerFreezer(IInventory playerInventory, IInventory freezerInventory)
     {
         this.freezerInventory = freezerInventory;
-        freezerInventory.openInventory(null);
+        this.freezerInventory.openInventory(null);
 
         this.addSlotToContainer(new Slot(freezerInventory, 0, 130, 6));
         this.addSlotToContainer(new Slot(freezerInventory, 1, 42, 32));
@@ -43,6 +43,7 @@ public class ContainerFreezer extends Container
         return this.freezerInventory.isUsableByPlayer(par1EntityPlayer);
     }
 
+    @Override
     public ItemStack transferStackInSlot(EntityPlayer player, int slotNum)
     {
         ItemStack itemCopy = ItemStack.EMPTY;
@@ -115,6 +116,13 @@ public class ContainerFreezer extends Container
         }
 
         return itemCopy;
+    }
+
+    @Override
+    public void onContainerClosed(EntityPlayer par1EntityPlayer)
+    {
+        super.onContainerClosed(par1EntityPlayer);
+        this.freezerInventory.closeInventory(par1EntityPlayer);
     }
 
     public IInventory getFreezerInventory()

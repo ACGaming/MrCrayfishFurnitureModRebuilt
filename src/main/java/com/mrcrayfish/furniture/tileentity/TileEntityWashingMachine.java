@@ -298,4 +298,16 @@ public class TileEntityWashingMachine extends TileEntityFurniture implements ISi
         this.fillWithLoot(playerIn);
         return new ContainerWashingMachine(playerInventory, this);
     }
+
+    @Override
+    public void openInventory(EntityPlayer player)
+    {
+        world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.dishwasher_open, SoundCategory.BLOCKS, 1.0F, 1.0F, true);
+    }
+
+    @Override
+    public void closeInventory(EntityPlayer player)
+    {
+        world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.dishwasher_close, SoundCategory.BLOCKS, 1.0F, 1.0F, true);
+    }
 }
