@@ -33,11 +33,9 @@ public class DoorMatRenderer extends TileEntitySpecialRenderer<TileEntityDoorMat
                     GlStateManager.scale(0.015625F, 0.015625F, 0.015625F);
                     int lines = getFontRenderer().listFormattedStringToWidth(doorMat.getMessage(), 50).size();
                     GlStateManager.translate(0, -(lines * getFontRenderer().FONT_HEIGHT - 1) / 2, 0);
-                    GlStateManager.enableAlpha();
                     GlStateManager.disableLighting();
                     drawSplitString(getFontRenderer(), doorMat.getMessage(), 0, 0, 50, Color.white.getRGB());
                     GlStateManager.enableLighting();
-                    GlStateManager.disableAlpha();
                 }
                 GlStateManager.popMatrix();
             }
