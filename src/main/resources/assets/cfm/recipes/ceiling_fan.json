@@ -5,7 +5,7 @@
     "pattern": [
         " C ",
         " V ",
-        "IRI"
+        " F "
     ],
     "type": "minecraft:crafting_shaped",
     "key": {
@@ -17,11 +17,8 @@
             "item": "minecraft:concrete",
             "data": 0
         },
-        "I": {
-            "item": "minecraft:iron_ingot"
-        },
-        "R": {
-            "item": "minecraft:redstone_block"
+        "F": {
+            "item": "cfm:ceiling_fan_fans"
         }
     }
 }
