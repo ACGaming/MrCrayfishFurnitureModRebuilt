@@ -11,13 +11,16 @@
       "model": "cfm:lamp_white"
     },
     "colour=0,down=false,facing=south,up=false": {
-      "model": "cfm:lamp_white"
+      "model": "cfm:lamp_white",
+      "y": 180
     },
     "colour=0,down=false,facing=east,up=false": {
-      "model": "cfm:lamp_white"
+      "model": "cfm:lamp_white",
+      "y": 90
     },
     "colour=0,down=false,facing=west,up=false": {
-      "model": "cfm:lamp_white"
+      "model": "cfm:lamp_white",
+      "y": 270
     },
     "colour=0,down=false,facing=up,up=true": {
       "model": "cfm:lamp_bottom"
@@ -30,13 +33,16 @@
       "model": "cfm:lamp_bottom"
     },
     "colour=0,down=false,facing=south,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 180
     },
     "colour=0,down=false,facing=east,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 90
     },
     "colour=0,down=false,facing=west,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 270
     },
     "colour=0,down=true,facing=up,up=false": {
       "model": "cfm:lamp_top_white"
@@ -49,13 +55,16 @@
       "model": "cfm:lamp_top_white"
     },
     "colour=0,down=true,facing=south,up=false": {
-      "model": "cfm:lamp_top_white"
+      "model": "cfm:lamp_top_white",
+      "y": 180
     },
     "colour=0,down=true,facing=east,up=false": {
-      "model": "cfm:lamp_top_white"
+      "model": "cfm:lamp_top_white",
+      "y": 90
     },
     "colour=0,down=true,facing=west,up=false": {
-      "model": "cfm:lamp_top_white"
+      "model": "cfm:lamp_top_white",
+      "y": 270
     },
     "colour=0,down=true,facing=up,up=true": {
       "model": "cfm:lamp_middle"
@@ -68,13 +77,16 @@
       "model": "cfm:lamp_middle"
     },
     "colour=0,down=true,facing=south,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 180
     },
     "colour=0,down=true,facing=east,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 90
     },
     "colour=0,down=true,facing=west,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 270
     },
     "colour=1,down=false,facing=up,up=false": {
       "model": "cfm:lamp_orange"
@@ -87,13 +99,16 @@
       "model": "cfm:lamp_orange"
     },
     "colour=1,down=false,facing=south,up=false": {
-      "model": "cfm:lamp_orange"
+      "model": "cfm:lamp_orange",
+      "y": 180
     },
     "colour=1,down=false,facing=east,up=false": {
-      "model": "cfm:lamp_orange"
+      "model": "cfm:lamp_orange",
+      "y": 90
     },
     "colour=1,down=false,facing=west,up=false": {
-      "model": "cfm:lamp_orange"
+      "model": "cfm:lamp_orange",
+      "y": 270
     },
     "colour=1,down=false,facing=up,up=true": {
       "model": "cfm:lamp_bottom"
@@ -106,13 +121,16 @@
       "model": "cfm:lamp_bottom"
     },
     "colour=1,down=false,facing=south,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 180
     },
     "colour=1,down=false,facing=east,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 90
     },
     "colour=1,down=false,facing=west,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 270
     },
     "colour=1,down=true,facing=up,up=false": {
       "model": "cfm:lamp_top_orange"
@@ -125,13 +143,16 @@
       "model": "cfm:lamp_top_orange"
     },
     "colour=1,down=true,facing=south,up=false": {
-      "model": "cfm:lamp_top_orange"
+      "model": "cfm:lamp_top_orange",
+      "y": 180
     },
     "colour=1,down=true,facing=east,up=false": {
-      "model": "cfm:lamp_top_orange"
+      "model": "cfm:lamp_top_orange",
+      "y": 90
     },
     "colour=1,down=true,facing=west,up=false": {
-      "model": "cfm:lamp_top_orange"
+      "model": "cfm:lamp_top_orange",
+      "y": 270
     },
     "colour=1,down=true,facing=up,up=true": {
       "model": "cfm:lamp_middle"
@@ -144,13 +165,16 @@
       "model": "cfm:lamp_middle"
     },
     "colour=1,down=true,facing=south,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 180
     },
     "colour=1,down=true,facing=east,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 90
     },
     "colour=1,down=true,facing=west,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 270
     },
     "colour=2,down=false,facing=up,up=false": {
       "model": "cfm:lamp_magenta"
@@ -163,13 +187,16 @@
       "model": "cfm:lamp_magenta"
     },
     "colour=2,down=false,facing=south,up=false": {
-      "model": "cfm:lamp_magenta"
+      "model": "cfm:lamp_magenta",
+      "y": 180
     },
     "colour=2,down=false,facing=east,up=false": {
-      "model": "cfm:lamp_magenta"
+      "model": "cfm:lamp_magenta",
+      "y": 90
     },
     "colour=2,down=false,facing=west,up=false": {
-      "model": "cfm:lamp_magenta"
+      "model": "cfm:lamp_magenta",
+      "y": 270
     },
     "colour=2,down=false,facing=up,up=true": {
       "model": "cfm:lamp_bottom"
@@ -182,13 +209,16 @@
       "model": "cfm:lamp_bottom"
     },
     "colour=2,down=false,facing=south,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 180
     },
     "colour=2,down=false,facing=east,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 90
     },
     "colour=2,down=false,facing=west,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 270
     },
     "colour=2,down=true,facing=up,up=false": {
       "model": "cfm:lamp_top_magenta"
@@ -201,13 +231,16 @@
       "model": "cfm:lamp_top_magenta"
     },
     "colour=2,down=true,facing=south,up=false": {
-      "model": "cfm:lamp_top_magenta"
+      "model": "cfm:lamp_top_magenta",
+      "y": 180
     },
     "colour=2,down=true,facing=east,up=false": {
-      "model": "cfm:lamp_top_magenta"
+      "model": "cfm:lamp_top_magenta",
+      "y": 90
     },
     "colour=2,down=true,facing=west,up=false": {
-      "model": "cfm:lamp_top_magenta"
+      "model": "cfm:lamp_top_magenta",
+      "y": 270
     },
     "colour=2,down=true,facing=up,up=true": {
       "model": "cfm:lamp_middle"
@@ -220,13 +253,16 @@
       "model": "cfm:lamp_middle"
     },
     "colour=2,down=true,facing=south,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 180
     },
     "colour=2,down=true,facing=east,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 90
     },
     "colour=2,down=true,facing=west,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 270
     },
     "colour=3,down=false,facing=up,up=false": {
       "model": "cfm:lamp_light_blue"
@@ -239,13 +275,16 @@
       "model": "cfm:lamp_light_blue"
     },
     "colour=3,down=false,facing=south,up=false": {
-      "model": "cfm:lamp_light_blue"
+      "model": "cfm:lamp_light_blue",
+      "y": 180
     },
     "colour=3,down=false,facing=east,up=false": {
-      "model": "cfm:lamp_light_blue"
+      "model": "cfm:lamp_light_blue",
+      "y": 90
     },
     "colour=3,down=false,facing=west,up=false": {
-      "model": "cfm:lamp_light_blue"
+      "model": "cfm:lamp_light_blue",
+      "y": 270
     },
     "colour=3,down=false,facing=up,up=true": {
       "model": "cfm:lamp_bottom"
@@ -258,13 +297,16 @@
       "model": "cfm:lamp_bottom"
     },
     "colour=3,down=false,facing=south,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 180
     },
     "colour=3,down=false,facing=east,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 90
     },
     "colour=3,down=false,facing=west,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 270
     },
     "colour=3,down=true,facing=up,up=false": {
       "model": "cfm:lamp_top_light_blue"
@@ -277,13 +319,16 @@
       "model": "cfm:lamp_top_light_blue"
     },
     "colour=3,down=true,facing=south,up=false": {
-      "model": "cfm:lamp_top_light_blue"
+      "model": "cfm:lamp_top_light_blue",
+      "y": 180
     },
     "colour=3,down=true,facing=east,up=false": {
-      "model": "cfm:lamp_top_light_blue"
+      "model": "cfm:lamp_top_light_blue",
+      "y": 90
     },
     "colour=3,down=true,facing=west,up=false": {
-      "model": "cfm:lamp_top_light_blue"
+      "model": "cfm:lamp_top_light_blue",
+      "y": 270
     },
     "colour=3,down=true,facing=up,up=true": {
       "model": "cfm:lamp_middle"
@@ -296,13 +341,16 @@
       "model": "cfm:lamp_middle"
     },
     "colour=3,down=true,facing=south,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 180
     },
     "colour=3,down=true,facing=east,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 90
     },
     "colour=3,down=true,facing=west,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 270
     },
     "colour=4,down=false,facing=up,up=false": {
       "model": "cfm:lamp_yellow"
@@ -315,13 +363,16 @@
       "model": "cfm:lamp_yellow"
     },
     "colour=4,down=false,facing=south,up=false": {
-      "model": "cfm:lamp_yellow"
+      "model": "cfm:lamp_yellow",
+      "y": 180
     },
     "colour=4,down=false,facing=east,up=false": {
-      "model": "cfm:lamp_yellow"
+      "model": "cfm:lamp_yellow",
+      "y": 90
     },
     "colour=4,down=false,facing=west,up=false": {
-      "model": "cfm:lamp_yellow"
+      "model": "cfm:lamp_yellow",
+      "y": 270
     },
     "colour=4,down=false,facing=up,up=true": {
       "model": "cfm:lamp_bottom"
@@ -334,13 +385,16 @@
       "model": "cfm:lamp_bottom"
     },
     "colour=4,down=false,facing=south,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 180
     },
     "colour=4,down=false,facing=east,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 90
     },
     "colour=4,down=false,facing=west,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 270
     },
     "colour=4,down=true,facing=up,up=false": {
       "model": "cfm:lamp_top_yellow"
@@ -353,13 +407,16 @@
       "model": "cfm:lamp_top_yellow"
     },
     "colour=4,down=true,facing=south,up=false": {
-      "model": "cfm:lamp_top_yellow"
+      "model": "cfm:lamp_top_yellow",
+      "y": 180
     },
     "colour=4,down=true,facing=east,up=false": {
-      "model": "cfm:lamp_top_yellow"
+      "model": "cfm:lamp_top_yellow",
+      "y": 90
     },
     "colour=4,down=true,facing=west,up=false": {
-      "model": "cfm:lamp_top_yellow"
+      "model": "cfm:lamp_top_yellow",
+      "y": 270
     },
     "colour=4,down=true,facing=up,up=true": {
       "model": "cfm:lamp_middle"
@@ -372,13 +429,16 @@
       "model": "cfm:lamp_middle"
     },
     "colour=4,down=true,facing=south,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 180
     },
     "colour=4,down=true,facing=east,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 90
     },
     "colour=4,down=true,facing=west,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 270
     },
     "colour=5,down=false,facing=up,up=false": {
       "model": "cfm:lamp_lime"
@@ -391,13 +451,16 @@
       "model": "cfm:lamp_lime"
     },
     "colour=5,down=false,facing=south,up=false": {
-      "model": "cfm:lamp_lime"
+      "model": "cfm:lamp_lime",
+      "y": 180
     },
     "colour=5,down=false,facing=east,up=false": {
-      "model": "cfm:lamp_lime"
+      "model": "cfm:lamp_lime",
+      "y": 90
     },
     "colour=5,down=false,facing=west,up=false": {
-      "model": "cfm:lamp_lime"
+      "model": "cfm:lamp_lime",
+      "y": 270
     },
     "colour=5,down=false,facing=up,up=true": {
       "model": "cfm:lamp_bottom"
@@ -410,13 +473,16 @@
       "model": "cfm:lamp_bottom"
     },
     "colour=5,down=false,facing=south,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 180
     },
     "colour=5,down=false,facing=east,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 90
     },
     "colour=5,down=false,facing=west,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 270
     },
     "colour=5,down=true,facing=up,up=false": {
       "model": "cfm:lamp_top_lime"
@@ -429,13 +495,16 @@
       "model": "cfm:lamp_top_lime"
     },
     "colour=5,down=true,facing=south,up=false": {
-      "model": "cfm:lamp_top_lime"
+      "model": "cfm:lamp_top_lime",
+      "y": 180
     },
     "colour=5,down=true,facing=east,up=false": {
-      "model": "cfm:lamp_top_lime"
+      "model": "cfm:lamp_top_lime",
+      "y": 90
     },
     "colour=5,down=true,facing=west,up=false": {
-      "model": "cfm:lamp_top_lime"
+      "model": "cfm:lamp_top_lime",
+      "y": 270
     },
     "colour=5,down=true,facing=up,up=true": {
       "model": "cfm:lamp_middle"
@@ -448,13 +517,16 @@
       "model": "cfm:lamp_middle"
     },
     "colour=5,down=true,facing=south,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 180
     },
     "colour=5,down=true,facing=east,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 90
     },
     "colour=5,down=true,facing=west,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 270
     },
     "colour=6,down=false,facing=up,up=false": {
       "model": "cfm:lamp_pink"
@@ -467,13 +539,16 @@
       "model": "cfm:lamp_pink"
     },
     "colour=6,down=false,facing=south,up=false": {
-      "model": "cfm:lamp_pink"
+      "model": "cfm:lamp_pink",
+      "y": 180
     },
     "colour=6,down=false,facing=east,up=false": {
-      "model": "cfm:lamp_pink"
+      "model": "cfm:lamp_pink",
+      "y": 90
     },
     "colour=6,down=false,facing=west,up=false": {
-      "model": "cfm:lamp_pink"
+      "model": "cfm:lamp_pink",
+      "y": 270
     },
     "colour=6,down=false,facing=up,up=true": {
       "model": "cfm:lamp_bottom"
@@ -486,13 +561,16 @@
       "model": "cfm:lamp_bottom"
     },
     "colour=6,down=false,facing=south,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 180
     },
     "colour=6,down=false,facing=east,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 90
     },
     "colour=6,down=false,facing=west,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 270
     },
     "colour=6,down=true,facing=up,up=false": {
       "model": "cfm:lamp_top_pink"
@@ -505,13 +583,16 @@
       "model": "cfm:lamp_top_pink"
     },
     "colour=6,down=true,facing=south,up=false": {
-      "model": "cfm:lamp_top_pink"
+      "model": "cfm:lamp_top_pink",
+      "y": 180
     },
     "colour=6,down=true,facing=east,up=false": {
-      "model": "cfm:lamp_top_pink"
+      "model": "cfm:lamp_top_pink",
+      "y": 90
     },
     "colour=6,down=true,facing=west,up=false": {
-      "model": "cfm:lamp_top_pink"
+      "model": "cfm:lamp_top_pink",
+      "y": 270
     },
     "colour=6,down=true,facing=up,up=true": {
       "model": "cfm:lamp_middle"
@@ -524,13 +605,16 @@
       "model": "cfm:lamp_middle"
     },
     "colour=6,down=true,facing=south,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 180
     },
     "colour=6,down=true,facing=east,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 90
     },
     "colour=6,down=true,facing=west,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 270
     },
     "colour=7,down=false,facing=up,up=false": {
       "model": "cfm:lamp_grey"
@@ -543,13 +627,16 @@
       "model": "cfm:lamp_grey"
     },
     "colour=7,down=false,facing=south,up=false": {
-      "model": "cfm:lamp_grey"
+      "model": "cfm:lamp_grey",
+      "y": 180
     },
     "colour=7,down=false,facing=east,up=false": {
-      "model": "cfm:lamp_grey"
+      "model": "cfm:lamp_grey",
+      "y": 90
     },
     "colour=7,down=false,facing=west,up=false": {
-      "model": "cfm:lamp_grey"
+      "model": "cfm:lamp_grey",
+      "y": 270
     },
     "colour=7,down=false,facing=up,up=true": {
       "model": "cfm:lamp_bottom"
@@ -562,13 +649,16 @@
       "model": "cfm:lamp_bottom"
     },
     "colour=7,down=false,facing=south,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 180
     },
     "colour=7,down=false,facing=east,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 90
     },
     "colour=7,down=false,facing=west,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 270
     },
     "colour=7,down=true,facing=up,up=false": {
       "model": "cfm:lamp_top_grey"
@@ -581,13 +671,16 @@
       "model": "cfm:lamp_top_grey"
     },
     "colour=7,down=true,facing=south,up=false": {
-      "model": "cfm:lamp_top_grey"
+      "model": "cfm:lamp_top_grey",
+      "y": 180
     },
     "colour=7,down=true,facing=east,up=false": {
-      "model": "cfm:lamp_top_grey"
+      "model": "cfm:lamp_top_grey",
+      "y": 90
     },
     "colour=7,down=true,facing=west,up=false": {
-      "model": "cfm:lamp_top_grey"
+      "model": "cfm:lamp_top_grey",
+      "y": 270
     },
     "colour=7,down=true,facing=up,up=true": {
       "model": "cfm:lamp_middle"
@@ -600,13 +693,16 @@
       "model": "cfm:lamp_middle"
     },
     "colour=7,down=true,facing=south,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 180
     },
     "colour=7,down=true,facing=east,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 90
     },
     "colour=7,down=true,facing=west,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 270
     },
     "colour=8,down=false,facing=up,up=false": {
       "model": "cfm:lamp_light_grey"
@@ -619,13 +715,16 @@
       "model": "cfm:lamp_light_grey"
     },
     "colour=8,down=false,facing=south,up=false": {
-      "model": "cfm:lamp_light_grey"
+      "model": "cfm:lamp_light_grey",
+      "y": 180
     },
     "colour=8,down=false,facing=east,up=false": {
-      "model": "cfm:lamp_light_grey"
+      "model": "cfm:lamp_light_grey",
+      "y": 90
     },
     "colour=8,down=false,facing=west,up=false": {
-      "model": "cfm:lamp_light_grey"
+      "model": "cfm:lamp_light_grey",
+      "y": 270
     },
     "colour=8,down=false,facing=up,up=true": {
       "model": "cfm:lamp_bottom"
@@ -638,13 +737,16 @@
       "model": "cfm:lamp_bottom"
     },
     "colour=8,down=false,facing=south,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 180
     },
     "colour=8,down=false,facing=east,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 90
     },
     "colour=8,down=false,facing=west,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 270
     },
     "colour=8,down=true,facing=up,up=false": {
       "model": "cfm:lamp_top_light_grey"
@@ -657,13 +759,16 @@
       "model": "cfm:lamp_top_light_grey"
     },
     "colour=8,down=true,facing=south,up=false": {
-      "model": "cfm:lamp_top_light_grey"
+      "model": "cfm:lamp_top_light_grey",
+      "y": 180
     },
     "colour=8,down=true,facing=east,up=false": {
-      "model": "cfm:lamp_top_light_grey"
+      "model": "cfm:lamp_top_light_grey",
+      "y": 90
     },
     "colour=8,down=true,facing=west,up=false": {
-      "model": "cfm:lamp_top_light_grey"
+      "model": "cfm:lamp_top_light_grey",
+      "y": 270
     },
     "colour=8,down=true,facing=up,up=true": {
       "model": "cfm:lamp_middle"
@@ -676,13 +781,16 @@
       "model": "cfm:lamp_middle"
     },
     "colour=8,down=true,facing=south,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 180
     },
     "colour=8,down=true,facing=east,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 90
     },
     "colour=8,down=true,facing=west,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 270
     },
     "colour=9,down=false,facing=up,up=false": {
       "model": "cfm:lamp_cyan"
@@ -695,13 +803,16 @@
       "model": "cfm:lamp_cyan"
     },
     "colour=9,down=false,facing=south,up=false": {
-      "model": "cfm:lamp_cyan"
+      "model": "cfm:lamp_cyan",
+      "y": 180
     },
     "colour=9,down=false,facing=east,up=false": {
-      "model": "cfm:lamp_cyan"
+      "model": "cfm:lamp_cyan",
+      "y": 90
     },
     "colour=9,down=false,facing=west,up=false": {
-      "model": "cfm:lamp_cyan"
+      "model": "cfm:lamp_cyan",
+      "y": 270
     },
     "colour=9,down=false,facing=up,up=true": {
       "model": "cfm:lamp_bottom"
@@ -714,13 +825,16 @@
       "model": "cfm:lamp_bottom"
     },
     "colour=9,down=false,facing=south,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 180
     },
     "colour=9,down=false,facing=east,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 90
     },
     "colour=9,down=false,facing=west,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 270
     },
     "colour=9,down=true,facing=up,up=false": {
       "model": "cfm:lamp_top_cyan"
@@ -733,13 +847,16 @@
       "model": "cfm:lamp_top_cyan"
     },
     "colour=9,down=true,facing=south,up=false": {
-      "model": "cfm:lamp_top_cyan"
+      "model": "cfm:lamp_top_cyan",
+      "y": 180
     },
     "colour=9,down=true,facing=east,up=false": {
-      "model": "cfm:lamp_top_cyan"
+      "model": "cfm:lamp_top_cyan",
+      "y": 90
     },
     "colour=9,down=true,facing=west,up=false": {
-      "model": "cfm:lamp_top_cyan"
+      "model": "cfm:lamp_top_cyan",
+      "y": 270
     },
     "colour=9,down=true,facing=up,up=true": {
       "model": "cfm:lamp_middle"
@@ -752,13 +869,16 @@
       "model": "cfm:lamp_middle"
     },
     "colour=9,down=true,facing=south,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 180
     },
     "colour=9,down=true,facing=east,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 90
     },
     "colour=9,down=true,facing=west,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 270
     },
     "colour=10,down=false,facing=up,up=false": {
       "model": "cfm:lamp_purple"
@@ -771,13 +891,16 @@
       "model": "cfm:lamp_purple"
     },
     "colour=10,down=false,facing=south,up=false": {
-      "model": "cfm:lamp_purple"
+      "model": "cfm:lamp_purple",
+      "y": 180
     },
     "colour=10,down=false,facing=east,up=false": {
-      "model": "cfm:lamp_purple"
+      "model": "cfm:lamp_purple",
+      "y": 90
     },
     "colour=10,down=false,facing=west,up=false": {
-      "model": "cfm:lamp_purple"
+      "model": "cfm:lamp_purple",
+      "y": 270
     },
     "colour=10,down=false,facing=up,up=true": {
       "model": "cfm:lamp_bottom"
@@ -790,13 +913,16 @@
       "model": "cfm:lamp_bottom"
     },
     "colour=10,down=false,facing=south,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 180
     },
     "colour=10,down=false,facing=east,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 90
     },
     "colour=10,down=false,facing=west,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 270
     },
     "colour=10,down=true,facing=up,up=false": {
       "model": "cfm:lamp_top_purple"
@@ -809,13 +935,16 @@
       "model": "cfm:lamp_top_purple"
     },
     "colour=10,down=true,facing=south,up=false": {
-      "model": "cfm:lamp_top_purple"
+      "model": "cfm:lamp_top_purple",
+      "y": 180
     },
     "colour=10,down=true,facing=east,up=false": {
-      "model": "cfm:lamp_top_purple"
+      "model": "cfm:lamp_top_purple",
+      "y": 90
     },
     "colour=10,down=true,facing=west,up=false": {
-      "model": "cfm:lamp_top_purple"
+      "model": "cfm:lamp_top_purple",
+      "y": 270
     },
     "colour=10,down=true,facing=up,up=true": {
       "model": "cfm:lamp_middle"
@@ -828,13 +957,16 @@
       "model": "cfm:lamp_middle"
     },
     "colour=10,down=true,facing=south,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 180
     },
     "colour=10,down=true,facing=east,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 90
     },
     "colour=10,down=true,facing=west,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 270
     },
     "colour=11,down=false,facing=up,up=false": {
       "model": "cfm:lamp_blue"
@@ -847,13 +979,16 @@
       "model": "cfm:lamp_blue"
     },
     "colour=11,down=false,facing=south,up=false": {
-      "model": "cfm:lamp_blue"
+      "model": "cfm:lamp_blue",
+      "y": 180
     },
     "colour=11,down=false,facing=east,up=false": {
-      "model": "cfm:lamp_blue"
+      "model": "cfm:lamp_blue",
+      "y": 90
     },
     "colour=11,down=false,facing=west,up=false": {
-      "model": "cfm:lamp_blue"
+      "model": "cfm:lamp_blue",
+      "y": 270
     },
     "colour=11,down=false,facing=up,up=true": {
       "model": "cfm:lamp_bottom"
@@ -866,13 +1001,16 @@
       "model": "cfm:lamp_bottom"
     },
     "colour=11,down=false,facing=south,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 180
     },
     "colour=11,down=false,facing=east,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 90
     },
     "colour=11,down=false,facing=west,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 270
     },
     "colour=11,down=true,facing=up,up=false": {
       "model": "cfm:lamp_top_blue"
@@ -885,13 +1023,16 @@
       "model": "cfm:lamp_top_blue"
     },
     "colour=11,down=true,facing=south,up=false": {
-      "model": "cfm:lamp_top_blue"
+      "model": "cfm:lamp_top_blue",
+      "y": 180
     },
     "colour=11,down=true,facing=east,up=false": {
-      "model": "cfm:lamp_top_blue"
+      "model": "cfm:lamp_top_blue",
+      "y": 90
     },
     "colour=11,down=true,facing=west,up=false": {
-      "model": "cfm:lamp_top_blue"
+      "model": "cfm:lamp_top_blue",
+      "y": 270
     },
     "colour=11,down=true,facing=up,up=true": {
       "model": "cfm:lamp_middle"
@@ -904,13 +1045,16 @@
       "model": "cfm:lamp_middle"
     },
     "colour=11,down=true,facing=south,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 180
     },
     "colour=11,down=true,facing=east,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 90
     },
     "colour=11,down=true,facing=west,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 270
     },
     "colour=12,down=false,facing=up,up=false": {
       "model": "cfm:lamp_brown"
@@ -923,13 +1067,16 @@
       "model": "cfm:lamp_brown"
     },
     "colour=12,down=false,facing=south,up=false": {
-      "model": "cfm:lamp_brown"
+      "model": "cfm:lamp_brown",
+      "y": 180
     },
     "colour=12,down=false,facing=east,up=false": {
-      "model": "cfm:lamp_brown"
+      "model": "cfm:lamp_brown",
+      "y": 90
     },
     "colour=12,down=false,facing=west,up=false": {
-      "model": "cfm:lamp_brown"
+      "model": "cfm:lamp_brown",
+      "y": 270
     },
     "colour=12,down=false,facing=up,up=true": {
       "model": "cfm:lamp_bottom"
@@ -942,13 +1089,16 @@
       "model": "cfm:lamp_bottom"
     },
     "colour=12,down=false,facing=south,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 180
     },
     "colour=12,down=false,facing=east,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 90
     },
     "colour=12,down=false,facing=west,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 270
     },
     "colour=12,down=true,facing=up,up=false": {
       "model": "cfm:lamp_top_brown"
@@ -961,13 +1111,16 @@
       "model": "cfm:lamp_top_brown"
     },
     "colour=12,down=true,facing=south,up=false": {
-      "model": "cfm:lamp_top_brown"
+      "model": "cfm:lamp_top_brown",
+      "y": 180
     },
     "colour=12,down=true,facing=east,up=false": {
-      "model": "cfm:lamp_top_brown"
+      "model": "cfm:lamp_top_brown",
+      "y": 90
     },
     "colour=12,down=true,facing=west,up=false": {
-      "model": "cfm:lamp_top_brown"
+      "model": "cfm:lamp_top_brown",
+      "y": 270
     },
     "colour=12,down=true,facing=up,up=true": {
       "model": "cfm:lamp_middle"
@@ -980,13 +1133,16 @@
       "model": "cfm:lamp_middle"
     },
     "colour=12,down=true,facing=south,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 180
     },
     "colour=12,down=true,facing=east,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 90
     },
     "colour=12,down=true,facing=west,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 270
     },
     "colour=13,down=false,facing=up,up=false": {
       "model": "cfm:lamp_green"
@@ -999,13 +1155,16 @@
       "model": "cfm:lamp_green"
     },
     "colour=13,down=false,facing=south,up=false": {
-      "model": "cfm:lamp_green"
+      "model": "cfm:lamp_green",
+      "y": 180
     },
     "colour=13,down=false,facing=east,up=false": {
-      "model": "cfm:lamp_green"
+      "model": "cfm:lamp_green",
+      "y": 90
     },
     "colour=13,down=false,facing=west,up=false": {
-      "model": "cfm:lamp_green"
+      "model": "cfm:lamp_green",
+      "y": 270
     },
     "colour=13,down=false,facing=up,up=true": {
       "model": "cfm:lamp_bottom"
@@ -1018,13 +1177,16 @@
       "model": "cfm:lamp_bottom"
     },
     "colour=13,down=false,facing=south,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 180
     },
     "colour=13,down=false,facing=east,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 90
     },
     "colour=13,down=false,facing=west,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 270
     },
     "colour=13,down=true,facing=up,up=false": {
       "model": "cfm:lamp_top_green"
@@ -1037,13 +1199,16 @@
       "model": "cfm:lamp_top_green"
     },
     "colour=13,down=true,facing=south,up=false": {
-      "model": "cfm:lamp_top_green"
+      "model": "cfm:lamp_top_green",
+      "y": 180
     },
     "colour=13,down=true,facing=east,up=false": {
-      "model": "cfm:lamp_top_green"
+      "model": "cfm:lamp_top_green",
+      "y": 90
     },
     "colour=13,down=true,facing=west,up=false": {
-      "model": "cfm:lamp_top_green"
+      "model": "cfm:lamp_top_green",
+      "y": 270
     },
     "colour=13,down=true,facing=up,up=true": {
       "model": "cfm:lamp_middle"
@@ -1056,13 +1221,16 @@
       "model": "cfm:lamp_middle"
     },
     "colour=13,down=true,facing=south,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 180
     },
     "colour=13,down=true,facing=east,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 90
     },
     "colour=13,down=true,facing=west,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 270
     },
     "colour=14,down=false,facing=up,up=false": {
       "model": "cfm:lamp_red"
@@ -1075,13 +1243,16 @@
       "model": "cfm:lamp_red"
     },
     "colour=14,down=false,facing=south,up=false": {
-      "model": "cfm:lamp_red"
+      "model": "cfm:lamp_red",
+      "y": 180
     },
     "colour=14,down=false,facing=east,up=false": {
-      "model": "cfm:lamp_red"
+      "model": "cfm:lamp_red",
+      "y": 90
     },
     "colour=14,down=false,facing=west,up=false": {
-      "model": "cfm:lamp_red"
+      "model": "cfm:lamp_red",
+      "y": 270
     },
     "colour=14,down=false,facing=up,up=true": {
       "model": "cfm:lamp_bottom"
@@ -1094,13 +1265,16 @@
       "model": "cfm:lamp_bottom"
     },
     "colour=14,down=false,facing=south,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 180
     },
     "colour=14,down=false,facing=east,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 90
     },
     "colour=14,down=false,facing=west,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 270
     },
     "colour=14,down=true,facing=up,up=false": {
       "model": "cfm:lamp_top_red"
@@ -1113,13 +1287,16 @@
       "model": "cfm:lamp_top_red"
     },
     "colour=14,down=true,facing=south,up=false": {
-      "model": "cfm:lamp_top_red"
+      "model": "cfm:lamp_top_red",
+      "y": 180
     },
     "colour=14,down=true,facing=east,up=false": {
-      "model": "cfm:lamp_top_red"
+      "model": "cfm:lamp_top_red",
+      "y": 90
     },
     "colour=14,down=true,facing=west,up=false": {
-      "model": "cfm:lamp_top_red"
+      "model": "cfm:lamp_top_red",
+      "y": 270
     },
     "colour=14,down=true,facing=up,up=true": {
       "model": "cfm:lamp_middle"
@@ -1132,13 +1309,16 @@
       "model": "cfm:lamp_middle"
     },
     "colour=14,down=true,facing=south,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 180
     },
     "colour=14,down=true,facing=east,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 90
     },
     "colour=14,down=true,facing=west,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 270
     },
     "colour=15,down=false,facing=up,up=false": {
       "model": "cfm:lamp_black"
@@ -1151,13 +1331,16 @@
       "model": "cfm:lamp_black"
     },
     "colour=15,down=false,facing=south,up=false": {
-      "model": "cfm:lamp_black"
+      "model": "cfm:lamp_black",
+      "y": 180
     },
     "colour=15,down=false,facing=east,up=false": {
-      "model": "cfm:lamp_black"
+      "model": "cfm:lamp_black",
+      "y": 90
     },
     "colour=15,down=false,facing=west,up=false": {
-      "model": "cfm:lamp_black"
+      "model": "cfm:lamp_black",
+      "y": 270
     },
     "colour=15,down=false,facing=up,up=true": {
       "model": "cfm:lamp_bottom"
@@ -1170,13 +1353,16 @@
       "model": "cfm:lamp_bottom"
     },
     "colour=15,down=false,facing=south,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 180
     },
     "colour=15,down=false,facing=east,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 90
     },
     "colour=15,down=false,facing=west,up=true": {
-      "model": "cfm:lamp_bottom"
+      "model": "cfm:lamp_bottom",
+      "y": 270
     },
     "colour=15,down=true,facing=up,up=false": {
       "model": "cfm:lamp_top_black"
@@ -1189,13 +1375,16 @@
       "model": "cfm:lamp_top_black"
     },
     "colour=15,down=true,facing=south,up=false": {
-      "model": "cfm:lamp_top_black"
+      "model": "cfm:lamp_top_black",
+      "y": 180
     },
     "colour=15,down=true,facing=east,up=false": {
-      "model": "cfm:lamp_top_black"
+      "model": "cfm:lamp_top_black",
+      "y": 90
     },
     "colour=15,down=true,facing=west,up=false": {
-      "model": "cfm:lamp_top_black"
+      "model": "cfm:lamp_top_black",
+      "y": 270
     },
     "colour=15,down=true,facing=up,up=true": {
       "model": "cfm:lamp_middle"
@@ -1208,13 +1397,16 @@
       "model": "cfm:lamp_middle"
     },
     "colour=15,down=true,facing=south,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 180
     },
     "colour=15,down=true,facing=east,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 90
     },
     "colour=15,down=true,facing=west,up=true": {
-      "model": "cfm:lamp_middle"
+      "model": "cfm:lamp_middle",
+      "y": 270
     }
   }
 }

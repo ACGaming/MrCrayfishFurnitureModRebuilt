@@ -1,3 +1,3 @@
 {
-	"parent": "cfm:block/lamp_grey" 
+	"parent": "cfm:block/lamp_grey_off"
 }
