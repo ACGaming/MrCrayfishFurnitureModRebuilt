@@ -5,7 +5,7 @@
 		"1": "blocks/hardened_clay_stained_lime",
 		"3": "blocks/wool_colored_white",
 		"4": "cfm:blocks/wheel",
-		"5": "cfm:blocks/dark_particle",
+		"5": "cfm:blocks/model_block_dark",
 		"particle": "blocks/hardened_clay_stained_green"
 	},
 	"elements": [

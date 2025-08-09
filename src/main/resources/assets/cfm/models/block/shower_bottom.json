@@ -3,9 +3,9 @@
   "ambientocclusion": false,
   "textures": {
     "0": "blocks/concrete_blue",
-    "1": "cfm:blocks/dark_particle",
+    "1": "cfm:blocks/model_block_dark",
     "3": "blocks/glass",
-    "4": "cfm:blocks/light_particle",
+    "4": "cfm:blocks/model_block_light",
     "5": "cfm:blocks/metal",
     "6": "blocks/concrete_red",
     "7": "blocks/concrete_white",

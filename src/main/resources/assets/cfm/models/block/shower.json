@@ -5,8 +5,8 @@
     "0": "blocks/concrete_white",
     "1": "blocks/glass",
     "2": "cfm:blocks/metal",
-    "3": "cfm:blocks/dark_particle",
-    "4": "cfm:blocks/light_particle",
+    "3": "cfm:blocks/model_block_dark",
+    "4": "cfm:blocks/model_block_light",
     "5": "blocks/concrete_red",
     "6": "blocks/concrete_blue",
     "particle": "blocks/glass"
