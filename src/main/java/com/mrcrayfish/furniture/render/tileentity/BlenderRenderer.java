@@ -46,7 +46,7 @@ public class BlenderRenderer extends TileEntitySpecialRenderer<TileEntityBlender
                 GlStateManager.disableLighting();
                 GlStateManager.disableTexture2D();
 
-                float liquidAlpha = blender.isBlending() ? (blender.progress / 200F) : (blender.drinkCount > 0 ? 1.0F : 0.0F);
+                float liquidAlpha = blender.isBlending() ? (blender.progress / 250F) : (blender.drinkCount > 0 ? 0.8F : 0.0F);
                 GlStateManager.color(blender.currentRed / 255F, blender.currentGreen / 255F, blender.currentBlue / 255F, liquidAlpha);
 
                 GlStateManager.enableRescaleNormal();

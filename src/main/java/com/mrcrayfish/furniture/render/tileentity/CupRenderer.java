@@ -24,7 +24,7 @@ public class CupRenderer extends TileEntitySpecialRenderer<TileEntityCup>
                 OpenGlHelper.glBlendFunc(770, 771, 1, 0);
                 GlStateManager.disableLighting();
                 GlStateManager.disableTexture2D();
-                GlStateManager.color(tileEntityCup.red / 255F, tileEntityCup.green / 255F, tileEntityCup.blue / 255F, 1.0F);
+                GlStateManager.color(tileEntityCup.red / 255F, tileEntityCup.green / 255F, tileEntityCup.blue / 255F, 0.8F);
                 GlStateManager.enableRescaleNormal();
 
                 renderCuboid(-0.124F, 0.5F * 0.0625F, -0.124F, 0.124F, drink.getItem() instanceof ItemBottle ? 0.1F * servings : 0.4F, 0.124F);
