@@ -97,7 +97,7 @@ public class BlockFireAlarm extends BlockFurniture
                                 if(world.getBlockState(pos.add(-4 + x, -4 + y, -4 + z)).getBlock() == Blocks.FIRE)
                                 {
                                     world.playSound(null, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, FurnitureSounds.fire_alarm, SoundCategory.BLOCKS, 5.0F, 1.0F);
-                                    world.setBlockState(pos, FurnitureBlocks.FIRE_ALARM_ON.getDefaultState(), 2);
+                                    world.setBlockState(pos, FurnitureBlocks.FIRE_ALARM_ON.getDefaultState().withProperty(FACING, state.getValue(FACING)));
                                     break scanner;
                                 }
                                 if(x == 8 && y == 8 && z == 8)
