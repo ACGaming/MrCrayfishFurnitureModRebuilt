@@ -27,7 +27,7 @@ import java.util.List;
 
 public class BlockModernComputer extends BlockFurnitureTile
 {
-    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0D, 0D, 0D, 1D, 0.8D, 1D);
+    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0D, 0D, -0.7D, 1D, 1D, 1.2D);
 
     public BlockModernComputer(Material material, String id)
     {
