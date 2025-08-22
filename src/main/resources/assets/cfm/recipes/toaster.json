@@ -20,7 +20,7 @@
       "item": "minecraft:iron_bars"
     },
     "S": {
-      "item": "minecraft:stone",
+      "item": "minecraft:iron_ingot",
       "data": 0
     },
     "W": {

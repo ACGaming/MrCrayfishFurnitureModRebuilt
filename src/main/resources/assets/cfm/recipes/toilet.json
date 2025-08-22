@@ -3,7 +3,7 @@
     "item": "cfm:toilet"
   },
   "pattern": [
-    "QB ",
+    "QB*",
     "QQQ",
     " Q "
   ],
@@ -15,6 +15,9 @@
     },
     "B": {
       "item": "minecraft:stone_button"
+    },
+    "*": {
+      "item": "minecraft:iron_ingot"
     }
   }
 }

@@ -4,7 +4,7 @@
     },
     "pattern": [
         "ISI",
-        "IBI",
+        "*B*",
         "IRI"
     ],
     "type": "minecraft:crafting_shaped",
@@ -17,6 +17,9 @@
         },
         "B": {
             "item": "minecraft:stone_button"
+        },
+        "*": {
+            "item": "minecraft:comparator"
         },
         "R": {
             "item": "minecraft:redstone_block"
