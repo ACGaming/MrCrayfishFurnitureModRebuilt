@@ -68,8 +68,8 @@ public class GuiPackage extends GuiContainer
     public void initGui()
     {
         super.initGui();
-        int posX = width / 2 + 40;
-        int posY = height / 2 - 50;
+        int posX = width / 2 + 45;
+        int posY = height / 2 - 60;
         btnSign = new GuiButton(0, posX, posY, 40, 20, I18n.format("cfm.button.sign"));
         btnSign.visible = false;
         buttonList.add(btnSign);

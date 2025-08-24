@@ -68,7 +68,7 @@ public class GuiEnvelope extends GuiContainer
     public void initGui()
     {
         super.initGui();
-        int posX = width / 2 + 40;
+        int posX = width / 2 + 35;
         int posY = height / 2 - 50;
         btnSign = new GuiButton(0, posX, posY, 40, 20, I18n.format("cfm.button.sign"));
         btnSign.visible = false;
