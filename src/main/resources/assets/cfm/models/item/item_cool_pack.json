@@ -4,8 +4,8 @@
 	"parent": "CoolingPackModel",
 	"textures": {
 		"0": "cfm:items/coolingpack_texture",
-		"1": "cfm:items/ice_packed",
-		"2": "cfm:items/snow",
+		"1": "blocks/ice_packed",
+		"2": "blocks/snow",
 		"3": "cfm:items/itemcoolpack",
 		"4": "cfm:items/item_coolpack",
 		"particle": "cfm:items/coolingpack_texture"

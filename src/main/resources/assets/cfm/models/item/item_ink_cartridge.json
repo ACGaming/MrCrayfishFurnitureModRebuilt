@@ -3,10 +3,10 @@
 	"credit": "Made with Blockbench",
 	"parent": "InkCartridgeModel",
 	"textures": {
-		"0": "cfm:items/iron_block",
+		"0": "blocks/iron_block",
 		"1": "cfm:blocks/model_block_dark",
 		"2": "cfm:items/print_ink",
-		"particle": "cfm:items/iron_block"
+		"particle": "blocks/iron_block"
 	},
 	"elements": [
 		{

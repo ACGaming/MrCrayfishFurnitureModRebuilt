@@ -5,8 +5,8 @@
 	"textures": {
 		"0": "cfm:items/itemsoapwater",
 		"1": "cfm:blocks/model_block_light",
-		"2": "cfm:items/iron_block",
-		"3": "cfm:items/snow",
+		"2": "blocks/iron_block",
+		"3": "blocks/snow",
 		"particle": "cfm:items/itemsoapwater"
 	},
 	"elements": [

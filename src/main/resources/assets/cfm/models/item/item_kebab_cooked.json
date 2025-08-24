@@ -3,9 +3,9 @@
 	"credit": "Made with Blockbench",
 	"parent": "ItemKebabModel",
 	"textures": {
-		"0": "cfm:items/chicken_cooked",
-		"1": "cfm:items/planks_oak",
-		"particle": "cfm:items/chicken_cooked"
+		"0": "items/chicken_cooked",
+		"1": "blocks/planks_oak",
+		"particle": "items/chicken_cooked"
 	},
 	"elements": [
 		{
