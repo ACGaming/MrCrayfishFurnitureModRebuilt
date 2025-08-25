@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.6",
+	"format_version": "1.9.0",
 	"credit": "Made by MisterIceCat with Blockbench",
 	"textures": {
 		"1": "blocks/concrete_white",
@@ -349,7 +349,7 @@
 		{
 			"from": [11.18522, 1.19665, 4.5],
 			"to": [11.18522, 4.19665, 8.5],
-			"rotation": {"angle": -25, "axis": "x", "origin": [11.18522, 2.69665, 6.5]},
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [11.18522, 2.69665, 6.5]},
 			"faces": {
 				"north": {"uv": [0, 0, 3, 0], "rotation": 90, "texture": "#5"},
 				"east": {"uv": [0, 0, 4, 3], "texture": "#5"},
