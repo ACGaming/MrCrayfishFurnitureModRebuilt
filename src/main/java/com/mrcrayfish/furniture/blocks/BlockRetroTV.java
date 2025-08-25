@@ -30,7 +30,7 @@ public class BlockRetroTV extends BlockFurnitureTile
 {
     public static final PropertyInteger CHANNEL = PropertyInteger.create("channel", 0, 5);
 
-    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.1, 0, -0.05, 0.9, 0.86, 1.05);
+    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0, 0, 0, 1, 0.865, 1);
 
     public BlockRetroTV(Material material, String id)
     {
