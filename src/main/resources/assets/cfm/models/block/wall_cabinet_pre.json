@@ -2,10 +2,10 @@
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "cfm:blocks/concrete_white",
+		"1": "blocks/concrete_white",
 		"2": "cfm:blocks/model_block_dark",
 		"3": "cfm:blocks/model_block_light",
-		"particle": "cfm:blocks/concrete_white"
+		"particle": "blocks/concrete_white"
 	},
 	"elements": [
 		{
