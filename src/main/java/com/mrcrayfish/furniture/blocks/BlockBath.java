@@ -241,33 +241,6 @@ public class BlockBath extends BlockFurnitureTile
                         }
                     }
                 }
-                else
-                {
-                    if(!tileEntityBath.isFull())
-                    {
-                        if(hasWaterSource(worldIn, pos))
-                        {
-                            if(this == FurnitureBlocks.BATH_2)
-                            {
-                                if(!worldIn.isRemote)
-                                {
-                                    tileEntityBath.addWaterLevel();
-                                    tileEntityBath2.addWaterLevel();
-                                    worldIn.setBlockToAir(pos.add(0, -2, 0));
-                                    worldIn.updateComparatorOutputLevel(pos, this);
-                                }
-                                else
-                                {
-                                    worldIn.playSound(pos.getX() + 0.5, pos.getY() + 1, pos.getZ() + 0.5, FurnitureSounds.tap_open, SoundCategory.BLOCKS, 0.75F, 0.8F, true);
-                                }
-                            }
-                        }
-                        else if(!worldIn.isRemote)
-                        {
-                            playerIn.sendMessage(new TextComponentTranslation("cfm.message.bath"));
-                        }
-                    }
-                }
             }
             else
             {
@@ -279,16 +252,14 @@ public class BlockBath extends BlockFurnitureTile
                         {
                             if(this == FurnitureBlocks.BATH_2)
                             {
-                                if(!worldIn.isRemote)
-                                {
-                                    tileEntityBath.addWaterLevel();
-                                    tileEntityBath2.addWaterLevel();
-                                    worldIn.setBlockToAir(pos.add(0, -2, 0));
-                                    worldIn.updateComparatorOutputLevel(pos, this);
-                                }
-                                else
+                                tileEntityBath.addWaterLevel();
+                                tileEntityBath2.addWaterLevel();
+                                worldIn.setBlockToAir(pos.add(0, -2, 0));
+                                worldIn.updateComparatorOutputLevel(pos, this);
+                                if(worldIn.isRemote)
                                 {
                                     worldIn.playSound(pos.getX() + 0.5, pos.getY() + 1, pos.getZ() + 0.5, FurnitureSounds.tap_open, SoundCategory.BLOCKS, 0.75F, 0.8F, true);
+                                    worldIn.spawnParticle(EnumParticleTypes.WATER_SPLASH, pos.getX() + 0.5, pos.getY() + 0.75 + tileEntityBath.getWaterLevel() * 0.0265, pos.getZ() + 0.5, 0, 0.1, 0);
                                 }
                             }
                         }
