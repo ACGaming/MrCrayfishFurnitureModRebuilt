@@ -5,7 +5,7 @@
 	"textures": {
 		"0": "blocks/iron_block",
 		"1": "cfm:blocks/model_block_dark",
-		"2": "cfm:items/print_ink",
+		"2": "cfm:items/print_ink_texture",
 		"particle": "blocks/iron_block"
 	},
 	"elements": [

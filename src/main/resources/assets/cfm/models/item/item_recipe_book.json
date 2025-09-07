@@ -4,9 +4,9 @@
 	"parent": "RecipeBookModel",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "cfm:items/recipebook_texture",
+		"0": "cfm:items/recipebook",
 		"1": "cfm:items/icon",
-		"particle": "cfm:items/recipebook_texture"
+		"particle": "cfm:items/recipebook"
 	},
 	"elements": [
 		{
