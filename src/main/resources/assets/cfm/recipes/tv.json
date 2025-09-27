@@ -3,9 +3,9 @@
         "item": "cfm:tv"
     },
     "pattern": [
-        "LLL",
+        "-L-",
         "LGL",
-        "LRL"
+        "*R*"
     ],
     "type": "minecraft:crafting_shaped",
     "key": {
@@ -17,6 +17,12 @@
         },
         "L": {
             "item": "minecraft:iron_ingot"
+        },
+        "*": {
+            "item": "minecraft:repeater"
+        },
+        "-": {
+            "item": "minecraft:comparator"
         }
     }
 }

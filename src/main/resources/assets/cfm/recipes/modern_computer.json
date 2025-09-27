@@ -3,9 +3,9 @@
     "item": "cfm:modern_computer"
   },
   "pattern": [
-    "DRD",
-    "IGI",
-    "III"
+    "D_D",
+    "*G-",
+    "RI="
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
@@ -13,10 +13,22 @@
       "item": "minecraft:glass_pane"
     },
     "R": {
-      "item": "minecraft:redstone"
+      "item": "minecraft:redstone_block"
+    },
+    "*": {
+      "item": "minecraft:repeater"
+    },
+    "-": {
+      "item": "minecraft:comparator"
+    },
+    "_": {
+      "item": "minecraft:daylight_detector"
+    },
+    "=": {
+      "item": "minecraft:redstone_lamp"
     },
     "I": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:iron_block"
     },
     "D": {
       "item": "minecraft:diamond"

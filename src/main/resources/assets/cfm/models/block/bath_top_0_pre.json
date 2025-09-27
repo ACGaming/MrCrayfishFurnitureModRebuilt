@@ -2,7 +2,7 @@
     "parent": "cfm:block/bath_top_0",
     "textures": {
         "1": "blocks/concrete_white",
-        "2": "blocks/hardened_clay_stained_cyan",
-        "3": "blocks/stone"
+        "2": "cfm:blocks/model_block_light",
+        "3": "cfm:blocks/model_block_dark"
     }
 }

@@ -10,14 +10,14 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "B": {
-      "item": "minecraft:iron_block"
+      "item": "minecraft:iron_ingot"
     },
     "G": {
       "item": "minecraft:stained_glass_pane",
       "data": 0
     },
     "I": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:paper"
     }
   }
 }

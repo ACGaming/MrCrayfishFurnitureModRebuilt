@@ -3,7 +3,7 @@
     "item": "cfm:dishwasher"
   },
   "pattern": [
-    "QQQ",
+    "*Q-",
     "CBC",
     "CFC"
   ],
@@ -15,6 +15,12 @@
     },
     "B": {
       "item": "minecraft:iron_bars"
+    },
+    "*": {
+      "item": "minecraft:redstone"
+    },
+    "-": {
+      "item": "minecraft:repeater"
     },
     "C": {
       "item": "minecraft:stained_hardened_clay",

@@ -10,6 +10,7 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.AxisAlignedBB;
@@ -19,16 +20,19 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 import com.mrcrayfish.furniture.tileentity.TileEntityModernComputer;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+
 import java.util.List;
 
 public class BlockModernComputer extends BlockFurnitureTile
 {
-    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0D, 0D, 0D, 1D, 0.8D, 1D);
+    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0D, 0D, 0D, 1D, 1D, 1D);
 
     public BlockModernComputer(Material material, String id)
     {
         super(material, id);
-        this.setHardness(1.0F);
+        this.setHardness(1.5F);
         this.setSoundType(SoundType.ANVIL);
     }
 
@@ -70,6 +74,12 @@ public class BlockModernComputer extends BlockFurnitureTile
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
     {
         return BOUNDING_BOX;
+    }
+
+    @SideOnly(Side.CLIENT)
+    public BlockRenderLayer getBlockLayer()
+    {
+        return BlockRenderLayer.CUTOUT;
     }
 
     @Override

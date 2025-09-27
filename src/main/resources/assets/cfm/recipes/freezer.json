@@ -4,16 +4,22 @@
   },
   "pattern": [
     "***",
-    "*#*",
-    "*@*"
+    "P#P",
+    "I@I"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
     "@": {
       "item": "minecraft:furnace"
     },
+    "P": {
+      "item": "minecraft:comparator"
+    },
     "#": {
       "item": "minecraft:chest"
+    },
+    "I": {
+      "item": "minecraft:iron_trapdoor"
     },
     "*": {
       "item": "minecraft:iron_block"

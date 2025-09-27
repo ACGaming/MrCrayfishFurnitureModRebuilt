@@ -2,10 +2,10 @@
 	"forge_marker": 1,
 	"defaults": {
 		"textures": {
-			"particle": "blocks/concrete_white",
+			"particle": "cfm:blocks/model_block_light",
 			"white": "blocks/concrete_white",
-			"gray": "blocks/concrete_gray",
-			"silver": "blocks/concrete_silver"
+			"gray": "cfm:blocks/model_block_dark",
+			"silver": "cfm:blocks/model_block_light"
 		}
 	},
 	"variants": {
