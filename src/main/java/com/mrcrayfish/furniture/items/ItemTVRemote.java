@@ -35,7 +35,7 @@ public class ItemTVRemote extends Item
 {
     public ItemTVRemote()
     {
-        this.setUnlocalizedName("tv_remote");
+        this.setTranslationKey("tv_remote");
         this.setRegistryName("tv_remote");
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
     }

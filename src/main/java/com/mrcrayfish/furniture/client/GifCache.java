@@ -30,7 +30,7 @@ public final class GifCache
 
     private GifCache()
     {
-        cache = new File(Minecraft.getMinecraft().mcDataDir, "tv-cache");
+        cache = new File(Minecraft.getMinecraft().gameDir, "tv-cache");
         cache.mkdir();
         this.init();
     }

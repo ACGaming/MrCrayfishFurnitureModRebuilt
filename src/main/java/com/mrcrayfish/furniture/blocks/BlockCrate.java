@@ -36,7 +36,7 @@ public class BlockCrate extends Block implements ITileEntityProvider
         this.setHardness(1.0F);
         this.setSoundType(SoundType.WOOD);
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
-        this.setUnlocalizedName(id);
+        this.setTranslationKey(id);
         this.setRegistryName(id);
     }
 

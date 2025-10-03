@@ -522,7 +522,7 @@ public class GuiRecipeBook extends GuiScreen
         {
             if(k == 0)
             {
-                list.set(k, itemStack.getRarity().rarityColor + list.get(k));
+                list.set(k, itemStack.getRarity().color + list.get(k));
             }
             else
             {

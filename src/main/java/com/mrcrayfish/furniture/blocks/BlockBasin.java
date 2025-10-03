@@ -72,7 +72,7 @@ public class BlockBasin extends BlockFurniture
     }
 
     @Override
-    public void onBlockDestroyedByPlayer(World world, BlockPos pos, IBlockState state)
+    public void onPlayerDestroy(World world, BlockPos pos, IBlockState state)
     {
         world.updateComparatorOutputLevel(pos, this);
     }
@@ -247,7 +247,7 @@ public class BlockBasin extends BlockFurniture
     @Override
     public IBlockState getStateFromMeta(int meta)
     {
-        return this.getDefaultState().withProperty(FACING, EnumFacing.getHorizontal(meta)).withProperty(FILLED, meta / 4 >= 1);
+        return this.getDefaultState().withProperty(FACING, EnumFacing.byHorizontalIndex(meta)).withProperty(FILLED, meta / 4 >= 1);
     }
 
     @Override

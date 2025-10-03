@@ -146,7 +146,7 @@ public class BlockMicrowave extends BlockFurnitureTile
     public IBlockState getStateFromMeta(int meta)
     {
         return getDefaultState()
-            .withProperty(FACING, EnumFacing.getHorizontal(meta >> 1))
+            .withProperty(FACING, EnumFacing.byHorizontalIndex(meta >> 1))
             .withProperty(DIRTY, (meta & 1) == 1);
     }
 }

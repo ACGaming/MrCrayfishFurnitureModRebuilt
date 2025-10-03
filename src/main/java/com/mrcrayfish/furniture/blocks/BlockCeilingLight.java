@@ -42,7 +42,7 @@ public class BlockCeilingLight extends Block implements IPowered
             this.setLightLevel(1.0F);
         }
         this.setDefaultState(this.blockState.getBaseState().withProperty(MODE, Mode.RIGHT_CLICK));
-        this.setUnlocalizedName(id);
+        this.setTranslationKey(id);
         this.setRegistryName(id);
     }
 

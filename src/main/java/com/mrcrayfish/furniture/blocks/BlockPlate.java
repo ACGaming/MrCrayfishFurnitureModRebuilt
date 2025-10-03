@@ -34,7 +34,7 @@ public class BlockPlate extends Block implements ITileEntityProvider
         this.setHardness(0.5F);
         this.setSoundType(SoundType.STONE);
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
-        this.setUnlocalizedName(id);
+        this.setTranslationKey(id);
         this.setRegistryName(id);
     }
 

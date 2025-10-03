@@ -47,8 +47,8 @@ public class ItemUpgradedGate extends ItemBlock
             if (player.canPlayerEdit(pos, facing, stack) && this.block.canPlaceBlockAt(worldIn, pos))
             {
                 EnumFacing playerFacing = EnumFacing.fromAngle((double)player.rotationYaw);
-                int offsetX = playerFacing.getFrontOffsetX();
-                int offsetZ = playerFacing.getFrontOffsetZ();
+                int offsetX = playerFacing.getXOffset();
+                int offsetZ = playerFacing.getZOffset();
                 boolean side = offsetX < 0 && hitZ < 0.5F || offsetX > 0 && hitZ > 0.5F || offsetZ < 0 && hitX > 0.5F || offsetZ > 0 && hitX < 0.5F;
                 this.placeGate(worldIn, pos, playerFacing, this.block, side);
                 SoundType soundtype = worldIn.getBlockState(pos).getBlock().getSoundType(worldIn.getBlockState(pos), worldIn, pos, player);

@@ -62,7 +62,7 @@ public class ItemColored extends ItemBlock implements SubItems
         NonNullList<ResourceLocation> modelLocations = NonNullList.create();
         for(EnumDyeColor color : EnumDyeColor.values())
         {
-            modelLocations.add(new ResourceLocation(Reference.MOD_ID, getUnlocalizedName().substring(5) + "/" + color.getName()));
+            modelLocations.add(new ResourceLocation(Reference.MOD_ID, getTranslationKey().substring(5) + "/" + color.getName()));
         }
         return modelLocations;
     }

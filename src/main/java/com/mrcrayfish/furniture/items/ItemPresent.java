@@ -159,9 +159,9 @@ public class ItemPresent extends ItemBlock implements IItemInventory, SubItems, 
     }
 
     @Override
-    public String getUnlocalizedName(ItemStack stack)
+    public String getTranslationKey(ItemStack stack)
     {
-        return super.getUnlocalizedName(stack) + "_" + EnumDyeColor.values()[stack.getItemDamage()].getName();
+        return super.getTranslationKey(stack) + "_" + EnumDyeColor.values()[stack.getItemDamage()].getName();
     }
 
     @Override
@@ -170,7 +170,7 @@ public class ItemPresent extends ItemBlock implements IItemInventory, SubItems, 
         NonNullList<ResourceLocation> modelLocations = NonNullList.create();
         for(EnumDyeColor color : EnumDyeColor.values())
         {
-            modelLocations.add(new ResourceLocation(Reference.MOD_ID, getUnlocalizedName().substring(5) + "_" + color.getName()));
+            modelLocations.add(new ResourceLocation(Reference.MOD_ID, getTranslationKey().substring(5) + "_" + color.getName()));
         }
         return modelLocations;
     }

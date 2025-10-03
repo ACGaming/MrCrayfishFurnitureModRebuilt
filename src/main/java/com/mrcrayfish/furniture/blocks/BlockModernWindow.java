@@ -39,7 +39,7 @@ public class BlockModernWindow extends BlockPane
                 .withProperty(PANE_WEST, Boolean.FALSE)
                 .withProperty(PANE_UP, Boolean.FALSE)
                 .withProperty(PANE_DOWN, Boolean.FALSE));
-        this.setUnlocalizedName(id);
+        this.setTranslationKey(id);
         this.setRegistryName(id);
     }
 
