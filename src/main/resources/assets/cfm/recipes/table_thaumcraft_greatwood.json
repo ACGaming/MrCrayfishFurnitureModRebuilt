@@ -1,0 +1,24 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thaumcraft"
+    }
+  ],
+  "result": {
+    "item": "cfm:table_thaumcraft_greatwood"
+  },
+  "pattern": [
+    "***",
+    " * ",
+    " * "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "*": {
+      "item": "thaumcraft:planks_greatwood",
+      "data": 0
+    }
+  }
+}
+

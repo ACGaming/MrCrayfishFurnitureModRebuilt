@@ -1,0 +1,10 @@
+{
+  "parent": "cfm:block/park_bench_single",
+  "textures": {
+    "log": "thaumcraft:blocks/log_greatwood",
+    "plank": "thaumcraft:blocks/plank_greatwood"
+  }
+}
+
+
+

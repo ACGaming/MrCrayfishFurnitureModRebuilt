@@ -1,0 +1,24 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thaumcraft"
+    }
+  ],
+  "result": {
+    "item": "cfm:upgraded_gate_thaumcraft_greatwood",
+    "count": 2
+  },
+  "ingredients": [
+    {
+      "item": "modid:fence_gate",
+      "data": 0_gate
+    },
+    {
+      "item": "thaumcraft:log_greatwood",
+      "data": 0
+    }
+  ],
+  "type": "minecraft:crafting_shapeless"
+}
+

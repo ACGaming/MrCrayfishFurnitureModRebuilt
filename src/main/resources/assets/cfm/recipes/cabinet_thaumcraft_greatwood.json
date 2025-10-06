@@ -1,0 +1,27 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thaumcraft"
+    }
+  ],
+  "result": {
+    "item": "cfm:cabinet_thaumcraft_greatwood"
+  },
+  "pattern": [
+    "***",
+    "*@*",
+    "***"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "@": {
+      "item": "minecraft:chest"
+    },
+    "*": {
+      "item": "thaumcraft:planks_greatwood",
+      "data": 0
+    }
+  }
+}
+
