@@ -30,11 +30,11 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.List;
 
-public class BlockCup extends Block implements ITileEntityProvider
+public class BlockBottle extends Block implements ITileEntityProvider
 {
-    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(5 * 0.0625, 0.0, 5 * 0.0625, 11 * 0.0625, 7.5 * 0.0625, 11 * 0.0625);
+    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(5 * 0.0625, 0.0, 5 * 0.0625, 11 * 0.0625, 15 * 0.0625, 11 * 0.0625);
 
-    public BlockCup(Material material, String id)
+    public BlockBottle(Material material, String id)
     {
         super(material);
         this.setSoundType(SoundType.GLASS);
@@ -51,22 +51,33 @@ public class BlockCup extends Block implements ITileEntityProvider
         {
             if(world.getTileEntity(pos) instanceof TileEntityCup)
             {
-                TileEntityCup tileEntityCup = (TileEntityCup) world.getTileEntity(pos);
-                ItemStack cup = tileEntityCup.getDrink();
-                if(cup != null && cup.hasTagCompound())
+                TileEntityCup tileEntityBottle = (TileEntityCup) world.getTileEntity(pos);
+                ItemStack bottle = tileEntityBottle.getDrink();
+                if(bottle != null && bottle.hasTagCompound())
                 {
-                    tileEntityCup.clear();
-                    if(!world.isRemote)
+                    int remainingServings = bottle.getTagCompound().getInteger("Servings");
+                    if(remainingServings > 0)
                     {
-                        int heal = cup.getTagCompound().getInteger("HealAmount");
-                        player.getFoodStats().addStats(heal, 0.5F);
+                        if(!world.isRemote)
+                        {
+                            int heal = bottle.getTagCompound().getInteger("HealAmount");
+                            player.getFoodStats().addStats(heal, 0.5F);
+                            remainingServings--;
+                            bottle.getTagCompound().setInteger("Servings", remainingServings);
+                            if(remainingServings == 0)
+                            {
+                                tileEntityBottle.clear();
+                                bottle = new ItemStack(FurnitureItems.BOTTLE);
+                            }
+                            tileEntityBottle.setItem(bottle);
+                        }
+                        else
+                        {
+                            world.playSound(player, player.getPosition(), SoundEvents.ENTITY_GENERIC_DRINK, SoundCategory.PLAYERS, 1.0F, 1.0F);
+                            world.playSound(player, player.getPosition(), SoundEvents.ENTITY_PLAYER_BURP, SoundCategory.PLAYERS, 1.0F, 1.0F);
+                        }
+                        return true;
                     }
-                    else
-                    {
-                        world.playSound(player, player.getPosition(), SoundEvents.ENTITY_GENERIC_DRINK, SoundCategory.PLAYERS, 1.0F, 1.0F);
-                        world.playSound(player, player.getPosition(), SoundEvents.ENTITY_PLAYER_BURP, SoundCategory.PLAYERS, 1.0F, 1.0F);
-                    }
-                    return true;
                 }
             }
         }
@@ -94,9 +105,10 @@ public class BlockCup extends Block implements ITileEntityProvider
             if(nbt.hasKey("Colour"))
             {
                 int[] rgb = nbt.getIntArray("Colour");
-                TileEntityCup tileEntityCup = (TileEntityCup) world.getTileEntity(pos);
-                tileEntityCup.setColour(rgb);
-                tileEntityCup.setItem(stack);
+                TileEntityCup tileEntityBottle = (TileEntityCup) world.getTileEntity(pos);
+                tileEntityBottle.setColour(rgb);
+                tileEntityBottle.setItem(stack);
+                tileEntityBottle.setServings(stack.getTagCompound().getInteger("Servings"));
             }
         }
     }
@@ -124,14 +136,14 @@ public class BlockCup extends Block implements ITileEntityProvider
     {
         if(te instanceof TileEntityCup)
         {
-            TileEntityCup tileEntityCup = (TileEntityCup) te;
-            EntityItem item = new EntityItem(world, pos.getX() + 0.5, pos.getY(), pos.getZ() + 0.5, tileEntityCup.getDrink() != null ? tileEntityCup.getDrink().copy() : new ItemStack(FurnitureItems.CUP));
+            TileEntityCup tileEntityBottle = (TileEntityCup) te;
+            EntityItem item = new EntityItem(world, pos.getX() + 0.5, pos.getY(), pos.getZ() + 0.5, tileEntityBottle.getDrink() != null ? tileEntityBottle.getDrink().copy() : new ItemStack(FurnitureItems.BOTTLE));
             item.setDefaultPickupDelay();
             world.spawnEntity(item);
         }
         else
         {
-            EntityItem item = new EntityItem(world, pos.getX() + 0.5, pos.getY(), pos.getZ() + 0.5, new ItemStack(FurnitureItems.CUP));
+            EntityItem item = new EntityItem(world, pos.getX() + 0.5, pos.getY(), pos.getZ() + 0.5, new ItemStack(FurnitureItems.BOTTLE));
             item.setDefaultPickupDelay();
             world.spawnEntity(item);
         }
@@ -142,13 +154,13 @@ public class BlockCup extends Block implements ITileEntityProvider
     {
         if(world.getTileEntity(pos) instanceof TileEntityCup)
         {
-            TileEntityCup tileEntityCup = (TileEntityCup) world.getTileEntity(pos);
-            if(tileEntityCup.getDrink() != null)
+            TileEntityCup tileEntityBottle = (TileEntityCup) world.getTileEntity(pos);
+            if(tileEntityBottle.getDrink() != null)
             {
-                return tileEntityCup.getDrink().copy();
+                return tileEntityBottle.getDrink().copy();
             }
         }
-        return new ItemStack(FurnitureItems.CUP);
+        return new ItemStack(FurnitureItems.BOTTLE);
     }
 
     @SideOnly(Side.CLIENT)

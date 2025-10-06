@@ -147,7 +147,7 @@ public class BlockCookieJar extends Block implements ITileEntityProvider
     }
 
     @SideOnly(Side.CLIENT)
-    public BlockRenderLayer getBlockLayer()
+    public BlockRenderLayer getRenderLayer()
     {
         return BlockRenderLayer.CUTOUT;
     }
