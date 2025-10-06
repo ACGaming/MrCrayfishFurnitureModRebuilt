@@ -1,0 +1,14 @@
+{
+  "parent": "cfm:item/upgraded_fence",
+  "textures": {
+    "log": "thaumcraft:blocks/log_silverwood",
+    "plank": "thaumcraft:blocks/plank_silverwood"
+  }
+}
+
+
+
+
+
+
+

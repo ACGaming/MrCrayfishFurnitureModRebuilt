@@ -1,0 +1,30 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thaumcraft" 
+    }
+  ],
+  "result": {
+    "item": "cfm:blinds_thaumcraft_silverwood_open",
+    "count": 2
+  },
+  "pattern": [
+    "LLL",
+    "SSS",
+    "SSS"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "L": {
+      "item": "thaumcraft:log_silverwood",
+      "data": 0
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  }
+}
+
+
+

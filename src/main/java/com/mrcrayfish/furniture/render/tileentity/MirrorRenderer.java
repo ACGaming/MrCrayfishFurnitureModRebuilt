@@ -66,7 +66,7 @@ public class MirrorRenderer extends TileEntitySpecialRenderer<TileEntityMirror>
 
         entityMirror.rendering = true;
 
-        EnumFacing facing = EnumFacing.getHorizontal(mirror.getBlockMetadata());
+        EnumFacing facing = EnumFacing.byHorizontalIndex(mirror.getBlockMetadata());
         GlStateManager.pushMatrix();
         {
             GlStateManager.enableBlend();

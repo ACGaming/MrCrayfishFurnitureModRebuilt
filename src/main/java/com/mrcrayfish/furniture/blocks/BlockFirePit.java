@@ -35,7 +35,7 @@ public abstract class BlockFirePit extends Block
         super(material);
         this.setSoundType(SoundType.WOOD);
         this.setHardness(1.0F);
-        this.setUnlocalizedName(id);
+        this.setTranslationKey(id);
         this.setRegistryName(id);
     }
 

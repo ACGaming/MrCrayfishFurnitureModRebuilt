@@ -1,0 +1,11 @@
+{
+  "parent": "cfm:block/chair",
+  "textures": {
+    "1": "thaumcraft:blocks/plank_greatwood",
+    "2": "thaumcraft:blocks/log_greatwood"
+  }
+}
+
+
+
+

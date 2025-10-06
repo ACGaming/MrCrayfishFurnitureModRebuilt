@@ -1,0 +1,15 @@
+{
+  "parent": "cfm:block/chair",
+  "textures": {
+    "1": "thaumcraft:blocks/plank_silverwood",
+    "2": "thaumcraft:blocks/log_silverwood"
+  }
+}
+
+
+
+
+
+
+
+

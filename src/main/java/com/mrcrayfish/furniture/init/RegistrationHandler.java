@@ -3,6 +3,7 @@ package com.mrcrayfish.furniture.init;
 import com.mrcrayfish.furniture.Reference;
 import com.mrcrayfish.furniture.handler.ConfigurationHandler;
 import com.mrcrayfish.furniture.integration.biomesoplenty.FurnitureBlocksBOP;
+import com.mrcrayfish.furniture.integration.thaumcraft.FurnitureBlocksThaumcraft;
 import com.mrcrayfish.furniture.items.SubItems;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -104,7 +105,7 @@ public class RegistrationHandler
             }
             else
             {
-                ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(Reference.MOD_ID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
+                ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(Reference.MOD_ID + ":" + item.getTranslationKey().substring(5), "inventory"));
             }
         }
     }
@@ -137,6 +138,10 @@ public class RegistrationHandler
         if(Loader.isModLoaded("biomesoplenty") && ConfigurationHandler.integrationBiomesOPlenty)
         {
             FurnitureBlocksBOP.register();
+        }
+        if(Loader.isModLoaded("thaumcraft") && ConfigurationHandler.integrationThaumcraft)
+        {
+            FurnitureBlocksThaumcraft.register();
         }
     }
 }

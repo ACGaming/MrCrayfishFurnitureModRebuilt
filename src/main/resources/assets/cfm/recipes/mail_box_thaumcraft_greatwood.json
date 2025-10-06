@@ -1,0 +1,31 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thaumcraft"
+    }
+  ],
+  "result": {
+    "item": "cfm:mail_box_thaumcraft_greatwood"
+  },
+  "pattern": [
+    "LBL",
+    "PPP",
+    " P "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "minecraft:book"
+    },
+    "P": {
+      "item": "thaumcraft:planks_greatwood",
+      "data": 0
+    },
+    "L": {
+      "item": "thaumcraft:log_greatwood",
+      "data": 0
+    }
+  }
+}
+

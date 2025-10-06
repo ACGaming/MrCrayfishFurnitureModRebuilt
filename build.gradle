@@ -39,8 +39,8 @@ minecraft {
     mcVersion = '1.12.2'
 
     // MCP Mappings
-    mcpMappingChannel = 'snapshot'
-    mcpMappingVersion = '20171003'
+    mcpMappingChannel = 'stable'
+    mcpMappingVersion = '39'
 
     // Set username here, the UUID will be looked up automatically
     username = 'Developer'

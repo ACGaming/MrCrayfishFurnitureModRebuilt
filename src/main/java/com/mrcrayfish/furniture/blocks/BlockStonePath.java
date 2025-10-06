@@ -31,7 +31,7 @@ public class BlockStonePath extends Block
         this.setHardness(0.75F);
         this.setSoundType(SoundType.STONE);
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
-        this.setUnlocalizedName(id);
+        this.setTranslationKey(id);
         this.setRegistryName(id);
     }
 

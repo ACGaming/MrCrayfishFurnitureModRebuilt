@@ -81,7 +81,7 @@ public class BlockBlinds extends BlockFurniture
     private Block getReplacementBlockFromState(IBlockState state)
     {
         ResourceLocation blockRegistryName = state.getBlock().getRegistryName();
-        String blockPath = blockRegistryName.getResourcePath();
+        String blockPath = blockRegistryName.getPath();
         if(blockPath.contains("_open"))
         {
             blockPath = blockPath.replace("_open", "_closed");
@@ -90,7 +90,7 @@ public class BlockBlinds extends BlockFurniture
         {
             blockPath = blockPath.replace("_closed", "_open");
         }
-        ResourceLocation replacementBlockRegistryName = new ResourceLocation(blockRegistryName.getResourceDomain(), blockPath);
+        ResourceLocation replacementBlockRegistryName = new ResourceLocation(blockRegistryName.getNamespace(), blockPath);
         return ForgeRegistries.BLOCKS.getValue(replacementBlockRegistryName);
     }
 
@@ -109,8 +109,8 @@ public class BlockBlinds extends BlockFurniture
     private Item getItemFromState(IBlockState state)
     {
         ResourceLocation blockRegistryName = state.getBlock().getRegistryName();
-        String itemName = blockRegistryName.getResourcePath().replace("_closed", "_open");
-        ResourceLocation itemRegistryName = new ResourceLocation(blockRegistryName.getResourceDomain(), itemName);
+        String itemName = blockRegistryName.getPath().replace("_closed", "_open");
+        ResourceLocation itemRegistryName = new ResourceLocation(blockRegistryName.getNamespace(), itemName);
         return ForgeRegistries.ITEMS.getValue(itemRegistryName);
     }
 

@@ -1,0 +1,12 @@
+{
+  "parent": "cfm:block/blinds_closed_stringless",
+  "textures": {
+    "particle": "thaumcraft:blocks/log_greatwood",
+    "1": "thaumcraft:blocks/log_greatwood",
+    "2": "thaumcraft:blocks/plank_greatwood",
+    "3": "blocks/concrete_white"
+  }
+}
+
+
+

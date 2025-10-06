@@ -1,0 +1,15 @@
+{
+  "parent": "cfm:item/desk_cabinet",
+  "textures": {
+    "top": "blocks/hardened_clay_stained_black",
+    "primary": "thaumcraft:blocks/log_silverwood",
+    "secondary": "thaumcraft:blocks/plank_silverwood"
+  }
+}
+
+
+
+
+
+
+

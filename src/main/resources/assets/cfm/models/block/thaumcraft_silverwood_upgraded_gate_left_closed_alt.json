@@ -1,0 +1,14 @@
+{
+  "parent": "cfm:block/upgraded_gate_left_closed_alt",
+  "textures": {
+    "log": "thaumcraft:blocks/log_silverwood",
+    "plank": "thaumcraft:blocks/plank_silverwood"
+  }
+}
+
+
+
+
+
+
+

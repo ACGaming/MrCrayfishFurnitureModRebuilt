@@ -1,0 +1,11 @@
+{
+  "parent": "cfm:block/mail_box",
+  "textures": {
+    "primary": "thaumcraft:blocks/plank_greatwood",
+    "secondary": "thaumcraft:blocks/log_greatwood"
+  }
+}
+
+
+
+

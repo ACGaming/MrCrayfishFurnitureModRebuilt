@@ -197,7 +197,7 @@ public class BlockEsky extends BlockFurnitureTile
     @Override
     public IBlockState getStateFromMeta(int meta)
     {
-        return this.getDefaultState().withProperty(FACING, EnumFacing.getHorizontal(meta % 4)).withProperty(OPENED, meta / 4 > 0);
+        return this.getDefaultState().withProperty(FACING, EnumFacing.byHorizontalIndex(meta % 4)).withProperty(OPENED, meta / 4 > 0);
     }
 
     @Override

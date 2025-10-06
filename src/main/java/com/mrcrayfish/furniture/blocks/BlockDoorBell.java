@@ -129,7 +129,7 @@ public class BlockDoorBell extends BlockFurniture
     }
 
     @Override
-    public void onEntityCollidedWithBlock(World worldIn, BlockPos pos, IBlockState state, Entity entityIn)
+    public void onEntityCollision(World worldIn, BlockPos pos, IBlockState state, Entity entityIn)
     {
         if(!worldIn.isRemote)
         {
@@ -169,7 +169,7 @@ public class BlockDoorBell extends BlockFurniture
     @Override
     public IBlockState getStateFromMeta(int meta)
     {
-        return this.getDefaultState().withProperty(FACING, EnumFacing.getHorizontal(meta)).withProperty(POWERED, meta > 3);
+        return this.getDefaultState().withProperty(FACING, EnumFacing.byHorizontalIndex(meta)).withProperty(POWERED, meta > 3);
     }
 
     @Override

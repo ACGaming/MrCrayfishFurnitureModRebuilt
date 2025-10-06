@@ -40,7 +40,7 @@ public class BlockCup extends Block implements ITileEntityProvider
         this.setSoundType(SoundType.GLASS);
         this.setHardness(0.1F);
         this.setDefaultState(this.blockState.getBaseState());
-        this.setUnlocalizedName(id);
+        this.setTranslationKey(id);
         this.setRegistryName(id);
     }
 

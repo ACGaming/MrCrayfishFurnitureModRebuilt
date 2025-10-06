@@ -1,0 +1,10 @@
+{
+  "parent": "cfm:block/hedge_none",
+  "textures": {
+    "1": "thaumcraft:blocks/leaves_greatwood"
+  }
+}
+
+
+
+

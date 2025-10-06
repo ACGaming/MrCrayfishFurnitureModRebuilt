@@ -42,7 +42,7 @@ public class BlockCookieJar extends Block implements ITileEntityProvider
         this.setSoundType(SoundType.GLASS);
         this.setDefaultState(this.blockState.getBaseState().withProperty(COOKIE_COUNT, 0));
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
-        this.setUnlocalizedName(id);
+        this.setTranslationKey(id);
         this.setRegistryName(id);
     }
 
@@ -59,7 +59,7 @@ public class BlockCookieJar extends Block implements ITileEntityProvider
     }
 
     @Override
-    public void onBlockDestroyedByPlayer(World world, BlockPos pos, IBlockState state)
+    public void onPlayerDestroy(World world, BlockPos pos, IBlockState state)
     {
         if(!world.isRemote)
         {

@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thaumcraft"
+    }
+  ],
+  "result": {
+    "item": "cfm:crate_thaumcraft_greatwood"
+  },
+  "pattern": [
+    "DOD",
+    "O O",
+    "DOD"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "D": {
+      "item": "thaumcraft:log_greatwood",
+      "data": 0
+    },
+    "O": {
+      "item": "thaumcraft:planks_greatwood",
+      "data": 0
+    }
+  }
+}
+

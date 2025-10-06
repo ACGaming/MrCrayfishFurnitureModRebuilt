@@ -49,7 +49,7 @@ public class BlockLamp extends BlockDirectional
         {
             this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         }
-        this.setUnlocalizedName(id);
+        this.setTranslationKey(id);
         this.setRegistryName(id);
     }
 

@@ -1,0 +1,30 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thaumcraft" 
+    }
+  ],
+  "result": {
+    "item": "cfm:crate_thaumcraft_silverwood"
+  },
+  "pattern": [
+    "DOD",
+    "O O",
+    "DOD"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "D": {
+      "item": "thaumcraft:log_silverwood",
+      "data": 0
+    },
+    "O": {
+      "item": "thaumcraft:planks_silverwood",
+      "data": 0
+    }
+  }
+}
+
+
+

@@ -54,7 +54,7 @@ public class BlockPresent extends Block implements ITileEntityProvider
         this.hasTileEntity = true;
         this.setDefaultState(this.blockState.getBaseState().withProperty(COLOUR, EnumDyeColor.WHITE));
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
-        this.setUnlocalizedName(id);
+        this.setTranslationKey(id);
         this.setRegistryName(id);
     }
 

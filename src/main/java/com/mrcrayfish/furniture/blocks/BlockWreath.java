@@ -85,7 +85,7 @@ public class BlockWreath extends BlockFurniture
     }
 
     @Override
-    public BlockRenderLayer getBlockLayer()
+    public BlockRenderLayer getRenderLayer()
     {
         return BlockRenderLayer.CUTOUT;
     }

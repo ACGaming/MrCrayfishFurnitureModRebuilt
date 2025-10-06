@@ -39,7 +39,7 @@ public class BlockTrampoline extends Block
         this.setHardness(0.5F);
         this.setDefaultState(this.blockState.getBaseState().withProperty(BACK, false).withProperty(FORWARD, false).withProperty(LEFT, false).withProperty(RIGHT, false));
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
-        this.setUnlocalizedName(id);
+        this.setTranslationKey(id);
         this.setRegistryName(id);
     }
 

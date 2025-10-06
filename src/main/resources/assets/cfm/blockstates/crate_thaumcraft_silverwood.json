@@ -1,0 +1,22 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "cfm:crate",
+    "textures": {
+      "primary": "thaumcraft:blocks/log_silverwood",
+      "secondary": "thaumcraft:blocks/plank_silverwood"
+    }
+  },
+  "variants": {
+    "inventory": {
+      "model": "cfm:crate"
+    },
+    "normal": {
+      "model": "cfm:crate"
+    }
+  }
+}
+
+
+
+

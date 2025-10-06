@@ -171,7 +171,7 @@ public class BlockPhotoFrame extends BlockFurnitureTile
     }
 
     @Override
-    public BlockRenderLayer getBlockLayer()
+    public BlockRenderLayer getRenderLayer()
     {
         return BlockRenderLayer.CUTOUT;
     }

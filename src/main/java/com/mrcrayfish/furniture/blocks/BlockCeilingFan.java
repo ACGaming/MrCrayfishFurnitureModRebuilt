@@ -57,7 +57,7 @@ public class BlockCeilingFan extends Block implements IPowered {
         this.setSoundType(SoundType.WOOD);
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.DOWN));
-        this.setUnlocalizedName(id);
+        this.setTranslationKey(id);
         this.setRegistryName(id);
     }
 
@@ -160,7 +160,7 @@ public class BlockCeilingFan extends Block implements IPowered {
 
     public IBlockState getStateFromMeta(int meta)
     {
-        EnumFacing enumfacing = EnumFacing.getFront(meta);
+        EnumFacing enumfacing = EnumFacing.byIndex(meta);
         return this.getDefaultState().withProperty(FACING, enumfacing);
     }
 

@@ -77,7 +77,7 @@ public class CommonProxy implements ProxyInterface
     {
         for(RegistryEvent.MissingMappings.Mapping<SoundEvent> missing : event.getMappings())
         {
-            if(missing.key.getResourceDomain().equals(Reference.MOD_ID) && IGNORE_SOUNDS.contains(missing.key.getResourcePath()))
+            if(missing.key.getNamespace().equals(Reference.MOD_ID) && IGNORE_SOUNDS.contains(missing.key.getPath()))
             {
                 missing.ignore();
             }
@@ -89,7 +89,7 @@ public class CommonProxy implements ProxyInterface
     {
         for(RegistryEvent.MissingMappings.Mapping<Item> missing : event.getMappings())
         {
-            if(missing.key.getResourceDomain().equals(Reference.MOD_ID) && IGNORE_ITEMS.contains(missing.key.getResourcePath()))
+            if(missing.key.getNamespace().equals(Reference.MOD_ID) && IGNORE_ITEMS.contains(missing.key.getPath()))
             {
                 missing.ignore();
             }

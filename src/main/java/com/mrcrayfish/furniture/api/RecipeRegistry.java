@@ -1281,7 +1281,7 @@ public class RecipeRegistry extends RecipeAPI
                 if(output.getItem() instanceof ItemFood)
                 {
                     ResourceLocation registryName = output.getItem().getRegistryName();
-                    if(registryName != null && !registryName.getResourceDomain().equals("minecraft"))
+                    if(registryName != null && !registryName.getNamespace().equals("minecraft"))
                     {
                         RecipeRegistry.getInstance().registerOvenRecipe(input, output);
                     }

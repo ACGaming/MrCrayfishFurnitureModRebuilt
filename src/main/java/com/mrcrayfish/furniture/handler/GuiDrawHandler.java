@@ -75,7 +75,7 @@ public class GuiDrawHandler
             updateCategories();
 
             GuiContainerCreative creative = (GuiContainerCreative) event.getGui();
-            if(creative.getSelectedTabIndex() == MrCrayfishFurnitureMod.tabFurniture.getTabIndex())
+            if(creative.getSelectedTabIndex() == MrCrayfishFurnitureMod.tabFurniture.getIndex())
             {
                 viewingFurnitureTab = true;
                 categoryButtons.forEach(guiCategoryButton -> guiCategoryButton.visible = true);
@@ -106,7 +106,7 @@ public class GuiDrawHandler
         if(event.getGui() instanceof GuiContainerCreative)
         {
             GuiContainerCreative creative = (GuiContainerCreative) event.getGui();
-            if(creative.getSelectedTabIndex() == MrCrayfishFurnitureMod.tabFurniture.getTabIndex())
+            if(creative.getSelectedTabIndex() == MrCrayfishFurnitureMod.tabFurniture.getIndex())
             {
                 if(!viewingFurnitureTab)
                 {
@@ -129,7 +129,7 @@ public class GuiDrawHandler
             GuiContainerCreative creative = (GuiContainerCreative) event.getGui();
             this.guiCenterX = creative.getGuiLeft();
             this.guiCenterY = creative.getGuiTop();
-            if(creative.getSelectedTabIndex() == MrCrayfishFurnitureMod.tabFurniture.getTabIndex())
+            if(creative.getSelectedTabIndex() == MrCrayfishFurnitureMod.tabFurniture.getIndex())
             {
                 buttonWebsite.visible = true;
                 buttonYouTube.visible = true;
@@ -229,7 +229,7 @@ public class GuiDrawHandler
             }
             updateCategories();
             GuiContainerCreative creative = (GuiContainerCreative) event.getGui();
-            if(creative.getSelectedTabIndex() == MrCrayfishFurnitureMod.tabFurniture.getTabIndex())
+            if(creative.getSelectedTabIndex() == MrCrayfishFurnitureMod.tabFurniture.getIndex())
             {
                 categoryButtons.forEach(guiCategoryButton -> guiCategoryButton.visible = true);
             }

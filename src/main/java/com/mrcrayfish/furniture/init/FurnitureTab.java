@@ -14,13 +14,13 @@ public class FurnitureTab extends CreativeTabs
     }
 
     @Override
-    public ItemStack getTabIconItem()
+    public ItemStack createIcon()
     {
         return new ItemStack(FurnitureBlocks.CHAIR_OAK);
     }
 
     @Override
-    public String getTranslatedTabLabel()
+    public String getTranslationKey()
     {
         return hoveringButton ? title : "itemGroup." + this.getTabLabel();
     }

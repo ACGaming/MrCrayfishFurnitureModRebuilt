@@ -30,7 +30,7 @@ public final class ImageCache
 
     private ImageCache()
     {
-        cache = new File(Minecraft.getMinecraft().mcDataDir, "photo-frame-cache");
+        cache = new File(Minecraft.getMinecraft().gameDir, "photo-frame-cache");
         cache.mkdir();
         this.init();
     }

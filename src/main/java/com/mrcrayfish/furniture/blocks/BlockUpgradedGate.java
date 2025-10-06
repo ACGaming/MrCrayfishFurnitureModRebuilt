@@ -111,7 +111,7 @@ public class BlockUpgradedGate extends BlockFurniture
     @Override
     public IBlockState getStateFromMeta(int meta)
     {
-        return this.getDefaultState().withProperty(FACING, EnumFacing.getHorizontal(meta)).withProperty(OPENED, (meta & 4) != 0).withProperty(HINGE, (meta & 8) == 0 ? BlockDoor.EnumHingePosition.LEFT : BlockDoor.EnumHingePosition.RIGHT);
+        return this.getDefaultState().withProperty(FACING, EnumFacing.byHorizontalIndex(meta)).withProperty(OPENED, (meta & 4) != 0).withProperty(HINGE, (meta & 8) == 0 ? BlockDoor.EnumHingePosition.LEFT : BlockDoor.EnumHingePosition.RIGHT);
     }
 
     @Override

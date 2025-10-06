@@ -1,0 +1,29 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thaumcraft"
+    }
+  ],
+  "result": {
+    "item": "cfm:park_bench_thaumcraft_greatwood",
+    "count": 2
+  },
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PPP",
+    "L L"
+  ],
+  "key": {
+    "P": {
+      "item": "thaumcraft:planks_greatwood",
+      "data": 0
+    },
+    "L": {
+      "item": "thaumcraft:log_greatwood",
+      "data": 0
+    }
+  }
+}
+
