@@ -1,0 +1,26 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thaumcraft" 
+    }
+  ],
+  "result": {
+    "item": "cfm:hedge_thaumcraft_silverwood",
+    "count": 4
+  },
+  "pattern": [
+    "***",
+    "***"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "*": {
+      "item": "thaumcraft:leaves_silverwood",
+      "data": 0
+    }
+  }
+}
+
+
+

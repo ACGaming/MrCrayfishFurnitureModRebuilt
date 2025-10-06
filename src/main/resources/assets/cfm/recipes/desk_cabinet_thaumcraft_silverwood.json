@@ -1,0 +1,33 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thaumcraft" 
+    }
+  ],
+  "result": {
+    "item": "cfm:desk_cabinet_thaumcraft_silverwood"
+  },
+  "pattern": [
+    "LLL",
+    "PCP",
+    "P P"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "L": {
+      "item": "thaumcraft:log_silverwood",
+      "data": 0
+    },
+    "P": {
+      "item": "thaumcraft:planks_silverwood",
+      "data": 0
+    },
+    "C": {
+      "item": "minecraft:chest"
+    }
+  }
+}
+
+
+

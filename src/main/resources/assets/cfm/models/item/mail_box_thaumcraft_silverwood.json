@@ -1,0 +1,15 @@
+{
+  "parent": "cfm:block/mail_box",
+  "textures": {
+    "primary": "thaumcraft:blocks/plank_silverwood",
+    "secondary": "thaumcraft:blocks/log_silverwood"
+  }
+}
+
+
+
+
+
+
+
+

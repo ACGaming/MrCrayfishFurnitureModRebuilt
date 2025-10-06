@@ -1,0 +1,36 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "1": "thaumcraft:blocks/log_silverwood",
+      "2": "thaumcraft:blocks/plank_silverwood",
+      "handle": "thaumcraft:blocks/plank_silverwood"
+    },
+    "model": "cfm:bedside_cabinet"
+  },
+  "variants": {
+    "inventory": [
+      {
+        "model": "cfm:bedside_cabinet"
+      }
+    ],
+    "facing=north": {
+      "model": "cfm:bedside_cabinet",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "cfm:bedside_cabinet",
+      "y": 90
+    },
+    "facing=east": {
+      "model": "cfm:bedside_cabinet"
+    },
+    "facing=west": {
+      "model": "cfm:bedside_cabinet",
+      "y": 180
+    }
+  }
+}
+
+
+
