@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench by MisterIceCat",
 	"texture_size": [32, 32],
 	"textures": {
-		"3": "cfm:blocks/cookie_jar"
-		
+		"3": "cfm:blocks/cookie_jar",
+		"particle": "cfm:blocks/cookie_jar"
 	},
 	"elements": [
 		{

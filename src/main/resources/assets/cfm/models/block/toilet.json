@@ -5,7 +5,8 @@
 		"0": "blocks/water_still",
 		"1": "blocks/concrete_white",
 		"2": "cfm:blocks/model_block_dark",
-		"4": "blocks/quartz_block_side"
+		"4": "blocks/quartz_block_side",
+		"particle": "blocks/concrete_white"
 	},
 	"elements": [
 		{
