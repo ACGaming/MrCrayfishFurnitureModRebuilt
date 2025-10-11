@@ -34,13 +34,16 @@
 		"firstperson_lefthand": {
 			"translation": [0.5, 7.25, 0.75]
 		},
+		"ground": {
+			"translation": [0, 5, 0]
+		},
 		"gui": {
 			"rotation": [20, 35, 0],
-			"translation": [0.5, 12.75, 0],
-			"scale": [2, 2, 2]
+			"translation": [0.5, 18.75, 0],
+			"scale": [3, 3, 3]
 		},
 		"head": {
-			"translation": [0, 14.5, 0]
+			"translation": [0.75, 14.5, 0]
 		},
 		"fixed": {
 			"translation": [0, 0, -1]
