@@ -1,12 +1,12 @@
 [![BisectHosting](https://i.imgur.com/6AzSqYg.png)](https://bisecthosting.com/ACGaming)
 
-# MRCRAYFISH'S FURNITURE MOD LEGACY 🛋️
+# MRCRAYFISH'S FURNITURE MOD REBUILT 🛋️
 
 ### 📖 ABOUT
 
 **MrCrayfish's Furniture Mod** is all about adding functioning and useful furniture and decorations. You will be able to find furniture for every part of your house, including the kitchen, bedroom, dining, outdoors and more! Currently adding over 90 unique blocks, the mod is continuously growing with new updates. 1.12.2 will never be forgotten!
 
-**MrCrayfish's Furniture Mod Legacy** is a fork of [**MrCrayfish's Furniture Mod**](https://www.curseforge.com/minecraft/mc-mods/mrcrayfish-furniture-mod) by [**MrCrayfish**](https://www.curseforge.com/members/mrcrayfish), patching long-lasting bugs and adding additional features. This is an **unofficial** continuation and is not affiliated with MrCrayfish as he dropped development for Minecraft 1.12.2. For current versions of Minecraft, check out [**MrCrayfish's Furniture Mod: Refurbished**](https://www.curseforge.com/minecraft/mc-mods/refurbished-furniture) by the one and only crustacean himself!
+**MrCrayfish's Furniture Mod Rebuilt** is a fork of [**MrCrayfish's Furniture Mod**](https://www.curseforge.com/minecraft/mc-mods/mrcrayfish-furniture-mod) by [**MrCrayfish**](https://www.curseforge.com/members/mrcrayfish), patching long-lasting bugs and adding additional features. This is an **unofficial** continuation and is not affiliated with MrCrayfish as he dropped development for Minecraft 1.12.2. For current versions of Minecraft, check out [**MrCrayfish's Furniture Mod: Refurbished**](https://www.curseforge.com/minecraft/mc-mods/refurbished-furniture) by the one and only crustacean himself!
 
 🥪 Thanks to our contributors: Kasumi_Nova, MisterIceCat, onysd
 

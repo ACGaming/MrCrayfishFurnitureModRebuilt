@@ -5,7 +5,7 @@ import com.mrcrayfish.cfm.Tags;
 public class Reference
 {
     public static final String MOD_ID = Tags.MOD_ID;
-    public static final String NAME = "MrCrayfish's Furniture Mod Legacy";
+    public static final String NAME = "MrCrayfish's Furniture Mod Rebuilt";
     public static final String VERSION = Tags.VERSION;
     public static final String ACCEPTED_MC_VERSIONS = "[1.12.2]";
     public static final String DEPENDENCIES = "after:biomesoplenty;after:crafttweaker";
