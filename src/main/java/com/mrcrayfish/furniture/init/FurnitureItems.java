@@ -69,7 +69,7 @@ public class FurnitureItems
         ENVELOPE_SIGNED = new ItemEnvelopeSigned().setTranslationKey("item_envelope_signed").setRegistryName("item_envelope_signed");
         PACKAGE = new ItemPackage().setTranslationKey("item_package").setRegistryName("item_package");
         PACKAGE_SIGNED = new ItemPackageSigned().setTranslationKey("item_package_signed").setRegistryName("item_package_signed");
-        HAMMER = new Item().setTranslationKey("item_hammer").setRegistryName("item_hammer");
+        HAMMER = new ItemGeneric().setTranslationKey("item_hammer").setRegistryName("item_hammer");
         BREAD_SLICE = new ItemFood(2, false).setTranslationKey("item_bread_slice").setRegistryName("item_bread_slice").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         TOAST = new ItemFood(4, false).setTranslationKey("item_toast").setRegistryName("item_toast").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         KNIFE = new ItemKnife().setMaxDamage(100).setTranslationKey("item_knife").setRegistryName("item_knife");
@@ -83,13 +83,13 @@ public class FurnitureItems
         RECIPE_BOOK = new ItemRecipeBook().setTranslationKey("item_recipe_book").setRegistryName("item_recipe_book");
         CRAYFISH = new Item().setTranslationKey("item_crayfish").setRegistryName("item_crayfish").setMaxStackSize(1);
         LOG = new ItemLog(FurnitureBlocks.FIRE_PIT_OFF).setTranslationKey("item_log").setRegistryName("item_log").setMaxStackSize(16);
-        SPATULA = new Item().setTranslationKey("item_spatula").setRegistryName("item_spatula").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
+        SPATULA = new ItemGeneric().setTranslationKey("item_spatula").setRegistryName("item_spatula").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         SAUSAGE = new ItemFood(1, false).setTranslationKey("item_sausage").setRegistryName("item_sausage").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         SAUSAGE_COOKED = new ItemFood(4, false).setTranslationKey("item_sausage_cooked").setRegistryName("item_sausage_cooked").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         KEBAB = new ItemFood(1, false).setPotionEffect(new PotionEffect(MobEffects.HUNGER, 600, 0), 0.3F).setTranslationKey("item_kebab").setRegistryName("item_kebab").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         KEBAB_COOKED = new ItemFood(4, false).setTranslationKey("item_kebab_cooked").setRegistryName("item_kebab_cooked").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
-        CROWBAR = new Item().setTranslationKey("item_crow_bar").setRegistryName("item_crow_bar").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
-        CEILING_FAN_FANS = new Item().setTranslationKey("ceiling_fan_fans").setRegistryName("ceiling_fan_fans");
+        CROWBAR = new ItemGeneric().setTranslationKey("item_crow_bar").setRegistryName("item_crow_bar").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
+        CEILING_FAN_FANS = new ItemGeneric().setTranslationKey("ceiling_fan_fans").setRegistryName("ceiling_fan_fans");
         TV_REMOTE = new ItemTVRemote();
     }
 
