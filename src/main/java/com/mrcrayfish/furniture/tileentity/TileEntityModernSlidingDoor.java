@@ -2,10 +2,7 @@ package com.mrcrayfish.furniture.tileentity;
 
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.ITickable;
-import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraftforge.common.util.Constants;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 /**
  * Author: MrCrayfish
@@ -52,19 +49,6 @@ public class TileEntityModernSlidingDoor extends TileEntitySyncClient implements
     }
 
     @Override
-    public double getMaxRenderDistanceSquared()
-    {
-        return 16384;
-    }
-
-    @Override
-    @SideOnly(Side.CLIENT)
-    public AxisAlignedBB getRenderBoundingBox()
-    {
-        return INFINITE_EXTENT_AABB;
-    }
-
-    @Override
     public void readFromNBT(NBTTagCompound compound)
     {
         super.readFromNBT(compound);
@@ -85,5 +69,11 @@ public class TileEntityModernSlidingDoor extends TileEntitySyncClient implements
         compound.setBoolean("powered", powered);
         compound.setInteger("maxProgress", maxProgress);
         return compound;
+    }
+
+    @Override
+    public boolean hasFastRenderer()
+    {
+        return true;
     }
 }
