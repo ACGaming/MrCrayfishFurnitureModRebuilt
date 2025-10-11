@@ -11,8 +11,8 @@
   },
   "ingredients": [
     {
-      "item": "modid:fence_gate",
-      "data": 0_gate
+      "item": "minecraft:fence_gate",
+      "data": 0
     },
     {
       "item": "thaumcraft:log_silverwood",

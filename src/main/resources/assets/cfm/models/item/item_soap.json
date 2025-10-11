@@ -1,7 +1,6 @@
 {
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
-	"parent": "SoapModel",
 	"textures": {
 		"0": "cfm:items/soap",
 		"particle": "cfm:items/soap"

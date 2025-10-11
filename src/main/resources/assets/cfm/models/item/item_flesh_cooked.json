@@ -1,7 +1,6 @@
 {
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
-	"parent": "ItemFleshModel",
 	"textures": {
 		"0": "cfm:items/itemfleshcooked",
 		"particle": "cfm:items/itemfleshcooked"

@@ -1,7 +1,6 @@
 {
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
-	"parent": "PackageModel",
 	"texture_size": [64, 64],
 	"textures": {
 		"1": "blocks/wool_colored_white",
