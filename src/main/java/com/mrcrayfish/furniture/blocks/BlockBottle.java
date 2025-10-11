@@ -166,7 +166,7 @@ public class BlockBottle extends Block implements ITileEntityProvider
     @SideOnly(Side.CLIENT)
     public BlockRenderLayer getRenderLayer ()
     {
-        return BlockRenderLayer.TRANSLUCENT;
+        return BlockRenderLayer.CUTOUT;
     }
 
     @Override
