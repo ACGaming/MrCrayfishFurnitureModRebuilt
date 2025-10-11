@@ -3,14 +3,17 @@
     "item": "cfm:wheelie_bin"
   },
   "pattern": [
-    "CCC",
-    "CCC",
-    "KCK"
+    "CTC",
+    "C C",
+    "WCW"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
-    "K": {
-      "item": "minecraft:coal_block"
+    "T": {
+      "item": "minecraft:trapdoor"
+    },
+    "W": {
+      "item": "cfm:item_wheel"
     },
     "C": {
       "item": "minecraft:stained_hardened_clay",

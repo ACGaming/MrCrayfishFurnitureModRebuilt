@@ -58,6 +58,7 @@ public class FurnitureItems
     public static final Item RECIPE_BOOK;
     public static final Item CRAYFISH;
     public static final Item CEILING_FAN_FANS;
+    public static final Item WHEEL;
 
     static
     {
@@ -91,6 +92,7 @@ public class FurnitureItems
         CROWBAR = new ItemGeneric().setTranslationKey("item_crow_bar").setRegistryName("item_crow_bar").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         CEILING_FAN_FANS = new ItemGeneric().setTranslationKey("ceiling_fan_fans").setRegistryName("ceiling_fan_fans");
         TV_REMOTE = new ItemTVRemote();
+        WHEEL = new ItemGeneric().setTranslationKey("item_wheel").setRegistryName("item_wheel");
     }
 
     public static void register()
@@ -125,6 +127,7 @@ public class FurnitureItems
         registerItem(CROWBAR);
         registerItem(CEILING_FAN_FANS);
         registerItem(TV_REMOTE);
+        registerItem(WHEEL);
     }
 
     private static void registerItem(Item item)

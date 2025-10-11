@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "cfm:item_wheel",
+    "count": 4
+  },
+  "pattern": [
+    " C ",
+    "CIC",
+    " C "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "minecraft:concrete",
+      "data": 8
+    }
+  }
+}
