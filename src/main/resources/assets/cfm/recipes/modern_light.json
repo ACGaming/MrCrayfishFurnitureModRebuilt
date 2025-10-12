@@ -14,7 +14,7 @@
             "data": 7
         },
         "G": {
-            "item": "minecraft:glowstone"
+            "item": "cfm:item_light_bulb"
         },
         "P": {
             "item": "minecraft:glass_pane"

@@ -1,0 +1,23 @@
+{
+  "result": {
+    "item": "cfm:item_light_bulb",
+    "count": 4
+  },
+  "pattern": [
+    " C ",
+    "3I3",
+    " I "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+	"3": {
+      "item": "minecraft:redstone"
+    },
+    "C": {
+      "item": "minecraft:glass"
+    }
+  }
+}

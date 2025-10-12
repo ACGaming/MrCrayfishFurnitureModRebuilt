@@ -60,6 +60,7 @@ public class FurnitureItems
     public static final Item CEILING_FAN_FANS;
     public static final Item WHEEL;
     public static final Item DOG_FOOD;
+    public static final Item LIGHT_BULB;
 
     static
     {
@@ -95,6 +96,7 @@ public class FurnitureItems
         TV_REMOTE = new ItemTVRemote();
         WHEEL = new ItemGeneric().setTranslationKey("item_wheel").setRegistryName("item_wheel");
         DOG_FOOD = new ItemFood(4, 0.3F, true).setPotionEffect(new PotionEffect(MobEffects.NAUSEA, 100, 0), 1.0F).setTranslationKey("item_dog_food").setRegistryName("item_dog_food").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
+        LIGHT_BULB = new ItemGeneric().setTranslationKey("item_light_bulb").setRegistryName("item_light_bulb");
     }
 
     public static void register()
@@ -131,6 +133,7 @@ public class FurnitureItems
         registerItem(TV_REMOTE);
         registerItem(WHEEL);
         registerItem(DOG_FOOD);
+        registerItem(LIGHT_BULB);
     }
 
     private static void registerItem(Item item)
