@@ -3,8 +3,9 @@
     "item": "cfm:fairy_light"
   },
   "pattern": [
-    "SSS",
-    "RGR"
+    "333",
+    "RGR",
+	"111"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
@@ -12,8 +13,11 @@
       "item": "minecraft:stained_glass",
       "data": 14
     },
-    "S": {
+    "3": {
       "item": "minecraft:string"
+	  },
+    "1": {
+      "item": "cfm:item_light_bulb"
     },
     "G": {
       "item": "minecraft:stained_glass",

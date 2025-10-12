@@ -15,7 +15,7 @@
             "data": 8
         },
         "G": {
-            "item": "minecraft:glowstone"
+            "item": "cfm:item_light_bulb"
         },
         "O": {
             "item": "minecraft:concrete",

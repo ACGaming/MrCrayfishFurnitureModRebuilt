@@ -6,13 +6,13 @@
   },
   "pattern": [
     "***",
-    "*@*",
+    "*2*",
     " \u0026 "
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
-    "@": {
-      "item": "minecraft:glowstone"
+    "2": {
+      "item": "cfm:item_light_bulb"
     },
     "\u0026": {
       "item": "minecraft:obsidian"

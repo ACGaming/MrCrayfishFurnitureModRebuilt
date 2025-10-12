@@ -39,6 +39,7 @@ item.tv_remote.name=TV Remote
 item.ceiling_fan_fans.name=Ceiling Fan Fans
 item.item_wheel.name=Wheel
 item.item_dog_food.name=Dog Food
+item.item_light_bulb.name=Light Bulb
 
 tile.table_oak.name=Oak Table
 tile.table_spruce.name=Spruce Table
