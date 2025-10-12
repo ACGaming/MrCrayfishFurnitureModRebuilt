@@ -38,6 +38,7 @@ item.item_log.name=Chopped Log
 item.tv_remote.name=TV Remote
 item.ceiling_fan_fans.name=Ceiling Fan Fans
 item.item_wheel.name=Wheel
+item.item_dog_food.name=Dog Food
 
 tile.table_oak.name=Oak Table
 tile.table_spruce.name=Spruce Table
@@ -937,6 +938,8 @@ advancements.cfm.player_bath=Splish Splash, I Was Taking A Bath
 advancements.cfm.player_bath.desc=Sit in a filled bath
 advancements.cfm.egg_microwave=Eggsplosion!
 advancements.cfm.egg_microwave.desc=Microwave an egg and cause a little eggcident
+advancements.cfm.purchase_dog_food=As Seen On TV!
+advancements.cfm.purchase_dog_food.desc=Purchase dog food from EnderShop
 
 tile.bedside_cabinet_thaumcraft_greatwood.name=Thaumcraft GreatWood Bedside Cabinet
 tile.blinds_thaumcraft_greatwood_closed.name=Thaumcraft GreatWood Blinds
@@ -971,6 +974,3 @@ tile.park_bench_thaumcraft_silverwood.name=Thaumcraft SilverWood Park Bench
 tile.table_thaumcraft_silverwood.name=Thaumcraft SilverWood Table
 tile.upgraded_fence_thaumcraft_silverwood.name=Thaumcraft SilverWood Upgraded Fence
 tile.upgraded_gate_thaumcraft_silverwood.name=Thaumcraft SilverWood Upgraded Gate
-
-
-

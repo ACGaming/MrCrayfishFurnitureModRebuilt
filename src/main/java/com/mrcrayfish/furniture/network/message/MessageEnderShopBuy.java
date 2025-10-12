@@ -15,6 +15,7 @@ import com.mrcrayfish.furniture.advancement.Triggers;
 import com.mrcrayfish.furniture.api.RecipeData;
 import com.mrcrayfish.furniture.api.Recipes;
 import com.mrcrayfish.furniture.gui.containers.ContainerComputer;
+import com.mrcrayfish.furniture.init.FurnitureItems;
 import com.mrcrayfish.furniture.tileentity.TileEntityModernComputer;
 import io.netty.buffer.ByteBuf;
 
@@ -86,6 +87,8 @@ public class MessageEnderShopBuy implements IMessage, IMessageHandler<MessageEnd
                 EntityItem entityItem = new EntityItem(player.world, player.posX, player.posY + 1, player.posZ, data[message.itemNum].getInput().copy());
                 player.world.spawnEntity(entityItem);
                 Triggers.trigger(Triggers.ENDERSHOP_PURCHASE, player);
+                if(entityItem.getItem().getItem() == FurnitureItems.DOG_FOOD)
+                    Triggers.trigger(Triggers.PURCHASE_DOG_FOOD, player);
             }
         }
         return null;

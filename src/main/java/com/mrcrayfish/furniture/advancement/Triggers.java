@@ -42,6 +42,7 @@ public class Triggers
     public static final BasicTrigger KNIFE_TOASTER = register("knife_toaster");
     public static final BasicTrigger PLAYER_BATH = register("player_bath");
     public static final BasicTrigger EGG_MICROWAVE = register("egg_microwave");
+    public static final BasicTrigger PURCHASE_DOG_FOOD = register("purchase_dog_food");
 
     private static BasicTrigger register(String name)
     {

@@ -1420,6 +1420,8 @@ public class RecipeRegistry extends RecipeAPI
             RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Items.NAME_TAG, 4), new ItemStack(Items.EMERALD), 3);
         if(ConfigurationHandler.ender_30)
             RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Items.LEAD), new ItemStack(Items.EMERALD), 3);
+        if(ConfigurationHandler.ender_31)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureItems.DOG_FOOD, 4), new ItemStack(Items.IRON_INGOT), 8);
 
         if(ConfigurationHandler.blen_1)
             RecipeRegistry.getInstance().registerBlenderRecipe("Fruit Crush", 4, new ItemStack[]{new ItemStack(Items.APPLE, 2), new ItemStack(Items.MELON, 4)}, new int[]{255, 58, 37});

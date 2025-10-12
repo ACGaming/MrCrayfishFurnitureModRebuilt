@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "cfm:item_dog_food"
+        },
+        "title": {
+            "translate": "advancements.cfm.purchase_dog_food"
+        },
+        "description": {
+            "translate": "advancements.cfm.purchase_dog_food.desc"
+        }
+    },
+	"parent": "cfm:appliance_city",
+	"criteria": {
+        "purchase_dog_food": {
+            "trigger": "cfm:purchase_dog_food"
+        }
+	}
+}
