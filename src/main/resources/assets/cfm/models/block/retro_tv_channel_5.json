@@ -1,7 +1,7 @@
 {
   "parent": "cfm:block/retro_tv",
   "textures": {
-    "1": "cfm:blocks/oak_particle",
+    "1": "cfm:blocks/oak_wood",
     "2": "cfm:blocks/channel_switch",
     "3": "blocks/planks_oak"
   }

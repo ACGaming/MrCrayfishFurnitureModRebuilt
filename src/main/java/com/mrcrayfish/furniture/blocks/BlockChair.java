@@ -28,7 +28,7 @@ import java.util.List;
 
 public class BlockChair extends BlockFurniture
 {
-    public static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.1, 0.0, 0.1, 0.9, 1.2, 0.9);
+    public static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.05, 0.0, 0.05, 0.95, 1.3, 0.9);
 
     public static final AxisAlignedBB CHAIR_SEAT = new AxisAlignedBB(1.6 * 0.0625, 8 * 0.0625, 1.6 * 0.0625, 14.4 * 0.0625, 9.6 * 0.0625, 14.4 * 0.0625);
     public static final AxisAlignedBB CHAIR_BACKREST_NORTH = CollisionHelper.getBlockBounds(EnumFacing.NORTH, 0.825, 0.6, 0.1, 0.9, 1.2, 0.9);

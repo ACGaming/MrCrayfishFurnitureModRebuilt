@@ -3,7 +3,7 @@
 	"credit": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
 	"textures": {
 		"0": "blocks/planks_oak",
-		"1": "cfm:blocks/oak_particle",
+		"1": "cfm:blocks/oak_wood",
 		"particle": "blocks/planks_oak"
 	},
 	"elements": [

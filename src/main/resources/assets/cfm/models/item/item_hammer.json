@@ -1,6 +1,60 @@
 {
-	"parent": "item/handheld",
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"parent": "HammerModel",
 	"textures": {
-		"layer0": "cfm:items/itemhammer"
+		"0": "blocks/planks_oak",
+		"1": "blocks/stonebrick",
+		"particle": "blocks/planks_oak"
+	},
+	"elements": [
+		{
+			"from": [7, 0, 7],
+			"to": [9, 14, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 0, 7]},
+			"faces": {
+				"north": {"uv": [0, 0, 2, 14], "texture": "#0"},
+				"east": {"uv": [0, 0, 2, 14], "texture": "#0"},
+				"south": {"uv": [0, 0, 2, 14], "texture": "#0"},
+				"west": {"uv": [0, 0, 2, 14], "texture": "#0"},
+				"up": {"uv": [0, 0, 2, 2], "texture": "#0"},
+				"down": {"uv": [0, 0, 2, 2], "texture": "#0"}
+			}
+		},
+		{
+			"from": [6, 10, 5],
+			"to": [10, 13, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 10, 7]},
+			"faces": {
+				"north": {"uv": [5, 0, 1, 3], "texture": "#1"},
+				"east": {"uv": [0, 8, 6, 11], "texture": "#1"},
+				"south": {"uv": [4, 3, 8, 6], "texture": "#1"},
+				"west": {"uv": [8, 8, 14, 11], "texture": "#1"},
+				"up": {"uv": [0, 0, 4, 6], "texture": "#1"},
+				"down": {"uv": [0, 6, 4, 0], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"firstperson_righthand": {
+			"rotation": [-30, 0, 0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-30, 0, 0]
+		},
+		"ground": {
+			"translation": [0, 4.75, 0]
+		},
+		"gui": {
+			"rotation": [30, 135, 0],
+			"translation": [0, 1, 0]
+		},
+		"head": {
+			"translation": [0, 14.5, 0]
+		},
+		"fixed": {
+			"rotation": [0, -90, 0],
+			"translation": [0, 0, -2]
+		}
 	}
 }

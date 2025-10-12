@@ -4,7 +4,7 @@
         "0": "blocks/concrete_gray",
         "1": "blocks/concrete_silver",
         "color": "blocks/wool_colored_red",
-        "3": "blocks/concrete_white"
+        "3": "blocks/wool_colored_white"
     },
     "elements": [
         {
