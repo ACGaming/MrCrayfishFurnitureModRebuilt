@@ -1,7 +1,7 @@
 {
 	"parent": "cfm:block/chair",
 	"textures": {
-		"1": "blocks/planks_birch",
-		"2": "blocks/log_birch"
+		"1": "cfm:blocks/birch_wood",
+		"2": "blocks/planks_birch"
 	}
 }

@@ -2,7 +2,7 @@
 	"forge_marker": 1,
 	"defaults": {
 		"textures": {
-			"1": "blocks/log_oak",
+			"1": "cfm:blocks/oak_wood",
 			"2": "blocks/planks_oak"
 		},
 		"model": "cfm:chair"

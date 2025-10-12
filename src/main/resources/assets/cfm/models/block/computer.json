@@ -4,7 +4,7 @@
 	"textures": {
 		"0": "blocks/concrete_silver",
 		"1": "cfm:blocks/model_block_dark",
-		"2": "cfm:blocks/mac",
+		"2": "cfm:blocks/old_screen_computer",
 		"3": "cfm:blocks/tv_texture",
 		"4": "cfm:blocks/model_block_light",
 		"particle": "cfm:blocks/model_block_dark"
@@ -91,6 +91,7 @@
 				"north": {"uv": [6.4, 7.4, 14, 15], "texture": "#4"},
 				"east": {"uv": [3, 7.4, 13, 15], "texture": "#4"},
 				"south": {"uv": [6.4, 7.4, 14, 15], "texture": "#4"},
+				"west": {"uv": [0, 0, 10, 7.6], "texture": "#4"},
 				"up": {"uv": [4.4, 3, 12, 13], "texture": "#4"},
 				"down": {"uv": [6.4, 3, 14, 13], "texture": "#4"}
 			}
@@ -98,13 +99,13 @@
 		{
 			"name": "Element",
 			"from": [4.8, 7.4, 3],
-			"to": [6.4, 15, 13],
+			"to": [4.8, 15, 13],
 			"faces": {
-				"north": {"uv": [4.8, 7.4, 6.4, 15], "texture": "#2"},
-				"south": {"uv": [4.8, 7.4, 6.4, 15], "texture": "#2"},
-				"west": {"uv": [0, 0, 12.78125, 8.88125], "texture": "#2"},
-				"up": {"uv": [4.8, 3, 6.4, 13], "texture": "#2"},
-				"down": {"uv": [4.8, 3, 6.4, 13], "texture": "#2"}
+				"north": {"uv": [14.4, 0, 16, 7.6], "texture": "#2"},
+				"south": {"uv": [14.4, 0, 16, 7.6], "texture": "#2"},
+				"west": {"uv": [0.625, 0, 15.3125, 10.225], "texture": "#2"},
+				"up": {"uv": [14.4, 0, 16, 10], "texture": "#2"},
+				"down": {"uv": [14.4, 0, 16, 10], "texture": "#2"}
 			}
 		},
 		{
