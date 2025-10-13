@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "cfm:item_trashbag",
+    "count": 1
+  },
+  "pattern": [
+    " 1 ",
+    "222",
+    "222"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "1": {
+      "item": "minecraft:string"
+    },
+    "2": {
+      "item": "minecraft:wool",
+      "data": 7
+    }
+  }
+}
