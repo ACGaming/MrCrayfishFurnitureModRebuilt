@@ -3,7 +3,7 @@
     "item": "cfm:bin"
   },
   "pattern": [
-    "BSB",
+    "B1B",
     "I I",
     "III"
   ],
@@ -12,8 +12,8 @@
     "B": {
       "item": "minecraft:heavy_weighted_pressure_plate"
     },
-    "S": {
-      "item": "minecraft:stone",
+    "1": {
+      "item": "cfm:item_trashbag",
       "data": 0
     },
     "I": {

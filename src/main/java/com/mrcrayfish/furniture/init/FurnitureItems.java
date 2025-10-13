@@ -61,6 +61,7 @@ public class FurnitureItems
     public static final Item WHEEL;
     public static final Item DOG_FOOD;
     public static final Item LIGHT_BULB;
+    public static final Item TRASH_BAG;
 
     static
     {
@@ -97,6 +98,7 @@ public class FurnitureItems
         WHEEL = new ItemGeneric().setTranslationKey("item_wheel").setRegistryName("item_wheel");
         DOG_FOOD = new ItemFood(4, 0.3F, true).setPotionEffect(new PotionEffect(MobEffects.NAUSEA, 100, 0), 1.0F).setTranslationKey("item_dog_food").setRegistryName("item_dog_food").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         LIGHT_BULB = new ItemGeneric().setTranslationKey("item_light_bulb").setRegistryName("item_light_bulb");
+        TRASH_BAG = new ItemGeneric().setTranslationKey("item_trashbag").setRegistryName("item_trashbag");
     }
 
     public static void register()
@@ -134,6 +136,7 @@ public class FurnitureItems
         registerItem(WHEEL);
         registerItem(DOG_FOOD);
         registerItem(LIGHT_BULB);
+        registerItem(TRASH_BAG);
     }
 
     private static void registerItem(Item item)
