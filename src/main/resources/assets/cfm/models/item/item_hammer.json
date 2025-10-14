@@ -1,7 +1,6 @@
 {
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
-	"parent": "HammerModel",
 	"textures": {
 		"0": "blocks/planks_oak",
 		"1": "blocks/stonebrick",

@@ -1,7 +1,6 @@
 {
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
-	"parent": "TrashBagModel",
 	"textures": {
 		"0": "blocks/wool_colored_gray",
 		"particle": "blocks/wool_colored_gray"
