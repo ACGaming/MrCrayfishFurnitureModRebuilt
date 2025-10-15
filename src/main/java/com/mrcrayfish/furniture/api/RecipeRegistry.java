@@ -1303,21 +1303,21 @@ public class RecipeRegistry extends RecipeAPI
             RecipeRegistry.getInstance().registerFreezerRecipe(new ItemStack(Items.ROTTEN_FLESH), new ItemStack(FurnitureItems.FLESH));
 
         if(ConfigurationHandler.mine_1)
-            RecipeRegistry.getInstance().registerMineBayItem(new ItemStack(Blocks.HARDENED_CLAY, 16), new ItemStack(Items.EMERALD), 1);
+            RecipeRegistry.getInstance().registerMineBayItem(new ItemStack(Blocks.HARDENED_CLAY, 16), new ItemStack(FurnitureItems.COIN), 1);
         if(ConfigurationHandler.mine_2)
-            RecipeRegistry.getInstance().registerMineBayItem(new ItemStack(Items.SKULL), new ItemStack(Items.EMERALD), 8);
+            RecipeRegistry.getInstance().registerMineBayItem(new ItemStack(Items.SKULL), new ItemStack(FurnitureItems.COIN), 8);
         if(ConfigurationHandler.mine_3)
-            RecipeRegistry.getInstance().registerMineBayItem(new ItemStack(Items.SADDLE), new ItemStack(Items.EMERALD), 4);
+            RecipeRegistry.getInstance().registerMineBayItem(new ItemStack(Items.SADDLE), new ItemStack(FurnitureItems.COIN), 2);
         if(ConfigurationHandler.mine_4)
         {
             ItemStack spawnEgg = new ItemStack(Items.SPAWN_EGG);
             ItemMonsterPlacer.applyEntityIdToItemStack(spawnEgg, new ResourceLocation("horse"));
-            RecipeRegistry.getInstance().registerMineBayItem(spawnEgg, new ItemStack(Items.EMERALD), 8);
+            RecipeRegistry.getInstance().registerMineBayItem(spawnEgg, new ItemStack(FurnitureItems.COIN), 8);
         }
         if(ConfigurationHandler.mine_5)
-            RecipeRegistry.getInstance().registerMineBayItem(new ItemStack(Items.DIAMOND_HORSE_ARMOR), new ItemStack(Items.DIAMOND), 8);
+            RecipeRegistry.getInstance().registerMineBayItem(new ItemStack(Items.DIAMOND_HORSE_ARMOR), new ItemStack(FurnitureItems.COIN), 8);
         if(ConfigurationHandler.mine_6)
-            RecipeRegistry.getInstance().registerMineBayItem(new ItemStack(Items.EXPERIENCE_BOTTLE), new ItemStack(Items.IRON_INGOT), 1);
+            RecipeRegistry.getInstance().registerMineBayItem(new ItemStack(Items.EXPERIENCE_BOTTLE), new ItemStack(FurnitureItems.COIN), 2);
         if(ConfigurationHandler.mine_7)
         {
             ItemStack stack = new ItemStack(Items.FIREWORKS, 4);
@@ -1334,7 +1334,7 @@ public class RecipeRegistry extends RecipeAPI
             master.setTag("Fireworks", firework);
             stack.setTagCompound(master);
             stack.setStackDisplayName(TextFormatting.RED + "Christmas" + TextFormatting.GREEN + " Firework");
-            RecipeRegistry.getInstance().registerMineBayItem(stack, new ItemStack(Items.IRON_INGOT), 1);
+            RecipeRegistry.getInstance().registerMineBayItem(stack, new ItemStack(FurnitureItems.COIN), 5);
         }
         if(ConfigurationHandler.mine_8)
         {
@@ -1347,7 +1347,7 @@ public class RecipeRegistry extends RecipeAPI
             list.appendTag(data);
             master.setTag("StoredEnchantments", list);
             stack.setTagCompound(master);
-            RecipeRegistry.getInstance().registerMineBayItem(stack, new ItemStack(Items.EMERALD), 8);
+            RecipeRegistry.getInstance().registerMineBayItem(stack, new ItemStack(FurnitureItems.COIN), 8);
         }
         if(ConfigurationHandler.mine_9)
         {
@@ -1355,73 +1355,89 @@ public class RecipeRegistry extends RecipeAPI
             NBTTagCompound data = new NBTTagCompound();
             data.setString("Potion", "night_vision");
             stack.setTagCompound(data);
-            RecipeRegistry.getInstance().registerMineBayItem(stack, new ItemStack(Items.EMERALD), 1);
+            RecipeRegistry.getInstance().registerMineBayItem(stack, new ItemStack(FurnitureItems.COIN), 4);
         }
         if(ConfigurationHandler.mine_10)
-            RecipeRegistry.getInstance().registerMineBayItem(new ItemStack(FurnitureItems.RECIPE_BOOK), new ItemStack(Items.EMERALD), 1);
+            RecipeRegistry.getInstance().registerMineBayItem(new ItemStack(FurnitureItems.RECIPE_BOOK), new ItemStack(FurnitureItems.COIN), 2);
+        if(ConfigurationHandler.mine_11)
+            RecipeRegistry.getInstance().registerMineBayItem(new ItemStack(FurnitureItems.COIN, 1), new ItemStack(Items.IRON_INGOT), 2);
+        if(ConfigurationHandler.mine_12)
+            RecipeRegistry.getInstance().registerMineBayItem(new ItemStack(FurnitureItems.COIN, 4), new ItemStack(Items.GOLD_INGOT), 4);
+        if(ConfigurationHandler.mine_13)
+            RecipeRegistry.getInstance().registerMineBayItem(new ItemStack(FurnitureItems.COIN, 8), new ItemStack(Items.DIAMOND), 4);
+        if(ConfigurationHandler.mine_14)
+            RecipeRegistry.getInstance().registerMineBayItem(new ItemStack(FurnitureItems.COIN, 12), new ItemStack(Items.EMERALD), 4);
 
         if(ConfigurationHandler.ender_1)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.FREEZER), new ItemStack(Items.GOLD_INGOT), 48);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.FREEZER), new ItemStack(FurnitureItems.COIN), 48);
         if(ConfigurationHandler.ender_2)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.WASHING_MACHINE), new ItemStack(Items.GOLD_INGOT), 44);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.WASHING_MACHINE), new ItemStack(FurnitureItems.COIN), 44);
         if(ConfigurationHandler.ender_3)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.GRILL), new ItemStack(Items.GOLD_INGOT), 32);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.GRILL), new ItemStack(FurnitureItems.COIN), 32);
         if(ConfigurationHandler.ender_4)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.PRINTER), new ItemStack(Items.GOLD_INGOT), 28);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.PRINTER), new ItemStack(FurnitureItems.COIN), 28);
         if(ConfigurationHandler.ender_5)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.MICROWAVE), new ItemStack(Items.GOLD_INGOT), 20);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.MICROWAVE), new ItemStack(FurnitureItems.COIN), 20);
         if(ConfigurationHandler.ender_6)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.BLENDER), new ItemStack(Items.GOLD_INGOT), 16);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.BLENDER), new ItemStack(FurnitureItems.COIN), 16);
         if(ConfigurationHandler.ender_7)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.TOASTER), new ItemStack(Items.GOLD_INGOT), 16);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.TOASTER), new ItemStack(FurnitureItems.COIN), 16);
         if(ConfigurationHandler.ender_8)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.BIRD_BATH), new ItemStack(Items.IRON_INGOT), 32);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.BIRD_BATH), new ItemStack(FurnitureItems.COIN), 32);
         if(ConfigurationHandler.ender_9)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.COOKIE_JAR), new ItemStack(Items.EMERALD), 2);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.COOKIE_JAR), new ItemStack(FurnitureItems.COIN), 2);
         if(ConfigurationHandler.ender_10)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.PLATE, 2), new ItemStack(Items.IRON_INGOT), 1);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.PLATE, 2), new ItemStack(FurnitureItems.COIN), 1);
         if(ConfigurationHandler.ender_11)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.CHOPPING_BOARD), new ItemStack(Items.IRON_INGOT), 8);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.CHOPPING_BOARD), new ItemStack(FurnitureItems.COIN), 8);
         if(ConfigurationHandler.ender_12)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureItems.SOAP, 16), new ItemStack(Items.EMERALD), 1);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureItems.SOAP, 16), new ItemStack(FurnitureItems.COIN), 1);
         if(ConfigurationHandler.ender_13)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.DISHWASHER, 4), new ItemStack(Items.GOLD_INGOT), 44);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.DISHWASHER, 4), new ItemStack(FurnitureItems.COIN), 44);
         if(ConfigurationHandler.ender_14)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Blocks.DAYLIGHT_DETECTOR, 2), new ItemStack(Items.EMERALD), 3);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Blocks.DAYLIGHT_DETECTOR, 2), new ItemStack(FurnitureItems.COIN), 3);
         if(ConfigurationHandler.ender_15)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.LAMP_OFF), new ItemStack(Items.IRON_INGOT), 12);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.LAMP_OFF), new ItemStack(FurnitureItems.COIN), 12);
         if(ConfigurationHandler.ender_16)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.CEILING_LIGHT_OFF, 2), new ItemStack(Items.IRON_INGOT), 8);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.CEILING_LIGHT_OFF, 2), new ItemStack(FurnitureItems.COIN), 8);
         if(ConfigurationHandler.ender_17)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.LIGHT_SWITCH_OFF, 8), new ItemStack(Items.IRON_INGOT), 16);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.LIGHT_SWITCH_OFF, 8), new ItemStack(FurnitureItems.COIN), 16);
         if(ConfigurationHandler.ender_18)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Blocks.NOTEBLOCK, 2), new ItemStack(Items.EMERALD), 1);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Blocks.NOTEBLOCK, 2), new ItemStack(FurnitureItems.COIN), 1);
         if(ConfigurationHandler.ender_19)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Blocks.ACTIVATOR_RAIL, 4), new ItemStack(Items.IRON_INGOT), 8);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Blocks.ACTIVATOR_RAIL, 4), new ItemStack(FurnitureItems.COIN), 8);
         if(ConfigurationHandler.ender_20)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Blocks.GOLDEN_RAIL, 4), new ItemStack(Items.IRON_INGOT), 8);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Blocks.GOLDEN_RAIL, 4), new ItemStack(FurnitureItems.COIN), 8);
         if(ConfigurationHandler.ender_21)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Blocks.DETECTOR_RAIL, 4), new ItemStack(Items.IRON_INGOT), 12);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Blocks.DETECTOR_RAIL, 4), new ItemStack(FurnitureItems.COIN), 12);
         if(ConfigurationHandler.ender_22)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Blocks.RAIL, 4), new ItemStack(Items.IRON_INGOT), 4);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Blocks.RAIL, 4), new ItemStack(FurnitureItems.COIN), 4);
         if(ConfigurationHandler.ender_23)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Blocks.SEA_LANTERN, 2), new ItemStack(Items.EMERALD), 5);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Blocks.SEA_LANTERN, 2), new ItemStack(FurnitureItems.COIN), 5);
         if(ConfigurationHandler.ender_24)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.MODERN_LIGHT_OFF), new ItemStack(Items.IRON_INGOT), 12);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.MODERN_LIGHT_OFF), new ItemStack(FurnitureItems.COIN), 12);
         if(ConfigurationHandler.ender_25)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Blocks.JUKEBOX), new ItemStack(Items.GOLD_INGOT), 1);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Blocks.JUKEBOX), new ItemStack(FurnitureItems.COIN), 1);
         if(ConfigurationHandler.ender_26)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.MODERN_TV), new ItemStack(Items.GOLD_INGOT), 24);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.MODERN_TV), new ItemStack(FurnitureItems.COIN), 24);
         if(ConfigurationHandler.ender_27)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureItems.TV_REMOTE, 2), new ItemStack(Items.IRON_INGOT), 16);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureItems.TV_REMOTE, 2), new ItemStack(FurnitureItems.COIN), 16);
         if(ConfigurationHandler.ender_28)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.TRAMPOLINE), new ItemStack(Items.IRON_INGOT), 24);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.TRAMPOLINE), new ItemStack(FurnitureItems.COIN), 24);
         if(ConfigurationHandler.ender_29)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Items.NAME_TAG, 4), new ItemStack(Items.EMERALD), 3);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Items.NAME_TAG, 4), new ItemStack(FurnitureItems.COIN), 3);
         if(ConfigurationHandler.ender_30)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Items.LEAD), new ItemStack(Items.EMERALD), 3);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(Items.LEAD), new ItemStack(FurnitureItems.COIN), 3);
         if(ConfigurationHandler.ender_31)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureItems.DOG_FOOD, 4), new ItemStack(Items.IRON_INGOT), 8);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureItems.DOG_FOOD, 4), new ItemStack(FurnitureItems.COIN), 8);
+        if(ConfigurationHandler.ender_32)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureItems.COIN, 1), new ItemStack(Items.IRON_INGOT), 2);
+        if(ConfigurationHandler.ender_33)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureItems.COIN, 4), new ItemStack(Items.GOLD_INGOT), 4);
+        if(ConfigurationHandler.ender_34)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureItems.COIN, 8), new ItemStack(Items.DIAMOND), 4);
+        if(ConfigurationHandler.ender_35)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureItems.COIN, 12), new ItemStack(Items.EMERALD), 4);
 
         if(ConfigurationHandler.blen_1)
             RecipeRegistry.getInstance().registerBlenderRecipe("Fruit Crush", 4, new ItemStack[]{new ItemStack(Items.APPLE, 2), new ItemStack(Items.MELON, 4)}, new int[]{255, 58, 37});
