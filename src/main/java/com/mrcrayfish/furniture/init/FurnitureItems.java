@@ -62,6 +62,7 @@ public class FurnitureItems
     public static final Item DOG_FOOD;
     public static final Item LIGHT_BULB;
     public static final Item TRASH_BAG;
+    public static final Item COIN;
 
     static
     {
@@ -99,6 +100,7 @@ public class FurnitureItems
         DOG_FOOD = new ItemFood(4, 0.3F, true).setPotionEffect(new PotionEffect(MobEffects.NAUSEA, 100, 0), 1.0F).setTranslationKey("item_dog_food").setRegistryName("item_dog_food").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         LIGHT_BULB = new ItemGeneric().setTranslationKey("item_light_bulb").setRegistryName("item_light_bulb");
         TRASH_BAG = new ItemGeneric().setTranslationKey("item_trashbag").setRegistryName("item_trashbag");
+        COIN = new ItemGeneric().setTranslationKey("item_coin").setRegistryName("item_coin");
     }
 
     public static void register()
@@ -137,6 +139,7 @@ public class FurnitureItems
         registerItem(DOG_FOOD);
         registerItem(LIGHT_BULB);
         registerItem(TRASH_BAG);
+        registerItem(COIN);
     }
 
     private static void registerItem(Item item)

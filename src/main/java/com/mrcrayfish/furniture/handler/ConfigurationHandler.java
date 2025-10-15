@@ -37,10 +37,10 @@ public class ConfigurationHandler
     public static boolean printer_1 = true, printer_2 = true;
     public static boolean oven_1 = true, oven_2 = true, oven_3 = true, oven_4 = true, oven_5 = true, oven_6 = true, oven_7 = true, oven_8 = true, oven_modded = true;
     public static boolean frez_1 = true, frez_2 = true, frez_3 = true, frez_4 = true, frez_5 = true, frez_6 = true;
-    public static boolean mine_1 = true, mine_2 = true, mine_3 = true, mine_4 = true, mine_5 = true, mine_6 = true, mine_7 = true, mine_8 = true, mine_9 = true, mine_10 = true;
+    public static boolean mine_1 = true, mine_2 = true, mine_3 = true, mine_4 = true, mine_5 = true, mine_6 = true, mine_7 = true, mine_8 = true, mine_9 = true, mine_10 = true, mine_11 = true, mine_12 = true, mine_13 = true, mine_14 = true;
     public static boolean ender_1 = true, ender_2 = true, ender_3 = true, ender_4 = true, ender_5 = true, ender_6 = true, ender_7 = true, ender_8 = true, ender_9 = true, ender_10 = true;
     public static boolean ender_11 = true, ender_12 = true, ender_13 = true, ender_14 = true, ender_15 = true, ender_16 = true, ender_17 = true, ender_18 = true, ender_19 = true, ender_20 = true;
-    public static boolean ender_21 = true, ender_22 = true, ender_23 = true, ender_24 = true, ender_25 = true, ender_26 = true, ender_27 = true, ender_28 = true, ender_29 = true, ender_30 = true, ender_31 = true;
+    public static boolean ender_21 = true, ender_22 = true, ender_23 = true, ender_24 = true, ender_25 = true, ender_26 = true, ender_27 = true, ender_28 = true, ender_29 = true, ender_30 = true, ender_31 = true, ender_32 = true, ender_33 = true, ender_34 = true, ender_35 = true;
     public static boolean blen_1 = true, blen_2 = true, blen_3 = true, blen_4 = true;
     public static boolean chop_1 = true;
     public static boolean dish_1 = true, dish_2 = true, dish_3 = true, dish_4 = true, dish_5 = true, dish_6 = true, dish_7 = true, dish_8 = true, dish_9 = true, dish_10 = true;
@@ -138,6 +138,10 @@ public class ConfigurationHandler
         mine_8 = config.getBoolean("minebay-8", CATEGORY_RECIPE_SETTINGS, mine_8, "1 Silk Touch Book for 8 Emerald");
         mine_9 = config.getBoolean("minebay-9", CATEGORY_RECIPE_SETTINGS, mine_9, "2 Night Vision Potion for 1 Emerald");
         mine_10 = config.getBoolean("minebay-10", CATEGORY_RECIPE_SETTINGS, mine_10, "1 Recipe Book for 1 Emerald");
+        mine_11 = config.getBoolean("minebay-11", CATEGORY_RECIPE_SETTINGS, mine_11, "1 Coin for 4 Iron Ingot");
+        mine_12 = config.getBoolean("minebay-12", CATEGORY_RECIPE_SETTINGS, mine_12, "4 Coin for 4 Gold Ingot");
+        mine_13 = config.getBoolean("minebay-13", CATEGORY_RECIPE_SETTINGS, mine_13, "8 Coin for 4 Diamonds");
+        mine_14 = config.getBoolean("minebay-14", CATEGORY_RECIPE_SETTINGS, mine_14, "12 Coin for 4 Emerald");
         ender_1 = config.getBoolean("ender-1", CATEGORY_RECIPE_SETTINGS, ender_1, "1 Freezer for 48 Gold Ingot");
         ender_2 = config.getBoolean("ender-2", CATEGORY_RECIPE_SETTINGS, ender_2, "1 Washing Machine for 44 Gold Ingot");
         ender_3 = config.getBoolean("ender-3", CATEGORY_RECIPE_SETTINGS, ender_3, "1 Grill for 32 Gold Ingot");
@@ -169,6 +173,10 @@ public class ConfigurationHandler
         ender_29 = config.getBoolean("ender-29", CATEGORY_RECIPE_SETTINGS, ender_29, "4 Name Tag for 3 Emerald");
         ender_30 = config.getBoolean("ender-30", CATEGORY_RECIPE_SETTINGS, ender_30, "4 Lead for 3 Emerald");
         ender_31 = config.getBoolean("ender-31", CATEGORY_RECIPE_SETTINGS, ender_31, "4 Dog Food for 8 Iron Ingot");
+        ender_32 = config.getBoolean("ender-32", CATEGORY_RECIPE_SETTINGS, ender_32, "1 Coin for 4 Iron Ingot");
+        ender_33 = config.getBoolean("ender-33", CATEGORY_RECIPE_SETTINGS, ender_33, "4 Coin for 4 Gold Ingot");
+        ender_34 = config.getBoolean("ender-34", CATEGORY_RECIPE_SETTINGS, ender_34, "8 Coin for 4 Diamonds");
+        ender_35 = config.getBoolean("ender-35", CATEGORY_RECIPE_SETTINGS, ender_35, "12 Coin for 4 Emerald");
         blen_1 = config.getBoolean("blender-1", CATEGORY_RECIPE_SETTINGS, blen_1, "Fruit Crush");
         blen_2 = config.getBoolean("blender-2", CATEGORY_RECIPE_SETTINGS, blen_2, "Veggie Juice");
         blen_3 = config.getBoolean("blender-3", CATEGORY_RECIPE_SETTINGS, blen_3, "Fishy Blend");
