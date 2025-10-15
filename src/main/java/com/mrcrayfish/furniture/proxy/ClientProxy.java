@@ -17,6 +17,7 @@ import net.minecraft.client.renderer.color.IBlockColor;
 import net.minecraft.client.renderer.color.IItemColor;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.world.ColorizerFoliage;
@@ -152,8 +153,11 @@ public class ClientProxy extends CommonProxy
 
     public void registerColorHandlerForBlock(Block block, IBlockColor blockColor, IItemColor itemColor)
     {
-        FMLClientHandler.instance().getClient().getItemColors().registerItemColorHandler(itemColor, Item.getItemFromBlock(block));
-        FMLClientHandler.instance().getClient().getBlockColors().registerBlockColorHandler(blockColor, block);
+        Minecraft mc = FMLClientHandler.instance().getClient();
+        Item item = Item.getItemFromBlock(block);
+        if (item != Items.AIR)
+            mc.getItemColors().registerItemColorHandler(itemColor, item);
+        mc.getBlockColors().registerBlockColorHandler(blockColor, block);
     }
 
     @Override
