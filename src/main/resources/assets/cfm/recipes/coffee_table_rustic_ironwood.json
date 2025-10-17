@@ -1,0 +1,25 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "rustic"
+    }
+  ],
+  "result": {
+    "item": "cfm:coffee_table_rustic_ironwood"
+  },
+  "pattern": [
+    "***",
+    "* *"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "*": {
+      "item": "rustic:planks:1",
+      "data": planks
+    }
+  }
+}
+
+
+

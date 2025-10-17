@@ -1,0 +1,10 @@
+{
+  "parent": "cfm:block/upgraded_gate_left_opened",
+  "textures": {
+    "log": "rustic:blocks/log_olive",
+    "plank": "rustic:blocks/planks_olive"
+  }
+}
+
+
+

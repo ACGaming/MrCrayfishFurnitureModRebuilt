@@ -1,0 +1,11 @@
+{
+  "parent": "cfm:block/bedside_cabinet",
+  "textures": {
+    "1": "rustic:blocks/log_olive",
+    "2": "rustic:blocks/planks_olive"
+  }
+}
+
+
+
+

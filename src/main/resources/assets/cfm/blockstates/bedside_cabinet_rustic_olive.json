@@ -1,0 +1,34 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "1": "rustic:blocks/log_olive",
+      "2": "rustic:blocks/planks_olive",
+      "handle": "rustic:blocks/planks_olive"
+    },
+    "model": "cfm:bedside_cabinet"
+  },
+  "variants": {
+    "inventory": [
+      {
+        "model": "cfm:bedside_cabinet"
+      }
+    ],
+    "facing=north": {
+      "model": "cfm:bedside_cabinet",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "cfm:bedside_cabinet",
+      "y": 90
+    },
+    "facing=east": {
+      "model": "cfm:bedside_cabinet"
+    },
+    "facing=west": {
+      "model": "cfm:bedside_cabinet",
+      "y": 180
+    }
+  }
+}
+

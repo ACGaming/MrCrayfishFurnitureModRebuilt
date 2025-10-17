@@ -1,0 +1,30 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "rustic"
+    }
+  ],
+  "result": {
+    "item": "cfm:blinds_rustic_ironwood_open",
+    "count": 2
+  },
+  "pattern": [
+    "LLL",
+    "SSS",
+    "SSS"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "L": {
+      "item": "rustic:log:1",
+      "data": log
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  }
+}
+
+
+

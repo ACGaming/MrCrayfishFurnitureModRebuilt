@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "east=false,north=false,south=false,west=false": {"model": "cfm:hedge_none_rustic_olive", "uvlock": true},
+    "east=false,north=true,south=false,west=false": {"model": "cfm:hedge_one_rustic_olive", "uvlock": true},
+    "east=true,north=false,south=false,west=false": {"model": "cfm:hedge_one_rustic_olive", "y": 90, "uvlock": true},
+    "east=false,north=false,south=true,west=false": {"model": "cfm:hedge_one_rustic_olive", "y": 180, "uvlock": true},
+    "east=false,north=false,south=false,west=true": {"model": "cfm:hedge_one_rustic_olive", "y": 270, "uvlock": true},
+    "east=true,north=true,south=false,west=false": {"model": "cfm:hedge_two_rustic_olive", "uvlock": true},
+    "east=false,north=true,south=true,west=false": {"model": "cfm:hedge_two_alt_rustic_olive", "uvlock": true},
+    "east=false,north=true,south=false,west=true": {"model": "cfm:hedge_two_rustic_olive", "y": 270, "uvlock": true},
+    "east=true,north=false,south=false,west=true": {"model": "cfm:hedge_two_alt_rustic_olive", "y": 90, "uvlock": true},
+    "east=true,north=false,south=true,west=false": {"model": "cfm:hedge_two_rustic_olive", "y": 90, "uvlock": true},
+    "east=false,north=false,south=true,west=true": {"model": "cfm:hedge_two_rustic_olive", "y": 180, "uvlock": true},
+    "east=true,north=true,south=true,west=true": {"model": "cfm:hedge_four_rustic_olive", "uvlock": true},
+    "east=true,north=true,south=true,west=false": {"model": "cfm:hedge_three_rustic_olive", "uvlock": true},
+    "east=true,north=true,south=false,west=true": {"model": "cfm:hedge_three_rustic_olive", "y": 270, "uvlock": true},
+    "east=false,north=true,south=true,west=true": {"model": "cfm:hedge_three_rustic_olive", "y": 180, "uvlock": true},
+    "east=true,north=false,south=true,west=true": {"model": "cfm:hedge_three_rustic_olive", "y": 90, "uvlock": true},
+    "east=true,north=true,south=true,west=true": {"model": "cfm:hedge_all_rustic_olive", "uvlock": true}
+  }
+}
+

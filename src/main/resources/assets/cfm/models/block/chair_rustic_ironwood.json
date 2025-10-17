@@ -1,0 +1,15 @@
+{
+  "parent": "cfm:block/chair",
+  "textures": {
+    "1": "rustic:blocks/planks_ironwood",
+    "2": "rustic:blocks/log_ironwood"
+  }
+}
+
+
+
+
+
+
+
+

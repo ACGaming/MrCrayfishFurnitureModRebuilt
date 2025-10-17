@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "rustic"
+    }
+  ],
+  "result": {
+    "item": "cfm:blinds_rustic_olive_open",
+    "count": 2
+  },
+  "pattern": [
+    "LLL",
+    "SSS",
+    "SSS"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "L": {
+      "item": "rustic:log",
+      "data": log
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  }
+}
+

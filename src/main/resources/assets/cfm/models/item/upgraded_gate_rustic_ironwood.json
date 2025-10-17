@@ -1,0 +1,14 @@
+{
+  "parent": "cfm:item/upgraded_gate",
+  "textures": {
+    "log": "rustic:blocks/log_ironwood",
+    "plank": "rustic:blocks/planks_ironwood"
+  }
+}
+
+
+
+
+
+
+

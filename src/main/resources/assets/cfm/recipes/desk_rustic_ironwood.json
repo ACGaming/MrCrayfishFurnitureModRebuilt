@@ -1,0 +1,30 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "rustic"
+    }
+  ],
+  "result": {
+    "item": "cfm:desk_rustic_ironwood"
+  },
+  "pattern": [
+    "LLL",
+    "P P",
+    "P P"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "L": {
+      "item": "rustic:log:1",
+      "data": log
+    },
+    "P": {
+      "item": "rustic:planks:1",
+      "data": planks
+    }
+  }
+}
+
+
+

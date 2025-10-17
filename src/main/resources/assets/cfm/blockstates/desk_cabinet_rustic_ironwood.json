@@ -1,0 +1,27 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "top": "blocks/hardened_clay_stained_black",
+      "primary": "rustic:blocks/log_ironwood",
+      "secondary": "rustic:blocks/planks_ironwood"
+    }
+  },
+  "variants": {
+    "facing": {
+      "north": {"y": 0},
+      "east": {"y": 90},
+      "south": {"y": 180},
+      "west": {"y": 270}
+    },
+    "type": {
+      "none": {"model": "cfm:desk_cabinet_none"},
+      "left": {"model": "cfm:desk_cabinet_left"},
+      "right": {"model": "cfm:desk_cabinet_right"},
+      "both": {"model": "cfm:desk_cabinet_both"}
+    }
+  }
+}
+
+
+

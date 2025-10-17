@@ -1,0 +1,14 @@
+{
+  "parent": "cfm:block/park_bench_middle",
+  "textures": {
+    "log": "rustic:blocks/log_ironwood",
+    "plank": "rustic:blocks/planks_ironwood"
+  }
+}
+
+
+
+
+
+
+

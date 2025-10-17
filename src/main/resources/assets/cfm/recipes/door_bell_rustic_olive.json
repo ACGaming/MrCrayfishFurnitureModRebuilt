@@ -1,0 +1,25 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "rustic"
+    }
+  ],
+  "result": {
+    "item": "cfm:door_bell_rustic_olive"
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:noteblock"
+    },
+    {
+      "item": "minecraft:stone_button"
+    },
+    {
+      "item": "rustic:log",
+      "data": log
+    }
+  ],
+  "type": "minecraft:crafting_shapeless"
+}
+

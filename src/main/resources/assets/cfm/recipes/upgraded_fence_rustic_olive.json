@@ -1,0 +1,29 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "rustic"
+    }
+  ],
+  "result": {
+    "item": "cfm:upgraded_fence_rustic_olive",
+    "count": 8
+  },
+  "pattern": [
+    "FFF",
+    "FLF",
+    "FFF"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "F": {
+      "item": "rustic:fence_olive",
+      "data": fence
+    },
+    "L": {
+      "item": "rustic:log",
+      "data": log
+    }
+  }
+}
+

@@ -1,0 +1,30 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "rustic"
+    }
+  ],
+  "result": {
+    "item": "cfm:crate_rustic_ironwood"
+  },
+  "pattern": [
+    "DOD",
+    "O O",
+    "DOD"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "D": {
+      "item": "rustic:log:1",
+      "data": log
+    },
+    "O": {
+      "item": "rustic:planks:1",
+      "data": planks
+    }
+  }
+}
+
+
+

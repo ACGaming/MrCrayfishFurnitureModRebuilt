@@ -1,0 +1,29 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "rustic"
+    }
+  ],
+  "result": {
+    "item": "cfm:park_bench_rustic_olive",
+    "count": 2
+  },
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PPP",
+    "L L"
+  ],
+  "key": {
+    "P": {
+      "item": "rustic:planks",
+      "data": planks
+    },
+    "L": {
+      "item": "rustic:log",
+      "data": log
+    }
+  }
+}
+
