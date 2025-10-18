@@ -16,12 +16,12 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "D": {
-      "item": "rustic:log:1",
-      "data": log
+      "item": "rustic:log",
+      "data": 1
     },
     "O": {
-      "item": "rustic:planks:1",
-      "data": planks
+      "item": "rustic:planks",
+      "data": 1
     }
   }
 }

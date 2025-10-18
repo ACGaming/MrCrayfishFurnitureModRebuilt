@@ -17,7 +17,7 @@
     },
     {
       "item": "rustic:log",
-      "data": log
+      "data": 0
     }
   ],
   "type": "minecraft:crafting_shapeless"

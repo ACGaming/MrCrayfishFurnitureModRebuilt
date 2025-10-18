@@ -20,11 +20,11 @@
     },
     "P": {
       "item": "rustic:planks",
-      "data": planks
+      "data": 0
     },
     "L": {
       "item": "rustic:log",
-      "data": log
+      "data": 0
     }
   }
 }

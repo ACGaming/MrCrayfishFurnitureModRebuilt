@@ -17,7 +17,7 @@
   "key": {
     "*": {
       "item": "rustic:leaves",
-      "data": leaves
+      "data": 0
     }
   }
 }

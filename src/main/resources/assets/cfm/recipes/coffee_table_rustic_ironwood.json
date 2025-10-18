@@ -15,8 +15,8 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "*": {
-      "item": "rustic:planks:1",
-      "data": planks
+      "item": "rustic:planks",
+      "data": 1
     }
   }
 }

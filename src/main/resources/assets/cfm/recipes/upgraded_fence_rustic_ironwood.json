@@ -18,11 +18,11 @@
   "key": {
     "F": {
       "item": "rustic:fence_ironwood",
-      "data": fence
+      "data": 0
     },
     "L": {
-      "item": "rustic:log:1",
-      "data": log
+      "item": "rustic:log",
+      "data": 1
     }
   }
 }

@@ -17,7 +17,7 @@
   "key": {
     "*": {
       "item": "rustic:planks",
-      "data": planks
+      "data": 0
     }
   }
 }

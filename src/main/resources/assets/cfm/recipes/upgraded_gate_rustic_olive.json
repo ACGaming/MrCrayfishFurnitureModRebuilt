@@ -12,11 +12,11 @@
   "ingredients": [
     {
       "item": "modid:fence_gate",
-      "data": fence_gate
+      "data": 0_gate
     },
     {
       "item": "rustic:log",
-      "data": log
+      "data": 0
     }
   ],
   "type": "minecraft:crafting_shapeless"

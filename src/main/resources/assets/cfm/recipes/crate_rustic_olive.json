@@ -17,11 +17,11 @@
   "key": {
     "D": {
       "item": "rustic:log",
-      "data": log
+      "data": 0
     },
     "O": {
       "item": "rustic:planks",
-      "data": planks
+      "data": 0
     }
   }
 }
