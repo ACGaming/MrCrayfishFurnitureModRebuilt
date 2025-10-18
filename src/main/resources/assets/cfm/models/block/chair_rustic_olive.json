@@ -1,0 +1,11 @@
+{
+  "parent": "cfm:block/chair",
+  "textures": {
+    "1": "rustic:blocks/planks_olive",
+    "2": "rustic:blocks/log_olive"
+  }
+}
+
+
+
+

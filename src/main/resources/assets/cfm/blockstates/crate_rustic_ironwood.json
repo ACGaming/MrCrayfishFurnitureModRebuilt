@@ -1,0 +1,22 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "cfm:crate",
+    "textures": {
+      "primary": "rustic:blocks/log_ironwood",
+      "secondary": "rustic:blocks/planks_ironwood"
+    }
+  },
+  "variants": {
+    "inventory": {
+      "model": "cfm:crate"
+    },
+    "normal": {
+      "model": "cfm:crate"
+    }
+  }
+}
+
+
+
+

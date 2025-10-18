@@ -1,0 +1,11 @@
+{
+  "parent": "cfm:block/mail_box",
+  "textures": {
+    "primary": "rustic:blocks/planks_olive",
+    "secondary": "rustic:blocks/log_olive"
+  }
+}
+
+
+
+

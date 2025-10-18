@@ -1,0 +1,20 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "cfm:mail_box",
+    "textures": {
+      "primary": "rustic:blocks/planks_olive",
+      "secondary": "rustic:blocks/log_olive"
+    }
+  },
+  "variants": {
+    "facing": {
+      "north": {"y": 270},
+      "east": {"y": 0},
+      "south": {"y": 90},
+      "west": {"y": 180}
+    }
+  }
+}
+
+

@@ -1,0 +1,9 @@
+{
+  "parent": "cfm:block/fence_upgraded_post_top",
+  "textures": {
+    "log": "rustic:blocks/log_olive"
+  }
+}
+
+
+

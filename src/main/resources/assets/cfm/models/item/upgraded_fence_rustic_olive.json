@@ -1,0 +1,10 @@
+{
+  "parent": "cfm:item/upgraded_fence",
+  "textures": {
+    "log": "rustic:blocks/log_olive",
+    "plank": "rustic:blocks/planks_olive"
+  }
+}
+
+
+

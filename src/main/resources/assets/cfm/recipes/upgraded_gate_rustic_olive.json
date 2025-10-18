@@ -1,0 +1,24 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "rustic"
+    }
+  ],
+  "result": {
+    "item": "cfm:upgraded_gate_rustic_olive",
+    "count": 2
+  },
+  "ingredients": [
+    {
+      "item": "modid:fence_gate",
+      "data": 0_gate
+    },
+    {
+      "item": "rustic:log",
+      "data": 0
+    }
+  ],
+  "type": "minecraft:crafting_shapeless"
+}
+

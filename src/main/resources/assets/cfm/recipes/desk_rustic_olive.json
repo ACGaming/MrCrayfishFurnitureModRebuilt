@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "rustic"
+    }
+  ],
+  "result": {
+    "item": "cfm:desk_rustic_olive"
+  },
+  "pattern": [
+    "LLL",
+    "P P",
+    "P P"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "L": {
+      "item": "rustic:log",
+      "data": 0
+    },
+    "P": {
+      "item": "rustic:planks",
+      "data": 0
+    }
+  }
+}
+

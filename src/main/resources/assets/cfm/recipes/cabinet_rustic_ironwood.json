@@ -1,0 +1,29 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "rustic"
+    }
+  ],
+  "result": {
+    "item": "cfm:cabinet_rustic_ironwood"
+  },
+  "pattern": [
+    "***",
+    "*@*",
+    "***"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "@": {
+      "item": "minecraft:chest"
+    },
+    "*": {
+      "item": "rustic:planks",
+      "data": 1
+    }
+  }
+}
+
+
+

@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "rustic"
+    }
+  ],
+  "result": {
+    "item": "cfm:crate_rustic_olive"
+  },
+  "pattern": [
+    "DOD",
+    "O O",
+    "DOD"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "D": {
+      "item": "rustic:log",
+      "data": 0
+    },
+    "O": {
+      "item": "rustic:planks",
+      "data": 0
+    }
+  }
+}
+

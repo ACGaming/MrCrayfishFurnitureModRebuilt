@@ -3,6 +3,7 @@ package com.mrcrayfish.furniture.init;
 import com.mrcrayfish.furniture.Reference;
 import com.mrcrayfish.furniture.handler.ConfigurationHandler;
 import com.mrcrayfish.furniture.integration.biomesoplenty.FurnitureBlocksBOP;
+import com.mrcrayfish.furniture.integration.rustic.FurnitureBlocksRustic;
 import com.mrcrayfish.furniture.integration.thaumcraft.FurnitureBlocksThaumcraft;
 import com.mrcrayfish.furniture.items.SubItems;
 import net.minecraft.block.Block;
@@ -142,6 +143,10 @@ public class RegistrationHandler
         if(Loader.isModLoaded("thaumcraft") && ConfigurationHandler.integrationThaumcraft)
         {
             FurnitureBlocksThaumcraft.register();
+        }
+        if(Loader.isModLoaded("rustic") && ConfigurationHandler.integrationRustic)
+        {
+            FurnitureBlocksRustic.register();
         }
     }
 }

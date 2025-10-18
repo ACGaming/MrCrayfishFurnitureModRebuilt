@@ -1,0 +1,20 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "cfm:crate",
+    "textures": {
+      "primary": "rustic:blocks/log_olive",
+      "secondary": "rustic:blocks/planks_olive"
+    }
+  },
+  "variants": {
+    "inventory": {
+      "model": "cfm:crate"
+    },
+    "normal": {
+      "model": "cfm:crate"
+    }
+  }
+}
+
+

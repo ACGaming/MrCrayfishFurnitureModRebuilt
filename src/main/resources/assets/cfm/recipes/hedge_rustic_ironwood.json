@@ -1,0 +1,26 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "rustic"
+    }
+  ],
+  "result": {
+    "item": "cfm:hedge_rustic_ironwood",
+    "count": 4
+  },
+  "pattern": [
+    "***",
+    "***"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "*": {
+      "item": "rustic:leaves",
+      "data": 1
+    }
+  }
+}
+
+
+

@@ -1,0 +1,11 @@
+{
+  "parent": "cfm:item/desk_cabinet",
+  "textures": {
+    "top": "blocks/hardened_clay_stained_black",
+    "primary": "rustic:blocks/log_olive",
+    "secondary": "rustic:blocks/planks_olive"
+  }
+}
+
+
+

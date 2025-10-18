@@ -1,0 +1,33 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "1": "rustic:blocks/log_olive",
+      "2": "rustic:blocks/planks_olive"
+    },
+    "model": "cfm:chair"
+  },
+  "variants": {
+    "inventory": [
+      {
+        "model": "cfm:chair"
+      }
+    ],
+    "facing=north": {
+      "model": "cfm:chair",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "cfm:chair",
+      "y": 90
+    },
+    "facing=east": {
+      "model": "cfm:chair"
+    },
+    "facing=west": {
+      "model": "cfm:chair",
+      "y": 180
+    }
+  }
+}
+

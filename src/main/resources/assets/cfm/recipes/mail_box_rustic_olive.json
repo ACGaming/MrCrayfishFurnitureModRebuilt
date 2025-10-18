@@ -1,0 +1,31 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "rustic"
+    }
+  ],
+  "result": {
+    "item": "cfm:mail_box_rustic_olive"
+  },
+  "pattern": [
+    "LBL",
+    "PPP",
+    " P "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "minecraft:book"
+    },
+    "P": {
+      "item": "rustic:planks",
+      "data": 0
+    },
+    "L": {
+      "item": "rustic:log",
+      "data": 0
+    }
+  }
+}
+

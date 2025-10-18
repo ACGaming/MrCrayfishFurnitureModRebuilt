@@ -1,0 +1,9 @@
+{
+  "parent": "cfm:block/gate_upgraded_pole",
+  "textures": {
+    "log": "rustic:blocks/log_olive"
+  }
+}
+
+
+

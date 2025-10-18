@@ -1,0 +1,12 @@
+{
+  "parent": "cfm:block/blinds_open_stringless",
+  "textures": {
+    "particle": "rustic:blocks/log_olive",
+    "1": "rustic:blocks/log_olive",
+    "2": "rustic:blocks/planks_olive",
+    "3": "blocks/concrete_white"
+  }
+}
+
+
+
