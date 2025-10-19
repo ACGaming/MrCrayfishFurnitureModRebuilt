@@ -1,0 +1,34 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "1": "suikecherry:blocks/cherry_log",
+      "2": "blocks/iron_block",
+      "3": "suikecherry:blocks/cherry_planks"
+    },
+    "model": "cfm:cabinet"
+  },
+  "variants": {
+    "inventory": {
+      "model": "cfm:cabinet"
+    },
+    "facing=north": {
+      "model": "cfm:cabinet",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "cfm:cabinet",
+      "y": 90
+    },
+    "facing=east": {
+      "model": "cfm:cabinet"
+    },
+    "facing=west": {
+      "model": "cfm:cabinet",
+      "y": 180
+    }
+  }
+}
+
+
+

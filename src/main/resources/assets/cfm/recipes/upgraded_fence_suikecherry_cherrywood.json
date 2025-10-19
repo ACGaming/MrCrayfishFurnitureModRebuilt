@@ -1,0 +1,31 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "rustic"
+    }
+  ],
+  "result": {
+    "item": "cfm:upgraded_fence_suikecherry_cherrywood",
+    "count": 8
+  },
+  "pattern": [
+    "FFF",
+    "FLF",
+    "FFF"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "F": {
+      "item": "rustic:fence_ironwood",
+      "data": 0
+    },
+    "L": {
+      "item": "suikecherry:log",
+      "data": 1
+    }
+  }
+}
+
+
+

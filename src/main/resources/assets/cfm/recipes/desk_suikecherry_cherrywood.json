@@ -1,0 +1,30 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "rustic"
+    }
+  ],
+  "result": {
+    "item": "cfm:desk_suikecherry_cherrywood"
+  },
+  "pattern": [
+    "LLL",
+    "P P",
+    "P P"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "L": {
+      "item": "suikecherry:log",
+      "data": 1
+    },
+    "P": {
+      "item": "rustic:planks",
+      "data": 1
+    }
+  }
+}
+
+
+

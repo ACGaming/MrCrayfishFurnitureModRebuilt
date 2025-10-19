@@ -1,0 +1,14 @@
+{
+  "parent": "cfm:block/fence_upgraded_side",
+  "textures": {
+    "plank": "suikecherry:blocks/cherry_planks",
+    "log": "suikecherry:blocks/cherry_log"
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "cfm:crate",
+    "textures": {
+      "primary": "suikecherry:blocks/cherry_log",
+      "secondary": "suikecherry:blocks/cherry_planks"
+    }
+  },
+  "variants": {
+    "inventory": {
+      "model": "cfm:crate"
+    },
+    "normal": {
+      "model": "cfm:crate"
+    }
+  }
+}
+
+
+
+

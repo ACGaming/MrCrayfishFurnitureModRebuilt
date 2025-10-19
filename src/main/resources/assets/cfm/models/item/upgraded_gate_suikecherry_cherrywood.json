@@ -1,0 +1,14 @@
+{
+  "parent": "cfm:item/upgraded_gate",
+  "textures": {
+    "log": "suikecherry:blocks/cherry_log",
+    "plank": "suikecherry:blocks/cherry_planks"
+  }
+}
+
+
+
+
+
+
+
