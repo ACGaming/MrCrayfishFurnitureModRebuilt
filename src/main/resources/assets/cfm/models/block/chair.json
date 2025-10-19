@@ -2,9 +2,7 @@
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "cfm:blocks/#1",
-		"2": "cfm:blocks/#2",
-		"particle": "cfm:blocks/#2"
+		"particle": "#1"
 	},
 	"elements": [
 		{
