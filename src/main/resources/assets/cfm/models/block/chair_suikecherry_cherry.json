@@ -1,0 +1,15 @@
+{
+  "parent": "cfm:block/chair",
+  "textures": {
+    "1": "suikecherry:blocks/cherry_planks",
+    "2": "suikecherry:blocks/cherry_log"
+  }
+}
+
+
+
+
+
+
+
+

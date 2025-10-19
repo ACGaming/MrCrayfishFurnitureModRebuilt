@@ -1,0 +1,25 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "suikecherry"
+    }
+  ],
+  "result": {
+    "item": "cfm:coffee_table_suikecherry_cherry"
+  },
+  "pattern": [
+    "***",
+    "* *"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "*": {
+      "item": "suikecherry:cherry_planks",
+      "data": 0
+    }
+  }
+}
+
+
+

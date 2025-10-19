@@ -1,0 +1,26 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "suikecherry"
+    }
+  ],
+  "result": {
+    "item": "cfm:upgraded_gate_suikecherry_cherry",
+    "count": 2
+  },
+  "ingredients": [
+    {
+      "item": "modid:fence_gate",
+      "data": 0_gate
+    },
+    {
+      "item": "suikecherry:cherry_log",
+      "data": 0
+    }
+  ],
+  "type": "minecraft:crafting_shapeless"
+}
+
+
+

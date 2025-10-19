@@ -1,0 +1,33 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "suikecherry"
+    }
+  ],
+  "result": {
+    "item": "cfm:desk_cabinet_suikecherry_cherry"
+  },
+  "pattern": [
+    "LLL",
+    "PCP",
+    "P P"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "L": {
+      "item": "suikecherry:cherry_log",
+      "data": 0
+    },
+    "P": {
+      "item": "suikecherry:cherry_planks",
+      "data": 0
+    },
+    "C": {
+      "item": "minecraft:chest"
+    }
+  }
+}
+
+
+

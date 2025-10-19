@@ -1,0 +1,31 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "suikecherry"
+    }
+  ],
+  "result": {
+    "item": "cfm:park_bench_suikecherry_cherry",
+    "count": 2
+  },
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PPP",
+    "L L"
+  ],
+  "key": {
+    "P": {
+      "item": "suikecherry:cherry_planks",
+      "data": 0
+    },
+    "L": {
+      "item": "suikecherry:cherry_log",
+      "data": 0
+    }
+  }
+}
+
+
+

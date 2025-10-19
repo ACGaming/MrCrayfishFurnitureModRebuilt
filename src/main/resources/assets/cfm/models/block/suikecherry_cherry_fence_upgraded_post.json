@@ -1,0 +1,13 @@
+{
+  "parent": "cfm:block/fence_upgraded_post",
+  "textures": {
+    "log": "suikecherry:blocks/cherry_log"
+  }
+}
+
+
+
+
+
+
+

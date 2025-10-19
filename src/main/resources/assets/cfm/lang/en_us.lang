@@ -829,6 +829,23 @@ tile.table_rustic_olive.name=Olive Wood Table
 tile.upgraded_fence_rustic_olive.name=Olive Wood Upgraded Fence
 tile.upgraded_gate_rustic_olive.name=Olive Wood Upgraded Gate
 
+tile.bedside_cabinet_suikecherry_cherry.name=Suikecherry Cherry Bedside Cabinet
+tile.blinds_suikecherry_cherry_closed.name=Suikecherry Cherry Blinds
+tile.blinds_suikecherry_cherry_open.name=Suikecherry Cherry Blinds
+tile.cabinet_suikecherry_cherry.name=Suikecherry Cherry Cabinet
+tile.chair_suikecherry_cherry.name=Suikecherry Cherry Chair
+tile.coffee_table_suikecherry_cherry.name=Suikecherry Cherry Coffee Table
+tile.crate_suikecherry_cherry.name=Suikecherry Cherry Crate
+tile.desk_cabinet_suikecherry_cherry.name=Suikecherry Cherry Desk Cabinet
+tile.desk_suikecherry_cherry.name=Suikecherry Cherry Desk
+tile.door_bell_suikecherry_cherry.name=Suikecherry Cherry Door Bell
+tile.hedge_suikecherry_cherry.name=Suikecherry Cherry Hedge
+tile.mail_box_suikecherry_cherry.name=Suikecherry Cherry Mail Box
+tile.park_bench_suikecherry_cherry.name=Suikecherry Cherry Park Bench
+tile.table_suikecherry_cherry.name=Suikecherry Cherry Table
+tile.upgraded_fence_suikecherry_cherry.name=Suikecherry Cherry Upgraded Fence
+tile.upgraded_gate_suikecherry_cherry.name=Suikecherry Cherry Upgraded Gate
+
 cfm.info=Hold SHIFT for Info
 cfm.light_switch.desc=Use this switch to control ceiling lights and fans wirelessly
 cfm.light_switch.info=To connect the switch to ceiling lights or fans, simply right click the lights on fans with the switch in your hand. If you want to remove lights or fans, crouch and right click to clear all.

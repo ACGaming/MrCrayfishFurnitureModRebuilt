@@ -1,0 +1,30 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "suikecherry"
+    }
+  ],
+  "result": {
+    "item": "cfm:blinds_suikecherry_cherry_open",
+    "count": 2
+  },
+  "pattern": [
+    "LLL",
+    "SSS",
+    "SSS"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "L": {
+      "item": "suikecherry:cherry_log",
+      "data": 0
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  }
+}
+
+
+
