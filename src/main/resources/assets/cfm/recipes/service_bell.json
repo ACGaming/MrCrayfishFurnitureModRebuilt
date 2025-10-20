@@ -1,0 +1,26 @@
+{
+  "result": {
+    "item": "cfm:service_bell"
+  },
+  "pattern": [
+    " B ",
+    "IRI",
+    " S "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "minecraft:stone_button"
+    },
+    "I": {
+      "item": "minecraft:iron_nugget"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "S": {
+      "item": "minecraft:wooden_slab",
+      "data": 0
+    }
+  }
+}
