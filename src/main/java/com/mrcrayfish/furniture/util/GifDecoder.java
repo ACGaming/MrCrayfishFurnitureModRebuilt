@@ -1,4 +1,4 @@
-package at.dhyan.open_imaging;
+package com.mrcrayfish.furniture.util;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;

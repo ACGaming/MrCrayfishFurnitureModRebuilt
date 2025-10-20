@@ -1,6 +1,6 @@
 package com.mrcrayfish.furniture.client;
 
-import at.dhyan.open_imaging.GifDecoder;
+import com.mrcrayfish.furniture.util.GifDecoder;
 import com.google.common.collect.Lists;
 import net.minecraft.client.renderer.GlStateManager;
 import org.lwjgl.opengl.GL11;
