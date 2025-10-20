@@ -90,6 +90,7 @@ public class FurnitureBlocks
 
     /* Special */
     public static final Block MIRROR;
+    public static final Block SERVICE_BELL;
 
     static
     {
@@ -315,6 +316,7 @@ public class FurnitureBlocks
         DARK_OAK_PARK_BENCH = new BlockParkBench("park_bench_dark_oak");
         INFLATABLE_CASTLE = new BlockInflatableCastle("inflatable_castle");
         CASTLE_NETTING = new BlockCastleNetting("castle_netting");
+        SERVICE_BELL = new BlockServiceBell(Material.IRON, "service_bell");
     }
 
     public static void register()
@@ -541,6 +543,7 @@ public class FurnitureBlocks
         registerBlock(DARK_OAK_PARK_BENCH);
         registerBlock(INFLATABLE_CASTLE, new ItemColored(INFLATABLE_CASTLE));
         registerBlock(CASTLE_NETTING);
+        registerBlock(SERVICE_BELL);
     }
 
     public static void registerBlock(Block block)

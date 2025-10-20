@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cfm:service_bell",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "cfm:service_bell",
+      "y": 90
+    },
+    "facing=east": {
+      "model": "cfm:service_bell"
+    },
+    "facing=west": {
+      "model": "cfm:service_bell",
+      "y": 180
+    }
+  }
+}

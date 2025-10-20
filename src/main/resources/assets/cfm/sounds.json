@@ -439,5 +439,13 @@
         "name": "cfm:wheelie_bin_close"
       }
     ]
+  },
+  "service_bell": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:service_bell"
+      }
+    ]
   }
 }
