@@ -2,10 +2,10 @@
   {
     "modid": "cfm",
     "name": "MrCrayfish's Furniture Mod Rebuilt",
-    "description": "Unofficial continuation of MrCrayfish's Furniture Mod with patches for Minecraft 1.12.2 - Adds over 100 unique pieces of furniture to the game!",
+    "description": "Unofficial continuation of MrCrayfish's Furniture Mod with patches and a lot of new blocks for Minecraft 1.12.2 - Adds over 100 unique pieces of furniture to the game!",
     "version": "${version}",
     "mcversion": "${mcversion}",
     "url": "https://github.com/ACGaming/MrCrayfishFurnitureModRebuilt",
-    "authorList": ["MrCrayfish", "ACGaming", "MisterIceCat"]
+    "authorList": ["MrCrayfish", "ACGaming", "MisterIceCat", "Lonelyxiya", "Kasumi_Nova", "onysd"]
   }
 ]

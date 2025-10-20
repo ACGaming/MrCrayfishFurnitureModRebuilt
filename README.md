@@ -8,14 +8,14 @@
 
 **MrCrayfish's Furniture Mod Rebuilt** is a fork of [**MrCrayfish's Furniture Mod**](https://www.curseforge.com/minecraft/mc-mods/mrcrayfish-furniture-mod) by [**MrCrayfish**](https://www.curseforge.com/members/mrcrayfish), patching long-lasting bugs and adding additional features. This is an **unofficial** continuation and is not affiliated with MrCrayfish as he dropped development for Minecraft 1.12.2. For current versions of Minecraft, check out [**MrCrayfish's Furniture Mod: Refurbished**](https://www.curseforge.com/minecraft/mc-mods/refurbished-furniture) by the one and only crustacean himself!
 
-🥪 Thanks to our contributors: Kasumi_Nova, MisterIceCat, onysd
+🥪 Thanks to our contributors: MisterIceCat, Lonelyxiya, Kasumi_Nova, onysd
 
 [![](https://img.shields.io/badge/-Forge%201.12.2-informational?logo=curseforge&style=flat-square&logoColor=ffffff&color=ffbb00&labelColor=2c3e9b)](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.12.2.html)
 [![](https://img.shields.io/badge/-Discord-informational?logo=Discord&style=flat-square&logoColor=ffffff&color=ffbb00&labelColor=2c3e9b)](https://discord.gg/JdthM8qbJ3)
 
 ### 🧩 FEATURES
 
-* Includes over 90 unique pieces of furniture!
+* Includes over 100 unique pieces of furniture!
 * Working functionality in most blocks, not just decorative.
 * Most textures of models are based on the current resource pack
 * A fully working mail system - Send items and blocks to players around your server!
@@ -24,6 +24,7 @@
 ### 🌻 CHANGES
 
 * Added Biomes O' Plenty support 🌼
+* Added Thaumcraft support 🪄
 * Added bath advancement
 * Added bottles for blended drinks
 * Added ceiling placement for lamps
@@ -64,7 +65,7 @@
 * Fixed washing machines repairing non-repairable items
 * Increased doorbell sound distance 🔔
 * Improved image/GIF cache stability
-* Improved shower model (Courtesy of MisterIceCat🧊🐈)
+* Improved models (Courtesy of MisterIceCat🧊🐈)
 * Over 12 new overhauled sounds effects (Courtesy of MisterIceCat🧊🐈)
 * Ported retro TV from older versions + additional channels
 * Ported wheelie bin from the Community Edition (Courtesy of Groobler)
@@ -78,6 +79,8 @@
 * Updated dependencies, adjusted metadata
 * Updated item textures 🖌️ (Courtesy of MisterIceCat)
 * Utilized GlStateManager where applicable
+
+…and so much more! Check the respective changelogs or GitHub commits for documentation of further changes.
 
 **MrCrayfish's Furniture Mod** is licensed under the [**GNU General Public License v3.0**](https://choosealicense.com/licenses/gpl-3.0) license.
 
