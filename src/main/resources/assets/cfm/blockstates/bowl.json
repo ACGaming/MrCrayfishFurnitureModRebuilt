@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "normal": { "model": "cfm:bowl" },
+    "facing=north": { "model": "cfm:bowl", "y": 270 },
+    "facing=south": { "model": "cfm:bowl", "y": 90 },
+    "facing=east": { "model": "cfm:bowl", "y": 0 },
+    "facing=west": { "model": "cfm:bowl", "y": 180 },
+    "facing=up": { "model": "cfm:bowl" },
+    "facing=down": { "model": "cfm:bowl", "y": 180 }
+  }
+}

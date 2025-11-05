@@ -504,6 +504,9 @@ tile.park_bench_dark_oak.name=Dark Oak Park Bench
 tile.inflatable_castle.name=Inflatable Castle
 tile.castle_netting.name=Castle Netting
 tile.service_bell.name=Service Bell
+tile.bowl.name=Bowl
+tile.bowl_food.name=Bowl Food
+tile.bowl_water.name=Bowl Water
 
 tile.bedside_cabinet_biomesoplenty_cherry.name=Cherry Bedside Cabinet
 tile.blinds_biomesoplenty_cherry_closed.name=Cherry Blinds

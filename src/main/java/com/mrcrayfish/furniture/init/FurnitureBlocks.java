@@ -91,6 +91,9 @@ public class FurnitureBlocks
     /* Special */
     public static final Block MIRROR;
     public static final Block SERVICE_BELL;
+    public static final Block BOWL;
+    public static final Block BOWL_FOOD;
+    public static final Block BOWL_WATER;
 
     static
     {
@@ -317,6 +320,9 @@ public class FurnitureBlocks
         INFLATABLE_CASTLE = new BlockInflatableCastle("inflatable_castle");
         CASTLE_NETTING = new BlockCastleNetting("castle_netting");
         SERVICE_BELL = new BlockServiceBell(Material.IRON, "service_bell");
+        BOWL = new BlockBowl(Material.IRON, "bowl");
+        BOWL_FOOD = new BlockBowlFood(Material.IRON, "bowl_food");
+        BOWL_WATER = new BlockBowlWater(Material.IRON, "bowl_water");
     }
 
     public static void register()
@@ -544,6 +550,9 @@ public class FurnitureBlocks
         registerBlock(INFLATABLE_CASTLE, new ItemColored(INFLATABLE_CASTLE));
         registerBlock(CASTLE_NETTING);
         registerBlock(SERVICE_BELL);
+        registerBlock(BOWL);
+        registerBlock(BOWL_FOOD);
+        registerBlock(BOWL_WATER);
     }
 
     public static void registerBlock(Block block)
