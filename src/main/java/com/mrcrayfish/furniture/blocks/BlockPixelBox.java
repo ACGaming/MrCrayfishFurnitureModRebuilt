@@ -8,29 +8,27 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.BlockFaceShape;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
+import javax.annotation.Nullable;
 import java.util.List;
 
-public class BlockBowl extends Block implements ITileEntityProvider
+public class BlockPixelBox extends Block implements ITileEntityProvider
 {
-    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.125, 0.0, 0.125, 0.875, 0.315, 0.875);
+    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.0625, 0.0, 0.0, 0.9375, 0.130, 1.0);
 
-    public BlockBowl(Material material, String id)
+    public BlockPixelBox(Material material, String id)
     {
         super(material);
-        this.setHardness(0.5F);
+        this.setHardness(1F);
         this.setSoundType(SoundType.METAL);
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         this.setTranslationKey(id);
@@ -71,5 +69,10 @@ public class BlockBowl extends Block implements ITileEntityProvider
     public BlockFaceShape getBlockFaceShape(IBlockAccess worldIn, IBlockState state, BlockPos pos, EnumFacing face)
     {
         return BlockFaceShape.UNDEFINED;
+    }
+    @Override
+    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
+        tooltip.add("§6This is a Work in Progress... There is not the GUI for now");
+        super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 }

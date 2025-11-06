@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "normal": { "model": "cfm:animal_bed" },
+    "facing=north": { "model": "cfm:animal_bed", "y": 270 },
+    "facing=south": { "model": "cfm:animal_bed", "y": 90 },
+    "facing=east": { "model": "cfm:animal_bed", "y": 0 },
+    "facing=west": { "model": "cfm:animal_bed", "y": 180 },
+    "facing=up": { "model": "cfm:animal_bed" },
+    "facing=down": { "model": "cfm:animal_bed", "y": 180 }
+  }
+}

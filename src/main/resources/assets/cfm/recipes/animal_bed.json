@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "cfm:animal_bed"
+  },
+  "pattern": [
+    "   ",
+    "***",
+    "YYY"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "*": {
+      "item": "minecraft:wool",
+      "data": 0
+    },
+    "Y": {
+      "item": "minecraft:wooden_slab",
+      "data": 0
+    }
+  }
+}

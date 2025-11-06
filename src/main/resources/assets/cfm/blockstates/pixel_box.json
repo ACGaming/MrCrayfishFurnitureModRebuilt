@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "normal": { "model": "cfm:pixel_box" },
+    "facing=north": { "model": "cfm:pixel_box", "y": 270 },
+    "facing=south": { "model": "cfm:pixel_box", "y": 90 },
+    "facing=east": { "model": "cfm:pixel_box", "y": 0 },
+    "facing=west": { "model": "cfm:pixel_box", "y": 180 },
+    "facing=up": { "model": "cfm:pixel_box" },
+    "facing=down": { "model": "cfm:pixel_box", "y": 180 }
+  }
+}

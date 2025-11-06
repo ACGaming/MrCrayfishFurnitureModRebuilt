@@ -9,13 +9,8 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.state.BlockFaceShape;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.SoundEvents;
-import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
@@ -23,15 +18,15 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class BlockBowl extends Block implements ITileEntityProvider
+public class BlockAnimalSofa extends Block implements ITileEntityProvider
 {
-    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.125, 0.0, 0.125, 0.875, 0.315, 0.875);
+    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.0, 0.0, 0.0, 1.0, 0.700, 1.0);
 
-    public BlockBowl(Material material, String id)
+    public BlockAnimalSofa(Material material, String id)
     {
         super(material);
-        this.setHardness(0.5F);
-        this.setSoundType(SoundType.METAL);
+        this.setHardness(1F);
+        this.setSoundType(SoundType.WOOD);
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         this.setTranslationKey(id);
         this.setRegistryName(id);
