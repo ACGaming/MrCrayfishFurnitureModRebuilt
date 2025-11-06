@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "cfm:bowl"
+  },
+  "pattern": [
+    "   ",
+    "U U",
+    "III"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+	  },
+    "U": {
+      "item": "minecraft:iron_nugget"
+    }
+  }
+}
