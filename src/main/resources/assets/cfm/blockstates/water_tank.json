@@ -1,8 +1,11 @@
 {
-    "variants": {
-        "facing=north": { "model": "cfm:water_tank"           },
-        "facing=south": { "model": "cfm:water_tank", "y": 180 },
-        "facing=east":  { "model": "cfm:water_tank", "y": 90  },
-        "facing=west":  { "model": "cfm:water_tank", "y": 270 }
-    }
+  "variants": {
+    "normal": { "model": "cfm:water_tank" },
+    "facing=north": { "model": "cfm:water_tank", "y": 270 },
+    "facing=south": { "model": "cfm:water_tank", "y": 90 },
+    "facing=east": { "model": "cfm:water_tank", "y": 0 },
+    "facing=west": { "model": "cfm:water_tank", "y": 180 },
+    "facing=up": { "model": "cfm:water_tank" },
+    "facing=down": { "model": "cfm:water_tank", "y": 180 }
+  }
 }
