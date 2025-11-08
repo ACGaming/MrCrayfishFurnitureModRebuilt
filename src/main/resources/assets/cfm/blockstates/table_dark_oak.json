@@ -3,7 +3,7 @@
 	"defaults": {
 		"textures": {
 			"0": "blocks/planks_big_oak",
-			"1": "blocks/log_big_oak"
+			"1": "cfm:blocks/dark_oak_wood"
 		},
 		"model": "cfm:table_leg_center",
 		"uvlock": true

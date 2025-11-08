@@ -3,7 +3,7 @@
     "textures": {
         "particle": "blocks/log_spruce",
         "1": "blocks/log_spruce",
-        "2": "blocks/planks_spruce",
+        "2": "cfm:blocks/spruce_wood",
         "3": "blocks/concrete_white"
     }
 }
