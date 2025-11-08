@@ -98,6 +98,7 @@ public class FurnitureBlocks
     public static final Block ANIMAL_SOFA;
     public static final Block PIXEL_BOX;
     public static final Block WATER_TANK;
+    public static final Block BIRD_HOUSE;
 
     static
     {
@@ -331,6 +332,7 @@ public class FurnitureBlocks
         ANIMAL_SOFA = new BlockAnimalSofa(Material.WOOD, "animal_sofa");
         PIXEL_BOX = new BlockPixelBox(Material.IRON, "pixel_box");
         WATER_TANK = new BlockWaterTank(Material.WOOD, "water_tank");
+        BIRD_HOUSE = new BlockBirdHouse(Material.WOOD, "bird_house");
     }
 
     public static void register()
@@ -565,6 +567,7 @@ public class FurnitureBlocks
         registerBlock(ANIMAL_SOFA);
         registerBlock(PIXEL_BOX);
         registerBlock(WATER_TANK);
+        registerBlock(BIRD_HOUSE);
     }
 
     public static void registerBlock(Block block)

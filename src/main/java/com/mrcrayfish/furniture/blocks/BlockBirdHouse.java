@@ -11,10 +11,8 @@ import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockFaceShape;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.AxisAlignedBB;
@@ -22,20 +20,18 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-import javax.annotation.Nullable;
 import java.util.List;
 
-public class BlockPixelBox extends Block implements ITileEntityProvider
+public class BlockBirdHouse extends Block implements ITileEntityProvider
 {
-    private static final AxisAlignedBB BOUNDING_BOX_1 = new AxisAlignedBB(0.0625, 0.0, 0.0, 0.9375, 0.130, 1.0);
-    private static final AxisAlignedBB BOUNDING_BOX_2 = new AxisAlignedBB(0.0, 0.0, 0.0625, 1.0, 0.130, 0.9375);
+    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(1.0 / 16.0, 0.0 / 16.0, 1.0 / 16.0, 15.0 / 16.0, 20.0 / 16.0, 15.0 / 16.0);
     public static final PropertyDirection FACING = BlockHorizontal.FACING;
 
-    public BlockPixelBox(Material material, String id)
+    public BlockBirdHouse(Material material, String id)
     {
         super(material);
         this.setHardness(1F);
-        this.setSoundType(SoundType.METAL);
+        this.setSoundType(SoundType.WOOD);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         this.setTranslationKey(id);
@@ -55,19 +51,15 @@ public class BlockPixelBox extends Block implements ITileEntityProvider
     }
 
     @Override
-    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-        EnumFacing facing = state.getValue(FACING);
+    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
+    {
+        return BOUNDING_BOX;
+    }
 
-        switch (facing) {
-            case NORTH:
-            case SOUTH:
-                return BOUNDING_BOX_1;
-            case WEST:
-            case EAST:
-                return BOUNDING_BOX_2;
-            default:
-                return BOUNDING_BOX_1;
-        }
+    @Override
+    public void addCollisionBoxToList(IBlockState state, World worldIn, BlockPos pos, AxisAlignedBB entityBox, List<AxisAlignedBB> collidingBoxes, Entity entityIn, boolean p_185477_7_)
+    {
+        addCollisionBoxToList(pos, entityBox, collidingBoxes, BOUNDING_BOX);
     }
 
     @Override
@@ -82,10 +74,12 @@ public class BlockPixelBox extends Block implements ITileEntityProvider
         return BlockFaceShape.UNDEFINED;
     }
     @Override
-    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
-        tooltip.add("§6This is a Work in Progress... There is not the GUI for now");
-        super.addInformation(stack, worldIn, tooltip, flagIn);
+    public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing,
+                                            float hitX, float hitY, float hitZ, int meta,
+                                            EntityLivingBase placer) {
+        return this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
     }
+
     @Override
     public IBlockState getStateFromMeta(int meta) {
         return this.getDefaultState().withProperty(FACING, EnumFacing.byHorizontalIndex(meta % 4));
@@ -99,11 +93,5 @@ public class BlockPixelBox extends Block implements ITileEntityProvider
     @Override
     protected BlockStateContainer createBlockState() {
         return new BlockStateContainer(this, FACING);
-    }
-    @Override
-    public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing,
-                                            float hitX, float hitY, float hitZ, int meta,
-                                            EntityLivingBase placer) {
-        return this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
     }
 }
