@@ -1,0 +1,10 @@
+# Made in Blockbench 5.0.3
+newmtl m_f5f1e716-a681-6e69-be9e-6b7aa56e9965
+map_Kd cfm:items/itemdogfood
+newmtl m_867ef371-eaa7-7c1f-eb86-c48c06c1ba7d
+map_Kd cfm:blocks/model_block_light
+newmtl m_9d69f2a9-1a04-c6ac-4ed5-3bc6f85b6d5b
+map_Kd cfm:blocks/dogfood
+newmtl m_ffc84487-21ff-47ca-f4a0-c2deead54133
+map_Kd minecraft:blocks/planks_oak
+newmtl none

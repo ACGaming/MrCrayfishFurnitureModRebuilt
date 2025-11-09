@@ -1,5 +1,6 @@
 package com.mrcrayfish.furniture.proxy;
 
+import com.mrcrayfish.furniture.Reference;
 import com.mrcrayfish.furniture.client.GifCache;
 import com.mrcrayfish.furniture.handler.ClientEvents;
 import com.mrcrayfish.furniture.handler.ConfigurationHandler;
@@ -23,6 +24,7 @@ import net.minecraft.item.ItemBlock;
 import net.minecraft.world.ColorizerFoliage;
 import net.minecraft.world.biome.BiomeColorHelper;
 import net.minecraftforge.client.event.RenderPlayerEvent;
+import net.minecraftforge.client.model.obj.OBJLoader;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.world.WorldEvent;
 import net.minecraftforge.fml.client.FMLClientHandler;
@@ -185,6 +187,7 @@ public class ClientProxy extends CommonProxy
         MinecraftForge.EVENT_BUS.register(new InputHandler());
         //MinecraftForge.EVENT_BUS.register(new GuiDrawHandler());
         MinecraftForge.EVENT_BUS.register(new ClientEvents());
+        OBJLoader.INSTANCE.addDomain(Reference.MOD_ID);
     }
 
     @SubscribeEvent
