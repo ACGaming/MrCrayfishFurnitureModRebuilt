@@ -36,6 +36,7 @@ public class BlockRetroTV extends BlockFurnitureTile
     {
         super(material, id);
         this.setSoundType(SoundType.WOOD);
+        this.setLightLevel(0.3F);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(CHANNEL, 0));
     }
 

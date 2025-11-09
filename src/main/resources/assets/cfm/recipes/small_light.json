@@ -1,0 +1,22 @@
+{
+  "result": {
+    "item": "cfm:small_light"
+  },
+  "pattern": [
+    "   ",
+    "*U*",
+    "III"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+	  },
+    "*": {
+      "item": "minecraft:redstone"
+    },
+    "U": {
+      "item": "cfm:item_light_bulb"
+    }
+  }
+}

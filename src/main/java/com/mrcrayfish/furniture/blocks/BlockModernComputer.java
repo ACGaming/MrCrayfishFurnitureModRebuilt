@@ -33,6 +33,7 @@ public class BlockModernComputer extends BlockFurnitureTile
     {
         super(material, id);
         this.setHardness(1.5F);
+        this.setLightLevel(0.4F);
         this.setSoundType(SoundType.ANVIL);
     }
 

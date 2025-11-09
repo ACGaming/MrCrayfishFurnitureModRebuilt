@@ -512,6 +512,7 @@ tile.animal_sofa.name=Animal Sofa
 tile.pixel_box.name=Pixel Box
 tile.water_tank.name=Water Tank
 tile.bird_house.name=Bird House
+tile.small_light.name=Small Light
 
 tile.bedside_cabinet_biomesoplenty_cherry.name=Cherry Bedside Cabinet
 tile.blinds_biomesoplenty_cherry_closed.name=Cherry Blinds
