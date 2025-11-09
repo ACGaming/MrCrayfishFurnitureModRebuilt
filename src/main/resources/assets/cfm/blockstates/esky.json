@@ -18,82 +18,82 @@
 		"colour": {
 			"0": {
 				"textures": {
-					"0": "blocks/hardened_clay_stained_white"
+					"0": "blocks/concrete_white"
 				}
 			},
 			"1": {
 				"textures": {
-					"0": "blocks/hardened_clay_stained_orange"
+					"0": "blocks/concrete_orange"
 				}
 			},
 			"2": {
 				"textures": {
-					"0": "blocks/hardened_clay_stained_magenta"
+					"0": "blocks/concrete_magenta"
 				}
 			},
 			"3": {
 				"textures": {
-					"0": "blocks/hardened_clay_stained_light_blue"
+					"0": "blocks/concrete_light_blue"
 				}
 			},
 			"4": {
 				"textures": {
-					"0": "blocks/hardened_clay_stained_yellow"
+					"0": "blocks/concrete_yellow"
 				}
 			},
 			"5": {
 				"textures": {
-					"0": "blocks/hardened_clay_stained_lime"
+					"0": "blocks/concrete_lime"
 				}
 			},
 			"6": {
 				"textures": {
-					"0": "blocks/hardened_clay_stained_pink"
+					"0": "blocks/concrete_pink"
 				}
 			},
 			"7": {
 				"textures": {
-					"0": "blocks/hardened_clay_stained_gray"
+					"0": "blocks/concrete_gray"
 				}
 			},
 			"8": {
 				"textures": {
-					"0": "blocks/hardened_clay_stained_silver"
+					"0": "blocks/concrete_silver"
 				}
 			},
 			"9": {
 				"textures": {
-					"0": "blocks/hardened_clay_stained_cyan"
+					"0": "blocks/concrete_cyan"
 				}
 			},
 			"10": {
 				"textures": {
-					"0": "blocks/hardened_clay_stained_purple"
+					"0": "blocks/concrete_purple"
 				}
 			},
 			"11": {
 				"textures": {
-					"0": "blocks/hardened_clay_stained_blue"
+					"0": "blocks/concrete_blue"
 				}
 			},
 			"12": {
 				"textures": {
-					"0": "blocks/hardened_clay_stained_brown"
+					"0": "blocks/concrete_brown"
 				}
 			},
 			"13": {
 				"textures": {
-					"0": "blocks/hardened_clay_stained_green"
+					"0": "blocks/concrete_green"
 				}
 			},
 			"14": {
 				"textures": {
-					"0": "blocks/hardened_clay_stained_red"
+					"0": "blocks/concrete_red"
 				}
 			},
 			"15": {
 				"textures": {
-					"0": "blocks/hardened_clay_stained_black"
+					"0": "blocks/concrete_black"
 				}
 			}
 		}
