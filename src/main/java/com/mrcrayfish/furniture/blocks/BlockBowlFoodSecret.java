@@ -27,7 +27,6 @@ public class BlockBowlFoodSecret extends Block implements ITileEntityProvider
         super(material);
         this.setHardness(0.5F);
         this.setSoundType(SoundType.METAL);
-        this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         this.setTranslationKey(id);
         this.setRegistryName(id);
     }
