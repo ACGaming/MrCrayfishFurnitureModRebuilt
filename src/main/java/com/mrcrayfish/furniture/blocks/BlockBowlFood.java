@@ -1,6 +1,7 @@
 package com.mrcrayfish.furniture.blocks;
 
 import com.mrcrayfish.furniture.MrCrayfishFurnitureMod;
+import com.mrcrayfish.furniture.tileentity.TileEntityBowlFood;
 import com.mrcrayfish.furniture.tileentity.TileEntityPlate;
 import net.minecraft.block.Block;
 import net.minecraft.block.ITileEntityProvider;
@@ -24,7 +25,8 @@ public class BlockBowlFood extends Block implements ITileEntityProvider
 
     public BlockBowlFood(Material material, String id)
     {
-        super(material);
+        super(Material.CIRCUITS);
+        setTickRandomly(true);
         this.setHardness(0.5F);
         this.setSoundType(SoundType.METAL);
         this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
@@ -66,5 +68,15 @@ public class BlockBowlFood extends Block implements ITileEntityProvider
     public BlockFaceShape getBlockFaceShape(IBlockAccess worldIn, IBlockState state, BlockPos pos, EnumFacing face)
     {
         return BlockFaceShape.UNDEFINED;
+    }
+
+    @Override
+    public boolean hasTileEntity(IBlockState state) {
+        return true;
+    }
+
+    @Override
+    public TileEntity createTileEntity(World world, IBlockState state) {
+        return new TileEntityBowlFood();
     }
 }

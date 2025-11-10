@@ -1,6 +1,8 @@
 package com.mrcrayfish.furniture.blocks;
 
 import com.mrcrayfish.furniture.MrCrayfishFurnitureMod;
+import com.mrcrayfish.furniture.init.FurnitureBlocks;
+import com.mrcrayfish.furniture.init.FurnitureItems;
 import com.mrcrayfish.furniture.tileentity.TileEntityPlate;
 import net.minecraft.block.Block;
 import net.minecraft.block.ITileEntityProvider;
@@ -10,6 +12,7 @@ import net.minecraft.block.state.BlockFaceShape;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
@@ -71,5 +74,34 @@ public class BlockBowl extends Block implements ITileEntityProvider
     public BlockFaceShape getBlockFaceShape(IBlockAccess worldIn, IBlockState state, BlockPos pos, EnumFacing face)
     {
         return BlockFaceShape.UNDEFINED;
+    }
+
+    @Override
+    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state,
+                                    EntityPlayer playerIn, EnumHand hand,
+                                    EnumFacing facing, float hitX, float hitY, float hitZ) {
+        ItemStack held = playerIn.getHeldItem(hand);
+
+        if (!held.isEmpty()) {
+            if (held.getItem() == FurnitureItems.DOG_FOOD) {
+                worldIn.setBlockState(pos, FurnitureBlocks.BOWL_FOOD.getDefaultState());
+                held.shrink(1);
+                if (!playerIn.inventory.addItemStackToInventory(new ItemStack(FurnitureItems.CONSERVE_CAN))) {
+                    playerIn.dropItem(new ItemStack(FurnitureItems.CONSERVE_CAN), false);
+                }
+                return true;
+            }
+
+            if (held.getItem() == Items.WATER_BUCKET) {
+                worldIn.setBlockState(pos, FurnitureBlocks.BOWL_WATER.getDefaultState());
+                held.shrink(1);
+                if (!playerIn.inventory.addItemStackToInventory(new ItemStack(Items.BUCKET))) {
+                    playerIn.dropItem(new ItemStack(Items.BUCKET), false);
+                }
+                return true;
+            }
+        }
+
+        return false;
     }
 }
