@@ -40,7 +40,7 @@ public class ConfigurationHandler
     public static boolean mine_1 = true, mine_2 = true, mine_3 = true, mine_4 = true, mine_5 = true, mine_6 = true, mine_7 = true, mine_8 = true, mine_9 = true, mine_10 = true, mine_11 = true, mine_12 = true, mine_13 = true, mine_14 = true;
     public static boolean ender_1 = true, ender_2 = true, ender_3 = true, ender_4 = true, ender_5 = true, ender_6 = true, ender_7 = true, ender_8 = true, ender_9 = true, ender_10 = true;
     public static boolean ender_11 = true, ender_12 = true, ender_13 = true, ender_14 = true, ender_15 = true, ender_16 = true, ender_17 = true, ender_18 = true, ender_19 = true, ender_20 = true;
-    public static boolean ender_21 = true, ender_22 = true, ender_23 = true, ender_24 = true, ender_25 = true, ender_26 = true, ender_27 = true, ender_28 = true, ender_29 = true, ender_30 = true, ender_31 = true, ender_32 = true, ender_33 = true, ender_34 = true, ender_35 = true;
+    public static boolean ender_21 = true, ender_22 = true, ender_23 = true, ender_24 = true, ender_25 = true, ender_26 = true, ender_27 = true, ender_28 = true, ender_29 = true, ender_30 = true, ender_31 = true, ender_32 = true, ender_33 = true, ender_34 = true, ender_35 = true, ender_36 = true, ender_37 = true, ender_38 = true, ender_39 = true, ender_40 = true;
     public static boolean blen_1 = true, blen_2 = true, blen_3 = true, blen_4 = true;
     public static boolean chop_1 = true;
     public static boolean dish_1 = true, dish_2 = true, dish_3 = true, dish_4 = true, dish_5 = true, dish_6 = true, dish_7 = true, dish_8 = true, dish_9 = true, dish_10 = true;
@@ -177,6 +177,11 @@ public class ConfigurationHandler
         ender_33 = config.getBoolean("ender-33", CATEGORY_RECIPE_SETTINGS, ender_33, "4 Gold Ingot for 4 Coin");
         ender_34 = config.getBoolean("ender-34", CATEGORY_RECIPE_SETTINGS, ender_34, "4 Diamonds for 8 Coin");
         ender_35 = config.getBoolean("ender-35", CATEGORY_RECIPE_SETTINGS, ender_35, "4 Emerald for 12 Coin");
+        ender_36 = config.getBoolean("ender-36", CATEGORY_RECIPE_SETTINGS, ender_36, "1 Bowl Food Secret for 50 Coin");
+        ender_37 = config.getBoolean("ender-37", CATEGORY_RECIPE_SETTINGS, ender_37, "1 Light Bulb for 6 Coin");
+        ender_38 = config.getBoolean("ender-38", CATEGORY_RECIPE_SETTINGS, ender_38, "1 Pixel Box for 20 Coin");
+        ender_39 = config.getBoolean("ender-39", CATEGORY_RECIPE_SETTINGS, ender_39, "1 Bird House for 4 Coin");
+        ender_40 = config.getBoolean("ender-40", CATEGORY_RECIPE_SETTINGS, ender_40, "1 Small Light for 4 Coin");
         blen_1 = config.getBoolean("blender-1", CATEGORY_RECIPE_SETTINGS, blen_1, "Fruit Crush");
         blen_2 = config.getBoolean("blender-2", CATEGORY_RECIPE_SETTINGS, blen_2, "Veggie Juice");
         blen_3 = config.getBoolean("blender-3", CATEGORY_RECIPE_SETTINGS, blen_3, "Fishy Blend");
