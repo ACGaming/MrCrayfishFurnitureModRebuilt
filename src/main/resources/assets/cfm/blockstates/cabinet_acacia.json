@@ -4,7 +4,7 @@
 		"textures": {
 			"1": "blocks/log_acacia",
 			"2": "blocks/iron_block",
-			"3": "blocks/planks_acacia"
+			"3": "cfm:blocks/acacia_wood"
 		},
 		"model": "cfm:cabinet"
 	},

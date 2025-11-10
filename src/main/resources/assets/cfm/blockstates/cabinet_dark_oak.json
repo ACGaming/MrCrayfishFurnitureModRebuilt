@@ -4,7 +4,7 @@
 		"textures": {
 			"1": "blocks/log_big_oak",
 			"2": "blocks/iron_block",
-			"3": "blocks/planks_big_oak"
+			"3": "cfm:blocks/dark_oak_wood"
 		},
 		"model": "cfm:cabinet"
 	},

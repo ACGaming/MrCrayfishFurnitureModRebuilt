@@ -42,6 +42,7 @@ item.item_dog_food.name=Dog Food
 item.item_light_bulb.name=Light Bulb
 item.item_trashbag.name=Trash Bag
 item.item_coin.name=Coin
+item.item_conserve_can.name=Conserve Can
 
 tile.table_oak.name=Oak Table
 tile.table_spruce.name=Spruce Table
@@ -511,6 +512,8 @@ tile.animal_bed.name=Animal Bed
 tile.animal_sofa.name=Animal Sofa
 tile.pixel_box.name=Pixel Box
 tile.water_tank.name=Water Tank
+tile.bird_house.name=Bird House
+tile.small_light.name=Small Light
 
 tile.bedside_cabinet_biomesoplenty_cherry.name=Cherry Bedside Cabinet
 tile.blinds_biomesoplenty_cherry_closed.name=Cherry Blinds

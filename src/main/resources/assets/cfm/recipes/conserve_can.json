@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "cfm:item_conserve_can"
+  },
+  "pattern": [
+    "UUU",
+    "I I",
+    "III"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+	  },
+    "U": {
+      "item": "minecraft:iron_nugget"
+    }
+  }
+}

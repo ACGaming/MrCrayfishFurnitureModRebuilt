@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "cfm:bird_house"
+  },
+  "pattern": [
+    "UIU",
+    "U U",
+    "III"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:planks",
+      "data": 0
+	  },
+    "U": {
+      "item": "minecraft:log",
+      "data": 0
+    }
+  }
+}

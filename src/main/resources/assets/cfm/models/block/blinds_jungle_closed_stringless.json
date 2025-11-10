@@ -3,7 +3,7 @@
     "textures": {
         "particle": "blocks/log_jungle",
         "1": "blocks/log_jungle",
-        "2": "blocks/planks_jungle",
+        "2": "cfm:blocks/jungle_wood",
         "3": "blocks/concrete_white"
     }
 }

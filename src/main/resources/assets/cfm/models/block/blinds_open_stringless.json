@@ -3,7 +3,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "blocks/log_oak",
-		"2": "blocks/planks_oak",
+		"2": "cfm:blocks/oak_wood",
 		"3": "blocks/wool_colored_white",
 		"particle": "blocks/log_oak"
 	},

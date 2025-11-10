@@ -4,7 +4,7 @@
 		"textures": {
 			"1": "blocks/log_birch",
 			"2": "blocks/iron_block",
-			"3": "blocks/planks_birch"
+			"3": "cfm:blocks/birch_wood"
 		},
 		"model": "cfm:cabinet"
 	},

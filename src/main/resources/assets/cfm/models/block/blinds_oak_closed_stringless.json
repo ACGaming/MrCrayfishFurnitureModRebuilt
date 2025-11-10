@@ -3,7 +3,7 @@
     "textures": {
         "particle": "blocks/log_oak",
         "1": "blocks/log_oak",
-        "2": "blocks/planks_oak",
+        "2": "cfm:blocks/oak_wood",
         "3": "blocks/concrete_white"
     }
 }

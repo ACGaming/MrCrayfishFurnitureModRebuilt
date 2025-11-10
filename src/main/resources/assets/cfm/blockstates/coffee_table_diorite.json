@@ -2,7 +2,7 @@
 	"forge_marker": 1,
 	"defaults": {
 		"textures": {
-			"1": "blocks/stone_diorite_smooth",
+			"1": "cfm:blocks/diorite_coffee_table",
 			"2": "blocks/stone_diorite"
 		},
 		"model": "cfm:coffee_table_all",

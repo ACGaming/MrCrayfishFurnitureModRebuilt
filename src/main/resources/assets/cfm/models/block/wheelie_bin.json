@@ -1,4 +1,5 @@
 {
+	"format_version": "1.9.0",
 	"credit": "Made by Groobler and improved by MisterIceCat - Model originally generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
 	"textures": {
 		"0": "blocks/hardened_clay_stained_green",
@@ -139,7 +140,7 @@
 			"name": "Wheel 2",
 			"from": [14, 0, 1.5],
 			"to": [15, 3, 4.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8.5, 9]},
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [14.5, 1.5, 3]},
 			"faces": {
 				"north": {"uv": [0, 0, 1, 3], "texture": "#4"},
 				"east": {"uv": [0, 0, 4, 4], "texture": "#4"},
@@ -153,7 +154,7 @@
 			"name": "Wheel 1",
 			"from": [1, 0, 1.5],
 			"to": [2, 3, 4.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 1.5, 2.5]},
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [1.5, 1.5, 3]},
 			"faces": {
 				"north": {"uv": [0, 0, 1, 3], "texture": "#4"},
 				"east": {"uv": [0, 0, 4, 4], "texture": "#4"},
@@ -359,32 +360,32 @@
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [75, -140, 0],
-			"translation": [0, 2.5, 0],
-			"scale": [0.375, 0.375, 0.375]
+			"translation": [0, 3.75, 0],
+			"scale": [0.5, 0.5, 0.5]
 		},
 		"thirdperson_lefthand": {
 			"rotation": [75, -140, 0],
-			"translation": [0, 2.5, 0],
-			"scale": [0.375, 0.375, 0.375]
+			"translation": [0, 3.75, 0],
+			"scale": [0.5, 0.5, 0.5]
 		},
 		"firstperson_righthand": {
 			"rotation": [0, -140, 0],
 			"translation": [0, 2.5, 0],
-			"scale": [0.4, 0.4, 0.4]
+			"scale": [0.5, 0.5, 0.5]
 		},
 		"firstperson_lefthand": {
 			"rotation": [0, -140, 0],
 			"translation": [0, 2.5, 0],
-			"scale": [0.4, 0.4, 0.4]
+			"scale": [0.5, 0.5, 0.5]
 		},
 		"ground": {
 			"translation": [0, 3, 0],
-			"scale": [0.25, 0.25, 0.25]
+			"scale": [0.5, 0.5, 0.5]
 		},
 		"gui": {
-			"rotation": [20, 50, 0],
-			"translation": [0, -0.25, 0],
-			"scale": [0.625, 0.625, 0.625]
+			"rotation": [30, 50, 0],
+			"translation": [0, -0.5, 0],
+			"scale": [0.65, 0.65, 0.65]
 		},
 		"head": {
 			"rotation": [0, -180, 0],
