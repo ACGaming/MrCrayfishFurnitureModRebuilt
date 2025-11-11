@@ -512,6 +512,7 @@ tile.animal_bed.name=Animal Bed
 tile.animal_sofa.name=Animal Sofa
 tile.pixel_box.name=Pixel Box
 tile.water_tank.name=Water Tank
+tile.camp_chair.name=Camp Chair
 tile.bird_house.name=Bird House
 tile.small_light.name=Small Light
 tile.bowl_food_secret.name=§e§lBowl Food Secret

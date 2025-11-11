@@ -15,8 +15,8 @@ public class EntitySeat extends Entity
     {
         super(world);
         this.noClip = true;
-        this.height = 0.01F;
-        this.width = 0.01F;
+        this.height = 0.00F;
+        this.width = 0.00F;
     }
 
     public EntitySeat(World world, double x, double y, double z, double y0ffset)

@@ -103,6 +103,7 @@ public class FurnitureBlocks
     public static final Block BOWL_FOOD_SECRET;
     public static final Block WATER_TANK_WATER;
     public static final Block WATER_TANK_WATER_FULL;
+    public static final Block CAMP_CHAIR;
 
     static
     {
@@ -341,6 +342,7 @@ public class FurnitureBlocks
         BOWL_FOOD_SECRET = new BlockBowlFoodSecret(Material.IRON, "bowl_food_secret");
         WATER_TANK_WATER = new BlockWaterTankWater(Material.WOOD, "water_tank_water");
         WATER_TANK_WATER_FULL = new BlockWaterTankWaterFull(Material.WOOD, "water_tank_water_full");
+        CAMP_CHAIR = new BlockCampChair(Material.WOOD, "camp_chair");
     }
 
     public static void register()
@@ -580,6 +582,7 @@ public class FurnitureBlocks
         registerBlock(BOWL_FOOD_SECRET);
         registerBlock(WATER_TANK_WATER);
         registerBlock(WATER_TANK_WATER_FULL);
+        registerBlock(CAMP_CHAIR);
     }
 
     public static void registerBlock(Block block)

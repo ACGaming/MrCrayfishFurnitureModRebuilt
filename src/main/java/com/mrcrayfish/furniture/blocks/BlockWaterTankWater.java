@@ -1,5 +1,6 @@
 package com.mrcrayfish.furniture.blocks;
 
+import com.mrcrayfish.furniture.MrCrayfishFurnitureMod;
 import com.mrcrayfish.furniture.init.FurnitureBlocks;
 import com.mrcrayfish.furniture.tileentity.TileEntityPlate;
 import net.minecraft.block.Block;
@@ -45,6 +46,7 @@ public class BlockWaterTankWater extends Block implements ITileEntityProvider {
         this.setHardness(1F);
         this.setSoundType(SoundType.WOOD);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
+        this.setCreativeTab(null);
         this.setTranslationKey(id);
         this.setRegistryName(id);
     }

@@ -46,7 +46,7 @@ public class BlockWaterTankWaterFull extends Block implements ITileEntityProvide
         this.setHardness(1F);
         this.setSoundType(SoundType.WOOD);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
-        this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
+        this.setCreativeTab(null);
         this.setTranslationKey(id);
         this.setRegistryName(id);
     }
