@@ -100,6 +100,9 @@ public class FurnitureBlocks
     public static final Block WATER_TANK;
     public static final Block BIRD_HOUSE;
     public static final Block SMALL_LIGHT;
+    public static final Block BOWL_FOOD_SECRET;
+    public static final Block WATER_TANK_WATER;
+    public static final Block WATER_TANK_WATER_FULL;
 
     static
     {
@@ -335,6 +338,9 @@ public class FurnitureBlocks
         WATER_TANK = new BlockWaterTank(Material.WOOD, "water_tank");
         BIRD_HOUSE = new BlockBirdHouse(Material.WOOD, "bird_house");
         SMALL_LIGHT = new BlockSmallLight(Material.IRON, "small_light");
+        BOWL_FOOD_SECRET = new BlockBowlFoodSecret(Material.IRON, "bowl_food_secret");
+        WATER_TANK_WATER = new BlockWaterTankWater(Material.WOOD, "water_tank_water");
+        WATER_TANK_WATER_FULL = new BlockWaterTankWaterFull(Material.WOOD, "water_tank_water_full");
     }
 
     public static void register()
@@ -571,6 +577,9 @@ public class FurnitureBlocks
         registerBlock(WATER_TANK);
         registerBlock(BIRD_HOUSE);
         registerBlock(SMALL_LIGHT);
+        registerBlock(BOWL_FOOD_SECRET);
+        registerBlock(WATER_TANK_WATER);
+        registerBlock(WATER_TANK_WATER_FULL);
     }
 
     public static void registerBlock(Block block)

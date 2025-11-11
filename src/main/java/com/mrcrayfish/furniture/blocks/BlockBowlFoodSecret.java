@@ -1,7 +1,6 @@
 package com.mrcrayfish.furniture.blocks;
 
 import com.mrcrayfish.furniture.MrCrayfishFurnitureMod;
-import com.mrcrayfish.furniture.tileentity.TileEntityBowlFood;
 import com.mrcrayfish.furniture.tileentity.TileEntityPlate;
 import net.minecraft.block.Block;
 import net.minecraft.block.ITileEntityProvider;
@@ -19,17 +18,15 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class BlockBowlFood extends Block implements ITileEntityProvider
+public class BlockBowlFoodSecret extends Block implements ITileEntityProvider
 {
-    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.125, 0.0, 0.125, 0.875, 0.315, 0.875);
+    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.0, 0.0, 0.0, 1.0, 1.0, 1.0);
 
-    public BlockBowlFood(Material material, String id)
+    public BlockBowlFoodSecret(Material material, String id)
     {
-        super(Material.CIRCUITS);
-        setTickRandomly(true);
+        super(material);
         this.setHardness(0.5F);
         this.setSoundType(SoundType.METAL);
-        this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         this.setTranslationKey(id);
         this.setRegistryName(id);
     }
@@ -68,15 +65,5 @@ public class BlockBowlFood extends Block implements ITileEntityProvider
     public BlockFaceShape getBlockFaceShape(IBlockAccess worldIn, IBlockState state, BlockPos pos, EnumFacing face)
     {
         return BlockFaceShape.UNDEFINED;
-    }
-
-    @Override
-    public boolean hasTileEntity(IBlockState state) {
-        return true;
-    }
-
-    @Override
-    public TileEntity createTileEntity(World world, IBlockState state) {
-        return new TileEntityBowlFood();
     }
 }

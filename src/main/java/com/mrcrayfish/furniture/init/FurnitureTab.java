@@ -14,9 +14,8 @@ public class FurnitureTab extends CreativeTabs
     }
 
     @Override
-    public ItemStack createIcon()
-    {
-        return new ItemStack(FurnitureBlocks.CHAIR_OAK);
+    public ItemStack createIcon() {
+        return new ItemStack(FurnitureBlocks.COUCH_FRAMED, 1, 4);
     }
 
     @Override

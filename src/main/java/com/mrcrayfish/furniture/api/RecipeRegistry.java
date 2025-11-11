@@ -1438,6 +1438,16 @@ public class RecipeRegistry extends RecipeAPI
             RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureItems.COIN, 8), new ItemStack(Items.DIAMOND), 4);
         if(ConfigurationHandler.ender_35)
             RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureItems.COIN, 12), new ItemStack(Items.EMERALD), 4);
+        if(ConfigurationHandler.ender_36)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.BOWL_FOOD_SECRET, 1), new ItemStack(FurnitureItems.COIN), 50);
+        if(ConfigurationHandler.ender_37)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureItems.LIGHT_BULB, 1), new ItemStack(FurnitureItems.COIN), 6);
+        if(ConfigurationHandler.ender_38)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.PIXEL_BOX, 1), new ItemStack(FurnitureItems.COIN), 20);
+        if(ConfigurationHandler.ender_39)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.BIRD_HOUSE, 1), new ItemStack(FurnitureItems.COIN), 4);
+        if(ConfigurationHandler.ender_40)
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.SMALL_LIGHT, 1), new ItemStack(FurnitureItems.COIN), 4);
 
         if(ConfigurationHandler.blen_1)
             RecipeRegistry.getInstance().registerBlenderRecipe("Fruit Crush", 4, new ItemStack[]{new ItemStack(Items.APPLE, 2), new ItemStack(Items.MELON, 4)}, new int[]{255, 58, 37});
