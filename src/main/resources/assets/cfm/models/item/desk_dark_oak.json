@@ -2,7 +2,7 @@
     "parent": "cfm:item/desk",
     "textures": {
         "top": "blocks/hardened_clay_stained_black",
-        "primary": "blocks/log_big_oak",
+        "primary": "cfm:blocks/dark_oak_wood",
         "secondary": "blocks/planks_big_oak"
     }
 }

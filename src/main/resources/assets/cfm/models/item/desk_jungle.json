@@ -2,7 +2,7 @@
     "parent": "cfm:item/desk",
     "textures": {
         "top": "blocks/hardened_clay_stained_green",
-        "primary": "blocks/log_jungle",
+        "primary": "cfm:blocks/jungle_wood",
         "secondary": "blocks/planks_jungle"
     }
 }

@@ -2,7 +2,7 @@
     "parent": "cfm:item/desk_cabinet",
     "textures": {
         "top": "blocks/concrete_silver",
-        "primary": "blocks/log_birch",
+        "primary": "cfm:blocks/birch_wood",
         "secondary": "blocks/planks_birch"
     }
 }
