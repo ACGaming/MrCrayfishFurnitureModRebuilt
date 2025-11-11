@@ -3,7 +3,7 @@
     "textures": {
         "particle": "blocks/concrete_white",
         "0": "blocks/concrete_white",
-        "1": "blocks/concrete_silver"
+        "1": "blocks/concrete_gray"
     },
     "display": {
         "gui": {
