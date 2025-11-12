@@ -10,16 +10,16 @@
     "type": "minecraft:crafting_shaped",
     "key": {
         "O": {
-            "item": "minecraft:planks",
-            "data": 0
+            "item": "minecraft:concrete",
+            "data": 7
         },
         "C": {
             "item": "cfm:couch",
             "data": 4
         },
         "S": {
-            "item": "minecraft:planks",
-            "data": 1
+            "item": "minecraft:concrete",
+            "data": 0
         }
     }
 }
