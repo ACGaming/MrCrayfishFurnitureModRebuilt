@@ -1,11 +1,11 @@
 {
-	"forge_marker": 1,
-	"variants": {
-		"inventory": {
-			"model": "cfm:bird_bath"
-		},
-		"normal": {
-			"model": "cfm:bird_bath"
-		}
-	}
+  "variants": {
+    "normal": { "model": "cfm:bird_bath" },
+    "facing=north": { "model": "cfm:bird_bath", "y": 0 },
+    "facing=south": { "model": "cfm:bird_bath", "y": 180 },
+    "facing=west":  { "model": "cfm:bird_bath", "y": 270 },
+    "facing=east":  { "model": "cfm:bird_bath", "y": 90 },
+    "facing=up":    { "model": "cfm:bird_bath" },
+    "facing=down":  { "model": "cfm:bird_bath", "y": 180 }
+  }
 }

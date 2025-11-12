@@ -1,7 +1,8 @@
 {
-	"format_version": "1.21.6",
+	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
 	"textures": {
+		"1": "blocks/water_still",
 		"2": "blocks/stone",
 		"particle": "blocks/stone"
 	},
@@ -88,6 +89,19 @@
 				"west": {"uv": [0, 12.8, 16, 14.4], "texture": "#2"},
 				"up": {"uv": [14.4, 0, 16, 16], "texture": "#2"},
 				"down": {"uv": [14.4, 0, 16, 16], "texture": "#2"}
+			}
+		},
+		{
+			"from": [1.6, 12.8, 1.6],
+			"to": [14.4, 14, 14.4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6, 13, 7]},
+			"faces": {
+				"north": {"uv": [0, 0, 12.8, 1], "texture": "#1"},
+				"east": {"uv": [0, 0, 12.8, 1], "texture": "#1"},
+				"south": {"uv": [0, 0, 12.8, 1], "texture": "#1"},
+				"west": {"uv": [0, 0, 12.8, 1], "texture": "#1"},
+				"up": {"uv": [0, 0, 12.8, 12.8], "texture": "#1"},
+				"down": {"uv": [0, 0, 12.8, 12.8], "texture": "#1"}
 			}
 		}
 	],
