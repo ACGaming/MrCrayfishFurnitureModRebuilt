@@ -105,6 +105,7 @@ public class FurnitureBlocks
     public static final Block WATER_TANK_WATER_FULL;
     public static final Block CAMP_CHAIR;
     public static final Block BIRD_BATH_WATER;
+    public static final Block MODERN_OAK_STAIR;
 
     static
     {
@@ -345,6 +346,7 @@ public class FurnitureBlocks
         WATER_TANK_WATER_FULL = new BlockWaterTankWaterFull(Material.WOOD, "water_tank_water_full");
         CAMP_CHAIR = new BlockCampChair(Material.WOOD, "camp_chair");
         BIRD_BATH_WATER = new BlockBirdBathWater(Material.ROCK, "bird_bath_water");
+        MODERN_OAK_STAIR = new BlockModernOakStair("modern_oak_stair");
     }
 
     public static void register()
@@ -586,6 +588,7 @@ public class FurnitureBlocks
         registerBlock(WATER_TANK_WATER_FULL);
         registerBlock(CAMP_CHAIR);
         registerBlock(BIRD_BATH_WATER);
+        registerBlock(MODERN_OAK_STAIR);
     }
 
     public static void registerBlock(Block block)

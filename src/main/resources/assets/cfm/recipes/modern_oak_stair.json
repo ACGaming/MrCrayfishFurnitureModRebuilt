@@ -1,0 +1,22 @@
+{
+  "result": {
+    "item": "cfm:modern_oak_stair",
+    "count": 4
+  },
+  "pattern": [
+    "U  ",
+    "IU ",
+    " IU"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:planks",
+      "data": 0
+	  },
+    "U": {
+      "item": "minecraft:log",
+      "data": 0
+    }
+  }
+}
