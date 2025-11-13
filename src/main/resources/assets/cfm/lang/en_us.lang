@@ -43,6 +43,7 @@ item.item_light_bulb.name=Light Bulb
 item.item_trashbag.name=Trash Bag
 item.item_coin.name=Coin
 item.item_conserve_can.name=Conserve Can
+item.item_cat_food.name=Cat Food
 
 tile.table_oak.name=Oak Table
 tile.table_spruce.name=Spruce Table
@@ -506,7 +507,7 @@ tile.inflatable_castle.name=Inflatable Castle
 tile.castle_netting.name=Castle Netting
 tile.service_bell.name=Service Bell
 tile.bowl.name=Bowl
-tile.bowl_food.name=Bowl Food
+tile.bowl_food.name=Bowl Dog Food
 tile.bowl_water.name=Bowl Water
 tile.animal_bed.name=Animal Bed
 tile.animal_sofa.name=Animal Sofa
@@ -517,6 +518,8 @@ tile.bird_house.name=Bird House
 tile.small_light.name=Small Light
 tile.bowl_food_secret.name=§e§lBowl Food Secret
 tile.modern_oak_stair.name=Modern Oak Stair
+tile.bowl_cat_food.name=Bowl Cat Food
+tile.food_dispenser.name=Food Dispenser
 
 tile.bedside_cabinet_biomesoplenty_cherry.name=Cherry Bedside Cabinet
 tile.blinds_biomesoplenty_cherry_closed.name=Cherry Blinds

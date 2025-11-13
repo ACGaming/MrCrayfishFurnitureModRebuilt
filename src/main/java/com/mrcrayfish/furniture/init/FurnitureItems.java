@@ -64,6 +64,7 @@ public class FurnitureItems
     public static final Item LIGHT_BULB;
     public static final Item TRASH_BAG;
     public static final Item COIN;
+    public static final Item CAT_FOOD;
 
     static
     {
@@ -98,7 +99,8 @@ public class FurnitureItems
         CEILING_FAN_FANS = new ItemGeneric().setTranslationKey("ceiling_fan_fans").setRegistryName("ceiling_fan_fans");
         TV_REMOTE = new ItemTVRemote();
         WHEEL = new ItemGeneric().setTranslationKey("item_wheel").setRegistryName("item_wheel");
-        DOG_FOOD = new ItemFood(4, 0.3F, true).setPotionEffect(new PotionEffect(MobEffects.NAUSEA, 100, 0), 1.0F).setTranslationKey("item_dog_food").setRegistryName("item_dog_food").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
+        DOG_FOOD = new ItemGeneric().setTranslationKey("item_dog_food").setRegistryName("item_dog_food");
+        CAT_FOOD = new ItemGeneric().setTranslationKey("item_cat_food").setRegistryName("item_cat_food");
         CONSERVE_CAN = new ItemGeneric().setTranslationKey("item_conserve_can").setRegistryName("item_conserve_can");
         LIGHT_BULB = new ItemGeneric().setTranslationKey("item_light_bulb").setRegistryName("item_light_bulb");
         TRASH_BAG = new ItemGeneric().setTranslationKey("item_trashbag").setRegistryName("item_trashbag");
@@ -139,6 +141,7 @@ public class FurnitureItems
         registerItem(TV_REMOTE);
         registerItem(WHEEL);
         registerItem(DOG_FOOD);
+        registerItem(CAT_FOOD);
         registerItem(CONSERVE_CAN);
         registerItem(LIGHT_BULB);
         registerItem(TRASH_BAG);

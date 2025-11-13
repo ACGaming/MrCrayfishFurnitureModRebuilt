@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "normal": { "model": "cfm:food_dispenser" },
+    "facing=north": { "model": "cfm:food_dispenser", "y": 0 },
+    "facing=south": { "model": "cfm:food_dispenser", "y": 180 },
+    "facing=west":  { "model": "cfm:food_dispenser", "y": 270 },
+    "facing=east":  { "model": "cfm:food_dispenser", "y": 90 },
+    "facing=up":    { "model": "cfm:food_dispenser" },
+    "facing=down":  { "model": "cfm:food_dispenser", "y": 180 }
+  }
+}

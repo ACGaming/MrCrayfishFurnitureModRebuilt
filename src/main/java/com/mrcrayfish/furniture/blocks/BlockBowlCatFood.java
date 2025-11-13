@@ -1,7 +1,7 @@
 package com.mrcrayfish.furniture.blocks;
 
 import com.mrcrayfish.furniture.MrCrayfishFurnitureMod;
-import com.mrcrayfish.furniture.tileentity.TileEntityBowlFood;
+import com.mrcrayfish.furniture.tileentity.TileEntityBowlCatFood;
 import com.mrcrayfish.furniture.tileentity.TileEntityPlate;
 import net.minecraft.block.Block;
 import net.minecraft.block.ITileEntityProvider;
@@ -19,11 +19,11 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class BlockBowlFood extends Block implements ITileEntityProvider
+public class BlockBowlCatFood extends Block implements ITileEntityProvider
 {
     private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.125, 0.0, 0.125, 0.875, 0.315, 0.875);
 
-    public BlockBowlFood(Material material, String id)
+    public BlockBowlCatFood(Material material, String id)
     {
         super(Material.IRON);
         setTickRandomly(true);
@@ -77,6 +77,6 @@ public class BlockBowlFood extends Block implements ITileEntityProvider
 
     @Override
     public TileEntity createTileEntity(World world, IBlockState state) {
-        return new TileEntityBowlFood();
+        return new TileEntityBowlCatFood();
     }
 }

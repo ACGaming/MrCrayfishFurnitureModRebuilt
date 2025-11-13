@@ -1,0 +1,33 @@
+{
+  "result": {
+    "item": "cfm:food_dispenser"
+  },
+  "pattern": [
+    " , ",
+    "_*-",
+    "UIU"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_block"
+	  },
+    "*": {
+      "item": "minecraft:redstone"
+    },
+    "_": {
+      "item": "minecraft:comparator"
+    },
+    "-": {
+      "item": "minecraft:repeater"
+    },
+    ",": {
+      "item": "minecraft:glass",
+      "data": 0
+    },
+    "U": {
+      "item": "minecraft:concrete",
+      "data": 0
+    }
+  }
+}
