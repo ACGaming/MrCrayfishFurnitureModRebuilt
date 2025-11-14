@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "normal": { "model": "cfm:pet_couch" },
+    "facing=north": { "model": "cfm:pet_couch", "y": 180 },
+    "facing=south": { "model": "cfm:pet_couch" },
+    "facing=west":  { "model": "cfm:pet_couch", "y": 90 },
+    "facing=east":  { "model": "cfm:pet_couch", "y": 270 },
+    "facing=up":    { "model": "cfm:pet_couch" },
+    "facing=down":  { "model": "cfm:pet_couch", "y": 180 }
+  }
+}

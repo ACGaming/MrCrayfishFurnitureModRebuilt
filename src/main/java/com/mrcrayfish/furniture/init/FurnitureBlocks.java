@@ -94,8 +94,8 @@ public class FurnitureBlocks
     public static final Block BOWL;
     public static final Block BOWL_FOOD;
     public static final Block BOWL_WATER;
-    public static final Block ANIMAL_BED;
-    public static final Block ANIMAL_SOFA;
+    public static final Block PET_BED;
+    public static final Block PET_COUCH;
     public static final Block PIXEL_BOX;
     public static final Block WATER_TANK;
     public static final Block BIRD_HOUSE;
@@ -332,8 +332,8 @@ public class FurnitureBlocks
         BOWL = new BlockBowl(Material.IRON, "bowl");
         BOWL_FOOD = new BlockBowl(Material.IRON, "bowl_food");
         BOWL_WATER = new BlockBowl(Material.IRON, "bowl_water");
-        ANIMAL_BED = new BlockAnimalBed(Material.WOOD, "animal_bed");
-        ANIMAL_SOFA = new BlockAnimalSofa(Material.WOOD, "animal_sofa");
+        PET_BED = new BlockPetBed(Material.WOOD, "pet_bed");
+        PET_COUCH = new BlockPetCouch(Material.WOOD, "pet_couch");
         PIXEL_BOX = new BlockPixelBox(Material.IRON, "pixel_box");
         WATER_TANK = new BlockWaterTank(Material.WOOD, "water_tank");
         BIRD_HOUSE = new BlockBirdHouse(Material.WOOD, "bird_house");
@@ -571,8 +571,8 @@ public class FurnitureBlocks
         registerBlock(BOWL);
         registerBlock(BOWL_FOOD);
         registerBlock(BOWL_WATER);
-        registerBlock(ANIMAL_BED);
-        registerBlock(ANIMAL_SOFA);
+        registerBlock(PET_BED);
+        registerBlock(PET_COUCH);
         registerBlock(PIXEL_BOX);
         registerBlock(WATER_TANK);
         registerBlock(BIRD_HOUSE);

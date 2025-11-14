@@ -1,11 +1,11 @@
 {
   "result": {
-    "item": "cfm:animal_bed"
+    "item": "cfm:pet_couch"
   },
   "pattern": [
-    "   ",
     "***",
-    "YYY"
+    "YYY",
+    "Y Y"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
