@@ -506,15 +506,14 @@ tile.inflatable_castle.name=Inflatable Castle
 tile.castle_netting.name=Castle Netting
 tile.service_bell.name=Service Bell
 tile.bowl.name=Bowl
-tile.bowl_food.name=Bowl Food
-tile.bowl_water.name=Bowl Water
+tile.bowl_food.name=Food Bowl Food
+tile.bowl_water.name=Water Bowl
 tile.animal_bed.name=Animal Bed
 tile.animal_sofa.name=Animal Sofa
 tile.pixel_box.name=Pixel Box
-tile.water_tank.name=Water Tank
 tile.bird_house.name=Bird House
 tile.small_light.name=Small Light
-tile.bowl_food_secret.name=§e§lBowl Food Secret
+tile.bowl_food_secret.name=§e§lSecret Food Bowl
 
 tile.bedside_cabinet_biomesoplenty_cherry.name=Cherry Bedside Cabinet
 tile.blinds_biomesoplenty_cherry_closed.name=Cherry Blinds
@@ -956,12 +955,12 @@ cfm.message.tap_blocked=Something is blocking the tap.
 cfm.message.tap_nowater=You need to have a water source under the block the tap is on to use it.
 cfm.message.toilet=Press %s for Farts.
 
-keys.cfm.category=MrCrayfish's Furniture Mod
+keys.cfm.category=MrCrayfish's Furniture Mod Rebuilt
 key.fart.desc=Fart
 
 death.block.electrocution=%s was zapped to death
 
-advancements.cfm.title=MrCrayfish's Furniture Mod
+advancements.cfm.title=MrCrayfish's Furniture Mod Rebuilt
 advancements.cfm.title.desc=All the advancements in the Furniture Mod
 advancements.cfm.install=You've been installed!
 advancements.cfm.install.desc=Thank you for installing MrCrayfish's Furniture Mod
