@@ -1,11 +1,31 @@
 {
+  "forge_marker": 1,
+  "defaults": {
+    "model": "cfm:water_tank"
+  },
   "variants": {
-    "normal": { "model": "cfm:water_tank" },
-    "facing=north": { "model": "cfm:water_tank", "y": 0 },
-    "facing=south": { "model": "cfm:water_tank", "y": 180 },
-    "facing=west":  { "model": "cfm:water_tank", "y": 270 },
-    "facing=east":  { "model": "cfm:water_tank", "y": 90 },
-    "facing=up":    { "model": "cfm:water_tank" },
-    "facing=down":  { "model": "cfm:water_tank", "y": 180 }
+    "facing": {
+      "north": {"y": 0},
+      "south": {"y": 180},
+      "east": {"y": 90},
+      "west": {"y": 270}
+    },
+    "level": {
+      "0": {"model": "cfm:water_tank"},
+      "1": {"model": "cfm:water_tank_half"},
+      "2": {"model": "cfm:water_tank_full"}
+    },
+    "facing=north,level=0": {"model": "cfm:water_tank", "y": 0},
+    "facing=north,level=1": {"model": "cfm:water_tank_half", "y": 0},
+    "facing=north,level=2": {"model": "cfm:water_tank_full", "y": 0},
+    "facing=south,level=0": {"model": "cfm:water_tank", "y": 180},
+    "facing=south,level=1": {"model": "cfm:water_tank_half", "y": 180},
+    "facing=south,level=2": {"model": "cfm:water_tank_full", "y": 180},
+    "facing=west,level=0": {"model": "cfm:water_tank", "y": 270},
+    "facing=west,level=1": {"model": "cfm:water_tank_half", "y": 270},
+    "facing=west,level=2": {"model": "cfm:water_tank_full", "y": 270},
+    "facing=east,level=0": {"model": "cfm:water_tank", "y": 90},
+    "facing=east,level=1": {"model": "cfm:water_tank_half", "y": 90},
+    "facing=east,level=2": {"model": "cfm:water_tank_full", "y": 90}
   }
 }
