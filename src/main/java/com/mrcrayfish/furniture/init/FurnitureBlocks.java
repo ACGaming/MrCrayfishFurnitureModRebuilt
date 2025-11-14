@@ -330,8 +330,8 @@ public class FurnitureBlocks
         CASTLE_NETTING = new BlockCastleNetting("castle_netting");
         SERVICE_BELL = new BlockServiceBell(Material.IRON, "service_bell");
         BOWL = new BlockBowl(Material.IRON, "bowl");
-        BOWL_FOOD = new BlockBowlFood(Material.IRON, "bowl_food");
-        BOWL_WATER = new BlockBowlWater(Material.IRON, "bowl_water");
+        BOWL_FOOD = new BlockBowl(Material.IRON, "bowl_food");
+        BOWL_WATER = new BlockBowl(Material.IRON, "bowl_water");
         ANIMAL_BED = new BlockAnimalBed(Material.WOOD, "animal_bed");
         ANIMAL_SOFA = new BlockAnimalSofa(Material.WOOD, "animal_sofa");
         PIXEL_BOX = new BlockPixelBox(Material.IRON, "pixel_box");
