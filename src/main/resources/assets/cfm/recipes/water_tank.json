@@ -1,0 +1,24 @@
+{
+  "result": {
+    "item": "cfm:water_tank"
+  },
+  "pattern": [
+    "   ",
+    "-U-",
+    "III"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:planks",
+      "data": 0
+	  },
+    "-": {
+      "item": "minecraft:iron_ingot"
+    },
+    "U": {
+      "item": "minecraft:log",
+      "data": 0
+    }
+  }
+}
