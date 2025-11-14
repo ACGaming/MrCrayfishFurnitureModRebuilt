@@ -1,7 +1,6 @@
 {
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
-	"parent": "PixelBoxModel",
 	"textures": {
 		"0": "cfm:blocks/model_block_dark",
 		"1": "cfm:blocks/on_1",

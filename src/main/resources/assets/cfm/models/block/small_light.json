@@ -1,7 +1,6 @@
 {
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench by MisterIceCat",
-	"parent": "SmallLight",
 	"textures": {
 		"0": "cfm:blocks/model_block_light",
 		"1": "cfm:blocks/fridge_light",
