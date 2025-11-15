@@ -94,20 +94,13 @@ public class FurnitureBlocks
     public static final Block BOWL;
     public static final Block BOWL_FOOD;
     public static final Block BOWL_WATER;
-    public static final Block ANIMAL_BED;
-    public static final Block ANIMAL_SOFA;
+    public static final Block PET_BED;
+    public static final Block PET_COUCH;
     public static final Block PIXEL_BOX;
     public static final Block WATER_TANK;
     public static final Block BIRD_HOUSE;
     public static final Block SMALL_LIGHT;
     public static final Block BOWL_FOOD_SECRET;
-    public static final Block WATER_TANK_WATER;
-    public static final Block WATER_TANK_WATER_FULL;
-    public static final Block CAMP_CHAIR;
-    public static final Block BIRD_BATH_WATER;
-    public static final Block MODERN_OAK_STAIR;
-    public static final Block BOWL_CAT_FOOD;
-    public static final Block FOOD_DISPENSER;
 
     static
     {
@@ -335,22 +328,15 @@ public class FurnitureBlocks
         CASTLE_NETTING = new BlockCastleNetting("castle_netting");
         SERVICE_BELL = new BlockServiceBell(Material.IRON, "service_bell");
         BOWL = new BlockBowl(Material.IRON, "bowl");
-        BOWL_FOOD = new BlockBowlFood(Material.IRON, "bowl_food");
-        BOWL_WATER = new BlockBowlWater(Material.IRON, "bowl_water");
-        ANIMAL_BED = new BlockAnimalBed(Material.WOOD, "animal_bed");
-        ANIMAL_SOFA = new BlockAnimalSofa(Material.WOOD, "animal_sofa");
+        BOWL_FOOD = new BlockBowl(Material.IRON, "bowl_food");
+        BOWL_WATER = new BlockBowl(Material.IRON, "bowl_water");
+        PET_BED = new BlockPetBed(Material.WOOD, "pet_bed");
+        PET_COUCH = new BlockPetCouch(Material.WOOD, "pet_couch");
         PIXEL_BOX = new BlockPixelBox(Material.IRON, "pixel_box");
         WATER_TANK = new BlockWaterTank(Material.WOOD, "water_tank");
         BIRD_HOUSE = new BlockBirdHouse(Material.WOOD, "bird_house");
         SMALL_LIGHT = new BlockSmallLight(Material.IRON, "small_light");
         BOWL_FOOD_SECRET = new BlockBowlFoodSecret(Material.IRON, "bowl_food_secret");
-        WATER_TANK_WATER = new BlockWaterTankWater(Material.WOOD, "water_tank_water");
-        WATER_TANK_WATER_FULL = new BlockWaterTankWaterFull(Material.WOOD, "water_tank_water_full");
-        CAMP_CHAIR = new BlockCampChair(Material.WOOD, "camp_chair");
-        BIRD_BATH_WATER = new BlockBirdBathWater(Material.ROCK, "bird_bath_water");
-        MODERN_OAK_STAIR = new BlockModernOakStair("modern_oak_stair");
-        BOWL_CAT_FOOD = new BlockBowlCatFood(Material.IRON, "bowl_cat_food");
-        FOOD_DISPENSER = new BlockFoodDispenser(Material.IRON, "food_dispenser");
     }
 
     public static void register()
@@ -581,20 +567,13 @@ public class FurnitureBlocks
         registerBlock(BOWL);
         registerBlock(BOWL_FOOD);
         registerBlock(BOWL_WATER);
-        registerBlock(ANIMAL_BED);
-        registerBlock(ANIMAL_SOFA);
+        registerBlock(PET_BED);
+        registerBlock(PET_COUCH);
         registerBlock(PIXEL_BOX);
         registerBlock(WATER_TANK);
         registerBlock(BIRD_HOUSE);
         registerBlock(SMALL_LIGHT);
         registerBlock(BOWL_FOOD_SECRET);
-        registerBlock(WATER_TANK_WATER);
-        registerBlock(WATER_TANK_WATER_FULL);
-        registerBlock(CAMP_CHAIR);
-        registerBlock(BIRD_BATH_WATER);
-        registerBlock(MODERN_OAK_STAIR);
-        registerBlock(BOWL_CAT_FOOD);
-        registerBlock(FOOD_DISPENSER);
     }
 
     public static void registerBlock(Block block)
