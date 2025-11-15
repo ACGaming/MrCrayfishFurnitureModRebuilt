@@ -3,7 +3,7 @@
     "defaults": {
         "textures": {
             "top": "blocks/concrete_silver",
-            "primary": "blocks/log_acacia",
+            "primary": "cfm:blocks/acacia_wood",
             "secondary": "blocks/planks_acacia"
         }
     },

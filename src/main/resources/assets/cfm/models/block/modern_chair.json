@@ -2,7 +2,7 @@
 	"format_version": "1.21.6",
 	"credit": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
 	"textures": {
-		"0": "blocks/concrete_silver",
+		"0": "blocks/concrete_gray",
 		"1": "blocks/concrete_white",
 		"2": "blocks/wool_colored_white",
 		"particle": "blocks/concrete_silver"

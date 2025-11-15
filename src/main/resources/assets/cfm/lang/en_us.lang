@@ -43,6 +43,7 @@ item.item_light_bulb.name=Light Bulb
 item.item_trashbag.name=Trash Bag
 item.item_coin.name=Coin
 item.item_conserve_can.name=Conserve Can
+item.item_cat_food.name=Cat Food
 
 tile.table_oak.name=Oak Table
 tile.table_spruce.name=Spruce Table

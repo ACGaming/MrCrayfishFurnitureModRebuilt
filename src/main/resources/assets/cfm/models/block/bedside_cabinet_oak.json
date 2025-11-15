@@ -1,7 +1,7 @@
 {
 	"parent": "cfm:block/bedside_cabinet",
 	"textures": {
-		"1": "blocks/log_oak",
+		"1": "cfm:blocks/oak_wood",
 		"2": "blocks/planks_oak"
 	}
 }

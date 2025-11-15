@@ -2,7 +2,7 @@
 	"forge_marker": 1,
 	"defaults": {
 		"textures": {
-			"1": "blocks/log_big_oak",
+			"1": "cfm:blocks/dark_oak_wood",
 			"2": "blocks/planks_big_oak",
 			"handle": "blocks/planks_big_oak"
 		},
