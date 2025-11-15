@@ -574,8 +574,10 @@ public class FurnitureBlocks
         registerBlock(INFLATABLE_CASTLE, new ItemColored(INFLATABLE_CASTLE));
         registerBlock(CASTLE_NETTING);
         registerBlock(SERVICE_BELL);
+        registerBlock(FOOD_DISPENSER);
         registerBlock(BOWL);
         registerBlock(BOWL_FOOD);
+        registerBlock(BOWL_CAT_FOOD);
         registerBlock(BOWL_WATER);
         registerBlock(PET_BED);
         registerBlock(PET_COUCH);
@@ -583,7 +585,9 @@ public class FurnitureBlocks
         registerBlock(WATER_TANK);
         registerBlock(BIRD_HOUSE);
         registerBlock(SMALL_LIGHT);
+        registerBlock(MODERN_OAK_STAIR);
         registerBlock(BOWL_FOOD_SECRET);
+        registerBlock(CAMP_CHAIR);
     }
 
     public static void registerBlock(Block block)
