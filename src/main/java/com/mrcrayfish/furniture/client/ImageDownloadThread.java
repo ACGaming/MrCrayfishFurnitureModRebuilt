@@ -74,7 +74,7 @@ public class ImageDownloadThread extends Thread
         try
         {
             URLConnection connection = uri.toURL().openConnection();
-            connection.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0");
+            connection.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.166 Safari/537.36");
 
             if(uri.toString().contains("imgur.com"))
             {
