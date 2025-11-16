@@ -28,8 +28,8 @@ public class EntityMirror extends Entity
         super(worldIn);
         this.facing = facing.getHorizontalIndex();
         this.noClip = true;
-        this.height = 0.001F;
-        this.width = 0.001F;
+        this.height = 0.000F;
+        this.width = 0.000F;
         setPostionConsideringRotation(x, y, z, facing.getHorizontalIndex());
     }
 

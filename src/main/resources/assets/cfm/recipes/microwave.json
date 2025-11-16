@@ -3,23 +3,25 @@
     "item": "cfm:microwave"
   },
   "pattern": [
-    "IIQ",
-    "GGB",
-    "IIQ"
+    "GG_",
+    ",,*",
+    "GG-"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
-    "Q": {
-      "item": "minecraft:quartz_block",
-      "data": 0
+    "*": {
+      "item": "minecraft:redstone"
     },
-    "B": {
-      "item": "minecraft:stone_button"
+    "-": {
+      "item": "minecraft:repeater"
     },
-    "G": {
+    "_": {
+      "item": "minecraft:comparator"
+    },
+    ",": {
       "item": "minecraft:glass_pane"
     },
-    "I": {
+    "G": {
       "item": "minecraft:iron_ingot"
     }
   }
