@@ -23,11 +23,11 @@
       "item": "minecraft:repeater"
     },
     "C": {
-      "item": "minecraft:stained_hardened_clay",
-      "data": 9
+      "item": "minecraft:concrete",
+      "data": 0
     },
     "F": {
-      "item": "minecraft:furnace"
+      "item": "minecraft:iron_block"
     }
   }
 }

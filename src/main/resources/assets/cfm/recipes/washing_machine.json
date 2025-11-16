@@ -4,17 +4,23 @@
   },
   "pattern": [
     "QQQ",
-    "QGQ",
+    "*G-",
     "QFQ"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
     "Q": {
-      "item": "minecraft:quartz_block",
+      "item": "minecraft:concrete",
       "data": 0
     },
     "F": {
-      "item": "minecraft:furnace"
+      "item": "minecraft:iron_block"
+    },
+    "*": {
+      "item": "minecraft:redstone"
+    },
+    "-": {
+      "item": "minecraft:repeater"
     },
     "G": {
       "item": "minecraft:glass_pane"
