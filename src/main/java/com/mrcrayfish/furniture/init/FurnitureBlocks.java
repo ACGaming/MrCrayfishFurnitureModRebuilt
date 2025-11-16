@@ -584,6 +584,7 @@ public class FurnitureBlocks
         registerBlock(PIXEL_BOX);
         registerBlock(WATER_TANK);
         registerBlock(BIRD_HOUSE);
+        registerBlock(BIRD_BATH_WATER);
         registerBlock(SMALL_LIGHT);
         registerBlock(MODERN_OAK_STAIR);
         registerBlock(BOWL_FOOD_SECRET);
