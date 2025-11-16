@@ -18,7 +18,7 @@
             "item": "minecraft:chest"
         },
         "H": {
-            "item": "minecraft:stained_hardened_clay",
+            "item": "minecraft:concrete",
             "data": 3
         }
     }
