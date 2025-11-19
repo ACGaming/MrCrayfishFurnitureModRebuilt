@@ -10,7 +10,7 @@
     "type": "minecraft:crafting_shaped",
     "key": {
         "S": {
-            "item": "minecraft:sea_lantern"
+            "item": "cfm:item_light_bulb"
         },
         "I": {
             "item": "minecraft:iron_ingot"
