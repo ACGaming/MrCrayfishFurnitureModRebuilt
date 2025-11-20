@@ -3,23 +3,29 @@
     "item": "cfm:computer"
   },
   "pattern": [
-    "BRB",
-    "IGI",
-    "III"
+    "*1*",
+    "*2*",
+    "-:_"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
-    "G": {
+    "2": {
       "item": "minecraft:glass_pane"
     },
-    "R": {
+    "1": {
       "item": "minecraft:redstone"
     },
-    "I": {
+    "*": {
       "item": "minecraft:iron_ingot"
     },
-    "B": {
+    ":": {
       "item": "minecraft:iron_block"
+    },
+    "-": {
+      "item": "minecraft:repeater"
+    },
+    "_": {
+      "item": "minecraft:comparator"
     }
   }
 }
