@@ -10,8 +10,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "W": {
-      "item": "minecraft:wool",
-      "data": 15
+      "item": "minecraft:iron_ingot"
     },
     "G": {
       "item": "minecraft:glass_pane"
