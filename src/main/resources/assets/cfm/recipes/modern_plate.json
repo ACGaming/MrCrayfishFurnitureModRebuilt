@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "cfm:modern_plate"
+  },
+  "pattern": [
+    "Q Q",
+    " Q "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "Q": {
+      "item": "minecraft:concrete",
+      "data": 0
+    }
+  }
+}

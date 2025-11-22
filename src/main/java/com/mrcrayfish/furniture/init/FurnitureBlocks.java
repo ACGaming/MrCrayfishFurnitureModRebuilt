@@ -102,6 +102,11 @@ public class FurnitureBlocks
     public static final Block SMALL_LIGHT;
     public static final Block BOWL_FOOD_SECRET;
     public static final Block CAMP_CHAIR;
+    public static final Block CAMP_CHAIR_SPRUCE;
+    public static final Block CAMP_CHAIR_BIRCH;
+    public static final Block CAMP_CHAIR_JUNGLE;
+    public static final Block CAMP_CHAIR_ACACIA;
+    public static final Block CAMP_CHAIR_DARK_OAK;
     public static final Block BIRD_BATH_WATER;
     public static final Block MODERN_OAK_STAIR;
     public static final Block BOWL_CAT_FOOD;
@@ -346,6 +351,11 @@ public class FurnitureBlocks
         SMALL_LIGHT = new BlockSmallLight(Material.IRON, "small_light");
         BOWL_FOOD_SECRET = new BlockBowlFoodSecret(Material.IRON, "bowl_food_secret");
         CAMP_CHAIR = new BlockCampChair(Material.WOOD, "camp_chair");
+        CAMP_CHAIR_SPRUCE = new BlockCampChair(Material.WOOD, "camp_chair_spruce");
+        CAMP_CHAIR_BIRCH = new BlockCampChair(Material.WOOD, "camp_chair_birch");
+        CAMP_CHAIR_JUNGLE = new BlockCampChair(Material.WOOD, "camp_chair_jungle");
+        CAMP_CHAIR_ACACIA = new BlockCampChair(Material.WOOD, "camp_chair_acacia");
+        CAMP_CHAIR_DARK_OAK = new BlockCampChair(Material.WOOD, "camp_chair_dark_oak");
         BIRD_BATH_WATER = new BlockBirdBathWater(Material.ROCK, "bird_bath_water");
         MODERN_OAK_STAIR = new BlockModernOakStair("modern_oak_stair");
     }
@@ -591,6 +601,11 @@ public class FurnitureBlocks
         registerBlock(MODERN_OAK_STAIR);
         registerBlock(BOWL_FOOD_SECRET);
         registerBlock(CAMP_CHAIR);
+        registerBlock(CAMP_CHAIR_SPRUCE);
+        registerBlock(CAMP_CHAIR_BIRCH);
+        registerBlock(CAMP_CHAIR_JUNGLE);
+        registerBlock(CAMP_CHAIR_ACACIA);
+        registerBlock(CAMP_CHAIR_DARK_OAK);
     }
 
     public static void registerBlock(Block block)

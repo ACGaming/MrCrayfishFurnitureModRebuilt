@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "cfm:camp_chair_birch"
+  },
+  "pattern": [
+    "   ",
+    " I ",
+    "UUU"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:carpet",
+      "data": 0
+	  },
+    "U": {
+      "item": "minecraft:log",
+      "data": 2
+    }
+  }
+}

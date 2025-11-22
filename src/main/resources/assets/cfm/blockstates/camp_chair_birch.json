@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "normal": { "model": "cfm:camp_chair_birch" },
+    "facing=north": { "model": "cfm:camp_chair_birch", "y": 0 },
+    "facing=south": { "model": "cfm:camp_chair_birch", "y": 180 },
+    "facing=west":  { "model": "cfm:camp_chair_birch", "y": 270 },
+    "facing=east":  { "model": "cfm:camp_chair_birch", "y": 90 },
+    "facing=up":    { "model": "cfm:camp_chair_birch" },
+    "facing=down":  { "model": "cfm:camp_chair_birch", "y": 180 }
+  }
+}
