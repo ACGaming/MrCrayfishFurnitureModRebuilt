@@ -41,7 +41,7 @@ public class FurnitureBlocks
     /* Kitchen Update */
     public static final Block TOASTER, MICROWAVE, BLENDER, WASHING_MACHINE, DISHWASHER;
     public static final Block COUNTER, COUNTER_SINK, KITCHEN_CABINET;
-    public static final Block CUP, BOTTLE, PLATE, COOKIE_JAR, BAR_STOOL, CHOPPING_BOARD;
+    public static final Block CUP, BOTTLE, PLATE, COOKIE_JAR, BAR_STOOL, CHOPPING_BOARD, MODERN_PLATE;
 
     /* Christmas Update */
     public static final Block PRESENT, TREE_BOTTOM, TREE_TOP;
@@ -222,6 +222,7 @@ public class FurnitureBlocks
         CUP = new BlockCup(Material.GLASS, "cup");
         BOTTLE = new BlockBottle(Material.GLASS, "bottle");
         PLATE = new BlockPlate(Material.GLASS, "plate");
+        MODERN_PLATE = new BlockPlate(Material.GLASS, "modern_plate");
         COUNTER = new BlockCounter(Material.WOOD, "counter");
         COUNTER_SINK = new BlockCounterSink(Material.WOOD, "counter_sink");
         COUNTER_DRAWER = new BlockCounterDrawer(Material.WOOD, "counter_drawer");
@@ -482,6 +483,7 @@ public class FurnitureBlocks
         registerBlock(CUP, null);
         registerBlock(BOTTLE, null);
         registerBlock(PLATE);
+        registerBlock(MODERN_PLATE);
         registerBlock(COUNTER, new ItemBlockColored(COUNTER));
         registerBlock(COUNTER_SINK, new ItemBlockColored(COUNTER_SINK));
         registerBlock(COUNTER_DRAWER, new ItemBlockColored(COUNTER_DRAWER));

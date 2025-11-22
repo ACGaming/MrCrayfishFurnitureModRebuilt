@@ -519,6 +519,7 @@ tile.bowl_food_secret.name=§e§lSecret Food Bowl
 tile.modern_oak_stair.name=Modern Oak Stair
 tile.bowl_cat_food.name=Bowl Cat Food
 tile.food_dispenser.name=Food Dispenser
+tile.modern_plate.name=Modern Plate
 
 tile.bedside_cabinet_biomesoplenty_cherry.name=Cherry Bedside Cabinet
 tile.blinds_biomesoplenty_cherry_closed.name=Cherry Blinds
