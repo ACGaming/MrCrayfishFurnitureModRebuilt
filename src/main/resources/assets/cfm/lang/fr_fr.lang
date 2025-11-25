@@ -480,6 +480,29 @@ tile.park_bench_birch.name=Banc de Parc en Bouleau
 tile.park_bench_jungle.name=Banc de Parc en Acajou
 tile.park_bench_acacia.name=Banc de Parc en Acacia
 tile.park_bench_dark_oak.name=Banc de Parc en Chêne Noir
+tile.service_bell.name=Cloche
+tile.bowl.name=Bol
+tile.bowl_food.name=Bol de Croquettes pour Chien
+tile.bowl_water.name=Bol d'eau
+tile.pet_bed.name=Lit pour animaux
+tile.pet_couch.name=Canapé pour animaux
+tile.camp_chair.name=Siège en bûche de Chêne
+tile.camp_chair_spruce.name=Siège en bûche de Sapin
+tile.camp_chair_birch.name=Siège en bûche de Bouleau
+tile.camp_chair_jungle.name=Siège en bûche de Jungle
+tile.camp_chair_acacia.name=Siège en bûche d'Acacia
+tile.camp_chair_dark_oak.name=Siège en bûche de Chêne Sombre
+tile.bird_house.name=Maison pour Oiseaux en bois de Chêne
+tile.small_light.name=Petite Lumière
+tile.bowl_food_secret.name=§e§lBol de Croquettes Secret
+tile.modern_oak_stair.name=Escalier Moderne en bois de Chêne
+tile.bowl_cat_food.name=Bol de Croquettes pour Chat
+tile.food_dispenser.name=Distributeur de Croquettes
+tile.modern_plate.name=Assiette moderne
+
+
+
+
 
 cfm.info=Maintenez MAJ pour plus d'Infos
 cfm.light_switch.desc=Utilisez cet interrupteur pour controler sans fil les ventilateurs et les lampes murales ou de plafond
