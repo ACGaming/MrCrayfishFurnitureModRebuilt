@@ -10,8 +10,10 @@ import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
@@ -108,10 +110,12 @@ public class BlockRangeHood extends BlockFurniture
         if(this == FurnitureBlocks.RANGE_HOOD)
         {
             worldIn.setBlockState(pos, FurnitureBlocks.RANGE_HOOD_POWERED.getDefaultState().withProperty(FACING, state.getValue(FACING)));
+            worldIn.playSound(null, pos, SoundEvents.BLOCK_LEVER_CLICK, SoundCategory.BLOCKS, 0.3F, this == FurnitureBlocks.RANGE_HOOD ? 0.6F : 0.5F);
         }
         else if(this == FurnitureBlocks.RANGE_HOOD_POWERED)
         {
             worldIn.setBlockState(pos, FurnitureBlocks.RANGE_HOOD.getDefaultState().withProperty(FACING, state.getValue(FACING)));
+            worldIn.playSound(null, pos, SoundEvents.BLOCK_LEVER_CLICK, SoundCategory.BLOCKS, 0.3F, this == FurnitureBlocks.RANGE_HOOD ? 0.6F : 0.5F);
         }
         return true;
     }
