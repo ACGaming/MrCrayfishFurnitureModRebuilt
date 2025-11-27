@@ -149,7 +149,7 @@ public class ConfigurationHandler
         ender_5 = config.getBoolean("ender-5", CATEGORY_RECIPE_SETTINGS, ender_5, "1 Microwave for 20 Coin");
         ender_6 = config.getBoolean("ender-6", CATEGORY_RECIPE_SETTINGS, ender_6, "1 Blender for 16 Coin");
         ender_7 = config.getBoolean("ender-7", CATEGORY_RECIPE_SETTINGS, ender_7, "1 Toaster for 16 Coin");
-        ender_8 = config.getBoolean("ender-8", CATEGORY_RECIPE_SETTINGS, ender_8, "1 Bird Bath for 32 Coin");
+        ender_8 = config.getBoolean("ender-8", CATEGORY_RECIPE_SETTINGS, ender_8, "1 Bird Bath for 2 Coin");
         ender_9 = config.getBoolean("ender-9", CATEGORY_RECIPE_SETTINGS, ender_9, "1 Cookie Jar for 2 Coin");
         ender_10 = config.getBoolean("ender-10", CATEGORY_RECIPE_SETTINGS, ender_10, "2 Plate for 12 Coin");
         ender_11 = config.getBoolean("ender-11", CATEGORY_RECIPE_SETTINGS, ender_11, "1 Chopping Board for 8 Coin");
