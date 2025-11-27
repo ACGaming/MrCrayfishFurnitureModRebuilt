@@ -195,6 +195,7 @@ tile.shower_top.name=Shower
 tile.shower_head_off.name=Shower Head
 tile.shower_head_on.name=Shower Head (On)
 tile.bin.name=Bin
+tile.modern_bin.name=Modern Bin
 tile.wheelie_bin.name=Wheelie Bin
 tile.toaster.name=Toaster
 tile.microwave.name=Microwave

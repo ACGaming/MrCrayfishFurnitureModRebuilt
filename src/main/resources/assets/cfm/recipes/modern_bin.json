@@ -1,6 +1,6 @@
 {
   "result": {
-    "item": "cfm:bin"
+    "item": "cfm:modern_bin"
   },
   "pattern": [
     "B1B",
@@ -16,7 +16,9 @@
       "item": "cfm:item_trashbag"
     },
     "I": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:concrete",
+	  "data": 0
+	  
     }
   }
 }
