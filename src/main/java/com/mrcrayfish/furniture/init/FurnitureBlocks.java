@@ -64,7 +64,7 @@ public class FurnitureBlocks
     /* The Modern Update */
     public static final Block BEDSIDE_CABINET_STONE, BEDSIDE_CABINET_GRANITE, BEDSIDE_CABINET_DIORITE, BEDSIDE_CABINET_ANDESITE;
     public static final Block MODERN_WINDOW, MODERN_SLIDING_DOOR, MODERN_TV, MODERN_COUCH, MODERN_TABLE, MODERN_CHAIR, MODERN_BED_TOP, MODERN_BED_BOTTOM, MODERN_COFFEE_TABLE, MODERN_STAIRS, MODERN_TABLE_OUTDOOR;
-    public static final Block LIGHT_SWITCH_OFF, LIGHT_SWITCH_ON, MODERN_LIGHT_OFF, MODERN_LIGHT_ON;
+    public static final Block LIGHT_SWITCH_OFF, LIGHT_SWITCH_ON, MODERN_LIGHT_OFF, MODERN_LIGHT_ON, OLD_LIGHT_OFF, OLD_LIGHT_ON;
     public static final Block CEILING_FAN;
     public static final Block DESK_OAK, DESK_SPRUCE, DESK_BIRCH, DESK_JUNGLE, DESK_ACACIA, DESK_DARK_OAK, DESK_STONE, DESK_GRANITE, DESK_DIORITE, DESK_ANDESITE;
     public static final Block DESK_CABINET_OAK, DESK_CABINET_SPRUCE, DESK_CABINET_BIRCH, DESK_CABINET_JUNGLE, DESK_CABINET_ACACIA, DESK_CABINET_DARK_OAK, DESK_CABINET_STONE, DESK_CABINET_GRANITE, DESK_CABINET_DIORITE, DESK_CABINET_ANDESITE;
@@ -317,6 +317,8 @@ public class FurnitureBlocks
         MODERN_TABLE_OUTDOOR = new BlockModernTable("modern_table_outdoor");
         MODERN_LIGHT_OFF = new BlockModernLight("modern_light_off", false);
         MODERN_LIGHT_ON = new BlockModernLight("modern_light_on", true);
+        OLD_LIGHT_OFF = new BlockOldLight("old_light_off", false);
+        OLD_LIGHT_ON = new BlockOldLight("old_light_on", true);
         OAK_FENCE_UPGRADED = new BlockUpgradedFence("upgraded_fence_oak");
         SPRUCE_FENCE_UPGRADED = new BlockUpgradedFence("upgraded_fence_spruce");
         BIRCH_FENCE_UPGRADED = new BlockUpgradedFence("upgraded_fence_birch");
@@ -567,6 +569,8 @@ public class FurnitureBlocks
         registerBlock(TV_STAND);
         registerBlock(MODERN_LIGHT_OFF);
         registerBlock(MODERN_LIGHT_ON, null);
+        registerBlock(OLD_LIGHT_OFF);
+        registerBlock(OLD_LIGHT_ON, null);
         registerBlock(OAK_FENCE_UPGRADED);
         registerBlock(SPRUCE_FENCE_UPGRADED);
         registerBlock(BIRCH_FENCE_UPGRADED);
