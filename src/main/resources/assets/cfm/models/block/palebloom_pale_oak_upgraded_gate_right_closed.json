@@ -1,0 +1,14 @@
+{
+  "parent": "cfm:block/upgraded_gate_right_closed",
+  "textures": {
+    "log": "palebloom:blocks/pale_oak_log",
+    "plank": "palebloom:blocks/pale_oak_planks"
+  }
+}
+
+
+
+
+
+
+

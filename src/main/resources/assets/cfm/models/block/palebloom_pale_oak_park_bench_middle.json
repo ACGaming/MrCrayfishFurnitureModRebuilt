@@ -1,0 +1,14 @@
+{
+  "parent": "cfm:block/park_bench_middle",
+  "textures": {
+    "log": "palebloom:blocks/pale_oak_log",
+    "plank": "palebloom:blocks/pale_oak_planks"
+  }
+}
+
+
+
+
+
+
+

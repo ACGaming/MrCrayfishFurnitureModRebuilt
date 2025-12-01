@@ -1,0 +1,26 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "palebloom"
+    }
+  ],
+  "result": {
+    "item": "cfm:chair_palebloom_pale_oak"
+  },
+  "pattern": [
+    "*  ",
+    "***",
+    "* *"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "*": {
+      "item": "palebloom:pale_oak_planks",
+      "data": planks
+    }
+  }
+}
+
+
+

@@ -1,0 +1,16 @@
+{
+  "parent": "cfm:block/blinds_closed_stringless",
+  "textures": {
+    "particle": "palebloom:blocks/pale_oak_log",
+    "1": "palebloom:blocks/pale_oak_log",
+    "2": "palebloom:blocks/pale_oak_planks",
+    "3": "blocks/concrete_white"
+  }
+}
+
+
+
+
+
+
+

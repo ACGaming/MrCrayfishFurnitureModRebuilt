@@ -153,5 +153,9 @@ public class RegistrationHandler
         {
             FurnitureBlocksSuikecherry.register();
         }
+        if(Loader.isModLoaded("palebloom") && ConfigurationHandler.integrationPalebloom)
+        {
+            com.mrcrayfish.furniture.integration.palebloom.FurnitureBlocksPalebloom.register();
+        }
     }
 }

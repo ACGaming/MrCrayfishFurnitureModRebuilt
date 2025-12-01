@@ -1,0 +1,31 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "palebloom"
+    }
+  ],
+  "result": {
+    "item": "cfm:park_bench_palebloom_pale_oak",
+    "count": 2
+  },
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PPP",
+    "L L"
+  ],
+  "key": {
+    "P": {
+      "item": "palebloom:pale_oak_planks",
+      "data": planks
+    },
+    "L": {
+      "item": "palebloom:pale_oak_log",
+      "data": 0
+    }
+  }
+}
+
+
+
