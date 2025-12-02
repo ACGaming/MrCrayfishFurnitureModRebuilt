@@ -4,6 +4,7 @@ import com.mrcrayfish.furniture.Reference;
 import com.mrcrayfish.furniture.handler.ConfigurationHandler;
 import com.mrcrayfish.furniture.integration.biomesoplenty.FurnitureBlocksBOP;
 import com.mrcrayfish.furniture.integration.rustic.FurnitureBlocksRustic;
+import com.mrcrayfish.furniture.integration.suikecherry.FurnitureBlocksSuikecherry;
 import com.mrcrayfish.furniture.integration.thaumcraft.FurnitureBlocksThaumcraft;
 import com.mrcrayfish.furniture.items.SubItems;
 import net.minecraft.block.Block;
@@ -147,6 +148,14 @@ public class RegistrationHandler
         if(Loader.isModLoaded("rustic") && ConfigurationHandler.integrationRustic)
         {
             FurnitureBlocksRustic.register();
+        }
+        if(Loader.isModLoaded("suikecherry") && ConfigurationHandler.integrationSuiKeCherry)
+        {
+            FurnitureBlocksSuikecherry.register();
+        }
+        if(Loader.isModLoaded("palebloom") && ConfigurationHandler.integrationPalebloom)
+        {
+            com.mrcrayfish.furniture.integration.palebloom.FurnitureBlocksPalebloom.register();
         }
     }
 }

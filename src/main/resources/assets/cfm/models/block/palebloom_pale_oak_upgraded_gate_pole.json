@@ -1,0 +1,13 @@
+{
+  "parent": "cfm:block/gate_upgraded_pole",
+  "textures": {
+    "log": "palebloom:blocks/pale_oak_log"
+  }
+}
+
+
+
+
+
+
+

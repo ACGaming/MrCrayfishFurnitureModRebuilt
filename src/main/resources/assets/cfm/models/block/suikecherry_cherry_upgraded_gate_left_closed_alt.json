@@ -1,0 +1,14 @@
+{
+  "parent": "cfm:block/upgraded_gate_left_closed_alt",
+  "textures": {
+    "log": "suikecherry:blocks/cherry_log",
+    "plank": "suikecherry:blocks/cherry_planks"
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+{
+  "parent": "cfm:block/chair",
+  "textures": {
+    "1": "palebloom:blocks/pale_oak_planks",
+    "2": "palebloom:blocks/pale_oak_log"
+  }
+}
+
+
+
+
+
+
+
+

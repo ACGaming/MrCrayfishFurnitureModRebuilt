@@ -1,0 +1,30 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "palebloom"
+    }
+  ],
+  "result": {
+    "item": "cfm:crate_palebloom_pale_oak"
+  },
+  "pattern": [
+    "DOD",
+    "O O",
+    "DOD"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "D": {
+      "item": "palebloom:pale_oak_log",
+      "data": 0
+    },
+    "O": {
+      "item": "palebloom:pale_oak_planks",
+      "data": planks
+    }
+  }
+}
+
+
+

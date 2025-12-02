@@ -1,0 +1,27 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "palebloom"
+    }
+  ],
+  "result": {
+    "item": "cfm:door_bell_palebloom_pale_oak"
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:noteblock"
+    },
+    {
+      "item": "minecraft:stone_button"
+    },
+    {
+      "item": "palebloom:pale_oak_log",
+      "data": 0
+    }
+  ],
+  "type": "minecraft:crafting_shapeless"
+}
+
+
+

@@ -1,0 +1,30 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "palebloom"
+    }
+  ],
+  "result": {
+    "item": "cfm:blinds_palebloom_pale_oak_open",
+    "count": 2
+  },
+  "pattern": [
+    "LLL",
+    "SSS",
+    "SSS"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "L": {
+      "item": "palebloom:pale_oak_log",
+      "data": 0
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  }
+}
+
+
+

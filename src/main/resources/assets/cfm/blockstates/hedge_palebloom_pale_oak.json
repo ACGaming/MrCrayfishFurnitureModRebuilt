@@ -1,0 +1,24 @@
+{
+  "variants": {
+    "east=false,north=false,south=false,west=false": {"model": "cfm:hedge_none_palebloom_pale_oak", "uvlock": true},
+    "east=false,north=true,south=false,west=false": {"model": "cfm:hedge_one_palebloom_pale_oak", "uvlock": true},
+    "east=true,north=false,south=false,west=false": {"model": "cfm:hedge_one_palebloom_pale_oak", "y": 90, "uvlock": true},
+    "east=false,north=false,south=true,west=false": {"model": "cfm:hedge_one_palebloom_pale_oak", "y": 180, "uvlock": true},
+    "east=false,north=false,south=false,west=true": {"model": "cfm:hedge_one_palebloom_pale_oak", "y": 270, "uvlock": true},
+    "east=true,north=true,south=false,west=false": {"model": "cfm:hedge_two_palebloom_pale_oak", "uvlock": true},
+    "east=false,north=true,south=true,west=false": {"model": "cfm:hedge_two_alt_palebloom_pale_oak", "uvlock": true},
+    "east=false,north=true,south=false,west=true": {"model": "cfm:hedge_two_palebloom_pale_oak", "y": 270, "uvlock": true},
+    "east=true,north=false,south=false,west=true": {"model": "cfm:hedge_two_alt_palebloom_pale_oak", "y": 90, "uvlock": true},
+    "east=true,north=false,south=true,west=false": {"model": "cfm:hedge_two_palebloom_pale_oak", "y": 90, "uvlock": true},
+    "east=false,north=false,south=true,west=true": {"model": "cfm:hedge_two_palebloom_pale_oak", "y": 180, "uvlock": true},
+    "east=true,north=true,south=true,west=true": {"model": "cfm:hedge_four_palebloom_pale_oak", "uvlock": true},
+    "east=true,north=true,south=true,west=false": {"model": "cfm:hedge_three_palebloom_pale_oak", "uvlock": true},
+    "east=true,north=true,south=false,west=true": {"model": "cfm:hedge_three_palebloom_pale_oak", "y": 270, "uvlock": true},
+    "east=false,north=true,south=true,west=true": {"model": "cfm:hedge_three_palebloom_pale_oak", "y": 180, "uvlock": true},
+    "east=true,north=false,south=true,west=true": {"model": "cfm:hedge_three_palebloom_pale_oak", "y": 90, "uvlock": true},
+    "east=true,north=true,south=true,west=true": {"model": "cfm:hedge_all_palebloom_pale_oak", "uvlock": true}
+  }
+}
+
+
+

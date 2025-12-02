@@ -1,0 +1,30 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "suikecherry"
+    }
+  ],
+  "result": {
+    "item": "cfm:crate_suikecherry_cherry"
+  },
+  "pattern": [
+    "DOD",
+    "O O",
+    "DOD"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "D": {
+      "item": "suikecherry:cherry_log",
+      "data": 0
+    },
+    "O": {
+      "item": "suikecherry:cherry_planks",
+      "data": 0
+    }
+  }
+}
+
+
+

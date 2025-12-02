@@ -1,0 +1,14 @@
+{
+  "parent": "cfm:block/park_bench_right",
+  "textures": {
+    "log": "suikecherry:blocks/cherry_log",
+    "plank": "suikecherry:blocks/cherry_planks"
+  }
+}
+
+
+
+
+
+
+

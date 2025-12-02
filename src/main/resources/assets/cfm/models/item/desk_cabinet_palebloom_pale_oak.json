@@ -1,0 +1,15 @@
+{
+  "parent": "cfm:item/desk_cabinet",
+  "textures": {
+    "top": "blocks/hardened_clay_stained_black",
+    "primary": "palebloom:blocks/pale_oak_log",
+    "secondary": "palebloom:blocks/pale_oak_planks"
+  }
+}
+
+
+
+
+
+
+

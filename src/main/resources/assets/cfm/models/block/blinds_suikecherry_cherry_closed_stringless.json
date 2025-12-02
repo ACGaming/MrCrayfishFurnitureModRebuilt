@@ -1,0 +1,16 @@
+{
+  "parent": "cfm:block/blinds_closed_stringless",
+  "textures": {
+    "particle": "suikecherry:blocks/cherry_log",
+    "1": "suikecherry:blocks/cherry_log",
+    "2": "suikecherry:blocks/cherry_planks",
+    "3": "blocks/concrete_white"
+  }
+}
+
+
+
+
+
+
+

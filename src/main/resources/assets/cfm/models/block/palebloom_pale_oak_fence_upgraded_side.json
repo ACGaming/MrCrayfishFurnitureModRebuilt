@@ -1,0 +1,14 @@
+{
+  "parent": "cfm:block/fence_upgraded_side",
+  "textures": {
+    "plank": "palebloom:blocks/pale_oak_planks",
+    "log": "palebloom:blocks/pale_oak_log"
+  }
+}
+
+
+
+
+
+
+

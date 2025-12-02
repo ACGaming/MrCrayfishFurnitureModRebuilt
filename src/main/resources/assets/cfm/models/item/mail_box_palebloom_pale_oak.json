@@ -1,0 +1,15 @@
+{
+  "parent": "cfm:block/mail_box",
+  "textures": {
+    "primary": "palebloom:blocks/pale_oak_planks",
+    "secondary": "palebloom:blocks/pale_oak_log"
+  }
+}
+
+
+
+
+
+
+
+

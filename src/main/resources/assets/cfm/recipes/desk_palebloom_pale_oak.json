@@ -1,0 +1,30 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "palebloom"
+    }
+  ],
+  "result": {
+    "item": "cfm:desk_palebloom_pale_oak"
+  },
+  "pattern": [
+    "LLL",
+    "P P",
+    "P P"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "L": {
+      "item": "palebloom:pale_oak_log",
+      "data": 0
+    },
+    "P": {
+      "item": "palebloom:pale_oak_planks",
+      "data": planks
+    }
+  }
+}
+
+
+

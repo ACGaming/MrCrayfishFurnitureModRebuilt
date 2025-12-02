@@ -1,0 +1,15 @@
+{
+  "parent": "cfm:block/mail_box",
+  "textures": {
+    "primary": "suikecherry:blocks/cherry_planks",
+    "secondary": "suikecherry:blocks/cherry_log"
+  }
+}
+
+
+
+
+
+
+
+

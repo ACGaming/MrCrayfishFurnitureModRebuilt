@@ -1,0 +1,27 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "suikecherry"
+    }
+  ],
+  "result": {
+    "item": "cfm:door_bell_suikecherry_cherry"
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:noteblock"
+    },
+    {
+      "item": "minecraft:stone_button"
+    },
+    {
+      "item": "suikecherry:cherry_log",
+      "data": 0
+    }
+  ],
+  "type": "minecraft:crafting_shapeless"
+}
+
+
+

@@ -1,0 +1,33 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "palebloom"
+    }
+  ],
+  "result": {
+    "item": "cfm:mail_box_palebloom_pale_oak"
+  },
+  "pattern": [
+    "LBL",
+    "PPP",
+    " P "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "minecraft:book"
+    },
+    "P": {
+      "item": "palebloom:pale_oak_planks",
+      "data": planks
+    },
+    "L": {
+      "item": "palebloom:pale_oak_log",
+      "data": 0
+    }
+  }
+}
+
+
+

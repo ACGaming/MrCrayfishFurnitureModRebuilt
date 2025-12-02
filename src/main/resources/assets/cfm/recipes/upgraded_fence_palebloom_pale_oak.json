@@ -1,0 +1,31 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "palebloom"
+    }
+  ],
+  "result": {
+    "item": "cfm:upgraded_fence_palebloom_pale_oak",
+    "count": 8
+  },
+  "pattern": [
+    "FFF",
+    "FLF",
+    "FFF"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "F": {
+      "item": "palebloom:pale_oak_fence",
+      "data": 0
+    },
+    "L": {
+      "item": "palebloom:pale_oak_log",
+      "data": 0
+    }
+  }
+}
+
+
+

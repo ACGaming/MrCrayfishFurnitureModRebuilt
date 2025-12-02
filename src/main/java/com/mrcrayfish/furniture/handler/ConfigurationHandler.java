@@ -24,6 +24,8 @@ public class ConfigurationHandler
     public static boolean integrationBiomesOPlenty = true;
     public static boolean integrationRustic = true;
     public static boolean integrationThaumcraft = true;
+    public static boolean integrationSuiKeCherry = true;
+    public static boolean integrationPalebloom = true;
     public static boolean mirrorEnabled = true;
     public static float mirrorFov = 80F;
     public static int mirrorQuality = 64;
@@ -83,6 +85,10 @@ public class ConfigurationHandler
         integrationRustic = config.getBoolean("integration-rustic", CATEGORY_INTEGRATION_SETTINGS, true, "Whether furniture with support for Rustic should be enabled.");
 
         integrationThaumcraft = config.getBoolean("integration-Thaumcraft", CATEGORY_INTEGRATION_SETTINGS, true, "Whether furniture with support for Thaumcraft should be enabled.");
+
+        integrationSuiKeCherry = config.getBoolean("integration-SuiKeCherry", CATEGORY_INTEGRATION_SETTINGS, true, "Whether furniture with support for SuiKeCherry should be enabled.");
+
+        integrationPalebloom = config.getBoolean("integration-palebloom", CATEGORY_INTEGRATION_SETTINGS, true, "Whether furniture with support for Palebloom should be enabled.");
 
         items = config.getStringList("custom-recipes", CATEGORY_API, items, "Insert custom recipes here");
 

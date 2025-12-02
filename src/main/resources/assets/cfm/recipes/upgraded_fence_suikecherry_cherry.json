@@ -1,0 +1,31 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "suikecherry"
+    }
+  ],
+  "result": {
+    "item": "cfm:upgraded_fence_suikecherry_cherry",
+    "count": 8
+  },
+  "pattern": [
+    "FFF",
+    "FLF",
+    "FFF"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "F": {
+      "item": "suikecherry:cherry_fence",
+      "data": 0
+    },
+    "L": {
+      "item": "suikecherry:cherry_log",
+      "data": 0
+    }
+  }
+}
+
+
+

@@ -1,0 +1,29 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "suikecherry"
+    }
+  ],
+  "result": {
+    "item": "cfm:bedside_cabinet_suikecherry_cherry"
+  },
+  "pattern": [
+    "***",
+    "*@*",
+    "*@*"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "@": {
+      "item": "minecraft:chest"
+    },
+    "*": {
+      "item": "suikecherry:cherry_planks",
+      "data": 0
+    }
+  }
+}
+
+
+
