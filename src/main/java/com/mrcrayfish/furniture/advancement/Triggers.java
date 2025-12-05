@@ -25,6 +25,7 @@ public class Triggers
     public static final BasicTrigger PLACE_OUTDOOR_FURNITURE = register("get_outdoor_furniture");
     public static final BasicTrigger PLACE_BATHROOM_FURNITURE = register("get_bathroom_furniture");
     public static final BasicTrigger PLACE_APPLIANCE = register("place_appliance");
+    public static final BasicTrigger PLACE_MAIL_BOX = register("place_mail_box");
     public static final BasicTrigger CREATE_COUCH_JEB = register("create_couch_jeb");
     public static final BasicTrigger UNWRAP_PRESENT = register("unwrap_present");
     public static final BasicTrigger OVEN_COOK = register("oven_cook");

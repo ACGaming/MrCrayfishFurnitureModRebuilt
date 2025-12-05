@@ -1,6 +1,7 @@
 package com.mrcrayfish.furniture.blocks;
 
 import com.mrcrayfish.furniture.MrCrayfishFurnitureMod;
+import com.mrcrayfish.furniture.advancement.Triggers;
 import com.mrcrayfish.furniture.tileentity.TileEntityMailBox;
 import com.mrcrayfish.furniture.util.TileEntityUtil;
 import net.minecraft.block.SoundType;
@@ -57,6 +58,7 @@ public class BlockMailBox extends BlockFurnitureTile
             {
                 player.sendMessage(new TextComponentTranslation("cfm.message.mailbox_ownerrequest"));
             }
+            Triggers.trigger(Triggers.PLACE_MAIL_BOX, player);
         }
     }
 

@@ -13,10 +13,7 @@
 	"parent": "cfm:gardening",
 	"criteria": {
         "place_mail_box": {
-            "trigger": "minecraft:placed_block",
-            "conditions": {
-                "block": "cfm:mail_box"
-            }
+          "trigger": "cfm:place_mail_box"
         }
 	}
 }
