@@ -1,7 +1,6 @@
 {
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
-	"parent": "CampChairModel",
 	"textures": {
 		"0": "blocks/log_big_oak",
 		"2": "blocks/wool_colored_white",
