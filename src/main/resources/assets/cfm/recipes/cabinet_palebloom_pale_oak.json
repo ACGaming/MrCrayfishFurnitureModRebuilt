@@ -20,7 +20,7 @@
     },
     "*": {
       "item": "palebloom:pale_oak_planks",
-      "data": planks
+      "data": 0
     }
   }
 }
