@@ -63,7 +63,7 @@ public class FurnitureBlocks
 
     /* The Modern Update */
     public static final Block BEDSIDE_CABINET_STONE, BEDSIDE_CABINET_GRANITE, BEDSIDE_CABINET_DIORITE, BEDSIDE_CABINET_ANDESITE;
-    public static final Block MODERN_WINDOW, MODERN_SLIDING_DOOR, MODERN_TV, MODERN_COUCH, MODERN_TABLE, MODERN_CHAIR, MODERN_BED_TOP, MODERN_BED_BOTTOM, MODERN_COFFEE_TABLE, MODERN_STAIRS, MODERN_TABLE_OUTDOOR;
+    public static final Block MODERN_WINDOW, MODERN_SLIDING_DOOR, MODERN_SLIDING_DOOR_OAK, MODERN_SLIDING_DOOR_SPRUCE, MODERN_SLIDING_DOOR_BIRCH, MODERN_SLIDING_DOOR_JUNGLE, MODERN_SLIDING_DOOR_ACACIA, MODERN_SLIDING_DOOR_DARK_OAK, MODERN_TV, MODERN_COUCH, MODERN_TABLE, MODERN_CHAIR, MODERN_BED_TOP, MODERN_BED_BOTTOM, MODERN_COFFEE_TABLE, MODERN_STAIRS, MODERN_TABLE_OUTDOOR;
     public static final Block LIGHT_SWITCH_OFF, LIGHT_SWITCH_ON, MODERN_LIGHT_OFF, MODERN_LIGHT_ON, OLD_LIGHT_OFF, OLD_LIGHT_ON;
     public static final Block CEILING_FAN;
     public static final Block DESK_OAK, DESK_SPRUCE, DESK_BIRCH, DESK_JUNGLE, DESK_ACACIA, DESK_DARK_OAK, DESK_STONE, DESK_GRANITE, DESK_DIORITE, DESK_ANDESITE;
@@ -271,6 +271,12 @@ public class FurnitureBlocks
         BEDSIDE_CABINET_ANDESITE = new BlockBedsideCabinet(Material.ROCK, "bedside_cabinet_andesite");
         MODERN_WINDOW = new BlockModernWindow("modern_window");
         MODERN_SLIDING_DOOR = new BlockModernSlidingDoor("modern_sliding_door");
+        MODERN_SLIDING_DOOR_OAK = new BlockModernSlidingDoor("modern_sliding_door_oak");
+        MODERN_SLIDING_DOOR_SPRUCE = new BlockModernSlidingDoor("modern_sliding_door_spruce");
+        MODERN_SLIDING_DOOR_BIRCH = new BlockModernSlidingDoor("modern_sliding_door_birch");
+        MODERN_SLIDING_DOOR_JUNGLE = new BlockModernSlidingDoor("modern_sliding_door_jungle");
+        MODERN_SLIDING_DOOR_ACACIA = new BlockModernSlidingDoor("modern_sliding_door_acacia");
+        MODERN_SLIDING_DOOR_DARK_OAK = new BlockModernSlidingDoor("modern_sliding_door_dark_oak");
         LIGHT_SWITCH_OFF = new BlockLightSwitch("light_switch_off");
         LIGHT_SWITCH_ON = new BlockLightSwitch("light_switch_on");
         CEILING_FAN = new BlockCeilingFan("ceiling_fan");
@@ -532,6 +538,12 @@ public class FurnitureBlocks
         registerBlock(COOLER, new ItemBlockColored(COOLER));
         registerBlock(MODERN_WINDOW);
         registerBlock(MODERN_SLIDING_DOOR, new ItemModernSlidingDoor(MODERN_SLIDING_DOOR));
+        registerBlock(MODERN_SLIDING_DOOR_OAK, new ItemModernSlidingDoor(MODERN_SLIDING_DOOR_OAK));
+        registerBlock(MODERN_SLIDING_DOOR_SPRUCE, new ItemModernSlidingDoor(MODERN_SLIDING_DOOR_SPRUCE));
+        registerBlock(MODERN_SLIDING_DOOR_BIRCH, new ItemModernSlidingDoor(MODERN_SLIDING_DOOR_BIRCH));
+        registerBlock(MODERN_SLIDING_DOOR_JUNGLE, new ItemModernSlidingDoor(MODERN_SLIDING_DOOR_JUNGLE));
+        registerBlock(MODERN_SLIDING_DOOR_ACACIA, new ItemModernSlidingDoor(MODERN_SLIDING_DOOR_ACACIA));
+        registerBlock(MODERN_SLIDING_DOOR_DARK_OAK, new ItemModernSlidingDoor(MODERN_SLIDING_DOOR_DARK_OAK));
         registerBlock(LIGHT_SWITCH_OFF, new ItemLightSwitch(LIGHT_SWITCH_OFF));
         registerBlock(LIGHT_SWITCH_ON, null);
         registerBlock(CEILING_FAN);

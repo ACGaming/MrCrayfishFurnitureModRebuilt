@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "facing=north,top=false": { "model": "cfm:modern_sliding_door_bottom_birch", "y": 0   },
+        "facing=east,top=false":  { "model": "cfm:modern_sliding_door_bottom_birch", "y": 90  },
+        "facing=south,top=false": { "model": "cfm:modern_sliding_door_bottom_birch", "y": 180 },
+        "facing=west,top=false":  { "model": "cfm:modern_sliding_door_bottom_birch", "y": 270 },
+        "facing=north,top=true":  { "model": "cfm:modern_sliding_door_top_birch",    "y": 0   },
+        "facing=east,top=true":   { "model": "cfm:modern_sliding_door_top_birch",    "y": 90  },
+        "facing=south,top=true":  { "model": "cfm:modern_sliding_door_top_birch",    "y": 180 },
+        "facing=west,top=true":   { "model": "cfm:modern_sliding_door_top_birch",    "y": 270 }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "cfm:modern_sliding_door_birch"
+    },
+    "pattern": [
+        "CC",
+        "GG",
+        "CC"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "C": {
+            "item": "minecraft:planks",
+            "data": 2
+        },
+        "G": {
+            "item": "minecraft:glass_pane"
+        }
+    }
+}

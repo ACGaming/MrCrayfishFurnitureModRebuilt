@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "cfm:modern_sliding_door_dark_oak"
+    },
+    "pattern": [
+        "CC",
+        "GG",
+        "CC"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "C": {
+            "item": "minecraft:planks",
+            "data": 5
+        },
+        "G": {
+            "item": "minecraft:glass_pane"
+        }
+    }
+}
