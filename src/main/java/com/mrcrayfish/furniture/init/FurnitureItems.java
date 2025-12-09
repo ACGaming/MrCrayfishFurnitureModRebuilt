@@ -65,6 +65,8 @@ public class FurnitureItems
     public static final Item TRASH_BAG;
     public static final Item COIN;
     public static final Item CAT_FOOD;
+    public static final Item BROOM;
+
 
     static
     {
@@ -105,6 +107,7 @@ public class FurnitureItems
         LIGHT_BULB = new ItemGeneric().setTranslationKey("item_light_bulb").setRegistryName("item_light_bulb");
         TRASH_BAG = new ItemGeneric().setTranslationKey("item_trashbag").setRegistryName("item_trashbag");
         COIN = new ItemGeneric().setTranslationKey("item_coin").setRegistryName("item_coin");
+        BROOM = new ItemGeneric().setTranslationKey("item_broom").setRegistryName("item_broom");
     }
 
     public static void register()
@@ -146,6 +149,7 @@ public class FurnitureItems
         registerItem(LIGHT_BULB);
         registerItem(TRASH_BAG);
         registerItem(COIN);
+        registerItem(BROOM);
     }
 
     private static void registerItem(Item item)

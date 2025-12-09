@@ -44,6 +44,7 @@ item.item_trashbag.name=Trash Bag
 item.item_coin.name=Coin
 item.item_conserve_can.name=Conserve Can
 item.item_cat_food.name=Cat Food
+item.item_broom.name=Broom
 
 tile.table_oak.name=Oak Table
 tile.table_spruce.name=Spruce Table
