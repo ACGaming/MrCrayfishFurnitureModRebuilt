@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "normal": { "model": "cfm:litter_box" },
+    "facing=north": { "model": "cfm:litter_box", "y": 0 },
+    "facing=south": { "model": "cfm:litter_box", "y": 180 },
+    "facing=west":  { "model": "cfm:litter_box", "y": 270 },
+    "facing=east":  { "model": "cfm:litter_box", "y": 90 },
+    "facing=up":    { "model": "cfm:litter_box" },
+    "facing=down":  { "model": "cfm:litter_box", "y": 180 }
+  }
+}

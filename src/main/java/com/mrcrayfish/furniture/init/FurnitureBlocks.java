@@ -112,6 +112,7 @@ public class FurnitureBlocks
     public static final Block MODERN_OAK_STAIR;
     public static final Block BOWL_CAT_FOOD;
     public static final Block FOOD_DISPENSER;
+    public static final Block LITTER_BOX;
 
     static
     {
@@ -368,6 +369,7 @@ public class FurnitureBlocks
         CAMP_CHAIR_DARK_OAK = new BlockCampChair(Material.WOOD, "camp_chair_dark_oak");
         BIRD_BATH_WATER = new BlockBirdBathWater(Material.ROCK, "bird_bath_water");
         MODERN_OAK_STAIR = new BlockModernOakStair("modern_oak_stair");
+        LITTER_BOX = new BlockLitterBox(Material.WOOD, "litter_box");
     }
 
     public static void register()
@@ -625,6 +627,7 @@ public class FurnitureBlocks
         registerBlock(CAMP_CHAIR_JUNGLE);
         registerBlock(CAMP_CHAIR_ACACIA);
         registerBlock(CAMP_CHAIR_DARK_OAK);
+        registerBlock(LITTER_BOX);
     }
 
     public static void registerBlock(Block block)
