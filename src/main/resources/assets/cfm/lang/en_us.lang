@@ -930,6 +930,7 @@ container.bedside_cabinet=Bedside Cabinet
 container.desk_cabinet=Desk Cabinet
 container.kitchen_counter_drawer=Kitchen Counter Drawer
 container.tv_stand=TV Stand
+container.food_dispenser=Food Dispenser
 
 cfm.recipe_book.page.title1=by MrCrayfish
 cfm.recipe_book.page.title2=About
