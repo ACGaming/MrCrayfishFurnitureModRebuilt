@@ -1,11 +1,7 @@
 package com.mrcrayfish.furniture.blocks;
 
-import com.mrcrayfish.furniture.init.FurnitureItems;
-import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.PropertyDirection;
-import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.properties.PropertyInteger;
 import net.minecraft.block.state.BlockFaceShape;
 import net.minecraft.block.state.BlockStateContainer;
@@ -23,13 +19,12 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
+import com.mrcrayfish.furniture.init.FurnitureItems;
 import java.util.List;
 import java.util.Random;
 
 public class BlockFoodDispenser extends BlockFurniture
 {
-    public static final PropertyDirection FACING = BlockHorizontal.FACING;
-    public static final PropertyEnum<FoodType> TYPE = PropertyEnum.create("type", FoodType.class);
     public static final PropertyInteger LEVEL = PropertyInteger.create("level", 0, 3);
 
     public BlockFoodDispenser(Material material, String id)
@@ -37,10 +32,7 @@ public class BlockFoodDispenser extends BlockFurniture
         super(material, id);
         this.setHardness(1F);
         this.setSoundType(SoundType.METAL);
-        this.setDefaultState(this.blockState.getBaseState()
-                .withProperty(FACING, EnumFacing.NORTH)
-                .withProperty(TYPE, FoodType.DOG)
-                .withProperty(LEVEL, 0));
+        this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(LEVEL, 0));
     }
 
     @Override
@@ -60,16 +52,9 @@ public class BlockFoodDispenser extends BlockFurniture
     {
         ItemStack held = player.getHeldItem(hand);
 
-        if (held.getItem() == FurnitureItems.DOG_FOOD)
+        if (held.getItem() == FurnitureItems.DOG_FOOD || held.getItem() == FurnitureItems.CAT_FOOD)
         {
-            world.setBlockState(pos, state.withProperty(TYPE, FoodType.DOG).withProperty(LEVEL, 3), 3);
-            if (!player.isCreative()) held.shrink(1);
-            return true;
-        }
-
-        if (held.getItem() == FurnitureItems.CAT_FOOD)
-        {
-            world.setBlockState(pos, state.withProperty(TYPE, FoodType.CAT).withProperty(LEVEL, 3), 3);
+            world.setBlockState(pos, state.withProperty(LEVEL, 3), 3);
             if (!player.isCreative()) held.shrink(1);
             return true;
         }
@@ -87,17 +72,9 @@ public class BlockFoodDispenser extends BlockFurniture
 
         AxisAlignedBB area = new AxisAlignedBB(pos).grow(1.5);
 
-        if (state.getValue(TYPE) == FoodType.DOG)
-        {
-            List<EntityWolf> wolves = world.getEntitiesWithinAABB(EntityWolf.class, area);
-            if (!wolves.isEmpty()) world.setBlockState(pos, state.withProperty(LEVEL, level - 1), 3);
-        }
-
-        if (state.getValue(TYPE) == FoodType.CAT)
-        {
-            List<EntityOcelot> cats = world.getEntitiesWithinAABB(EntityOcelot.class, area);
-            if (!cats.isEmpty()) world.setBlockState(pos, state.withProperty(LEVEL, level - 1), 3);
-        }
+        List<EntityWolf> wolves = world.getEntitiesWithinAABB(EntityWolf.class, area);
+        List<EntityOcelot> cats = world.getEntitiesWithinAABB(EntityOcelot.class, area);
+        if (!wolves.isEmpty() || !cats.isEmpty()) world.setBlockState(pos, state.withProperty(LEVEL, level - 1), 3);
 
         world.scheduleUpdate(pos, this, 20);
     }
@@ -111,25 +88,19 @@ public class BlockFoodDispenser extends BlockFurniture
     @Override
     public int getMetaFromState(IBlockState state)
     {
-        int facingMeta = state.getValue(FACING).ordinal();
-        int typeMeta = state.getValue(TYPE).ordinal();
-        int levelMeta = state.getValue(LEVEL);
-        return (facingMeta) | (typeMeta << 2) | (levelMeta << 3);
+        return state.getValue(FACING).getHorizontalIndex();
     }
 
     @Override
     public IBlockState getStateFromMeta(int meta)
     {
-        EnumFacing facing = EnumFacing.values()[meta & 3];
-        FoodType type = FoodType.values()[(meta >> 2) & 1];
-        int level = (meta >> 3) & 3;
-        return getDefaultState().withProperty(FACING, facing).withProperty(TYPE, type).withProperty(LEVEL, level);
+        return this.getDefaultState().withProperty(FACING, EnumFacing.byHorizontalIndex(meta));
     }
 
     @Override
     protected BlockStateContainer createBlockState()
     {
-        return new BlockStateContainer(this, FACING, TYPE, LEVEL);
+        return new BlockStateContainer(this, FACING, LEVEL);
     }
 
     @Override
