@@ -100,7 +100,7 @@ public class BlockFoodDispenserCat extends BlockFurniture
             if (cat.getHealth() < cat.getMaxHealth())
             {
                 cat.heal(4.0F);
-                world.playSound(null, cat.getPosition(), SoundEvents.ENTITY_GENERIC_EAT, SoundCategory.NEUTRAL, 1.0F, 1.0F);
+                world.playSound(null, cat.getPosition(), SoundEvents.ENTITY_GENERIC_EAT, SoundCategory.NEUTRAL, 1.0F, 1.2F);
                 ate = true;
             }
         }

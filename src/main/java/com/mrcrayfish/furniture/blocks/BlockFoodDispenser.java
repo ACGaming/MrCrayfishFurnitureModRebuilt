@@ -121,7 +121,7 @@ public class BlockFoodDispenser extends BlockFurniture
             if (wolf.getHealth() < wolf.getMaxHealth())
             {
                 wolf.heal(4.0F);
-                world.playSound(null, wolf.getPosition(), SoundEvents.ENTITY_GENERIC_EAT, SoundCategory.NEUTRAL, 1.0F, 1.0F);
+                world.playSound(null, wolf.getPosition(), SoundEvents.ENTITY_GENERIC_EAT, SoundCategory.NEUTRAL, 1.0F, 0.8F);
                 ate = true;
             }
         }
