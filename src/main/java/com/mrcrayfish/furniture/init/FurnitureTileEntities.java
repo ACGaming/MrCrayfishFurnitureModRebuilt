@@ -53,6 +53,5 @@ public class FurnitureTileEntities
         GameRegistry.registerTileEntity(TileEntityModernComputer.class, "cfm:modern_computer");
         GameRegistry.registerTileEntity(TileEntityBowlFood.class, "cfm:bowl_food");
         GameRegistry.registerTileEntity(TileEntityBowlCatFood.class, "cfm:bowl_cat_food");
-        GameRegistry.registerTileEntity(TileEntityFoodDispenser.class, "cfm:food_dispenser");
     }
 }

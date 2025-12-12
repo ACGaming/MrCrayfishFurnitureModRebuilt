@@ -42,10 +42,6 @@ public class GuiHandler implements IGuiHandler
         {
             return ((TileEntityKitchenCounterDrawer) tileEntity).createContainer(player.inventory, player);
         }
-        else if(tileEntity instanceof TileEntityFoodDispenser)
-        {
-            return ((TileEntityFoodDispenser) tileEntity).createContainer(player.inventory, player);
-        }
 
         ItemStack heldItem = player.getHeldItemMainhand();
         if(id == 5 && heldItem.getItem() == FurnitureItems.ENVELOPE)
@@ -163,10 +159,7 @@ public class GuiHandler implements IGuiHandler
         {
             return new GuiChest(player.inventory, (TileEntityKitchenCounterDrawer) tileEntity);
         }
-        if(tileEntity instanceof TileEntityFoodDispenser)
-        {
-            return new GuiChest(player.inventory, (TileEntityFoodDispenser) tileEntity);
-        }
+
         ItemStack heldItem = player.getHeldItemMainhand();
         if(id == 5 && heldItem.getItem() == FurnitureItems.ENVELOPE)
         {

@@ -1,11 +1,43 @@
 {
   "variants": {
-    "normal": { "model": "cfm:food_dispenser" },
-    "facing=north": { "model": "cfm:food_dispenser", "y": 0 },
-    "facing=south": { "model": "cfm:food_dispenser", "y": 180 },
-    "facing=west":  { "model": "cfm:food_dispenser", "y": 270 },
-    "facing=east":  { "model": "cfm:food_dispenser", "y": 90 },
-    "facing=up":    { "model": "cfm:food_dispenser" },
-    "facing=down":  { "model": "cfm:food_dispenser", "y": 180 }
+    "facing=north,type=dog,level=0": { "model": "cfm:food_dispenser", "y": 0 },
+    "facing=north,type=dog,level=1": { "model": "cfm:food_dispenser_dog", "y": 0 },
+    "facing=north,type=dog,level=2": { "model": "cfm:food_dispenser_dog_model", "y": 0 },
+    "facing=north,type=dog,level=3": { "model": "cfm:food_dispenser_dog_full", "y": 0 },
+
+    "facing=south,type=dog,level=0": { "model": "cfm:food_dispenser", "y": 180 },
+    "facing=south,type=dog,level=1": { "model": "cfm:food_dispenser_dog", "y": 180 },
+    "facing=south,type=dog,level=2": { "model": "cfm:food_dispenser_dog_model", "y": 180 },
+    "facing=south,type=dog,level=3": { "model": "cfm:food_dispenser_dog_full", "y": 180 },
+
+    "facing=west,type=dog,level=0": { "model": "cfm:food_dispenser", "y": 270 },
+    "facing=west,type=dog,level=1": { "model": "cfm:food_dispenser_dog", "y": 270 },
+    "facing=west,type=dog,level=2": { "model": "cfm:food_dispenser_dog_model", "y": 270 },
+    "facing=west,type=dog,level=3": { "model": "cfm:food_dispenser_dog_full", "y": 270 },
+
+    "facing=east,type=dog,level=0": { "model": "cfm:food_dispenser", "y": 90 },
+    "facing=east,type=dog,level=1": { "model": "cfm:food_dispenser_dog", "y": 90 },
+    "facing=east,type=dog,level=2": { "model": "cfm:food_dispenser_dog_model", "y": 90 },
+    "facing=east,type=dog,level=3": { "model": "cfm:food_dispenser_dog_full", "y": 90 },
+
+    "facing=north,type=cat,level=0": { "model": "cfm:food_dispenser", "y": 0 },
+    "facing=north,type=cat,level=1": { "model": "cfm:food_dispenser_cat", "y": 0 },
+    "facing=north,type=cat,level=2": { "model": "cfm:food_dispenser_cat_model", "y": 0 },
+    "facing=north,type=cat,level=3": { "model": "cfm:food_dispenser_cat_full", "y": 0 },
+
+    "facing=south,type=cat,level=0": { "model": "cfm:food_dispenser", "y": 180 },
+    "facing=south,type=cat,level=1": { "model": "cfm:food_dispenser_cat", "y": 180 },
+    "facing=south,type=cat,level=2": { "model": "cfm:food_dispenser_cat_model", "y": 180 },
+    "facing=south,type=cat,level=3": { "model": "cfm:food_dispenser_cat_full", "y": 180 },
+
+    "facing=west,type=cat,level=0": { "model": "cfm:food_dispenser", "y": 270 },
+    "facing=west,type=cat,level=1": { "model": "cfm:food_dispenser_cat", "y": 270 },
+    "facing=west,type=cat,level=2": { "model": "cfm:food_dispenser_cat_model", "y": 270 },
+    "facing=west,type=cat,level=3": { "model": "cfm:food_dispenser_cat_full", "y": 270 },
+
+    "facing=east,type=cat,level=0": { "model": "cfm:food_dispenser", "y": 90 },
+    "facing=east,type=cat,level=1": { "model": "cfm:food_dispenser_cat", "y": 90 },
+    "facing=east,type=cat,level=2": { "model": "cfm:food_dispenser_cat_model", "y": 90 },
+    "facing=east,type=cat,level=3": { "model": "cfm:food_dispenser_cat_full", "y": 90 }
   }
 }
