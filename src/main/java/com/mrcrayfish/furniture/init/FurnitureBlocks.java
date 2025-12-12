@@ -112,6 +112,7 @@ public class FurnitureBlocks
     public static final Block MODERN_OAK_STAIR;
     public static final Block BOWL_CAT_FOOD;
     public static final Block FOOD_DISPENSER;
+    public static final Block FOOD_DISPENSER_CAT;
     public static final Block LITTER_BOX;
 
     static
@@ -354,6 +355,7 @@ public class FurnitureBlocks
         BOWL_CAT_FOOD = new BlockBowlCatFood(Material.IRON, "bowl_cat_food");
         BOWL_WATER = new BlockBowl(Material.IRON, "bowl_water");
         FOOD_DISPENSER = new BlockFoodDispenser(Material.IRON, "food_dispenser");
+        FOOD_DISPENSER_CAT = new BlockFoodDispenserCat(Material.IRON, "food_dispenser_cat");
         PET_BED = new BlockPetBed(Material.WOOD, "pet_bed");
         PET_COUCH = new BlockPetCouch(Material.WOOD, "pet_couch");
         PIXEL_BOX = new BlockPixelBox(Material.IRON, "pixel_box");
@@ -608,6 +610,7 @@ public class FurnitureBlocks
         registerBlock(CASTLE_NETTING);
         registerBlock(SERVICE_BELL);
         registerBlock(FOOD_DISPENSER);
+        registerBlock(FOOD_DISPENSER_CAT);
         registerBlock(BOWL);
         registerBlock(BOWL_FOOD);
         registerBlock(BOWL_CAT_FOOD);
