@@ -188,7 +188,7 @@ public class ConfigurationHandler
         ender_38 = config.getBoolean("ender-38", CATEGORY_RECIPE_SETTINGS, ender_38, "1 Pixel Box for 20 Coin");
         ender_39 = config.getBoolean("ender-39", CATEGORY_RECIPE_SETTINGS, ender_39, "1 Bird House for 4 Coin");
         ender_40 = config.getBoolean("ender-40", CATEGORY_RECIPE_SETTINGS, ender_40, "1 Small Light for 4 Coin");
-        ender_41 = config.getBoolean("ender-41", CATEGORY_RECIPE_SETTINGS, ender_41, "1 Cat Food for 6 Coin");
+        ender_41 = config.getBoolean("ender-41", CATEGORY_RECIPE_SETTINGS, ender_41, "4 Cat Food for 6 Coin");
         blen_1 = config.getBoolean("blender-1", CATEGORY_RECIPE_SETTINGS, blen_1, "Fruit Crush");
         blen_2 = config.getBoolean("blender-2", CATEGORY_RECIPE_SETTINGS, blen_2, "Veggie Juice");
         blen_3 = config.getBoolean("blender-3", CATEGORY_RECIPE_SETTINGS, blen_3, "Fishy Blend");

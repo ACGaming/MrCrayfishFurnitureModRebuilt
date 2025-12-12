@@ -1449,7 +1449,7 @@ public class RecipeRegistry extends RecipeAPI
         if(ConfigurationHandler.ender_40)
             RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureBlocks.SMALL_LIGHT, 1), new ItemStack(FurnitureItems.COIN), 4);
         if(ConfigurationHandler.ender_41)
-            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureItems.CAT_FOOD, 1), new ItemStack(FurnitureItems.COIN), 6);
+            RecipeRegistry.getInstance().registerEnderShopItem(new ItemStack(FurnitureItems.CAT_FOOD, 4), new ItemStack(FurnitureItems.COIN), 6);
 
 
         if(ConfigurationHandler.blen_1)
