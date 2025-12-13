@@ -1,47 +1,36 @@
 package com.mrcrayfish.furniture.items;
 
-import com.mrcrayfish.furniture.MrCrayfishFurnitureMod;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityItem;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.SoundCategory;
 import net.minecraft.world.World;
+
 import java.util.List;
 
-public class ItemBroom extends Item {
-
-    public ItemBroom() {
+public class ItemBroom extends ItemGeneric
+{
+    public ItemBroom()
+    {
         this.setMaxStackSize(1);
-        this.setRegistryName("item_broom");
-        this.setTranslationKey("item_broom");
-        this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
     }
 
     @Override
-    public void onUpdate(ItemStack stack, World world, Entity entity, int slot, boolean isSelected) {
+    public void onUpdate(ItemStack stack, World world, Entity entity, int slot, boolean isSelected)
+    {
+        if (world.isRemote || !isSelected || world.getTotalWorldTime() % 5 != 0) return;
 
-        if (world.isRemote) return;
-        if (!(entity instanceof EntityPlayer)) return;
-        if (!isSelected) return;
-
-        EntityPlayer player = (EntityPlayer) entity;
-        double radius = 3.0D;
-
-        List<EntityItem> items = world.getEntitiesWithinAABB(
-                EntityItem.class,
-                player.getEntityBoundingBox().grow(radius)
-        );
-
-        for (EntityItem item : items) {
-
-            double dx = item.posX - player.posX;
-            double dz = item.posZ - player.posZ;
+        List<EntityItem> items = world.getEntitiesWithinAABB(EntityItem.class, entity.getEntityBoundingBox().grow(3.0D));
+        for (EntityItem item : items)
+        {
+            double dx = item.posX - entity.posX;
+            double dz = item.posZ - entity.posZ;
 
             double distance = Math.sqrt(dx * dx + dz * dz);
             if (distance == 0) continue;
 
-            double force = 0.1D;
+            double force = 0.5D;
 
             dx /= distance;
             dz /= distance;
@@ -50,6 +39,11 @@ public class ItemBroom extends Item {
             item.motionZ += dz * force;
 
             item.velocityChanged = true;
+        }
+
+        if (!items.isEmpty())
+        {
+            world.playSound(null, entity.posX, entity.posY, entity.posZ, SoundEvents.BLOCK_SAND_PLACE, SoundCategory.PLAYERS, 1.5F, 0.75F);
         }
     }
 }

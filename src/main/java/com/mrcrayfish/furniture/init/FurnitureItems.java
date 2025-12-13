@@ -107,7 +107,7 @@ public class FurnitureItems
         LIGHT_BULB = new ItemGeneric().setTranslationKey("item_light_bulb").setRegistryName("item_light_bulb");
         TRASH_BAG = new ItemGeneric().setTranslationKey("item_trashbag").setRegistryName("item_trashbag");
         COIN = new ItemGeneric().setTranslationKey("item_coin").setRegistryName("item_coin");
-        BROOM = new ItemBroom();
+        BROOM = new ItemBroom().setTranslationKey("item_broom").setRegistryName("item_broom");
     }
 
     public static void register()
