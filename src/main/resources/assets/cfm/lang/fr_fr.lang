@@ -35,10 +35,13 @@ item.item_log.name=Bûchette
 item.tv_remote.name=Télécommande TV
 item.ceiling_fan_fans.name=Pales de Ventilateur Plafond
 item.item_wheel.name=Roue
-item.item_dog_food.name=Paté pour chien
+item.item_dog_food.name=Croquettes pour chien
 item.item_light_bulb.name=Ampoule
 item.item_trashbag.name=Sac a Poubelle
 item.item_coin.name=Pièce
+item.item_conserve_can.name=Boite de Conserve Vide
+item.item_cat_food.name=Croquettes pour Chat
+item.item_broom.name=Ballai
 
 tile.table_oak.name=Table en Chêne
 tile.table_spruce.name=Table en Sapin
@@ -499,6 +502,14 @@ tile.modern_oak_stair.name=Escalier Moderne en bois de Chêne
 tile.bowl_cat_food.name=Bol de Croquettes pour Chat
 tile.food_dispenser.name=Distributeur de Croquettes
 tile.modern_plate.name=Assiette moderne
+tile.modern_sliding_door_oak.name=Porte Coulissante en Chêne Moderne
+tile.modern_sliding_door_spruce.name=Porte Coulissante en Sapin Moderne
+tile.modern_sliding_door_birch.name=Porte Coulissante en Bouleau Moderne
+tile.modern_sliding_door_jungle.name=Porte Coulissante en Acajou Moderne
+tile.modern_sliding_door_acacia.name=Porte Coulissante en Acacia Moderne
+tile.modern_sliding_door_dark_oak.name=Porte Coulissante en Chêne Sombre Moderne
+tile.litter_box.name=Litière
+tile.cat_tree.name=Arbre a Chat
 
 
 
