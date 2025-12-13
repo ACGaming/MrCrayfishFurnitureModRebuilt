@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "normal": {"model": "cfm:cat_tree"},
+    "facing=north": {"model": "cfm:cat_tree", "y": 0},
+    "facing=east": {"model": "cfm:cat_tree", "y": 90},
+    "facing=south": {"model": "cfm:cat_tree", "y": 180},
+    "facing=west": {"model": "cfm:cat_tree", "y": 270}
+  }
+}

@@ -1,9 +1,9 @@
 {
 	"format_version": "1.9.0",
-	"credit": "Made with Blockbench",
+	"credit": "Made with Blockbench by MisterIceCat",
 	"textures": {
 		"0": "cfm:blocks/oak_wood",
-		"1": "blocks/planks",
+		"1": "blocks/planks_oak",
 		"2": "blocks/wool_colored_white",
 		"3": "blocks/wool_colored_gray",
 		"particle": "cfm:blocks/oak_wood"
