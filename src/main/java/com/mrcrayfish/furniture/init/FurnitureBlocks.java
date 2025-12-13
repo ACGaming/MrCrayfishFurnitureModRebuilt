@@ -94,6 +94,7 @@ public class FurnitureBlocks
     public static final Block SERVICE_BELL;
     public static final Block BOWL;
     public static final Block BOWL_FOOD;
+    public static final Block BOWL_CAT_FOOD;
     public static final Block BOWL_WATER;
     public static final Block PET_BED;
     public static final Block PET_COUCH;
@@ -110,7 +111,6 @@ public class FurnitureBlocks
     public static final Block CAMP_CHAIR_DARK_OAK;
     public static final Block BIRD_BATH_WATER;
     public static final Block MODERN_OAK_STAIR;
-    public static final Block BOWL_CAT_FOOD;
     public static final Block FOOD_DISPENSER;
     public static final Block FOOD_DISPENSER_CAT;
     public static final Block LITTER_BOX;
@@ -353,7 +353,7 @@ public class FurnitureBlocks
         SERVICE_BELL = new BlockServiceBell(Material.IRON, "service_bell");
         BOWL = new BlockBowl(Material.IRON, "bowl");
         BOWL_FOOD = new BlockBowl(Material.IRON, "bowl_food");
-        BOWL_CAT_FOOD = new BlockBowlCatFood(Material.IRON, "bowl_cat_food");
+        BOWL_CAT_FOOD = new BlockBowl(Material.IRON, "bowl_cat_food");
         BOWL_WATER = new BlockBowl(Material.IRON, "bowl_water");
         FOOD_DISPENSER = new BlockFoodDispenser(Material.IRON, "food_dispenser");
         FOOD_DISPENSER_CAT = new BlockFoodDispenserCat(Material.IRON, "food_dispenser_cat");

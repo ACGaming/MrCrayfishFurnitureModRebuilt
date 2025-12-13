@@ -6,11 +6,16 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.state.BlockFaceShape;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.passive.EntityOcelot;
+import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
+import net.minecraft.init.SoundEvents;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
@@ -20,6 +25,7 @@ import com.mrcrayfish.furniture.MrCrayfishFurnitureMod;
 import com.mrcrayfish.furniture.init.FurnitureBlocks;
 import com.mrcrayfish.furniture.init.FurnitureItems;
 import java.util.List;
+import java.util.Random;
 
 public class BlockBowl extends Block
 {
@@ -66,9 +72,42 @@ public class BlockBowl extends Block
     }
 
     @Override
+    public void updateTick(World world, BlockPos pos, IBlockState state, Random rand)
+    {
+        if (world.isRemote) return;
+
+        AxisAlignedBB area = new AxisAlignedBB(pos).grow(1.5);
+
+        if (this == FurnitureBlocks.BOWL_FOOD)
+        {
+            healDogs(world, pos, area, 4.0F, false);
+        }
+        else if (this == FurnitureBlocks.BOWL_CAT_FOOD)
+        {
+            healCats(world, pos, area, 4.0F, false);
+        }
+        else if (this == FurnitureBlocks.BOWL_WATER)
+        {
+            healDogs(world, pos, area, 2.0F, true);
+            healCats(world, pos, area, 2.0F, true);
+        }
+
+        world.scheduleUpdate(pos, this, 20);
+    }
+
+    @Override
+    public void onBlockAdded(World world, BlockPos pos, IBlockState state)
+    {
+        if (!world.isRemote)
+        {
+            world.scheduleUpdate(pos, this, 1);
+        }
+    }
+
+    @Override
     public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
     {
-        if (world.getBlockState(pos).getBlock() == FurnitureBlocks.BOWL)
+        if (this == FurnitureBlocks.BOWL)
         {
             ItemStack held = player.getHeldItem(hand);
             if (!held.isEmpty())
@@ -76,25 +115,65 @@ public class BlockBowl extends Block
                 if (held.getItem() == FurnitureItems.DOG_FOOD)
                 {
                     world.setBlockState(pos, FurnitureBlocks.BOWL_FOOD.getDefaultState());
-                    held.shrink(1);
-                    if (!player.inventory.addItemStackToInventory(new ItemStack(FurnitureItems.CONSERVE_CAN)))
-                    {
-                        player.dropItem(new ItemStack(FurnitureItems.CONSERVE_CAN), false);
-                    }
+                    exchangeItem(player, held, FurnitureItems.CONSERVE_CAN);
+                    return true;
+                }
+                if (held.getItem() == FurnitureItems.CAT_FOOD)
+                {
+                    world.setBlockState(pos, FurnitureBlocks.BOWL_CAT_FOOD.getDefaultState());
+                    exchangeItem(player, held, FurnitureItems.CONSERVE_CAN);
                     return true;
                 }
                 if (held.getItem() == Items.WATER_BUCKET)
                 {
                     world.setBlockState(pos, FurnitureBlocks.BOWL_WATER.getDefaultState());
-                    held.shrink(1);
-                    if (!player.inventory.addItemStackToInventory(new ItemStack(Items.BUCKET)))
-                    {
-                        player.dropItem(new ItemStack(Items.BUCKET), false);
-                    }
+                    exchangeItem(player, held, Items.BUCKET);
                     return true;
                 }
             }
         }
         return false;
+    }
+
+    private void healDogs(World world, BlockPos pos, AxisAlignedBB area, float amount, boolean drink)
+    {
+        if (this == FurnitureBlocks.BOWL) return;
+        List<EntityWolf> wolves = world.getEntitiesWithinAABB(EntityWolf.class, area);
+        for (EntityWolf wolf : wolves)
+        {
+            if (wolf.getHealth() < wolf.getMaxHealth())
+            {
+                wolf.heal(amount);
+                world.playSound(null, wolf.getPosition(), drink ? SoundEvents.ENTITY_GENERIC_DRINK : SoundEvents.ENTITY_GENERIC_EAT, SoundCategory.NEUTRAL, 1.0F, 0.8F);
+                world.setBlockState(pos, FurnitureBlocks.BOWL.getDefaultState());
+            }
+        }
+    }
+
+    private void healCats(World world, BlockPos pos, AxisAlignedBB area, float amount, boolean drink)
+    {
+        if (this == FurnitureBlocks.BOWL) return;
+        List<EntityOcelot> cats = world.getEntitiesWithinAABB(EntityOcelot.class, area);
+        for (EntityOcelot cat : cats)
+        {
+            if (cat.getHealth() < cat.getMaxHealth())
+            {
+                cat.heal(amount);
+                world.playSound(null, cat.getPosition(), drink ? SoundEvents.ENTITY_GENERIC_DRINK : SoundEvents.ENTITY_GENERIC_EAT, SoundCategory.NEUTRAL, 1.0F, 0.8F);
+                world.setBlockState(pos, FurnitureBlocks.BOWL.getDefaultState());
+            }
+        }
+    }
+
+    private void exchangeItem(EntityPlayer player, ItemStack held, Item itemNew)
+    {
+        if (!player.isCreative())
+        {
+            held.shrink(1);
+            if (!player.inventory.addItemStackToInventory(new ItemStack(itemNew)))
+            {
+                player.dropItem(new ItemStack(itemNew), false);
+            }
+        }
     }
 }
