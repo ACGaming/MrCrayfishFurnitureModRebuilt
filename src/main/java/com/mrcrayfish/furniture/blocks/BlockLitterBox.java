@@ -15,7 +15,7 @@ import java.util.List;
 
 public class BlockLitterBox extends BlockFurniture
 {
-    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.0, 0.0, 0.0, 1.0, 0.5, 1.0);
+    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.0, 0.0, 0.0, 1.0, 0.4, 1.0);
 
     public BlockLitterBox(Material material, String id)
     {
