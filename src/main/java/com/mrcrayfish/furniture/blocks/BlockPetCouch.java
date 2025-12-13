@@ -13,7 +13,7 @@ import java.util.List;
 
 public class BlockPetCouch extends BlockFurniture
 {
-    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.0, 0.0, 0.0, 1.0, 0.7, 1.0);
+    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.0, 0.0, 0.0, 1.0, 0.4, 1.0);
 
     public BlockPetCouch(Material material, String id)
     {
