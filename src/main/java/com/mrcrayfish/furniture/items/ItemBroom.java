@@ -43,7 +43,7 @@ public class ItemBroom extends ItemGeneric
 
         if (!items.isEmpty())
         {
-            world.playSound(null, entity.posX, entity.posY, entity.posZ, SoundEvents.BLOCK_SAND_PLACE, SoundCategory.PLAYERS, 1.5F, 0.75F);
+            world.playSound(null, entity.posX, entity.posY, entity.posZ, SoundEvents.BLOCK_SAND_PLACE, SoundCategory.PLAYERS, 1.2F, 1.5F);
         }
     }
 }
