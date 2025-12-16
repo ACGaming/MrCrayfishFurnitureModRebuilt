@@ -10,6 +10,7 @@ cfm.filter.outdoor=Outdoor
 cfm.filter.storage=Storage
 cfm.filter.items=Items
 
+item.item_crayfish.name=MrCrayfish
 item.item_hammer.name=Hammer
 item.item_envelope.name=Envelope
 item.item_package.name=Package
@@ -160,6 +161,7 @@ tile.hedge_jungle.name=Jungle Hedge
 tile.hedge_acacia.name=Acacia Hedge
 tile.hedge_dark_oak.name=Dark Oak Hedge
 tile.bird_bath.name=Bird Bath
+tile.bird_bath_water.name=Bird Bath (Filled)
 tile.stone_path.name=Stone Path
 tile.white_fence.name=White Fence
 tile.tap.name=Tap
