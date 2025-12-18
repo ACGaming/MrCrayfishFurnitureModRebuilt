@@ -1,5 +1,6 @@
 package com.mrcrayfish.furniture.blocks;
 
+import com.mrcrayfish.furniture.init.FurnitureSounds;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyInteger;
@@ -101,6 +102,7 @@ public class BlockFoodDispenserCat extends BlockFurniture
             {
                 cat.heal(4.0F);
                 world.playSound(null, cat.getPosition(), SoundEvents.ENTITY_GENERIC_EAT, SoundCategory.NEUTRAL, 1.0F, 1.2F);
+                world.playSound(null, pos, FurnitureSounds.food_dispenser_used, SoundCategory.BLOCKS, 1F, 1F);
                 ate = true;
             }
         }

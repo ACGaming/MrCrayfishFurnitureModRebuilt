@@ -9,6 +9,8 @@ public class FurnitureSounds
     public static SoundEvent bin_open;
     public static SoundEvent blender;
     public static SoundEvent boing;
+    public static SoundEvent food_dispenser_fill;
+    public static SoundEvent food_dispenser_used;
     public static SoundEvent bounce;
     public static SoundEvent cabinet_close;
     public static SoundEvent cabinet_open;
@@ -64,6 +66,8 @@ public class FurnitureSounds
         bin_open = registerSound("cfm:bin_open");
         blender = registerSound("cfm:blender");
         boing = registerSound("cfm:boing");
+        food_dispenser_fill = registerSound("cfm:food_dispenser_fill");
+        food_dispenser_used = registerSound("cfm:food_dispenser_used");
         bounce = registerSound("cfm:bounce");
         cabinet_close = registerSound("cfm:cabinet_close");
         cabinet_open = registerSound("cfm:cabinet_open");

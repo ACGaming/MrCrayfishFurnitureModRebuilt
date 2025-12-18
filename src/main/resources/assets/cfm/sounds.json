@@ -447,16 +447,16 @@
         "name": "cfm:service_bell"
       }
     ]
-  }
-    "service_bell": {
+  },
+    "food_dispenser_fill": {
     "category": "block",
     "sounds": [
       {
         "name": "cfm:food_dispenser_fill"
       }
     ]
-  }
-    "service_bell": {
+  },
+    "food_dispenser_used": {
     "category": "block",
     "sounds": [
       {

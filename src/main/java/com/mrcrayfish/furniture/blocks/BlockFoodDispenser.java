@@ -1,6 +1,7 @@
 package com.mrcrayfish.furniture.blocks;
 
 import com.mrcrayfish.furniture.init.FurnitureBlocks;
+import com.mrcrayfish.furniture.init.FurnitureSounds;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyInteger;
@@ -63,6 +64,7 @@ public class BlockFoodDispenser extends BlockFurniture
                 {
                     world.setBlockState(pos, state.withProperty(LEVEL, 3), 3);
                     if (!player.isCreative()) held.shrink(1);
+                    world.playSound(null, pos, FurnitureSounds.food_dispenser_fill, SoundCategory.BLOCKS, 1F, 1F);
 
                     ItemStack conserve = new ItemStack(FurnitureItems.CONSERVE_CAN);
                     if (!player.inventory.addItemStackToInventory(conserve))
@@ -79,6 +81,7 @@ public class BlockFoodDispenser extends BlockFurniture
                             .withProperty(FACING, state.getValue(FACING))
                             .withProperty(LEVEL, 3);
                     world.setBlockState(pos, catState, 3);
+                    world.playSound(null, pos, FurnitureSounds.food_dispenser_fill, SoundCategory.BLOCKS, 1F, 1F);
 
                     if (!player.isCreative()) held.shrink(1);
 
@@ -122,6 +125,7 @@ public class BlockFoodDispenser extends BlockFurniture
             {
                 wolf.heal(4.0F);
                 world.playSound(null, wolf.getPosition(), SoundEvents.ENTITY_GENERIC_EAT, SoundCategory.NEUTRAL, 1.0F, 0.8F);
+                world.playSound(null, pos, FurnitureSounds.food_dispenser_used, SoundCategory.BLOCKS, 1F, 1F);
                 ate = true;
             }
         }
