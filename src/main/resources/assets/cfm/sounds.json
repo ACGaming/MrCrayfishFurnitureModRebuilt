@@ -448,4 +448,20 @@
       }
     ]
   }
+    "service_bell": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:food_dispenser_fill"
+      }
+    ]
+  }
+    "service_bell": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:food_dispenser_used"
+      }
+    ]
+  }
 }
