@@ -463,5 +463,13 @@
         "name": "cfm:food_dispenser_used"
       }
     ]
+  },
+    "bowl_fill": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:bowl_fill"
+      }
+    ]
   }
 }

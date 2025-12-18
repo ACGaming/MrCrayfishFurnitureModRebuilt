@@ -1,5 +1,6 @@
 package com.mrcrayfish.furniture.blocks;
 
+import com.mrcrayfish.furniture.init.FurnitureSounds;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -115,18 +116,21 @@ public class BlockBowl extends Block
                 if (held.getItem() == FurnitureItems.DOG_FOOD)
                 {
                     world.setBlockState(pos, FurnitureBlocks.BOWL_FOOD.getDefaultState());
+                    world.playSound(null, pos, FurnitureSounds.bowl_fill, SoundCategory.BLOCKS, 1F, 1F);
                     exchangeItem(player, held, FurnitureItems.CONSERVE_CAN);
                     return true;
                 }
                 if (held.getItem() == FurnitureItems.CAT_FOOD)
                 {
                     world.setBlockState(pos, FurnitureBlocks.BOWL_CAT_FOOD.getDefaultState());
+                    world.playSound(null, pos, FurnitureSounds.bowl_fill, SoundCategory.BLOCKS, 1F, 1F);
                     exchangeItem(player, held, FurnitureItems.CONSERVE_CAN);
                     return true;
                 }
                 if (held.getItem() == Items.WATER_BUCKET)
                 {
                     world.setBlockState(pos, FurnitureBlocks.BOWL_WATER.getDefaultState());
+                    world.playSound(null, pos, SoundEvents.ITEM_BOTTLE_FILL, SoundCategory.BLOCKS, 1F, 1F);
                     exchangeItem(player, held, Items.BUCKET);
                     return true;
                 }
