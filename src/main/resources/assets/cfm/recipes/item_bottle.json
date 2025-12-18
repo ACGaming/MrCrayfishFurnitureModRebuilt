@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "cfm:item_bottle"
+  },
+  "pattern": [
+    "GBG",
+    "G G",
+    "GGG"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "G": {
+      "item": "minecraft:glass_pane"
+    },
+    "B": {
+      "item": "minecraft:wooden_button"
+    }
+  }
+}

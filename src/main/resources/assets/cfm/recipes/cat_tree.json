@@ -1,0 +1,25 @@
+{
+  "result": {
+    "item": "cfm:cat_tree"
+  },
+  "pattern": [
+    "W  ",
+    "PWW",
+    "CCC"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "W": {
+      "item": "minecraft:wool",
+      "data": 7
+    },
+    "P": {
+      "item": "minecraft:planks",
+      "data": 0
+    },
+    "C": {
+      "item": "minecraft:carpet",
+      "data": 0
+    }
+  }
+}
