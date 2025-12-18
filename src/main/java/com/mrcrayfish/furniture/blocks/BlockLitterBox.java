@@ -1,11 +1,14 @@
 package com.mrcrayfish.furniture.blocks;
 
+import com.mrcrayfish.furniture.init.FurnitureSounds;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.passive.EntityOcelot;
 import net.minecraft.util.EnumFacing;
+import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
@@ -28,6 +31,28 @@ public class BlockLitterBox extends BlockFurniture
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
     {
         return BOUNDING_BOX;
+    }
+
+    @Override
+    public void onEntityWalk(World worldIn, BlockPos pos, Entity entityIn)
+    {
+        if(worldIn.isRemote)
+            return;
+
+        if(entityIn instanceof EntityOcelot)
+        {
+            if(entityIn.ticksExisted % 200 == 0)
+            {
+                worldIn.playSound(
+                        null,
+                        pos,
+                        FurnitureSounds.fart,
+                        SoundCategory.BLOCKS,
+                        1F,
+                        1F
+                );
+            }
+        }
     }
 
     @Override
