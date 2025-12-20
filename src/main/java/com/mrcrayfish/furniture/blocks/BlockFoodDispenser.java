@@ -1,5 +1,7 @@
 package com.mrcrayfish.furniture.blocks;
 
+import javax.annotation.Nullable;
+
 import com.mrcrayfish.furniture.init.FurnitureBlocks;
 import com.mrcrayfish.furniture.init.FurnitureSounds;
 import net.minecraft.block.SoundType;
@@ -8,6 +10,7 @@ import net.minecraft.block.properties.PropertyInteger;
 import net.minecraft.block.state.BlockFaceShape;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
@@ -162,5 +165,12 @@ public class BlockFoodDispenser extends BlockFurniture
     public BlockRenderLayer getRenderLayer()
     {
         return BlockRenderLayer.CUTOUT;
+    }
+
+    @Override
+    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn)
+    {
+        tooltip.add("§6Work in progress, no GUI yet!");
+        super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 }
