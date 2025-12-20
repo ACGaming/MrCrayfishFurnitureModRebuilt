@@ -45,6 +45,7 @@ public class FurnitureItems
     /**
      * Modern Update
      */
+    public static final Item OLD_TV_REMOTE;
     public static final Item TV_REMOTE;
 
     /**
@@ -99,6 +100,7 @@ public class FurnitureItems
         KEBAB_COOKED = new ItemFood(4, false).setTranslationKey("item_kebab_cooked").setRegistryName("item_kebab_cooked").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         CROWBAR = new ItemGeneric().setTranslationKey("item_crow_bar").setRegistryName("item_crow_bar").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         CEILING_FAN_FANS = new ItemGeneric().setTranslationKey("ceiling_fan_fans").setRegistryName("ceiling_fan_fans");
+        OLD_TV_REMOTE = new ItemOldTvRemote();
         TV_REMOTE = new ItemTVRemote();
         WHEEL = new ItemGeneric().setTranslationKey("item_wheel").setRegistryName("item_wheel");
         DOG_FOOD = new ItemGeneric().setTranslationKey("item_dog_food").setRegistryName("item_dog_food");
@@ -141,6 +143,7 @@ public class FurnitureItems
         registerItem(KEBAB_COOKED);
         registerItem(CROWBAR);
         registerItem(CEILING_FAN_FANS);
+        registerItem(OLD_TV_REMOTE);
         registerItem(TV_REMOTE);
         registerItem(WHEEL);
         registerItem(DOG_FOOD);

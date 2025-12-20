@@ -1,6 +1,6 @@
 {
     "result": {
-        "item": "cfm:tv_remote"
+        "item": "cfm:old_tv_remote"
     },
     "pattern": [
         "ISI",
@@ -10,19 +10,19 @@
     "type": "minecraft:crafting_shaped",
     "key": {
         "I": {
-            "item": "minecraft:diamond"
+            "item": "minecraft:iron_ingot"
         },
         "S": {
-            "item": "minecraft:daylight_detector"
+            "item": "minecraft:redstone_torch"
         },
         "B": {
-            "item": "minecraft:heavy_weighted_pressure_plate"
+            "item": "minecraft:stone_button"
         },
         "*": {
-            "item": "minecraft:comparator"
+            "item": "minecraft:repeater"
         },
         "R": {
-            "item": "minecraft:redstone_block"
+            "item": "minecraft:redstone"
         }
     }
 }

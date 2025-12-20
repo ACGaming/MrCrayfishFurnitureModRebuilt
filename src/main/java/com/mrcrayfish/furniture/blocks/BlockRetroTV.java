@@ -1,8 +1,7 @@
 package com.mrcrayfish.furniture.blocks;
 
-import com.mrcrayfish.furniture.blocks.tv.Channels;
 import com.mrcrayfish.furniture.init.FurnitureSounds;
-import com.mrcrayfish.furniture.items.ItemTVRemote;
+import com.mrcrayfish.furniture.items.ItemOldTvRemote;
 import com.mrcrayfish.furniture.network.PacketHandler;
 import com.mrcrayfish.furniture.network.message.MessageTVPlaySound;
 import com.mrcrayfish.furniture.network.message.MessageTVStopSound;
@@ -43,7 +42,7 @@ public class BlockRetroTV extends BlockFurnitureTile
     @Override
     public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
     {
-        if(!world.isRemote && !(player.getHeldItem(hand).getItem() instanceof ItemTVRemote))
+        if(!world.isRemote && !(player.getHeldItem(hand).getItem() instanceof ItemOldTvRemote))
         {
             if(player.isSneaking())
             {
