@@ -15,11 +15,13 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
@@ -76,27 +78,49 @@ public class BlockCookieJar extends Block implements ITileEntityProvider
     {
         ItemStack heldItem = playerIn.getHeldItem(hand);
         int metadata = getMetaFromState(state);
+
         if(!heldItem.isEmpty())
         {
             if(heldItem.getItem() == Items.COOKIE && metadata < 6)
             {
-                worldIn.setBlockState(pos, state.withProperty(COOKIE_COUNT, metadata + 1), 2);
+                int newMeta = metadata + 1;
+                float pitch = 1.0F + (newMeta / 6.0F);
+
+                worldIn.setBlockState(pos, state.withProperty(COOKIE_COUNT, newMeta), 2);
                 heldItem.shrink(1);
+
+                worldIn.playSound(playerIn, pos, SoundEvents.BLOCK_WOOD_PLACE, SoundCategory.BLOCKS, 1.0F, pitch);
+
                 worldIn.updateComparatorOutputLevel(pos, this);
                 return true;
             }
         }
+
         if(metadata > 0)
         {
-            worldIn.setBlockState(pos, state.withProperty(COOKIE_COUNT, metadata - 1), 2);
+            int newMeta = metadata - 1;
+            float pitch = 1.0F + (newMeta / 6.0F);
+
+            worldIn.setBlockState(pos, state.withProperty(COOKIE_COUNT, newMeta), 2);
+
             if(!worldIn.isRemote)
             {
-                EntityItem var14 = new EntityItem(worldIn, pos.getX() + 0.5, pos.getY() + 0.8, pos.getZ() + 0.5, new ItemStack(Items.COOKIE));
-                worldIn.spawnEntity(var14);
+                EntityItem item = new EntityItem(
+                        worldIn,
+                        pos.getX() + 0.5,
+                        pos.getY() + 0.8,
+                        pos.getZ() + 0.5,
+                        new ItemStack(Items.COOKIE)
+                );
+                worldIn.spawnEntity(item);
             }
+
+            worldIn.playSound(playerIn, pos, SoundEvents.BLOCK_WOOD_PLACE, SoundCategory.BLOCKS, 1.0F, pitch);
+
             TileEntityUtil.markBlockForUpdate(worldIn, pos);
             return true;
         }
+
         return false;
     }
 
