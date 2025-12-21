@@ -15,6 +15,7 @@ import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -38,6 +39,8 @@ public class ItemTVRemote extends Item {
         if (GuiScreen.isShiftKeyDown()) {
             tooltip.addAll(Minecraft.getMinecraft().fontRenderer.listFormattedStringToWidth(
                     I18n.format("cfm.tv_remote.info"), 150));
+        } else {
+            tooltip.add(TextFormatting.YELLOW + I18n.format("cfm.info"));
         }
     }
 

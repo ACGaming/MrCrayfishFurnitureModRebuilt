@@ -5,7 +5,6 @@ import com.mrcrayfish.furniture.init.FurnitureSounds;
 import com.mrcrayfish.furniture.network.PacketHandler;
 import com.mrcrayfish.furniture.network.message.MessageTVPlaySound;
 import com.mrcrayfish.furniture.tileentity.TileEntityRetroTV;
-import com.mrcrayfish.furniture.tileentity.TileEntityTV;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.resources.I18n;
