@@ -3,29 +3,28 @@
     "item": "cfm:toaster"
   },
   "pattern": [
-    "QBQ",
-    "QPS",
-    "WWW"
+    "545",
+    "515",
+    "323"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
-    "P": {
+    "1": {
       "item": "minecraft:piston"
     },
-    "Q": {
-      "item": "minecraft:quartz_block",
-      "data": 0
+    "2": {
+      "item": "minecraft:redstone"
     },
-    "B": {
-      "item": "minecraft:iron_bars"
+    "3": {
+      "item": "minecraft:comparator"
     },
-    "S": {
+    "4": {
       "item": "minecraft:iron_ingot",
       "data": 0
     },
-    "W": {
-      "item": "minecraft:wool",
-      "data": 15
+    "5": {
+      "item": "minecraft:concrete",
+      "data": 7
     }
   }
 }
