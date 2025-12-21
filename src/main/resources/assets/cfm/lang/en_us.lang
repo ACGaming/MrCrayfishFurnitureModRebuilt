@@ -542,6 +542,9 @@ tile.litter_box.name=Litter Box
 tile.cat_tree.name=Cat Tree
 tile.table_oak_old.name=Oak Table (Old)
 tile.table_stone_old.name=Stone Table (Old)
+tile.chair_oak_old.name=Chair Oak (Old)
+tile.chair_stone_old.name=Chair Stone (Old)
+
 
 tile.bedside_cabinet_biomesoplenty_cherry.name=Cherry Bedside Cabinet
 tile.blinds_biomesoplenty_cherry_closed.name=Cherry Blinds

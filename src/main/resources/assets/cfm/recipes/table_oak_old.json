@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "cfm:table_oak_old"
+  },
+  "pattern": [
+    "111",
+    " * ",
+    " * "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "*": {
+      "item": "minecraft:planks",
+      "data": 0
+    },
+	"1": {
+      "item": "minecraft:log",
+      "data": 0
+    }
+  }
+}
