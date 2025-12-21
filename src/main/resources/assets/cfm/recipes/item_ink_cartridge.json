@@ -4,19 +4,18 @@
     "count": 2
   },
   "pattern": [
-    "SSS",
-    "SIS",
-    "SSS"
+    " 1 ",
+    "121",
+    " 1 "
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
-    "S": {
-      "item": "minecraft:stone",
-      "data": 0
+    "1": {
+      "item": "minecraft:iron_ingot"
     },
-    "I": {
+    "2": {
       "item": "minecraft:dye",
-      "data": 0
+      "data": 8
     }
   }
 }
