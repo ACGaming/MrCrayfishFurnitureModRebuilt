@@ -3,24 +3,26 @@
     "item": "cfm:printer"
   },
   "pattern": [
-    "*@*",
-    "\u0026R\u0026",
-    "***"
+    "313",
+    "2 2",
+    "454"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
-    "@": {
+    "1": {
       "item": "minecraft:paper"
     },
-    "R": {
-      "item": "minecraft:redstone"
+    "2": {
+      "item": "minecraft:redstone_block"
     },
-    "\u0026": {
+    "3": {
+      "item": "minecraft:comparator"
+    },
+    "4": {
+      "item": "minecraft:repeater"
+    },
+    "5": {
       "item": "minecraft:iron_block"
-    },
-    "*": {
-      "item": "minecraft:stone",
-      "data": 0
     }
   }
 }
