@@ -3,21 +3,20 @@
     "item": "cfm:trampoline"
   },
   "pattern": [
-    "WMW",
-    "SWS",
-    "S S"
+    "_*_",
+    "1_1",
+    "1 1"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
-    "S": {
-      "item": "minecraft:stone",
-      "data": 0
+    "1": {
+      "item": "minecraft:iron_ingot"
     },
-    "W": {
+    "_": {
       "item": "minecraft:wool",
       "data": 11
     },
-    "M": {
+    "*": {
       "item": "minecraft:string"
     }
   }
