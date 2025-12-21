@@ -3,17 +3,16 @@
     "item": "cfm:item_knife"
   },
   "pattern": [
-    "I ",
-    " S"
+    "1 ",
+    " 2"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
-    "S": {
+    "1": {
       "item": "minecraft:stick"
     },
-    "I": {
-      "item": "minecraft:stone",
-      "data": 0
+    "2": {
+      "item": "minecraft:iron_ingot"
     }
   }
 }
