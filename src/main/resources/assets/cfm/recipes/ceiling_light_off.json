@@ -1,25 +1,23 @@
 {
     "result": {
         "item": "cfm:ceiling_light_off",
-        "count": 4
+        "count": 1
     },
     "pattern": [
-        "O",
-        "S",
-        "G"
+        "1",
+        "0",
+        "*"
     ],
     "type": "minecraft:crafting_shaped",
     "key": {
-        "S": {
-            "item": "minecraft:concrete",
-            "data": 8
+        "1": {
+            "item": "minecraft:iron_ingot"
         },
-        "G": {
+        "*": {
             "item": "cfm:item_light_bulb"
         },
-        "O": {
-            "item": "minecraft:concrete",
-            "data": 7
+        "0": {
+            "item": "minecraft:redstone"
         }
     }
 }
