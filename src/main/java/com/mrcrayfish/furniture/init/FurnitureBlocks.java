@@ -12,7 +12,7 @@ public class FurnitureBlocks
 {
     /* Initial Furniture */
     public static final Block COFFEE_TABLE_OAK, COFFEE_TABLE_STONE;
-    public static final Block TABLE_OAK, TABLE_STONE;
+    public static final Block TABLE_OAK, TABLE_STONE,TABLE_OAK_OLD, TABLE_STONE_OLD;
     public static final Block CHAIR_OAK, CHAIR_STONE;
     public static final Block FREEZER, FRIDGE;
     public static final Block CABINET_OAK, BEDSIDE_CABINET_OAK;
@@ -126,12 +126,14 @@ public class FurnitureBlocks
         COFFEE_TABLE_DARK_OAK = new BlockCoffeeTable(Material.WOOD, SoundType.WOOD, "coffee_table_dark_oak");
         COFFEE_TABLE_STONE = new BlockCoffeeTable(Material.ROCK, SoundType.STONE, "coffee_table_stone");
         TABLE_OAK = new BlockTable(Material.WOOD, SoundType.WOOD, "table_oak");
+        TABLE_OAK_OLD = new BlockTable(Material.WOOD, SoundType.WOOD, "table_oak_old");
         TABLE_SPRUCE = new BlockTable(Material.WOOD, SoundType.WOOD, "table_spruce");
         TABLE_BIRCH = new BlockTable(Material.WOOD, SoundType.WOOD, "table_birch");
         TABLE_JUNGLE = new BlockTable(Material.WOOD, SoundType.WOOD, "table_jungle");
         TABLE_ACACIA = new BlockTable(Material.WOOD, SoundType.WOOD, "table_acacia");
         TABLE_DARK_OAK = new BlockTable(Material.WOOD, SoundType.WOOD, "table_dark_oak");
         TABLE_STONE = new BlockTable(Material.ROCK, SoundType.STONE, "table_stone");
+        TABLE_STONE_OLD = new BlockTable(Material.ROCK, SoundType.STONE, "table_stone_old");
         CHAIR_OAK = new BlockChair(Material.WOOD, SoundType.WOOD, "chair_oak");
         CHAIR_SPRUCE = new BlockChair(Material.WOOD, SoundType.WOOD, "chair_spruce");
         CHAIR_BIRCH = new BlockChair(Material.WOOD, SoundType.WOOD, "chair_birch");
@@ -389,12 +391,14 @@ public class FurnitureBlocks
         registerBlock(COFFEE_TABLE_DIORITE);
         registerBlock(COFFEE_TABLE_ANDESITE);
         registerBlock(TABLE_OAK);
+        registerBlock(TABLE_OAK_OLD);
         registerBlock(TABLE_SPRUCE);
         registerBlock(TABLE_BIRCH);
         registerBlock(TABLE_JUNGLE);
         registerBlock(TABLE_ACACIA);
         registerBlock(TABLE_DARK_OAK);
         registerBlock(TABLE_STONE);
+        registerBlock(TABLE_STONE_OLD);
         registerBlock(TABLE_GRANITE);
         registerBlock(TABLE_DIORITE);
         registerBlock(TABLE_ANDESITE);
