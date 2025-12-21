@@ -1,6 +1,7 @@
 {
   "result": {
-    "item": "cfm:plate"
+    "item": "cfm:plate",
+    "count": 4
   },
   "pattern": [
     "Q Q",
