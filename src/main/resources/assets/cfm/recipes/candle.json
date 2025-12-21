@@ -3,22 +3,21 @@
     "item": "cfm:candle"
   },
   "pattern": [
-    "WWW",
-    "SSS",
-    " C "
+    "***",
+    "---",
+    " 1 "
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
-    "S": {
-      "item": "minecraft:stone",
-      "data": 0
+    "1": {
+      "item": "minecraft:stone_slab",
+      "data": 3
     },
-    "C": {
-      "item": "minecraft:cobblestone"
+    "*": {
+      "item": "minecraft:clay"
     },
-    "W": {
-      "item": "minecraft:stained_hardened_clay",
-      "data": 0
+    "-": {
+      "item": "minecraft:iron_ingot"
     }
   }
 }
