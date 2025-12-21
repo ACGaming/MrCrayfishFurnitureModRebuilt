@@ -3,20 +3,26 @@
     "item": "cfm:blender"
   },
   "pattern": [
-    "GBG",
-    "GIG",
-    "BBB"
+    "1-1",
+    "2 2",
+    "343"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
-    "B": {
-      "item": "minecraft:wool",
-      "data": 15
+    "1": {
+      "item": "minecraft:concrete",
+      "data": 7
     },
-    "G": {
+    "2": {
       "item": "minecraft:glass_pane"
     },
-    "I": {
+    "3": {
+      "item": "minecraft:repeater"
+    },
+    "4": {
+      "item": "minecraft:redstone"
+    },
+    "-": {
       "item": "minecraft:iron_ingot"
     }
   }
