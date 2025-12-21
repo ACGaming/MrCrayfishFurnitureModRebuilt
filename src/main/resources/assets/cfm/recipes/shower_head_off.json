@@ -5,14 +5,10 @@
   "pattern": [
     "II ",
     " I ",
-    "SSS"
+    "III"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
-    "S": {
-      "item": "minecraft:stone",
-      "data": 0
-    },
     "I": {
       "item": "minecraft:iron_ingot"
     }
