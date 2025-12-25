@@ -540,10 +540,10 @@ tile.modern_sliding_door_acacia.name=Modern Sliding Door Acacia
 tile.modern_sliding_door_dark_oak.name=Modern Sliding Door Dark Oak
 tile.litter_box.name=Litter Box
 tile.cat_tree.name=Cat Tree
-tile.table_oak_old.name=Oak Table (Old)
+tile.table_oak_old.name=Wooden Table (Old)
 tile.table_stone_old.name=Stone Table (Old)
-tile.chair_oak_old.name=Chair Oak (Old)
-tile.chair_stone_old.name=Chair Stone (Old)
+tile.chair_oak_old.name=Wooden Chair (Old)
+tile.chair_stone_old.name=Stone Chair (Old)
 tile.cabinet_old.name=Cabinet (Old)
 tile.bedside_cabinet_old.name=Bedside Cabinet (Old)
 
