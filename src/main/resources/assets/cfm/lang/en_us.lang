@@ -544,6 +544,8 @@ tile.table_oak_old.name=Oak Table (Old)
 tile.table_stone_old.name=Stone Table (Old)
 tile.chair_oak_old.name=Chair Oak (Old)
 tile.chair_stone_old.name=Chair Stone (Old)
+tile.cabinet_old.name=Cabinet (Old)
+tile.bedside_cabinet_old.name=Bedside Cabinet (Old)
 
 
 tile.bedside_cabinet_biomesoplenty_cherry.name=Cherry Bedside Cabinet

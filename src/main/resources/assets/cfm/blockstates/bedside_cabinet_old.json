@@ -1,0 +1,31 @@
+{
+	"forge_marker": 1,
+	"defaults": {
+		"textures": {
+			"1": "blocks/planks_spruce",
+			"2": "blocks/log_oak",
+			"handle": "blocks/planks_oak"
+		},
+		"model": "cfm:bedside_cabinet_old"
+	},
+	"variants": {
+		"inventory": [{
+			"model": "cfm:bedside_cabinet_old"
+		}],
+		"facing=north": {
+			"model": "cfm:bedside_cabinet_old",
+			"y": 270
+		},
+		"facing=south": {
+			"model": "cfm:bedside_cabinet_old",
+			"y": 90
+		},
+		"facing=east": {
+			"model": "cfm:bedside_cabinet_old"
+		},
+		"facing=west": {
+			"model": "cfm:bedside_cabinet_old",
+			"y": 180
+		}
+	}
+}
