@@ -401,26 +401,22 @@ public class FurnitureBlocks
         registerBlock(COFFEE_TABLE_DIORITE);
         registerBlock(COFFEE_TABLE_ANDESITE);
         registerBlock(TABLE_OAK);
-        registerBlock(TABLE_OAK_OLD);
         registerBlock(TABLE_SPRUCE);
         registerBlock(TABLE_BIRCH);
         registerBlock(TABLE_JUNGLE);
         registerBlock(TABLE_ACACIA);
         registerBlock(TABLE_DARK_OAK);
         registerBlock(TABLE_STONE);
-        registerBlock(TABLE_STONE_OLD);
         registerBlock(TABLE_GRANITE);
         registerBlock(TABLE_DIORITE);
         registerBlock(TABLE_ANDESITE);
         registerBlock(CHAIR_OAK);
-        registerBlock(CHAIR_OAK_OLD);
         registerBlock(CHAIR_SPRUCE);
         registerBlock(CHAIR_BIRCH);
         registerBlock(CHAIR_JUNGLE);
         registerBlock(CHAIR_ACACIA);
         registerBlock(CHAIR_DARK_OAK);
         registerBlock(CHAIR_STONE);
-        registerBlock(CHAIR_STONE_OLD);
         registerBlock(CHAIR_GRANITE);
         registerBlock(CHAIR_DIORITE);
         registerBlock(CHAIR_ANDESITE);
@@ -650,6 +646,10 @@ public class FurnitureBlocks
         registerBlock(CAMP_CHAIR_DARK_OAK);
         registerBlock(LITTER_BOX);
         registerBlock(CAT_TREE);
+        registerBlock(WOODEN_CHAIR_OLD);
+        registerBlock(STONE_CHAIR_OLD);
+        registerBlock(WOODEN_TABLE_OLD);
+        registerBlock(STONE_TABLE_OLD);
         registerBlock(CABINET_OLD);
         registerBlock(BEDSIDE_CABINET_OLD);
     }
