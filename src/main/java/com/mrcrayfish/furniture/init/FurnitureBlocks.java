@@ -12,8 +12,8 @@ public class FurnitureBlocks
 {
     /* Initial Furniture */
     public static final Block COFFEE_TABLE_OAK, COFFEE_TABLE_STONE;
-    public static final Block TABLE_OAK, TABLE_STONE,TABLE_OAK_OLD, TABLE_STONE_OLD;
-    public static final Block CHAIR_OAK, CHAIR_STONE, CHAIR_OAK_OLD, CHAIR_STONE_OLD;
+    public static final Block TABLE_OAK, TABLE_STONE;
+    public static final Block CHAIR_OAK, CHAIR_STONE;
     public static final Block FREEZER, FRIDGE;
     public static final Block CABINET_OAK, BEDSIDE_CABINET_OAK;
     public static final Block COUCH, COUCH_JEB, COUCH_FRAMED, COUCH_FRAMED_JEB;
@@ -115,6 +115,10 @@ public class FurnitureBlocks
     public static final Block FOOD_DISPENSER_CAT;
     public static final Block LITTER_BOX;
     public static final Block CAT_TREE;
+    public static final Block WOODEN_CHAIR_OLD;
+    public static final Block STONE_CHAIR_OLD;
+    public static final Block WOODEN_TABLE_OLD;
+    public static final Block STONE_TABLE_OLD;
     public static final Block CABINET_OLD;
     public static final Block BEDSIDE_CABINET_OLD;
 
@@ -128,23 +132,19 @@ public class FurnitureBlocks
         COFFEE_TABLE_DARK_OAK = new BlockCoffeeTable(Material.WOOD, SoundType.WOOD, "coffee_table_dark_oak");
         COFFEE_TABLE_STONE = new BlockCoffeeTable(Material.ROCK, SoundType.STONE, "coffee_table_stone");
         TABLE_OAK = new BlockTable(Material.WOOD, SoundType.WOOD, "table_oak");
-        TABLE_OAK_OLD = new BlockTable(Material.WOOD, SoundType.WOOD, "table_oak_old");
         TABLE_SPRUCE = new BlockTable(Material.WOOD, SoundType.WOOD, "table_spruce");
         TABLE_BIRCH = new BlockTable(Material.WOOD, SoundType.WOOD, "table_birch");
         TABLE_JUNGLE = new BlockTable(Material.WOOD, SoundType.WOOD, "table_jungle");
         TABLE_ACACIA = new BlockTable(Material.WOOD, SoundType.WOOD, "table_acacia");
         TABLE_DARK_OAK = new BlockTable(Material.WOOD, SoundType.WOOD, "table_dark_oak");
         TABLE_STONE = new BlockTable(Material.ROCK, SoundType.STONE, "table_stone");
-        TABLE_STONE_OLD = new BlockTable(Material.ROCK, SoundType.STONE, "table_stone_old");
         CHAIR_OAK = new BlockChair(Material.WOOD, SoundType.WOOD, "chair_oak");
-        CHAIR_OAK_OLD = new BlockChair(Material.WOOD, SoundType.WOOD, "chair_oak_old");
         CHAIR_SPRUCE = new BlockChair(Material.WOOD, SoundType.WOOD, "chair_spruce");
         CHAIR_BIRCH = new BlockChair(Material.WOOD, SoundType.WOOD, "chair_birch");
         CHAIR_JUNGLE = new BlockChair(Material.WOOD, SoundType.WOOD, "chair_jungle");
         CHAIR_ACACIA = new BlockChair(Material.WOOD, SoundType.WOOD, "chair_acacia");
         CHAIR_DARK_OAK = new BlockChair(Material.WOOD, SoundType.WOOD, "chair_dark_oak");
         CHAIR_STONE = new BlockChair(Material.ROCK, SoundType.STONE, "chair_stone");
-        CHAIR_STONE_OLD = new BlockChair(Material.ROCK, SoundType.STONE, "chair_stone_old");
         FREEZER = new BlockFreezer(Material.ROCK, "freezer");
         FRIDGE = new BlockFridge(Material.ROCK, "fridge");
         CABINET_OAK = new BlockCabinet(Material.WOOD, "cabinet_oak");
@@ -380,6 +380,10 @@ public class FurnitureBlocks
         MODERN_OAK_STAIR = new BlockModernOakStair("modern_oak_stair");
         LITTER_BOX = new BlockLitterBox(Material.WOOD, "litter_box");
         CAT_TREE = new BlockCatTree(Material.WOOD, "cat_tree");
+        WOODEN_CHAIR_OLD = new BlockChair(Material.WOOD, SoundType.WOOD, "chair_oak_old");
+        STONE_CHAIR_OLD = new BlockChair(Material.ROCK, SoundType.STONE, "chair_stone_old");
+        WOODEN_TABLE_OLD = new BlockTable(Material.WOOD, SoundType.WOOD, "table_oak_old");
+        STONE_TABLE_OLD = new BlockTable(Material.ROCK, SoundType.STONE, "table_stone_old");
         CABINET_OLD = new BlockCabinet(Material.WOOD, "cabinet_old");
         BEDSIDE_CABINET_OLD = new BlockBedsideCabinet(Material.WOOD, "bedside_cabinet_old");
     }
