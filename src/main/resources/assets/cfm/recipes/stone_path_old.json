@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "cfm:stone_path_old",
+    "count": 8
+  },
+  "pattern": [
+    "***"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "*": {
+      "item": "minecraft:stone",
+	  "data": 0
+    }
+  }
+}

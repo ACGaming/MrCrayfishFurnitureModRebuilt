@@ -556,6 +556,7 @@ tile.blinds_closed_old.name=Blinds (Old)
 tile.oven_old.name=Oven (Old)
 tile.range_hood_old.name=Oven Rangehood (Old)
 tile.bird_bath_old.name=Bird Bath (Old)
+tile.stone_path_old.name=Stone Path (Old)
 
 
 tile.bedside_cabinet_biomesoplenty_cherry.name=Cherry Bedside Cabinet
