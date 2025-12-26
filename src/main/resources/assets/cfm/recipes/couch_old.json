@@ -1,0 +1,18 @@
+{
+  "result": {
+    "item": "cfm:couch_old",
+    "data": 0
+  },
+  "pattern": [
+    "1 1",
+    "111",
+    "111"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "1": {
+      "item": "minecraft:wool",
+      "data": 0
+    }
+  }
+}

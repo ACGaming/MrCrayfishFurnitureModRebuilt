@@ -1,0 +1,41 @@
+{
+	"forge_marker": 1,
+	"defaults": {
+		"textures": {
+			"couch": "cfm:blocks/couch_old"
+		},
+		"model": "couch_old",
+		"uvlock": true
+	},
+	"variants": {
+		"inventory": {
+			"model": "cfm:couch_old"
+		},
+		"facing": {
+			"north": { "y": 270 },
+			"east":  { "y": 0   },
+			"south": { "y": 90  },
+			"west":  { "y": 180 }
+		},
+		"type": {
+			"both": {
+				"model": "cfm:couch_old"
+			},
+			"left": {
+				"model": "cfm:couch_left_old"
+			},
+			"right": {
+				"model": "cfm:couch_right_old"
+			},
+			"none": {
+				"model": "cfm:couch_none_old"
+			},
+			"corner_right": {
+				"model": "cfm:couch_corner_right_old"
+			},
+			"corner_left": {
+				"model": "cfm:couch_corner_left_old"
+			}
+		}
+	}
+}

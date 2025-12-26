@@ -125,6 +125,7 @@ public class FurnitureBlocks
     public static final Block STONE_COFFEE_TABLE_OLD;
     public static final Block FREEZER_OLD;
     public static final Block FRIDGE_OLD;
+    public static final Block COUCH_OLD;
 
     static
     {
@@ -394,6 +395,7 @@ public class FurnitureBlocks
         STONE_COFFEE_TABLE_OLD = new BlockCoffeeTable(Material.ROCK, SoundType.STONE, "stone_coffee_table_old");
         FREEZER_OLD = new BlockOldFreezer(Material.IRON, "freezer_old");
         FRIDGE_OLD = new BlockOldFridge(Material.IRON, "fridge_old");
+        COUCH_OLD = new BlockOldCouch("couch_old");
     }
 
     public static void register()
@@ -664,6 +666,7 @@ public class FurnitureBlocks
         registerBlock(STONE_COFFEE_TABLE_OLD);
         registerBlock(FREEZER_OLD);
         registerBlock(FRIDGE_OLD, null);
+        registerBlock(COUCH_OLD);
     }
 
     public static void registerBlock(Block block)
