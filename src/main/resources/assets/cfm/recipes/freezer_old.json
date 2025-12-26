@@ -1,0 +1,25 @@
+{
+  "result": {
+    "item": "cfm:freezer_old"
+  },
+  "pattern": [
+    "***",
+    "P#P",
+    "*@*"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "@": {
+      "item": "minecraft:furnace"
+    },
+    "P": {
+      "item": "minecraft:redstone"
+    },
+    "#": {
+      "item": "minecraft:chest"
+    },
+    "*": {
+      "item": "minecraft:iron_block"
+    }
+  }
+}

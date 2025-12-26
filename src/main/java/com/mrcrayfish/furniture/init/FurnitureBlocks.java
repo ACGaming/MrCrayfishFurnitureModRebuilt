@@ -123,6 +123,8 @@ public class FurnitureBlocks
     public static final Block BEDSIDE_CABINET_OLD;
     public static final Block WOODEN_COFFEE_TABLE_OLD;
     public static final Block STONE_COFFEE_TABLE_OLD;
+    public static final Block FREEZER_OLD;
+    public static final Block FRIDGE_OLD;
 
     static
     {
@@ -147,8 +149,8 @@ public class FurnitureBlocks
         CHAIR_ACACIA = new BlockChair(Material.WOOD, SoundType.WOOD, "chair_acacia");
         CHAIR_DARK_OAK = new BlockChair(Material.WOOD, SoundType.WOOD, "chair_dark_oak");
         CHAIR_STONE = new BlockChair(Material.ROCK, SoundType.STONE, "chair_stone");
-        FREEZER = new BlockFreezer(Material.ROCK, "freezer");
-        FRIDGE = new BlockFridge(Material.ROCK, "fridge");
+        FREEZER = new BlockFreezer(Material.IRON, "freezer");
+        FRIDGE = new BlockFridge(Material.IRON, "fridge");
         CABINET_OAK = new BlockCabinet(Material.WOOD, "cabinet_oak");
         CABINET_SPRUCE = new BlockCabinet(Material.WOOD, "cabinet_spruce");
         CABINET_BIRCH = new BlockCabinet(Material.WOOD, "cabinet_birch");
@@ -390,6 +392,8 @@ public class FurnitureBlocks
         BEDSIDE_CABINET_OLD = new BlockBedsideCabinet(Material.WOOD, "bedside_cabinet_old");
         WOODEN_COFFEE_TABLE_OLD = new BlockCoffeeTable(Material.WOOD, SoundType.WOOD, "wooden_coffee_table_old");
         STONE_COFFEE_TABLE_OLD = new BlockCoffeeTable(Material.ROCK, SoundType.STONE, "stone_coffee_table_old");
+        FREEZER_OLD = new BlockOldFreezer(Material.IRON, "freezer_old");
+        FRIDGE_OLD = new BlockOldFridge(Material.IRON, "fridge_old");
     }
 
     public static void register()
@@ -658,6 +662,8 @@ public class FurnitureBlocks
         registerBlock(BEDSIDE_CABINET_OLD);
         registerBlock(WOODEN_COFFEE_TABLE_OLD);
         registerBlock(STONE_COFFEE_TABLE_OLD);
+        registerBlock(FREEZER_OLD);
+        registerBlock(FRIDGE_OLD, null);
     }
 
     public static void registerBlock(Block block)
