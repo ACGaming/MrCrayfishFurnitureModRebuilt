@@ -3,6 +3,7 @@ package com.mrcrayfish.furniture.init;
 import com.mrcrayfish.furniture.Reference;
 import com.mrcrayfish.furniture.handler.ConfigurationHandler;
 import com.mrcrayfish.furniture.integration.biomesoplenty.FurnitureBlocksBOP;
+import com.mrcrayfish.furniture.integration.palebloom.FurnitureBlocksPalebloom;
 import com.mrcrayfish.furniture.integration.rustic.FurnitureBlocksRustic;
 import com.mrcrayfish.furniture.integration.suikecherry.FurnitureBlocksSuikecherry;
 import com.mrcrayfish.furniture.integration.thaumcraft.FurnitureBlocksThaumcraft;
@@ -137,6 +138,15 @@ public class RegistrationHandler
         FurnitureSounds.register();
         FurnitureCrafting.register();
 
+        // Cosmetic Wood disables manual mod integration
+        if(!Loader.isModLoaded("cw"))
+        {
+            initMod();
+        }
+    }
+
+    public static void initMod()
+    {
         if(Loader.isModLoaded("biomesoplenty") && ConfigurationHandler.integrationBiomesOPlenty)
         {
             FurnitureBlocksBOP.register();
@@ -155,7 +165,7 @@ public class RegistrationHandler
         }
         if(Loader.isModLoaded("palebloom") && ConfigurationHandler.integrationPalebloom)
         {
-            com.mrcrayfish.furniture.integration.palebloom.FurnitureBlocksPalebloom.register();
+            FurnitureBlocksPalebloom.register();
         }
     }
 }
