@@ -1,0 +1,71 @@
+{
+	"forge_marker": 1,
+	"defaults": {
+		"textures": {
+			"1": "blocks/log_oak",
+			"2": "blocks/planks_oak"
+		},
+		"model": "cfm:coffee_table_all_old",
+		"uvlock": true
+	},
+	"variants": {
+		"inventory": [{
+			"model": "cfm:coffee_table_all_old"
+		}],
+		"east=false,north=false,south=false,west=false": {
+			"model": "cfm:coffee_table_all_old"
+		},
+		"east=false,north=true,south=false,west=false": {
+			"model": "cfm:coffee_table_two_leg_old"
+		},
+		"east=true,north=false,south=false,west=false": {
+			"model": "cfm:coffee_table_two_leg_old",
+			"y": 90
+		},
+		"east=false,north=false,south=true,west=false": {
+			"model": "cfm:coffee_table_two_leg_old",
+			"y": 180
+		},
+		"east=false,north=false,south=false,west=true": {
+			"model": "cfm:coffee_table_two_leg_old",
+			"y": 270
+		},
+		"east=true,north=true,south=false,west=false": {
+			"model": "cfm:coffee_table_one_leg_old",
+			"y": 90
+		},
+		"east=false,north=true,south=true,west=false": {
+			"model": "cfm:coffee_table_none_old"
+		},
+		"east=false,north=true,south=false,west=true": {
+			"model": "cfm:coffee_table_one_leg_old"
+		},
+		"east=true,north=false,south=false,west=true": {
+			"model": "cfm:coffee_table_one_leg_old",
+			"y": 90
+		},
+		"east=true,north=false,south=true,west=false": {
+			"model": "cfm:coffee_table_one_leg_old",
+			"y": 180
+		},
+		"east=false,north=false,south=true,west=true": {
+			"model": "cfm:coffee_table_one_leg_old",
+			"y": 270
+		},
+		"east=true,north=true,south=true,west=true": {
+			"model": "cfm:coffee_table_none_old"
+		},
+		"east=true,north=true,south=true,west=false": {
+			"model": "cfm:coffee_table_none_old"
+		},
+		"east=true,north=true,south=false,west=true": {
+			"model": "cfm:coffee_table_none_old"
+		},
+		"east=false,north=true,south=true,west=true": {
+			"model": "cfm:coffee_table_none_old"
+		},
+		"east=true,north=false,south=true,west=true": {
+			"model": "cfm:coffee_table_none_old"
+		}
+	}
+}

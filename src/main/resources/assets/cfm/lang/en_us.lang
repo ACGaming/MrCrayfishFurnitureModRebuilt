@@ -546,6 +546,8 @@ tile.chair_oak_old.name=Wooden Chair (Old)
 tile.chair_stone_old.name=Stone Chair (Old)
 tile.cabinet_old.name=Cabinet (Old)
 tile.bedside_cabinet_old.name=Bedside Cabinet (Old)
+tile.wooden_coffee_table_old.name=Wooden Coffee Table (Old)
+tile.stone_coffee_table_old.name=Stone Coffee Table (Old)
 
 
 tile.bedside_cabinet_biomesoplenty_cherry.name=Cherry Bedside Cabinet

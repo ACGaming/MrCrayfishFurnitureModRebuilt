@@ -121,6 +121,8 @@ public class FurnitureBlocks
     public static final Block STONE_TABLE_OLD;
     public static final Block CABINET_OLD;
     public static final Block BEDSIDE_CABINET_OLD;
+    public static final Block WOODEN_COFFEE_TABLE_OLD;
+    public static final Block STONE_COFFEE_TABLE_OLD;
 
     static
     {
@@ -386,6 +388,8 @@ public class FurnitureBlocks
         STONE_TABLE_OLD = new BlockTable(Material.ROCK, SoundType.STONE, "table_stone_old");
         CABINET_OLD = new BlockCabinet(Material.WOOD, "cabinet_old");
         BEDSIDE_CABINET_OLD = new BlockBedsideCabinet(Material.WOOD, "bedside_cabinet_old");
+        WOODEN_COFFEE_TABLE_OLD = new BlockCoffeeTable(Material.WOOD, SoundType.WOOD, "wooden_coffee_table_old");
+        STONE_COFFEE_TABLE_OLD = new BlockCoffeeTable(Material.ROCK, SoundType.STONE, "stone_coffee_table_old");
     }
 
     public static void register()
@@ -652,6 +656,8 @@ public class FurnitureBlocks
         registerBlock(STONE_TABLE_OLD);
         registerBlock(CABINET_OLD);
         registerBlock(BEDSIDE_CABINET_OLD);
+        registerBlock(WOODEN_COFFEE_TABLE_OLD);
+        registerBlock(STONE_COFFEE_TABLE_OLD);
     }
 
     public static void registerBlock(Block block)
