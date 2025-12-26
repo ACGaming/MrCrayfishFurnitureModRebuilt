@@ -126,6 +126,8 @@ public class FurnitureBlocks
     public static final Block FREEZER_OLD;
     public static final Block FRIDGE_OLD;
     public static final Block COUCH_OLD;
+    public static final Block BLINDS_OLD;
+    public static final Block BLINDS_OLD_CLOSED;
 
     static
     {
@@ -396,6 +398,8 @@ public class FurnitureBlocks
         FREEZER_OLD = new BlockOldFreezer(Material.IRON, "freezer_old");
         FRIDGE_OLD = new BlockOldFridge(Material.IRON, "fridge_old");
         COUCH_OLD = new BlockOldCouch("couch_old");
+        BLINDS_OLD = new BlockBlinds(Material.WOOD, true, "blinds_open_old");
+        BLINDS_OLD_CLOSED = new BlockBlinds(Material.WOOD, false, "blinds_closed_old");
     }
 
     public static void register()
@@ -667,6 +671,8 @@ public class FurnitureBlocks
         registerBlock(FREEZER_OLD);
         registerBlock(FRIDGE_OLD, null);
         registerBlock(COUCH_OLD);
+        registerBlock(BLINDS_OLD);
+        registerBlock(BLINDS_OLD_CLOSED, null);
     }
 
     public static void registerBlock(Block block)

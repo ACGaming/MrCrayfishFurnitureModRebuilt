@@ -1,0 +1,28 @@
+{
+	"forge_marker": 1,
+	"variants": {
+		"inventory": {
+			"model": "cfm:blinds_open_old"
+		},
+		"facing": {
+			"north": {
+				"y": 270
+			},
+			"east": {},
+			"south": {
+				"y": 90
+			},
+			"west": {
+				"y": 180
+			}
+		},
+		"left": {
+			"true": {
+				"model": "cfm:blinds_open_stringless_old"
+			},
+			"false": {
+				"model": "cfm:blinds_open_old"
+			}
+		}
+	}
+}

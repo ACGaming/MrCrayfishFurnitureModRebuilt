@@ -551,6 +551,8 @@ tile.stone_coffee_table_old.name=Stone Coffee Table (Old)
 tile.fridge_old.name=Fridge (Old)
 tile.freezer_old.name=Fridge (Old)
 tile.couch_old.name=Couch (Old)
+tile.blinds_open_old.name=Blinds (Old)
+tile.blinds_closed_old.name=Blinds (Old)
 
 
 tile.bedside_cabinet_biomesoplenty_cherry.name=Cherry Bedside Cabinet
