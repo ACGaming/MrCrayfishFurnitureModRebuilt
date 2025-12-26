@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:quartz" },
+    { "item": "minecraft:fence" }
+  ],
+  "result": {
+    "item": "cfm:white_fence_old",
+    "count": 2
+  }
+}
+
