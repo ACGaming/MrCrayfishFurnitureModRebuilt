@@ -129,6 +129,7 @@ public class FurnitureBlocks
     public static final Block BLINDS_OLD;
     public static final Block BLINDS_OLD_CLOSED;
     public static final Block OVEN_OLD;
+    public static final Block RANGE_HOOD_OLD;
 
     static
     {
@@ -402,6 +403,7 @@ public class FurnitureBlocks
         BLINDS_OLD = new BlockBlinds(Material.WOOD, true, "blinds_open_old");
         BLINDS_OLD_CLOSED = new BlockBlinds(Material.WOOD, false, "blinds_closed_old");
         OVEN_OLD = new BlockOven(Material.ROCK, "oven_old");
+        RANGE_HOOD_OLD = new BlockOldRangeHood(Material.ROCK, "range_hood_old");
     }
 
     public static void register()
@@ -676,6 +678,7 @@ public class FurnitureBlocks
         registerBlock(BLINDS_OLD);
         registerBlock(BLINDS_OLD_CLOSED, null);
         registerBlock(OVEN_OLD);
+        registerBlock(RANGE_HOOD_OLD);
     }
 
     public static void registerBlock(Block block)
