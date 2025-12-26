@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "normal": { "model": "cfm:bird_bath_old" },
+    "facing=north": { "model": "cfm:bird_bath_old", "y": 0 },
+    "facing=south": { "model": "cfm:bird_bath_old", "y": 180 },
+    "facing=west":  { "model": "cfm:bird_bath_old", "y": 270 },
+    "facing=east":  { "model": "cfm:bird_bath_old", "y": 90 },
+    "facing=up":    { "model": "cfm:bird_bath_old" },
+    "facing=down":  { "model": "cfm:bird_bath_old", "y": 180 }
+  }
+}
