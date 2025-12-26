@@ -1,11 +1,11 @@
 {
   "result": {
-    "item": "cfm:oven"
+    "item": "cfm:oven_old"
   },
   "pattern": [
-    "L*L",
-    "*@*",
-    "-1-"
+    "L-L",
+    "-@-",
+    "*1*"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
@@ -15,15 +15,16 @@
     "*": {
       "item": "minecraft:iron_block"
     },
-    "1": {
-      "item": "minecraft:glass",
-      "data": 0
-    },
     "-": {
-      "item": "minecraft:repeater"
+      "item": "minecraft:quartz_block",
+      "data": 0
     },
     "L": {
       "item": "minecraft:comparator"
+    },
+    "1": {
+      "item": "minecraft:glass",
+      "data": 0
     }
   }
 }
