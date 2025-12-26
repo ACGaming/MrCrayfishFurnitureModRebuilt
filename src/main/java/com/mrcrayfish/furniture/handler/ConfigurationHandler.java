@@ -80,19 +80,13 @@ public class ConfigurationHandler
         trustedUrlDomainsListType = config.getString("trusted-url-domains-list-type", CATEGORY_SETTINGS, "BLACKLIST", "Which list type the list of trusted domains is. Can be either WHITELIST or BLACKLIST.");
         maxFileSize = config.getInt("max-file-size", CATEGORY_SETTINGS, 2, 1, 100, "The maximum file size of images and GIFs in MB the TV and Photo Frame can download.");
 
-        integrationBiomesOPlenty = config.getBoolean("integration-biomesoplenty", CATEGORY_INTEGRATION_SETTINGS, true, "Whether furniture with support for Biomes O' Plenty should be enabled.");
-
-        integrationRustic = config.getBoolean("integration-rustic", CATEGORY_INTEGRATION_SETTINGS, true, "Whether furniture with support for Rustic should be enabled.");
-
-        integrationThaumcraft = config.getBoolean("integration-Thaumcraft", CATEGORY_INTEGRATION_SETTINGS, true, "Whether furniture with support for Thaumcraft should be enabled.");
-
-        integrationSuiKeCherry = config.getBoolean("integration-SuiKeCherry", CATEGORY_INTEGRATION_SETTINGS, true, "Whether furniture with support for SuiKeCherry should be enabled.");
-
-        integrationPalebloom = config.getBoolean("integration-palebloom", CATEGORY_INTEGRATION_SETTINGS, true, "Whether furniture with support for Palebloom should be enabled.");
+        integrationBiomesOPlenty = config.getBoolean("integration-biomesoplenty", CATEGORY_INTEGRATION_SETTINGS, true, "Whether furniture with support for Biomes O' Plenty should be enabled. Disabled automatically when Cosmetic Wood is detected.");
+        integrationRustic = config.getBoolean("integration-rustic", CATEGORY_INTEGRATION_SETTINGS, true, "Whether furniture with support for Rustic should be enabled. Disabled automatically when Cosmetic Wood is detected.");
+        integrationThaumcraft = config.getBoolean("integration-Thaumcraft", CATEGORY_INTEGRATION_SETTINGS, true, "Whether furniture with support for Thaumcraft should be enabled. Disabled automatically when Cosmetic Wood is detected.");
+        integrationSuiKeCherry = config.getBoolean("integration-SuiKeCherry", CATEGORY_INTEGRATION_SETTINGS, true, "Whether furniture with support for SuiKeCherry should be enabled. Disabled automatically when Cosmetic Wood is detected.");
+        integrationPalebloom = config.getBoolean("integration-palebloom", CATEGORY_INTEGRATION_SETTINGS, true, "Whether furniture with support for Palebloom should be enabled. Disabled automatically when Cosmetic Wood is detected.");
 
         items = config.getStringList("custom-recipes", CATEGORY_API, items, "Insert custom recipes here");
-
-
 
         config.addCustomCategoryComment(CATEGORY_RECIPE_SETTINGS, "Enable or disable the default recipes");
         config.addCustomCategoryComment(CATEGORY_API, "RecipeAPI Configuration. How to use: https://mrcrayfishs-furniture-mod.fandom.com/wiki/Configuration");
