@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "cfm:stereo_old",
+            "y": 270
+        },
+        "facing=south": {
+            "model": "cfm:stereo_old",
+            "y": 90
+        },
+        "facing=east": {
+            "model": "cfm:stereo_old"
+        },
+        "facing=west": {
+            "model": "cfm:stereo_old",
+            "y": 180
+        }
+    }
+}

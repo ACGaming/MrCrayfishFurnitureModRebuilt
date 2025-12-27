@@ -1,11 +1,11 @@
 {
     "result": {
-        "item": "cfm:stereo"
+        "item": "cfm:stereo_old"
     },
     "pattern": [
-        "515",
+        "131",
         "626",
-        "343"
+        "545"
     ],
     "type": "minecraft:crafting_shaped",
     "key": {
@@ -16,17 +16,19 @@
             "item": "minecraft:jukebox"
 		},
         "3": {
-            "item": "minecraft:comparator"
+            "item": "minecraft:stone",
+			"data": 0
 		},
         "4": {
+            "item": "minecraft:log",
+			"data": 0
+        },
+        "5": {
+            "item": "minecraft:noteblock"
+		},
+        "6": {
             "item": "minecraft:wool",
 			"data": 15
-		},
-        "5": {
-            "item": "minecraft:redstone"
-        },
-        "6": {
-            "item": "minecraft:noteblock"
         }
     }
 }

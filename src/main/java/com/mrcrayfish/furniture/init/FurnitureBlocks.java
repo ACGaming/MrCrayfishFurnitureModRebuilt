@@ -137,6 +137,7 @@ public class FurnitureBlocks
     public static final Block TV_OLD;
     public static final Block COMPUTER_OLD;
     public static final Block PRINTER_OLD;
+    public static final Block STEREO_OLD;
 
     static
     {
@@ -418,6 +419,7 @@ public class FurnitureBlocks
         TV_OLD = new BlockOldTv(Material.WOOD, "tv_old");
         COMPUTER_OLD = new BlockComputer(Material.IRON, "computer_old");
         PRINTER_OLD = new BlockPrinter(Material.IRON, "printer_old");
+        STEREO_OLD = new BlockStereo(Material.WOOD, "stereo_old");
     }
 
     public static void register()
@@ -700,6 +702,7 @@ public class FurnitureBlocks
         registerBlock(TV_OLD);
         registerBlock(COMPUTER_OLD);
         registerBlock(PRINTER_OLD);
+        registerBlock(STEREO_OLD);
     }
 
     public static void registerBlock(Block block)
