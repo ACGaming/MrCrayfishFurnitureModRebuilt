@@ -1,19 +1,19 @@
 {
   "result": {
-    "item": "cfm:toilet"
+    "item": "cfm:toilet_old"
   },
   "pattern": [
-    "31*",
-    "333",
-    " 3 "
+    "14*",
+    "111",
+    " 1 "
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
-    "3": {
-      "item": "minecraft:concrete",
+    "1": {
+      "item": "minecraft:quartz_block",
       "data": 0
     },
-    "1": {
+    "4": {
       "item": "minecraft:stone_button"
     },
     "*": {

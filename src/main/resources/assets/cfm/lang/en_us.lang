@@ -565,6 +565,7 @@ tile.printer_old.name=Printer (Old)
 tile.stereo_old.name=Stereo (Old)
 tile.ceiling_light_off_old.name=Ceiling Light (Old)
 tile.ceiling_light_on_old.name=Ceiling Light (On) (Old)
+tile.toilet_old.name=Toilet (Old)
 
 
 tile.bedside_cabinet_biomesoplenty_cherry.name=Cherry Bedside Cabinet
