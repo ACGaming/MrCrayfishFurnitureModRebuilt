@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "dirty=false,facing=north": {"model": "cfm:microwave_pre_old", "y": 270},
+    "dirty=true,facing=north": {"model": "cfm:microwave_dirty_old", "y": 270},
+    "dirty=false,facing=south": {"model": "cfm:microwave_pre_old", "y": 90},
+    "dirty=true,facing=south": {"model": "cfm:microwave_dirty_old", "y": 90},
+    "dirty=false,facing=east": {"model": "cfm:microwave_pre_old"},
+    "dirty=true,facing=east": {"model": "cfm:microwave_dirty_old"},
+    "dirty=false,facing=west": {"model": "cfm:microwave_pre_old", "y": 180},
+    "dirty=true,facing=west": {"model": "cfm:microwave_dirty_old", "y": 180}
+  }
+}

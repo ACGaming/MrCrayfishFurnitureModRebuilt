@@ -1,0 +1,30 @@
+{
+  "result": {
+    "item": "cfm:microwave_old"
+  },
+  "pattern": [
+    "1_1",
+    "-,*",
+    "111"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "*": {
+      "item": "minecraft:redstone"
+    },
+    "-": {
+      "item": "minecraft:stone",
+	  "data": 0
+    },
+    "_": {
+      "item": "minecraft:comparator"
+    },
+    ",": {
+      "item": "minecraft:glass_pane",
+	  "data": 1
+    },
+    "1": {
+      "item": "minecraft:iron_ingot"
+    }
+  }
+}

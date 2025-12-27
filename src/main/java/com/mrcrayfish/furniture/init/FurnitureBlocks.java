@@ -146,6 +146,7 @@ public class FurnitureBlocks
     public static final Block SHOWER_BOTTOM_OLD;
     public static final Block SHOWER_TOP_OLD;
     public static final Block BIN_OLD;
+    public static final Block MICROWAVE_OLD;
 
     static
     {
@@ -436,6 +437,7 @@ public class FurnitureBlocks
         SHOWER_BOTTOM_OLD = new BlockOldShower(Material.ROCK, false, "shower_bottom_old");
         SHOWER_TOP_OLD = new BlockOldShower(Material.ROCK, true, "shower_top_old");
         BIN_OLD = new BlockBin(Material.ROCK, "bin_old");
+        MICROWAVE_OLD = new BlockMicrowave(Material.ROCK, "microwave_old");
     }
 
     public static void register()
@@ -727,6 +729,7 @@ public class FurnitureBlocks
         registerBlock(SHOWER_BOTTOM_OLD);
         registerBlock(SHOWER_TOP_OLD, null);
         registerBlock(BIN_OLD);
+        registerBlock(MICROWAVE_OLD);
     }
 
     public static void registerBlock(Block block)
