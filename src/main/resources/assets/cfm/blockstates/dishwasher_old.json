@@ -1,0 +1,23 @@
+{
+	"forge_marker": 1,
+	"defaults": {
+		"model": "cfm:dishwasher_old"
+	},
+	"variants": {
+		"inventory": {
+			"model": "cfm:dishwasher_old"
+		},
+		"facing": {
+			"north": {
+				"y": 270
+			},
+			"east": {},
+			"south": {
+				"y": 90
+			},
+			"west": {
+				"y": 180
+			}
+		}
+	}
+}
