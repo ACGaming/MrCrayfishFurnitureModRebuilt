@@ -1,0 +1,26 @@
+{
+  "result": {
+    "item": "cfm:bin_old"
+  },
+  "pattern": [
+    "212",
+    "4 4",
+    "434"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "1": {
+      "item": "minecraft:heavy_weighted_pressure_plate"
+    },
+    "2": {
+      "item": "minecraft:stone",
+	  "data": 0
+    },
+    "3": {
+      "item": "minecraft:iron_block"
+	  },
+    "4": {
+      "item": "minecraft:iron_ingot"
+    }
+  }
+}
