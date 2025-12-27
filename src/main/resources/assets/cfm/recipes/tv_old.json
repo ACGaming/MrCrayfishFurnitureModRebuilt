@@ -1,0 +1,33 @@
+{
+  "result": {
+    "item": "cfm:tv_old"
+  },
+  "pattern": [
+    "-1-",
+    "242",
+    "*9*"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "1": {
+      "item": "minecraft:log",
+      "data": 0
+    },
+    "2": {
+      "item": "minecraft:planks",
+      "data": 0
+    },
+    "*": {
+      "item": "minecraft:repeater"
+    },
+    "-": {
+      "item": "minecraft:comparator"
+    },
+    "4": {
+      "item": "minecraft:glass_pane"
+    },
+    "9": {
+      "item": "minecraft:redstone"
+    }
+  }
+}

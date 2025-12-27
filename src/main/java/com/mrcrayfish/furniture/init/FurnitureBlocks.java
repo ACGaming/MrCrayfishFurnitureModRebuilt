@@ -134,6 +134,7 @@ public class FurnitureBlocks
     public static final Block STONE_PATH_OLD;
     public static final Block WHITE_FENCE_OLD;
     public static final Block TAP_OLD;
+    public static final Block TV_OLD;
 
     static
     {
@@ -412,6 +413,7 @@ public class FurnitureBlocks
         STONE_PATH_OLD = new BlockStonePath(Material.ROCK, "stone_path_old");
         WHITE_FENCE_OLD = new BlockWhiteFence(Material.WOOD, "white_fence_old");
         TAP_OLD = new BlockTap(Material.ROCK, "tap_old");
+        TV_OLD = new BlockOldTv(Material.WOOD, "tv_old");
     }
 
     public static void register()
@@ -691,6 +693,7 @@ public class FurnitureBlocks
         registerBlock(STONE_PATH_OLD);
         registerBlock(WHITE_FENCE_OLD);
         registerBlock(TAP_OLD);
+        registerBlock(TV_OLD);
     }
 
     public static void registerBlock(Block block)
