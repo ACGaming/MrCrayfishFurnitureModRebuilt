@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north": { "model": "cfm:chopping_board_old", "y": 270 },
+		"facing=south": { "model": "cfm:chopping_board_old", "y": 90  },
+		"facing=east":  { "model": "cfm:chopping_board_old"           },
+		"facing=west":  { "model": "cfm:chopping_board_old", "y": 180 }
+	}
+}
