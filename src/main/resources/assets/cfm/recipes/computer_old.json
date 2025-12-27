@@ -1,11 +1,11 @@
 {
   "result": {
-    "item": "cfm:computer"
+    "item": "cfm:computer_old"
   },
   "pattern": [
     "*1*",
     "*2*",
-    "-:_"
+    "-5-"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
@@ -16,16 +16,13 @@
       "item": "minecraft:redstone"
     },
     "*": {
-      "item": "minecraft:gold_ingot"
-    },
-    ":": {
       "item": "minecraft:iron_block"
     },
     "-": {
-      "item": "minecraft:repeater"
-    },
-    "_": {
       "item": "minecraft:comparator"
+	},
+    "5": {
+      "item": "minecraft:gravel"
     }
   }
 }

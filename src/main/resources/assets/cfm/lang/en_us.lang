@@ -560,6 +560,7 @@ tile.stone_path_old.name=Stone Path (Old)
 tile.white_fence_old.name=White Fence (Old)
 tile.tap_old.name=Tap (Old)
 tile.tv_old.name=TV (Old)
+tile.computer_old.name=Computer (Old)
 
 
 tile.bedside_cabinet_biomesoplenty_cherry.name=Cherry Bedside Cabinet
