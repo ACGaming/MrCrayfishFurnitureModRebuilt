@@ -26,7 +26,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import java.util.List;
 import java.util.Random;
 
-public class BlockShower extends BlockFurniture
+public class BlockOldShower extends BlockFurniture
 {
     private static final AxisAlignedBB NOTHING = new AxisAlignedBB(0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
 
@@ -39,7 +39,7 @@ public class BlockShower extends BlockFurniture
     public static final AxisAlignedBB TOP_BOUNDING_BOX = new AxisAlignedBB(0, -1, 0, 1, 1, 1);
     public static final AxisAlignedBB BOTTOM_BOUNDING_BOX = new AxisAlignedBB(0, 0, 0, 1, 2, 1);
 
-    public BlockShower(Material material, boolean top, String id)
+    public BlockOldShower(Material material, boolean top, String id)
     {
         super(material, id);
         this.setHardness(1.0F);
@@ -56,7 +56,7 @@ public class BlockShower extends BlockFurniture
     @Override
     public void onBlockPlacedBy(World world, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack)
     {
-        world.setBlockState(pos.up(), FurnitureBlocks.SHOWER_TOP.getDefaultState().withProperty(FACING, state.getValue(FACING)), 2);
+        world.setBlockState(pos.up(), FurnitureBlocks.SHOWER_TOP_OLD.getDefaultState().withProperty(FACING, state.getValue(FACING)), 2);
         if(placer instanceof EntityPlayer)
         {
             Triggers.trigger(Triggers.PLACE_BATHROOM_FURNITURE, (EntityPlayer) placer);
@@ -66,7 +66,7 @@ public class BlockShower extends BlockFurniture
     @Override
     public void onBlockHarvested(World world, BlockPos pos, IBlockState state, EntityPlayer player)
     {
-        world.destroyBlock(this == FurnitureBlocks.SHOWER_BOTTOM ? pos.up() : pos.down(), false);
+        world.destroyBlock(this == FurnitureBlocks.SHOWER_BOTTOM_OLD ? pos.up() : pos.down(), false);
     }
 
     @Override
@@ -75,7 +75,7 @@ public class BlockShower extends BlockFurniture
         if(entity instanceof EntityPlayer)
         {
             EntityPlayer player = (EntityPlayer) entity;
-            boolean top = this == FurnitureBlocks.SHOWER_TOP;
+            boolean top = this == FurnitureBlocks.SHOWER_TOP_OLD;
 
             IBlockState head = world.getBlockState(pos.up(top ? 1 : 2));
             if(head.getBlock() == FurnitureBlocks.SHOWER_HEAD_ON)
@@ -89,19 +89,19 @@ public class BlockShower extends BlockFurniture
     @SideOnly(Side.CLIENT)
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
     {
-        return state.getBlock() == FurnitureBlocks.SHOWER_TOP ? TOP_BOUNDING_BOX : BOTTOM_BOUNDING_BOX;
+        return state.getBlock() == FurnitureBlocks.SHOWER_TOP_OLD ? TOP_BOUNDING_BOX : BOTTOM_BOUNDING_BOX;
     }
 
     @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
-        return new ItemStack(FurnitureBlocks.SHOWER_BOTTOM).getItem();
+        return new ItemStack(FurnitureBlocks.SHOWER_BOTTOM_OLD).getItem();
     }
 
     @Override
     public ItemStack getPickBlock(IBlockState state, RayTraceResult target, World world, BlockPos pos, EntityPlayer player)
     {
-        return new ItemStack(FurnitureBlocks.SHOWER_BOTTOM);
+        return new ItemStack(FurnitureBlocks.SHOWER_BOTTOM_OLD);
     }
 
     @SideOnly(Side.CLIENT)
@@ -115,7 +115,7 @@ public class BlockShower extends BlockFurniture
         List<AxisAlignedBB> list = Lists.newArrayList();
         EnumFacing facing = state.getValue(FACING);
 
-        if(state.getBlock() == FurnitureBlocks.SHOWER_BOTTOM)
+        if(state.getBlock() == FurnitureBlocks.SHOWER_BOTTOM_OLD)
         {
             list.add(BOTTOM);
         }

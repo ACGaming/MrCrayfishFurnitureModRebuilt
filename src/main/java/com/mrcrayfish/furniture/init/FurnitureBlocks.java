@@ -143,6 +143,8 @@ public class FurnitureBlocks
     public static final Block TOILET_OLD;
     public static final Block BASIN_OLD;
     public static final Block WALL_CABINET_OLD;
+    public static final Block SHOWER_BOTTOM_OLD;
+    public static final Block SHOWER_TOP_OLD;
 
     static
     {
@@ -430,6 +432,8 @@ public class FurnitureBlocks
         TOILET_OLD = new BlockOldToilet(Material.ROCK, "toilet_old");
         BASIN_OLD = new BlockBasin(Material.ROCK, "basin_old");
         WALL_CABINET_OLD = new BlockWallCabinet(Material.ROCK, "wall_cabinet_old");
+        SHOWER_BOTTOM_OLD = new BlockOldShower(Material.ROCK, false, "shower_bottom_old");
+        SHOWER_TOP_OLD = new BlockOldShower(Material.ROCK, true, "shower_top_old");
     }
 
     public static void register()
@@ -718,6 +722,8 @@ public class FurnitureBlocks
         registerBlock(TOILET_OLD);
         registerBlock(BASIN_OLD);
         registerBlock(WALL_CABINET_OLD);
+        registerBlock(SHOWER_BOTTOM_OLD);
+        registerBlock(SHOWER_TOP_OLD, null);
     }
 
     public static void registerBlock(Block block)

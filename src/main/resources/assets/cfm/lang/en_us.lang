@@ -568,6 +568,8 @@ tile.ceiling_light_on_old.name=Ceiling Light (On) (Old)
 tile.toilet_old.name=Toilet (Old)
 tile.basin_old.name=Basin (Old)
 tile.wall_cabinet_old.name=Wall Cabinet (Old)
+tile.shower_bottom_old.name=Shower (Old)
+tile.shower_top_old.name=Shower (Old)
 
 
 tile.bedside_cabinet_biomesoplenty_cherry.name=Cherry Bedside Cabinet
