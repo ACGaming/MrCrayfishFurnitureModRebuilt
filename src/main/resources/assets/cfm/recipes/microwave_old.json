@@ -20,8 +20,8 @@
       "item": "minecraft:comparator"
     },
     ",": {
-      "item": "minecraft:glass_pane",
-	  "data": 1
+      "item": "minecraft:stained_glass_pane",
+	  "data": 0
     },
     "1": {
       "item": "minecraft:iron_ingot"

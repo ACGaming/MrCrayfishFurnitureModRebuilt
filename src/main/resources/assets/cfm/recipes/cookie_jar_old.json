@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "cfm:cookie_jar_old"
+  },
+  "pattern": [
+    " 1 ",
+    "2 2",
+    "222"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "1": {
+      "item": "minecraft:wool",
+	  "data": 15
+    },
+    "2": {
+      "item": "minecraft:stained_glass_pane",
+	  "data": 0
+    }
+  }
+}

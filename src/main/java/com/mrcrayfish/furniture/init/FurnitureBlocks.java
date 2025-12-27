@@ -148,6 +148,7 @@ public class FurnitureBlocks
     public static final Block BIN_OLD;
     public static final Block MICROWAVE_OLD;
     public static final Block WASHING_MACHINE_OLD;
+    public static final Block COOKIE_JAR_OLD;
 
     static
     {
@@ -440,6 +441,7 @@ public class FurnitureBlocks
         BIN_OLD = new BlockBin(Material.ROCK, "bin_old");
         MICROWAVE_OLD = new BlockMicrowave(Material.ROCK, "microwave_old");
         WASHING_MACHINE_OLD = new BlockWashingMachine(Material.ROCK, "washing_machine_old");
+        COOKIE_JAR_OLD = new BlockOldCookieJar(Material.GLASS, "cookie_jar_old");
     }
 
     public static void register()
@@ -733,6 +735,7 @@ public class FurnitureBlocks
         registerBlock(BIN_OLD);
         registerBlock(MICROWAVE_OLD);
         registerBlock(WASHING_MACHINE_OLD);
+        registerBlock(COOKIE_JAR_OLD);
     }
 
     public static void registerBlock(Block block)
