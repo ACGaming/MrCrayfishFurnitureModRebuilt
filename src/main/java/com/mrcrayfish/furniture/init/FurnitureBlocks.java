@@ -138,6 +138,8 @@ public class FurnitureBlocks
     public static final Block COMPUTER_OLD;
     public static final Block PRINTER_OLD;
     public static final Block STEREO_OLD;
+    public static final Block CEILING_LIGHT_ON_OLD;
+    public static final Block CEILING_LIGHT_OFF_OLD;
 
     static
     {
@@ -420,6 +422,8 @@ public class FurnitureBlocks
         COMPUTER_OLD = new BlockComputer(Material.IRON, "computer_old");
         PRINTER_OLD = new BlockPrinter(Material.IRON, "printer_old");
         STEREO_OLD = new BlockStereo(Material.WOOD, "stereo_old");
+        CEILING_LIGHT_ON_OLD = new BlockOldCeilingLight(Material.GLASS, true, "ceiling_light_on_old");
+        CEILING_LIGHT_OFF_OLD = new BlockOldCeilingLight(Material.GLASS, false, "ceiling_light_off_old");
     }
 
     public static void register()
@@ -703,6 +707,8 @@ public class FurnitureBlocks
         registerBlock(COMPUTER_OLD);
         registerBlock(PRINTER_OLD);
         registerBlock(STEREO_OLD);
+        registerBlock(CEILING_LIGHT_OFF_OLD);
+        registerBlock(CEILING_LIGHT_ON_OLD, null);
     }
 
     public static void registerBlock(Block block)

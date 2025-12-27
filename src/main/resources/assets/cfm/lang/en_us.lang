@@ -563,6 +563,8 @@ tile.tv_old.name=TV (Old)
 tile.computer_old.name=Computer (Old)
 tile.printer_old.name=Printer (Old)
 tile.stereo_old.name=Stereo (Old)
+tile.ceiling_light_off_old.name=Ceiling Light (Old)
+tile.ceiling_light_on_old.name=Ceiling Light (On) (Old)
 
 
 tile.bedside_cabinet_biomesoplenty_cherry.name=Cherry Bedside Cabinet

@@ -1,0 +1,23 @@
+{
+    "result": {
+        "item": "cfm:ceiling_light_off_old",
+        "count": 1
+    },
+    "pattern": [
+        "1",
+        "*",
+        "0"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "1": {
+            "item": "minecraft:iron_ingot"
+        },
+        "*": {
+            "item": "minecraft:glass_pane"
+        },
+        "0": {
+            "item": "minecraft:redstone_lamp"
+        }
+    }
+}
