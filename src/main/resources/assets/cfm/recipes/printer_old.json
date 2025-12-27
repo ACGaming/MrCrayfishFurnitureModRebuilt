@@ -1,0 +1,25 @@
+{
+  "result": {
+    "item": "cfm:printer_old"
+  },
+  "pattern": [
+    "313",
+    "2 2",
+    "444"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "1": {
+      "item": "minecraft:quartz"
+    },
+    "2": {
+      "item": "minecraft:redstone"
+    },
+    "3": {
+      "item": "minecraft:comparator"
+    },
+    "4": {
+      "item": "minecraft:iron_block"
+    }
+  }
+}

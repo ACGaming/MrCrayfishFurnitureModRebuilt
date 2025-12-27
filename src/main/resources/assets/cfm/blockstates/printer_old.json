@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "cfm:printer_pre_old",
+            "y": 270
+        },
+        "facing=south": {
+            "model": "cfm:printer_pre_old",
+            "y": 90
+        },
+        "facing=east": {
+            "model": "cfm:printer_pre_old"
+        },
+        "facing=west": {
+            "model": "cfm:printer_pre_old",
+            "y": 180
+        }
+    }
+}

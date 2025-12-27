@@ -136,6 +136,7 @@ public class FurnitureBlocks
     public static final Block TAP_OLD;
     public static final Block TV_OLD;
     public static final Block COMPUTER_OLD;
+    public static final Block PRINTER_OLD;
 
     static
     {
@@ -416,6 +417,7 @@ public class FurnitureBlocks
         TAP_OLD = new BlockTap(Material.ROCK, "tap_old");
         TV_OLD = new BlockOldTv(Material.WOOD, "tv_old");
         COMPUTER_OLD = new BlockComputer(Material.IRON, "computer_old");
+        PRINTER_OLD = new BlockPrinter(Material.IRON, "printer_old");
     }
 
     public static void register()
@@ -697,6 +699,7 @@ public class FurnitureBlocks
         registerBlock(TAP_OLD);
         registerBlock(TV_OLD);
         registerBlock(COMPUTER_OLD);
+        registerBlock(PRINTER_OLD);
     }
 
     public static void registerBlock(Block block)
