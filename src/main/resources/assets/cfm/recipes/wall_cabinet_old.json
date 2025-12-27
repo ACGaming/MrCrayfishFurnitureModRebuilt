@@ -1,23 +1,20 @@
 {
   "result": {
-    "item": "cfm:wall_cabinet"
+    "item": "cfm:wall_cabinet_old"
   },
   "pattern": [
-    "*1*",
-    "131",
-    "*1*"
+    "111",
+    "121",
+    "111"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
     "1": {
-      "item": "minecraft:concrete",
+      "item": "minecraft:quartz_block",
       "data": 0
     },
-    "3": {
+    "2": {
       "item": "minecraft:chest"
-	},
-    "*": {
-      "item": "minecraft:iron_ingot"
     }
   }
 }

@@ -142,6 +142,7 @@ public class FurnitureBlocks
     public static final Block CEILING_LIGHT_OFF_OLD;
     public static final Block TOILET_OLD;
     public static final Block BASIN_OLD;
+    public static final Block WALL_CABINET_OLD;
 
     static
     {
@@ -428,6 +429,7 @@ public class FurnitureBlocks
         CEILING_LIGHT_OFF_OLD = new BlockOldCeilingLight(Material.GLASS, false, "ceiling_light_off_old");
         TOILET_OLD = new BlockOldToilet(Material.ROCK, "toilet_old");
         BASIN_OLD = new BlockBasin(Material.ROCK, "basin_old");
+        WALL_CABINET_OLD = new BlockWallCabinet(Material.ROCK, "wall_cabinet_old");
     }
 
     public static void register()
@@ -715,6 +717,7 @@ public class FurnitureBlocks
         registerBlock(CEILING_LIGHT_ON_OLD, null);
         registerBlock(TOILET_OLD);
         registerBlock(BASIN_OLD);
+        registerBlock(WALL_CABINET_OLD);
     }
 
     public static void registerBlock(Block block)
