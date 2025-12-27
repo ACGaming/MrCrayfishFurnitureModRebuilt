@@ -442,7 +442,7 @@ public class FurnitureBlocks
         SHOWER_TOP_OLD = new BlockOldShower(Material.ROCK, true, "shower_top_old");
         BIN_OLD = new BlockBin(Material.ROCK, "bin_old");
         MICROWAVE_OLD = new BlockMicrowave(Material.ROCK, "microwave_old");
-        WASHING_MACHINE_OLD = new BlockWashingMachine(Material.ROCK, "washing_machine_old");
+        WASHING_MACHINE_OLD = new BlockOldWashingMachine(Material.ROCK, "washing_machine_old");
         COOKIE_JAR_OLD = new BlockOldCookieJar(Material.GLASS, "cookie_jar_old");
         DISHWASHER_OLD = new BlockDishwasher(Material.ROCK, "dishwasher_old");
         CHOPPING_BOARD_OLD = new BlockChoppingBoard(Material.WOOD, "chopping_board_old");
