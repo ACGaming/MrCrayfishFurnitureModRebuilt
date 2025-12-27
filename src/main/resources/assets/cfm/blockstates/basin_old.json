@@ -1,0 +1,13 @@
+{
+"variants": {
+"facing=north,filled=true": {"model": "cfm:basin_filled_pre_old", "y": 270},
+"facing=south,filled=true": { "model": "cfm:basin_filled_pre_old", "y": 90},
+"facing=east,filled=true": { "model": "cfm:basin_filled_pre_old"},
+"facing=west,filled=true": { "model": "cfm:basin_filled_pre_old", "y": 180},
+"facing=north,filled=false": {"model": "cfm:basin_pre_old", "y": 270},
+"facing=south,filled=false": { "model": "cfm:basin_pre_old", "y": 90},
+"facing=east,filled=false": { "model": "cfm:basin_pre_old"},
+"facing=west,filled=false": { "model": "cfm:basin_pre_old", "y": 180}
+
+}
+}
