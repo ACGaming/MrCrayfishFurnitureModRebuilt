@@ -2,7 +2,7 @@
 	"forge_marker": 1,
 	"defaults": {
 		"textures": {
-			"couch": "cfm:blocks/couch_old"
+			"couch": "cfm:blocks/wool_classic_1"
 		},
 		"model": "couch_old",
 		"uvlock": true
