@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "normal": { "model": "cfm:bar_stool_old" },
+    "facing=north": { "model": "cfm:bar_stool_old", "y": 0 },
+    "facing=south": { "model": "cfm:bar_stool_old", "y": 180 },
+    "facing=west":  { "model": "cfm:bar_stool_old", "y": 270 },
+    "facing=east":  { "model": "cfm:bar_stool_old", "y": 90 },
+    "facing=up":    { "model": "cfm:bar_stool_old" },
+    "facing=down":  { "model": "cfm:bar_stool_old", "y": 180 }
+  }
+}
