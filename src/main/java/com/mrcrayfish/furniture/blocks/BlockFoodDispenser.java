@@ -28,6 +28,7 @@ import java.util.Random;
 public class BlockFoodDispenser extends BlockFurniture
 {
     public static final PropertyInteger LEVEL = PropertyInteger.create("level", 0, 3);
+    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0, 0, 0.125, 1, 1, 0.875);
 
     public BlockFoodDispenser(Material material, String id)
     {
@@ -172,5 +173,11 @@ public class BlockFoodDispenser extends BlockFurniture
     {
         tooltip.add("§6Work in progress, no GUI yet!");
         super.addInformation(stack, worldIn, tooltip, flagIn);
+    }
+
+    @Override
+    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
+    {
+        return BOUNDING_BOX;
     }
 }
