@@ -3,7 +3,7 @@
 	"defaults": {
 		"textures": {
 			"0": "blocks/cobblestone",
-			"1": "blocks/stone"
+			"1": "blocks/stone_slab_top"
 		},
 		"model": "cfm:table_leg_center",
 		"uvlock": true
