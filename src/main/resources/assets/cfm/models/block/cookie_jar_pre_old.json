@@ -1,7 +1,7 @@
 {
 "parent": "cfm:block/cookie_jar_old",
 "textures": {
-"1": "blocks/wool_colored_black",
+"1": "cfm:blocks/wool_classic_2",
 "2": "blocks/glass_white"
 }
 }
