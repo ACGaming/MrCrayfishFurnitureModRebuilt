@@ -7,7 +7,9 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
@@ -15,6 +17,8 @@ import java.util.List;
 
 public class BlockOldTv extends BlockFurniture
 {
+    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.1, 0, 0.1, 0.9, 0.80, 0.9);
+
     public BlockOldTv(Material material, String id)
     {
         super(material, id);
@@ -33,5 +37,11 @@ public class BlockOldTv extends BlockFurniture
     {
         tooltip.add("§6Work in progress...");
         super.addInformation(stack, worldIn, tooltip, flagIn);
+    }
+
+    @Override
+    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
+    {
+        return BOUNDING_BOX;
     }
 }
