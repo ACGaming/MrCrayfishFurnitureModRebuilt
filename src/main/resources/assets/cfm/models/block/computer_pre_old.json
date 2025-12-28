@@ -5,7 +5,7 @@
 		"2": "blocks/gravel",
 		"3": "blocks/door_iron_lower",
 		"4": "blocks/quartz_block_bottom",
-		"5": "blocks/wool_colored_black",
+		"5": "cfm:blocks/wool_classic_2",
 		"6": "blocks/stone"
     },
 	"display": {

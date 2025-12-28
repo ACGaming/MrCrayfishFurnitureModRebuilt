@@ -3,8 +3,9 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "blocks/log_oak",
-		"2": "blocks/wool_colored_black",
-		"3": "blocks/planks_oak"
+		"2": "cfm:blocks/wool_classic_2",
+		"3": "blocks/planks_oak",
+		"particle": "blocks/log_oak"
 	},
 	"elements": [
 		{

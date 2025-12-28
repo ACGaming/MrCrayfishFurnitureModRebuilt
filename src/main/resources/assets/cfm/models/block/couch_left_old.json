@@ -2,8 +2,8 @@
 	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"particle": "cfm:blocks/couch_old",
-		"couch": "cfm:blocks/couch_old"
+		"particle": "cfm:blocks/wool_classic_1",
+		"couch": "cfm:blocks/wool_classic_1"
 	},
 	"elements": [
 		{
