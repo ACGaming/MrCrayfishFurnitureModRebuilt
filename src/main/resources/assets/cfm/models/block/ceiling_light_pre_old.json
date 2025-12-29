@@ -3,8 +3,8 @@
     "textures": {
         "1": "blocks/hardened_clay_stained_cyan",
         "2": "blocks/stone",
-        "3": "blocks/glass_yellow",
-        "4": "blocks/glass_white"
+        "3": "cfm:blocks/yellowglow",
+        "4": "cfm:blocks/whiteglass"
     }
 }
 
