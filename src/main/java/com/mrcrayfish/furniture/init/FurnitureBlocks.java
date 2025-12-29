@@ -438,7 +438,7 @@ public class FurnitureBlocks
         CEILING_LIGHT_OFF_OLD = new BlockOldCeilingLight(Material.GLASS, false, "ceiling_light_off_old");
         TOILET_OLD = new BlockOldToilet(Material.ROCK, "toilet_old");
         BASIN_OLD = new BlockBasin(Material.ROCK, "basin_old");
-        WALL_CABINET_OLD = new BlockWallCabinet(Material.ROCK, "wall_cabinet_old");
+        WALL_CABINET_OLD = new BlockOldWallCabinet(Material.ROCK, "wall_cabinet_old");
         SHOWER_BOTTOM_OLD = new BlockOldShower(Material.ROCK, false, "shower_bottom_old");
         SHOWER_TOP_OLD = new BlockOldShower(Material.ROCK, true, "shower_top_old");
         BIN_OLD = new BlockBin(Material.ROCK, "bin_old");

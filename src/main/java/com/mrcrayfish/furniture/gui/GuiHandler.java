@@ -159,6 +159,10 @@ public class GuiHandler implements IGuiHandler
         {
             return new GuiChest(player.inventory, (TileEntityKitchenCounterDrawer) tileEntity);
         }
+        if(tileEntity instanceof TileEntityOldWallCabinet)
+        {
+            return new GuiOldWallCabinet(player.inventory, (TileEntityOldWallCabinet) tileEntity);
+        }
 
         ItemStack heldItem = player.getHeldItemMainhand();
         if(id == 5 && heldItem.getItem() == FurnitureItems.ENVELOPE)
