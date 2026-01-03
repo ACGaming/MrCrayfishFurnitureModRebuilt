@@ -1,9 +1,0 @@
-{
-  "variants": {
-    "normal": { "model": "cfm:small_light" },
-    "facing=north": { "model": "cfm:small_light", "x": 90, "y": 0 },
-    "facing=south": { "model": "cfm:small_light", "x": 90, "y": 180 },
-    "facing=west":  { "model": "cfm:small_light", "x": 90, "y": 270 },
-    "facing=east":  { "model": "cfm:small_light", "x": 90, "y": 90 }
-  }
-}

@@ -1,46 +1,58 @@
 package com.mrcrayfish.furniture.blocks;
 
 import com.mrcrayfish.furniture.MrCrayfishFurnitureMod;
-import com.mrcrayfish.furniture.tileentity.TileEntityPlate;
+import com.mrcrayfish.furniture.init.FurnitureBlocks;
+import com.mrcrayfish.furniture.util.Bounds;
 import net.minecraft.block.Block;
-import net.minecraft.block.ITileEntityProvider;
-import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.PropertyDirection;
+import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.BlockFaceShape;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockSmallLight extends Block implements ITileEntityProvider
+import java.util.List;
+
+/**
+ * Author: MrCrayfish and edited by MisterIceCat
+ */
+public class BlockSmallLight extends Block implements IPowered
 {
-    private static final AxisAlignedBB BOUNDING_NORTH = new AxisAlignedBB(0.375, 0.375, 0.9375, 0.625, 0.625, 1.0);
-    private static final AxisAlignedBB BOUNDING_SOUTH = new AxisAlignedBB(0.375, 0.375, 0.0, 0.625, 0.625, 0.0625);
-    private static final AxisAlignedBB BOUNDING_WEST  = new AxisAlignedBB(0.9375, 0.375, 0.375, 1.0, 0.625, 0.625);
-    private static final AxisAlignedBB BOUNDING_EAST  = new AxisAlignedBB(0.0, 0.375, 0.375, 0.0625, 0.625, 0.625);
+    private static final AxisAlignedBB[] COLLISION_BOUNDS = new Bounds(14, 4, 4, 16, 12, 12).getRotatedBounds();
+    private static final AxisAlignedBB[] SELECTION_BOUNDS = new Bounds(13, 3, 3, 16, 13, 13).getRotatedBounds();
 
-    public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
+    private static final AxisAlignedBB SELECTION_BOUND_DOWN = new Bounds(3, 0, 3, 13, 3, 13).toAABB();
+    private static final AxisAlignedBB SELECTION_BOUND_UP = new Bounds(3, 13, 3, 13, 16, 13).toAABB();
+    private static final AxisAlignedBB COLLISION_BOUND_DOWN = new Bounds(4, 0, 4, 14, 2, 14).toAABB();
+    private static final AxisAlignedBB COLLISION_BOUND_UP = new Bounds(4, 14, 4, 14, 16, 14).toAABB();
 
-    public BlockSmallLight(Material material, String id)
+    public static final PropertyEnum<EnumFacing> FACING = PropertyEnum.create("facing", EnumFacing.class);
+
+    public BlockSmallLight(String id, boolean powered)
     {
-        super(material);
-        this.setHardness(0.5F);
-        this.setLightLevel(0.7F);
-        this.setSoundType(SoundType.METAL);
-        this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
-        this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
+        super(Material.GLASS);
         this.setTranslationKey(id);
         this.setRegistryName(id);
+        this.setHardness(0.5F);
+        if(!powered)
+        {
+            this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
+        }
+        else
+        {
+            this.setLightLevel(1.0F);
+        }
+        this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.UP));
     }
 
     @Override
@@ -56,20 +68,65 @@ public class BlockSmallLight extends Block implements ITileEntityProvider
     }
 
     @Override
-    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-        switch(state.getValue(FACING)) {
-            case NORTH: return BOUNDING_NORTH;
-            case SOUTH: return BOUNDING_SOUTH;
-            case WEST:  return BOUNDING_WEST;
-            case EAST:  return BOUNDING_EAST;
-            default:    return FULL_BLOCK_AABB;
+    public void addCollisionBoxToList(IBlockState state, World worldIn, BlockPos pos, AxisAlignedBB entityBox, List<AxisAlignedBB> collidingBoxes, Entity entityIn, boolean p_185477_7_)
+    {
+        EnumFacing facing = state.getValue(FACING);
+        if(facing.getHorizontalIndex() != -1)
+        {
+            Block.addCollisionBoxToList(pos, entityBox, collidingBoxes,SELECTION_BOUNDS[facing.getOpposite().getHorizontalIndex()] );
+        }
+        else if(facing == EnumFacing.UP)
+        {
+            Block.addCollisionBoxToList(pos, entityBox, collidingBoxes, COLLISION_BOUND_DOWN);
+        }
+        else if(facing == EnumFacing.DOWN)
+        {
+            Block.addCollisionBoxToList(pos, entityBox, collidingBoxes, COLLISION_BOUND_UP);
         }
     }
 
     @Override
-    public TileEntity createNewTileEntity(World worldIn, int meta)
+    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
     {
-        return new TileEntityPlate();
+        EnumFacing facing = state.getValue(FACING);
+        if(facing.getHorizontalIndex() != -1)
+        {
+            return SELECTION_BOUNDS[facing.getOpposite().getHorizontalIndex()];
+        }
+        else if(facing == EnumFacing.UP)
+        {
+            return SELECTION_BOUND_DOWN;
+        }
+        else if(facing == EnumFacing.DOWN)
+        {
+            return SELECTION_BOUND_UP;
+        }
+        return FULL_BLOCK_AABB;
+    }
+
+    @Override
+    public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer)
+    {
+        IBlockState state = super.getStateForPlacement(world, pos, facing, hitX, hitY, hitZ, meta, placer);
+        return state.withProperty(FACING, facing);
+    }
+
+    @Override
+    public int getMetaFromState(IBlockState state)
+    {
+        return state.getValue(FACING).getIndex();
+    }
+
+    @Override
+    public IBlockState getStateFromMeta(int meta)
+    {
+        return this.getDefaultState().withProperty(FACING, EnumFacing.byIndex(meta));
+    }
+
+    @Override
+    protected BlockStateContainer createBlockState()
+    {
+        return new BlockStateContainer(this, FACING);
     }
 
     @Override
@@ -77,49 +134,18 @@ public class BlockSmallLight extends Block implements ITileEntityProvider
     {
         return BlockFaceShape.UNDEFINED;
     }
+
     @Override
-    public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer)
+    public void setPowered(World world, BlockPos pos, boolean powered)
     {
-        return this.getDefaultState().withProperty(FACING, this.canPlaceBlockOnSide(worldIn, pos, facing) ? facing.getOpposite() : EnumFacing.NORTH);
-    }
-
-    @Override
-    public IBlockState getStateFromMeta(int meta) {
-        return this.getDefaultState().withProperty(FACING, EnumFacing.byHorizontalIndex(meta % 4));
-    }
-
-    @Override
-    public int getMetaFromState(IBlockState state) {
-        return state.getValue(FACING).getHorizontalIndex();
-    }
-
-    @Override
-    protected BlockStateContainer createBlockState() {
-        return new BlockStateContainer(this, FACING);
-    }
-
-    @Override
-    public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing facing,
-                                            float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer, EnumHand hand) {
-
-        if (facing == EnumFacing.UP || facing == EnumFacing.DOWN) {
-            facing = EnumFacing.NORTH;
+        EnumFacing facing = world.getBlockState(pos).getValue(FACING);
+        if(powered)
+        {
+            world.setBlockState(pos, FurnitureBlocks.SMALL_LIGHT_ON.getDefaultState().withProperty(FACING, facing));
         }
-        return this.getDefaultState().withProperty(FACING, facing);
-    }
-
-    @Override
-    public boolean canPlaceBlockOnSide(World world, BlockPos pos, EnumFacing side)
-    {
-        return !(side == EnumFacing.UP || side == EnumFacing.DOWN) && world.isSideSolid(pos.offset(side.getOpposite()), side, true);
-    }
-
-    @Override
-    public void neighborChanged(IBlockState state, World world, BlockPos pos, Block blockIn, BlockPos fromPos) {
-        EnumFacing facing = state.getValue(FACING);
-        BlockPos supportPos = pos.offset(facing.getOpposite());
-        if (!world.getBlockState(supportPos).isSideSolid(world, supportPos, facing)) {
-            world.destroyBlock(pos, true);
+        else
+        {
+            world.setBlockState(pos, FurnitureBlocks.SMALL_LIGHT_OFF.getDefaultState().withProperty(FACING, facing));
         }
     }
 

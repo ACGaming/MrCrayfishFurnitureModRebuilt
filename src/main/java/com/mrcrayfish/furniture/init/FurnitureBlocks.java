@@ -101,7 +101,8 @@ public class FurnitureBlocks
     public static final Block PIXEL_BOX;
     public static final Block WATER_TANK;
     public static final Block BIRD_HOUSE;
-    public static final Block SMALL_LIGHT;
+    public static final Block SMALL_LIGHT_OFF;
+    public static final Block SMALL_LIGHT_ON;
     public static final Block BOWL_FOOD_SECRET;
     public static final Block CAMP_CHAIR;
     public static final Block CAMP_CHAIR_SPRUCE;
@@ -399,7 +400,8 @@ public class FurnitureBlocks
         PIXEL_BOX = new BlockPixelBox(Material.IRON, "pixel_box");
         WATER_TANK = new BlockWaterTank(Material.WOOD, "water_tank");
         BIRD_HOUSE = new BlockBirdHouse(Material.WOOD, "bird_house");
-        SMALL_LIGHT = new BlockSmallLight(Material.IRON, "small_light");
+        SMALL_LIGHT_OFF = new BlockSmallLight("small_light_off", false);
+        SMALL_LIGHT_ON = new BlockSmallLight("small_light_on", true);
         BOWL_FOOD_SECRET = new BlockBowlFoodSecret(Material.IRON, "bowl_food_secret");
         CAMP_CHAIR = new BlockCampChair(Material.WOOD, "camp_chair");
         CAMP_CHAIR_SPRUCE = new BlockCampChair(Material.WOOD, "camp_chair_spruce");
@@ -697,7 +699,8 @@ public class FurnitureBlocks
         registerBlock(WATER_TANK);
         registerBlock(BIRD_HOUSE);
         registerBlock(BIRD_BATH_WATER);
-        registerBlock(SMALL_LIGHT);
+        registerBlock(SMALL_LIGHT_OFF);
+        registerBlock(SMALL_LIGHT_ON, null);
         registerBlock(MODERN_OAK_STAIR);
         registerBlock(BOWL_FOOD_SECRET);
         registerBlock(CAMP_CHAIR);
