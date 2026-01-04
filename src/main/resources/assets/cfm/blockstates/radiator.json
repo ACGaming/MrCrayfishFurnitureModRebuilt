@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "cfm:radiator", "y": 180 },
+    "facing=south": { "model": "cfm:radiator", "y": 0 },
+    "facing=west":  { "model": "cfm:radiator", "y": 90 },
+    "facing=east":  { "model": "cfm:radiator", "y": 270 }
+  }
+}

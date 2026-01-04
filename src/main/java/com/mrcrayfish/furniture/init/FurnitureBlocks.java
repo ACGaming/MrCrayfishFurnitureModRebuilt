@@ -116,6 +116,7 @@ public class FurnitureBlocks
     public static final Block FOOD_DISPENSER_CAT;
     public static final Block LITTER_BOX;
     public static final Block CAT_TREE;
+    public static final Block RADIATOR;
     public static final Block WOODEN_CHAIR_OLD;
     public static final Block STONE_CHAIR_OLD;
     public static final Block WOODEN_TABLE_OLD;
@@ -413,6 +414,7 @@ public class FurnitureBlocks
         MODERN_OAK_STAIR = new BlockModernOakStair("modern_oak_stair");
         LITTER_BOX = new BlockLitterBox(Material.WOOD, "litter_box");
         CAT_TREE = new BlockCatTree(Material.WOOD, "cat_tree");
+        RADIATOR = new BlockRadiator(Material.IRON, "radiator");
         WOODEN_CHAIR_OLD = new BlockChair(Material.WOOD, SoundType.WOOD, "chair_oak_old");
         STONE_CHAIR_OLD = new BlockChair(Material.ROCK, SoundType.STONE, "chair_stone_old");
         WOODEN_TABLE_OLD = new BlockTable(Material.WOOD, SoundType.WOOD, "table_oak_old");
@@ -711,6 +713,7 @@ public class FurnitureBlocks
         registerBlock(CAMP_CHAIR_DARK_OAK);
         registerBlock(LITTER_BOX);
         registerBlock(CAT_TREE);
+        registerBlock(RADIATOR);
         registerBlock(WOODEN_CHAIR_OLD);
         registerBlock(STONE_CHAIR_OLD);
         registerBlock(WOODEN_TABLE_OLD);

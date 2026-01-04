@@ -1,0 +1,32 @@
+{
+  "result": {
+    "item": "cfm:radiator"
+  },
+  "pattern": [
+    "313",
+    "262",
+    "545"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "1": {
+      "item": "minecraft:iron_block"
+    },
+    "2": {
+      "item": "minecraft:redstone_block"
+    },
+    "3": {
+      "item": "minecraft:gold_ingot"
+    },
+    "4": {
+      "item": "minecraft:comparator"
+    },
+    "5": {
+      "item": "minecraft:blaze_rod"
+    },
+    "6": {
+      "item": "minecraft:concrete",
+	  "data": 7
+    }
+  }
+}
