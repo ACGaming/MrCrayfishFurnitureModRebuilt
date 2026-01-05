@@ -9,6 +9,7 @@ import com.mrcrayfish.furniture.util.SeatUtil;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
@@ -25,6 +26,7 @@ import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
+import javax.annotation.Nullable;
 import java.util.List;
 
 public class BlockOldToilet extends BlockFurniture
@@ -114,5 +116,13 @@ public class BlockOldToilet extends BlockFurniture
     public int getComparatorInputOverride(IBlockState blockState, World worldIn, BlockPos pos)
     {
         return SeatUtil.isSomeoneSitting(worldIn, pos.getX(), pos.getY(), pos.getZ()) ? 1 : 0;
+    }
+
+    private static final String[] COLORS = {"§c","§e","§a","§b","§d","§6"};
+
+    @Override
+    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn)
+    {
+        tooltip.add(COLORS[(int)((System.currentTimeMillis() / 500) % COLORS.length)] + "1.7.10 Furniture !");
     }
 }
