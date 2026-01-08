@@ -419,8 +419,8 @@ public class FurnitureBlocks
         STONE_CHAIR_OLD = new BlockOldChair(Material.ROCK, SoundType.STONE, "chair_stone_old");
         WOODEN_TABLE_OLD = new BlockOldTable(Material.WOOD, SoundType.WOOD, "table_oak_old");
         STONE_TABLE_OLD = new BlockOldTable(Material.ROCK, SoundType.STONE, "table_stone_old");
-        CABINET_OLD = new BlockCabinet(Material.WOOD, "cabinet_old");
-        BEDSIDE_CABINET_OLD = new BlockBedsideCabinet(Material.WOOD, "bedside_cabinet_old");
+        CABINET_OLD = new BlockOldCabinet(Material.WOOD, "cabinet_old");
+        BEDSIDE_CABINET_OLD = new BlockOldBedsideCabinet(Material.WOOD, "bedside_cabinet_old");
         WOODEN_COFFEE_TABLE_OLD = new BlockCoffeeTable(Material.WOOD, SoundType.WOOD, "wooden_coffee_table_old");
         STONE_COFFEE_TABLE_OLD = new BlockCoffeeTable(Material.ROCK, SoundType.STONE, "stone_coffee_table_old");
         FREEZER_OLD = new BlockOldFreezer(Material.IRON, "freezer_old");
