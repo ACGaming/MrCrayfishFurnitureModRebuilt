@@ -9,7 +9,6 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.BlockRenderLayer;
@@ -36,7 +35,7 @@ public class BlockModernComputer extends BlockFurnitureTile
     {
         super(material, id);
         this.setHardness(1.5F);
-        this.setLightLevel(0.4F);
+        this.setLightLevel(0.5F);
         this.setSoundType(SoundType.ANVIL);
     }
 
