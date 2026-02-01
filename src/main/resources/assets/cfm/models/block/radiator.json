@@ -1,7 +1,6 @@
 {
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
-	"parent": "RadiateurModel",
 	"textures": {
 		"0": "blocks/concrete_gray",
 		"1": "cfm:blocks/model_block_dark",
