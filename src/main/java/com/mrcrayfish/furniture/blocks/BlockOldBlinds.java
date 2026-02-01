@@ -136,6 +136,6 @@ public class BlockOldBlinds extends BlockFurniture
     @Override
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn)
     {
-        tooltip.add(COLORS[(int)((System.currentTimeMillis() / 500) % COLORS.length)] + "1.6.4 Furniture !");
+        tooltip.add(COLORS[(int)((System.currentTimeMillis() / 500) % COLORS.length)] + "1.6.4 Furniture");
     }
 }
