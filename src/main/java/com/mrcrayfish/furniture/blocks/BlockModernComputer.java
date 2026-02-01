@@ -29,7 +29,6 @@ import java.util.List;
 
 public class BlockModernComputer extends BlockFurnitureTile
 {
-
     public BlockModernComputer(Material material, String id)
     {
         super(material, id);
@@ -78,11 +77,11 @@ public class BlockModernComputer extends BlockFurnitureTile
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
         EnumFacing facing = state.getValue(FACING);
         switch(facing) {
-            case NORTH: return new AxisAlignedBB(0D, 0D, 0D, 1D, 1D, 1.6875D);
-            case SOUTH: return new AxisAlignedBB(0D, 0D, 0D, 1D, 1D, 1.6875D);
-            case WEST:  return new AxisAlignedBB(0D, 0D, 0D, 1.6875D, 1D, 1D);
-            case EAST:  return new AxisAlignedBB(0D, 0D, 0D, 1.6875D, 1D, 1D);
-            default:    return new AxisAlignedBB(0D, 0D, 0D, 1D, 1D, 1.6875D);
+            case NORTH: return new AxisAlignedBB(0D, 0D, 0D, 1.6875D, 1D, 1D);
+            case SOUTH: return new AxisAlignedBB(-0.6875D, 0D, 0D, 1D, 1D, 1D);
+            case WEST:  return new AxisAlignedBB(0D, 0D, -0.6875D, 1D, 1D, 1D);
+            case EAST:  return new AxisAlignedBB(0D, 0D, 0D, 1D, 1D, 1.6875D);
+            default:    return new AxisAlignedBB(0D, 0D, 0D, 1.6875D, 1D, 1D);
         }
     }
 
