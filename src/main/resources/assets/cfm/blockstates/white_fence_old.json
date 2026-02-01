@@ -30,7 +30,11 @@
     },
     {
       "when": { "east": "true", "south": "true" },
-      "apply": { "model": "cfm:white_fence_two_alt_pre_old", "y": 90 }
+      "apply": { "model": "cfm:white_fence_two_pre_old", "y": 90 }
+    },
+    {
+      "when": { "east": "true", "west": "true" },
+      "apply": { "model": "cfm:white_fence_two_alt_pre_old", "y": 270 }
     },
     {
       "when": { "south": "true", "west": "true" },
@@ -38,7 +42,7 @@
     },
     {
       "when": { "north": "true", "west": "true" },
-      "apply": { "model": "cfm:white_fence_two_alt_pre_old", "y": 270 }
+      "apply": { "model": "cfm:white_fence_two_pre_old", "y": 270 }
     },
     {
       "when": { "north": "true", "east": "true", "south": "true" },
