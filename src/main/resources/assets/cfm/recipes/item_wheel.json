@@ -4,18 +4,21 @@
     "count": 4
   },
   "pattern": [
-    " C ",
-    "CIC",
-    " C "
+    "232",
+    "313",
+    "232"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
-    "I": {
+    "1": {
       "item": "minecraft:iron_ingot"
     },
-    "C": {
-      "item": "minecraft:concrete",
-      "data": 8
+	"2": {
+      "item": "minecraft:leather"
+    },
+    "3": {
+      "item": "minecraft:wool",
+      "data": 15
     }
   }
 }
