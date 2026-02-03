@@ -42,7 +42,7 @@ public class BlockDigitalClock extends BlockFurnitureTile
 
     public BlockDigitalClock(String id)
     {
-        super(Material.WOOD, id);
+        super(Material.IRON, id);
         this.setLightLevel(0.5F);
         this.setHardness(0.5F);
     }
