@@ -16,7 +16,8 @@
       "item": "cfm:item_trashbag"
     },
     "I": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:concrete",
+	  "data": 0
     }
   }
 }

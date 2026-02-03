@@ -2,9 +2,9 @@
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "blocks/concrete_white",
-		"2": "blocks/concrete_gray",
-		"particle": "blocks/concrete_white"
+		"1": "cfm:blocks/model_block_light",
+		"2": "cfm:blocks/model_block_dark",
+		"particle": "cfm:blocks/model_block_light"
 	},
 	"elements": [
 		{
