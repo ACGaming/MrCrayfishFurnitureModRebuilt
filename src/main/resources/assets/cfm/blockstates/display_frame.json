@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "normal": {"model": "cfm:display_frame"},
+    "facing=north": {"model": "cfm:display_frame", "y": 0},
+    "facing=east": {"model": "cfm:display_frame", "y": 90},
+    "facing=south": {"model": "cfm:display_frame", "y": 180},
+    "facing=west": {"model": "cfm:display_frame", "y": 270}
+  }
+}
