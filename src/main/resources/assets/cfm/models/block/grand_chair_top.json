@@ -1,78 +1,94 @@
 {
-    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
-    "textures": {
-        "0": "blocks/planks_big_oak",
-        "1": "blocks/wool_colored_red",
-		"particle": "blocks/planks_big_oak"
-    },
-    "elements": [
-        {
-            "name": "side_bottom_left",
-            "from": [ 0.0, 0.0, 1.0 ], 
-            "to": [ 2.0, 4.0, 5.0 ], 
-            "faces": {
-                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 4.0 ] },
-                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 4.0, 4.0 ] },
-                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 4.0 ] },
-                "west": { "texture": "#0", "uv": [ 0.0, 4.0, 4.0, 8.0 ] }
-            }
-        },
-        {
-            "name": "side_top_left",
-            "from": [ 0.0, 4.0, 1.0 ], 
-            "to": [ 2.0, 12.0, 6.0 ], 
-            "faces": {
-                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 8.0 ] },
-                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 5.0, 8.0 ] },
-                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 8.0 ] },
-                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 5.0, 8.0 ] },
-                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 5.0 ] },
-                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 5.0 ] }
-            }
-        },
-        {
-            "name": "side_top_right",
-            "from": [ 14.0, 4.0, 1.0 ], 
-            "to": [ 16.0, 12.0, 6.0 ], 
-            "faces": {
-                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 8.0 ] },
-                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 5.0, 8.0 ] },
-                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 8.0 ] },
-                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 5.0, 8.0 ] },
-                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 5.0 ] },
-                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 5.0 ] }
-            }
-        },
-        {
-            "name": "side_bottom_right",
-            "from": [ 14.0, 0.0, 1.0 ], 
-            "to": [ 16.0, 4.0, 5.0 ], 
-            "faces": {
-                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 4.0 ] },
-                "east": { "texture": "#0", "uv": [ 0.0, 4.0, 4.0, 8.0 ] },
-                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 4.0 ] },
-                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 4.0, 4.0 ] }
-            }
-        },
-        {
-            "name": "back_rest_2",
-            "from": [ 2.0, 0.0, 1.0 ], 
-            "to": [ 14.0, 12.0, 2.0 ], 
-            "faces": {
-                "south": { "texture": "#1", "uv": [ 0.0, 4.0, 12.0, 16.0 ] },
-                "up": { "texture": "#1", "uv": [ 0.0, 0.0, 12.0, 1.0 ] }
-            }
-        },
-        {
-            "name": "back_rest_back_2",
-            "from": [ 2.0, 0.0, 0.0 ], 
-            "to": [ 14.0, 12.0, 1.0 ], 
-            "faces": {
-                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 12.0, 12.0 ] },
-                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 1.0, 12.0 ] },
-                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 1.0, 12.0 ] },
-                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 12.0, 1.0 ] }
-            }
-        }
-    ]
+	"format_version": "1.21.11",
+	"credit": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+	"textures": {
+		"0": "cfm:blocks/dark_oak_wood",
+		"1": "blocks/wool_colored_red",
+		"particle": "cfm:blocks/dark_oak_wood"
+	},
+	"elements": [
+		{
+			"name": "side_bottom_left",
+			"from": [0, 0, 1],
+			"to": [2, 4, 5],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 4], "texture": "#0"},
+				"east": {"uv": [0, 0, 4, 4], "texture": "#0"},
+				"south": {"uv": [0, 0, 2, 4], "texture": "#0"},
+				"west": {"uv": [0, 4, 4, 8], "texture": "#0"}
+			}
+		},
+		{
+			"name": "side_top_left",
+			"from": [0, 4, 1],
+			"to": [2, 12, 6],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 8], "texture": "#0"},
+				"east": {"uv": [0, 0, 5, 8], "texture": "#0"},
+				"south": {"uv": [0, 0, 2, 8], "texture": "#0"},
+				"west": {"uv": [0, 0, 5, 8], "texture": "#0"},
+				"up": {"uv": [0, 0, 2, 5], "texture": "#0"},
+				"down": {"uv": [0, 0, 2, 5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "side_top_right",
+			"from": [14, 4, 1],
+			"to": [16, 12, 6],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 8], "texture": "#0"},
+				"east": {"uv": [0, 0, 5, 8], "texture": "#0"},
+				"south": {"uv": [0, 0, 2, 8], "texture": "#0"},
+				"west": {"uv": [0, 0, 5, 8], "texture": "#0"},
+				"up": {"uv": [0, 0, 2, 5], "texture": "#0"},
+				"down": {"uv": [0, 0, 2, 5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "side_bottom_right",
+			"from": [14, 0, 1],
+			"to": [16, 4, 5],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 4], "texture": "#0"},
+				"east": {"uv": [0, 4, 4, 8], "texture": "#0"},
+				"south": {"uv": [0, 0, 2, 4], "texture": "#0"},
+				"west": {"uv": [0, 0, 4, 4], "texture": "#0"}
+			}
+		},
+		{
+			"name": "back_rest_2",
+			"from": [2, 0, 1],
+			"to": [14, 12, 2],
+			"faces": {
+				"south": {"uv": [0, 4, 12, 16], "texture": "#1"},
+				"up": {"uv": [0, 0, 12, 1], "texture": "#1"}
+			}
+		},
+		{
+			"name": "back_rest_back_2",
+			"from": [2, 0, 0],
+			"to": [14, 12, 1],
+			"faces": {
+				"north": {"uv": [0, 0, 12, 12], "texture": "#0"},
+				"east": {"uv": [0, 0, 1, 12], "texture": "#0"},
+				"west": {"uv": [0, 0, 1, 12], "texture": "#0"},
+				"up": {"uv": [0, 0, 12, 1], "texture": "#0"}
+			}
+		},
+		{
+			"name": "wool",
+			"from": [3, 5, 2],
+			"to": [13, 10, 3],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 5, 2]},
+			"faces": {
+				"north": {"uv": [0, 0, 10, 5], "texture": "#1"},
+				"east": {"uv": [0, 0, 1, 5], "texture": "#1"},
+				"south": {"uv": [0, 0, 10, 5], "texture": "#1"},
+				"west": {"uv": [0, 0, 1, 5], "texture": "#1"},
+				"up": {"uv": [0, 0, 10, 1], "texture": "#1"},
+				"down": {"uv": [0, 0, 10, 1], "texture": "#1"}
+			}
+		}
+	],
+	"display": {}
 }
