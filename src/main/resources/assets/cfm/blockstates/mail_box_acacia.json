@@ -4,7 +4,7 @@
         "model": "cfm:mail_box",
         "textures": {
             "primary": "blocks/planks_acacia",
-            "secondary": "blocks/log_acacia"
+            "secondary": "cfm:blocks/acacia_wood"
         }
     },
     "variants": {
