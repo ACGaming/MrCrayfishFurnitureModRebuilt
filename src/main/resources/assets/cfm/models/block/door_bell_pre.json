@@ -1,8 +1,8 @@
 {
 	"parent": "cfm:block/door_bell",
 	"textures": {
-		"1": "blocks/log_oak",
-		"2": "blocks/concrete_white"
+		"1": "cfm:blocks/oak_wood",
+		"2": "cfm:blocks/model_block_light"
 	},
 	"display": {
         "gui": {
