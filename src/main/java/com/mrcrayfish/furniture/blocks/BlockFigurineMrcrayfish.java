@@ -2,31 +2,30 @@ package com.mrcrayfish.furniture.blocks;
 
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.state.BlockFaceShape;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.List;
 
-public class BlockFigurineMrcrayfish extends BlockFurniture {
+public class BlockFigurineMrcrayfish extends BlockFurniture
+{
     private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(4.0 / 16.0, 0.0 / 16.0, 4.0 / 16.0, 12.0 / 16.0, 18.0 / 16.0, 12.0 / 16.0);
 
-    public BlockFigurineMrcrayfish(Material material, String id) {
+    public BlockFigurineMrcrayfish(Material material, String id)
+    {
         super(material, id);
         this.setHardness(1F);
         this.setLightLevel(0.5F);
         this.setSoundType(SoundType.STONE);
-    }
-
-    @Override
-    public boolean isFullCube(IBlockState state)
-    {
-        return false;
     }
 
     @Override
@@ -36,20 +35,20 @@ public class BlockFigurineMrcrayfish extends BlockFurniture {
     }
 
     @Override
-    public BlockFaceShape getBlockFaceShape(IBlockAccess world, IBlockState state, BlockPos pos, EnumFacing face)
-    {
-        return BlockFaceShape.UNDEFINED;
-    }
-
-    @Override
-    public void addCollisionBoxToList(IBlockState state, World world, BlockPos pos, AxisAlignedBB entityBox, List<AxisAlignedBB> collidingBoxes, Entity entity, boolean p_185477_7_)
+    public void addCollisionBoxToList(IBlockState state, World worldIn, BlockPos pos, AxisAlignedBB entityBox, List<AxisAlignedBB> collidingBoxes, Entity entityIn, boolean p_185477_7_)
     {
         addCollisionBoxToList(pos, entityBox, collidingBoxes, BOUNDING_BOX);
     }
 
     @Override
-    public boolean isOpaqueCube(IBlockState state)
+    public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer)
     {
-        return false;
+        return this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing());
+    }
+
+    @SideOnly(Side.CLIENT)
+    public BlockRenderLayer getRenderLayer()
+    {
+        return BlockRenderLayer.CUTOUT;
     }
 }
