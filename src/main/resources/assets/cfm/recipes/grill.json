@@ -3,22 +3,21 @@
     "item": "cfm:grill"
   },
   "pattern": [
-    "CMC",
-    "SCS",
-    "SMS"
+    "111",
+    "333",
+    "2 2"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
-    "C": {
-      "item": "minecraft:stained_hardened_clay",
+    "1": {
+      "item": "minecraft:concrete",
       "data": 14
     },
-    "S": {
-      "item": "minecraft:stone",
-      "data": 0
+    "2": {
+      "item": "cfm:wheel"
     },
-    "M": {
-      "item": "minecraft:iron_bars"
+    "3": {
+      "item": "minecraft:iron_ingot"
     }
   }
 }
