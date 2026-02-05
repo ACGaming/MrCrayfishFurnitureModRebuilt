@@ -1,9 +1,8 @@
 {
   "variants": {
-    "normal": {"model": "cfm:figurine_mrcrayfish"},
-    "facing=north": {"model": "cfm:figurine_mrcrayfish", "y": 0},
-    "facing=east": {"model": "cfm:figurine_mrcrayfish", "y": 90},
-    "facing=south": {"model": "cfm:figurine_mrcrayfish", "y": 180},
-    "facing=west": {"model": "cfm:figurine_mrcrayfish", "y": 270}
+    "facing=south": { "model": "cfm:figurine_mrcrayfish" },
+    "facing=west":  { "model": "cfm:figurine_mrcrayfish", "y": 90 },
+    "facing=north": { "model": "cfm:figurine_mrcrayfish", "y": 180 },
+    "facing=east":  { "model": "cfm:figurine_mrcrayfish", "y": 270 }
   }
 }
