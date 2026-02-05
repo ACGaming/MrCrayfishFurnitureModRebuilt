@@ -1,0 +1,25 @@
+{
+  "result": {
+    "item": "cfm:display_frame"
+  },
+  "pattern": [
+    "III",
+    "*G*",
+    "IRI"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "G": {
+      "item": "minecraft:glass_pane"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "*": {
+      "item": "minecraft:comparator"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  }
+}

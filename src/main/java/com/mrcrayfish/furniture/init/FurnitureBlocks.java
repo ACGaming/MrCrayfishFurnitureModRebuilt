@@ -74,6 +74,7 @@ public class FurnitureBlocks
     public static final Block MAIL_BOX_SPRUCE, MAIL_BOX_BIRCH, MAIL_BOX_JUNGLE, MAIL_BOX_ACACIA, MAIL_BOX_DARK_OAK;
     public static final Block DOOR_BELL_SPRUCE, DOOR_BELL_BIRCH, DOOR_BELL_JUNGLE, DOOR_BELL_ACACIA, DOOR_BELL_DARK_OAK;
     public static final Block PHOTO_FRAME;
+    public static final Block DISPLAY_FRAME;
     public static final Block CRATE_SPRUCE, CRATE_BIRCH, CRATE_JUNGLE, CRATE_ACACIA, CRATE_DARK_OAK;
     public static final Block TV_STAND;
     public static final BlockBlinds BLINDS_SPRUCE, BLINDS_SPRUCE_CLOSED;
@@ -89,7 +90,7 @@ public class FurnitureBlocks
     public static final Block OAK_PARK_BENCH, SPRUCE_PARK_BENCH, BIRCH_PARK_BENCH, JUNGLE_PARK_BENCH, ACACIA_PARK_BENCH, DARK_OAK_PARK_BENCH;
     public static final Block INFLATABLE_CASTLE, CASTLE_NETTING;
 
-    /* Special */
+    /* Random Furniture */
     public static final Block MIRROR;
     public static final Block SERVICE_BELL;
     public static final Block BOWL;
@@ -118,6 +119,8 @@ public class FurnitureBlocks
     public static final Block CAT_TREE;
     public static final Block RADIATOR;
     public static final Block FIGURINE_MRCRAYFISH;
+
+    /* Nostalgia Update */
     public static final Block WOODEN_CHAIR_OLD;
     public static final Block STONE_CHAIR_OLD;
     public static final Block WOODEN_TABLE_OLD;
@@ -351,6 +354,7 @@ public class FurnitureBlocks
         DIGITAL_CLOCK = new BlockDigitalClock("digital_clock");
         MODERN_TV = new BlockModernTV("modern_tv");
         PHOTO_FRAME = new BlockPhotoFrame("photo_frame");
+        DISPLAY_FRAME = new BlockDisplayFrame("display_frame");
         MODERN_COUCH = new BlockModernCouch("modern_couch");
         MODERN_TABLE = new BlockModernTable("modern_table");
         MODERN_CHAIR = new BlockChair(Material.WOOD, SoundType.WOOD, "modern_chair");
@@ -658,6 +662,7 @@ public class FurnitureBlocks
         registerBlock(DIGITAL_CLOCK, new ItemColored(DIGITAL_CLOCK));
         registerBlock(MODERN_TV);
         registerBlock(PHOTO_FRAME, new ItemColoredFurniture(PHOTO_FRAME));
+        registerBlock(DISPLAY_FRAME);
         registerBlock(MODERN_COUCH, new ItemColoredFurniture(MODERN_COUCH));
         registerBlock(MODERN_TABLE);
         registerBlock(MODERN_CHAIR);

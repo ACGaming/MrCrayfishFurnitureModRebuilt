@@ -405,6 +405,7 @@ tile.photo_frame_brown.name=Brown Photo Frame
 tile.photo_frame_green.name=Green Photo Frame
 tile.photo_frame_red.name=Red Photo Frame
 tile.photo_frame_black.name=Black Photo Frame
+tile.display_frame.name=Display Frame
 tile.modern_couch_white.name=White Modern Couch
 tile.modern_couch_orange.name=Orange Modern Couch
 tile.modern_couch_magenta.name=Magenta Modern Couch
