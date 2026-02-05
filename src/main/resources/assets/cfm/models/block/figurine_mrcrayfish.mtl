@@ -1,0 +1,12 @@
+# Made in Blockbench 5.0.7
+newmtl m_a851c9d3-5de6-da62-a81d-cb8dea2633f2
+map_Kd cfm:blocks/model_block_light.png
+newmtl m_18274302-423a-0e21-58a1-5e8e0a88ac3e
+map_Kd cfm:blocks/mrcrayfish_figurine.png
+newmtl m_40bbf855-3ced-6f5a-480a-eeed93ca9212
+map_Kd cfm:blocks/model_block_dark.png
+newmtl m_55dbb8db-f5f9-4c6e-55cd-a2eb96d1364c
+map_Kd cfm:blocks/figurine_text.png
+newmtl m_3ebfc5b6-70e1-1d7f-9d84-4cd0e69291af
+map_Kd cfm:blocks/shader_effect.png
+newmtl none
