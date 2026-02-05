@@ -8,7 +8,7 @@
 		"4": "cfm:blocks/netting",
 		"5": "cfm:blocks/wheel",
 		"6": "blocks/concrete_red",
-		"particle": "cfm:blocks/wheel"
+		"particle": "blocks/concrete_red"
 	},
 	"elements": [
 		{
@@ -110,27 +110,27 @@
 		},
 		{
 			"name": "leg_back_right",
-			"from": [11, 0, 12],
+			"from": [11, 1, 12],
 			"to": [13, 11, 14],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 10, 8]},
 			"faces": {
-				"north": {"uv": [0, 3, 2, 14], "texture": "#1"},
-				"east": {"uv": [0, 3, 2, 14], "texture": "#1"},
-				"south": {"uv": [0, 3, 2, 14], "texture": "#1"},
-				"west": {"uv": [0, 3, 2, 14], "texture": "#1"},
+				"north": {"uv": [0, 3, 2, 13], "texture": "#1"},
+				"east": {"uv": [0, 3, 2, 13], "texture": "#1"},
+				"south": {"uv": [0, 3, 2, 13], "texture": "#1"},
+				"west": {"uv": [0, 3, 2, 13], "texture": "#1"},
 				"down": {"uv": [0, 0, 2, 2], "rotation": 270, "texture": "#1"}
 			}
 		},
 		{
 			"name": "leg_front_right",
-			"from": [3, 0, 12],
+			"from": [3, 1, 12],
 			"to": [5, 11, 14],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 10, 8]},
 			"faces": {
-				"north": {"uv": [0, 0, 2, 11], "texture": "#1"},
-				"east": {"uv": [0, 0, 2, 11], "texture": "#1"},
-				"south": {"uv": [0, 0, 2, 11], "texture": "#1"},
-				"west": {"uv": [0, 0, 2, 11], "texture": "#1"},
+				"north": {"uv": [0, 0, 2, 10], "texture": "#1"},
+				"east": {"uv": [0, 0, 2, 10], "texture": "#1"},
+				"south": {"uv": [0, 0, 2, 10], "texture": "#1"},
+				"west": {"uv": [0, 0, 2, 10], "texture": "#1"},
 				"down": {"uv": [14, 0, 16, 2], "rotation": 270, "texture": "#1"}
 			}
 		},
