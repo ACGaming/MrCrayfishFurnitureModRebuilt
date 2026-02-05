@@ -1,6 +1,6 @@
 {
 	"textures": {
-		"bar": "blocks/log_oak",
+		"bar": "cfm:blocks/oak_wood",
 		"particle": "#colour"
 	},
 	"elements": [{
