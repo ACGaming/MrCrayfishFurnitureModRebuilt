@@ -4,7 +4,7 @@
 	"parent": "FigurineModel",
 	"textures": {
 		"1": "cfm:blocks/model_block_light",
-		"2": "cfm:blocks/mrcrayfish_figurine",
+		"2": "cfm:figurines/mrcrayfish_figurine",
 		"3": "cfm:blocks/model_block_dark",
 		"4": "cfm:blocks/figurine_text",
 		"5": "cfm:blocks/light_texture_on",
