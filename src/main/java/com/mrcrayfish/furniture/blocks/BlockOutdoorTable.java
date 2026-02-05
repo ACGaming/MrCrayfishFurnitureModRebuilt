@@ -54,6 +54,6 @@ public class BlockOutdoorTable extends BlockTable
     @SideOnly(Side.CLIENT)
     public BlockRenderLayer getRenderLayer()
     {
-        return BlockRenderLayer.SOLID;
+        return BlockRenderLayer.TRANSLUCENT;
     }
 }
