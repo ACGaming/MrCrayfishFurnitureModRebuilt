@@ -158,6 +158,7 @@ public class FurnitureBlocks
     public static final Block MICROWAVE_OLD;
     public static final Block WASHING_MACHINE_OLD;
     public static final Block COOKIE_JAR_OLD;
+    public static final Block COUNTER_OLD;
     public static final Block DISHWASHER_OLD;
     public static final Block CHOPPING_BOARD_OLD;
     public static final Block BAR_STOOL_OLD;
@@ -279,9 +280,9 @@ public class FurnitureBlocks
         BOTTLE = new BlockBottle(Material.GLASS, "bottle");
         PLATE = new BlockPlate(Material.GLASS, "plate");
         MODERN_PLATE = new BlockPlate(Material.GLASS, "modern_plate");
-        COUNTER = new BlockCounter(Material.WOOD, "counter");
-        COUNTER_SINK = new BlockCounterSink(Material.WOOD, "counter_sink");
-        COUNTER_DRAWER = new BlockCounterDrawer(Material.WOOD, "counter_drawer");
+        COUNTER = new BlockCounter(Material.ROCK, "counter");
+        COUNTER_SINK = new BlockCounterSink(Material.ROCK, "counter_sink");
+        COUNTER_DRAWER = new BlockCounterDrawer(Material.ROCK, "counter_drawer");
         DISHWASHER = new BlockDishwasher(Material.ROCK, "dishwasher");
         KITCHEN_CABINET = new BlockCabinetKitchen(Material.WOOD, "cabinet_kitchen");
         CHOPPING_BOARD = new BlockChoppingBoard(Material.WOOD, "chopping_board");
@@ -461,6 +462,7 @@ public class FurnitureBlocks
         MICROWAVE_OLD = new BlockOldMicrowave(Material.ROCK, "microwave_old");
         WASHING_MACHINE_OLD = new BlockOldWashingMachine(Material.ROCK, "washing_machine_old");
         COOKIE_JAR_OLD = new BlockOldCookieJar(Material.GLASS, "cookie_jar_old");
+        COUNTER_OLD = new BlockOldCounter(Material.WOOD, "counter_old");
         DISHWASHER_OLD = new BlockOldDishwasher(Material.ROCK, "dishwasher_old");
         CHOPPING_BOARD_OLD = new BlockOldChoppingBoard(Material.WOOD, "chopping_board_old");
         BAR_STOOL_OLD = new BlockOldBarStool(Material.ROCK, "bar_stool_old");
@@ -765,6 +767,7 @@ public class FurnitureBlocks
         registerBlock(MICROWAVE_OLD);
         registerBlock(WASHING_MACHINE_OLD);
         registerBlock(COOKIE_JAR_OLD);
+        registerBlock(COUNTER_OLD);
         registerBlock(DISHWASHER_OLD);
         registerBlock(CHOPPING_BOARD_OLD);
         registerBlock(BAR_STOOL_OLD);
