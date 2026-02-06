@@ -2,9 +2,11 @@ package com.mrcrayfish.furniture.tileentity;
 
 import com.mrcrayfish.furniture.api.RecipeAPI;
 import com.mrcrayfish.furniture.api.RecipeData;
+import com.mrcrayfish.furniture.blocks.BlockToaster;
 import com.mrcrayfish.furniture.gui.inventory.ISimpleInventory;
 import com.mrcrayfish.furniture.init.FurnitureSounds;
 import com.mrcrayfish.furniture.util.TileEntityUtil;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -15,15 +17,26 @@ import net.minecraft.util.SoundCategory;
 public class TileEntityToaster extends TileEntitySyncClient implements ITickable, ISimpleInventory
 {
     public ItemStack[] slots = new ItemStack[2];
-
     private int toastingTime = 0;
     private boolean toasting = false;
 
+    private void updateToastingState(boolean isToasting)
+    {
+        if (!world.isRemote)
+        {
+            IBlockState state = world.getBlockState(pos);
+            if (state.getBlock() instanceof BlockToaster)
+            {
+                world.setBlockState(pos, state.withProperty(BlockToaster.TOASTING, isToasting), 3);
+            }
+        }
+    }
+
     public boolean addSlice(ItemStack item)
     {
-        for(int i = 0; i < slots.length; i++)
+        for (int i = 0; i < slots.length; i++)
         {
-            if(slots[i] == null)
+            if (slots[i] == null)
             {
                 slots[i] = item.copy();
                 return true;
@@ -34,16 +47,18 @@ public class TileEntityToaster extends TileEntitySyncClient implements ITickable
 
     public void removeSlice()
     {
-        for(int i = 0; i < slots.length; i++)
+        for (int i = 0; i < slots.length; i++)
         {
-            if(slots[i] != null)
+            if (slots[i] != null)
             {
-                if(!world.isRemote)
+                if (!world.isRemote)
                 {
                     EntityItem entityItem = new EntityItem(world, pos.getX() + 0.5, pos.getY() + 0.6, pos.getZ() + 0.5, slots[i]);
                     world.spawnEntity(entityItem);
                 }
                 slots[i] = null;
+                toasting = false;
+                updateToastingState(false);
                 TileEntityUtil.markBlockForUpdate(world, pos);
                 return;
             }
@@ -53,6 +68,7 @@ public class TileEntityToaster extends TileEntitySyncClient implements ITickable
     public void startToasting()
     {
         this.toasting = true;
+        updateToastingState(true);
         TileEntityUtil.markBlockForUpdate(world, pos);
     }
 
@@ -69,15 +85,15 @@ public class TileEntityToaster extends TileEntitySyncClient implements ITickable
     @Override
     public void update()
     {
-        if(toasting)
+        if (toasting)
         {
-            if(toastingTime == 200)
+            if (toastingTime >= 200)
             {
-                for(int i = 0; i < slots.length; i++)
+                for (int i = 0; i < slots.length; i++)
                 {
-                    if(slots[i] != null)
+                    if (slots[i] != null)
                     {
-                        if(!world.isRemote)
+                        if (!world.isRemote)
                         {
                             RecipeData data = RecipeAPI.getToasterRecipeFromInput(slots[i]);
                             EntityItem entityItem = new EntityItem(world, pos.getX() + 0.5, pos.getY() + 0.6, pos.getZ() + 0.5, data.getOutput().copy());
@@ -86,12 +102,16 @@ public class TileEntityToaster extends TileEntitySyncClient implements ITickable
                         slots[i] = null;
                     }
                 }
-                if(!world.isRemote)
+
+                if (!world.isRemote)
                 {
-                    world.playSound(null, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, FurnitureSounds.toaster_up, SoundCategory.BLOCKS, 0.75F, 1.0F);
+                    world.playSound(null, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5,
+                            FurnitureSounds.toaster_up, SoundCategory.BLOCKS, 0.75F, 1.0F);
                 }
+
                 toastingTime = 0;
                 toasting = false;
+                updateToastingState(false);
                 TileEntityUtil.markBlockForUpdate(world, pos);
                 world.updateComparatorOutputLevel(pos, blockType);
             }
@@ -106,16 +126,15 @@ public class TileEntityToaster extends TileEntitySyncClient implements ITickable
     public void readFromNBT(NBTTagCompound tagCompound)
     {
         super.readFromNBT(tagCompound);
-        if(tagCompound.hasKey("Items", 9))
+        if (tagCompound.hasKey("Items", 9))
         {
             NBTTagList tagList = (NBTTagList) tagCompound.getTag("Items");
             this.slots = new ItemStack[2];
-            for(int i = 0; i < tagList.tagCount(); ++i)
+            for (int i = 0; i < tagList.tagCount(); ++i)
             {
                 NBTTagCompound itemTag = tagList.getCompoundTagAt(i);
                 byte slot = itemTag.getByte("Slot");
-
-                if(slot >= 0 && slot < this.slots.length)
+                if (slot >= 0 && slot < this.slots.length)
                 {
                     this.slots[slot] = new ItemStack(itemTag);
                 }
@@ -130,19 +149,18 @@ public class TileEntityToaster extends TileEntitySyncClient implements ITickable
     {
         super.writeToNBT(tagCompound);
         NBTTagList tagList = new NBTTagList();
-
-        for(int slot = 0; slot < this.slots.length; ++slot)
+        for (int slot = 0; slot < this.slots.length; ++slot)
         {
-            if(this.slots[slot] != null)
+            if (slots[slot] != null)
             {
                 NBTTagCompound itemTag = new NBTTagCompound();
                 itemTag.setByte("Slot", (byte) slot);
-                this.slots[slot].writeToNBT(itemTag);
+                slots[slot].writeToNBT(itemTag);
                 tagList.appendTag(itemTag);
             }
         }
         tagCompound.setTag("Items", tagList);
-        tagCompound.setInteger("ToastTime", this.toastingTime);
+        tagCompound.setInteger("ToastTime", toastingTime);
         tagCompound.setBoolean("Toasting", toasting);
         return tagCompound;
     }
@@ -162,10 +180,11 @@ public class TileEntityToaster extends TileEntitySyncClient implements ITickable
     @Override
     public void clear()
     {
-        for(int i = 0; i < slots.length; i++)
+        for (int i = 0; i < slots.length; i++)
         {
             slots[i] = null;
         }
-
+        toasting = false;
+        updateToastingState(false);
     }
 }

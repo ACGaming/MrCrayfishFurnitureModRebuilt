@@ -10,6 +10,8 @@ import com.mrcrayfish.furniture.util.CollisionHelper;
 import com.mrcrayfish.furniture.util.TileEntityUtil;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.properties.PropertyBool;
+import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -30,6 +32,8 @@ import java.util.Objects;
 
 public class BlockToaster extends BlockFurnitureTile
 {
+    public static final PropertyBool TOASTING = PropertyBool.create("toasting");
+
     private static final AxisAlignedBB BOUNDING_BOX_NORTH = CollisionHelper.getBlockBounds(EnumFacing.NORTH, 5 * 0.0625, 0.0, 3 * 0.0625, 11 * 0.0625, 0.45, 13 * 0.0625);
     private static final AxisAlignedBB BOUNDING_BOX_EAST = CollisionHelper.getBlockBounds(EnumFacing.EAST, 5 * 0.0625, 0.0, 3 * 0.0625, 11 * 0.0625, 0.45, 13 * 0.0625);
     private static final AxisAlignedBB BOUNDING_BOX_SOUTH = CollisionHelper.getBlockBounds(EnumFacing.SOUTH, 5 * 0.0625, 0.0, 3 * 0.0625, 11 * 0.0625, 0.45, 13 * 0.0625);
@@ -47,6 +51,15 @@ public class BlockToaster extends BlockFurnitureTile
         super(material, id);
         this.setHardness(0.5F);
         this.setSoundType(SoundType.ANVIL);
+        this.setDefaultState(this.blockState.getBaseState()
+                .withProperty(FACING, EnumFacing.NORTH)
+                .withProperty(TOASTING, false));
+    }
+
+    @Override
+    protected BlockStateContainer createBlockState()
+    {
+        return new BlockStateContainer(this, FACING, TOASTING);
     }
 
     @Override
@@ -64,51 +77,50 @@ public class BlockToaster extends BlockFurnitureTile
     {
         ItemStack heldItem = playerIn.getHeldItem(hand);
         TileEntity tileEntity = worldIn.getTileEntity(pos);
-        if(tileEntity instanceof TileEntityToaster)
+        if(!(tileEntity instanceof TileEntityToaster)) return true;
+
+        TileEntityToaster toaster = (TileEntityToaster) tileEntity;
+
+        if(!heldItem.isEmpty() && !toaster.isToasting())
         {
-            TileEntityToaster tileEntityToaster = (TileEntityToaster) tileEntity;
-            if(!heldItem.isEmpty() && !tileEntityToaster.isToasting())
+            RecipeData data = RecipeAPI.getToasterRecipeFromInput(heldItem);
+            if(data != null || heldItem.getItem() instanceof ItemKnife)
             {
-                RecipeData data = RecipeAPI.getToasterRecipeFromInput(heldItem);
-                if(data != null || heldItem.getItem() instanceof ItemKnife)
+                if(toaster.addSlice(heldItem.splitStack(1)))
                 {
-                    if(tileEntityToaster.addSlice(new ItemStack(heldItem.getItem(), 1)))
-                    {
-                        TileEntityUtil.markBlockForUpdate(worldIn, pos);
-                        heldItem.shrink(1);
-                    }
-                }
-                else
-                {
-                    tileEntityToaster.removeSlice();
+                    TileEntityUtil.markBlockForUpdate(worldIn, pos);
                 }
             }
             else
             {
-                if(playerIn.isSneaking())
-                {
-                    if(!tileEntityToaster.isToasting())
-                    {
-                        tileEntityToaster.startToasting();
-                        worldIn.updateComparatorOutputLevel(pos, this);
-                        worldIn.playSound(pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D, FurnitureSounds.toaster_down, SoundCategory.BLOCKS, 0.75F, 1.0F, false);
-                        if(Arrays.stream(tileEntityToaster.slots).filter(Objects::nonNull).anyMatch(itemStack -> itemStack.getItem() instanceof ItemKnife))
-                        {
-                            worldIn.playSound(pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D, FurnitureSounds.zap, SoundCategory.BLOCKS, 0.75F, 1.0F, false);
-                            if(!worldIn.isRemote)
-                            {
-                                worldIn.createExplosion(playerIn, pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D, 2.0F, true);
-                            }
-                            Triggers.trigger(Triggers.KNIFE_TOASTER, playerIn);
-                        }
-                    }
-                }
-                else if(!tileEntityToaster.isToasting())
-                {
-                    tileEntityToaster.removeSlice();
-                }
+                toaster.removeSlice();
             }
         }
+        else
+        {
+            if(playerIn.isSneaking() && !toaster.isToasting())
+            {
+                toaster.startToasting();
+                worldIn.setBlockState(pos, state.withProperty(TOASTING, true), 2); // met à jour le modèle toaster_on
+                worldIn.updateComparatorOutputLevel(pos, this);
+                worldIn.playSound(null, pos, FurnitureSounds.toaster_down, SoundCategory.BLOCKS, 0.75F, 1.0F);
+
+                if(Arrays.stream(toaster.slots).filter(Objects::nonNull).anyMatch(stack -> stack.getItem() instanceof ItemKnife))
+                {
+                    worldIn.playSound(null, pos, FurnitureSounds.zap, SoundCategory.BLOCKS, 0.75F, 1.0F);
+                    if(!worldIn.isRemote)
+                    {
+                        worldIn.createExplosion(playerIn, pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D, 2.0F, true);
+                    }
+                    Triggers.trigger(Triggers.KNIFE_TOASTER, playerIn);
+                }
+            }
+            else if(!toaster.isToasting())
+            {
+                toaster.removeSlice();
+            }
+        }
+
         return true;
     }
 
@@ -136,6 +148,6 @@ public class BlockToaster extends BlockFurnitureTile
     public int getComparatorInputOverride(IBlockState state, World world, BlockPos pos)
     {
         TileEntityToaster toaster = (TileEntityToaster) world.getTileEntity(pos);
-        return toaster.isToasting() ? 1 : 0;
+        return toaster != null && toaster.isToasting() ? 1 : 0;
     }
 }

@@ -1,8 +1,15 @@
 {
-"variants": {
-"facing=north": {"model": "cfm:toaster", "y": 270},
-"facing=south": { "model": "cfm:toaster", "y": 90},
-"facing=east": { "model": "cfm:toaster"},
-"facing=west": { "model": "cfm:toaster", "y": 180}
-}
+  "variants": {
+    "facing=north,toasting=false": { "model": "cfm:toaster_off", "y": 270 },
+    "facing=north,toasting=true":  { "model": "cfm:toaster_on", "y": 270 },
+
+    "facing=south,toasting=false": { "model": "cfm:toaster_off", "y": 90 },
+    "facing=south,toasting=true":  { "model": "cfm:toaster_on", "y": 90 },
+
+    "facing=east,toasting=false":  { "model": "cfm:toaster_off" },
+    "facing=east,toasting=true":   { "model": "cfm:toaster_on" },
+
+    "facing=west,toasting=false":  { "model": "cfm:toaster_off", "y": 180 },
+    "facing=west,toasting=true":   { "model": "cfm:toaster_on", "y": 180 }
+  }
 }
