@@ -3,6 +3,7 @@ package com.mrcrayfish.furniture.blocks;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
@@ -21,5 +22,11 @@ public class BlockOldBlender extends BlockBlender
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn)
     {
         tooltip.add(COLORS[(int)((System.currentTimeMillis() / 500) % COLORS.length)] + "1.7.10 Furniture");
+    }
+
+    @Override
+    public BlockRenderLayer getRenderLayer()
+    {
+        return BlockRenderLayer.TRANSLUCENT;
     }
 }
