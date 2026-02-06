@@ -45,32 +45,29 @@ public class BlockDisplayFrame extends BlockFurnitureTile
     }
 
     @Override
-    public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing facing,
-                                            float hitX, float hitY, float hitZ, int meta,
-                                            EntityLivingBase placer)
+    public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer)
     {
-        if (facing.getHorizontalIndex() != -1)
+        IBlockState state = this.getStateFromMeta(meta);
+        if(facing.getHorizontalIndex() != -1)
         {
-            return this.getDefaultState().withProperty(FACING, facing.getOpposite());
+            return state.withProperty(FACING, facing.getOpposite());
         }
-        return this.getDefaultState();
+        return state;
     }
 
     @Override
-    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state,
-                                    EntityPlayer playerIn, EnumHand hand,
-                                    EnumFacing facing, float hitX, float hitY, float hitZ)
+    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
     {
-        if (!worldIn.isRemote)
+        if(worldIn.isRemote)
         {
-            playerIn.openGui(
-                    MrCrayfishFurnitureMod.instance,
-                    1,
-                    worldIn,
-                    pos.getX(),
-                    pos.getY(),
-                    pos.getZ()
-            );
+            TileEntity tileEntity = worldIn.getTileEntity(pos);
+            if(tileEntity instanceof TileEntityPhotoFrame)
+            {
+                if(!((TileEntityPhotoFrame) tileEntity).isDisabled())
+                {
+                    playerIn.openGui(MrCrayfishFurnitureMod.instance, 1, worldIn, pos.getX(), pos.getY(), pos.getZ());
+                }
+            }
         }
         return true;
     }
