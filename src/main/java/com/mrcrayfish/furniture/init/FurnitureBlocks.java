@@ -155,6 +155,7 @@ public class FurnitureBlocks
     public static final Block SHOWER_BOTTOM_OLD;
     public static final Block SHOWER_TOP_OLD;
     public static final Block BIN_OLD;
+    public static final Block TOASTER_OLD;
     public static final Block MICROWAVE_OLD;
     public static final Block WASHING_MACHINE_OLD;
     public static final Block COOKIE_JAR_OLD;
@@ -272,7 +273,7 @@ public class FurnitureBlocks
         TREE_TOP = new BlockTree(Material.WOOD, true, "tree_top");
         TREE_BOTTOM = new BlockTree(Material.WOOD, false, "tree_bottom");
         PRESENT = new BlockPresent(Material.CLOTH, "present");
-        TOASTER = new BlockToaster(Material.WOOD, "toaster");
+        TOASTER = new BlockToaster(Material.ROCK, "toaster");
         MICROWAVE = new BlockMicrowave(Material.WOOD, "microwave");
         WASHING_MACHINE = new BlockWashingMachine(Material.ROCK, "washing_machine");
         COOKIE_JAR = new BlockCookieJar(Material.GLASS, "cookie_jar");
@@ -460,6 +461,7 @@ public class FurnitureBlocks
         SHOWER_BOTTOM_OLD = new BlockOldShower(Material.ROCK, false, "shower_bottom_old");
         SHOWER_TOP_OLD = new BlockOldShower(Material.ROCK, true, "shower_top_old");
         BIN_OLD = new BlockOldBin(Material.ROCK, "bin_old");
+        TOASTER_OLD = new BlockOldToaster(Material.ROCK, "toaster_old");
         MICROWAVE_OLD = new BlockOldMicrowave(Material.ROCK, "microwave_old");
         WASHING_MACHINE_OLD = new BlockOldWashingMachine(Material.ROCK, "washing_machine_old");
         COOKIE_JAR_OLD = new BlockOldCookieJar(Material.GLASS, "cookie_jar_old");
@@ -766,6 +768,7 @@ public class FurnitureBlocks
         registerBlock(SHOWER_BOTTOM_OLD);
         registerBlock(SHOWER_TOP_OLD, null);
         registerBlock(BIN_OLD);
+        registerBlock(TOASTER_OLD);
         registerBlock(MICROWAVE_OLD);
         registerBlock(WASHING_MACHINE_OLD);
         registerBlock(COOKIE_JAR_OLD);
