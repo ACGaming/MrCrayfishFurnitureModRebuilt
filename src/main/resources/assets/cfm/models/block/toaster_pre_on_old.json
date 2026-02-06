@@ -1,5 +1,5 @@
 {
-"parent": "cfm:block/toaster_old",
+"parent": "cfm:block/toaster_on_old",
 "textures": {
 "1": "blocks/iron_block",
 "2": "blocks/wool_colored_black",
