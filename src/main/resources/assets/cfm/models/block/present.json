@@ -3,7 +3,7 @@
 	"credit": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
 	"textures": {
 		"1": "blocks/gold_block",
-		"2": "cfm:blocks/present",
+		"2": "cfm:blocks/presentstring",
 		"particle": "#0"
 	},
 	"elements": [
