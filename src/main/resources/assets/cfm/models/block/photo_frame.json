@@ -1,94 +1,128 @@
 {
-    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
-    "textures": {
-        "particle": "#color",
-        "back": "blocks/planks_oak",
-        "item_frame": "blocks/itemframe_background"
-    },
-    "display": {
-        "gui": {
-            "rotation": [ 30, 45, 0 ],
-            "translation": [ 4, -2, 0],
-            "scale":[ 0.75, 0.75, 0.75 ]
-        },
-        "ground": {
-            "rotation": [ 0, 0, 0 ],
-            "translation": [ 0, 3, 0 ],
-            "scale": [ 0.25, 0.25, 0.25 ]
-        },
-        "fixed": {
-            "rotation": [ 0, 0, 0 ],
-            "translation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 0.5, 0.5 ]
-        },
-        "thirdperson_righthand": {
-            "rotation": [ 0, 0, 0 ],
-            "translation": [ 0, 2.5, 3 ],
-            "scale": [ 0.375, 0.375, 0.375 ]
-        },
-        "firstperson_righthand": {
-            "rotation": [ 0, -45, 0 ],
-            "translation": [ 0, 2.5, 0 ],
-            "scale": [ 0.4, 0.4, 0.4 ]
-        }
-    },
-    "elements": [
-        {
-            "name": "frame_bottom",
-            "from": [ 0.00, 0.00, 0.00 ],
-            "to": [ 16.00, 1.00, 1.00 ],
-            "faces": {
-                "north": { "texture": "#color", "uv": [ 0.00, 0.00, 16.00, 1.00 ], "cullface": "north" },
-                "east": { "texture": "#color", "uv": [ 0.00, 0.00, 1.00, 1.00 ] },
-                "south": { "texture": "#color", "uv": [ 0.00, 0.00, 16.00, 1.00 ] },
-                "west": { "texture": "#color", "uv": [ 0.00, 0.00, 1.00, 1.00 ] },
-                "up": { "texture": "#color", "uv": [ 0.00, 0.00, 16.00, 1.00 ] },
-                "down": { "texture": "#color", "uv": [ 0.00, 0.00, 16.00, 1.00 ], "cullface": "down" }
-            }
-        },
-        {
-            "name": "frame_top",
-            "from": [ 0.00, 15.00, 0.00 ],
-            "to": [ 16.00, 16.00, 1.00 ],
-            "faces": {
-                "north": { "texture": "#color", "uv": [ 0.00, 0.00, 16.00, 1.00 ], "cullface": "north" },
-                "east": { "texture": "#color", "uv": [ 0.00, 0.00, 1.00, 1.00 ] },
-                "south": { "texture": "#color", "uv": [ 0.00, 0.00, 16.00, 1.00 ] },
-                "west": { "texture": "#color", "uv": [ 0.00, 0.00, 1.00, 1.00 ] },
-                "up": { "texture": "#color", "uv": [ 0.00, 0.00, 16.00, 1.00 ], "cullface": "up" },
-                "down": { "texture": "#color", "uv": [ 0.00, 0.00, 16.00, 1.00 ] }
-            }
-        },
-        {
-            "name": "frame_left",
-            "from": [ 0.00, 1.00, 0.00 ],
-            "to": [ 1.00, 15.00, 1.00 ],
-            "faces": {
-                "north": { "texture": "#color", "uv": [ 0.00, 0.00, 1.00, 14.00 ], "cullface": "north" },
-                "east": { "texture": "#color", "uv": [ 0.00, 0.00, 1.00, 14.00 ] },
-                "south": { "texture": "#color", "uv": [ 0.00, 0.00, 1.00, 14.00 ] },
-                "west": { "texture": "#color", "uv": [ 0.00, 0.00, 1.00, 14.00 ], "cullface": "west" }
-            }
-        },
-        {
-            "name": "frame_right",
-            "from": [ 15.00, 1.00, 0.00 ],
-            "to": [ 16.00, 15.00, 1.00 ],
-            "faces": {
-                "north": { "texture": "#color", "uv": [ 0.00, 0.00, 1.00, 14.00 ], "cullface": "north" },
-                "east": { "texture": "#color", "uv": [ 0.00, 0.00, 1.00, 14.00 ], "cullface": "east" },
-                "south": { "texture": "#color", "uv": [ 0.00, 0.00, 1.00, 14.00 ] },
-                "west": { "texture": "#color", "uv": [ 0.00, 0.00, 1.00, 14.00 ] }
-            }
-        },
-        {
-            "name": "frame_back",
-            "from": [ 1.00, 1.00, 0.00 ],
-            "to": [ 15.00, 15.00, 0.50 ],
-            "faces": {
-                "north": { "texture": "#back", "uv": [ 0.00, 0.00, 14.00, 14.00 ], "cullface": "north" },
-                "south": { "texture": "#item_frame", "uv": [ 1.00, 1.00, 15.00, 15.00 ] }
-            }
-        }
-    ]
+	"format_version": "1.21.11",
+	"credit": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+	"textures": {
+		"3": "blocks/glass",
+		"back": "blocks/planks_oak",
+		"item_frame": "blocks/itemframe_background",
+		"particle": "#color"
+	},
+	"elements": [
+		{
+			"name": "frame_bottom",
+			"from": [0, 0, 0],
+			"to": [16, 1, 1],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 1], "texture": "#color", "cullface": "north"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#color"},
+				"south": {"uv": [0, 0, 16, 1], "texture": "#color"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#color"},
+				"up": {"uv": [0, 0, 16, 1], "texture": "#color"},
+				"down": {"uv": [0, 0, 16, 1], "texture": "#color", "cullface": "down"}
+			}
+		},
+		{
+			"name": "frame_top",
+			"from": [0, 15, 0],
+			"to": [16, 16, 1],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 1], "texture": "#color", "cullface": "north"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#color"},
+				"south": {"uv": [0, 0, 16, 1], "texture": "#color"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#color"},
+				"up": {"uv": [0, 0, 16, 1], "texture": "#color", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 1], "texture": "#color"}
+			}
+		},
+		{
+			"name": "frame_left",
+			"from": [0, 1, 0],
+			"to": [1, 15, 1],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 14], "texture": "#color", "cullface": "north"},
+				"east": {"uv": [0, 0, 1, 14], "texture": "#color"},
+				"south": {"uv": [0, 0, 1, 14], "texture": "#color"},
+				"west": {"uv": [0, 0, 1, 14], "texture": "#color", "cullface": "west"}
+			}
+		},
+		{
+			"name": "frame_right",
+			"from": [15, 1, 0],
+			"to": [16, 15, 1],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 14], "texture": "#color", "cullface": "north"},
+				"east": {"uv": [0, 0, 1, 14], "texture": "#color", "cullface": "east"},
+				"south": {"uv": [0, 0, 1, 14], "texture": "#color"},
+				"west": {"uv": [0, 0, 1, 14], "texture": "#color"}
+			}
+		},
+		{
+			"name": "frame_back",
+			"from": [1, 1, 0],
+			"to": [15, 15, 0.5],
+			"faces": {
+				"north": {"uv": [1, 1, 15, 15], "texture": "#back", "cullface": "north"},
+				"south": {"uv": [1, 1, 15, 15], "texture": "#item_frame"}
+			}
+		},
+		{
+			"name": "glass_1",
+			"from": [4, 9.5, 0.7],
+			"to": [7, 13.5, 0.7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, 10, 1]},
+			"faces": {
+				"south": {"uv": [6, 1, 15, 14], "texture": "#3"}
+			}
+		},
+		{
+			"name": "glass_2",
+			"from": [11, 10.5, 0.7],
+			"to": [14, 14.5, 0.7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [11, 10, 1]},
+			"faces": {
+				"south": {"uv": [6, 1, 15, 14], "texture": "#3"}
+			}
+		},
+		{
+			"name": "glass_3",
+			"from": [9, 2.7, 0.7],
+			"to": [12, 6.7, 0.7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [9, 2, 1]},
+			"faces": {
+				"south": {"uv": [6, 1, 15, 14], "texture": "#3"}
+			}
+		},
+		{
+			"name": "glass_4",
+			"from": [2, 1.8, 0.7],
+			"to": [5, 5.8, 0.7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [2, 2, 1]},
+			"faces": {
+				"south": {"uv": [6, 1, 15, 14], "texture": "#3"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 2.5, 3],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [30, 45, 0],
+			"translation": [4, -2, 0],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"fixed": {
+			"scale": [0.5, 0.5, 0.5]
+		}
+	}
 }
