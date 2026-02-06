@@ -1,7 +1,6 @@
 {
 	"format_version": "1.21.11",
 	"credit": "Made with Blockbench by MisterIceCat",
-	"parent": "FigurineModel",
 	"textures": {
 		"1": "cfm:blocks/model_block_light",
 		"2": "cfm:figurines/mrcrayfish_figurine",
