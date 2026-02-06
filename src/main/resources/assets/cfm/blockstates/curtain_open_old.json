@@ -1,0 +1,43 @@
+{
+    "forge_marker": 1,
+    "variants": {
+        "inventory": {
+            "model": "cfm:curtain_open_old"
+        },
+        "facing": {
+            "north": { "y": 270 },
+            "east":  { "y": 0   },
+            "south": { "y": 90  },
+            "west":  { "y": 180 }
+        },
+        "type": {
+            "default": {
+                "model": "cfm:curtains_open_old"
+            },
+            "right": {
+                "model": "cfm:curtains_open_right_old"
+            },
+            "left": {
+                "model": "cfm:curtains_open_left_old"
+            },
+            "right_open": {
+                "model": "cfm:curtains_open_right_open_old"
+            },
+            "left_open": {
+                "model": "cfm:curtains_open_left_open_old"
+            },
+            "right_closed": {
+                "model": "cfm:curtains_open_right_closed_old"
+            },
+            "left_closed": {
+                "model": "cfm:curtains_open_left_closed_old"
+            },
+            "both": {
+                "model": "cfm:curtains_both_old"
+            },
+            "none": {
+                "model": "cfm:curtains_none_old"
+            }
+        }
+    }
+}

@@ -135,6 +135,8 @@ public class FurnitureBlocks
     public static final Block COUCH_OLD;
     public static final Block BLINDS_OLD;
     public static final Block BLINDS_OLD_CLOSED;
+    public static final Block CURTAIN_OLD;
+    public static final Block CURTAIN_CLOSED_OLD;
     public static final Block OVEN_OLD;
     public static final Block RANGE_HOOD_OLD;
     public static final Block BIRD_BATH_OLD;
@@ -441,6 +443,8 @@ public class FurnitureBlocks
         COUCH_OLD = new BlockOldCouch("couch_old");
         BLINDS_OLD = new BlockOldBlinds(Material.WOOD, true, "blinds_open_old");
         BLINDS_OLD_CLOSED = new BlockOldBlinds(Material.WOOD, false, "blinds_closed_old");
+        CURTAIN_OLD = new BlockOldCurtainOpen(Material.CLOTH, "curtain_open_old");
+        CURTAIN_CLOSED_OLD = new BlockOldCurtainClosed(Material.CLOTH, "curtain_closed_old");
         OVEN_OLD = new BlockOldOven(Material.ROCK, "oven_old");
         RANGE_HOOD_OLD = new BlockOldRangeHood(Material.ROCK, "range_hood_old");
         BIRD_BATH_OLD = new BlockOldBirdBath(Material.ROCK, "bird_bath_old");
@@ -748,6 +752,8 @@ public class FurnitureBlocks
         registerBlock(COUCH_OLD);
         registerBlock(BLINDS_OLD);
         registerBlock(BLINDS_OLD_CLOSED, null);
+        registerBlock(CURTAIN_OLD);
+        registerBlock(CURTAIN_CLOSED_OLD, null);
         registerBlock(OVEN_OLD);
         registerBlock(RANGE_HOOD_OLD);
         registerBlock(BIRD_BATH_OLD);
