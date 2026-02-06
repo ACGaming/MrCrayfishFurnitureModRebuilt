@@ -150,6 +150,8 @@ public class FurnitureBlocks
     public static final Block TOILET_OLD;
     public static final Block BASIN_OLD;
     public static final Block WALL_CABINET_OLD;
+    public static final Block BATH_OLD_1;
+    public static final Block BATH_OLD_2;
     public static final Block SHOWER_BOTTOM_OLD;
     public static final Block SHOWER_TOP_OLD;
     public static final Block BIN_OLD;
@@ -451,6 +453,8 @@ public class FurnitureBlocks
         TOILET_OLD = new BlockOldToilet(Material.ROCK, "toilet_old");
         BASIN_OLD = new BlockOldBasin(Material.ROCK, "basin_old");
         WALL_CABINET_OLD = new BlockOldWallCabinet(Material.ROCK, "wall_cabinet_old");
+        BATH_OLD_1 = new BlockOldBath(Material.ROCK, false, "bath_bottom_old");
+        BATH_OLD_2 = new BlockOldBath(Material.ROCK, true, "bath_top_old");
         SHOWER_BOTTOM_OLD = new BlockOldShower(Material.ROCK, false, "shower_bottom_old");
         SHOWER_TOP_OLD = new BlockOldShower(Material.ROCK, true, "shower_top_old");
         BIN_OLD = new BlockOldBin(Material.ROCK, "bin_old");
@@ -753,6 +757,8 @@ public class FurnitureBlocks
         registerBlock(TOILET_OLD);
         registerBlock(BASIN_OLD);
         registerBlock(WALL_CABINET_OLD);
+        registerBlock(BATH_OLD_1, new ItemBath(BATH_OLD_1));
+        registerBlock(BATH_OLD_2, null);
         registerBlock(SHOWER_BOTTOM_OLD);
         registerBlock(SHOWER_TOP_OLD, null);
         registerBlock(BIN_OLD);

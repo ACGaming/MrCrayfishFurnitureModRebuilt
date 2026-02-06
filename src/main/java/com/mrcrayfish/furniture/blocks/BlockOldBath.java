@@ -39,7 +39,7 @@ import net.minecraftforge.fml.common.network.NetworkRegistry.TargetPoint;
 import java.util.List;
 import java.util.Random;
 
-public class BlockBath extends BlockFurnitureTile
+public class BlockOldBath extends BlockFurnitureTile
 {
     public static final PropertyInteger WATER_LEVEL = PropertyInteger.create("level", 0, 16);
 
@@ -53,10 +53,10 @@ public class BlockBath extends BlockFurnitureTile
     public static final AxisAlignedBB[] TOP_BOXES = {new AxisAlignedBB(0, 0, -1, 1, 15 * 0.0625, 1), new AxisAlignedBB(0, 0, 0, 2, 15 * 0.0625, 1), new AxisAlignedBB(0, 0, 0, 1, 15 * 0.0625, 2), new AxisAlignedBB(-1, 0, 0, 1, 15 * 0.0625, 1)};
     public static final AxisAlignedBB[] BOTTOM_BOXES = {new AxisAlignedBB(0, 0, 0, 1, 15 * 0.0625, 2), new AxisAlignedBB(-1, 0, 0, 1, 15 * 0.0625, 1), new AxisAlignedBB(0, 0, -1, 1, 15 * 0.0625, 1), new AxisAlignedBB(0, 0, 0, 2, 15 * 0.0625, 1)};
 
-    public BlockBath(Material material, boolean top, String id)
+    public BlockOldBath(Material material, boolean top, String id)
     {
         super(material, id);
-        this.setHardness(1.5F);
+        this.setHardness(1.0F);
         this.setSoundType(SoundType.STONE);
         if(top) this.setCreativeTab(null);
     }
@@ -71,7 +71,7 @@ public class BlockBath extends BlockFurnitureTile
     @Override
     public void onBlockPlacedBy(World world, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack)
     {
-        world.setBlockState(pos.offset(placer.getHorizontalFacing()), FurnitureBlocks.BATH_2.getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(WATER_LEVEL, state.getValue(WATER_LEVEL)));
+        world.setBlockState(pos.offset(placer.getHorizontalFacing()), FurnitureBlocks.BATH_OLD_2.getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(WATER_LEVEL, state.getValue(WATER_LEVEL)));
         if(placer instanceof EntityPlayer)
         {
             Triggers.trigger(Triggers.PLACE_BATHROOM_FURNITURE, (EntityPlayer) placer);
@@ -82,7 +82,7 @@ public class BlockBath extends BlockFurnitureTile
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
     {
         EnumFacing facing = state.getValue(FACING);
-        return state.getBlock() == FurnitureBlocks.BATH_1 ? BOTTOM_BOXES[facing.getHorizontalIndex()] : TOP_BOXES[facing.getHorizontalIndex()];
+        return state.getBlock() == FurnitureBlocks.BATH_OLD_1 ? BOTTOM_BOXES[facing.getHorizontalIndex()] : TOP_BOXES[facing.getHorizontalIndex()];
     }
 
     @Override
@@ -90,7 +90,7 @@ public class BlockBath extends BlockFurnitureTile
     {
         EnumFacing facing = state.getValue(FACING);
         addCollisionBoxToList(pos, entityBox, collidingBoxes, BOTTOM);
-        if(this == FurnitureBlocks.BATH_1)
+        if(this == FurnitureBlocks.BATH_OLD_1)
         {
             if(facing != EnumFacing.WEST)
                 addCollisionBoxToList(pos, entityBox, collidingBoxes, SIDE_NORTH);
@@ -119,7 +119,7 @@ public class BlockBath extends BlockFurnitureTile
     {
         ItemStack heldItem = playerIn.getHeldItem(hand);
         BlockPos otherBathPos;
-        if(this == FurnitureBlocks.BATH_1)
+        if(this == FurnitureBlocks.BATH_OLD_1)
         {
             otherBathPos = pos.offset(state.getValue(FACING));
         }
@@ -250,7 +250,7 @@ public class BlockBath extends BlockFurnitureTile
                     {
                         if(hasWaterSource(worldIn, pos))
                         {
-                            if(this == FurnitureBlocks.BATH_2)
+                            if(this == FurnitureBlocks.BATH_OLD_2)
                             {
                                 tileEntityBath.addWaterLevel();
                                 tileEntityBath2.addWaterLevel();
@@ -290,7 +290,7 @@ public class BlockBath extends BlockFurnitureTile
     @Override
     public void onBlockHarvested(World worldIn, BlockPos pos, IBlockState state, EntityPlayer player)
     {
-        if(this == FurnitureBlocks.BATH_1)
+        if(this == FurnitureBlocks.BATH_OLD_1)
         {
             worldIn.destroyBlock(pos.offset(state.getValue(FACING)), false);
         }
@@ -309,13 +309,13 @@ public class BlockBath extends BlockFurnitureTile
     @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
-        return new ItemStack(FurnitureBlocks.BATH_1).getItem();
+        return new ItemStack(FurnitureBlocks.BATH_OLD_1).getItem();
     }
 
     @Override
     public ItemStack getPickBlock(IBlockState state, RayTraceResult target, World world, BlockPos pos, EntityPlayer player)
     {
-        return new ItemStack(FurnitureBlocks.BATH_1);
+        return new ItemStack(FurnitureBlocks.BATH_OLD_1);
     }
 
     @Override

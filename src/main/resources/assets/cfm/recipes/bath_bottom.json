@@ -3,18 +3,18 @@
     "item": "cfm:bath_bottom"
   },
   "pattern": [
-    "B  ",
-    "Q Q",
-    "QQQ"
+    "2  ",
+    "1 1",
+    "111"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
-    "Q": {
-      "item": "minecraft:quartz_block",
+    "1": {
+      "item": "minecraft:concrete",
       "data": 0
     },
-    "B": {
-      "item": "minecraft:stone_button"
+    "2": {
+      "item": "minecraft:iron_ingot"
     }
   }
 }
