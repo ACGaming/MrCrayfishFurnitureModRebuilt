@@ -1,5 +1,5 @@
 {
-"parent": "cfm:block/curtains_closed_old",
+"parent": "cfm:block/curtain_closed_old",
 "textures": {
 "1": "blocks/plank_oak",
 "2": "blocks/wool_colored_red",
