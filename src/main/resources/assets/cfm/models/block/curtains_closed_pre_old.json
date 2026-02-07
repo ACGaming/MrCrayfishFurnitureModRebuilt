@@ -2,7 +2,7 @@
 "parent": "cfm:block/curtain_closed_old",
 "textures": {
 "1": "blocks/plank_oak",
-"2": "blocks/wool_colored_red",
+"2": "blocks/cfm:blocks/wool_colored_3",
 "3": "blocks/gold_block"
 }
 }
