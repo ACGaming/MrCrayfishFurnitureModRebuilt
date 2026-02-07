@@ -80,6 +80,9 @@ public abstract class BlockOldCurtain extends BlockFurnitureTile
                                     EntityPlayer player, EnumHand hand,
                                     EnumFacing facing, float hitX, float hitY, float hitZ)
     {
+        if(world.isRemote)
+            return true;
+
         if(isOpen())
         {
             world.setBlockState(pos,
