@@ -30,7 +30,7 @@ public class FurnitureItems
     /**
      * Kitchen Update
      */
-    public static final Item KNIFE, CUP, DRINK, BOTTLE, BOTTLE_DRINK, SOAP, SOAPY_WATER, SUPER_SOAPY_WATER;
+    public static final Item KNIFE, CUP, DRINK, BOTTLE, BOTTLE_DRINK, SOAP, BIG_BUCKET, SOAPY_WATER, SUPER_SOAPY_WATER;
 
     /**
      * Christmas Update
@@ -88,6 +88,7 @@ public class FurnitureItems
         BOTTLE = new ItemBottle(false).setTranslationKey("item_bottle").setRegistryName("item_bottle");
         BOTTLE_DRINK = new ItemBottle(true).setTranslationKey("item_bottle_drink").setRegistryName("item_bottle_drink");
         SOAP = new ItemGeneric().setTranslationKey("item_soap").setRegistryName("item_soap");
+        BIG_BUCKET = new ItemGeneric().setTranslationKey("item_big_bucket").setRegistryName("item_big_bucket").setMaxStackSize(1);
         SOAPY_WATER = new ItemGeneric().setTranslationKey("item_soap_water").setRegistryName("item_soap_water").setMaxStackSize(1);
         SUPER_SOAPY_WATER = new ItemGeneric().setTranslationKey("item_super_soap_water").setRegistryName("item_super_soap_water").setMaxStackSize(1);
         RECIPE_BOOK = new ItemRecipeBook().setTranslationKey("item_recipe_book").setRegistryName("item_recipe_book");
@@ -131,6 +132,7 @@ public class FurnitureItems
         registerItem(BOTTLE);
         registerItem(BOTTLE_DRINK);
         registerItem(SOAP);
+        registerItem(BIG_BUCKET);
         registerItem(SOAPY_WATER);
         registerItem(SUPER_SOAPY_WATER);
         registerItem(RECIPE_BOOK);

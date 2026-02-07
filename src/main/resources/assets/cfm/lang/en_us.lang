@@ -26,6 +26,7 @@ item.item_drink.name=Drink
 item.item_bottle.name=Bottle
 item.item_bottle_drink.name=Drink Bottle
 item.item_soap.name=Soap
+item.item_big_bucket.name=Big Bucket
 item.item_soap_water.name=Soapy Water
 item.item_super_soap_water.name=Super Soapy Water
 item.item_recipe_book.name=Recipe Book

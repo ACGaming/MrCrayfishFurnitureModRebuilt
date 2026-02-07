@@ -7,7 +7,7 @@
       "item": "cfm:item_soap"
     },
     {
-      "item": "minecraft:water_bucket"
+      "item": "cfm:item_big_bucket"
     }
   ],
   "type": "minecraft:crafting_shapeless"

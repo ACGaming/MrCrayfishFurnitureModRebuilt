@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "cfm:item_big_bucket"
+  },
+  "pattern": [
+    "111",
+    "121",
+    "111"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "1": {
+      "item": "minecraft:iron_ingot"
+    },
+    "2": {
+      "item": "minecraft:bucket"
+    }
+  }
+}
