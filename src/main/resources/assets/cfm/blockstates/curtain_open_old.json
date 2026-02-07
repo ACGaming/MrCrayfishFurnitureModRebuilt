@@ -2,7 +2,7 @@
     "forge_marker": 1,
     "variants": {
         "inventory": {
-            "model": "cfm:curtain_open_old"
+            "model": "cfm:curtains_open_old"
         },
         "facing": {
             "north": { "y": 270 },

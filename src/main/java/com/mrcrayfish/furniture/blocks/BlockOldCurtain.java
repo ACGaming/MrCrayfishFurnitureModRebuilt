@@ -23,7 +23,7 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public abstract class BlockOldCurtain extends BlockFurnitureTile
+public abstract class BlockOldCurtain extends BlockFurniture
 {
     private static final AxisAlignedBB BOUNDING_BOX_NORTH = CollisionHelper.getBlockBounds(EnumFacing.NORTH, 0.875, 0.0, 0.0, 1.0, 1.0, 1.0);
     private static final AxisAlignedBB BOUNDING_BOX_EAST  = CollisionHelper.getBlockBounds(EnumFacing.EAST,  0.875, 0.0, 0.0, 1.0, 1.0, 1.0);
@@ -108,6 +108,18 @@ public abstract class BlockOldCurtain extends BlockFurnitureTile
     public void getSubBlocks(CreativeTabs tab, NonNullList<ItemStack> items)
     {
         items.add(new ItemStack(this));
+    }
+
+    @Override
+    public boolean isFullCube(IBlockState state)
+    {
+        return false;
+    }
+
+    @Override
+    public boolean isOpaqueCube(IBlockState state)
+    {
+        return false;
     }
 
     @Override
