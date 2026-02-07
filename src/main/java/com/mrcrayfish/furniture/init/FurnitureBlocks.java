@@ -143,6 +143,7 @@ public class FurnitureBlocks
     public static final Block STONE_PATH_OLD;
     public static final Block WHITE_FENCE_OLD;
     public static final Block TAP_OLD;
+    public static final Block MAIL_BOX_OLD;
     public static final Block TV_OLD;
     public static final Block COMPUTER_OLD;
     public static final Block PRINTER_OLD;
@@ -451,6 +452,7 @@ public class FurnitureBlocks
         STONE_PATH_OLD = new BlockOldStonePath(Material.ROCK, "stone_path_old");
         WHITE_FENCE_OLD = new BlockOldWhiteFence(Material.WOOD, "white_fence_old");
         TAP_OLD = new BlockOldTap(Material.ROCK, "tap_old");
+        MAIL_BOX_OLD = new BlockOldMailBox(Material.WOOD, "mail_box_old");
         TV_OLD = new BlockOldTv(Material.WOOD, "tv_old");
         COMPUTER_OLD = new BlockOldComputer(Material.IRON, "computer_old");
         PRINTER_OLD = new BlockOldPrinter(Material.IRON, "printer_old");
@@ -760,6 +762,7 @@ public class FurnitureBlocks
         registerBlock(STONE_PATH_OLD);
         registerBlock(WHITE_FENCE_OLD);
         registerBlock(TAP_OLD);
+        registerBlock(MAIL_BOX_OLD);
         registerBlock(TV_OLD);
         registerBlock(COMPUTER_OLD);
         registerBlock(PRINTER_OLD);
