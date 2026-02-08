@@ -162,9 +162,10 @@ public class FurnitureBlocks
     public static final Block MICROWAVE_OLD;
     public static final Block WASHING_MACHINE_OLD;
     public static final Block COOKIE_JAR_OLD;
-    public static final Block COUNTER_OLD;
     public static final Block BLENDER_OLD;
+    public static final Block COUNTER_OLD;
     public static final Block DISHWASHER_OLD;
+    public static final Block KITCHEN_CABINET_OLD;
     public static final Block CHOPPING_BOARD_OLD;
     public static final Block BAR_STOOL_OLD;
 
@@ -471,9 +472,10 @@ public class FurnitureBlocks
         MICROWAVE_OLD = new BlockOldMicrowave(Material.ROCK, "microwave_old");
         WASHING_MACHINE_OLD = new BlockOldWashingMachine(Material.ROCK, "washing_machine_old");
         COOKIE_JAR_OLD = new BlockOldCookieJar(Material.GLASS, "cookie_jar_old");
-        COUNTER_OLD = new BlockOldCounter(Material.WOOD, "counter_old");
         BLENDER_OLD = new BlockOldBlender(Material.GLASS, "blender_old");
+        COUNTER_OLD = new BlockOldCounter(Material.WOOD, "counter_old");
         DISHWASHER_OLD = new BlockOldDishwasher(Material.ROCK, "dishwasher_old");
+        KITCHEN_CABINET_OLD = new BlockOldCabinetKitchen(Material.WOOD, "cabinet_kitchen_old");
         CHOPPING_BOARD_OLD = new BlockOldChoppingBoard(Material.WOOD, "chopping_board_old");
         BAR_STOOL_OLD = new BlockOldBarStool(Material.ROCK, "bar_stool_old");
     }
@@ -784,6 +786,7 @@ public class FurnitureBlocks
         registerBlock(BLENDER_OLD);
         registerBlock(COUNTER_OLD);
         registerBlock(DISHWASHER_OLD);
+        registerBlock(KITCHEN_CABINET_OLD);
         registerBlock(CHOPPING_BOARD_OLD);
         registerBlock(BAR_STOOL_OLD);
     }

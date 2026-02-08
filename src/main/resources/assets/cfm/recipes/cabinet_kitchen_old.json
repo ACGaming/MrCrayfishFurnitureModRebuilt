@@ -1,0 +1,24 @@
+{
+  "result": {
+    "item": "cfm:cabinet_kitchen_old"
+  },
+  "pattern": [
+    "111",
+    "323",
+    "111"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "1": {
+      "item": "minecraft:quartz_block",
+      "data": 0
+    },
+    "2": {
+      "item": "minecraft:chest"
+    },
+    "3": {
+      "item": "minecraft:stained_hardened_clay",
+      "data": 9
+    }
+  }
+}
