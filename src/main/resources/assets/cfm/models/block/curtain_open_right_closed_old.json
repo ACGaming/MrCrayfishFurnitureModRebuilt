@@ -1,10 +1,9 @@
 {
     "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
     "textures": {
-        "0": "blocks/plank_oak",
-        "1": "blocks/wool_colored_red",
-        "2": "blocks/gold_block",
-        "particle":"blocks/wool_colored_red"
+        "0": "blocks/planks_oak",
+        "1": "cfm:blocks/wool_colored_3",
+        "particle":"cfm:blocks/wool_colored_3"
     },
     "elements": [
         {
@@ -22,20 +21,19 @@
         },
         {
             "name": "Element",
-            "from": [ 15.0, 2.0, 13.0 ], 
+            "from": [ 15.0, 2.0, 15.0 ], 
             "to": [ 16.0, 4.0, 16.0 ], 
             "faces": {
                 "north": { "texture": "#1", "uv": [ 15.0, 2.0, 16.0, 4.0 ] },
-                "east": { "texture": "#1", "uv": [ 13.0, 2.0, 16.0, 4.0 ] },
+                "east": { "texture": "#1", "uv": [ 13.0, 2.0, 14.0, 4.0 ] },
                 "south": { "texture": "#1", "uv": [ 15.0, 2.0, 16.0, 4.0 ] },
-                "west": { "texture": "#1", "uv": [ 13.0, 2.0, 4.0, 3.0 ] },
-                "up": { "texture": "#1", "uv": [ 15.0, 13.0, 16.0, 16.0 ] },
+                "west": { "texture": "#1", "uv": [ 13.0, 2.0, 14.0, 4.0 ] },
                 "down": { "texture": "#1", "uv": [ 15.0, 13.0, 16.0, 16.0 ] }
             }
         },
         {
             "name": "Element",
-            "from": [ 15.0, 5.0, 14.0 ], 
+            "from": [ 15.0, 4.0, 14.0 ], 
             "to": [ 16.0, 6.0, 16.0 ], 
             "faces": {
                 "north": { "texture": "#1", "uv": [ 15.0, 5.0, 16.0, 6.0 ] },
@@ -79,17 +77,6 @@
                 "south": { "texture": "#1", "uv": [ 15.0, 11.0, 16.0, 14.0 ] },
                 "west": { "texture": "#1", "uv": [ 11.0, 11.0, 16.0, 14.0 ] },
                 "down": { "texture": "#1", "uv": [ 15.0, 11.0, 16.0, 16.0 ] }
-            }
-        },
-        {
-            "name": "Element",
-            "from": [ 14.9984, 4.0, 14.0 ], 
-            "to": [ 15.9984, 5.0, 16.0 ], 
-            "faces": {
-                "north": { "texture": "#2", "uv": [ 14.9984, 4.0, 15.9984, 5.0 ] },
-                "east": { "texture": "#2", "uv": [ 14.0, 4.0, 16.0, 5.0 ] },
-                "south": { "texture": "#2", "uv": [ 14.9984, 4.0, 15.9984, 5.0 ] },
-                "west": { "texture": "#2", "uv": [ 14.0, 4.0, 16.0, 5.0 ] }
             }
         }
     ]

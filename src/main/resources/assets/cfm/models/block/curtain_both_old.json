@@ -1,9 +1,9 @@
 {
     "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
     "textures": {
-        "0": "blocks/plank_oak",
-        "1": "blocks/wool_colored_red",
-        "particle":"blocks/wool_colored_red"
+        "0": "blocks/planks_oak",
+        "1": "cfm:blocks/wool_colored_3",
+        "particle":"cfm:blocks/wool_colored_3"
     },
     "elements": [
         {
@@ -28,7 +28,6 @@
                 "east": { "texture": "#1", "uv": [ 0.0, 2.0, 1.0, 4.0 ] },
                 "south": { "texture": "#1", "uv": [ 15.0, 2.0, 16.0, 4.0 ] },
                 "west": { "texture": "#1", "uv": [ 0.0, 2.0, 1.0, 4.0 ] },
-                "up": { "texture": "#1", "uv": [ 15.0, 0.0, 16.0, 1.0 ] },
                 "down": { "texture": "#1", "uv": [ 15.0, 0.0, 16.0, 1.0 ] }
             }
         },
@@ -89,8 +88,7 @@
                 "east": { "texture": "#1", "uv": [ 13.0, 2.0, 14.0, 4.0 ] },
                 "south": { "texture": "#1", "uv": [ 15.0, 2.0, 16.0, 4.0 ] },
                 "west": { "texture": "#1", "uv": [ 13.0, 2.0, 14.0, 4.0 ] },
-                "up": { "texture": "#1", "uv": [ 15.0, 13.0, 16.0, 16.0 ] },
-                "down": { "texture": "#1", "uv": [ 15.0, 13.0, 16.0, 16.0 ] }
+                "down": { "texture": "#1", "uv": [ 15.0, 13.0, 16.0, 14.0 ] }
             }
         },
         {
@@ -100,7 +98,7 @@
             "faces": {
                 "north": { "texture": "#1", "uv": [ 15.0, 5.0, 16.0, 7.0 ] },
                 "east": { "texture": "#1", "uv": [ 14.0, 5.0, 16.0, 7.0 ] },
-                "south": { "texture": "#1", "uv": [ 10.0, 5.0, 11.0, 7.0 ] },
+                "south": { "texture": "#1", "uv": [ 15.0, 5.0, 16.0, 7.0 ] },
                 "west": { "texture": "#1", "uv": [ 14.0, 5.0, 16.0, 7.0 ] },
                 "down": { "texture": "#1", "uv": [ 15.0, 14.0, 16.0, 16.0 ] }
             }
