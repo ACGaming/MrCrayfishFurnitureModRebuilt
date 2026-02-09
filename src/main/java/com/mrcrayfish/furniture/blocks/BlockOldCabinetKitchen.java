@@ -33,7 +33,7 @@ public class BlockOldCabinetKitchen extends BlockFurnitureTile
     {
         super(material, id);
         this.setHardness(0.5F);
-        this.setSoundType(SoundType.WOOD);
+        this.setSoundType(SoundType.STONE);
     }
 
     @Override

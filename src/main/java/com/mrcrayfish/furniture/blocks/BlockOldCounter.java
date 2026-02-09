@@ -42,7 +42,7 @@ public class BlockOldCounter extends BlockFurnitureTile
     {
         super(material, id);
         this.setHardness(0.5F);
-        this.setSoundType(SoundType.WOOD);
+        this.setSoundType(SoundType.STONE);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(TYPE, CounterType.NORMAL));
     }
 
