@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "cfm:present_green_old"
+    }
+  }
+}

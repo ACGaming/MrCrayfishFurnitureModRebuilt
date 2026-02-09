@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "cfm:present_red_old"
+    },
+    "pattern": [
+        "WWW",
+        "WPW",
+        "WWW"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "P": {
+            "item": "cfm:item_package"
+        },
+        "W": {
+            "item": "minecraft:wool",
+            "data": 14
+        }
+    }
+}
