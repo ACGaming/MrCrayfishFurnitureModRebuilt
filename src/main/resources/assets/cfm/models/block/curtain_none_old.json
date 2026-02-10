@@ -2,7 +2,7 @@
     "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
     "textures": {
         "0": "blocks/planks_oak",
-        "particle":"cfm:blocks/wool_colored_3"
+        "particle":"cfm:blocks/wool_classic_3"
     },
     "elements": [
         {
