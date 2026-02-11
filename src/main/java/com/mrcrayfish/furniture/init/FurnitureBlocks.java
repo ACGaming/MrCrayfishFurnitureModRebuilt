@@ -42,7 +42,7 @@ public class FurnitureBlocks
     /* Kitchen Update */
     public static final Block TOASTER, MICROWAVE, BLENDER, WASHING_MACHINE, DISHWASHER;
     public static final Block COUNTER, COUNTER_SINK, KITCHEN_CABINET;
-    public static final Block CUP, BOTTLE, PLATE, COOKIE_JAR, BAR_STOOL, CHOPPING_BOARD, MODERN_PLATE;
+    public static final Block CUP, BOTTLE, PLATE, COOKIE_JAR, BAR_STOOL, CHOPPING_BOARD;
 
     /* Christmas Update */
     public static final Block PRESENT, TREE_BOTTOM, TREE_TOP;
@@ -171,6 +171,7 @@ public class FurnitureBlocks
     public static final Block WASHING_MACHINE_OLD;
     public static final Block COOKIE_JAR_OLD;
     public static final Block BLENDER_OLD;
+    public static final Block PLATE_OLD;
     public static final Block COUNTER_OLD;
     public static final Block COUNTER_KITCHEN_SINK_OLD;
     public static final Block DISHWASHER_OLD;
@@ -294,7 +295,6 @@ public class FurnitureBlocks
         CUP = new BlockCup(Material.GLASS, "cup");
         BOTTLE = new BlockBottle(Material.GLASS, "bottle");
         PLATE = new BlockPlate(Material.GLASS, "plate");
-        MODERN_PLATE = new BlockPlate(Material.GLASS, "modern_plate");
         COUNTER = new BlockCounter(Material.ROCK, "counter");
         COUNTER_SINK = new BlockCounterSink(Material.ROCK, "counter_sink");
         COUNTER_DRAWER = new BlockCounterDrawer(Material.ROCK, "counter_drawer");
@@ -490,6 +490,7 @@ public class FurnitureBlocks
         WASHING_MACHINE_OLD = new BlockOldWashingMachine(Material.ROCK, "washing_machine_old");
         COOKIE_JAR_OLD = new BlockOldCookieJar(Material.GLASS, "cookie_jar_old");
         BLENDER_OLD = new BlockOldBlender(Material.GLASS, "blender_old");
+        PLATE_OLD = new BlockOldPlate(Material.GLASS, "plate_old");
         COUNTER_OLD = new BlockOldCounter(Material.WOOD, "counter_old");
         COUNTER_KITCHEN_SINK_OLD = new BlockOldCounterSink(Material.ROCK, "counter_sink_old");
         DISHWASHER_OLD = new BlockOldDishwasher(Material.ROCK, "dishwasher_old");
@@ -632,7 +633,6 @@ public class FurnitureBlocks
         registerBlock(CUP, null);
         registerBlock(BOTTLE, null);
         registerBlock(PLATE);
-        registerBlock(MODERN_PLATE);
         registerBlock(COUNTER, new ItemBlockColored(COUNTER));
         registerBlock(COUNTER_SINK, new ItemBlockColored(COUNTER_SINK));
         registerBlock(COUNTER_DRAWER, new ItemBlockColored(COUNTER_DRAWER));
@@ -810,6 +810,7 @@ public class FurnitureBlocks
         registerBlock(WASHING_MACHINE_OLD);
         registerBlock(COOKIE_JAR_OLD);
         registerBlock(BLENDER_OLD);
+        registerBlock(PLATE_OLD);
         registerBlock(COUNTER_OLD);
         registerBlock(COUNTER_KITCHEN_SINK_OLD);
         registerBlock(DISHWASHER_OLD);

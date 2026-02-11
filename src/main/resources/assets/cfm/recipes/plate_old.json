@@ -1,6 +1,6 @@
 {
   "result": {
-    "item": "cfm:modern_plate",
+    "item": "cfm:plate_old",
     "count": 4
   },
   "pattern": [
@@ -10,7 +10,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "Q": {
-      "item": "minecraft:concrete",
+      "item": "minecraft:quartz",
       "data": 0
     }
   }

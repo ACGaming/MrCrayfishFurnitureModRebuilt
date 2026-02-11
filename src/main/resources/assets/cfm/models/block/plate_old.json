@@ -2,7 +2,7 @@
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"particle": "blocks/concrete_white"
+		"particle": "blocks/quartz_block_bottom"
 	},
 	"elements": [
 		{
