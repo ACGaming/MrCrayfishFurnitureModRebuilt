@@ -139,6 +139,12 @@ public class FurnitureBlocks
     public static final Block CURTAIN_CLOSED_OLD;
     public static final Block OVEN_OLD;
     public static final Block RANGE_HOOD_OLD;
+    public static final Block HEDGE_OAK_OLD;
+    public static final Block HEDGE_SPRUCE_OLD;
+    public static final Block HEDGE_BIRCH_OLD;
+    public static final Block HEDGE_JUNGLE_OLD;
+    public static final Block HEDGE_ACACIA_OLD;
+    public static final Block HEDGE_DARK_OAK_OLD;
     public static final Block BIRD_BATH_OLD;
     public static final Block STONE_PATH_OLD;
     public static final Block WHITE_FENCE_OLD;
@@ -452,6 +458,12 @@ public class FurnitureBlocks
         CURTAIN_CLOSED_OLD = new BlockOldCurtainClosed(Material.CLOTH, "curtain_closed_old");
         OVEN_OLD = new BlockOldOven(Material.ROCK, "oven_old");
         RANGE_HOOD_OLD = new BlockOldRangeHood(Material.ROCK, "range_hood_old");
+        HEDGE_OAK_OLD = new BlockOldHedge("hedge_oak_old");
+        HEDGE_SPRUCE_OLD = new BlockOldHedge("hedge_spruce_old");
+        HEDGE_BIRCH_OLD = new BlockOldHedge("hedge_birch_old");
+        HEDGE_JUNGLE_OLD = new BlockOldHedge("hedge_jungle_old");
+        HEDGE_ACACIA_OLD = new BlockOldHedge("hedge_acacia_old");
+        HEDGE_DARK_OAK_OLD = new BlockOldHedge("hedge_dark_oak_old");
         BIRD_BATH_OLD = new BlockOldBirdBath(Material.ROCK, "bird_bath_old");
         STONE_PATH_OLD = new BlockOldStonePath(Material.ROCK, "stone_path_old");
         WHITE_FENCE_OLD = new BlockOldWhiteFence(Material.WOOD, "white_fence_old");
@@ -766,6 +778,12 @@ public class FurnitureBlocks
         registerBlock(CURTAIN_CLOSED_OLD, null);
         registerBlock(OVEN_OLD);
         registerBlock(RANGE_HOOD_OLD);
+        registerBlock(HEDGE_OAK_OLD, new ItemHedge(HEDGE_OAK_OLD));
+        registerBlock(HEDGE_SPRUCE_OLD, new ItemHedge(HEDGE_SPRUCE_OLD));
+        registerBlock(HEDGE_BIRCH_OLD, new ItemHedge(HEDGE_BIRCH_OLD));
+        registerBlock(HEDGE_JUNGLE_OLD, new ItemHedge(HEDGE_JUNGLE_OLD));
+        registerBlock(HEDGE_ACACIA_OLD, new ItemHedge(HEDGE_ACACIA_OLD));
+        registerBlock(HEDGE_DARK_OAK_OLD, new ItemHedge(HEDGE_DARK_OAK_OLD));
         registerBlock(BIRD_BATH_OLD);
         registerBlock(STONE_PATH_OLD);
         registerBlock(WHITE_FENCE_OLD);
