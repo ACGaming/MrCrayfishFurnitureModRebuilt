@@ -156,6 +156,7 @@ public class FurnitureBlocks
     public static final Block STEREO_OLD;
     public static final Block CEILING_LIGHT_ON_OLD;
     public static final Block CEILING_LIGHT_OFF_OLD;
+    public static final Block DOOR_BELL_OLD;
     public static final Block TOILET_OLD;
     public static final Block BASIN_OLD;
     public static final Block WALL_CABINET_OLD;
@@ -475,6 +476,7 @@ public class FurnitureBlocks
         STEREO_OLD = new BlockOldStereo(Material.WOOD, "stereo_old");
         CEILING_LIGHT_ON_OLD = new BlockOldCeilingLight(Material.GLASS, true, "ceiling_light_on_old");
         CEILING_LIGHT_OFF_OLD = new BlockOldCeilingLight(Material.GLASS, false, "ceiling_light_off_old");
+        DOOR_BELL_OLD = new BlockOldDoorBell(Material.WOOD, "door_bell_old");
         TOILET_OLD = new BlockOldToilet(Material.ROCK, "toilet_old");
         BASIN_OLD = new BlockOldBasin(Material.ROCK, "basin_old");
         WALL_CABINET_OLD = new BlockOldWallCabinet(Material.ROCK, "wall_cabinet_old");
@@ -795,6 +797,7 @@ public class FurnitureBlocks
         registerBlock(STEREO_OLD);
         registerBlock(CEILING_LIGHT_OFF_OLD);
         registerBlock(CEILING_LIGHT_ON_OLD, null);
+        registerBlock(DOOR_BELL_OLD);
         registerBlock(TOILET_OLD);
         registerBlock(BASIN_OLD);
         registerBlock(WALL_CABINET_OLD);

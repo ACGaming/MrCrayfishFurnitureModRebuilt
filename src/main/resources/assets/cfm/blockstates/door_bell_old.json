@@ -1,0 +1,12 @@
+{
+"variants": {
+"facing=north,powered=false": {"model": "cfm:door_bell_pre_old", "y": 270},
+"facing=south,powered=false": { "model": "cfm:door_bell_pre_old", "y": 90},
+"facing=east,powered=false": { "model": "cfm:door_bell_pre_old"},
+"facing=west,powered=false": { "model": "cfm:door_bell_pre_old", "y": 180},
+"facing=north,powered=true": {"model": "cfm:door_bell_pressed_pre_old", "y": 270},
+"facing=south,powered=true": { "model": "cfm:door_bell_pressed_pre_old", "y": 90},
+"facing=east,powered=true": { "model": "cfm:door_bell_pressed_pre_old"},
+"facing=west,powered=true": { "model": "cfm:door_bell_pressed_pre_old", "y": 180}
+}
+}
