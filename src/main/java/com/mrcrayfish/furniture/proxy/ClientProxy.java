@@ -133,6 +133,12 @@ public class ClientProxy extends CommonProxy
         registerColorHandlerForBlock(FurnitureBlocks.HEDGE_JUNGLE, hedgeBlockColorOld, hedgeItemColor);
         registerColorHandlerForBlock(FurnitureBlocks.HEDGE_ACACIA, hedgeBlockColorNew, hedgeItemColor);
         registerColorHandlerForBlock(FurnitureBlocks.HEDGE_DARK_OAK, hedgeBlockColorNew, hedgeItemColor);
+        registerColorHandlerForBlock(FurnitureBlocks.HEDGE_OAK_OLD, hedgeBlockColorOld, hedgeItemColor);
+        registerColorHandlerForBlock(FurnitureBlocks.HEDGE_SPRUCE_OLD, hedgeBlockColorOld, hedgeItemColor);
+        registerColorHandlerForBlock(FurnitureBlocks.HEDGE_BIRCH_OLD, hedgeBlockColorOld, hedgeItemColor);
+        registerColorHandlerForBlock(FurnitureBlocks.HEDGE_JUNGLE_OLD, hedgeBlockColorOld, hedgeItemColor);
+        registerColorHandlerForBlock(FurnitureBlocks.HEDGE_ACACIA_OLD, hedgeBlockColorNew, hedgeItemColor);
+        registerColorHandlerForBlock(FurnitureBlocks.HEDGE_DARK_OAK_OLD, hedgeBlockColorNew, hedgeItemColor);
         IItemColor christmasItemColor = (stack, tintIndex) -> ColorizerFoliage.getFoliageColorPine();
         IBlockColor christmasBlockColor = (state, worldIn, pos, tintIndex) -> ColorizerFoliage.getFoliageColorPine();
         registerColorHandlerForBlock(FurnitureBlocks.TREE_BOTTOM, christmasBlockColor, christmasItemColor);
