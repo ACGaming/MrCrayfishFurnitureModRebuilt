@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=south": { "model": "cfm:lamp_off_old" },
+    "facing=west":  { "model": "cfm:lamp_off_old", "y": 90 },
+    "facing=north": { "model": "cfm:lamp_off_old", "y": 180 },
+    "facing=east":  { "model": "cfm:lamp_off_old", "y": 270 }
+  }
+}

@@ -1,0 +1,7 @@
+{
+"parent": "cfm:block/lamp_old",
+"textures": {
+"1": "cfm:blocks/wool_classic_1",
+"2": "blocks/obsidian"
+}
+}
