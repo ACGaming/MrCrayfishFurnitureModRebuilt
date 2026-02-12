@@ -1,0 +1,6 @@
+{
+"parent": "cfm:block/cup_old",
+"textures": {
+"1": "blocks/glass_white"
+}
+}
