@@ -2,8 +2,8 @@
 	"format_version": "1.21.11",
 	"credit": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
 	"textures": {
-		"particle": "blocks/wool_colored_1",
-		"carpet": "blocks/wool_colored_1"
+		"particle": "cfm:blocks/wool_classic_1",
+		"carpet": "cfm:blocks/wool_classic_1"
 	},
 	"elements": [
 		{
