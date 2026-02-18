@@ -17,7 +17,7 @@ import java.util.List;
 
 public class BlockOldClassicCarpet extends BlockFurniture
 {
-    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.01, 0, 0.01, 0.01, 0.01, 0.01);
+    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.02D, 1.0D);
 
     public BlockOldClassicCarpet(Material material, String id)
     {
