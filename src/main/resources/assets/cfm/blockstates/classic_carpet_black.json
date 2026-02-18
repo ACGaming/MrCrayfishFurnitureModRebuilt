@@ -1,8 +1,8 @@
 {
   "variants": {
-    "facing=south": { "model": "cfm:classic_cabinet_black" },
-    "facing=west":  { "model": "cfm:classic_cabinet_black", "y": 90 },
-    "facing=north": { "model": "cfm:classic_cabinet_black", "y": 180 },
-    "facing=east":  { "model": "cfm:classic_cabinet_black", "y": 270 }
+    "facing=south": { "model": "cfm:classic_carpet_black" },
+    "facing=west":  { "model": "cfm:classic_carpet_black", "y": 90 },
+    "facing=north": { "model": "cfm:classic_carpet_black", "y": 180 },
+    "facing=east":  { "model": "cfm:classic_carpet_black", "y": 270 }
   }
 }

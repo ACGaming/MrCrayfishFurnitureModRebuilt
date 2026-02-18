@@ -137,6 +137,11 @@ public class FurnitureBlocks
     public static final Block BLINDS_OLD_CLOSED;
     public static final Block CURTAIN_OLD;
     public static final Block CURTAIN_CLOSED_OLD;
+    public static final Block CARPET_CLASSIC_WHITE;
+    public static final Block CARPET_CLASSIC_GREEN;
+    public static final Block CARPET_CLASSIC_BROWN;
+    public static final Block CARPET_CLASSIC_RED;
+    public static final Block CARPET_CLASSIC_BLACK;
     public static final Block OVEN_OLD;
     public static final Block RANGE_HOOD_OLD;
     public static final Block HEDGE_OAK_OLD;
@@ -457,6 +462,11 @@ public class FurnitureBlocks
         BLINDS_OLD_CLOSED = new BlockOldBlinds(Material.WOOD, false, "blinds_closed_old");
         CURTAIN_OLD = new BlockOldCurtainOpen(Material.CLOTH, "curtain_open_old");
         CURTAIN_CLOSED_OLD = new BlockOldCurtainClosed(Material.CLOTH, "curtain_closed_old");
+        CARPET_CLASSIC_WHITE = new BlockOldClassicCarpet(Material.CLOTH, "classic_carpet_white");
+        CARPET_CLASSIC_GREEN = new BlockOldClassicCarpet(Material.CLOTH, "classic_carpet_green");
+        CARPET_CLASSIC_BROWN = new BlockOldClassicCarpet(Material.CLOTH, "classic_carpet_brown");
+        CARPET_CLASSIC_RED = new BlockOldClassicCarpet(Material.CLOTH, "classic_carpet_red");
+        CARPET_CLASSIC_BLACK = new BlockOldClassicCarpet(Material.CLOTH, "classic_carpet_black");
         OVEN_OLD = new BlockOldOven(Material.ROCK, "oven_old");
         RANGE_HOOD_OLD = new BlockOldRangeHood(Material.ROCK, "range_hood_old");
         HEDGE_OAK_OLD = new BlockOldHedge("hedge_oak_old");
@@ -778,6 +788,11 @@ public class FurnitureBlocks
         registerBlock(BLINDS_OLD_CLOSED, null);
         registerBlock(CURTAIN_OLD);
         registerBlock(CURTAIN_CLOSED_OLD, null);
+        registerBlock(CARPET_CLASSIC_WHITE);
+        registerBlock(CARPET_CLASSIC_GREEN);
+        registerBlock(CARPET_CLASSIC_BROWN);
+        registerBlock(CARPET_CLASSIC_RED);
+        registerBlock(CARPET_CLASSIC_BLACK);
         registerBlock(OVEN_OLD);
         registerBlock(RANGE_HOOD_OLD);
         registerBlock(HEDGE_OAK_OLD, new ItemHedge(HEDGE_OAK_OLD));
