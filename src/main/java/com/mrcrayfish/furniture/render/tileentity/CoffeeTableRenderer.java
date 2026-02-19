@@ -25,7 +25,7 @@ public class CoffeeTableRenderer extends TileEntitySpecialRenderer<TileEntityCof
             GlStateManager.rotate(-90F * te.getRotation(), 0, 1, 0);
             GlStateManager.translate(-0.5, -0.5, -0.5);
             GlStateManager.rotate(90F, 1, 0, 0);
-            GlStateManager.translate(0.5, 0.5, -0.5 - 0.03125);
+            GlStateManager.translate(0.5, 0.5, -0.5);
 
             GlStateManager.scale(0.75F, 0.75F, 0.75F);
             GlStateManager.pushAttrib();
