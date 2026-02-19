@@ -58,13 +58,14 @@ public class MrCrayfishFurnitureMod
         /* Common Events */
         MinecraftForge.EVENT_BUS.register(new ConfigurationHandler());
 
+        /* Configuration Handler Init */
+        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+
+        /* Registration Handler Init */
         RegistrationHandler.init();
 
         /* Packet Handler Init */
         PacketHandler.init();
-
-        /* Configuration Handler Init */
-        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
 
         /* Custom triggers Init */
         Triggers.init();
