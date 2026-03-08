@@ -68,6 +68,11 @@ public class FurnitureItems
     public static final Item CAT_FOOD;
     public static final Item BROOM;
 
+    /**
+     * Nostalgia Update
+     */
+    public static final Item CUP_OLD;
+
 
     static
     {
@@ -85,6 +90,7 @@ public class FurnitureItems
         KNIFE = new ItemKnife().setMaxDamage(100).setTranslationKey("item_knife").setRegistryName("item_knife");
         CUP = new ItemCup(false).setTranslationKey("item_cup").setRegistryName("item_cup");
         DRINK = new ItemCup(true).setTranslationKey("item_drink").setRegistryName("item_drink");
+        CUP_OLD = new ItemCup(false).setTranslationKey("item_cup_old").setRegistryName("item_cup_old");
         BOTTLE = new ItemBottle(false).setTranslationKey("item_bottle").setRegistryName("item_bottle");
         BOTTLE_DRINK = new ItemBottle(true).setTranslationKey("item_bottle_drink").setRegistryName("item_bottle_drink");
         SOAP = new ItemGeneric().setTranslationKey("item_soap").setRegistryName("item_soap");
@@ -129,6 +135,7 @@ public class FurnitureItems
         registerItem(KNIFE);
         registerItem(CUP);
         registerItem(DRINK);
+        registerItem(CUP_OLD);
         registerItem(BOTTLE);
         registerItem(BOTTLE_DRINK);
         registerItem(SOAP);

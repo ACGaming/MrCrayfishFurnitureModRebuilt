@@ -185,6 +185,7 @@ public class FurnitureBlocks
     public static final Block KITCHEN_CABINET_OLD;
     public static final Block CHOPPING_BOARD_OLD;
     public static final Block BAR_STOOL_OLD;
+    public static final Block CUP_OLD;
 
     static
     {
@@ -510,6 +511,7 @@ public class FurnitureBlocks
         KITCHEN_CABINET_OLD = new BlockOldCabinetKitchen(Material.WOOD, "cabinet_kitchen_old");
         CHOPPING_BOARD_OLD = new BlockOldChoppingBoard(Material.WOOD, "chopping_board_old");
         BAR_STOOL_OLD = new BlockOldBarStool(Material.ROCK, "bar_stool_old");
+        CUP_OLD = new BlockOldCup(Material.GLASS, "cup_old");
     }
 
     public static void register()
@@ -839,6 +841,7 @@ public class FurnitureBlocks
             registerBlock(KITCHEN_CABINET_OLD);
             registerBlock(CHOPPING_BOARD_OLD);
             registerBlock(BAR_STOOL_OLD);
+            registerBlock(CUP_OLD, null);
         }
     }
 

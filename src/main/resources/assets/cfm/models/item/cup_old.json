@@ -1,7 +1,7 @@
 {
 "parent": "builtin/generated",
 "textures": {
-"layer0": "cfm:items/itemcup_old"
+"layer0": "cfm:items/item_cup_old"
 },
 "display": {
 "thirdperson": {

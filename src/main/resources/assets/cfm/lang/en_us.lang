@@ -23,6 +23,7 @@ item.item_toast.name=Toast
 item.item_knife.name=Knife
 item.item_cup.name=Cup
 item.item_drink.name=Drink
+item.item_cup_old.name=Cup (Old)
 item.item_bottle.name=Bottle
 item.item_bottle_drink.name=Drink Bottle
 item.item_soap.name=Soap
