@@ -542,6 +542,8 @@ tile.modern_sliding_door_acacia.name=Modern Sliding Door Acacia
 tile.modern_sliding_door_dark_oak.name=Modern Sliding Door Dark Oak
 tile.litter_box.name=Litter Box
 tile.cat_tree.name=Cat Tree
+tile.radiator.name=Radiator
+tile.figurine_mrcrayfish.name=Mrcrayfish Figurine
 tile.table_oak_old.name=Wooden Table (Old)
 tile.table_stone_old.name=Stone Table (Old)
 tile.chair_oak_old.name=Wooden Chair (Old)
@@ -606,8 +608,6 @@ tile.dishwasher_old.name=Dishwasher (Old)
 tile.cabinet_kitchen_old.name=Kitchen Cabinet (Old)
 tile.chopping_board_old.name=Chopping Board (Old)
 tile.bar_stool_old.name=Bar Stool (Old)
-tile.radiator.name=Radiator
-tile.figurine_mrcrayfish.name=Mrcrayfish Figurine
 
 
 tile.bedside_cabinet_biomesoplenty_cherry.name=Cherry Bedside Cabinet
