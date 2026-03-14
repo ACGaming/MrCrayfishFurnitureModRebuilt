@@ -64,7 +64,7 @@ public class FurnitureBlocks
 
     /* The Modern Update */
     public static final Block BEDSIDE_CABINET_STONE, BEDSIDE_CABINET_GRANITE, BEDSIDE_CABINET_DIORITE, BEDSIDE_CABINET_ANDESITE;
-    public static final Block MODERN_WINDOW, MODERN_SLIDING_DOOR, MODERN_SLIDING_DOOR_OAK, MODERN_SLIDING_DOOR_SPRUCE, MODERN_SLIDING_DOOR_BIRCH, MODERN_SLIDING_DOOR_JUNGLE, MODERN_SLIDING_DOOR_ACACIA, MODERN_SLIDING_DOOR_DARK_OAK, MODERN_TV, MODERN_COUCH, MODERN_TABLE, MODERN_CHAIR, MODERN_BED_TOP, MODERN_BED_BOTTOM, MODERN_COFFEE_TABLE, MODERN_STAIRS, MODERN_TABLE_OUTDOOR;
+    public static final Block MODERN_WINDOW, MODERN_SLIDING_DOOR, MODERN_SLIDING_DOOR_OAK, MODERN_SLIDING_DOOR_SPRUCE, MODERN_SLIDING_DOOR_BIRCH, MODERN_SLIDING_DOOR_JUNGLE, MODERN_SLIDING_DOOR_ACACIA, MODERN_SLIDING_DOOR_DARK_OAK, MODERN_TV, MODERN_COUCH, MODERN_TABLE, MODERN_CHAIR, MODERN_BED_TOP, MODERN_BED_BOTTOM, MODERN_COFFEE_TABLE, MODERN_STAIRS, MODERN_OAK_STAIR, MODERN_TABLE_OUTDOOR;
     public static final Block LIGHT_SWITCH_OFF, LIGHT_SWITCH_ON, MODERN_LIGHT_OFF, MODERN_LIGHT_ON, OLD_LIGHT_OFF, OLD_LIGHT_ON;
     public static final Block CEILING_FAN;
     public static final Block DESK_OAK, DESK_SPRUCE, DESK_BIRCH, DESK_JUNGLE, DESK_ACACIA, DESK_DARK_OAK, DESK_STONE, DESK_GRANITE, DESK_DIORITE, DESK_ANDESITE;
@@ -113,7 +113,6 @@ public class FurnitureBlocks
     public static final Block CAMP_CHAIR_ACACIA;
     public static final Block CAMP_CHAIR_DARK_OAK;
     public static final Block BIRD_BATH_WATER;
-    public static final Block MODERN_OAK_STAIR;
     public static final Block FOOD_DISPENSER;
     public static final Block FOOD_DISPENSER_CAT;
     public static final Block LITTER_BOX;
@@ -394,6 +393,7 @@ public class FurnitureBlocks
         TV_STAND = new BlockTVStand("tv_stand");
         MODERN_COFFEE_TABLE = new BlockCoffeeTable(Material.WOOD, SoundType.WOOD, "modern_coffee_table");
         MODERN_STAIRS = new BlockModernStair("modern_stair");
+        MODERN_OAK_STAIR = new BlockModernOakStair("modern_oak_stair");
         MODERN_TABLE_OUTDOOR = new BlockModernTable("modern_table_outdoor");
         MODERN_LIGHT_OFF = new BlockModernLight("modern_light_off", false);
         MODERN_LIGHT_ON = new BlockModernLight("modern_light_on", true);
@@ -443,7 +443,6 @@ public class FurnitureBlocks
         CAMP_CHAIR_ACACIA = new BlockCampChair(Material.WOOD, "camp_chair_acacia");
         CAMP_CHAIR_DARK_OAK = new BlockCampChair(Material.WOOD, "camp_chair_dark_oak");
         BIRD_BATH_WATER = new BlockBirdBathWater(Material.ROCK, "bird_bath_water");
-        MODERN_OAK_STAIR = new BlockModernOakStair("modern_oak_stair");
         LITTER_BOX = new BlockLitterBox(Material.WOOD, "litter_box");
         CAT_TREE = new BlockCatTree(Material.WOOD, "cat_tree");
         RADIATOR = new BlockRadiator(Material.IRON, "radiator");
@@ -720,6 +719,7 @@ public class FurnitureBlocks
         registerBlock(MODERN_COFFEE_TABLE);
         registerBlock(MODERN_TABLE_OUTDOOR);
         registerBlock(MODERN_STAIRS);
+        registerBlock(MODERN_OAK_STAIR);
         registerBlock(MODERN_BED_TOP, null);
         registerBlock(MODERN_BED_BOTTOM, new ItemModernBed());
         registerBlock(TV_STAND);
@@ -763,7 +763,6 @@ public class FurnitureBlocks
         registerBlock(BIRD_BATH_WATER);
         registerBlock(SMALL_LIGHT_OFF);
         registerBlock(SMALL_LIGHT_ON, null);
-        registerBlock(MODERN_OAK_STAIR);
         registerBlock(BOWL_FOOD_SECRET);
         registerBlock(CAMP_CHAIR);
         registerBlock(CAMP_CHAIR_SPRUCE);
