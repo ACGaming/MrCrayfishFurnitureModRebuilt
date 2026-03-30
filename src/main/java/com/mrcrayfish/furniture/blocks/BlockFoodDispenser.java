@@ -10,6 +10,9 @@ import net.minecraft.block.properties.PropertyInteger;
 import net.minecraft.block.state.BlockFaceShape;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.entity.player.EntityPlayer;
@@ -18,10 +21,14 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.*;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 import com.mrcrayfish.furniture.init.FurnitureItems;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+
 import java.util.List;
 import java.util.Random;
 
@@ -169,10 +176,14 @@ public class BlockFoodDispenser extends BlockFurniture
     }
 
     @Override
-    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn)
-    {
-        tooltip.add("§6Work in progress, no GUI yet!");
-        super.addInformation(stack, worldIn, tooltip, flagIn);
+    @SideOnly(Side.CLIENT)
+    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
+        if (GuiScreen.isShiftKeyDown()) {
+            tooltip.addAll(Minecraft.getMinecraft().fontRenderer.listFormattedStringToWidth(
+                    I18n.format("cfm.food_dispenser.info"), 150));
+        } else {
+            tooltip.add(TextFormatting.YELLOW + I18n.format("cfm.info"));
+        }
     }
 
     @Override
