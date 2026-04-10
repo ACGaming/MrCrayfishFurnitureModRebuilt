@@ -124,6 +124,11 @@ public class GuiEditValueContainer extends GuiScreen
     }
 
     @Override
+    public boolean doesGuiPauseGame() {
+        return false;
+    }
+
+    @Override
     public void onGuiClosed()
     {
         Keyboard.enableRepeatEvents(false);
