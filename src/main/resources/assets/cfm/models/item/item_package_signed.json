@@ -4,8 +4,8 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"1": "blocks/wool_colored_white",
-		"2": "cfm:items/carton",
-		"particle": "cfm:items/carton"
+		"2": "cfm:items/package",
+		"particle": "cfm:items/package"
 	},
 	"elements": [
 		{
