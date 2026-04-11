@@ -588,7 +588,7 @@ cfm.message.envelope_sign=Vous devez signer l'enveloppe avant de la déposer.
 cfm.message.envelope_open=Pour ouvrir l'enveloppe, soyez sûr de ne cibler aucun bloc.
 cfm.message.envelope_used=Vous ne pouvez pas déposer une enveloppe usagée.
 cfm.message.package_empty=Vous ne pouvez pas signer un colis vide.
-cfm.message.package_sign==Vous devez signer le colis avant de le déposer.
+cfm.message.package_sign=Vous devez signer le colis avant de le déposer.
 cfm.message.package_used=Vous ne pouvez pas déposer un colis usagé.
 cfm.message.present_empty=Vous ne pouvez pas emballer un cadeau vide.
 cfm.message.present_place=Ce cadeau est vide. Vous ne pouvez pas le poser.
