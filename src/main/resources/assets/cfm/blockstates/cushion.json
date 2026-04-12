@@ -2,14 +2,18 @@
   "forge_marker": 1,
   "defaults": {
     "model": "cfm:cushion.obj",
-    "custom": {"flip-v": true}
+    "custom": { "flip-v": true }
   },
   "variants": {
-    "normal": [{}],
+    "normal": [{
+      "transform": {
+        "translation": [0.5, 0, 0.5]
+      }
+    }],
     "inventory": [{
       "transform": {
         "rotation": [30, 225, 0],
-        "translation": [0, 0, 0],
+        "translation": [-0.45, 0, 0],
         "scale": [0.625, 0.625, 0.625]
       }
     }]
