@@ -1,0 +1,18 @@
+{
+    "result": {
+        "item": "cfm:cushion",
+        "data": 0
+    },
+    "pattern": [
+        "55 ",
+        "55 ",
+		"   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "5": {
+            "item": "minecraft:wool",
+            "data": 0
+        }
+    }
+}
