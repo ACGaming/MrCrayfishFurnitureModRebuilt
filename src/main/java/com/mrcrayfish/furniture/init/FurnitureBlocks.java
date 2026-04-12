@@ -119,6 +119,7 @@ public class FurnitureBlocks
     public static final Block CAT_TREE;
     public static final Block RADIATOR;
     public static final Block FIGURINE_MRCRAYFISH;
+    public static final Block CUSHION;
 
     /* Nostalgia Update */
     public static final Block WOODEN_CHAIR_OLD;
@@ -511,6 +512,7 @@ public class FurnitureBlocks
         CHOPPING_BOARD_OLD = new BlockOldChoppingBoard(Material.WOOD, "chopping_board_old");
         BAR_STOOL_OLD = new BlockOldBarStool(Material.ROCK, "bar_stool_old");
         CUP_OLD = new BlockOldCup(Material.GLASS, "cup_old");
+        CUSHION = new BlockCushion(Material.CLOTH, "cushion");
     }
 
     public static void register()
@@ -774,6 +776,7 @@ public class FurnitureBlocks
         registerBlock(CAT_TREE);
         registerBlock(RADIATOR);
         registerBlock(FIGURINE_MRCRAYFISH);
+        registerBlock(CUSHION);
 
         if(ConfigurationHandler.legacyFurniture)
         {
