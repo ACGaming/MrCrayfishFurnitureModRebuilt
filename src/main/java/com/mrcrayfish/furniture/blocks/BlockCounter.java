@@ -94,7 +94,6 @@ public class BlockCounter extends BlockFurnitureTile
             {
                 return state.withProperty(TYPE, CounterType.INVERT_LEFT);
             }
-            return state.withProperty(TYPE, CounterType.INVERT_NORMAL);
         }
         for(EnumFacing dir : EnumFacing.HORIZONTALS)
         {
@@ -107,7 +106,7 @@ public class BlockCounter extends BlockFurnitureTile
                     break;
                 }
                 EnumFacing nFacing = nBase.getValue(FACING);
-                if(StateHelper.getBlock(world, nPos, nFacing, StateHelper.Direction.UP) instanceof BlockCounter)
+                if(StateHelper.getBlock(world, nPos, nFacing, StateHelper.Direction.UP) instanceof BlockCounter && state.getValue(FACING) != nFacing.getOpposite())
                 {
                     return state.withProperty(TYPE, CounterType.INVERT_NORMAL);
                 }
