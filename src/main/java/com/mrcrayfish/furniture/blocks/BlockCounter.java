@@ -94,6 +94,25 @@ public class BlockCounter extends BlockFurnitureTile
             {
                 return state.withProperty(TYPE, CounterType.INVERT_LEFT);
             }
+            return state.withProperty(TYPE, CounterType.INVERT_NORMAL);
+        }
+        for(EnumFacing dir : EnumFacing.HORIZONTALS)
+        {
+            BlockPos nPos = pos.offset(dir);
+            while(true)
+            {
+                IBlockState nBase = world.getBlockState(nPos);
+                if(!(nBase.getBlock() instanceof BlockCounter))
+                {
+                    break;
+                }
+                EnumFacing nFacing = nBase.getValue(FACING);
+                if(StateHelper.getBlock(world, nPos, nFacing, StateHelper.Direction.UP) instanceof BlockCounter)
+                {
+                    return state.withProperty(TYPE, CounterType.INVERT_NORMAL);
+                }
+                nPos = nPos.offset(dir);
+            }
         }
         return state.withProperty(TYPE, CounterType.NORMAL);
     }
@@ -145,7 +164,8 @@ public class BlockCounter extends BlockFurnitureTile
         CORNER_LEFT,
         CORNER_RIGHT,
         INVERT_LEFT,
-        INVERT_RIGHT;
+        INVERT_RIGHT,
+		INVERT_NORMAL;
 
         @Override
         public String getName()
@@ -168,7 +188,7 @@ public class BlockCounter extends BlockFurnitureTile
         {
             list.add(RIGHT_CORNER_BOXES[facing.getHorizontalIndex()]);
         }
-        else if(state.getValue(TYPE) == CounterType.NORMAL)
+        else if(state.getValue(TYPE) == CounterType.NORMAL || state.getValue(TYPE) == CounterType.INVERT_NORMAL)
         {
             list.add(FORWARD_BOXES[facing.getHorizontalIndex()]);
         }

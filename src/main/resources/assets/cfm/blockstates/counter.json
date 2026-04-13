@@ -12,7 +12,8 @@
             "corner_left":  { "model": "cfm:counter_corner_left" },
             "corner_right": { "model": "cfm:counter_corner_right" },
             "invert_left":  { "model": "cfm:counter_invert_left" },
-            "invert_right": { "model": "cfm:counter_invert_right" }
+            "invert_right": { "model": "cfm:counter_invert_right" },
+            "invert_normal": { "model": "cfm:counter_invert_normal" }
         },
         "colour": {
             "0": {
