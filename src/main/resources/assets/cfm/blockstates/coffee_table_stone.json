@@ -2,7 +2,7 @@
 	"forge_marker": 1,
 	"defaults": {
 		"textures": {
-			"1": "blocks/stone",
+			"1": "blocks/stone_slab_top",
 			"2": "blocks/stonebrick"
 		},
 		"model": "cfm:coffee_table_all",
