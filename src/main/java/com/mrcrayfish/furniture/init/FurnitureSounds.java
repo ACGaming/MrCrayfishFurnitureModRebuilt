@@ -23,6 +23,7 @@ public class FurnitureSounds
     public static SoundEvent channel_sam_tabor;
     public static SoundEvent channel_switch;
     public static SoundEvent computer;
+    public static SoundEvent old_computer;
     public static SoundEvent dishwasher;
     public static SoundEvent dishwasher_close;
     public static SoundEvent dishwasher_open;
@@ -81,6 +82,7 @@ public class FurnitureSounds
         channel_sam_tabor = registerSound("cfm:channel_sam_tabor");
         channel_switch = registerSound("cfm:channel_switch");
         computer = registerSound("cfm:computer");
+        old_computer = registerSound("cfm:old_computer");
         dishwasher = registerSound("cfm:dishwasher");
         dishwasher_close = registerSound("cfm:dishwasher_close");
         dishwasher_open = registerSound("cfm:dishwasher_open");

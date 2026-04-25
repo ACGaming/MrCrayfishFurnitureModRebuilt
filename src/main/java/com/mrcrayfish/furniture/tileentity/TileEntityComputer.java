@@ -65,13 +65,6 @@ public class TileEntityComputer extends TileEntityFurniture
     }
 
     @Override
-    public void openInventory(EntityPlayer player)
-    {
-        setTrading(true);
-        world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.computer, SoundCategory.BLOCKS, 1.0F, 1.0F, true);
-    }
-
-    @Override
     public void closeInventory(EntityPlayer player)
     {
         setTrading(false);

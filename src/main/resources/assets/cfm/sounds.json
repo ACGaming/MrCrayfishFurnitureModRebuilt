@@ -328,6 +328,14 @@
       }
     ]
   },
+  "old_computer": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:old_computer"
+      }
+    ]
+  },
   "dishwasher_open": {
     "category": "block",
     "sounds": [
