@@ -120,10 +120,4 @@ public class ItemPackageSigned extends Item implements IItemInventory
         worldIn.playSound(null, playerIn.getPosition(), FurnitureSounds.carton, SoundCategory.PLAYERS, 0.75F, 1.0F);
         return new ActionResult<>(EnumActionResult.SUCCESS, stack);
     }
-
-    @SideOnly(Side.CLIENT)
-    public boolean hasEffect(ItemStack stack)
-    {
-        return true;
-    }
 }

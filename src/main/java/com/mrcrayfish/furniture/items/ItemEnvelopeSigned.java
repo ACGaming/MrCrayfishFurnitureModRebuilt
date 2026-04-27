@@ -119,10 +119,4 @@ public class ItemEnvelopeSigned extends Item implements IItemInventory
         }
         return new ActionResult<>(EnumActionResult.SUCCESS, stack);
     }
-
-    @SideOnly(Side.CLIENT)
-    public boolean hasEffect(ItemStack par1ItemStack)
-    {
-        return true;
-    }
 }
