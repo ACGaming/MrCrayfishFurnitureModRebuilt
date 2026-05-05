@@ -3,6 +3,7 @@ package com.mrcrayfish.furniture.handler;
 import java.io.File;
 import com.mrcrayfish.furniture.api.RecipeRegistry;
 import com.mrcrayfish.furniture.api.Recipes;
+import com.mrcrayfish.furniture.init.SwitchableBlockRegistry;
 import com.mrcrayfish.furniture.integration.crafttweaker.CraftTweakerIntegration;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
@@ -36,6 +37,8 @@ public class ConfigurationHandler
     public static int maxFileSize = 2;
 
     public static String[] items = {};
+
+    //public static String[] switchableBlocks = {"minecraft:redstone_lamp;minecraft:lit_redstone_lamp"};
 
     public static boolean printer_1 = true, printer_2 = true;
     public static boolean oven_1 = true, oven_2 = true, oven_3 = true, oven_4 = true, oven_5 = true, oven_6 = true, oven_7 = true, oven_8 = true, oven_modded = true;
@@ -89,6 +92,9 @@ public class ConfigurationHandler
         integrationPalebloom = config.getBoolean("integration-palebloom", CATEGORY_INTEGRATION_SETTINGS, true, "Whether furniture with support for Palebloom should be enabled. Disabled automatically when Cosmetic Wood is detected.");
 
         items = config.getStringList("custom-recipes", CATEGORY_API, items, "Insert custom recipes here");
+
+        //switchableBlocks = config.getStringList("switchable-blocks", CATEGORY_SETTINGS, switchableBlocks, "List of switchable block pairs for the light switch.\n" + "Format per entry: modid:block:meta;modid:block:meta\n");
+        //SwitchableBlockRegistry.getInstance().reload(switchableBlocks);
 
         config.addCustomCategoryComment(CATEGORY_RECIPE_SETTINGS, "Enable or disable the default recipes");
         config.addCustomCategoryComment(CATEGORY_API, "RecipeAPI Configuration. How to use: https://mrcrayfishs-furniture-mod.fandom.com/wiki/Configuration");

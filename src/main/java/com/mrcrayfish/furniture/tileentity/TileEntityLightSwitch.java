@@ -3,6 +3,10 @@ package com.mrcrayfish.furniture.tileentity;
 import com.mrcrayfish.furniture.blocks.BlockFurniture;
 import com.mrcrayfish.furniture.blocks.IPowered;
 import com.mrcrayfish.furniture.init.FurnitureBlocks;
+import com.mrcrayfish.furniture.init.SwitchableBlockRegistry;
+import com.mrcrayfish.furniture.util.SwitchableBlock;
+
+import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
@@ -68,14 +72,31 @@ public class TileEntityLightSwitch extends TileEntity
         lights.removeIf(lightPos ->
         {
             IBlockState state = world.getBlockState(lightPos);
-            return !(state.getBlock() instanceof IPowered);
+            return !(state.getBlock() instanceof IPowered) && !SwitchableBlockRegistry.getInstance().isValidTarget(state);
         });
 
         lights.forEach(lightPos ->
         {
             IBlockState state = world.getBlockState(lightPos);
-            ((IPowered) state.getBlock()).setPowered(world, lightPos, powered);
 
+            Block block = state.getBlock();
+            if(block instanceof IPowered)
+            {
+                ((IPowered) block).setPowered(world, lightPos, powered);
+            }
+            else
+            {
+                SwitchableBlock entry = SwitchableBlockRegistry.getInstance().getEntryFor(state);
+                if(entry != null)
+                {
+                    IBlockState target = powered ? entry.getOnState() : entry.getOffState();
+                    if(target != null && target != state)
+                    {
+                        world.setBlockState(lightPos, target);
+                        // TODO: Fake-power block for redstone lights
+                    }
+                }
+            }
         });
 
         IBlockState state = world.getBlockState(pos);
