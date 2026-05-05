@@ -157,13 +157,6 @@ public class BlockFoodDispenserCat extends BlockFurniture
     }
 
     @Override
-    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn)
-    {
-        tooltip.add("§6Work in progress, no GUI yet!");
-        super.addInformation(stack, worldIn, tooltip, flagIn);
-    }
-
-    @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
     {
         return BOUNDING_BOX;
