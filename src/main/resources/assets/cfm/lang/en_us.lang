@@ -971,8 +971,8 @@ tile.upgraded_fence_palebloom_pale_oak.name=Pale Wood Upgraded Fence
 tile.upgraded_gate_palebloom_pale_oak.name=Pale Wood Upgraded Gate
 
 cfm.info=Hold SHIFT for Info
-cfm.light_switch.desc=Use this switch to control ceiling lights and fans wirelessly
-cfm.light_switch.info=To connect the switch to ceiling lights or fans, simply right click the lights on fans with the switch in your hand. If you want to remove lights or fans, crouch and right click to clear all.
+cfm.light_switch.desc=Use this switch to control ceiling lights, fans and others furnitures wirelessly
+cfm.light_switch.info=To connect the switch to ceiling lights or fans, simply right click the lights on fans with the switch in your hand. If you want to remove lights or fans, crouch and right click to clear all. It can sends a redstone signal like a lever
 cfm.desk.info=This desk can connect to other desks to create any shape and length you desire. It can also be used in conjunction with the Desk Cabinet.
 cfm.desk_cabinet.info=This desk cabinet can connect to other desk cabinets to create any shape and length you desire. It can also be used in conjunction with the Desk.
 cfm.mail_signed.info=from %s
