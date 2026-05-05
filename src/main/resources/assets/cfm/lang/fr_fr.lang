@@ -525,6 +525,7 @@ cfm.present_unsigned.info=Non Signé
 cfm.digital_clock.info=Affiche l'heure de l'overworld en format 24 heures. Son affichage peut être colorée avec le colorant de votre choix.
 cfm.tv_remote.info=Permet de contrôler sans-fil une TV. Pour changer de chaîne, cliquez droit simplement en direction de la TV. Vous pouvez allumer/éteindre la TV en vous accroupissant.
 cfm.bowl.info=Clique droit pour remplir avec des croquettes ou de l'eau dans le bowl
+cfm.food_dispenser.info=Clique droit pour remplir automatiquement le distributeur de croquettes avec une boite de croquettes pour chat ou de chien
 
 cfm.tv.success=GIF chargé avec succès
 cfm.tv.failed=Chargement du GIF échoué
