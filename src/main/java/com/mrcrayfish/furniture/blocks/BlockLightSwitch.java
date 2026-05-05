@@ -68,6 +68,8 @@ public class BlockLightSwitch extends BlockFurniture
             {
                 ((TileEntityLightSwitch) tileEntity).setState(false);
             }
+            worldIn.notifyNeighborsOfStateChange(pos, this, false);
+            worldIn.notifyNeighborsOfStateChange(pos.offset(facing.getOpposite()), this, false);
             worldIn.playSound(null, pos, FurnitureSounds.light_switch, SoundCategory.BLOCKS, 1.0F, 0.9F + RANDOM.nextFloat() * 0.1F);
             return true;
         }
@@ -146,5 +148,23 @@ public class BlockLightSwitch extends BlockFurniture
     public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer)
     {
         return this.getDefaultState().withProperty(FACING, this.canPlaceBlockOnSide(worldIn, pos, facing) ? facing.getOpposite() : EnumFacing.NORTH);
+    }
+
+    @Override
+    public boolean canProvidePower(IBlockState state)
+    {
+        return true;
+    }
+
+    @Override
+    public int getStrongPower(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
+    {
+        return getWeakPower(blockState, blockAccess, pos, side);
+    }
+
+    @Override
+    public int getWeakPower(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
+    {
+        return this == FurnitureBlocks.LIGHT_SWITCH_ON ? 15 : 0;
     }
 }
