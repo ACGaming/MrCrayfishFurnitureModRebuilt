@@ -29,7 +29,7 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * Author: MrCrayfish
+ * Author: MrCrayfish and edited by ACGaming
  */
 public class BlockLightSwitch extends BlockFurniture
 {
