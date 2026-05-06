@@ -1,6 +1,7 @@
 {
   "result": {
-    "item": "cfm:chopping_board"
+    "item": "cfm:chopping_board",
+	"count": 4
   },
   "pattern": [
     "LLL",

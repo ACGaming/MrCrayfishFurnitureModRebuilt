@@ -1,6 +1,7 @@
 {
   "result": {
-    "item": "cfm:chopping_board_old"
+    "item": "cfm:chopping_board_old",
+	"count": 4
   },
   "pattern": [
     "222",
