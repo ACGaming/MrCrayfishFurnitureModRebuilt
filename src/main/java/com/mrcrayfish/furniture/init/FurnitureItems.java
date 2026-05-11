@@ -121,8 +121,6 @@ public class FurnitureItems
 
     public static void register()
     {
-        registerItem(FLESH);
-        registerItem(COOKED_FLESH);
         registerItem(COOL_PACK);
         registerItem(HAMMER);
         registerItem(ENVELOPE);
@@ -130,8 +128,6 @@ public class FurnitureItems
         registerItem(PACKAGE);
         registerItem(PACKAGE_SIGNED);
         registerItem(INK_CARTRIDGE);
-        registerItem(BREAD_SLICE);
-        registerItem(TOAST);
         registerItem(KNIFE);
         registerItem(CUP);
         registerItem(DRINK);
@@ -146,10 +142,14 @@ public class FurnitureItems
         registerItem(CRAYFISH);
         registerItem(LOG);
         registerItem(SPATULA);
+        registerItem(FLESH);
+        registerItem(COOKED_FLESH);
         registerItem(SAUSAGE);
         registerItem(SAUSAGE_COOKED);
         registerItem(KEBAB);
         registerItem(KEBAB_COOKED);
+        registerItem(BREAD_SLICE);
+        registerItem(TOAST);
         registerItem(CROWBAR);
         registerItem(CEILING_FAN_FANS);
         registerItem(OLD_TV_REMOTE);
