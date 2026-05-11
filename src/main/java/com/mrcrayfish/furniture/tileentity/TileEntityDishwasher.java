@@ -10,6 +10,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.ISidedInventory;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemTool;
 import net.minecraft.nbt.NBTTagCompound;
@@ -17,12 +18,8 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ITickable;
 import net.minecraft.util.SoundCategory;
 
-import java.util.Random;
-
 public class TileEntityDishwasher extends TileEntityFurniture implements ISidedInventory, ITickable
 {
-    private Random rand = new Random();
-
     private static final int[] slots_top = new int[]{0, 1, 2, 3, 4, 5};
     private static final int[] slots_bottom = new int[]{0, 1, 2, 3, 4, 5, 6};
     private static final int[] slots_sides = new int[]{6};
@@ -45,7 +42,9 @@ public class TileEntityDishwasher extends TileEntityFurniture implements ISidedI
             if(timeRemaining == 0)
             {
                 superMode = inventory.get(6).getItem() == FurnitureItems.SUPER_SOAPY_WATER;
-                inventory.set(6, new ItemStack(inventory.get(6).getItem().getContainerItem()));
+                Item fuelReturn = inventory.get(6).getItem().getContainerItem();
+                if(fuelReturn == null) fuelReturn = FurnitureItems.BIG_BUCKET;
+                inventory.set(6, new ItemStack(fuelReturn));
                 timeRemaining = 5000;
             }
             washing = true;

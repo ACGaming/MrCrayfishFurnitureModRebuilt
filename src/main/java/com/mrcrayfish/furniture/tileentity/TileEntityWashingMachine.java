@@ -12,16 +12,14 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.ISidedInventory;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemTool;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ITickable;
 import net.minecraft.util.SoundCategory;
 import net.minecraftforge.fml.common.network.NetworkRegistry.TargetPoint;
-
-import java.util.Random;
 
 public class TileEntityWashingMachine extends TileEntityFurniture implements ISidedInventory, ITickable
 {
@@ -46,7 +44,9 @@ public class TileEntityWashingMachine extends TileEntityFurniture implements ISi
             if(timeRemaining == 0)
             {
                 superMode = getStackInSlot(4).getItem() == FurnitureItems.SUPER_SOAPY_WATER;
-                setInventorySlotContents(4, new ItemStack(getStackInSlot(4).getItem().getContainerItem()));
+                Item fuelReturn = getStackInSlot(4).getItem().getContainerItem();
+                if(fuelReturn == null) fuelReturn = FurnitureItems.BIG_BUCKET;
+                setInventorySlotContents(4, new ItemStack(fuelReturn));
                 timeRemaining = 5000;
             }
             washing = true;
