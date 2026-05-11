@@ -78,15 +78,11 @@ public class FurnitureItems
     {
         COOL_PACK = new ItemGeneric().setTranslationKey("item_cool_pack").setRegistryName("item_cool_pack");
         INK_CARTRIDGE = new ItemGeneric().setTranslationKey("item_ink_cartridge").setRegistryName("item_ink_cartridge");
-        FLESH = new ItemFood(1, 2, false).setTranslationKey("item_flesh").setRegistryName("item_flesh").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
-        COOKED_FLESH = new ItemFood(4, 4, false).setTranslationKey("item_flesh_cooked").setRegistryName("item_flesh_cooked").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         ENVELOPE = new ItemEnvelope().setTranslationKey("item_envelope").setRegistryName("item_envelope");
         ENVELOPE_SIGNED = new ItemEnvelopeSigned().setTranslationKey("item_envelope_signed").setRegistryName("item_envelope_signed");
         PACKAGE = new ItemPackage().setTranslationKey("item_package").setRegistryName("item_package");
         PACKAGE_SIGNED = new ItemPackageSigned().setTranslationKey("item_package_signed").setRegistryName("item_package_signed");
         HAMMER = new ItemGeneric().setTranslationKey("item_hammer").setRegistryName("item_hammer");
-        BREAD_SLICE = new ItemFood(2, false).setTranslationKey("item_bread_slice").setRegistryName("item_bread_slice").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
-        TOAST = new ItemFood(4, false).setTranslationKey("item_toast").setRegistryName("item_toast").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         KNIFE = new ItemKnife().setMaxDamage(100).setTranslationKey("item_knife").setRegistryName("item_knife");
         CUP = new ItemCup(false).setTranslationKey("item_cup").setRegistryName("item_cup");
         DRINK = new ItemCup(true).setTranslationKey("item_drink").setRegistryName("item_drink");
@@ -101,10 +97,14 @@ public class FurnitureItems
         CRAYFISH = new Item().setTranslationKey("item_crayfish").setRegistryName("item_crayfish").setMaxStackSize(1);
         LOG = new ItemLog(FurnitureBlocks.FIRE_PIT_OFF).setTranslationKey("item_log").setRegistryName("item_log").setMaxStackSize(16);
         SPATULA = new ItemGeneric().setTranslationKey("item_spatula").setRegistryName("item_spatula").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
+        FLESH = new ItemFood(1, 2, false).setTranslationKey("item_flesh").setRegistryName("item_flesh").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
+        COOKED_FLESH = new ItemFood(4, 4, false).setTranslationKey("item_flesh_cooked").setRegistryName("item_flesh_cooked").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         SAUSAGE = new ItemFood(1, false).setTranslationKey("item_sausage").setRegistryName("item_sausage").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         SAUSAGE_COOKED = new ItemFood(4, false).setTranslationKey("item_sausage_cooked").setRegistryName("item_sausage_cooked").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         KEBAB = new ItemFood(1, false).setPotionEffect(new PotionEffect(MobEffects.HUNGER, 600, 0), 0.3F).setTranslationKey("item_kebab").setRegistryName("item_kebab").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         KEBAB_COOKED = new ItemFood(4, false).setTranslationKey("item_kebab_cooked").setRegistryName("item_kebab_cooked").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
+        BREAD_SLICE = new ItemFood(2, false).setTranslationKey("item_bread_slice").setRegistryName("item_bread_slice").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
+        TOAST = new ItemFood(4, false).setTranslationKey("item_toast").setRegistryName("item_toast").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         CROWBAR = new ItemGeneric().setTranslationKey("item_crow_bar").setRegistryName("item_crow_bar").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
         CEILING_FAN_FANS = new ItemGeneric().setTranslationKey("ceiling_fan_fans").setRegistryName("ceiling_fan_fans");
         OLD_TV_REMOTE = new ItemOldTvRemote();
