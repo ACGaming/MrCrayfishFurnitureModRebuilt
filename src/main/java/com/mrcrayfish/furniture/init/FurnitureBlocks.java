@@ -186,6 +186,8 @@ public class FurnitureBlocks
     public static final Block CHOPPING_BOARD_OLD;
     public static final Block BAR_STOOL_OLD;
     public static final Block CUP_OLD;
+    public static final Block LAMP_ON_OLD;
+    public static final Block LAMP_OFF_OLD;
 
     static
     {
@@ -512,6 +514,8 @@ public class FurnitureBlocks
         CHOPPING_BOARD_OLD = new BlockOldChoppingBoard(Material.WOOD, "chopping_board_old");
         BAR_STOOL_OLD = new BlockOldBarStool(Material.ROCK, "bar_stool_old");
         CUP_OLD = new BlockOldCup(Material.GLASS, "cup_old");
+        LAMP_ON_OLD = new BlockOldLampOn(Material.GLASS, "lamp_on_old");
+        LAMP_OFF_OLD = new BlockOldLamp(Material.GLASS, false, "lamp_off_old");
         CUSHION = new BlockCushion(Material.CLOTH, "cushion");
     }
 
@@ -844,6 +848,8 @@ public class FurnitureBlocks
             registerBlock(CHOPPING_BOARD_OLD);
             registerBlock(BAR_STOOL_OLD);
             registerBlock(CUP_OLD, null);
+            registerBlock(LAMP_ON_OLD);
+            registerBlock(LAMP_OFF_OLD);
         }
     }
 

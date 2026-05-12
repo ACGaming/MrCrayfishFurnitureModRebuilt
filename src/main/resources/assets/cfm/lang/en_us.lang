@@ -609,7 +609,8 @@ tile.dishwasher_old.name=Dishwasher (Old)
 tile.cabinet_kitchen_old.name=Kitchen Cabinet (Old)
 tile.chopping_board_old.name=Chopping Board (Old)
 tile.bar_stool_old.name=Bar Stool (Old)
-
+tile.lamp_on_old.name=Lamp (Old)
+tile.lamp_off_old.name=Lamp (Old)
 
 tile.bedside_cabinet_biomesoplenty_cherry.name=Cherry Bedside Cabinet
 tile.blinds_biomesoplenty_cherry_closed.name=Cherry Blinds
