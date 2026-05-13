@@ -500,8 +500,8 @@ public class FurnitureBlocks
         BATH_OLD_2 = new BlockOldBath(Material.ROCK, true, "bath_top_old");
         SHOWER_BOTTOM_OLD = new BlockOldShower(Material.ROCK, false, "shower_bottom_old");
         SHOWER_TOP_OLD = new BlockOldShower(Material.ROCK, true, "shower_top_old");
-        SHOWER_HEAD_OFF_OLD = new BlockShowerHeadOff(Material.ROCK, "shower_head_off_old");
-        SHOWER_HEAD_ON_OLD = new BlockShowerHeadOn(Material.ROCK, "shower_head_on_old");
+        SHOWER_HEAD_OFF_OLD = new BlockOldShowerHeadOff(Material.ROCK, "shower_head_off_old");
+        SHOWER_HEAD_ON_OLD = new BlockOldShowerHeadOn(Material.ROCK, "shower_head_on_old");
         BIN_OLD = new BlockOldBin(Material.ROCK, "bin_old");
         PRESENT_RED_OLD = new BlockOldPresent(Material.CLOTH, "present_red_old");
         PRESENT_GREEN_OLD = new BlockOldPresent(Material.CLOTH, "present_green_old");
