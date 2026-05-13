@@ -170,6 +170,8 @@ public class FurnitureBlocks
     public static final Block BATH_OLD_2;
     public static final Block SHOWER_BOTTOM_OLD;
     public static final Block SHOWER_TOP_OLD;
+    public static final Block SHOWER_HEAD_OFF_OLD;
+    public static final Block SHOWER_HEAD_ON_OLD;
     public static final Block BIN_OLD;
     public static final Block PRESENT_RED_OLD;
     public static final Block PRESENT_GREEN_OLD;
@@ -498,6 +500,8 @@ public class FurnitureBlocks
         BATH_OLD_2 = new BlockOldBath(Material.ROCK, true, "bath_top_old");
         SHOWER_BOTTOM_OLD = new BlockOldShower(Material.ROCK, false, "shower_bottom_old");
         SHOWER_TOP_OLD = new BlockOldShower(Material.ROCK, true, "shower_top_old");
+        SHOWER_HEAD_OFF_OLD = new BlockShowerHeadOff(Material.ROCK, "shower_head_off_old");
+        SHOWER_HEAD_ON_OLD = new BlockShowerHeadOn(Material.ROCK, "shower_head_on_old");
         BIN_OLD = new BlockOldBin(Material.ROCK, "bin_old");
         PRESENT_RED_OLD = new BlockOldPresent(Material.CLOTH, "present_red_old");
         PRESENT_GREEN_OLD = new BlockOldPresent(Material.CLOTH, "present_green_old");
@@ -832,6 +836,8 @@ public class FurnitureBlocks
             registerBlock(BATH_OLD_2, null);
             registerBlock(SHOWER_BOTTOM_OLD);
             registerBlock(SHOWER_TOP_OLD, null);
+            registerBlock(SHOWER_HEAD_OFF_OLD);
+            registerBlock(SHOWER_HEAD_ON_OLD, null);
             registerBlock(BIN_OLD);
             registerBlock(PRESENT_RED_OLD);
             registerBlock(PRESENT_GREEN_OLD);
