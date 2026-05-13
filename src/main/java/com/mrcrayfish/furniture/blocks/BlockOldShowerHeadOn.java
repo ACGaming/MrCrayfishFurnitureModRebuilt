@@ -61,7 +61,7 @@ public class BlockOldShowerHeadOn extends BlockFurnitureTile
     @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
     {
-        worldIn.setBlockState(pos, FurnitureBlocks.SHOWER_HEAD_OFF.getDefaultState().withProperty(FACING, state.getValue(FACING)), 2);
+        worldIn.setBlockState(pos, FurnitureBlocks.SHOWER_HEAD_OFF_OLD.getDefaultState().withProperty(FACING, state.getValue(FACING)), 2);
         worldIn.playSound(pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D, FurnitureSounds.tap_close, SoundCategory.BLOCKS, 1.0F, 1.0F, false);
         return true;
     }
@@ -121,13 +121,13 @@ public class BlockOldShowerHeadOn extends BlockFurnitureTile
     @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
-        return new ItemStack(FurnitureBlocks.SHOWER_HEAD_OFF).getItem();
+        return new ItemStack(FurnitureBlocks.SHOWER_HEAD_OFF_OLD).getItem();
     }
 
     @Override
     public ItemStack getPickBlock(IBlockState state, RayTraceResult target, World world, BlockPos pos, EntityPlayer player)
     {
-        return new ItemStack(FurnitureBlocks.SHOWER_HEAD_OFF);
+        return new ItemStack(FurnitureBlocks.SHOWER_HEAD_OFF_OLD);
     }
 
     private boolean canPlaceCheck(World world, BlockPos pos, IBlockState state)

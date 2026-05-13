@@ -51,7 +51,7 @@ public class BlockOldShowerHeadOff extends BlockFurniture
     @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
     {
-        worldIn.setBlockState(pos, FurnitureBlocks.SHOWER_HEAD_ON.getDefaultState().withProperty(FACING, state.getValue(FACING)), 2);
+        worldIn.setBlockState(pos, FurnitureBlocks.SHOWER_HEAD_ON_OLD.getDefaultState().withProperty(FACING, state.getValue(FACING)), 2);
         worldIn.playSound(pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D, FurnitureSounds.tap_open, SoundCategory.BLOCKS, 0.5F, 1.0F, false);
         return true;
     }
