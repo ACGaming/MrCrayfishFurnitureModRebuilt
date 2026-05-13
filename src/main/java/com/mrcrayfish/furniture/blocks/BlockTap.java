@@ -1,5 +1,6 @@
 package com.mrcrayfish.furniture.blocks;
 
+import com.mrcrayfish.furniture.init.FurnitureSounds;
 import com.mrcrayfish.furniture.util.CollisionHelper;
 import net.minecraft.block.BlockLiquid;
 import net.minecraft.block.SoundType;
@@ -10,6 +11,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentTranslation;
@@ -44,6 +46,7 @@ public class BlockTap extends BlockFurniture
                 if(worldIn.isAirBlock(pos.offset(side.getOpposite())))
                 {
                     worldIn.setBlockState(pos.offset(side.getOpposite()), Blocks.WATER.getDefaultState());
+                    worldIn.playSound(pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D, FurnitureSounds.tap_open, SoundCategory.BLOCKS, 0.5F, 1.0F, false);
                     worldIn.setBlockToAir(pos.down(2));
                 }
                 else
