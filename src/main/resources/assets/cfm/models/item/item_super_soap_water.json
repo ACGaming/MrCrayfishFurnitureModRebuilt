@@ -5,7 +5,7 @@
 		"0": "cfm:items/soap_bucket",
 		"1": "cfm:blocks/model_block_light",
 		"2": "blocks/iron_block",
-		"3": "blocks/snow",
+		"3": "cfm:items/supersoap_texture",
 		"particle": "cfm:items/soap_bucket"
 	},
 	"elements": [
