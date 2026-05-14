@@ -46,7 +46,7 @@ public class BlockTap extends BlockFurniture
                 if(worldIn.isAirBlock(pos.offset(side.getOpposite())))
                 {
                     worldIn.setBlockState(pos.offset(side.getOpposite()), Blocks.WATER.getDefaultState());
-                    worldIn.playSound(null, pos, SoundEvents.ITEM_BUCKET_FILL, SoundCategory.BLOCKS, 1.0F, 1.0F);
+                    worldIn.playSound(null, pos, SoundEvents.ITEM_BUCKET_FILL, SoundCategory.BLOCKS, 1.0F, 1.5F);
                     worldIn.setBlockToAir(pos.down(2));
                 }
                 else
