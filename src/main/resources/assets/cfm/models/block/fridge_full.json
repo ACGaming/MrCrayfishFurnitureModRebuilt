@@ -3,7 +3,7 @@
 	"credit": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
 	"textures": {
 		"3": "cfm:blocks/number",
-		"4": "cfm:blocks/light_texture_old",
+		"4": "cfm:blocks/light_texture_on",
 		"gray": "cfm:blocks/model_block_dark",
 		"silver": "cfm:blocks/model_block_light",
 		"white": "blocks/concrete_white"
