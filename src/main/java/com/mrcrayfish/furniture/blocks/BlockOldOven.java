@@ -26,7 +26,7 @@ public class BlockOldOven extends BlockFurnitureTile
     {
         super(material, id);
         this.setHardness(1.0F);
-        this.setSoundType(SoundType.METAL);
+        this.setSoundType(SoundType.STONE);
     }
 
     @Override
