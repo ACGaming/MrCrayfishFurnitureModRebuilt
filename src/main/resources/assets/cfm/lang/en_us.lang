@@ -18,6 +18,7 @@ item.item_ink_cartridge.name=Ink Cartridge
 item.item_flesh.name=Flesh
 item.item_flesh_cooked.name=Cooked Flesh
 item.item_cool_pack.name=Cooling Pack
+item.item_cool_pack_water.name=Cooling Pack with Water
 item.item_bread_slice.name=Bread Slice
 item.item_toast.name=Toast
 item.item_knife.name=Knife
