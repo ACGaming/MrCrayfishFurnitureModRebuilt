@@ -40,15 +40,28 @@ public class TileEntityFreezer extends TileEntityFurniture implements ISidedInve
         {
             if(timeRemaining == 0)
             {
-                fuelTime = getFuelTime(inventory.get(0));
+                ItemStack fuelStack = inventory.get(0);
+
+                fuelTime = getFuelTime(fuelStack);
                 timeRemaining = fuelTime;
 
-                inventory.get(0).shrink(1);
-                if(inventory.get(0).getCount() <= 0)
+                Item fuelItem = fuelStack.getItem();
+
+                fuelStack.shrink(1);
+
+                if(fuelStack.getCount() <= 0)
                 {
-                    removeStackFromSlot(0);
+                    if(fuelItem == FurnitureItems.COOL_PACK)
+                    {
+                        setInventorySlotContents(0, new ItemStack(FurnitureItems.COOL_PACK_WATER));
+                    }
+                    else
+                    {
+                        removeStackFromSlot(0);
+                    }
                 }
             }
+
             freezing = true;
             world.updateComparatorOutputLevel(pos, blockType);
         }
