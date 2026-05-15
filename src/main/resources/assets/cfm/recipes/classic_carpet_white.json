@@ -1,0 +1,18 @@
+{
+    "result": {
+        "item": "cfm:classic_carpet_white",
+        "count": 2
+    },
+    "pattern": [
+        "   ",
+        "11 ",
+		"   "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "5": {
+            "item": "minecraft:carpet",
+            "data": 0
+        }
+    }
+}
