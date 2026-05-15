@@ -3,19 +3,22 @@
     "item": "cfm:divingboard_base"
   },
   "pattern": [
-    "C  ",
+    "C1 ",
     "QQQ",
-    "C  "
+    "C1 "
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
     "Q": {
-      "item": "minecraft:quartz_block",
+      "item": "minecraft:concrete",
       "data": 0
     },
     "C": {
-      "item": "minecraft:stained_hardened_clay",
-      "data": 9
+      "item": "minecraft:concrete",
+      "data": 7
+	},
+    "1": {
+      "item": "minecraft:slime"
     }
   }
 }
