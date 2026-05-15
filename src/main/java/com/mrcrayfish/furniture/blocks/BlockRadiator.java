@@ -41,7 +41,7 @@ public class BlockRadiator extends BlockFurniture {
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
         if (GuiScreen.isShiftKeyDown()) {
             tooltip.addAll(Minecraft.getMinecraft().fontRenderer.listFormattedStringToWidth(
-                    I18n.format("cfm.tv_remote.info"), 150));
+                    I18n.format("cfm.radiator.info"), 150));
         } else {
             tooltip.add(TextFormatting.YELLOW + I18n.format("cfm.info"));
         }
