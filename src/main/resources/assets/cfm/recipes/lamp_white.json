@@ -16,7 +16,7 @@
     },
     "1": {
       "item": "minecraft:concrete",
-      "data": 8
+      "data": 7
     },
     "*": {
       "item": "minecraft:wool",

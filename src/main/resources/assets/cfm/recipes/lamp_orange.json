@@ -7,15 +7,16 @@
   "pattern": [
     "***",
     "*2*",
-    " \u0026 "
+    " 1 "
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
     "2": {
       "item": "cfm:item_light_bulb"
     },
-    "\u0026": {
-      "item": "minecraft:obsidian"
+    "1": {
+      "item": "minecraft:concrete",
+      "data": 7
     },
     "*": {
       "item": "minecraft:wool",
