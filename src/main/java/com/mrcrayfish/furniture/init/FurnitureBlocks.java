@@ -129,6 +129,8 @@ public class FurnitureBlocks
     public static final Block CABINET_OLD;
     public static final Block CABINET_CLASSIC;
     public static final Block BEDSIDE_CABINET_OLD;
+    public static final Block LAMP_ON_OLD;
+    public static final Block LAMP_OFF_OLD;
     public static final Block WOODEN_COFFEE_TABLE_OLD;
     public static final Block STONE_COFFEE_TABLE_OLD;
     public static final Block FREEZER_OLD;
@@ -188,8 +190,6 @@ public class FurnitureBlocks
     public static final Block CHOPPING_BOARD_OLD;
     public static final Block BAR_STOOL_OLD;
     public static final Block CUP_OLD;
-    public static final Block LAMP_ON_OLD;
-    public static final Block LAMP_OFF_OLD;
 
     static
     {
@@ -459,6 +459,8 @@ public class FurnitureBlocks
         CABINET_OLD = new BlockOldCabinet(Material.WOOD, "cabinet_old");
         CABINET_CLASSIC = new BlockOldClassicCabinet(Material.WOOD, "classic_cabinet");
         BEDSIDE_CABINET_OLD = new BlockOldBedsideCabinet(Material.WOOD, "bedside_cabinet_old");
+        LAMP_ON_OLD = new BlockOldLampOn(Material.ROCK, "lamp_on_old");
+        LAMP_OFF_OLD = new BlockOldLamp(Material.ROCK, false, "lamp_off_old");
         WOODEN_COFFEE_TABLE_OLD = new BlockOldCoffeeTable(Material.WOOD, SoundType.WOOD, "wooden_coffee_table_old");
         STONE_COFFEE_TABLE_OLD = new BlockOldCoffeeTable(Material.ROCK, SoundType.STONE, "stone_coffee_table_old");
         FREEZER_OLD = new BlockOldFreezer(Material.IRON, "freezer_old");
@@ -518,8 +520,6 @@ public class FurnitureBlocks
         CHOPPING_BOARD_OLD = new BlockOldChoppingBoard(Material.WOOD, "chopping_board_old");
         BAR_STOOL_OLD = new BlockOldBarStool(Material.ROCK, "bar_stool_old");
         CUP_OLD = new BlockOldCup(Material.GLASS, "cup_old");
-        LAMP_ON_OLD = new BlockOldLampOn(Material.GLASS, "lamp_on_old");
-        LAMP_OFF_OLD = new BlockOldLamp(Material.GLASS, false, "lamp_off_old");
         CUSHION = new BlockCushion(Material.CLOTH, "cushion");
     }
 
@@ -795,6 +795,8 @@ public class FurnitureBlocks
             registerBlock(CABINET_OLD);
             registerBlock(CABINET_CLASSIC);
             registerBlock(BEDSIDE_CABINET_OLD);
+            registerBlock(LAMP_ON_OLD);
+            registerBlock(LAMP_OFF_OLD);
             registerBlock(WOODEN_COFFEE_TABLE_OLD);
             registerBlock(STONE_COFFEE_TABLE_OLD);
             registerBlock(FREEZER_OLD);
@@ -854,8 +856,6 @@ public class FurnitureBlocks
             registerBlock(CHOPPING_BOARD_OLD);
             registerBlock(BAR_STOOL_OLD);
             registerBlock(CUP_OLD, null);
-            registerBlock(LAMP_ON_OLD);
-            registerBlock(LAMP_OFF_OLD);
         }
     }
 
