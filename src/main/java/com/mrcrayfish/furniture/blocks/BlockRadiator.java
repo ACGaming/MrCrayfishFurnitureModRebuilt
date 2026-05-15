@@ -3,13 +3,24 @@ package com.mrcrayfish.furniture.blocks;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.resources.I18n;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+
+import javax.annotation.Nullable;
+import java.util.List;
 
 
 public class BlockRadiator extends BlockFurniture {
@@ -23,6 +34,17 @@ public class BlockRadiator extends BlockFurniture {
         this.setHardness(1F);
         this.setLightLevel(0.2F);
         this.setSoundType(SoundType.METAL);
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
+        if (GuiScreen.isShiftKeyDown()) {
+            tooltip.addAll(Minecraft.getMinecraft().fontRenderer.listFormattedStringToWidth(
+                    I18n.format("cfm.tv_remote.info"), 150));
+        } else {
+            tooltip.add(TextFormatting.YELLOW + I18n.format("cfm.info"));
+        }
     }
 
     @Override
