@@ -56,6 +56,7 @@ public class FurnitureItems
     /**
      * Misc
      */
+    public static final Item COOL_PACK_WATER;
     public static final Item RECIPE_BOOK;
     public static final Item CRAYFISH;
     public static final Item CEILING_FAN_FANS;
@@ -77,6 +78,7 @@ public class FurnitureItems
     static
     {
         COOL_PACK = new ItemGeneric().setTranslationKey("item_cool_pack").setRegistryName("item_cool_pack");
+        COOL_PACK_WATER = new ItemGeneric().setTranslationKey("item_cool_pack_water").setRegistryName("item_cool_pack_water");
         INK_CARTRIDGE = new ItemGeneric().setTranslationKey("item_ink_cartridge").setRegistryName("item_ink_cartridge");
         ENVELOPE = new ItemEnvelope().setTranslationKey("item_envelope").setRegistryName("item_envelope");
         ENVELOPE_SIGNED = new ItemEnvelopeSigned().setTranslationKey("item_envelope_signed").setRegistryName("item_envelope_signed");
@@ -122,6 +124,7 @@ public class FurnitureItems
     public static void register()
     {
         registerItem(COOL_PACK);
+        registerItem(COOL_PACK_WATER);
         registerItem(HAMMER);
         registerItem(ENVELOPE);
         registerItem(ENVELOPE_SIGNED);
