@@ -10,7 +10,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "@": {
-      "item": "minecraft:furnace"
+      "item": "minecraft:blaze_rod"
     },
     "P": {
       "item": "minecraft:comparator"
