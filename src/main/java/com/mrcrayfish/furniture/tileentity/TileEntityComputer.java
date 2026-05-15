@@ -2,13 +2,11 @@ package com.mrcrayfish.furniture.tileentity;
 
 import com.mrcrayfish.furniture.api.Recipes;
 import com.mrcrayfish.furniture.gui.containers.ContainerComputer;
-import com.mrcrayfish.furniture.init.FurnitureSounds;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.SoundCategory;
 
 public class TileEntityComputer extends TileEntityFurniture
 {
@@ -62,12 +60,6 @@ public class TileEntityComputer extends TileEntityFurniture
         super.writeToNBT(tagCompound);
         tagCompound.setInteger("StockNum", stockNum);
         return tagCompound;
-    }
-
-    @Override
-    public void closeInventory(EntityPlayer player)
-    {
-        setTrading(false);
     }
 
     @Override
