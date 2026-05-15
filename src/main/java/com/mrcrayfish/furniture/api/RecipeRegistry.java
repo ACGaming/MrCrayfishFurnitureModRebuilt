@@ -1301,6 +1301,8 @@ public class RecipeRegistry extends RecipeAPI
             RecipeRegistry.getInstance().registerFreezerRecipe(new ItemStack(Items.POISONOUS_POTATO), new ItemStack(Items.POTATO));
         if(ConfigurationHandler.frez_6)
             RecipeRegistry.getInstance().registerFreezerRecipe(new ItemStack(Items.ROTTEN_FLESH), new ItemStack(FurnitureItems.FLESH));
+        if(ConfigurationHandler.frez_7)
+            RecipeRegistry.getInstance().registerFreezerRecipe(new ItemStack(FurnitureItems.COOL_PACK_WATER), new ItemStack(FurnitureItems.COOL_PACK));
 
         if(ConfigurationHandler.mine_1)
             RecipeRegistry.getInstance().registerMineBayItem(new ItemStack(Blocks.HARDENED_CLAY, 16), new ItemStack(FurnitureItems.COIN), 1);
