@@ -4,11 +4,9 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.SoundCategory;
 
 import com.mrcrayfish.furniture.api.Recipes;
 import com.mrcrayfish.furniture.gui.containers.ContainerComputer;
-import com.mrcrayfish.furniture.init.FurnitureSounds;
 
 public class TileEntityModernComputer extends TileEntityFurniture
 {
@@ -62,17 +60,6 @@ public class TileEntityModernComputer extends TileEntityFurniture
         super.writeToNBT(tagCompound);
         tagCompound.setInteger("StockNum", stockNum);
         return tagCompound;
-    }
-
-    @Override
-    public void openInventory(EntityPlayer player) {
-        setTrading(true);
-    }
-
-    @Override
-    public void closeInventory(EntityPlayer player)
-    {
-        setTrading(false);
     }
 
     @Override
