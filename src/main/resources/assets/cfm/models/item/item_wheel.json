@@ -366,8 +366,8 @@
 		},
 		"fixed": {
 			"rotation": [0, -90, 0],
-			"translation": [0, 14.75, -2],
-			"scale": [3, 3, 3]
+			"translation": [0, 7.5, -1.5],
+			"scale": [1.5, 1.5, 1.5]
 		}
 	}
 }
