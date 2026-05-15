@@ -42,7 +42,7 @@ public class ConfigurationHandler
 
     public static boolean printer_1 = true, printer_2 = true;
     public static boolean oven_1 = true, oven_2 = true, oven_3 = true, oven_4 = true, oven_5 = true, oven_6 = true, oven_7 = true, oven_8 = true, oven_modded = true;
-    public static boolean frez_1 = true, frez_2 = true, frez_3 = true, frez_4 = true, frez_5 = true, frez_6 = true;
+    public static boolean frez_1 = true, frez_2 = true, frez_3 = true, frez_4 = true, frez_5 = true, frez_6 = true, frez_7 = true;
     public static boolean mine_1 = true, mine_2 = true, mine_3 = true, mine_4 = true, mine_5 = true, mine_6 = true, mine_7 = true, mine_8 = true, mine_9 = true, mine_10 = true, mine_11 = true, mine_12 = true, mine_13 = true, mine_14 = true;
     public static boolean ender_1 = true, ender_2 = true, ender_3 = true, ender_4 = true, ender_5 = true, ender_6 = true, ender_7 = true, ender_8 = true, ender_9 = true, ender_10 = true;
     public static boolean ender_11 = true, ender_12 = true, ender_13 = true, ender_14 = true, ender_15 = true, ender_16 = true, ender_17 = true, ender_18 = true, ender_19 = true, ender_20 = true;
@@ -136,6 +136,7 @@ public class ConfigurationHandler
         frez_4 = config.getBoolean("freezer-4", CATEGORY_RECIPE_SETTINGS, frez_4, "Slime Ball -> Snow Ball");
         frez_5 = config.getBoolean("freezer-5", CATEGORY_RECIPE_SETTINGS, frez_5, "Poisonous Potato -> Potato");
         frez_6 = config.getBoolean("freezer-6", CATEGORY_RECIPE_SETTINGS, frez_6, "Rotten Flesh -> Flesh");
+        frez_7 = config.getBoolean("freezer-7", CATEGORY_RECIPE_SETTINGS, frez_7, "Cooling Pack with Water -> Cooling Pack");
         mine_1 = config.getBoolean("minebay-1", CATEGORY_RECIPE_SETTINGS, mine_1, "16 Hardened Clay for 1 Coin");
         mine_2 = config.getBoolean("minebay-2", CATEGORY_RECIPE_SETTINGS, mine_2, "1 Skeleton Skull for 8 Coin");
         mine_3 = config.getBoolean("minebay-3", CATEGORY_RECIPE_SETTINGS, mine_3, "1 Saddle for 2 Coin");
