@@ -10,7 +10,7 @@
     ],
     "type": "minecraft:crafting_shaped",
     "key": {
-        "5": {
+        "1": {
             "item": "minecraft:carpet",
             "data": 14
         }
