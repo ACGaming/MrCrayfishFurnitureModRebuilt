@@ -1047,7 +1047,7 @@ cfm.button.twitter=Follow MrCrayfish on §9§lTwitter
 cfm.button.patreon=Support MrCrayfish on §6§lPatreon
 
 cfm.gui.soap_level=Soap: %s/5000
-cfm.gui.run=Runnung
+cfm.gui.run=Running
 cfm.gui.stop=Stopped
 cfm.gui.doormat=Enter Message
 cfm.gui.ice_level=Ice level: %s/%s
