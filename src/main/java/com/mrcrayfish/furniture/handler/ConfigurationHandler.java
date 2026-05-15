@@ -40,7 +40,7 @@ public class ConfigurationHandler
 
     //public static String[] switchableBlocks = {"minecraft:redstone_lamp;minecraft:lit_redstone_lamp"};
 
-    public static boolean printer_1 = true, printer_2 = true;
+    public static boolean printer_1 = true, printer_2 = true, printer_3 = true;
     public static boolean oven_1 = true, oven_2 = true, oven_3 = true, oven_4 = true, oven_5 = true, oven_6 = true, oven_7 = true, oven_8 = true, oven_modded = true;
     public static boolean frez_1 = true, frez_2 = true, frez_3 = true, frez_4 = true, frez_5 = true, frez_6 = true, frez_7 = true;
     public static boolean mine_1 = true, mine_2 = true, mine_3 = true, mine_4 = true, mine_5 = true, mine_6 = true, mine_7 = true, mine_8 = true, mine_9 = true, mine_10 = true, mine_11 = true, mine_12 = true, mine_13 = true, mine_14 = true;
@@ -121,6 +121,7 @@ public class ConfigurationHandler
     {
         printer_1 = config.getBoolean("printer-1", CATEGORY_RECIPE_SETTINGS, printer_1, "Enchanted Book");
         printer_2 = config.getBoolean("printer-2", CATEGORY_RECIPE_SETTINGS, printer_2, "Written Book");
+        printer_3 = config.getBoolean("printer-3", CATEGORY_RECIPE_SETTINGS, printer_3, "Paper");
         oven_1 = config.getBoolean("oven-1", CATEGORY_RECIPE_SETTINGS, oven_1, "Beef -> Cooked Beef");
         oven_2 = config.getBoolean("oven-2", CATEGORY_RECIPE_SETTINGS, oven_2, "Porkchop -> Cooked Porkchop");
         oven_3 = config.getBoolean("oven-3", CATEGORY_RECIPE_SETTINGS, oven_3, "Potato -> Cooked Potato");

@@ -1254,6 +1254,8 @@ public class RecipeRegistry extends RecipeAPI
             RecipeRegistry.getInstance().registerPrinterRecipe(new ItemStack(Items.ENCHANTED_BOOK));
         if(ConfigurationHandler.printer_2)
             RecipeRegistry.getInstance().registerPrinterRecipe(new ItemStack(Items.WRITTEN_BOOK));
+        if(ConfigurationHandler.printer_3)
+            RecipeRegistry.getInstance().registerPrinterRecipe(new ItemStack(Items.PAPER));
 
         if(ConfigurationHandler.oven_1)
             RecipeRegistry.getInstance().registerOvenRecipe(new ItemStack(Items.BEEF), new ItemStack(Items.COOKED_BEEF));
