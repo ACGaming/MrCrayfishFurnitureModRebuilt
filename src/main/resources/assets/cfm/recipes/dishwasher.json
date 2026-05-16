@@ -5,7 +5,7 @@
   "pattern": [
     "*Q-",
     "CBC",
-    "CFC"
+    "1F1"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
@@ -21,6 +21,9 @@
     },
     "-": {
       "item": "minecraft:repeater"
+	},
+    "1": {
+      "item": "minecraft:hopper"
     },
     "C": {
       "item": "minecraft:concrete",
