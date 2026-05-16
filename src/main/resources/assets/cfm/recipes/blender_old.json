@@ -3,7 +3,7 @@
     "item": "cfm:blender_old"
   },
   "pattern": [
-    "1-1",
+    "515",
     "2 2",
     "343"
   ],
@@ -17,12 +17,12 @@
       "item": "minecraft:glass_pane"
     },
     "3": {
-      "item": "minecraft:repeater"
+      "item": "minecraft:comparator"
     },
     "4": {
       "item": "minecraft:redstone"
     },
-    "-": {
+    "5": {
       "item": "minecraft:iron_ingot"
     }
   }
