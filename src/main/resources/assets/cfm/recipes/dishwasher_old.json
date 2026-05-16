@@ -1,0 +1,33 @@
+{
+  "result": {
+    "item": "cfm:dishwasher_old"
+  },
+  "pattern": [
+    "*Q-",
+    "CBC",
+    "CFC"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "Q": {
+      "item": "minecraft:quartz_block",
+      "data": 0
+    },
+    "B": {
+      "item": "minecraft:iron_bars"
+    },
+    "*": {
+      "item": "minecraft:redstone"
+    },
+    "-": {
+      "item": "minecraft:repeater"
+    },
+    "C": {
+      "item": "minecraft:concrete",
+      "data": 0
+    },
+    "F": {
+      "item": "minecraft:iron_block"
+    }
+  }
+}
