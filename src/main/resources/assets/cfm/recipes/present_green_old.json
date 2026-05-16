@@ -1,12 +1,11 @@
 {
     "result": {
-        "item": "cfm:present_green_old",
-        "data": 13
+        "item": "cfm:present_green_old"
     },
     "pattern": [
-        "WWW",
+        " W ",
         "WPW",
-        "WWW"
+        " W "
     ],
     "type": "minecraft:crafting_shaped",
     "key": {

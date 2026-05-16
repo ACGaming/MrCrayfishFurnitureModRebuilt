@@ -3,9 +3,9 @@
         "item": "cfm:present_red_old"
     },
     "pattern": [
-        "WWW",
+        " W ",
         "WPW",
-        "WWW"
+        " W "
     ],
     "type": "minecraft:crafting_shaped",
     "key": {
