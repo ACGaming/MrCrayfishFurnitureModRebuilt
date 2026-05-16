@@ -10,7 +10,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "Q": {
-      "item": "minecraft:quartz_block",
+      "item": "minecraft:stone",
       "data": 0
     },
     "B": {
