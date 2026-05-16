@@ -19,12 +19,10 @@
       "item": "minecraft:comparator"
     },
     "4": {
-      "item": "minecraft:iron_ingot",
-      "data": 0
+      "item": "minecraft:iron_ingot"
     },
     "5": {
-      "item": "minecraft:concrete",
-      "data": 7
+      "item": "minecraft:blaze_rod"
     }
   }
 }
