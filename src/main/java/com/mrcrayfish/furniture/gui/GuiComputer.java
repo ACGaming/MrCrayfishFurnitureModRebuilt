@@ -56,37 +56,42 @@ public class GuiComputer extends GuiContainer
         buttonList.add(right);
         buttonList.add(button_buy);
 
+        this.itemdata = Recipes.getMineBayItems();
         this.itemNum = tileEntityComputer.getBrowsingInfo();
-        itemdata = Recipes.getMineBayItems();
+        if(itemdata == null || itemdata.length == 0)
+        {
+            this.itemNum = 0;
+        }
+        else
+        {
+            this.itemNum = Math.max(0, Math.min(this.itemNum, itemdata.length - 1));
+        }
+
+        this.tileEntityComputer.setBrowsingInfo(this.itemNum);
     }
 
     @Override
     protected void actionPerformed(GuiButton guibutton)
     {
-        if(!guibutton.enabled)
+        if(!guibutton.enabled) return;
+
+        if(itemdata == null || itemdata.length == 0)
         {
+            itemNum = 0;
             return;
         }
         if(guibutton.id == 0)
         {
-            itemNum--;
-            if(itemNum < 0)
-            {
-                itemNum = 0;
-            }
-            this.tileEntityComputer.setBrowsingInfo(itemNum);
+            itemNum = Math.max(0, itemNum - 1);
         }
-        if(guibutton.id == 1)
+        else if(guibutton.id == 1)
         {
-            itemNum++;
-            if(itemNum > itemdata.length - 1)
-            {
-                itemNum = itemdata.length - 1;
-            }
-            this.tileEntityComputer.setBrowsingInfo(itemNum);
+            itemNum = Math.min(itemdata.length - 1, itemNum + 1);
         }
-        if(guibutton.id == 2)
+        else if(guibutton.id == 2)
         {
+            if(itemNum < 0 || itemNum >= itemdata.length) return;
+
             this.buySlot = this.tileEntityComputer.getStackInSlot(0);
             if(!buySlot.isEmpty())
             {
@@ -97,6 +102,8 @@ public class GuiComputer extends GuiContainer
                 }
             }
         }
+
+        this.tileEntityComputer.setBrowsingInfo(itemNum);
     }
 
     @Override
@@ -167,10 +174,13 @@ public class GuiComputer extends GuiContainer
         super.drawScreen(mouseX, mouseY, partialTicks);
         this.renderHoveredToolTip(mouseX, mouseY);
 
-        ItemStack stock = itemdata[itemNum].getInput();
-        if(this.isPointInRegion(80, 16, 16, 16, mouseX, mouseY))
+        if(itemdata != null && itemNum >= 0 && itemNum < itemdata.length)
         {
-            this.renderToolTip(stock, mouseX, mouseY);
+            ItemStack stock = itemdata[itemNum].getInput();
+            if(this.isPointInRegion(80, 16, 16, 16, mouseX, mouseY))
+            {
+                this.renderToolTip(stock, mouseX, mouseY);
+            }
         }
     }
 
