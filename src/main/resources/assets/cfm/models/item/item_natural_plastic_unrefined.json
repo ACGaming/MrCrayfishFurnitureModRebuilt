@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "cfm:items/item_natural_plastic_refined"
+		"layer0": "cfm:items/item_natural_plastic_unrefined"
 	}
 }
