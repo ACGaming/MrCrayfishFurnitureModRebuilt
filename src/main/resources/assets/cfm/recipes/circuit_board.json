@@ -1,0 +1,29 @@
+{
+  "result": {
+    "item": "cfm:circuit_board"
+  },
+  "pattern": [
+    "121",
+    "232",
+    "425"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "1": {
+      "item": "minecraft:paper"
+    },
+    "2": {
+      "item": "minecraft:redstone"
+    },
+    "3": {
+      "item": "cfm:item_natural_plastic_frame"
+	},
+    "4": {
+      "item": "minecraft:dye",
+      "data": 10
+    },
+    "5": {
+      "item": "minecraft:iron_nugget"
+    }
+  }
+}
