@@ -20,7 +20,7 @@
       "data": 0
     },
     "-": {
-      "item": "minecraft:repeater"
+      "item": "cfm:item_plastic_frame"
     },
     "L": {
       "item": "minecraft:comparator"

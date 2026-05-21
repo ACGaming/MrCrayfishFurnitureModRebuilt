@@ -3,7 +3,7 @@
         "item": "cfm:tv"
     },
     "pattern": [
-        "-L-",
+        "-1-",
         "LGL",
         "*R*"
     ],
@@ -23,6 +23,9 @@
         },
         "-": {
             "item": "minecraft:comparator"
+		},
+        "1": {
+            "item": "cfm:item_natural_plastic_frame"
         }
     }
 }
