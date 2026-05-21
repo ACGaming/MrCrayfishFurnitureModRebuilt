@@ -4,13 +4,16 @@
   },
   "pattern": [
     "II ",
-    " I ",
+    "1I1",
     "III"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
     "I": {
       "item": "minecraft:iron_ingot"
+	},
+    "1": {
+      "item": "cfm:item_natural_plastic"
     }
   }
 }

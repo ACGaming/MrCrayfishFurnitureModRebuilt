@@ -4,7 +4,7 @@
   },
   "pattern": [
     "121",
-    "121",
+    "151",
     "121"
   ],
   "type": "minecraft:crafting_shaped",
@@ -12,6 +12,9 @@
     "1": {
       "item": "minecraft:concrete",
       "data": 0
+	},
+    "5": {
+      "item": "cfm:item_natural_plastic"
     },
     "2": {
       "item": "minecraft:glass_pane",

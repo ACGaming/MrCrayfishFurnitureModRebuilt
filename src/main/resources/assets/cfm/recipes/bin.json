@@ -3,8 +3,8 @@
     "item": "cfm:bin"
   },
   "pattern": [
-    "B1B",
-    "I I",
+    "B2B",
+    "I1I",
     "III"
   ],
   "type": "minecraft:crafting_shaped",
@@ -18,6 +18,9 @@
     "I": {
       "item": "minecraft:concrete",
 	  "data": 0
+	},
+    "2": {
+      "item": "cfm:item_natural_plastic"
     }
   }
 }

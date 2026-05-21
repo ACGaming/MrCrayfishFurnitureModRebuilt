@@ -14,7 +14,7 @@
       "data": 0
     },
     "3": {
-      "item": "minecraft:chest"
+      "item": "cfm:item_natural_plastic_frame"
 	},
     "*": {
       "item": "minecraft:iron_ingot"

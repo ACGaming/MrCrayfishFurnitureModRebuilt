@@ -10,7 +10,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "T": {
-      "item": "minecraft:trapdoor"
+      "item": "cfm:item_natural_plastic_frame"
     },
     "W": {
       "item": "cfm:item_wheel"
