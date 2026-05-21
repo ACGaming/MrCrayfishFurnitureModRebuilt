@@ -72,6 +72,7 @@ public class FurnitureItems
     public static final Item NATURAL_PLASTIC;
     public static final Item NATURAL_PLASTIC_FRAME;
     public static final Item SCREEN;
+    public static final Item CIRCUIT_BOARD;
 
     /**
      * Nostalgia Update
@@ -127,6 +128,7 @@ public class FurnitureItems
         NATURAL_PLASTIC = new ItemGeneric().setTranslationKey("item_natural_plastic").setRegistryName("item_natural_plastic");
         NATURAL_PLASTIC_FRAME = new ItemGeneric().setTranslationKey("item_natural_plastic_frame").setRegistryName("item_natural_plastic_frame");
         SCREEN = new ItemGeneric().setTranslationKey("item_screen").setRegistryName("item_screen");
+        CIRCUIT_BOARD = new ItemGeneric().setTranslationKey("item_circuit_board").setRegistryName("item_circuit_board");
     }
 
     public static void register()
@@ -177,6 +179,7 @@ public class FurnitureItems
         registerItem(NATURAL_PLASTIC);
         registerItem(NATURAL_PLASTIC_FRAME);
         registerItem(SCREEN);
+        registerItem(CIRCUIT_BOARD);
     }
 
     private static void registerItem(Item item)
