@@ -10,7 +10,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "W": {
-      "item": "minecraft:iron_ingot"
+      "item": "cfm:item_natural_plastic_frame"
     },
     "G": {
       "item": "minecraft:glass_pane"
