@@ -3,7 +3,7 @@
     "item": "cfm:modern_tv"
   },
   "pattern": [
-    "III",
+    "111",
     "GGG",
     "*R-"
   ],
@@ -21,8 +21,8 @@
     "-": {
       "item": "minecraft:repeater"
     },
-    "I": {
-      "item": "minecraft:iron_ingot"
+    "1": {
+      "item": "cfm:item_natural_plastic_frame"
     }
   }
 }
