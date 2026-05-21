@@ -10,7 +10,7 @@
     "type": "minecraft:crafting_shaped",
     "key": {
         "G": {
-            "item": "minecraft:glass_pane"
+            "item": "cfm:screen"
         },
         "R": {
             "item": "minecraft:redstone"
