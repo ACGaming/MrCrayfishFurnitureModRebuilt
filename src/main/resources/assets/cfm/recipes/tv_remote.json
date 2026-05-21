@@ -16,7 +16,7 @@
             "item": "minecraft:daylight_detector"
         },
         "B": {
-            "item": "minecraft:heavy_weighted_pressure_plate"
+            "item": "cfm:item_natural_plastic_frame"
         },
         "*": {
             "item": "minecraft:comparator"

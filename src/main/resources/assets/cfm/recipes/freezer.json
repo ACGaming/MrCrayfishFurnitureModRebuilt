@@ -4,7 +4,7 @@
   },
   "pattern": [
     "***",
-    "P#P",
+    "P1P",
     "I@I"
   ],
   "type": "minecraft:crafting_shaped",
@@ -15,8 +15,8 @@
     "P": {
       "item": "minecraft:comparator"
     },
-    "#": {
-      "item": "minecraft:chest"
+    "1": {
+      "item": "cfm:item_natural_plastic_frame"
     },
     "I": {
       "item": "minecraft:iron_trapdoor"
