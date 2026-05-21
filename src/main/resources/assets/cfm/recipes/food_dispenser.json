@@ -3,7 +3,7 @@
     "item": "cfm:food_dispenser"
   },
   "pattern": [
-    " , ",
+    "1,1",
     "_*-",
     "UIU"
   ],
@@ -28,6 +28,9 @@
     "U": {
       "item": "minecraft:concrete",
       "data": 0
+	},
+    "1": {
+      "item": "cfm:item_natural_plastic_frame"
     }
   }
 }

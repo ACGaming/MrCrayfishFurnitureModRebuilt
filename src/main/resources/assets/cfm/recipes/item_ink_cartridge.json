@@ -11,7 +11,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "1": {
-      "item": "minecraft:iron_ingot"
+      "item": "cfm:item_natural_plastic"
     },
     "2": {
       "item": "minecraft:dye",
