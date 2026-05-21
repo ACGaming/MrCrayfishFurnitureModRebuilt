@@ -68,6 +68,9 @@ public class FurnitureItems
     public static final Item COIN;
     public static final Item CAT_FOOD;
     public static final Item BROOM;
+    public static final Item NATURAL_PLASTIC_UNREFINED;
+    public static final Item NATURAL_PLASTIC;
+    public static final Item NATURAL_PLASTIC_FRAME;
 
     /**
      * Nostalgia Update
@@ -119,6 +122,9 @@ public class FurnitureItems
         TRASH_BAG = new ItemGeneric().setTranslationKey("item_trashbag").setRegistryName("item_trashbag");
         COIN = new ItemGeneric().setTranslationKey("item_coin").setRegistryName("item_coin");
         BROOM = new ItemBroom().setTranslationKey("item_broom").setRegistryName("item_broom");
+        NATURAL_PLASTIC_UNREFINED = new ItemGeneric().setTranslationKey("item_natural_plastic_unrefined").setRegistryName("item_natural_plastic_unrefined");
+        NATURAL_PLASTIC = new ItemGeneric().setTranslationKey("item_natural_plastic").setRegistryName("item_natural_plastic");
+        NATURAL_PLASTIC_FRAME = new ItemGeneric().setTranslationKey("item_natural_plastic_frame").setRegistryName("item_natural_plastic_frame");
     }
 
     public static void register()
@@ -165,6 +171,9 @@ public class FurnitureItems
         registerItem(TRASH_BAG);
         registerItem(COIN);
         registerItem(BROOM);
+        registerItem(NATURAL_PLASTIC_UNREFINED);
+        registerItem(NATURAL_PLASTIC);
+        registerItem(NATURAL_PLASTIC_FRAME);
     }
 
     private static void registerItem(Item item)
