@@ -55,6 +55,7 @@ item.item_natural_plastic.name=Natural Plastic
 item.item_natural_plastic_frame.name=Natural Plastic Frame
 item.item_screen.name=Screen
 item.item_circuit_board.name=Circuit Board
+item.item_controller_unit.name=Controller Unit
 
 tile.table_oak.name=Oak Table
 tile.table_spruce.name=Spruce Table
