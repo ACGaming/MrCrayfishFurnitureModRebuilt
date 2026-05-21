@@ -53,6 +53,7 @@ item.item_broom.name=Broom
 item.item_natural_plastic_unrefined.name=Natural Plastic Unrefined
 item.item_natural_plastic.name=Natural Plastic
 item.item_natural_plastic_frame.name=Natural Plastic Frame
+item.item_screen.name=Screen
 
 tile.table_oak.name=Oak Table
 tile.table_spruce.name=Spruce Table

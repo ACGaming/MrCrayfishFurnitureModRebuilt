@@ -71,6 +71,7 @@ public class FurnitureItems
     public static final Item NATURAL_PLASTIC_UNREFINED;
     public static final Item NATURAL_PLASTIC;
     public static final Item NATURAL_PLASTIC_FRAME;
+    public static final Item SCREEN;
 
     /**
      * Nostalgia Update
@@ -125,6 +126,7 @@ public class FurnitureItems
         NATURAL_PLASTIC_UNREFINED = new ItemGeneric().setTranslationKey("item_natural_plastic_unrefined").setRegistryName("item_natural_plastic_unrefined");
         NATURAL_PLASTIC = new ItemGeneric().setTranslationKey("item_natural_plastic").setRegistryName("item_natural_plastic");
         NATURAL_PLASTIC_FRAME = new ItemGeneric().setTranslationKey("item_natural_plastic_frame").setRegistryName("item_natural_plastic_frame");
+        SCREEN = new ItemGeneric().setTranslationKey("item_screen").setRegistryName("item_screen");
     }
 
     public static void register()
@@ -174,6 +176,7 @@ public class FurnitureItems
         registerItem(NATURAL_PLASTIC_UNREFINED);
         registerItem(NATURAL_PLASTIC);
         registerItem(NATURAL_PLASTIC_FRAME);
+        registerItem(SCREEN);
     }
 
     private static void registerItem(Item item)
