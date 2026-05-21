@@ -1,11 +1,12 @@
 {
     "result": {
-        "item": "cfm:light_switch_off"
+        "item": "cfm:light_switch_off",
+		"count": 4
     },
     "pattern": [
-        "CCC",
-        "CLC",
-        "CCC"
+        "C1C",
+        "1L1",
+        "C1C"
     ],
     "type": "minecraft:crafting_shaped",
     "key": {
@@ -14,7 +15,10 @@
             "data": 0
         },
         "L": {
-            "item": "minecraft:lever"
+            "item": "minecraft:redstone"
+		},
+        "1": {
+            "item": "cfm:item_natural_plastic"
         }
     }
 }
