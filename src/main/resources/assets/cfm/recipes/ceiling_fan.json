@@ -10,12 +10,10 @@
     "type": "minecraft:crafting_shaped",
     "key": {
         "C": {
-            "item": "minecraft:concrete",
-            "data": 7
+            "item": "minecraft:iron_ingot"
         },
         "V": {
-            "item": "minecraft:concrete",
-            "data": 0
+            "item": "cfm:item_natural_plastic_frame"
         },
         "F": {
             "item": "cfm:ceiling_fan_fans"

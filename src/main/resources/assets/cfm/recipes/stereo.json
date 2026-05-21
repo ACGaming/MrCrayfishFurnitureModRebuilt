@@ -13,7 +13,7 @@
             "item": "minecraft:iron_ingot"
         },
         "2": {
-            "item": "minecraft:jukebox"
+            "item": "cfm:item_natural_plastic"
 		},
         "3": {
             "item": "minecraft:comparator"
