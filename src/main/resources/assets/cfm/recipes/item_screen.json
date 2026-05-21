@@ -25,7 +25,7 @@
             "item": "minecraft:prismarine_crystals"
         },
         "C": {
-            "item": "cfm:circuit_board"
+            "item": "cfm:controller_unit"
         },
         "D": {
             "item": "minecraft:redstone"
