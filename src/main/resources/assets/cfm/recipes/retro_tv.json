@@ -4,8 +4,8 @@
   },
   "pattern": [
     "*L*",
-    "PGP",
-    "-R-"
+    "1G1",
+    "2-3"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
@@ -13,7 +13,7 @@
       "item": "minecraft:log",
       "data": 0
     },
-    "P": {
+    "3": {
       "item": "minecraft:iron_ingot",
       "data": 0
     },
@@ -28,8 +28,11 @@
     "G": {
       "item": "minecraft:glass_pane"
     },
-    "R": {
+    "2": {
       "item": "minecraft:redstone"
+	},
+    "1": {
+      "item": "cfm:item_natural_plastic"
     }
   }
 }
