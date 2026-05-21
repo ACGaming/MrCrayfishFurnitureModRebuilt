@@ -4,7 +4,7 @@
   },
   "pattern": [
     "313",
-    "2 2",
+    "262",
     "454"
   ],
   "type": "minecraft:crafting_shaped",
@@ -16,13 +16,16 @@
       "item": "minecraft:redstone_block"
     },
     "3": {
-      "item": "minecraft:comparator"
+      "item": "cfm:item_natural_plastic"
     },
     "4": {
       "item": "minecraft:repeater"
     },
     "5": {
       "item": "minecraft:iron_block"
+	},
+    "6": {
+      "item": "minecraft:comparator"
     }
   }
 }

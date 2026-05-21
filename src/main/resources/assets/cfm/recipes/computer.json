@@ -3,9 +3,9 @@
     "item": "cfm:computer"
   },
   "pattern": [
-    "*1*",
-    "*2*",
-    "-:_"
+    "515",
+    "424",
+    "-3_"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
@@ -15,10 +15,10 @@
     "1": {
       "item": "minecraft:redstone"
     },
-    "*": {
+    "4": {
       "item": "minecraft:gold_ingot"
     },
-    ":": {
+    "3": {
       "item": "minecraft:iron_block"
     },
     "-": {
@@ -26,6 +26,9 @@
     },
     "_": {
       "item": "minecraft:comparator"
+	},
+    "5": {
+      "item": "cfm:item_natural_plastic_frame"
     }
   }
 }

@@ -3,7 +3,7 @@
     "item": "cfm:modern_computer"
   },
   "pattern": [
-    "D_D",
+    "1_1",
     "*G-",
     "RI="
   ],
@@ -30,8 +30,8 @@
     "I": {
       "item": "minecraft:iron_block"
     },
-    "D": {
-      "item": "minecraft:diamond"
+    "1": {
+      "item": "cfm:item_natural_plastic_frame"
     }
   }
 }
