@@ -3,13 +3,17 @@
     "item": "cfm:coffee_table_stone"
   },
   "pattern": [
-    "***",
+    "111",
     "* *"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
     "*": {
       "item": "minecraft:cobblestone"
+	},
+	"1": {
+      "item": "minecraft:stone_slab",
+      "data": 0
     }
   }
 }
