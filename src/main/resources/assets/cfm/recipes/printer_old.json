@@ -4,7 +4,7 @@
   },
   "pattern": [
     "313",
-    "2 2",
+    "252",
     "444"
   ],
   "type": "minecraft:crafting_shaped",
@@ -21,6 +21,9 @@
     },
     "4": {
       "item": "minecraft:iron_ingot"
+	},
+    "5": {
+      "item": "cfm:item_controller_unit"
     }
   }
 }
