@@ -22,7 +22,7 @@
             "item": "minecraft:repeater"
         },
         "-": {
-            "item": "minecraft:comparator"
+            "item": "cfm:controller_unit"
 		},
         "1": {
             "item": "cfm:item_natural_plastic_frame"
