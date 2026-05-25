@@ -3,7 +3,7 @@
     "item": "cfm:oven_old"
   },
   "pattern": [
-    "535",
+    "635",
     "313",
     "242"
   ],
@@ -24,6 +24,9 @@
     },
     "5": {
       "item": "minecraft:obsidian"
+	},
+    "6": {
+      "item": "cfm:controller_unit"
     }
   }
 }
