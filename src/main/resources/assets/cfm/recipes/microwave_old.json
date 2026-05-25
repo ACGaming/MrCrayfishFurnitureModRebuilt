@@ -3,7 +3,7 @@
     "item": "cfm:microwave_old"
   },
   "pattern": [
-    "1_1",
+    "2_2",
     "-,*",
     "111"
   ],
@@ -25,6 +25,9 @@
     },
     "1": {
       "item": "minecraft:iron_ingot"
+	},
+    "2": {
+      "item": "cfm:controller_unit"
     }
   }
 }

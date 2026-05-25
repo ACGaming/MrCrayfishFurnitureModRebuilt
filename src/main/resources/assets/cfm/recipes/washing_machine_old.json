@@ -17,14 +17,14 @@
       "item": "minecraft:iron_block"
     },
     "3": {
-      "item": "minecraft:redstone"
+      "item": "cfm:controller_unit"
 	},
     "4": {
       "item": "minecraft:stone",
 	  "data": 0
     },
     "5": {
-      "item": "minecraft:redstone"
+      "item": "minecraft:comparator"
     },
     "6": {
       "item": "minecraft:glass_pane"

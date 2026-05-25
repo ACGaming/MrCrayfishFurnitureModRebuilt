@@ -16,7 +16,7 @@
       "item": "minecraft:glass_pane"
     },
     "3": {
-      "item": "minecraft:repeater"
+      "item": "cfm:controller_unit"
     },
     "4": {
       "item": "minecraft:redstone"

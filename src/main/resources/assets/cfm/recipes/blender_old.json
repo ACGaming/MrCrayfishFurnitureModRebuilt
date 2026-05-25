@@ -20,7 +20,7 @@
       "item": "minecraft:comparator"
     },
     "4": {
-      "item": "minecraft:redstone"
+      "item": "cfm:controller_unit"
     },
     "5": {
       "item": "minecraft:iron_ingot"
