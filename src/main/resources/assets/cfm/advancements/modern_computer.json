@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "cfm:modern_computer"
+        },
+        "title": {
+            "translate": "advancements.cfm.moderncomputer"
+        },
+        "description": {
+            "translate": "advancements.cfm.moderncomputer.desc"
+        }
+    },
+	"parent": "cfm:computer",
+	"criteria": {
+		"placed_computer": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "cfm:modern_computer"
+            }
+		}
+	}
+}
