@@ -3,7 +3,7 @@
     "item": "cfm:table_stone"
   },
   "pattern": [
-    "***",
+    "111",
     " * ",
     " * "
   ],
@@ -11,6 +11,10 @@
   "key": {
     "*": {
       "item": "minecraft:cobblestone"
+	},
+	"1": {
+      "item": "minecraft:stone_slab",
+      "data": 0
     }
   }
 }
