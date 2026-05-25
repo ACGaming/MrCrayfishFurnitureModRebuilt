@@ -22,7 +22,7 @@
       "item": "minecraft:iron_block"
     },
     "-": {
-      "item": "minecraft:repeater"
+      "item": "cfm:controller_unit"
     },
     "_": {
       "item": "minecraft:comparator"

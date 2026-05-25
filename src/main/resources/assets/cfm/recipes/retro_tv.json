@@ -14,16 +14,13 @@
       "data": 0
     },
     "3": {
-      "item": "minecraft:iron_ingot",
-      "data": 0
+      "item": "minecraft:iron_ingot"
     },
     "*": {
-      "item": "minecraft:repeater",
-      "data": 0
+      "item": "minecraft:repeater"
     },
     "-": {
-      "item": "minecraft:comparator",
-      "data": 0
+      "item": "cfm:controller_unit"
     },
     "G": {
       "item": "cfm:screen"

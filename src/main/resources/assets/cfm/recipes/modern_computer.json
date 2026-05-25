@@ -3,7 +3,7 @@
     "item": "cfm:modern_computer"
   },
   "pattern": [
-    "1_1",
+    "1_2",
     "*G-",
     "RI="
   ],
@@ -25,13 +25,16 @@
       "item": "minecraft:daylight_detector"
     },
     "=": {
-      "item": "minecraft:redstone_lamp"
+      "item": "cfm:controller_unit"
     },
     "I": {
       "item": "minecraft:iron_block"
     },
     "1": {
       "item": "cfm:item_natural_plastic_frame"
+	},
+    "2": {
+      "item": "minecraft:glass_pane"
     }
   }
 }

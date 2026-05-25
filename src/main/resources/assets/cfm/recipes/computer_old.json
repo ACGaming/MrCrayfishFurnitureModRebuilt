@@ -19,7 +19,7 @@
       "item": "minecraft:iron_block"
     },
     "-": {
-      "item": "minecraft:comparator"
+      "item": "cfm:controller_unit"
 	},
     "5": {
       "item": "minecraft:gravel"
