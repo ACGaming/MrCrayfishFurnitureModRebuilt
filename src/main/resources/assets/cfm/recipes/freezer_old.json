@@ -4,7 +4,7 @@
   },
   "pattern": [
     "***",
-    "P#P",
+    "P1P",
     "*@*"
   ],
   "type": "minecraft:crafting_shaped",
@@ -15,8 +15,8 @@
     "P": {
       "item": "minecraft:redstone"
     },
-    "#": {
-      "item": "minecraft:chest"
+    "1": {
+      "item": "cfm:controller_unit"
     },
     "*": {
       "item": "minecraft:iron_block"
