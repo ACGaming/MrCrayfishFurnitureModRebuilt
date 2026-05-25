@@ -10,9 +10,9 @@
             "translate": "advancements.cfm.moderncomputer.desc"
         }
     },
-	"parent": "cfm:computer",
+	"parent": "cfm:modern_technology",
 	"criteria": {
-		"placed_computer": {
+		"placed_modern_computer": {
             "trigger": "minecraft:placed_block",
             "conditions": {
                 "block": "cfm:modern_computer"
