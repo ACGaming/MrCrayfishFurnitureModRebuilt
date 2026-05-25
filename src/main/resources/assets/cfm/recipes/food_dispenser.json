@@ -16,7 +16,7 @@
       "item": "minecraft:redstone"
     },
     "_": {
-      "item": "minecraft:comparator"
+      "item": "cfm:controller_unit"
     },
     "-": {
       "item": "minecraft:repeater"

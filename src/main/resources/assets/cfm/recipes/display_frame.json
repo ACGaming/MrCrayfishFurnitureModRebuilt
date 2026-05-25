@@ -13,7 +13,7 @@
       "item": "cfm:screen"
     },
     "R": {
-      "item": "minecraft:redstone"
+      "item": "cfm:controller_unit"
     },
     "*": {
       "item": "minecraft:comparator"

@@ -19,7 +19,7 @@
       "item": "cfm:screen"
     },
     "(": {
-      "item": "minecraft:repeater"
+      "item": "cfm:controller_unit"
     },
     "&": {
       "item": "minecraft:redstone"
