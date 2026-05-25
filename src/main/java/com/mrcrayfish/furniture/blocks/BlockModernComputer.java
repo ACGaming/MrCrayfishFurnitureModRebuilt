@@ -38,16 +38,6 @@ public class BlockModernComputer extends BlockFurnitureTile
     }
 
     @Override
-    public void onBlockPlacedBy(World world, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack)
-    {
-        if(placer instanceof EntityPlayer)
-        {
-            Triggers.trigger(Triggers.PLACE_APPLIANCE, (EntityPlayer) placer);
-        }
-        super.onBlockPlacedBy(world, pos, state, placer, stack);
-    }
-
-    @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
     {
         TileEntity tile_entity = worldIn.getTileEntity(pos);
