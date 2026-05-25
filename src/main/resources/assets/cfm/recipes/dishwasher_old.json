@@ -20,7 +20,7 @@
       "item": "minecraft:redstone"
     },
     "-": {
-      "item": "minecraft:repeater"
+      "item": "cfm:controller_unit"
     },
     "C": {
       "item": "minecraft:concrete",
