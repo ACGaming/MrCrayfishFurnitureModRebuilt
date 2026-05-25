@@ -5,7 +5,7 @@
     "pattern": [
         "ISI",
         "*B*",
-        "IRI"
+        "I1I"
     ],
     "type": "minecraft:crafting_shaped",
     "key": {
@@ -21,8 +21,8 @@
         "*": {
             "item": "minecraft:comparator"
         },
-        "R": {
-            "item": "minecraft:redstone_block"
+        "1": {
+            "item": "cfm:controller_unit"
         }
     }
 }
