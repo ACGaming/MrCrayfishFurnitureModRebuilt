@@ -11,6 +11,7 @@ import com.mrcrayfish.furniture.entity.EntitySeat;
 import com.mrcrayfish.furniture.gui.GuiHandler;
 import com.mrcrayfish.furniture.handler.ConfigurationHandler;
 import com.mrcrayfish.furniture.handler.PlayerEvents;
+import com.mrcrayfish.furniture.init.FurnitureItems;
 import com.mrcrayfish.furniture.init.FurnitureTab;
 import com.mrcrayfish.furniture.init.FurnitureTileEntities;
 import com.mrcrayfish.furniture.init.RegistrationHandler;
@@ -18,6 +19,7 @@ import com.mrcrayfish.furniture.integration.crafttweaker.CraftTweakerIntegration
 import com.mrcrayfish.furniture.network.PacketHandler;
 import com.mrcrayfish.furniture.proxy.CommonProxy;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Loader;
@@ -32,6 +34,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import org.apache.logging.log4j.Logger;
 
@@ -90,6 +93,8 @@ public class MrCrayfishFurnitureMod
         {
             EntityRegistry.registerModEntity(new ResourceLocation("cfm:mirror"), EntityMirror.class, "Mirror", 1, this, 80, 1, false);
         }
+
+        GameRegistry.addSmelting(new ItemStack(FurnitureItems.NATURAL_PLASTIC_UNREFINED), new ItemStack(FurnitureItems.NATURAL_PLASTIC), 0.7F);
 
         proxy.init();
     }
