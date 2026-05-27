@@ -1,12 +1,12 @@
 {
   "result": {
-    "item": "cfm:item_cool_pack",
+    "item": "cfm:item_cool_pack_water",
     "count": 2
   },
   "pattern": [
-    "***",
+    " * ",
     "*@*",
-    "***"
+    " * "
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
@@ -14,7 +14,7 @@
       "item": "minecraft:water_bucket"
     },
     "*": {
-      "item": "minecraft:glass"
+      "item": "minecraft:glass_plane"
     }
   }
 }
