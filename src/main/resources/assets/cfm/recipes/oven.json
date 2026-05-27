@@ -19,8 +19,7 @@
       "item": "cfm:item_controller_unit"
     },
     "1": {
-      "item": "minecraft:glass",
-      "data": 0
+      "item": "minecraft:glass_pane"
     },
     "-": {
       "item": "cfm:item_plastic_frame"
