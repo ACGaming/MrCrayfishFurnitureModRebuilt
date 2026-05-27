@@ -22,7 +22,7 @@
       "item": "minecraft:glass_pane"
     },
     "-": {
-      "item": "cfm:item_plastic_frame"
+      "item": "cfm:item_natural_plastic_frame"
     },
     "L": {
       "item": "minecraft:comparator"
