@@ -14,7 +14,7 @@
       "item": "minecraft:water_bucket"
     },
     "*": {
-      "item": "minecraft:glass_plane"
+      "item": "minecraft:glass_pane"
     }
   }
 }
