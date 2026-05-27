@@ -16,7 +16,7 @@
       "item": "minecraft:redstone"
     },
     "1": {
-      "item": "cfm:controller_unit"
+      "item": "cfm:item_controller_unit"
     },
     "*": {
       "item": "minecraft:iron_block"
