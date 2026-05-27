@@ -4,21 +4,27 @@
 		"count": 4
     },
     "pattern": [
-        "C1C",
-        "1L1",
-        "C1C"
+        "151",
+        "232",
+        "141"
     ],
     "type": "minecraft:crafting_shaped",
     "key": {
-        "C": {
+        "1": {
             "item": "minecraft:concrete",
             "data": 0
         },
-        "L": {
+        "2": {
             "item": "minecraft:redstone"
 		},
-        "1": {
+        "3": {
             "item": "cfm:item_natural_plastic"
+		},
+        "4": {
+            "item": "cfm:item_controller_unit"
+		},
+        "5": {
+            "item": "cfm:item_wifi_card"
         }
     }
 }
