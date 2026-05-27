@@ -1,6 +1,7 @@
 {
   "result": {
-    "item": "cfm:item_natural_plastic_unrefined"
+    "item": "cfm:item_natural_plastic_unrefined",
+	"count": 4
   },
   "pattern": [
     "141",
