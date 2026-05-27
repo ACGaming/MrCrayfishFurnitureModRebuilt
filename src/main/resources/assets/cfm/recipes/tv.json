@@ -5,12 +5,12 @@
     "pattern": [
         "-1-",
         "LGL",
-        "*R*"
+        "*1R"
     ],
     "type": "minecraft:crafting_shaped",
     "key": {
         "G": {
-            "item": "cfm:screen"
+            "item": "cfm:item_screen"
         },
         "R": {
             "item": "minecraft:redstone"
@@ -19,10 +19,10 @@
             "item": "minecraft:iron_ingot"
         },
         "*": {
-            "item": "minecraft:repeater"
+            "item": "cfm:item_wifi_card"
         },
         "-": {
-            "item": "cfm:controller_unit"
+            "item": "cfm:item_controller_unit"
 		},
         "1": {
             "item": "cfm:item_natural_plastic_frame"

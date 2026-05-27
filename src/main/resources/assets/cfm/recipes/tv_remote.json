@@ -13,7 +13,7 @@
             "item": "minecraft:diamond"
         },
         "S": {
-            "item": "minecraft:daylight_detector"
+            "item": "cfm:item_wifi_card"
         },
         "B": {
             "item": "cfm:item_natural_plastic_frame"
@@ -22,7 +22,7 @@
             "item": "minecraft:comparator"
         },
         "1": {
-            "item": "cfm:controller_unit"
+            "item": "cfm:item_controller_unit"
         }
     }
 }

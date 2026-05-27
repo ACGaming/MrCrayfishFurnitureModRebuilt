@@ -13,7 +13,7 @@
             "item": "minecraft:iron_ingot"
         },
         "S": {
-            "item": "minecraft:redstone_torch"
+            "item": "cfm:item_wifi_card"
         },
         "B": {
             "item": "minecraft:stone_button"
@@ -22,7 +22,7 @@
             "item": "minecraft:repeater"
         },
         "1": {
-            "item": "cfm:controller_unit"
+            "item": "cfm:item_controller_unit"
         }
     }
 }

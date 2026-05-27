@@ -3,14 +3,14 @@
     "item": "cfm:modern_tv"
   },
   "pattern": [
-    "111",
-    "GGG",
-    "*R-"
+    "222",
+    "-1-",
+    "*R3"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
-    "G": {
-      "item": "cfm:screen"
+    "1": {
+      "item": "cfm:item_screen"
     },
     "R": {
       "item": "minecraft:redstone"
@@ -19,10 +19,13 @@
       "item": "minecraft:comparator"
     },
     "-": {
-      "item": "cfm:controller_unit"
+      "item": "cfm:item_controller_unit"
     },
-    "1": {
+    "2": {
       "item": "cfm:item_natural_plastic_frame"
+	},
+    "3": {
+      "item": "cfm:item_wifi_card"
     }
   }
 }
