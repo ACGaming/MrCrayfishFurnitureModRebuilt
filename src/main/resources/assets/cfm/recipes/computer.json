@@ -10,7 +10,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "2": {
-      "item": "cfm:screen"
+      "item": "cfm:item_screen"
     },
     "1": {
       "item": "minecraft:redstone"
@@ -22,10 +22,10 @@
       "item": "minecraft:iron_block"
     },
     "-": {
-      "item": "cfm:controller_unit"
+      "item": "cfm:item_controller_unit"
     },
     "_": {
-      "item": "minecraft:comparator"
+      "item": "cfm:item_wifi_card"
 	},
     "5": {
       "item": "cfm:item_natural_plastic_frame"

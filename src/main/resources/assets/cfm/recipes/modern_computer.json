@@ -10,7 +10,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "G": {
-      "item": "cfm:screen"
+      "item": "cfm:item_screen"
     },
     "R": {
       "item": "minecraft:redstone_block"
@@ -22,10 +22,10 @@
       "item": "minecraft:comparator"
     },
     "_": {
-      "item": "minecraft:daylight_detector"
+      "item": "cfm:item_wifi_card"
     },
     "=": {
-      "item": "cfm:controller_unit"
+      "item": "cfm:item_controller_unit"
     },
     "I": {
       "item": "minecraft:iron_block"
