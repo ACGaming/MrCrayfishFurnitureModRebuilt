@@ -106,6 +106,7 @@ dependencies {
     if (project.use_mixins.toBoolean()) {
         implementation 'zone.rong:mixinbooter:10.7'
     }
+        implementation 'mezz:jei:4.31.2'
 
     // Example of deobfuscating a dependency
     // implementation rfg.deobf('curse.maven:had-enough-items-557549:4543375')
