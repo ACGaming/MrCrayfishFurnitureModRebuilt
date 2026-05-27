@@ -1,6 +1,6 @@
 {
     "result": {
-        "item": "cfm:wifi_card"
+        "item": "cfm:item_wifi_card"
     },
     "pattern": [
         " E ",
@@ -22,7 +22,7 @@
             "item": "minecraft:redstone"
         },
         "C": {
-            "item": "cfm:circuit_board"
+            "item": "cfm:item_circuit_board"
         }
     }
 }

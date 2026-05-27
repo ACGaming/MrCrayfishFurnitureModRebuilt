@@ -1,6 +1,6 @@
 {
     "result": {
-        "item": "cfm:controller_unit"
+        "item": "cfm:item_controller_unit"
     },
     "pattern": [
         "CIR",
@@ -25,7 +25,7 @@
             "item": "minecraft:diamond"
         },
         "P": {
-            "item": "cfm:circuit_board"
+            "item": "cfm:item_circuit_board"
         }
     }
 }

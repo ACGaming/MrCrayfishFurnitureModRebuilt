@@ -1,6 +1,6 @@
 {
     "result": {
-        "item": "cfm:screen"
+        "item": "cfm:item_screen"
     },
     "pattern": [
         "RGB",
@@ -25,7 +25,7 @@
             "item": "minecraft:prismarine_crystals"
         },
         "C": {
-            "item": "cfm:controller_unit"
+            "item": "cfm:item_controller_unit"
         },
         "D": {
             "item": "minecraft:redstone"
