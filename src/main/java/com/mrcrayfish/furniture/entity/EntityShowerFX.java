@@ -21,7 +21,7 @@ public class EntityShowerFX extends Particle
 
         this.setParticleTextureIndex(113);
         this.setSize(0.1F, 0.1F);
-        this.particleMaxAge = (int) 15.0D;
+        this.particleMaxAge = (int) 150.0D;
         this.particleScale = 1.5F;
     }
 
