@@ -5,7 +5,7 @@
   "pattern": [
     "1à1",
     "(&(",
-    "-Y-"
+    "-Y_"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
@@ -14,12 +14,15 @@
     },
     "-": {
       "item": "minecraft:comparator"
+	},
+    "_": {
+      "item": "cfm:item_wifi_card"
     },
     "à": {
-      "item": "cfm:screen"
+      "item": "cfm:item_screen"
     },
     "(": {
-      "item": "cfm:controller_unit"
+      "item": "cfm:item_controller_unit"
     },
     "&": {
       "item": "minecraft:redstone"
