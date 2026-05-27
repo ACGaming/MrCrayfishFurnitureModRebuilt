@@ -3,15 +3,17 @@
     "item": "cfm:wreath"
   },
   "pattern": [
-    "LLL",
-    "L L",
-    "LLL"
+    "212",
+    "1 1",
+    "212"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
-    "L": {
+    "1": {
       "item": "minecraft:leaves",
       "data": 0
+	"2": {
+      "item": "minecraft:gold_nugget"
     }
   }
 }
