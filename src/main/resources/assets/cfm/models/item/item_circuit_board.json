@@ -2,7 +2,7 @@
 	"format_version": "1.21.11",
 	"credit": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
 	"textures": {
-		"0": "cfm:items/circuit_board"
+		"0": "cfm:items/item_circuit_board"
 	},
 	"elements": [
 		{
