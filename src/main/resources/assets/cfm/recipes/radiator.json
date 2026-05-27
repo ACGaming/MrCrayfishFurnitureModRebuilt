@@ -13,7 +13,7 @@
       "item": "minecraft:iron_block"
     },
     "2": {
-      "item": "cfm:controller_unit"
+      "item": "cfm:item_controller_unit"
     },
     "3": {
       "item": "minecraft:gold_ingot"

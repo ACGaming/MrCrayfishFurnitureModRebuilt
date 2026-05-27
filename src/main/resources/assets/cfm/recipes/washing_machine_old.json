@@ -17,7 +17,7 @@
       "item": "minecraft:iron_block"
     },
     "3": {
-      "item": "cfm:controller_unit"
+      "item": "cfm:item_controller_unit"
 	},
     "4": {
       "item": "minecraft:stone",

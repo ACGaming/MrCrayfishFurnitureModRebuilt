@@ -20,7 +20,7 @@
       "item": "minecraft:redstone"
     },
     "-": {
-      "item": "cfm:controller_unit"
+      "item": "cfm:item_controller_unit"
     },
     "G": {
       "item": "minecraft:glass_pane"

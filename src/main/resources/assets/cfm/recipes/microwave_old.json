@@ -27,7 +27,7 @@
       "item": "minecraft:iron_ingot"
 	},
     "2": {
-      "item": "cfm:controller_unit"
+      "item": "cfm:item_controller_unit"
     }
   }
 }
