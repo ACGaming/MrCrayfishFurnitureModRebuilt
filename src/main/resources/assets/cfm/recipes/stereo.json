@@ -3,9 +3,9 @@
         "item": "cfm:stereo"
     },
     "pattern": [
-        "518",
+        "514",
         "676",
-        "324"
+        "328"
     ],
     "type": "minecraft:crafting_shaped",
     "key": {
