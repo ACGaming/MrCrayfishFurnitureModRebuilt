@@ -19,7 +19,7 @@
             "item": "minecraft:repeater"
         },
         "G": {
-            "item": "minecraft:gold_nugget"
+            "item": "cfm:item_golden_wire"
         },
         "D": {
             "item": "minecraft:diamond"
