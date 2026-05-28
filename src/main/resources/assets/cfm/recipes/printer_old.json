@@ -3,7 +3,7 @@
     "item": "cfm:printer_old"
   },
   "pattern": [
-    "313",
+    "316",
     "252",
     "444"
   ],
@@ -24,6 +24,9 @@
 	},
     "5": {
       "item": "cfm:item_controller_unit"
+	},
+    "6": {
+      "item": "cfm:item_printer_carriage"
     }
   }
 }

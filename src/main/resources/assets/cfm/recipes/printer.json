@@ -4,7 +4,7 @@
   },
   "pattern": [
     "313",
-    "262",
+    "267",
     "454"
   ],
   "type": "minecraft:crafting_shaped",
@@ -26,6 +26,9 @@
 	},
     "6": {
       "item": "cfm:item_controller_unit"
+	},
+    "7": {
+      "item": "cfm:item_printer_carriage"
     }
   }
 }
