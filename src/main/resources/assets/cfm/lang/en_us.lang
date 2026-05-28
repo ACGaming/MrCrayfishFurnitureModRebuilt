@@ -57,6 +57,7 @@ item.item_screen.name=Screen
 item.item_circuit_board.name=Circuit Board
 item.item_controller_unit.name=Controller Unit
 item.item_wifi_card.name=Wifi Card
+item.item_golden_wire.name=Golden Wire
 
 tile.table_oak.name=Oak Table
 tile.table_spruce.name=Spruce Table
