@@ -1,0 +1,25 @@
+{
+    "result": {
+        "item": "cfm:item_carriage"
+    },
+    "pattern": [
+        "232",
+        "111",
+        "444"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "1": {
+            "item": "minecraft:iron_ingot"
+        },
+        "2": {
+            "item": "cfm:item_natural_plastic"
+        },
+        "3": {
+            "item": "minecraft:minecart"
+        },
+        "4": {
+            "item": "minecraft:string"
+        }
+    }
+}

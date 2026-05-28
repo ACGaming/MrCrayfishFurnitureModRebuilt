@@ -76,6 +76,7 @@ public class FurnitureItems
     public static final Item CONTROLLER_UNIT;
     public static final Item WIFI_CARD;
     public static final Item GOLDEN_WIRE;
+    public static final Item PRINTER_CARRIAGE;
 
     /**
      * Nostalgia Update
@@ -135,6 +136,7 @@ public class FurnitureItems
         CONTROLLER_UNIT = new ItemGeneric().setTranslationKey("item_controller_unit").setRegistryName("item_controller_unit");
         WIFI_CARD = new ItemGeneric().setTranslationKey("item_wifi_card").setRegistryName("item_wifi_card");
         GOLDEN_WIRE = new ItemGeneric().setTranslationKey("item_golden_wire").setRegistryName("item_golden_wire");
+        PRINTER_CARRIAGE = new ItemGeneric().setTranslationKey("item_printer_carriage").setRegistryName("item_printer_carriage");
     }
 
     public static void register()
@@ -189,6 +191,7 @@ public class FurnitureItems
         registerItem(CONTROLLER_UNIT);
         registerItem(WIFI_CARD);
         registerItem(GOLDEN_WIRE);
+        registerItem(PRINTER_CARRIAGE);
     }
 
     private static void registerItem(Item item)
