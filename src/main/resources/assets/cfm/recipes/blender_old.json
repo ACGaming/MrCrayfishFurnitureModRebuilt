@@ -5,7 +5,7 @@
   "pattern": [
     "515",
     "2 2",
-    "343"
+    "364"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
@@ -24,6 +24,9 @@
     },
     "5": {
       "item": "minecraft:iron_ingot"
+	},
+    "6": {
+      "item": "cfm:item_small_electric_motor"
     }
   }
 }

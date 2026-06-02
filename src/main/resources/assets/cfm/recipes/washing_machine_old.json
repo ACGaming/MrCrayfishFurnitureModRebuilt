@@ -4,7 +4,7 @@
   },
   "pattern": [
     "141",
-    "565",
+    "765",
     "323"
   ],
   "type": "minecraft:crafting_shaped",
@@ -28,6 +28,9 @@
     },
     "6": {
       "item": "minecraft:glass_pane"
+	},
+    "7": {
+      "item": "cfm:item_small_electric_motor"
     }
   }
 }

@@ -17,7 +17,7 @@
       "item": "minecraft:iron_bars"
     },
     "*": {
-      "item": "minecraft:redstone"
+      "item": "cfm:item_small_electric_motor"
     },
     "-": {
       "item": "cfm:item_controller_unit"
