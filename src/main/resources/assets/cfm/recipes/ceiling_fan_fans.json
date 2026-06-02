@@ -3,7 +3,7 @@
         "item": "cfm:ceiling_fan_fans"
     },
     "pattern": [
-        "1I1",
+        "121",
         "IRI",
         "1I1"
     ],
@@ -17,6 +17,9 @@
 		},
 		"1": {
             "item": "cfm:item_natural_plastic"
+		},
+		"2": {
+            "item": "cfm:item_small_electric_motor"
         }
     }
 }
