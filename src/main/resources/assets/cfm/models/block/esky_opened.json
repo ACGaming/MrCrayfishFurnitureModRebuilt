@@ -4,7 +4,7 @@
 	"textures": {
 		"0": "blocks/hardened_clay_stained_blue",
 		"1": "cfm:blocks/model_block_light",
-		"particle": "blocks/hardened_clay_stained_blue"
+		"particle": "cfm:blocks/model_block_light"
 	},
 	"elements": [
 		{
