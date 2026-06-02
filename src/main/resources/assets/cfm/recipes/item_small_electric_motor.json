@@ -4,7 +4,7 @@
     },
     "pattern": [
         "GIG",
-        "PIP",
+        "P1P",
         "PRP"
     ],
     "type": "minecraft:crafting_shaped",
@@ -20,6 +20,9 @@
         },
         "R": {
             "item": "minecraft:redstone"
+		},
+        "1": {
+            "item": "cfm:item_controller_unit"
         }
     }
 }
