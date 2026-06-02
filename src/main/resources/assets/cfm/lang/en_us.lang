@@ -59,6 +59,7 @@ item.item_controller_unit.name=Controller Unit
 item.item_wifi_card.name=Wifi Card
 item.item_golden_wire.name=Golden Wire
 item.item_printer_carriage.name=Printer Carriage
+item.item_small_electric_motor.name=Small Electric Motor
 
 tile.table_oak.name=Oak Table
 tile.table_spruce.name=Spruce Table
