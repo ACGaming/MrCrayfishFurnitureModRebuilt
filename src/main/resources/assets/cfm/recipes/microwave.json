@@ -4,7 +4,7 @@
   },
   "pattern": [
     "GG_",
-    ",,*",
+    "1,*",
     "GG-"
   ],
   "type": "minecraft:crafting_shaped",
@@ -23,6 +23,9 @@
     },
     "G": {
       "item": "minecraft:iron_ingot"
+	},
+    "1": {
+      "item": "cfm:item_small_electric_motor"
     }
   }
 }

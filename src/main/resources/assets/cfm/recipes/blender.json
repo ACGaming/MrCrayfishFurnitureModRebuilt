@@ -19,7 +19,7 @@
       "item": "cfm:item_controller_unit"
     },
     "4": {
-      "item": "minecraft:redstone"
+      "item": "cfm:item_small_electric_motor"
     },
     "-": {
       "item": "minecraft:iron_ingot"
