@@ -3,7 +3,7 @@
     "item": "cfm:microwave_old"
   },
   "pattern": [
-    "2_2",
+    "5_2",
     "-,*",
     "111"
   ],
@@ -28,6 +28,9 @@
 	},
     "2": {
       "item": "cfm:item_controller_unit"
+	},
+    "5": {
+      "item": "cfm:item_small_electric_motor"
     }
   }
 }
