@@ -4,7 +4,7 @@
   },
   "pattern": [
     "*2-",
-    "CBC",
+    "5BC",
     "1F1"
   ],
   "type": "minecraft:crafting_shaped",
@@ -30,6 +30,9 @@
     },
     "F": {
       "item": "minecraft:iron_block"
+	},
+    "5": {
+      "item": "cfm:item_small_electric_motor"
     }
   }
 }
