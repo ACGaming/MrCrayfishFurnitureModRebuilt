@@ -5,7 +5,7 @@
     },
     "pattern": [
         "IDI",
-        "ICI",
+        "1C2",
         "IRI"
     ],
     "type": "minecraft:crafting_shaped",
@@ -22,6 +22,12 @@
         },
         "R": {
             "item": "minecraft:redstone"
+		},
+        "1": {
+            "item": "cfm:item_screen"
+		},
+        "2": {
+            "item": "cfm:item_controller_unit"
         }
     }
 }
