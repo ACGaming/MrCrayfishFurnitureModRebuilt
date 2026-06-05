@@ -78,6 +78,7 @@ public class FurnitureItems
     public static final Item GOLDEN_WIRE;
     public static final Item PRINTER_CARRIAGE;
     public static final Item SMALL_ELECTRIC_MOTOR;
+    public static final Item BATTERY;
 
     /**
      * Nostalgia Update
@@ -139,6 +140,7 @@ public class FurnitureItems
         GOLDEN_WIRE = new ItemGeneric().setTranslationKey("item_golden_wire").setRegistryName("item_golden_wire");
         PRINTER_CARRIAGE = new ItemGeneric().setTranslationKey("item_printer_carriage").setRegistryName("item_printer_carriage");
         SMALL_ELECTRIC_MOTOR = new ItemGeneric().setTranslationKey("item_small_electric_motor").setRegistryName("item_small_electric_motor");
+        BATTERY = new ItemBroom().setTranslationKey("item_battery").setRegistryName("item_battery");
     }
 
     public static void register()
@@ -195,6 +197,7 @@ public class FurnitureItems
         registerItem(GOLDEN_WIRE);
         registerItem(PRINTER_CARRIAGE);
         registerItem(SMALL_ELECTRIC_MOTOR);
+        registerItem(BATTERY);
     }
 
     private static void registerItem(Item item)
