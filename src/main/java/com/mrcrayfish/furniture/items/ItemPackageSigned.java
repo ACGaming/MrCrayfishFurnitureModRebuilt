@@ -110,13 +110,21 @@ public class ItemPackageSigned extends Item implements IItemInventory
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand hand)
     {
         ItemStack stack = playerIn.getHeldItem(hand);
-        if(!worldIn.isRemote)
+
+        if(this == FurnitureItems.PACKAGE_SIGNED)
         {
-            if(this == FurnitureItems.PACKAGE_SIGNED)
+            ItemStack newStack = new ItemStack(FurnitureItems.PACKAGE, stack.getCount());
+
+            if(stack.hasTagCompound())
             {
-                playerIn.openGui(MrCrayfishFurnitureMod.instance, 8, worldIn, 0, 0, 0);
+                newStack.setTagCompound(stack.getTagCompound().copy());
             }
+
+            playerIn.setHeldItem(hand, newStack);
+
+            return new ActionResult<>(EnumActionResult.SUCCESS, newStack);
         }
+
         worldIn.playSound(null, playerIn.getPosition(), FurnitureSounds.carton, SoundCategory.PLAYERS, 0.75F, 1.0F);
         return new ActionResult<>(EnumActionResult.SUCCESS, stack);
     }
