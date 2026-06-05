@@ -23,7 +23,7 @@
 			"data": 15
 		},
         "5": {
-            "item": "minecraft:redstone"
+            "item": "cfm:item_battery"
         },
         "6": {
             "item": "minecraft:noteblock"
