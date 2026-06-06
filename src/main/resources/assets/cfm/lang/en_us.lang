@@ -991,6 +991,7 @@ cfm.light_switch.info=To connect the switch to ceiling lights or fans, simply ri
 cfm.desk.info=This desk can connect to other desks to create any shape and length you desire. It can also be used in conjunction with the Desk Cabinet.
 cfm.desk_cabinet.info=This desk cabinet can connect to other desk cabinets to create any shape and length you desire. It can also be used in conjunction with the Desk.
 cfm.mail_signed.info=from %s
+cfm.envelope.info=An envelope is small, so you can only put a paper, a book, or some coins.
 cfm.present_unsigned.info=Unsigned
 cfm.digital_clock.info=Tells you the time of the overworld in 24HR format. The display can be coloured with your dye of choice.
 cfm.old_tv_remote.info=Allows you to wirelessly control a Retro TV. To change the channel, simply right click in the direction of the Retro TV.
