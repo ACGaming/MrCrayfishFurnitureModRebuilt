@@ -23,6 +23,11 @@ public class TileEntityShowerHead extends TileEntity implements ITickable
     @Override
     public void update()
     {
+        if(world.provider.getDimension() == -1)
+        {
+            return;
+        }
+
         if(this.world.isRemote)
         {
             double posX = pos.getX() + 0.35D + (rand.nextDouble() / 3);
