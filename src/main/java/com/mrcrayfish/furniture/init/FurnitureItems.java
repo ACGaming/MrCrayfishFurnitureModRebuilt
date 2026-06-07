@@ -68,6 +68,7 @@ public class FurnitureItems
     public static final Item COIN;
     public static final Item CAT_FOOD;
     public static final Item BROOM;
+    public static final Item CRAYLINKER;
     public static final Item NATURAL_PLASTIC_UNREFINED;
     public static final Item NATURAL_PLASTIC;
     public static final Item NATURAL_PLASTIC_FRAME;
@@ -130,6 +131,7 @@ public class FurnitureItems
         TRASH_BAG = new ItemGeneric().setTranslationKey("item_trashbag").setRegistryName("item_trashbag");
         COIN = new ItemGeneric().setTranslationKey("item_coin").setRegistryName("item_coin");
         BROOM = new ItemBroom().setTranslationKey("item_broom").setRegistryName("item_broom");
+        CRAYLINKER = new ItemGeneric().setTranslationKey("item_cray_linker").setRegistryName("item_cray_linker");
         NATURAL_PLASTIC_UNREFINED = new ItemGeneric().setTranslationKey("item_natural_plastic_unrefined").setRegistryName("item_natural_plastic_unrefined");
         NATURAL_PLASTIC = new ItemGeneric().setTranslationKey("item_natural_plastic").setRegistryName("item_natural_plastic");
         NATURAL_PLASTIC_FRAME = new ItemGeneric().setTranslationKey("item_natural_plastic_frame").setRegistryName("item_natural_plastic_frame");
@@ -140,7 +142,7 @@ public class FurnitureItems
         GOLDEN_WIRE = new ItemGeneric().setTranslationKey("item_golden_wire").setRegistryName("item_golden_wire");
         PRINTER_CARRIAGE = new ItemGeneric().setTranslationKey("item_printer_carriage").setRegistryName("item_printer_carriage");
         SMALL_ELECTRIC_MOTOR = new ItemGeneric().setTranslationKey("item_small_electric_motor").setRegistryName("item_small_electric_motor");
-        BATTERY = new ItemBroom().setTranslationKey("item_battery").setRegistryName("item_battery");
+        BATTERY = new ItemGeneric().setTranslationKey("item_battery").setRegistryName("item_battery");
     }
 
     public static void register()
@@ -187,6 +189,7 @@ public class FurnitureItems
         registerItem(TRASH_BAG);
         registerItem(COIN);
         registerItem(BROOM);
+        registerItem(CRAYLINKER);
         registerItem(NATURAL_PLASTIC_UNREFINED);
         registerItem(NATURAL_PLASTIC);
         registerItem(NATURAL_PLASTIC_FRAME);
