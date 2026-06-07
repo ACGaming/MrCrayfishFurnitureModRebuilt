@@ -1,0 +1,37 @@
+{
+    "result": {
+        "item": "cfm:item_cray_linker"
+    },
+    "pattern": [
+        "413",
+        "275",
+        "868"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "1": {
+            "item": "minecraft:end_rod"
+        },
+        "2": {
+            "item": "cfm:item_wifi_card"
+        },
+        "3": {
+            "item": "cfm:item_natural_plastic"
+        },
+        "4": {
+            "item": "minecraft:comparator"
+        },
+        "5": {
+            "item": "cfm:item_controller_unit"
+		},
+        "6": {
+            "item": "cfm:item_battery"
+		},
+        "7": {
+            "item": "cfm:item_screen"
+		},
+        "8": {
+            "item": "minecraft:iron_ingot"
+        }
+    }
+}
