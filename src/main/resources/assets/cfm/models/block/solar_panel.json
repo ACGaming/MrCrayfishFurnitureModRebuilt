@@ -5,7 +5,7 @@
 	"textures": {
 		"0": "cfm:blocks/solar_panel",
 		"1": "cfm:blocks/model_block_light",
-		"particle": "cfm:blocks/solar_panel"
+		"particle": "cfm:blocks/model_block_light"
 	},
 	"elements": [
 		{
