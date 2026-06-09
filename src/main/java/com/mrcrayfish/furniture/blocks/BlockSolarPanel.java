@@ -12,7 +12,7 @@ import net.minecraft.world.World;
 
 public class BlockSolarPanel extends BlockFurniture
 {
-    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.1, 0, 0.1, 0.9, 0.80, 0.9);
+    private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0, 0, 0, 1, 0.25, 1);
 
     public BlockSolarPanel(Material material, String id)
     {
