@@ -121,6 +121,7 @@ public class FurnitureBlocks
     public static final Block FIGURINE_MRCRAYFISH;
     public static final Block CUSHION;
     public static final Block SOLAR_PANEL;
+    public static final Block MODERN_MAIL_BOX_LIGHT;
 
     /* Nostalgia Update */
     public static final Block WOODEN_CHAIR_OLD;
@@ -268,6 +269,7 @@ public class FurnitureBlocks
         MAIL_BOX_JUNGLE = new BlockMailBox(Material.WOOD, "mail_box_jungle");
         MAIL_BOX_ACACIA = new BlockMailBox(Material.WOOD, "mail_box_acacia");
         MAIL_BOX_DARK_OAK = new BlockMailBox(Material.WOOD, "mail_box_dark_oak");
+        MODERN_MAIL_BOX_LIGHT = new BlockModernMailBox(Material.IRON, "modern_mail_box_light");
         TV = new BlockTV(Material.WOOD, "tv");
         RETRO_TV = new BlockRetroTV(Material.WOOD, "retro_tv");
         COMPUTER = new BlockComputer(Material.IRON, "computer");
@@ -619,6 +621,7 @@ public class FurnitureBlocks
         registerBlock(MAIL_BOX_JUNGLE);
         registerBlock(MAIL_BOX_ACACIA);
         registerBlock(MAIL_BOX_DARK_OAK);
+        registerBlock(MODERN_MAIL_BOX_LIGHT);
         registerBlock(TV);
         registerBlock(RETRO_TV);
         registerBlock(COMPUTER);
