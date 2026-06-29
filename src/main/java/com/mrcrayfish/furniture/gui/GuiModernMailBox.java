@@ -1,23 +1,22 @@
 package com.mrcrayfish.furniture.gui;
 
+import com.mrcrayfish.furniture.gui.containers.ContainerModernMailBox;
+import com.mrcrayfish.furniture.tileentity.TileEntityModernMailBox;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.util.ResourceLocation;
 
-import com.mrcrayfish.furniture.gui.containers.ContainerMailBox;
-import com.mrcrayfish.furniture.tileentity.TileEntityMailBox;
-
 public class GuiModernMailBox extends GuiContainer
 {
     private static final ResourceLocation gui = new ResourceLocation("cfm:textures/gui/modern_mailbox.png");
-    private final TileEntityMailBox tileEntityMailBox;
+    private final TileEntityModernMailBox tileEntityModernMailBox;
 
-    public GuiModernMailBox(InventoryPlayer inventoryplayer, TileEntityMailBox tileEntityMailBox)
+    public GuiModernMailBox(InventoryPlayer inventoryplayer, TileEntityModernMailBox tileEntityModernMailBox)
     {
-        super(new ContainerMailBox(inventoryplayer, tileEntityMailBox));
-        this.tileEntityMailBox = tileEntityMailBox;
+        super(new ContainerModernMailBox(inventoryplayer, tileEntityModernMailBox));
+        this.tileEntityModernMailBox = tileEntityModernMailBox;
     }
 
     @Override
@@ -32,7 +31,7 @@ public class GuiModernMailBox extends GuiContainer
     protected void drawGuiContainerForegroundLayer(int par1, int par2)
     {
         String title = I18n.format("container.modern_mailbox");
-        if (this.tileEntityMailBox.hasOwner()) title += " (" + this.tileEntityMailBox.getOwner() + ")";
+        if (this.tileEntityModernMailBox.hasOwner()) title += " (" + this.tileEntityModernMailBox.getOwner() + ")";
         GlStateManager.pushMatrix();
         GlStateManager.scale(0.6F, 0.6F, 1.0F);
         this.fontRenderer.drawString(title, xSize / 2, 10, 9999999);
@@ -47,6 +46,6 @@ public class GuiModernMailBox extends GuiContainer
         this.mc.getTextureManager().bindTexture(gui);
         int l = (width - xSize) / 2;
         int i1 = (height - ySize) / 2;
-        this.drawTexturedModalRect(l, i1, 0, 0, xSize, ySize);
+        this.drawTexturedModalRect(l, i1, 0, 10, xSize, ySize);
     }
 }

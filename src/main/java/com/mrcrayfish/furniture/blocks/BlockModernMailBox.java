@@ -2,7 +2,7 @@ package com.mrcrayfish.furniture.blocks;
 
 import com.mrcrayfish.furniture.MrCrayfishFurnitureMod;
 import com.mrcrayfish.furniture.advancement.Triggers;
-import com.mrcrayfish.furniture.tileentity.TileEntityMailBox;
+import com.mrcrayfish.furniture.tileentity.TileEntityModernMailBox;
 import com.mrcrayfish.furniture.util.TileEntityUtil;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -66,26 +66,26 @@ public class BlockModernMailBox extends BlockFurnitureTile
         TileEntity tile_entity = worldIn.getTileEntity(pos);
         if(!worldIn.isRemote)
         {
-            if(tile_entity instanceof TileEntityMailBox)
+            if(tile_entity instanceof TileEntityModernMailBox)
             {
-                TileEntityMailBox tileEntityMailBox = (TileEntityMailBox) tile_entity;
-                if(!tileEntityMailBox.hasOwner())
+                TileEntityModernMailBox tileEntityModernMailBox = (TileEntityModernMailBox) tile_entity;
+                if(!tileEntityModernMailBox.hasOwner())
                 {
-                    tileEntityMailBox.setOwner(playerIn);
+                    tileEntityModernMailBox.setOwner(playerIn);
                     playerIn.sendMessage(new TextComponentTranslation("cfm.message.mailbox_ownerget", TextFormatting.YELLOW + playerIn.getName()));
                     TileEntityUtil.markBlockForUpdate(worldIn, pos);
                     return true;
                 }
 
-                tileEntityMailBox.tryAndUpdateName(playerIn);
+                tileEntityModernMailBox.tryAndUpdateName(playerIn);
 
-                if(tileEntityMailBox.canOpen(playerIn))
+                if(tileEntityModernMailBox.canOpen(playerIn))
                 {
-                    playerIn.openGui(MrCrayfishFurnitureMod.instance, 0, worldIn, pos.getX(), pos.getY(), pos.getZ());
+                    playerIn.openGui(MrCrayfishFurnitureMod.instance, 1, worldIn, pos.getX(), pos.getY(), pos.getZ());
                 }
                 else
                 {
-                    playerIn.sendMessage(new TextComponentTranslation("cfm.message.mailbox_belong", TextFormatting.YELLOW + tileEntityMailBox.getOwner()));
+                    playerIn.sendMessage(new TextComponentTranslation("cfm.message.mailbox_belong", TextFormatting.YELLOW + tileEntityModernMailBox.getOwner()));
                 }
             }
         }
@@ -105,7 +105,7 @@ public class BlockModernMailBox extends BlockFurnitureTile
     @Override
     public TileEntity createNewTileEntity(World worldIn, int meta)
     {
-        return new TileEntityMailBox();
+        return new TileEntityModernMailBox();
     }
 
     @SideOnly(Side.CLIENT)
@@ -117,7 +117,7 @@ public class BlockModernMailBox extends BlockFurnitureTile
     @Override
     public int getComparatorInputOverride(IBlockState state, World world, BlockPos pos)
     {
-        TileEntityMailBox mailbox = (TileEntityMailBox) world.getTileEntity(pos);
+        TileEntityModernMailBox mailbox = (TileEntityModernMailBox) world.getTileEntity(pos);
         return mailbox.getMailCount() > 0 ? 1 : 0;
     }
 }

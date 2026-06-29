@@ -14,7 +14,7 @@ public class TileEntityModernMailBox extends TileEntityFurniture
 
     public TileEntityModernMailBox()
     {
-        super("mail_box", 6);
+        super("modern_mail_box", 9);
     }
 
     public void setOwner(EntityPlayer player)
@@ -97,7 +97,7 @@ public class TileEntityModernMailBox extends TileEntityFurniture
 
     public void addMail(ItemStack stack)
     {
-        for(int i = 0; i < 6; i++)
+        for(int i = 0; i < 9; i++)
         {
             if(this.inventory.get(i).isEmpty())
             {

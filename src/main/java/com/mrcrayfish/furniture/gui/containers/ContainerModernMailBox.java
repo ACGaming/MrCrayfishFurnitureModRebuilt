@@ -9,18 +9,18 @@ import net.minecraft.item.ItemStack;
 
 public class ContainerModernMailBox extends Container
 {
-    private IInventory mailBoxInventory;
+    private IInventory modernmailBoxInventory;
 
-    public ContainerModernMailBox(IInventory playerInventory, IInventory mailBoxInventory)
+    public ContainerModernMailBox(IInventory playerInventory, IInventory modernmailBoxInventory)
     {
-        this.mailBoxInventory = mailBoxInventory;
-        mailBoxInventory.openInventory(null);
+        this.modernmailBoxInventory = modernmailBoxInventory;
+        modernmailBoxInventory.openInventory(null);
 
-        for(int i = 0; i < 2; i++)
+        for(int i = 0; i < 3; i++)
         {
             for(int j = 0; j < 3; j++)
             {
-                this.addSlotToContainer(new Slot(mailBoxInventory, j + i * 3, 62 + j * 18, 18 + i * 18)
+                this.addSlotToContainer(new Slot(modernmailBoxInventory, j + i * 3, 62 + j * 18, 18 + i * 18)
                 {
                     @Override
                     public ItemStack onTake(EntityPlayer player, ItemStack stack)
@@ -33,23 +33,23 @@ public class ContainerModernMailBox extends Container
         }
 
         for(int i = 0; i < 3; i++)
+    {
+        for(int j = 0; j < 9; ++j)
         {
-            for(int j = 0; j < 9; ++j)
-            {
-                this.addSlotToContainer(new Slot(playerInventory, j + i * 9 + 9, j * 18 + 8, i * 18 + 84));
-            }
-        }
-
-        for(int i = 0; i < 9; i++)
-        {
-            this.addSlotToContainer(new Slot(playerInventory, i, i * 18 + 8, 142));
+            this.addSlotToContainer(new Slot(playerInventory, j + i * 9 + 9, j * 18 + 8, i * 18 + 84));
         }
     }
+
+        for(int i = 0; i < 9; i++)
+    {
+        this.addSlotToContainer(new Slot(playerInventory, i, i * 18 + 8, 142));
+    }
+}
 
     @Override
     public boolean canInteractWith(EntityPlayer player)
     {
-        return this.mailBoxInventory.isUsableByPlayer(player);
+        return this.modernmailBoxInventory.isUsableByPlayer(player);
     }
 
     @Override
@@ -63,14 +63,14 @@ public class ContainerModernMailBox extends Container
             ItemStack item = slot.getStack();
             itemCopy = item.copy();
 
-            if(slotNum < 6)
+            if(slotNum < 9)
             {
-                if(!this.mergeItemStack(item, 6, this.inventorySlots.size(), true))
+                if(!this.mergeItemStack(item, 9, this.inventorySlots.size(), true))
                 {
                     return ItemStack.EMPTY;
                 }
             }
-            else if(!this.mergeItemStack(item, 0, 6, false))
+            else if(!this.mergeItemStack(item, 0, 9, false))
             {
                 return ItemStack.EMPTY;
             }
@@ -92,6 +92,6 @@ public class ContainerModernMailBox extends Container
     public void onContainerClosed(EntityPlayer player)
     {
         super.onContainerClosed(player);
-        this.mailBoxInventory.closeInventory(player);
+        this.modernmailBoxInventory.closeInventory(player);
     }
 }
