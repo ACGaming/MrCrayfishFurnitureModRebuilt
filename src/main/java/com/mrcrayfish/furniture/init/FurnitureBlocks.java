@@ -272,7 +272,7 @@ public class FurnitureBlocks
         MAIL_BOX_DARK_OAK = new BlockMailBox(Material.WOOD, "mail_box_dark_oak");
         MODERN_MAIL_BOX_LIGHT = new BlockModernMailBox(Material.IRON, "modern_mail_box_light");
         MODERN_MAIL_BOX_DARK = new BlockModernMailBox(Material.IRON, "modern_mail_box_dark");
-        TV = new BlockTV(Material.WOOD, "tv");
+        TV = new BlockTV(Material.IRON, "tv");
         RETRO_TV = new BlockRetroTV(Material.WOOD, "retro_tv");
         COMPUTER = new BlockComputer(Material.IRON, "computer");
         MODERN_COMPUTER = new BlockModernComputer(Material.IRON, "modern_computer");
