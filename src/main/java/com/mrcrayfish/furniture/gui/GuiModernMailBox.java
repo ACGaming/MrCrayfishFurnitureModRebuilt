@@ -36,10 +36,10 @@ public class GuiModernMailBox extends GuiContainer
         String title = I18n.format("container.modern_mailbox");
         if (this.tileEntityModernMailBox.hasOwner()) title += " (" + this.tileEntityModernMailBox.getOwner() + ")";
         GlStateManager.pushMatrix();
-        GlStateManager.scale(0.6F, 0.6F, 1.0F);
+        GlStateManager.scale(0.6F, 0.4F, 1.0F);
         this.fontRenderer.drawString(title, xSize / 2, 10, 9999999);
         GlStateManager.popMatrix();
-        this.fontRenderer.drawString(I18n.format("container.inventory"), 8, ySize - 94, 4210752);
+        this.fontRenderer.drawString(I18n.format("container.inventory"), 8, ySize - 92, 4210752);
     }
 
     @Override

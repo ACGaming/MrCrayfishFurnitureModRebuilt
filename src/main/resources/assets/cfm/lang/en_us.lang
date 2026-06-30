@@ -1028,6 +1028,7 @@ container.bedside_cabinet=Bedside Cabinet
 container.desk_cabinet=Desk Cabinet
 container.kitchen_counter_drawer=Kitchen Counter Drawer
 container.mailbox=Mail Box
+container.modern_mailbox=Modern Mail Box
 container.tv_stand=TV Stand
 
 cfm.recipe_book.page.title1=by MrCrayfish
