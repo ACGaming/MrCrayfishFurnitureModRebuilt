@@ -20,7 +20,7 @@ public class ContainerModernMailBox extends Container
         {
             for(int j = 0; j < 3; j++)
             {
-                this.addSlotToContainer(new Slot(modernmailBoxInventory, j + i * 3, 62 + j * 18, 18 + i * 18)
+                this.addSlotToContainer(new Slot(modernmailBoxInventory, j + i * 3, 62 + j * 18, 16 + i * 18)
                 {
                     @Override
                     public ItemStack onTake(EntityPlayer player, ItemStack stack)
@@ -36,13 +36,13 @@ public class ContainerModernMailBox extends Container
     {
         for(int j = 0; j < 9; ++j)
         {
-            this.addSlotToContainer(new Slot(playerInventory, j + i * 9 + 9, j * 18 + 8, i * 18 + 84));
+            this.addSlotToContainer(new Slot(playerInventory, j + i * 9 + 9, j * 18 + 8, i * 18 + 94));
         }
     }
 
         for(int i = 0; i < 9; i++)
     {
-        this.addSlotToContainer(new Slot(playerInventory, i, i * 18 + 8, 142));
+        this.addSlotToContainer(new Slot(playerInventory, i, i * 18 + 8, 152));
     }
 }
 
