@@ -17,6 +17,9 @@ public class GuiModernMailBox extends GuiContainer
     {
         super(new ContainerModernMailBox(inventoryplayer, tileEntityModernMailBox));
         this.tileEntityModernMailBox = tileEntityModernMailBox;
+
+        this.xSize = 174;
+        this.ySize = 174;
     }
 
     @Override
@@ -46,6 +49,6 @@ public class GuiModernMailBox extends GuiContainer
         this.mc.getTextureManager().bindTexture(gui);
         int l = (width - xSize) / 2;
         int i1 = (height - ySize) / 2;
-        this.drawTexturedModalRect(l, i1, 0, 10, xSize, ySize);
+        this.drawTexturedModalRect(l, i1, 0, 0, xSize, ySize);
     }
 }
